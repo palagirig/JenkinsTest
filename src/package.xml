@@ -1466,45 +1466,7 @@
         <members>MT_Media_Transparency_Reports/MT_BroadcastImportErrors</members>
         <name>Report</name>
     </types>
-    <types>
-        <members>P7S1_Unit__c.MT_12Auto_Unit</members>
-        <members>P7S1_Unit__c.MT_71M_DSB_Unit</members>
-        <members>P7S1_Unit__c.MT_7Commerce_Unit</members>
-        <members>P7S1_Unit__c.MT_7Life_Unit</members>
-        <members>P7S1_Unit__c.MT_7NXT_Unit</members>
-        <members>P7S1_Unit__c.MT_7Sports_Unit</members>
-        <members>P7S1_Unit__c.MT_7Travel_Unit</members>
-        <members>P7S1_Unit__c.MT_7coops_Unit</members>
-        <members>P7S1_Unit__c.MT_Licensing_Unit</members>
-        <members>P7S1_Unit__c.MT_PSD_Branded_Reselling_Unit</members>
-        <members>P7S1_Unit__c.MT_SevenOne_Media_Unit</members>
-        <members>P7S1_Unit__c.MT_SevenVentures_Unit</members>
-        <members>P7S1_Unit__c.MT_Starwatch_Unit</members>
-        <members>P7S1_Unit__c.MT_d_a_Sales_Unit</members>
-        <members>P7S1_Unit__c.MT_marktguru_Unit</members>
-        <members>P7S1_Unit__c.MT_maxdome_Unit</members>
-        <name>SharingCriteriaRule</name>
-    </types>
-    <types>
-        <members>P7S1_Unit__c.MT_71M_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_7Life_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_7coops_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_Licensing_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_MagicInternet_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_MediaBoard_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_MediaSEAnd71MSalesManagement_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_MediaSEAndP7S1InternalAgency_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_PSD_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_SevenGamesNetwork_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_SevenVentures_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_Starwatch_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_Studio71_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_daSales_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_marktguru_CampaignOwnerRole</members>
-        <members>P7S1_Unit__c.MT_maxdome_CampaignOwnerRole</members>
-        <name>SharingOwnerRule</name>
-    </types>
-
+ 
     <types>
         <members>MediaTransparancyDemo_ToDelete</members>
         <members>jasmine2_5_2</members>
