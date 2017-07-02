@@ -1384,24 +1384,6 @@
         <name>FieldSet</name>
     </types>
     <types>
-        <members>MT_LockOldForecastVersion-1</members>
-        <members>MT_MCamp_CopyAccountOwnerUnit-1</members>
-        <members>MT_MediaProduct_CopyAccountOwnerUnit-1</members>
-        <members>MT_MentionMediaBoardOnInternalCampaignCreation-1</members>
-        <members>MT_MentionMediaBoardWhenInternalCampaignIsCreated-1</members>
-        <members>MT_UpdateHistory_CopyAccountOwnerUnit-1</members>
-        <name>Flow</name>
-    </types>
-    <types>
-        <members>MT_LockOldForecastVersion</members>
-        <members>MT_MCamp_CopyAccountOwnerUnit</members>
-        <members>MT_MediaProduct_CopyAccountOwnerUnit</members>
-        <members>MT_MentionMediaBoardOnInternalCampaignCreation</members>
-        <members>MT_MentionMediaBoardWhenInternalCampaignIsCreated</members>
-        <members>MT_UpdateHistory_CopyAccountOwnerUnit</members>
-        <name>FlowDefinition</name>
-    </types>
-    <types>
         <members>MT_FixRevenueTypes</members>
         <members>MT_ProductSalesUnit</members>
         <members>MT_YieldConsiderationPeriods</members>
@@ -1522,20 +1504,7 @@
         <members>P7S1_Unit__c.MT_maxdome_CampaignOwnerRole</members>
         <name>SharingOwnerRule</name>
     </types>
-    <types>
-        <members>MT_AdvertisedMediaProduct__c</members>
-        <members>MT_ForecastValue__c</members>
-        <members>MT_ForecastVersion__c</members>
-        <members>MT_MediaBroadcastImportData__c</members>
-        <members>MT_MediaBroadcastImportError__c</members>
-        <members>MT_MediaCampaign__c</members>
-        <members>MT_MediaUpdateHistory__c</members>
-        <members>MT_RankingVersion__c</members>
-        <members>P7S1_OpportunityApproval__c</members>
-        <members>P7S1_Settings__c</members>
-        <members>P7S1_Unit__c</members>
-        <name>SharingRules</name>
-    </types>
+
     <types>
         <members>MediaTransparancyDemo_ToDelete</members>
         <members>jasmine2_5_2</members>
