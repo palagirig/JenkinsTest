@@ -6,7 +6,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>MT_Add</shortDescription>
-        <value>Create</value>
+        <value>Created</value>
     </labels>
     <labels>
         <fullName>MT_BC_ImportDataTransformator_ERROR_MonthOutsideContractRuntime</fullName>
