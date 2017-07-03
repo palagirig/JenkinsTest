@@ -1349,7 +1349,6 @@
         <name>Document</name>
     </types>
     <types>
-        <members>unfiled$$public</members>
         <members>unfiled$$public/MT_MediaTransparencyCampaignApproval</members>
         <members>unfiled$$public/MT_SendMailToIMAAfterCampaignCreation</members>
         <name>EmailTemplate</name>
