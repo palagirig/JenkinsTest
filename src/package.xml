@@ -1349,6 +1349,12 @@
         <name>Document</name>
     </types>
     <types>
+        <members>unfiled$$public</members>
+        <members>unfiled$$public/MT_MediaTransparencyCampaignApproval</members>
+        <members>unfiled$$public/MT_SendMailToIMAAfterCampaignCreation</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
         <members>MT_AdvertisedMediaProduct__c.MT_ContextFields</members>
         <members>MT_CampaignTypeParameterVersion__c.MT_ContextFields</members>
         <members>MT_ForecastValue__c.MT_ContextFields</members>
@@ -1460,7 +1466,6 @@
         <members>MT_Media_Transparency_Reports/MT_BroadcastImportErrors</members>
         <name>Report</name>
     </types>
- 
     <types>
         <members>MediaTransparancyDemo_ToDelete</members>
         <members>jasmine2_5_2</members>
