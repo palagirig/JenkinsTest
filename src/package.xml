@@ -3215,6 +3215,6 @@
     <types>
         <members>*</members>
         <name>Workflow</name>
-    </types>
+    </types> 
     <version>40.0</version>
 </Package>
