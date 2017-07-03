@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <fields>
+        <fullName>SomDig_AdSlotGruppierung__c</fullName>
+        <externalId>false</externalId>
+        <label>AdSlot Gruppierung</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Minor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsoring</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomDig_CreativeMapping__c</fullName>
+        <externalId>false</externalId>
+        <label>Creative Mapping</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Audio-roll (8x8)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Break Ad (60x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mid-roll (20x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other (Rest)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Overlay (30x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Postroll (40x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pre-roll (10x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pre-split (15x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsoring (50x1, 25x1)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SwitchIn (420x240)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <recordTypes>
+        <fullName>ADvendio__ADITION</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server ADITION</description>
+        <label>ADITION</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__ADTECH</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server ADTECH</description>
+        <label>ADTECH</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__DART</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server DART</description>
+        <label>DART</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__DFP</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server DFP</description>
+        <label>DFP</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__LIVERAIL</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server LiveRail</description>
+        <label>LIVERAIL</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__NUGGAD</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server NUGGAD</description>
+        <label>NUGGAD</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Print</fullName>
+        <active>true</active>
+        <description>This record should be used to store print data.</description>
+        <label>Print</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__SMART</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server SMART</description>
+        <label>SMART</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Standard</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data without Ad server</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__TFSM</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for Ad server 24/7</description>
+        <label>TFSM</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__YIELDLAB</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer YIELDLAB</description>
+        <label>YIELDLAB</label>
+        <picklistValues>
+            <picklist>SomDig_AdSlotGruppierung__c</picklist>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_CreativeMapping__c</picklist>
+            <values>
+                <fullName>Audio-roll %288x8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Break Ad %2860x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid-roll %2820x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Rest%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overlay %2830x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postroll %2840x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-roll %2810x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-split %2815x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring %2850x1%2C 25x1%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SwitchIn %28420x240%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>
