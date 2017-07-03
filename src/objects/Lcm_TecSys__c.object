@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>List of all technical Systems (Scheduled Jobs, Batches (incl. OnDemand), Interfaces</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Lcm_CheckedAt__c</fullName>
+        <description>when was the system checked from owner</description>
+        <externalId>false</externalId>
+        <inlineHelpText>when was the system checked from owner</inlineHelpText>
+        <label>checked at</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_CheckedBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>who checked the system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>who checked the system</inlineHelpText>
+        <label>checked by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>technical_Systems</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronApexClass__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Cron ApexClass</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronCreateCmd__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Text(Lcm_SystemType__c)=&apos;Schedule-Job&apos; ,
+ &quot;System.schedule(&apos;&quot; &amp;   RIGHT(&apos;0&apos;&amp;TEXT(Lcm_CronHour__c),2) &amp; &apos;:&apos; &amp; RIGHT(&apos;0&apos; &amp; TEXT( Lcm_CronMinute__c),2) &amp; &apos; &apos; &amp;  Lcm_CronApexClass__c &amp; &apos; (&apos; &amp;  Lcm_CronRepeatLabel__c &amp; &quot;)&apos;, &apos;&quot;
+&amp;  Lcm_CronTimer__c &amp; &quot;&apos;, new &quot; &amp; Lcm_CronApexClass__c &amp; &apos;());&apos;
+
+, &apos;-&apos;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cron Create Cmd</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronDay__c</fullName>
+        <description>Day in month, * for every day</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Day in month, * for every day</inlineHelpText>
+        <label>Cron Day</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronHour__c</fullName>
+        <externalId>false</externalId>
+        <label>Cron Hour</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronMinute__c</fullName>
+        <externalId>false</externalId>
+        <label>Cron Minute</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronRepeatLabel__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Lcm_CronDay__c=&apos;*&apos;, &apos;täglich&apos;, &apos;&apos;) &amp;
+IF( Lcm_CronWeekday__c !=&apos;?&apos;, Lcm_CronWeekday__c, &apos;&apos;) &amp;
+IF( ISNUMBER(Lcm_CronDay__c), &apos;am &apos;&amp; Lcm_CronDay__c &amp; &apos;.&apos;, &apos;&apos;)</formula>
+        <label>Cron Repeat Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronTimeReadable__c</fullName>
+        <description>Readable Time (hh:mm)</description>
+        <externalId>false</externalId>
+        <formula>IF(  ISNULL(Lcm_CronHour__c) ,
+  &apos;&apos;,
+  RIGHT(&apos;0&apos;&amp;TEXT(Lcm_CronHour__c),2) &amp; &apos;:&apos; &amp; RIGHT(&apos;0&apos; &amp; TEXT( Lcm_CronMinute__c),2)
+)</formula>
+        <inlineHelpText>Readable Time (hh:mm)</inlineHelpText>
+        <label>Cron Time Readable</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronTimer__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;0 &apos;
+&amp; TEXT(Lcm_CronMinute__c) &amp; &apos; &apos;
+&amp; TEXT(Lcm_CronHour__c) &amp; &apos; &apos; 
+&amp; Lcm_CronDay__c 
+&amp; &apos; * &apos; 
+&amp;  Lcm_CronWeekday__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cron Timer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_CronWeekday__c</fullName>
+        <externalId>false</externalId>
+        <label>Cron Weekday</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_Documentation__c</fullName>
+        <description>short documenation or hint, where to find doku</description>
+        <externalId>false</externalId>
+        <inlineHelpText>short documenation or hint, where to find doku</inlineHelpText>
+        <label>Documentation</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Facade__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Schnittstelle für Facade-Server geeignet/geplant</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Schnittstelle für Facade-Server geeignet/geplant</inlineHelpText>
+        <label>Facade geeignet</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Hosting__c</fullName>
+        <description>where is the hosting of a interface, which type of hosting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>where is the hosting of a interface, which type of hosting</inlineHelpText>
+        <label>Hosting</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_InterfaceProtocols__c</fullName>
+        <description>communication protocols used</description>
+        <externalId>false</externalId>
+        <inlineHelpText>communication protocols used</inlineHelpText>
+        <label>interface protocols</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Bulk-API</fullName>
+                    <default>false</default>
+                    <label>Bulk-API</label>
+                </value>
+                <value>
+                    <fullName>E-Mail</fullName>
+                    <default>false</default>
+                    <label>E-Mail</label>
+                </value>
+                <value>
+                    <fullName>http(s)</fullName>
+                    <default>false</default>
+                    <label>http(s)</label>
+                </value>
+                <value>
+                    <fullName>Rest</fullName>
+                    <default>false</default>
+                    <label>Rest</label>
+                </value>
+                <value>
+                    <fullName>SOAP</fullName>
+                    <default>false</default>
+                    <label>SOAP</label>
+                </value>
+                <value>
+                    <fullName>SQL</fullName>
+                    <default>false</default>
+                    <label>SQL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_LifeCycleState__c</fullName>
+        <externalId>false</externalId>
+        <label>LifeCycle-State</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>live</fullName>
+                    <default>false</default>
+                    <label>live</label>
+                </value>
+                <value>
+                    <fullName>deactivated</fullName>
+                    <default>false</default>
+                    <label>deactivated</label>
+                </value>
+                <value>
+                    <fullName>planned</fullName>
+                    <default>false</default>
+                    <label>planned</label>
+                </value>
+                <value>
+                    <fullName>deleted</fullName>
+                    <default>false</default>
+                    <label>deleted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lcm_Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Requirement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requirement</label>
+        <referenceTo>Lcm_Requirement__c</referenceTo>
+        <relationshipLabel>technical Systems</relationshipLabel>
+        <relationshipName>technical_System</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_SfMetadata__c</fullName>
+        <description>Metadata elements used. User, PermissionSet, ApexClasses, .....</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Metadata elements used. User, PermissionSet, ApexClasses, .....</inlineHelpText>
+        <label>SF Metadata</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_SolutionOwnerExt__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Solution-Owner des externen Systems (bei Schnittstellen)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Solution-Owner des externen Systems (bei Schnittstellen)</inlineHelpText>
+        <label>Solution-Owner extern</label>
+        <referenceTo>P7S1_Emp__c</referenceTo>
+        <relationshipLabel>technical Systems (Solution-Owner extern)</relationshipLabel>
+        <relationshipName>technical_Systems</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_SolutionOwnerSf__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Solution-Owner Salesforce</label>
+        <referenceTo>P7S1_Emp__c</referenceTo>
+        <relationshipLabel>technical System</relationshipLabel>
+        <relationshipName>technical_System</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_SystemType__c</fullName>
+        <externalId>false</externalId>
+        <label>System-Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Schedule-Job</fullName>
+                    <default>false</default>
+                    <label>Schedule-Job</label>
+                </value>
+                <value>
+                    <fullName>Interface</fullName>
+                    <default>false</default>
+                    <label>Interface</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lcm_Systemname__c</fullName>
+        <externalId>false</externalId>
+        <label>Systemname</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_TechnicalOwner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>technical Owner</label>
+        <referenceTo>P7S1_Emp__c</referenceTo>
+        <relationshipLabel>technical System (technical Owner)</relationshipLabel>
+        <relationshipName>technical_System1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Technology__c</fullName>
+        <description>which technology is used for interface</description>
+        <externalId>false</externalId>
+        <inlineHelpText>which technology is used for interface</inlineHelpText>
+        <label>technology</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>technical System</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Lcm_SystemType__c</columns>
+        <columns>Lcm_LifeCycleState__c</columns>
+        <columns>Lcm_Systemname__c</columns>
+        <columns>Lcm_Description__c</columns>
+        <columns>Lcm_Priority__c</columns>
+        <columns>Lcm_Requirement__c</columns>
+        <columns>Lcm_SolutionOwnerSf__c</columns>
+        <columns>Lcm_TechnicalOwner__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Interfaces</fullName>
+        <columns>NAME</columns>
+        <columns>Lcm_LifeCycleState__c</columns>
+        <columns>Lcm_Systemname__c</columns>
+        <columns>Lcm_Description__c</columns>
+        <columns>Lcm_Hosting__c</columns>
+        <columns>Lcm_Facade__c</columns>
+        <columns>Lcm_TechnicalOwner__c</columns>
+        <columns>Lcm_SolutionOwnerExt__c</columns>
+        <columns>Lcm_SolutionOwnerSf__c</columns>
+        <columns>Lcm_SfMetadata__c</columns>
+        <columns>Lcm_InterfaceProtocols__c</columns>
+        <columns>Lcm_Technology__c</columns>
+        <columns>Lcm_Priority__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_SystemType__c</field>
+            <operation>equals</operation>
+            <value>Interface</value>
+        </filters>
+        <label>Interfaces</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Scheduled_Batches</fullName>
+        <columns>NAME</columns>
+        <columns>Lcm_LifeCycleState__c</columns>
+        <columns>Lcm_Systemname__c</columns>
+        <columns>Lcm_Description__c</columns>
+        <columns>Lcm_Priority__c</columns>
+        <columns>Lcm_Requirement__c</columns>
+        <columns>Lcm_SolutionOwnerSf__c</columns>
+        <columns>Lcm_TechnicalOwner__c</columns>
+        <columns>Lcm_CronApexClass__c</columns>
+        <columns>Lcm_CronTimeReadable__c</columns>
+        <columns>Lcm_CronRepeatLabel__c</columns>
+        <columns>Lcm_CronWeekday__c</columns>
+        <columns>Lcm_CronDay__c</columns>
+        <columns>Lcm_CheckedAt__c</columns>
+        <columns>Lcm_CheckedBy__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_SystemType__c</field>
+            <operation>equals</operation>
+            <value>Schedule-Job</value>
+        </filters>
+        <label>Scheduled/Batches</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>to_be_checked</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Lcm_LifeCycleState__c</columns>
+        <columns>Lcm_Systemname__c</columns>
+        <columns>Lcm_Description__c</columns>
+        <columns>Lcm_Priority__c</columns>
+        <columns>Lcm_SolutionOwnerSf__c</columns>
+        <columns>Lcm_TechnicalOwner__c</columns>
+        <columns>Lcm_CheckedAt__c</columns>
+        <columns>Lcm_CheckedBy__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_LifeCycleState__c</field>
+            <operation>equals</operation>
+            <value>live</value>
+        </filters>
+        <filters>
+            <field>Lcm_CheckedAt__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Lcm_CheckedAt__c</field>
+            <operation>lessThan</operation>
+            <value>LAST_N_DAYS:180</value>
+        </filters>
+        <label>to be checked</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>SY-{0000}</displayFormat>
+        <label>System-Id</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>technical Systems</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Lcm_Systemname__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_LifeCycleState__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_CronApexClass__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_CronCreateCmd__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Lcm_LifeCycleState__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Lcm_Priority__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Lcm_Systemname__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Lcm_SystemType__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Lcm_ReportCronCreate</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Report Cron create</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O570000073L1O</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Lcm_ReportExport_Gesamt</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Report/Export Gesamt</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O570000073Key</url>
+    </webLinks>
+</CustomObject>

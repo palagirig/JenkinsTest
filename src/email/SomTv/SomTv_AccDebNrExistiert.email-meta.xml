@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SomTv AccDebNrExistiert</name>
+    <style>none</style>
+    <subject>Stammdatenblatt mit Debi. Nummer</subject>
+    <textOnly>SevenOne INFO - Debitorennummer anfordern
+
+Stammdatenblatt mit Debi. Nummer
+
+
+Hallo liebe Debitorenbuchhaltung,
+
+bitte für den  Account {!Account.Name} ( {!Account.Link} ) eine neue Debtorennummer anlegen:
+
+Datum:     {Date}
+Antragsteller:    {Absender}
+Für Firma:     {für Firma}
+Eingetragener Firmenname / Rechtsform:     {Account.Name}
+Gewerbebetrieb:     {Firmeninhaber Vorname} {Firmeninhaber Nachname}
+Rechnungsanschrift:     {Strasse}
+{PLZ} {Ort}
+{Land}
+Telefonnummer:     {Telefon}
+Faxnummer:     {Faxnummer}
+Umsatzsteuer-ID-Nr.:     {!Account.P7S1_UstIdNr__c}
+ProSedi Geschäftsart: {!Account.SomTv_ProSediGeschaeftsart__c}
+
+
+
+Gruß
+{!User.FirstName} {!User.LastName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

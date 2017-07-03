@@ -1,0 +1,21 @@
+Das Ticket {!Case.CaseNumber} wurde soeben geschlossen:
+Ticket-Link: {!Case.Link}
+
+Geschlossen durch: {!Case.LastModifiedBy}
+Inhaber: {!Case.OwnerFirstName} {!Case.OwnerLastName}
+
+Release-Notes:
+ {!Case.Release_Notes__c}
+
+Gruß
+
+SaS Solutions
+P7S1 Applications
+
+########################
+Interne Infos:
+Projekt: {!Case.Projekt__c}
+Sprint: {!Case.Lcm_Release__c}
+Kanban: {!Case.Lcm_KanbanKombi__c}
+Priorität: {!Case.Priority}
+Rank: {!Case.Rank__c}

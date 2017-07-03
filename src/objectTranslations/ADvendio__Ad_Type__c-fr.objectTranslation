@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Ad Type --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Ad Type --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Mig_Fuer_Backfill --></label>
+        <name>Mig_Fuer_Backfill__c</name>
+    </fields>
+    <fields>
+        <help><!-- INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update --></help>
+        <label><!-- Migration_Info --></label>
+        <name>Mig_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_IsPostroll --></label>
+        <name>Mig_IsPostroll__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_IsSponsoring --></label>
+        <name>Mig_IsSponsoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_Kommentar --></label>
+        <name>Mig_Kommentar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_MasterNeuWBs --></label>
+        <name>Mig_MasterNeuWBs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_MergeStatus --></label>
+        <name>Mig_MergeStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_MergedIntoKeyName --></label>
+        <name>Mig_MergedIntoKeyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_MergedInto --></label>
+        <name>Mig_MergedInto__c</name>
+        <relationshipLabel><!-- Zusammengeführte Werbeformen --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mig_Paket_Only --></label>
+        <name>Mig_Paket_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird --></help>
+        <label><!-- Mig_ProdiaKey --></label>
+        <name>Mig_ProdiaKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_VAbfrage --></label>
+        <name>Mig_VAbfrage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_Kategorie --></label>
+        <name>Mig_Zusammenfuehrungs_Kategorie__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdSlot Gruppierung --></label>
+        <name>SomDig_AdSlotGruppierung__c</name>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring</masterLabel>
+            <translation><!-- Sponsoring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Beschreibung/Besonderheiten --></label>
+        <name>SomDig_BeschreibungBesonderheiten__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creative Mapping --></label>
+        <name>SomDig_CreativeMapping__c</name>
+        <picklistValues>
+            <masterLabel>Audio-roll (8x8)</masterLabel>
+            <translation><!-- Audio-roll (8x8) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Break Ad (60x1)</masterLabel>
+            <translation><!-- Break Ad (60x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-roll (20x1)</masterLabel>
+            <translation><!-- Mid-roll (20x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Rest)</masterLabel>
+            <translation><!-- Other (Rest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overlay (30x1)</masterLabel>
+            <translation><!-- Overlay (30x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postroll (40x1)</masterLabel>
+            <translation><!-- Postroll (40x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-roll (10x1)</masterLabel>
+            <translation><!-- Pre-roll (10x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-split (15x1)</masterLabel>
+            <translation><!-- Pre-split (15x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring (50x1, 25x1)</masterLabel>
+            <translation><!-- Sponsoring (50x1, 25x1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SwitchIn (420x240)</masterLabel>
+            <translation><!-- SwitchIn (420x240) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für DWH Export, ergänzt &quot;v&quot; --></help>
+        <label><!-- Report Slots AI (DWH) --></label>
+        <name>SomDig_DwhReportSlots__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl der Perioden, für welche die angegebene FC-Menge gilt (drei Tage oder 4 Wochen etc). Wird automatisch an alle entsprechenden Werbemittel weitervererbt --></help>
+        <label><!-- FC Anzahl Periode --></label>
+        <name>SomDig_FcAnzahlPeriode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl der Einblendungen im ausgewählten Zeitraum. Wird ans Werbemittel fix hinterlegt/weitervererbt --></help>
+        <label><!-- FC Menge --></label>
+        <name>SomDig_FcMenge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auswahl der entsprechenden Perioden/Zeiteinheit, für welche die angegebene FC-Menge und Anzahl Periode gilt. Wird automatisch an alle entsprechenden Werbemittel weitervererbt --></help>
+        <label><!-- FC Periode --></label>
+        <name>SomDig_FcPeriode__c</name>
+        <picklistValues>
+            <masterLabel>Jahr</masterLabel>
+            <translation><!-- Jahr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kampagne</masterLabel>
+            <translation><!-- Kampagne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minute</masterLabel>
+            <translation><!-- Minute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monat</masterLabel>
+            <translation><!-- Monat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Session</masterLabel>
+            <translation><!-- Session --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stunde</masterLabel>
+            <translation><!-- Stunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tag</masterLabel>
+            <translation><!-- Tag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Woche</masterLabel>
+            <translation><!-- Woche --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bitte kennzeichnen wenn interne Produktion erforderlich! --></help>
+        <label><!-- Inhouse Produktion --></label>
+        <name>SomDig_InhouseProduktion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gruppierung der einzelenen Werbeformen nach ihrer Art --></help>
+        <label><!-- Mediagattungs-Differenzierung --></label>
+        <name>SomDig_MediagattungsDifferenzierung__c</name>
+        <relationshipLabel><!-- Werbeformen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- internes Hilfsfeld, zur besseren Weiterverarbeitung des MultiPicklist-Feldes --></help>
+        <label><!-- Report Slots AI(Text) --></label>
+        <name>SomDig_ReportSlots__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vorlaufzeit in Tagen, beschreibt die Zeit benötigt für die Produktion oder Vorbereitung --></help>
+        <label><!-- Vorlaufzeit --></label>
+        <name>SomDig_Vorlaufzeit__c</name>
+    </fields>
+    <fields>
+        <label><!-- WB fähig --></label>
+        <name>SomDig_WbFaehig__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unterscheidung in Standard und Sonderwerbeformen.
+Wichtig unter anderem für die Inventarklassifizierung --></help>
+        <label><!-- Werbeformgruppe --></label>
+        <name>SomDig_Werbeformgruppe__c</name>
+        <picklistValues>
+            <masterLabel>Sonderwerbeform</masterLabel>
+            <translation><!-- Sonderwerbeform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Ad Type Name --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Zum Hinterlegen eines Frequency Cappings am Werbemittel müssen beide Felder/Parameter ausgefüllt sein, dies bitte kontrollieren und vervollständigen (FC Menge und FC Periode). Zudem darf keine Null (0) ausgewählt werden --></errorMessage>
+        <name>SomDig_FrequencyCapping</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche. --></errorMessage>
+        <name>SomDig_NameDoubleBlank</name>
+    </validationRules>
+</CustomObjectTranslation>

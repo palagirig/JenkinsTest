@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Verteilungsschlüssel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Verteilungsschlüssel</value>
+    </caseValues>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gebe hier die AdServerId von Typ &quot;Ad Unit&quot; ein. Bitte in DFP nachprüfen, welche Ad Units zu der Rotation gehören. --></help>
+        <label><!-- AdServer ID --></label>
+        <name>SomDig_AdServerId__c</name>
+        <relationshipLabel><!-- Verteilungsschlüssel --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Antizipationsverteilungsschlüssel --></label>
+        <name>SomDig_AntizipationsVS__c</name>
+        <relationshipLabel><!-- Verteilungsschlüssel --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prozentsatz --></label>
+        <name>SomDig_Prozentsatz__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeträger --></label>
+        <name>SomDig_Werbetraeger__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Verteilungsschlüssel-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

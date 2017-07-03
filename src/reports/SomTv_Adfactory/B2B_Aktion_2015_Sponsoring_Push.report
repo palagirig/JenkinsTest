@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Som_Kontaktbericht__c.Som_Account__c</field>
+    </columns>
+    <columns>
+        <field>Som_Kontaktbericht__c.Som_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Som_Kontaktbericht__c.SomTv_AngesprocheneThemen__c</field>
+    </columns>
+    <columns>
+        <field>Som_Kontaktbericht__c.Som_Beschreibung__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2015 AdF Sponsoring Push Priothemen</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>B2B Aktion 2015 Sponsoring Push</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Som_Kontaktbericht__c@Som_Kontaktbericht__c.Som_Campaign__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Som_Kontaktbericht__c.Som_Datum__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

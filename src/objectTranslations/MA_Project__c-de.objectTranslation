@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>M&amp;A Project</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>M&amp;A Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>MA_Account__c</name>
+        <relationshipLabel><!-- M&amp;A Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Advisors P7S1 --></label>
+        <name>MA_AdvisorsP7S1__c</name>
+        <relationshipLabel><!-- MA Project (Deal Team Advisors P7S1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BU Lead --></label>
+        <name>MA_BULead__c</name>
+        <relationshipLabel><!-- M&amp;A Projects (BU Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call option P7S1 --></label>
+        <name>MA_CalloptionP7S1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Invest (in m) --></label>
+        <name>MA_CashInvest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>MA_CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Acounts --></label>
+        <name>MA_ClosingAcounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>MA_Cluster__c</name>
+        <picklistValues>
+            <masterLabel>7Innovate</masterLabel>
+            <translation><!-- 7Innovate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7NXT</masterLabel>
+            <translation><!-- 7NXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Tech</masterLabel>
+            <translation><!-- Ad Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beauty &amp; Accessories</masterLabel>
+            <translation><!-- Beauty &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bio Household &amp; Family</masterLabel>
+            <translation><!-- Bio Household &amp; Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcasting</masterLabel>
+            <translation><!-- Broadcasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP: Non-Scripted</masterLabel>
+            <translation><!-- CP: Non-Scripted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP: Scripted</masterLabel>
+            <translation><!-- CP: Scripted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer  Med. Devices</masterLabel>
+            <translation><!-- Consumer  Med. Devices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Sales (SOM)</masterLabel>
+            <translation><!-- Digital Sales (SOM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMCG</masterLabel>
+            <translation><!-- FMCG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fashion &amp; Sports</masterLabel>
+            <translation><!-- Fashion &amp; Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General M&amp;A / Transformative</masterLabel>
+            <translation><!-- General M&amp;A / Transformative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health</masterLabel>
+            <translation><!-- Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home &amp; Living</masterLabel>
+            <translation><!-- Home &amp; Living --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home shopping</masterLabel>
+            <translation><!-- Home shopping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Gen/Classifieds</masterLabel>
+            <translation><!-- Lead Gen/Classifieds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life &amp; Health  Services/Products</masterLabel>
+            <translation><!-- Life &amp; Health  Services/Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCN/Video</masterLabel>
+            <translation><!-- MCN/Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Med. Cosmetics  &amp; Personal Care</masterLabel>
+            <translation><!-- Med. Cosmetics  &amp; Personal Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Nutrition</masterLabel>
+            <translation><!-- New Nutrition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New sales platforms</masterLabel>
+            <translation><!-- New sales platforms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nutrition</masterLabel>
+            <translation><!-- Nutrition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTC</masterLabel>
+            <translation><!-- OTC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overall Entertainment</masterLabel>
+            <translation><!-- Overall Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports</masterLabel>
+            <translation><!-- Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel &amp; Gift</masterLabel>
+            <translation><!-- Travel &amp; Gift --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- M&amp;A Coverage --></label>
+        <name>MA_Coverage__c</name>
+        <relationshipLabel><!-- M&amp;A Projects (M&amp;A Coverage) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deal prob --></label>
+        <name>MA_Dealprob__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;25%</masterLabel>
+            <translation><!-- &lt;25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;90%</masterLabel>
+            <translation><!-- &gt;90% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Direct Equity --></label>
+        <name>MA_Direct_Equity__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBITDA (in m) --></label>
+        <name>MA_EBITDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV (in m) --></label>
+        <name>MA_EVinm__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV over EBITDA --></label>
+        <name>MA_EVoverEBITDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV over Revenue --></label>
+        <name>MA_EVoverRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Earn-Out for Target --></label>
+        <name>MA_EarnOutforTarget__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Contact --></label>
+        <name>MA_FirstContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- GMV (in m) --></label>
+        <name>MA_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked Box --></label>
+        <name>MA_LockedBox__c</name>
+    </fields>
+    <fields>
+        <label><!-- M&amp;A Project Manager --></label>
+        <name>MA_MAProjectManager__c</name>
+        <relationshipLabel><!-- M&amp;A Projects (M&amp;A Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- M&amp;A status --></label>
+        <name>MA_MAstatus__c</name>
+        <picklistValues>
+            <masterLabel>aborted</masterLabel>
+            <translation><!-- aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>approach</masterLabel>
+            <translation><!-- approach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>closed</masterLabel>
+            <translation><!-- closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>idea</masterLabel>
+            <translation><!-- idea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>on hold</masterLabel>
+            <translation><!-- on hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre IC I</masterLabel>
+            <translation><!-- pre IC I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre IC II</masterLabel>
+            <translation><!-- pre IC II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre IC III EB/SB</masterLabel>
+            <translation><!-- pre IC III EB/SB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre SDB I</masterLabel>
+            <translation><!-- pre SDB I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre SDB II</masterLabel>
+            <translation><!-- pre SDB II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre closing</masterLabel>
+            <translation><!-- pre closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre signing</masterLabel>
+            <translation><!-- pre signing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Management incentive program --></label>
+        <name>MA_Managementincentive_program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media for Equity --></label>
+        <name>MA_MediaforEquity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Guarantee --></label>
+        <name>MA_MinimumGuarantee__c</name>
+    </fields>
+    <fields>
+        <label><!-- NMV (in m) --></label>
+        <name>MA_NMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps/Issues2 --></label>
+        <name>MA_NextStepsIssues2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps/Issues --></label>
+        <name>MA_Next_Steps_Issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>MA_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- P7S1 Unit --></label>
+        <name>MA_P7S1Unit__c</name>
+        <picklistValues>
+            <masterLabel>1-V-Commerce</masterLabel>
+            <translation><!-- 1-V-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Innovate</masterLabel>
+            <translation><!-- 7Innovate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Next</masterLabel>
+            <translation><!-- 7Next --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Next Video</masterLabel>
+            <translation><!-- 7Next Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig Entertain</masterLabel>
+            <translation><!-- Dig Entertain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Games</masterLabel>
+            <translation><!-- Games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magic Internet</masterLabel>
+            <translation><!-- Magic Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1 Group</masterLabel>
+            <translation><!-- P7S1 Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSD</masterLabel>
+            <translation><!-- PSD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay-VoD</masterLabel>
+            <translation><!-- Pay-VoD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puls 4</masterLabel>
+            <translation><!-- Puls 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red Arrow</masterLabel>
+            <translation><!-- Red Arrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seven Ventures</masterLabel>
+            <translation><!-- Seven Ventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenOne</masterLabel>
+            <translation><!-- SevenOne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenOne Capital</masterLabel>
+            <translation><!-- SevenOne Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenTravel</masterLabel>
+            <translation><!-- SevenTravel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVD</masterLabel>
+            <translation><!-- TVD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V-Digital</masterLabel>
+            <translation><!-- V-Digital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>MA_Priority__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>n.a.</masterLabel>
+            <translation><!-- n.a. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>MA_ProjectStatus__c</name>
+        <picklistValues>
+            <masterLabel>A- Idea / Sourcing</masterLabel>
+            <translation><!-- A- Idea / Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B- Commercial Assessment Approved</masterLabel>
+            <translation><!-- B- Commercial Assessment Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C- Term Sheet/Indicative Bid Stage</masterLabel>
+            <translation><!-- C- Term Sheet/Indicative Bid Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D- Due Diligence</masterLabel>
+            <translation><!-- D- Due Diligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E- Negotiations</masterLabel>
+            <translation><!-- E- Negotiations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F- Signing</masterLabel>
+            <translation><!-- F- Signing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G- Closing</masterLabel>
+            <translation><!-- G- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H- Aborted</masterLabel>
+            <translation><!-- H- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I- On hold</masterLabel>
+            <translation><!-- I- On hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J- N/A</masterLabel>
+            <translation><!-- J- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Put option P7S1 --></label>
+        <name>MA_PutoptionP7S1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ranking --></label>
+        <name>MA_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue (in m) --></label>
+        <name>MA_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIGNING --></label>
+        <name>MA_SIGNING__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date (IC I) --></label>
+        <name>MA_StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Steer Co Approval --></label>
+        <name>MA_SteerCoApproval__c</name>
+        <picklistValues>
+            <masterLabel>IC I and IC III mandatory, thereafter EB</masterLabel>
+            <translation><!-- IC I and IC III mandatory, thereafter EB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IC I, IC II and IC III mandatory, thereafter EB and SB</masterLabel>
+            <translation><!-- IC I, IC II and IC III mandatory, thereafter EB and SB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IC procedure dependent on deal size</masterLabel>
+            <translation><!-- IC procedure dependent on deal size --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Only IC III mandatory, thereafter EB</masterLabel>
+            <translation><!-- Only IC III mandatory, thereafter EB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Advisors --></label>
+        <name>MA_TargetAdvisors__c</name>
+        <relationshipLabel><!-- MA Project (Deal Team Target Advisors) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Contacts --></label>
+        <name>MA_TargetContacts__c</name>
+        <relationshipLabel><!-- MA Project (Deal Team Target) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>MA_Type__c</name>
+        <picklistValues>
+            <masterLabel>7V / M4E</masterLabel>
+            <translation><!-- 7V / M4E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bolt-on</masterLabel>
+            <translation><!-- Bolt-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divestment</masterLabel>
+            <translation><!-- Divestment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minorities - VC like</masterLabel>
+            <translation><!-- Minorities - VC like --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strat. Minorities</masterLabel>
+            <translation><!-- Strat. Minorities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strat. Small Majorities</masterLabel>
+            <translation><!-- Strat. Small Majorities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transformative</masterLabel>
+            <translation><!-- Transformative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>MA_Unit__c</name>
+        <picklistValues>
+            <masterLabel>7Innovate</masterLabel>
+            <translation><!-- 7Innovate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Life</masterLabel>
+            <translation><!-- 7Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7NXT &amp; Adjacent</masterLabel>
+            <translation><!-- 7NXT &amp; Adjacent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcasting &amp; Content Production</masterLabel>
+            <translation><!-- Broadcasting &amp; Content Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation><!-- Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Entertainment</masterLabel>
+            <translation><!-- Digital Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Consumer</masterLabel>
+            <translation><!-- Specialty Consumer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- % acquired --></label>
+        <name>MA_acquired__c</name>
+    </fields>
+    <fields>
+        <label><!-- % divested --></label>
+        <name>MA_divested__c</name>
+    </fields>
+    <fields>
+        <label><!-- SteerCo --></label>
+        <name>Steer_Co_Approval__c</name>
+        <picklistValues>
+            <masterLabel>EB</masterLabel>
+            <translation><!-- EB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EB/SB</masterLabel>
+            <translation><!-- EB/SB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDB</masterLabel>
+            <translation><!-- SDB --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>M&amp;A Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Characteristics --></label>
+            <section>Deal Characteristics</section>
+        </sections>
+        <sections>
+            <label><!-- General Project Information --></label>
+            <section>General Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Responsibilities --></label>
+            <section>Project Responsibilities</section>
+        </sections>
+        <sections>
+            <label><!-- Status Overview --></label>
+            <section>Status Overview</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

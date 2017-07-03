@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>SomTv_Angebot__c.SomTv_Konsens__c</field>
+    </columns>
+    <columns>
+        <field>SomTv_Angebot__c.SomTv_Status__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Prüft, ob bei relevanten Phasen &quot;Konsens&quot; hinterlegt ist</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Geschlossene und gewonnene,Rabatt freigegeben,Angebot abgegeben</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SomTv_Angebot__c.SomTv_Konsens__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>kein Eintrag</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SomTv_Angebot__c.SomTv_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Rabatt freigegeben,Angeboten,Angenommen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SomTv_Jahr__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Konsens-Check</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCustomEntity$SomTv_Angebot__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURNEXTFY</interval>
+    </timeFrameFilter>
+</Report>

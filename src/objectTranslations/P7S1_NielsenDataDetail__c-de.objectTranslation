@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Nielsen-Daten Detail</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Nielsen-Daten Details</value>
+    </caseValues>
+    <fields>
+        <help><!-- Brutto-Umsatz --></help>
+        <label><!-- Brutto --></label>
+        <name>P7S1_Brutto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jahr --></label>
+        <name>P7S1_Jahr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung aus Medienklassen für den Medienmix --></help>
+        <label><!-- Medienmix --></label>
+        <name>P7S1_Medienmix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monat --></label>
+        <name>P7S1_Monat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nielsen-Daten --></label>
+        <name>P7S1_NielsenDataAggr__c</name>
+        <relationshipLabel><!-- Nielsen-Daten Details --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Nielsen-Daten Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

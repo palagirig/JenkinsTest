@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_38877367</developerName>
+        <masterLabel>Sponsoring</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1.1.1 Program Sponsoring</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1.1.2 Block Sponsoring</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1.1.3 Tages Sponsoring</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1.1.4 Themen Sponsoring (Event)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1.2 Trailersponsoring A</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1.2.3 Crosspromotion Trailersponsoring A</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1.3 Rubrikensponsoring A</sourceValue>
+            </sourceValues>
+            <value>alle Sponsoringarten</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.SomTv_MN3__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Product2.SomTv_Produkthierarchieebene1__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.SomTv_MB1__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.SomTv_MN3__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>AdF Erlöse auf Basis YTD für das aktuelle GJ</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.SomTv_Jahr__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.SomTv_Sendezeit__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.SomTv_Produkthierarchieebene1__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YTD AdF Erlöse 2014</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>gt90</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct@Opportunity.SomTv_AdFProjekt__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2014-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-01-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Invoice Item --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Invoice Item --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adservertyp --></label>
+        <name>SomDig_Adservertyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buchungsschlüssel --></label>
+        <name>SomDig_Buchungsschluessel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status der Rechnung --></help>
+        <label><!-- Rechnungs-Status --></label>
+        <name>SomDig_InvoiceStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattung --></label>
+        <name>SomDig_Mediagattung__c</name>
+        <relationshipLabel><!-- Rechnungspositionen --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Differenzierung --></label>
+        <name>SomDig_Mediagattungs_Differenzierung__c</name>
+        <relationshipLabel><!-- Rechnungspositionen --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Segement Name --></label>
+        <name>SomDig_Mediagattungs_Segement_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Segment --></label>
+        <name>SomDig_Mediagattungs_Segment__c</name>
+        <relationshipLabel><!-- Rechnungspositionen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- MN2-Wert minus Skonto (wenn ein Skonto für die MK ausgewählt wurde) ergibt MN3 --></help>
+        <label><!-- MN3 --></label>
+        <name>SomDig_Mn3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeträger --></label>
+        <name>SomDig_Werbetraeger__c</name>
+        <relationshipLabel><!-- Rechnungspositionen --></relationshipLabel>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+</CustomObjectTranslation>

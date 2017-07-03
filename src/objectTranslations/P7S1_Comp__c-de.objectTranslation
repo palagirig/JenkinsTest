@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>P7S1 Firma</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>P7S1 Firmen</value>
+    </caseValues>
+    <fields>
+        <help><!-- zugeordneter Account --></help>
+        <label><!-- Account --></label>
+        <name>P7S1_Account__c</name>
+        <relationshipLabel><!-- P7S1 Firmen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Accountnummer, wird vor allem für DWH-SST benötigt --></help>
+        <label><!-- Accountnummer --></label>
+        <name>P7S1_CompNo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl aktiver Mitarbeiter --></help>
+        <label><!-- Anzahl Mitarbeiter aktiv --></label>
+        <name>P7S1_EmpCountActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl Mitarbeiter --></label>
+        <name>P7S1_EmpCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- P7S1-Konzernmitglied --></label>
+        <name>P7S1_Konzernmitglied__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>P7S1 Firma-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

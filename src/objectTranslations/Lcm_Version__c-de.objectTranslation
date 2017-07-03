@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Version</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Versionen</value>
+    </caseValues>
+    <fields>
+        <help><!-- Beschreibung der Version --></help>
+        <label><!-- Bezeichnung --></label>
+        <name>Lcm_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modul-Name --></label>
+        <name>Lcm_ModuleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modul-Nr --></label>
+        <name>Lcm_Module__c</name>
+        <relationshipLabel><!-- Versionen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Status der Version --></help>
+        <label><!-- Status --></label>
+        <name>Lcm_State__c</name>
+        <picklistValues>
+            <masterLabel>Archiv</masterLabel>
+            <translation><!-- Archiv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geplant</masterLabel>
+            <translation><!-- Geplant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Entwicklung</masterLabel>
+            <translation><!-- In Entwicklung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Test</masterLabel>
+            <translation><!-- In Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produktiv</masterLabel>
+            <translation><!-- Produktiv --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung zur jeweiligen Test-Sphere. Hilfefeld für die Freigabeeinstellung --></help>
+        <label><!-- Lcm_TestSphere --></label>
+        <name>Lcm_TestSphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- Versionsname, meist ein Nummernsystem (1.0, 1.1, 2.0) --></help>
+        <label><!-- Versions-Name --></label>
+        <name>Lcm_VersionName__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Version-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>WT AG Beziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>WT AG Beziehungen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Grouped ID --></label>
+        <name>P7S1_GroupedId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wie groß ist die Abweichung zur Prognose für das AJ? --></help>
+        <label><!-- Abweichung Commitment vs. Prognose im AJ --></label>
+        <name>SomDig_AbweichungCommitmentPrognoseImAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Differenz zw. Commitment und Prognose für das akt. Jahr in % --></help>
+        <label><!-- Abweichung Commitment vs Prognose AJ (%) --></label>
+        <name>SomDig_AbweichungCommitmentVsPrognoseAJp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Prognose AJ zu Umsatz VJ an. --></help>
+        <label><!-- Abweichung Prognose AJ vs. Umsatz VJ --></label>
+        <name>SomDig_AbweichungPrognoseAJvsUmsatzVJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz AJ zu Commitment an. --></help>
+        <label><!-- Abweichung Umsatz AJ vs. Commitment --></label>
+        <name>SomDig_AbweichungUmsatzAJvsCommitment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz AJ zu Prognose AJ an. --></help>
+        <label><!-- Abweichung Umsatz AJ vs. Prognose AJ --></label>
+        <name>SomDig_AbweichungUmsatzAJvsPrognoseAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz Q1 AJ zu Prognose Q1 AJ an. --></help>
+        <label><!-- Abweichung Umsatz Q1 AJ vs. Prognose Q1 --></label>
+        <name>SomDig_AbweichungUmsatzQ1AJ_v_PrognoseQ1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz Q2 AJ zu Prognose Q2 AJ an. --></help>
+        <label><!-- Abweichung Umsatz Q2 AJ vs. Prognose Q2 --></label>
+        <name>SomDig_AbweichungUmsatzQ2AJ_v_PrognoseQ2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz Q3 AJ zu Prognose Q3 AJ an. --></help>
+        <label><!-- Abweichung Umsatz Q3 AJ vs. Prognose Q3 --></label>
+        <name>SomDig_AbweichungUmsatzQ3AJ_v_PrognoseQ3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz Q4 AJ zu Prognose Q4 AJ an. --></help>
+        <label><!-- Abweichung Umsatz Q4 AJ vs. Prognose Q4 --></label>
+        <name>SomDig_AbweichungUmsatzQ4AJ_v_PrognoseQ4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agentur Id --></label>
+        <name>SomDig_AgenturId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt automatisch die Konzernmutter der hinterlegten Agentur wieder. Ist ein Formelfeld und  muss daher nicht manuell befüllt werden. --></help>
+        <label><!-- Agentur Konzernmutter --></label>
+        <name>SomDig_AgenturKonzernmutter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hinterlegung des Agentur-Accounts in der Beziehung. 
+Hinweis: Bei Direktbucher wird dieses Feld leer gelassen! --></help>
+        <label><!-- Agentur --></label>
+        <name>SomDig_Agentur__c</name>
+        <relationshipLabel><!-- WT AG Beziehungen (Agentur) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Werbetreibender- und Agenturname, durch ein Underscore getrennt. Wird per Formel automatisch befüllt --></help>
+        <label><!-- Beziehung Accountname --></label>
+        <name>SomDig_BeziehungAccountnameHelp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Werbetreibender- und Agenturname, durch ein Underscore getrennt. Wird per Workflow/Feldaktualisierung automatisch befüllt --></help>
+        <label><!-- Beziehung Accountname --></label>
+        <name>SomDig_BeziehungAccountname__c</name>
+    </fields>
+    <fields>
+        <help><!-- ProRex ID des Werbetreibenden und der Agentur, durch ein Underscore getrennt (reines Infofeld, wird automatisch vom System befüllt) --></help>
+        <label><!-- Beziehung Accountnummer --></label>
+        <name>SomDig_BeziehungAccountnumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- In welchem Vertriebsteam ist der Inhaber der WT AG Beziehung? Wird automatisch per Formel gesetzt --></help>
+        <label><!-- Beziehung Inhaber Vertriebsteam --></label>
+        <name>SomDig_BeziehungInhaberVertriebsteam__c</name>
+    </fields>
+    <fields>
+        <help><!-- In der Regel der Inhaber/Betreuer des Werbetreibenders, ist aber manuell Auswählbar und kann daher individuell eingestellt werden --></help>
+        <label><!-- Beziehung Inhaber --></label>
+        <name>SomDig_BeziehungInhaber__c</name>
+        <relationshipLabel><!-- WT AG Beziehungen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- errechnet den Wert anhand der aktuellen Commitments (nur Commitments im Status &apos;angenommen&apos; und &apos;Gentlemen&apos;s Agreement&apos; berücksichtigt) --></help>
+        <label><!-- Commitment gesamt AJ --></label>
+        <name>SomDig_CommitmentGesamtAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kontrolle, ob es sich in der Beziehung um einen Direktbucher handelt (entweder ist AG-Feld leer oder WT ist gleich im AG-Feld eingetragen). Wird automatisch befüllt. --></help>
+        <label><!-- Direktbucher --></label>
+        <name>SomDig_Direktbucher__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gesamtsumme der Progonsen für die Beziehung im aktuellen Geschäftsjahr --></help>
+        <label><!-- Prognose gesamt AJ --></label>
+        <name>SomDig_PrognoseGesamtAj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Prognose InPage AJ --></label>
+        <name>SomDig_PrognoseMedDiffInPage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Prognose InStream AJ --></label>
+        <name>SomDig_PrognoseMedDiffInStream__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Prognose DigitalTV (inkl. Mediaauf.)  AJ --></label>
+        <name>SomDig_PrognoseMedDiffRest__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr --></help>
+        <label><!-- Prognose Q1 AJ --></label>
+        <name>SomDig_PrognoseQ1Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q2-Werte der Beziehungen aus dem aktuellen Geschäftsjahr --></help>
+        <label><!-- Prognose Q2 AJ --></label>
+        <name>SomDig_PrognoseQ2Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q3-Werte der Beziehungen aus dem aktuellen Geschäftsjahr --></help>
+        <label><!-- Prognose Q3 AJ --></label>
+        <name>SomDig_PrognoseQ3Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr --></help>
+        <label><!-- Prognose Q4 AJ --></label>
+        <name>SomDig_PrognoseQ4Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gesamtsumme des Umsatzes für die Beziehung im aktuellen Geschäftsjahr, Mediagattung Digital aber ohne Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. ohne Dienstleistung. --></help>
+        <label><!-- Umsatz gesamt AJ --></label>
+        <name>SomDig_UmsatzGesamtAj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gesamtsumme des Umsatzes für die Beziehung aus vorherigem Geschäftsjahr, Mediagattung Digital aber ohne Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. ohne Dienstleistung. --></help>
+        <label><!-- Umsatz gesamt VJ --></label>
+        <name>SomDig_UmsatzGesamtVj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InPage-Werte der Beziehungen aus dem vorherigen Geschäftsjahr. --></help>
+        <label><!-- Umsatz InPage VJ --></label>
+        <name>SomDig_UmsatzMedDiffInPageVJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Umsatz InPage AJ --></label>
+        <name>SomDig_UmsatzMedDiffInPage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InStream-Werte der Beziehungen aus des vorherigen Geschäftsjahr. --></help>
+        <label><!-- Umsatz InStream VJ --></label>
+        <name>SomDig_UmsatzMedDiffInStreamVJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Umsatz InStream AJ --></label>
+        <name>SomDig_UmsatzMedDiffInStream__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem vorherigen Geschäftsjahr. --></help>
+        <label><!-- Umsatz DigitalTV (inkl. Mediaaufwand) VJ --></label>
+        <name>SomDig_UmsatzMedDiffRestVJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Umsatz DigitalTV (inkl. Mediaaufwand) AJ --></label>
+        <name>SomDig_UmsatzMedDiffRest__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung. --></help>
+        <label><!-- Umsatz Q1 AJ --></label>
+        <name>SomDig_UmsatzQ1Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q2-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung. --></help>
+        <label><!-- Umsatz Q2 AJ --></label>
+        <name>SomDig_UmsatzQ2Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q3-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung. --></help>
+        <label><!-- Umsatz Q3 AJ --></label>
+        <name>SomDig_UmsatzQ3Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- RollUp aller betroffenen Q4-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung. --></help>
+        <label><!-- Umsatz Q4 AJ --></label>
+        <name>SomDig_UmsatzQ4Aj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wird per Workflow (Feldaktualisierung) bei Anlage eines Datensatztes WT AG - Beziehung automatisch befüllt, um Dubletten zu vermeiden (Key muss einzigartig sein anhand Salesforce ID - Kombination) --></help>
+        <label><!-- UniqueKey --></label>
+        <name>SomDig_UniqueKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt automatisch die Konzernmutter des hinterlegten Werbetreibenders wieder. Ist ein Formelfeld und muss daher nicht manuell befüllt werden. --></help>
+        <label><!-- Werbetreibender Konzernmutter --></label>
+        <name>SomDig_WerbetreibenderKonzernmutter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hinterlegung des Werbetreibeder-Accounts in der Beziehung --></help>
+        <label><!-- Werbetreibender --></label>
+        <name>SomDig_Werbetreibender__c</name>
+        <relationshipLabel><!-- WT AG Beziehungen (Werbetreibender) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Yieldlab Nettoumsatz aktuelles Jahr --></help>
+        <label><!-- Yieldlab Netto AJ --></label>
+        <name>SomDig_YieldlabNettoAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt die Jahreszahl aus, in dem das letzte Mal Umsatz für verbucht wurde. --></help>
+        <label><!-- Letzter Umsatz --></label>
+        <name>SomTv_LetzterUmsatz__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>WT AG Beziehung-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- KPIs Geschäftsjahr --></label>
+            <section>KPIs Geschäftsjahr</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Bitte keine Agentur nachträglich ändern, sondern die Beziehung so lassen wie sie  angelegt wurde bezüglich Auswahl WT und AG. Wenn notwendig, bitte neue Beziehung mit unterschiedlicher AG anlegen --></errorMessage>
+        <name>SomDig_AenderungAgentur</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es darf generell kein Datensatztyp &quot;ungültiger Account&quot; bei WT oder AG ausgewählt werden sowie kein Datensatztyp WT bei AG und vise versa. Bitte Datensatztypen der verlinkten Accounts kontrollieren und ggf. anpassen! --></errorMessage>
+        <name>SomDig_KontrolleDatensatztypAccounts</name>
+    </validationRules>
+</CustomObjectTranslation>

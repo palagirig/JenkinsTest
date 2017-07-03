@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Key Players &amp; Competition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Key Players &amp; Competitions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Der Account zu dem der Competitor eingetragen werden soll wird hier erfasst. --></help>
+        <label><!-- Account --></label>
+        <name>Ven_Account_Key_Player_Competition__c</name>
+        <relationshipLabel><!-- Key Players &amp; Competitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hier wird der Competitor zur Account erfasst. Der Competitor muss nicht als Account in Salesforce erfasst werden. --></help>
+        <label><!-- Competitor --></label>
+        <name>Ven_Competitor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Informationen zum Competitor zur verknüpften Account eintragen. --></help>
+        <label><!-- Informationen zum Competitor --></label>
+        <name>Ven_Informationen_zum_competitor__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Key Players &amp; Competition-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

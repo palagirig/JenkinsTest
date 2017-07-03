@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$ADvendio__Site__c.SomDig_Werbetraergergruppierung__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$ADvendio__Site__c.SomDig_Mediagattung__c</field>
+    </columns>
+    <columns>
+        <field>ADvendio__AdServer_ID__c.SomDig_MediagattungsSegment__c</field>
+    </columns>
+    <columns>
+        <field>ADvendio__AdServer_ID__c.SomDig_ContentType__c</field>
+    </columns>
+    <columns>
+        <field>FK_$ADvendio__Site__c.ADvendio__Mandator__c</field>
+    </columns>
+    <columns>
+        <field>FK_$ADvendio__Site__c.SomDig_InternerMandant__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Zur Prüfung der Verortung von AdserverIDs zu Werbeträgern und Werbeträgergruppen</description>
+    <filter>
+        <criteriaItems>
+            <column>ADvendio__AdServer_ID__c.ADvendio__Parent_AdServer_ID__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>5731</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Verortung: Adunits mit WT und WTG</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ADvendio__AdServer_ID__c@ADvendio__AdServer_ID__c.ADvendio__Site__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

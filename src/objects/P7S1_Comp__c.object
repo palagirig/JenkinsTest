@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Firmen des P7S1-Konzerns
+diesen Firmen werden Mitarbeiter zugeordnet.
+inklusive externen Partnern/Lieferanten, die Mitarbeiter/User bereit stellen</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>zugeordneter Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>zugeordneter Account</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>P7S1 Firmen</relationshipLabel>
+        <relationshipName>P7S1_Firmen</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_CompNo__c</fullName>
+        <description>Accountnummer, wird vor allem für DWH-SST benötigt</description>
+        <externalId>false</externalId>
+        <formula>P7S1_Account__r.AccountNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Accountnummer, wird vor allem für DWH-SST benötigt</inlineHelpText>
+        <label>Accountnummer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_EmpCountActive__c</fullName>
+        <description>Anzahl aktiver Mitarbeiter</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Anzahl aktiver Mitarbeiter</inlineHelpText>
+        <label>Anzahl Mitarbeiter aktiv</label>
+        <summaryFilterItems>
+            <field>P7S1_Emp__c.P7S1_IsActive__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>P7S1_Emp__c.P7S1_Comp__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_EmpCount__c</fullName>
+        <externalId>false</externalId>
+        <label>Anzahl Mitarbeiter</label>
+        <summaryForeignKey>P7S1_Emp__c.P7S1_Comp__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Konzernmitglied__c</fullName>
+        <externalId>false</externalId>
+        <formula>P7S1_Account__r.P7S1_Konzernmitglied__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>P7S1-Konzernmitglied</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <gender>Feminine</gender>
+    <label>P7S1 Firma</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Konzernmitglied__c</columns>
+        <columns>P7S1_Account__c</columns>
+        <columns>P7S1_EmpCount__c</columns>
+        <columns>P7S1_EmpCountActive__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Konzernmitglieder</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Konzernmitglied__c</columns>
+        <columns>P7S1_Account__c</columns>
+        <columns>P7S1_EmpCount__c</columns>
+        <columns>P7S1_EmpCountActive__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Konzernmitglied__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>P7S1 Konzernmitglieder</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Firmenname</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>P7S1 Firmen</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>P7S1_Account__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>P7S1_Account__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>P7S1_Account__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>P7S1_Account__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>P7S1_Account__c</searchFilterFields>
+        <searchResultsAdditionalFields>P7S1_Account__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

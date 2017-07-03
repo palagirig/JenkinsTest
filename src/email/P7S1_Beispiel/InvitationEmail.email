@@ -1,0 +1,24 @@
+Sehr geehrte(r) {!Connection.ExternalContactFirstName}:
+
+als geschätzten Partner von {!Organization.Name} möchten wir Sie einladen, auf der preisgekrönten On-Demand-Force.com-Plattform von salesforce.com eine Verbindung zu unserem Unternehmen aufzubauen.
+
+Wir sind der Ansicht, dass eine Verbindung zwischen unseren beiden Unternehmen der nächste logische Schritt in unserer Geschäftsbeziehung ist und zu noch besserer Zusammenarbeit und größerem Erfolg für beide Unternehmen führen wird.
+
+Um diese Einladung anzunehmen, muss im salesforce.com-Account Ihres Unternehmens "Salesforce-zu-Salesforce" aktiviert sein und Sie müssen die erforderliche Autorisierung zur Durchführung des Vorgangs besitzen. Wenn Sie noch kein salesforce.com-Kunde sind, haben Sie die Möglichkeit, einen Testaccount zu beantragen.
+
+Bitte leiten Sie diese Anfrage an Ihren Systemadministrator weiter, wenn Sie sich nicht sicher sind, ob die oben genannten Bedingungen erfüllt sind.
+
+Wir hoffen, dass Sie unsere Einladung annehmen.Klicken Sie dazu auf folgenden Link:
+{!Connection.InvitationURL}
+
+Sobald unsere Unternehmen verbunden sind, können wir sofort Datensätze austauschen und verfügen über Echtzeiteinblick in unsere Vertriebskette!
+
+Ich freue mich darauf, mit Ihnen zusammenzuarbeiten, um nachhaltigen Erfolg für unsere beiden Unternehmen zu erzielen.
+
+
+Mit freundlichen Grüßen
+
+
+{!User.FirstName} {!User.LastName}
+
+{!Organization.Name}

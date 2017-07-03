@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Externe ID</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Externe IDs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Zeigt die Externe Id als Nummer an --></help>
+        <label><!-- ExtIdProSedi --></label>
+        <name>ExtIdProSedi__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nimmt die ID aus Prosa, SAP oder anderen Anwendungen auf für diesen Account --></help>
+        <label><!-- Account --></label>
+        <name>P7S1_Account__c</name>
+        <relationshipLabel><!-- Externe IDs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Nimmt einen Beschreibungstext für diese externe ID auf --></help>
+        <label><!-- Beschreibung --></label>
+        <name>P7S1_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Generierung eines UniqueKey aus einer Kombination ExterneID.Name &amp; Source --></help>
+        <label><!-- Ext. ID Unique Key --></label>
+        <name>P7S1_ExtIdUniqueKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- In welchem System kennzeichnet diese ID diesen Account eineindeutig?
+Wichtig ist das bei Konzerninternen Accounts immer eine separate Sachkontonummer erfasst wird. --></help>
+        <label><!-- Quelle/System --></label>
+        <name>P7S1_Source__c</name>
+        <picklistValues>
+            <masterLabel>Debitorennr BK 29</masterLabel>
+            <translation><!-- Debitorennr BK 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debitorennr BK 29 - Barter</masterLabel>
+            <translation><!-- Debitorennr BK 29 - Barter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debitorennr TV</masterLabel>
+            <translation><!-- Debitorennr TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nielsen-ID</masterLabel>
+            <translation><!-- Nielsen-ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProSa/ProSedi</masterLabel>
+            <translation><!-- ProSa/ProSedi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sachkonto konzernintern</masterLabel>
+            <translation><!-- Sachkonto konzernintern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vermarkter-Id (ProSa)</masterLabel>
+            <translation><!-- Vermarkter-Id (ProSa) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- nur für Quelle ProSa/ProSedi wird hier die Debitorennummer TV gepflegt. Verantwortlich: 71msofakturaprosateam --></help>
+        <label><!-- zugeordnete SAP Deb-Nr TV --></label>
+        <name>SomTv_DebNrForProSedi__c</name>
+    </fields>
+    <fields>
+        <help><!-- Liest für die DWH Schnittstelle die ProRex Account ID aus dem zugehörigen Account aus. --></help>
+        <label><!-- DWH ProRex Id --></label>
+        <name>Som_DwhProRexId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formel: Schaut was im Feld Source steht und setzt bei ProSa/ProSedi + Vermarkter-ID eine 1 , Nielsen eine 2
+&quot;Debitorennr BK 29&quot;  3, &quot;Debitorennr BK 29 - Barter&quot; 4, &quot;Debitorennr TV&quot;  5, &quot;Sachkonto konzernintern&quot; 6 und sonst NULL --></help>
+        <label><!-- DWH Source --></label>
+        <name>Som_DwhSource__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>P7S1_Default</layout>
+        <sections>
+            <label><!-- Administrator --></label>
+            <section>Administrator</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Debitorennummern dürfen maximal 10 Stellen haben. --></errorMessage>
+        <name>P7S1_Debitorennr10Stellig</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Externe-IDs müssen eine Zahl sein --></errorMessage>
+        <name>P7S1_ExternIdIsNumber</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bitte bei Barter beachten, dass im Falle von Rechungsempfänger Inland (Deutschland) die Id mit 287 oder 288 beginnen muss und bei Rechungsempfänger Ausland mit 289. --></errorMessage>
+        <name>SomDig_Barter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Account noch überprüft wird dann können keine Änderungen an Externe ID vorgenommen werden. --></errorMessage>
+        <name>SomTv_AccZuUeberpruefen_ExterneIDProtect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Die Externen IDs dürfen je nach Quelle/System ausschließlich von diversen Unternehmensbereichen/Abteilungen der SevenOne Media geschrieben werden. Sie verfügen nicht über die entsprechende Berechtigung der gewählten Quelle/System. --></errorMessage>
+        <name>Som_BerechtigungQuelleSystem</name>
+    </validationRules>
+</CustomObjectTranslation>

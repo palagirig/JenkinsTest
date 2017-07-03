@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_ExternalId__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCountry</field>
+    </columns>
+    <columns>
+        <field>Account$P7S1_Konzernmitglied__c</field>
+    </columns>
+    <columns>
+        <field>Account$P7S1_UstIdNr__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Dieser Bericht zeigt die Accounts je Steuerkennzeichen an</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.P7S1_ExternalId__r$P7S1_Source__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Debitorennr BK 29,Debitorennr BK 29 - Barter</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$P7S1_Steuerkennzeichen__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Steuerkennzeichen an Debitoren</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_mit_externer_ID__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

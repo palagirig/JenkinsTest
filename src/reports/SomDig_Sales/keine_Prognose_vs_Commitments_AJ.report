@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account$SomDig_PrognoseGesamtAj__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Keine hinterlegte Prognose im AJ, aber Commitment mind. 1 Tag im AJ (Status egal)</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$SomDig_PrognoseGesamtAj__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <name>keine Prognose vs. Commitments AJ</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomDig_AccountsMitCommitments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

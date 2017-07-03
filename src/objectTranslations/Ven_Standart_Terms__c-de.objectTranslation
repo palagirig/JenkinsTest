@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Standard Term</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Standard Terms</value>
+    </caseValues>
+    <fields>
+        <help><!-- Gibt an in welchen Abschnitt der Term auf dem Vertrag gruppiert werden soll. --></help>
+        <label><!-- Abschnitt --></label>
+        <name>Ven_Abschnitt__c</name>
+        <picklistValues>
+            <masterLabel>Abrechnung und Reporting</masterLabel>
+            <translation><!-- Abrechnung und Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beteiligungsvereinbarung (sofern Verträge nicht zeitgleich abgeschlossen werden)</masterLabel>
+            <translation><!-- Beteiligungsvereinbarung (sofern Verträge nicht zeitgleich abgeschlossen werden) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individuelle Terms</masterLabel>
+            <translation><!-- Individuelle Terms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kündigungsmöglichkeiten von 7V</masterLabel>
+            <translation><!-- Kündigungsmöglichkeiten von 7V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medialeistung</masterLabel>
+            <translation><!-- Medialeistung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rechtsfolgen einer Kündigung durch SevenVentures</masterLabel>
+            <translation><!-- Rechtsfolgen einer Kündigung durch SevenVentures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regelungen für Nachlaufphase</masterLabel>
+            <translation><!-- Regelungen für Nachlaufphase --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Gibt an ob der Term aktiv ist oder nicht! --></help>
+        <label><!-- Aktiv --></label>
+        <name>Ven_Aktiv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist. --></help>
+        <label><!-- Direct Equity (majority) --></label>
+        <name>Ven_Beteiligungsvertrag_Mehrheit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datensatztyp für SevenVentures mit Beteiligungsverträgen (Minderheit) --></help>
+        <label><!-- Direct Equity (minority) --></label>
+        <name>Ven_Beteiligungsvertrag_Minderheit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist. --></help>
+        <label><!-- Call Option --></label>
+        <name>Ven_Call_Option__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist. --></help>
+        <label><!-- Exit-Participation --></label>
+        <name>Ven_Exit_Participation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt an ob dieser Term angezeigt werden soll, wenn im Vertrag eine Beteiligung von Seven Ventures angegeben ist. --></help>
+        <label><!-- Kombination mit Beteiligung --></label>
+        <name>Ven_Kombination_mit_Beteiligung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist. --></help>
+        <label><!-- Medialeistungsvertrag (inkl. EP Light) --></label>
+        <name>Ven_Medialeistungsvertrag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier wird die Priorität des Term angegeben.
+1 = Hoch
+2 = Niedrig --></help>
+        <label><!-- Priorität --></label>
+        <name>Ven_Priorit_t__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier werden die Terms anhand des Service-Levels von Seven Ventures markiert. --></help>
+        <label><!-- Service-Level --></label>
+        <name>Ven_Service_Level__c</name>
+        <picklistValues>
+            <masterLabel>Bronze (&lt;20% MG)</masterLabel>
+            <translation><!-- Bronze (&lt;20% MG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold (25-30% MG oder strategischer Deal)</masterLabel>
+            <translation><!-- Gold (25-30% MG oder strategischer Deal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platin (&gt;=30% MG oder strat. Prio-Deal)</masterLabel>
+            <translation><!-- Platin (&gt;=30% MG oder strat. Prio-Deal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silber (20-24% MG oder Media Investment)</masterLabel>
+            <translation><!-- Silber (20-24% MG oder Media Investment) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier wird der gesamte Text des Standart Term angezeigt. --></help>
+        <label><!-- Standard Term (Lang) --></label>
+        <name>Ven_Standard_Term_Lang__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Standard Term-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Standard Term für folgende Deal Types --></label>
+            <section>Standard Term für folgende Deal Types</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

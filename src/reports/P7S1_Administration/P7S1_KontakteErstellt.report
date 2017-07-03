@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Alle erstellten Kontakte im letzten halben Jahr</description>
+    <filter>
+        <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Contact$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_MONTHS:5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$CreatedBy.P7S1_UserType__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>System</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$CreatedBy.Profile.Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Systemadministrator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Contact$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$CreatedBy.P7S1_Sphere__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>P7S1 Kontakte erstellt</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>P7S1_Kontakte_ohne_andere_Beziehungen__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

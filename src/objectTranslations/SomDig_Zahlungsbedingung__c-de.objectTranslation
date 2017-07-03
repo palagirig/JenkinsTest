@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zahlungsbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Zahlungsbedingungen</value>
+    </caseValues>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eingabemöglichkeit für den Zahlungsbedingungs-Kennzeichen innerhalb von SAP.
+Diese Information muss  mit SAP übereinstimmen und abgestimmt sein, dieses Feld wird bei der Übergabe von ADvendio zu SAP Fi/Co verwendet. --></help>
+        <label><!-- SAP-Code --></label>
+        <name>SomDig_SAPCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte hier den Wert für einen möglicherweise gewährten Skontosatz angeben. --></help>
+        <label><!-- Skontowert --></label>
+        <name>SomDig_Skontowert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zahlungsziel: Innerhalb wie vieler Tage muss der Kunden zahlen ohne Abzug des Skontowertes (also den MN2-Betrag) --></help>
+        <label><!-- Tage Netto --></label>
+        <name>SomDig_TageNetto__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zahlungsziel: Innerhalb wie vieler Tage kann der Kunden zahlen mit Abzug des Skontowertes (also den MN3-Betrag) --></help>
+        <label><!-- Tage Skonto --></label>
+        <name>SomDig_TageSkonto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zahlungsbedingung (Englisch) --></label>
+        <name>SomDig_ZahlungsbedingungEnglisch__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Zahlsungsbedingung-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

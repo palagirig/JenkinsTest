@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Contentsyndication-Partner Daten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Contentsyndication-Partner Daten</value>
+    </caseValues>
+    <fields>
+        <help><!-- Auf welcher AdUnit innerhalb des Adservers ist diese Leistung entstanden. --></help>
+        <label><!-- AdUnit --></label>
+        <name>SomDig_AdUnitId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl der Aggregation --></help>
+        <label><!-- Anzahl --></label>
+        <name>SomDig_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet eineindeutig den Contentsyndication Partner
+113 - Content One
+114 - SnackTV
+115 - ClipKit --></help>
+        <label><!-- Partner-ID --></label>
+        <name>SomDig_CustomTargeting__c</name>
+    </fields>
+    <fields>
+        <help><!-- Positionsnummer LineItem innerhalb des Adservers --></help>
+        <label><!-- Positionsnummer --></label>
+        <name>SomDig_LineItemId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auftragsnummer innerhalb des Adservers. --></help>
+        <label><!-- Auftragsnummer --></label>
+        <name>SomDig_OrderId__c</name>
+    </fields>
+    <fields>
+        <help><!-- An welchem Tag wurde Click/Impression für diesen Contentsyndication- Partner erzeugt. --></help>
+        <label><!-- Leistungsdatum --></label>
+        <name>SomDig_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Handelt es ist um eine Einblendung (AI) oder um einen Klick (Click) --></help>
+        <label><!-- Leistungstyp --></label>
+        <name>SomDig_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jahr --></label>
+        <name>SomDig_Year__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contentsydicationpartner-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Quotexdaten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Quotexdaten</value>
+    </caseValues>
+    <fields>
+        <help><!-- Anteil 71M-Umsatz am Digital-Umsatz --></help>
+        <label><!-- 71M Digital SoA --></label>
+        <name>SomDig_71M_SoA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der digitalen Werbeträger der SEVENONE MEDIA --></help>
+        <label><!-- 71M Digital --></label>
+        <name>SomDig_71M__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil ASMI-Umsatz am Digital-Umsatz --></help>
+        <label><!-- ASMI SoA --></label>
+        <name>SomDig_ASMI_SoA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der digitalen Werbeträger der AXEL SPRINGER MEDIA IMPACT --></help>
+        <label><!-- ASMI --></label>
+        <name>SomDig_ASMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Alle Umsätze Digital --></help>
+        <label><!-- Gesamt Digital --></label>
+        <name>SomDig_GesamtDigital__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil IP-Umsatz am Digital-Umsatz --></help>
+        <label><!-- IP Digital SoA --></label>
+        <name>SomDig_IP_SoA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der digitalen Werbeträger der IP DT --></help>
+        <label><!-- IP Digital --></label>
+        <name>SomDig_IP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil 71M-Umsatz am Universe-Umsatz --></help>
+        <label><!-- Universe Digital SoA --></label>
+        <name>SomDig_Universe_SoA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz Digital der Vermarkter 71M und IP --></help>
+        <label><!-- Universe Digital --></label>
+        <name>SomDig_Universe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Som_Account__c</name>
+        <relationshipLabel><!-- Quotexdaten --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- auf welchen Zeitraum beziehen sich die momentanen Daten. Inklusive Angabe des DAtenstands der Daten. --></help>
+        <label><!-- Datenstand --></label>
+        <name>Som_Datenstand__c</name>
+    </fields>
+    <fields>
+        <help><!-- Umsätze aller Medienklassen --></help>
+        <label><!-- Gesamt Medienklasse --></label>
+        <name>Som_GesamtMkl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Umsätze alle TV --></help>
+        <label><!-- Gesamt TV --></label>
+        <name>Som_GesamtTv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jahr --></label>
+        <name>Som_Jahr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Umsatz der Medienklasse ONLINE --></help>
+        <label><!-- Digital --></label>
+        <name>Som_MklGruppeDigital__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der Medienklassen Zeitungen, Publikumszeitschriften, Fachzeitschriften --></help>
+        <label><!-- Print --></label>
+        <name>Som_MklGruppePrint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der Medienklassen Radio, Kino, Out of Home --></help>
+        <label><!-- Rest --></label>
+        <name>Som_MklGruppeRest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Umsatz der Medienklasse TV --></help>
+        <label><!-- TV --></label>
+        <name>Som_MklGruppeTV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Liste aller dem Account zugehörigen Nielsen IDs --></help>
+        <label><!-- Nielsen-IDs --></label>
+        <name>Som_NielsenIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Die ProRex-ID des zugehörigen Accounts. --></help>
+        <label><!-- Accountnummer --></label>
+        <name>Som_ProRexId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil 71M-Umsatz am TV-Umsatz --></help>
+        <label><!-- 71M TV SoA --></label>
+        <name>Som_Soa71M__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil Digital-Umsatz am Gesamt-Umsatz --></help>
+        <label><!-- Digital SoA --></label>
+        <name>Som_SoaDigital__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil IP-Umsatz am TV-Umsatz --></help>
+        <label><!-- IP TV SoA --></label>
+        <name>Som_SoaIp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil Print-Umsatz am Gesamt-Umsatz --></help>
+        <label><!-- Print SoA --></label>
+        <name>Som_SoaPrint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil Rest-Umsatz am Gesamt-Umsatz --></help>
+        <label><!-- Rest SoA --></label>
+        <name>Som_SoaRest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil TV-Umsatz am Gesamt-Umsatz --></help>
+        <label><!-- TV SoA --></label>
+        <name>Som_SoaTV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anteil 71-Media-Umsatz am Universe-Umsatz --></help>
+        <label><!-- Universe TV SoA --></label>
+        <name>Som_SoaUniverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- stellt Eindeutigkeit sicher des zusammengesetzten Schlüssels:
+Jahr + Zeitraum + Account --></help>
+        <label><!-- Som_UniqueKey --></label>
+        <name>Som_UniqueKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der Werbeträger der SEVENONE MEDIA --></help>
+        <label><!-- 71M TV --></label>
+        <name>Som_Wt71m__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der Sender der IP DEUTSCHLAND --></help>
+        <label><!-- IP TV --></label>
+        <name>Som_WtIp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kumulierter Umsatz der Vermarkter 71Media und IP --></help>
+        <label><!-- Universe TV --></label>
+        <name>Som_WtUniverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- GJ=Gesamtjahr, YTM=YearToMonth --></help>
+        <label><!-- Zeitraum --></label>
+        <name>Som_ZeitraumTyp__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SomTv_QuotexdatenDigital</layout>
+        <sections>
+            <label><!-- Aufteilung nach Medienklasse --></label>
+            <section>Aufteilung nach Medienklasse</section>
+        </sections>
+        <sections>
+            <label><!-- Aufteilung nach Vermarkter Digital --></label>
+            <section>Aufteilung nach Vermarkter Digital</section>
+        </sections>
+        <sections>
+            <label><!-- Aufteilung nach Vermarkter TV --></label>
+            <section>Aufteilung nach Vermarkter TV</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomTv_QuotexdatenTv</layout>
+        <sections>
+            <label><!-- Aufteilung nach Medienklasse --></label>
+            <section>Aufteilung nach Medienklasse</section>
+        </sections>
+        <sections>
+            <label><!-- Aufteilung nach Vermarkter Digital --></label>
+            <section>Aufteilung nach Vermarkter Digital</section>
+        </sections>
+        <sections>
+            <label><!-- Aufteilung nach Vermarkter TV --></label>
+            <section>Aufteilung nach Vermarkter TV</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- SomTv_QuotexdatenMedienklasse --></label>
+        <name>SomTv_QuotexdatenMedienklasse</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SomTv_QuotexdatenTv --></label>
+        <name>SomTv_QuotexdatenTv</name>
+    </webLinks>
+</CustomObjectTranslation>

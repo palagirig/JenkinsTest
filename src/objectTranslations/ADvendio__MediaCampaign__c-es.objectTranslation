@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campaña de medios</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campañas de medios</value>
+    </caseValues>
+    <fields>
+        <help><!-- Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird --></help>
+        <label><!-- Mig_ProdiaKey --></label>
+        <name>Mig_ProdiaKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datumanzeige der Position, die als nächstes endet --></help>
+        <label><!-- Nächster Position-Ende --></label>
+        <name>SomDigNaechsterPositionEnde__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datumanzeige der Position, die als nächstes startet --></help>
+        <label><!-- Nächster Position-Start --></label>
+        <name>SomDigNaechsterPositionStart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aus den unterliegenden Positionen übernommen (z.B. “CPD” und “CPC” ergeben in der Mediakampagne den Wert “CPD/CPC”) --></help>
+        <label><!-- Abrechnungsart --></label>
+        <name>SomDig_Abrechnungsart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Welcher AdManager betreut diese Mediakampagne? --></help>
+        <label><!-- Ad Manager --></label>
+        <name>SomDig_AdManager__c</name>
+        <relationshipLabel><!-- Media Campaigns (Ad Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- AdServer-Order-Id der Positionen;
+vorausgesetzt - alle Positionen sind mit dem gleichen (DFP) AdServer verlinkt! (Positionen, die nicht mit DFP verlinkt sind (AdServerId leer) werden dabei nicht berücksichtigt. --></help>
+        <label><!-- AdServer Order-Id --></label>
+        <name>SomDig_AdServerOrderId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agenturrabatt --></label>
+        <name>SomDig_Agenturrabatt__c</name>
+    </fields>
+    <fields>
+        <help><!-- muss gekennzeichnet werden bei einem Aktionsrabatt --></help>
+        <label><!-- Aktionsrabatt --></label>
+        <name>SomDig_Aktionsrabatt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für die Berechnung von Screenshots Status (alle LIs ausgenommen &apos;Non-AdServer LIs) --></help>
+        <label><!-- Anzahl AdServer LIs --></label>
+        <name>SomDig_AnzahlAdServerLI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für die Berechnung der Anzahl aller LIs --></help>
+        <label><!-- Anzahl aller LIs --></label>
+        <name>SomDig_AnzahlAllerLIs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl aller LIs, die nicht genehmigt sind (Rabatte &amp; Mindestpreis) --></help>
+        <label><!-- Anzahl der nicht genehmigten LIs --></label>
+        <name>SomDig_AnzahlDerNichtGenehmigtenLIs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wie viele festplatzierte Positionen gibt es in dieser Mediakampagne?
+Derzeit werden CPD und CPW berücksichtigt. --></help>
+        <label><!-- Anzahl festplazierter Positionen --></label>
+        <name>SomDig_AnzahlFestplazierterPositionen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wie viele Positionen mit der Abrechnungsart CPW (CostPerWeek) sind in der Mediakampagne? --></help>
+        <label><!-- Anzahl Festplazierung CPW --></label>
+        <name>SomDig_AnzahlFestplazierungCPW__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wie viele Positionen mit der Abrechnungsart CPD (CostPerDay) sind in der Mediakampagne? --></help>
+        <label><!-- Anzahl Festplazierung CPD --></label>
+        <name>SomDig_AnzahlFestplazierungCpd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl Naturalrabatt Positionen --></label>
+        <name>SomDig_AnzahlNaturalrabattPositionen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl der NonMedia bzw. Diernstleistungs Positionen, bzw. mit Mediagattungs-Segment gleich &quot;NonMedia&quot; --></help>
+        <label><!-- Anzahl NonMedia CI --></label>
+        <name>SomDig_AnzahlNonMediaCi2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl Screenshots --></label>
+        <name>SomDig_AnzahlScreenshots__c</name>
+    </fields>
+    <fields>
+        <help><!-- Welcher PAM-Mitarbeiter betreut diese Mediakampagne? --></help>
+        <label><!-- Campaign Manager --></label>
+        <name>SomDig_BetreuerPam__c</name>
+        <relationshipLabel><!-- Media Campaigns (Campaign Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Welcher Sales-Mitarbeiter betreut diese Mediakampagne? --></help>
+        <label><!-- Betreuer Sales --></label>
+        <name>SomDig_BetreuerSales__c</name>
+        <relationshipLabel><!-- Media Campaigns (Betreuer Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Welches Team und welcher Vermarkter betreut die Mediakampagne im Buchungstool? --></help>
+        <label><!-- Betreuer Team --></label>
+        <name>SomDig_BetreuerTeam__c</name>
+        <relationshipLabel><!-- Mediakampagne --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commitment --></label>
+        <name>SomDig_Commitment__c</name>
+        <relationshipLabel><!-- Mediakampagnen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Bitte einkreuzen, wenn commitmentbildend --></help>
+        <label><!-- Commitmentbildend --></label>
+        <name>SomDig_Commitmentbildend__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum an, wann das Angebot auf &apos;Auftrag&apos; gesetzt wurde bzw. sich der Status von Angebot in Auftrag änderte. Wird für Reporting zwecke genutzt. --></help>
+        <label><!-- ContractClosing Date --></label>
+        <name>SomDig_ContractClosingDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current User --></label>
+        <name>SomDig_CurrentUserProfile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, welches benötigt wird um die Debitorennummer auf dem Rechnungslayout anzeigen zu lassen. Wird automatisch per Formel befüllt. Da man im Mapping BA jedes Feld nur einmal Mappen kann. --></help>
+        <label><!-- DebitorennrHelp --></label>
+        <name>SomDig_DebitorennrHelp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Je nach Auftragstyp wird hier die Debitorennummer des Accounts, welcher als Rechnungsempfänger mit dieser Mediakampagne verbunden ist eingetragen. --></help>
+        <label><!-- Debitorennr --></label>
+        <name>SomDig_Debitorennr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debitorennr --></label>
+        <name>SomDig_Debitorennr_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description (automated) --></label>
+        <name>SomDig_DescriptionAutomated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tragen Sie eine Beschreibung der Mediakampagne ein. Diese Beschreibung wir auch auf dem Angebot unter Notizen angezeigt. --></help>
+        <label><!-- Description (manual) --></label>
+        <name>SomDig_DescriptionManual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dienstleistungbezogene Positionen Help --></label>
+        <name>SomDig_DienstleistungbezogeneHelp__c</name>
+    </fields>
+    <fields>
+        <help><!-- zeigt wie viele LI hängen zusammen mit einem &quot;DienstleistungsLI&quot; --></help>
+        <label><!-- Dienstleistungbezogene Positionen --></label>
+        <name>SomDig_DienstleistungbezogenePositionen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dienstleistungspositionen Help --></label>
+        <name>SomDig_DienstleistungspositionenHelp__c</name>
+    </fields>
+    <fields>
+        <help><!-- zeigt die Anzahl von Dienstleistungsrelevanten LIs, von Werbeformen, die intern produziert werden --></help>
+        <label><!-- Dienstleistungspositionen --></label>
+        <name>SomDig_Dienstleistungspositionen__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig_GesamtrabattKonsekutivMaxCi --></label>
+        <name>SomDig_GesamtrabattKonsekutivMaxCi__c</name>
+    </fields>
+    <fields>
+        <help><!-- AR und KR konsekutiv zusammengerechnet --></help>
+        <label><!-- Gesamtrabatt Konsekutiv --></label>
+        <name>SomDig_GesamtrabattKonsekutiv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Keine Rechnungsstellung und Weitergabe an SAP via Buchungstool, daher wird &quot;Abzurechnen?&quot; per Workflow auf &apos;falsch&apos; gesetzt (wird von der Abteilung Yield genutzt, hieß im alten Buchungstool &quot;Gutschrift (Affiliate)&quot;) Wird auch für AdAudiance genutzt. --></help>
+        <label><!-- Gutschrift --></label>
+        <name>SomDig_GutschriftPerformance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Benutzer alias --></help>
+        <label><!-- Inhaber-Kürzel --></label>
+        <name>SomDig_Inhaber_Kuerzel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl freigegebene Rechnungen. Wenn &gt; 0 kann Kampagne inkl. Positionen nicht verändert werden. --></help>
+        <label><!-- Anzahl freigegebene Rechnungen --></label>
+        <name>SomDig_InvoicesReviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is@Risk Count --></label>
+        <name>SomDig_IsRiskCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- @risk --></label>
+        <name>SomDig_IsRiskStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ist diese Mediakampagne eine Konvergente, d.h. gibt es im TV einen weiteren Teil zu dieser Kampagne (aus Agentursicht) mit derselben Werbebotschaft? Bitte manuell befüllen, wenn es sich um eine konvergente Kampagne handelt. --></help>
+        <label><!-- Konvergenz --></label>
+        <name>SomDig_Konvergenz__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kundenrabatt-InPage gesamt --></help>
+        <label><!-- Kundenrabatt-InPage --></label>
+        <name>SomDig_Kundenrabatt_InPage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kundenrabatt-InStream gesamt --></help>
+        <label><!-- Kundenrabatt-InStream --></label>
+        <name>SomDig_Kundenrabatt_InStream__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datumanzeige der Position, die als letztes geendet ist --></help>
+        <label><!-- Letzter Position-Ende --></label>
+        <name>SomDig_LetzterPositionEnde__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link zum DFP --></help>
+        <label><!-- Link zur Mediakampagne in DFP --></label>
+        <name>SomDig_LinkZurMediakampagneInDFP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feld wird autom. befüllt bei Auftragssplitt mit Info/LookUp der Ursprungskampagne --></help>
+        <label><!-- Master-Media Campaign --></label>
+        <name>SomDig_MasterMediaCampaign__c</name>
+        <relationshipLabel><!-- Mediakampagnen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- MN2-Wert minus Skonto (wenn ein Skonto für die Mediakampagne ausgewählt wurde) ergibt MN3 --></help>
+        <label><!-- MN3 --></label>
+        <name>SomDig_Mn3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Naturalrabatt-Inpage gesamt --></help>
+        <label><!-- Naturalrabatt-Inpage --></label>
+        <name>SomDig_Naturalrabatt_Inpage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nicht genehmigte Positionen --></label>
+        <name>SomDig_NotApprovedPositons__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld dient zur internen Beschreibung durch den PAM und wird an den AdServer übergeben --></help>
+        <label><!-- PAM Kommentar --></label>
+        <name>SomDig_PAMKommentar2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld dient zur interenen Beschreibung durch den PAM und wird an den AdServer übergeben --></help>
+        <label><!-- PAM Kommentar --></label>
+        <name>SomDig_PAMKommentar__c</name>
+    </fields>
+    <fields>
+        <help><!-- neu-gelb 
+to do-rot 
+planmässig-grün 
+abgeschlossen-grau 
+non adserver-kein flag --></help>
+        <label><!-- PAM Status Flag --></label>
+        <name>SomDig_PAMStatusFlag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auftragsnummer aus ProDia, welche im Rahmen des Kampagnenumzugs erfasst wird --></help>
+        <label><!-- ProDia-Auftragsnr. --></label>
+        <name>SomDig_ProDiaAuftragsnr__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig_ProfilBillingBI --></label>
+        <name>SomDig_ProfilBillingBI__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig_ProfilPamBilling --></label>
+        <name>SomDig_ProfilPamBilling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checkbox zur Auswertung von Programmatic Guaranteed Mediakampagnen --></help>
+        <label><!-- Programmatic Guaranteed --></label>
+        <name>SomDig_ProgrammaticGuaranteed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ermittelt die Genehmigungsstufe für Rabattfreigabe --></help>
+        <label><!-- Rabatt-Stufe --></label>
+        <name>SomDig_RabattStufe__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld; wenn belegt - dann sind die Rabatte genehmigt --></help>
+        <label><!-- Rabatte MK genehmigt --></label>
+        <name>SomDig_RabatteMKgenehmigt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, befüllt als Outcome vom Rabatt-Genehmigungsprozess; schaltet automatisch zwischen freigegebenen und nicht freigegebenen Datensatztypen; Dokumenterstellung für &apos;nicht-freigegebene&apos; MKs nicht möglich! --></help>
+        <label><!-- Rabatte nicht freigegeben --></label>
+        <name>SomDig_RabatteNichtFreigegeben__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restwerbezeit --></label>
+        <name>SomDig_Restwerbezeit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ist an diesem Angebot/Auftrag ein SAC/Conception Manager beteilt?
+Hier kann der jeweilige SAC /CM verknüpft werden. --></help>
+        <label><!-- SAC/Conception Manager --></label>
+        <name>SomDig_SACConceptionManager__c</name>
+        <relationshipLabel><!-- Media Campaigns (SAC/Conception Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- signalisiert ob die Screenshots für alle darunter liegende LIs versendet sind --></help>
+        <label><!-- Screenshot Flag --></label>
+        <name>SomDig_ScreenshotFlag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sonderrabatt-InPage gesamt --></help>
+        <label><!-- Sonderrabatt-InPage --></label>
+        <name>SomDig_Sonderrabatt_InPage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sonderrabatt-InStream gesamt --></help>
+        <label><!-- Sonderrabatt-InStream --></label>
+        <name>SomDig_Sonderrabatt_InStream__c</name>
+    </fields>
+    <fields>
+        <help><!-- für DWH Export muss deutscher Wert bereit gestellt werden, das Daten über API ausgelesen immer den englischen Wert liefern --></help>
+        <label><!-- Phase (DWH) --></label>
+        <name>SomDig_Stage__c</name>
+    </fields>
+    <fields>
+        <help><!-- neu: keine LIs angelegt
+to do: Mindestens EINE Position steht auf Entwurf, Pausiert, -erfüllt o. -unterliefert
+planmässig: ALLE haben den Status Bereit o. Auslieferung
+abgeschlossen: ALLE beendet und abgerechnet
+NonAdserver: ALLE NonAdServer Produkte --></help>
+        <label><!-- Status --></label>
+        <name>SomDig_StatusPAMCockpit__c</name>
+        <picklistValues>
+            <masterLabel>Non AdServer</masterLabel>
+            <translation><!-- Non AdServer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>abgeschlossen</masterLabel>
+            <translation><!-- abgeschlossen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>neu</masterLabel>
+            <translation><!-- neu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>planmässig</masterLabel>
+            <translation><!-- planmässig --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to do</masterLabel>
+            <translation><!-- to do --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Anzahl fakturierter und freigegebener Rechnungen. --></help>
+        <label><!-- Sum Reviewed and Invoiced Invoices --></label>
+        <name>SomDig_SumReviewedAndInvoicedInvoices__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe AIs aller LineItems.
+Internes Hilfsfeld für Validierung &quot;SomDig_Stornierung&quot; --></help>
+        <label><!-- Summe ausgelieferte AIs --></label>
+        <name>SomDig_SummeAusgelieferteAIs__c</name>
+    </fields>
+    <fields>
+        <help><!-- liegt Accountteam-Freigabe für 71M vor? --></help>
+        <label><!-- SomDig_TempTicket4875 --></label>
+        <name>SomDig_TempTicket4875__c</name>
+    </fields>
+    <fields>
+        <help><!-- Übernimmt automatisch den Wert, welcher am Account des Werbetreibenden im Feld &quot;Top1 Wirtschaftsbereich&quot; gepflegt wurde --></help>
+        <label><!-- Top1 Wirtschaftsbereich --></label>
+        <name>SomDig_Top1Wirtschaftsbereich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wenn durch Super User gesetzt, erlaubt es eine Buchung trotz nicht ausreichender Verfügbarkeit. --></help>
+        <label><!-- Überbuchen --></label>
+        <name>SomDig_Ueberbuchen__c</name>
+    </fields>
+    <fields>
+        <help><!-- MwSt Befreiung liegt vor, wenn Debitor nicht das Steuerkennzeichen AS besitzt. --></help>
+        <label><!-- MwSt befreit --></label>
+        <name>SomDig_VATExempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verfügbarkeitsrelevant --></label>
+        <name>SomDig_Verfuegbarkeitsrelevant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Statt WT und AG wird die Beziehung hier ausgewählt. Infofelder WT und AG füllen sich dann automatisch --></help>
+        <label><!-- WT AG Beziehung --></label>
+        <name>SomDig_WtAgBeziehung__c</name>
+        <relationshipLabel><!-- Mediakampagnen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Nimmt die möglichen Zahlungsbedingungen auf um die in der Medienkampagne gewählten Zahlungsbedingungen korrekt an SAP übergeben zu können. 
+Erfasst werden Prozentangaben Skonto, Zahlungsbedingungstext, SAP-Code (Bezeichner) --></help>
+        <label><!-- Zahlungsbedingung --></label>
+        <name>SomDig_Zahlungsbedingung__c</name>
+        <relationshipLabel><!-- Mediakampagnen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- zeigt, ob es sich um ein Zubuchungsangebot handelt --></help>
+        <label><!-- Zubuchung --></label>
+        <name>Somdig_Zubuchung__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SomDig_Angebot Layout</layout>
+        <sections>
+            <label>Información adicional</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de la descripción</label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Rabatte --></label>
+            <section>Rabatte</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomDig_Auftrag Layout</layout>
+        <sections>
+            <label>Información adicional</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de la descripción</label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Rabatte --></label>
+            <section>Rabatte</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de Campaña de medios</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Angebot --></label>
+        <name>SomDig_Angebot</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Auftrag --></label>
+        <name>SomDig_Auftrag</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Nur User mit dem Profil Billing, CAM, Bi und Sales dürfen die gewünschte Änderung am Feld &quot;Abrechnen&quot; durchführen. --></errorMessage>
+        <name>SomDig_Abrechnen_KeinStandard</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Nur User mit dem Profil Billing dürfen die gewünschte Änderung am Feld &quot;Abrechnen&quot; durchführen. --></errorMessage>
+        <name>SomDig_Abrechnen_Standard</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Der Kampagnenstart darf nicht vor dem 01.04.2016 liegen. --></errorMessage>
+        <name>SomDig_CheckStartDatum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ab einer Wahrscheinlichkeit von über 25 % muss beim Rechnungsempfänger-Account eine Debitorennummer in Form einer Externen ID eingetragen sein. Dies scheint nicht der Fall zu sein, bitte Debitorennummer am Account pflegen (lassen) --></errorMessage>
+        <name>SomDig_DebitorennummerMissing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es dürfen keine Media-Kampagnen gebucht werden, welche in zwei unterschiedlichen Jahren laufen bzw. eine jahresübergreifende Buchung beinhalten. --></errorMessage>
+        <name>SomDig_Jahresuebergreifende_MKampagnen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Einer der Rabatte ist &gt; 65% ODER die MK ist nicht genehmigt bzw. nicht mit einem genehmigten Commitment verlinkt. Starten sie einen Genehmigungsprozess bzw. wählen die Phase &quot;Potenzial&quot;. --></errorMessage>
+        <name>SomDig_MKCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Die MK ist genehmigt. Rabatte dürfen nicht mehr verändert werden. --></errorMessage>
+        <name>SomDig_MKCheck2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Die Phase kann nicht geändert werden, wenn die MK nicht genehmigt ist. Bitte starten sie einen Genehmigungsprozess. --></errorMessage>
+        <name>SomDig_MKCheck3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bei einer Gutschrift darf keine Zahlungsbedingung mit Skonto gewählt werden --></errorMessage>
+        <name>SomDig_MKGutschriftZahlungsbSkonto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn zugeordnete Preisliste im Auftragstyp &quot;Barter&quot; hinterlegt hat, dann darf keine Zahlungsbedingung mit Skonto gewählt werden --></errorMessage>
+        <name>SomDig_MKPLBarterZahlungsbSkonto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bei mindestens einer Position ist der Mindestpreis nicht genehmigt. Bitte Mindestpreisunterschreitung auf Ebene der Kampagnenposition zur Genehmigung einreichen. --></errorMessage>
+        <name>SomDig_MediaCampaignStatusMindestpreis</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn die Mediakampagne bereits auf Auftrag gesetzt wurde, dürfen diverse Informationen nicht mehr verändert bzw. angepasst werden. --></errorMessage>
+        <name>SomDig_MediakampagneAuftragFeldfixierung</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Die Konstellation des Status dieser Mediakampagne kann in dieser Form nicht mehr verändert werden: 
+1) Mediakampagne ist final abgelehnt,  
+2) Auftrag kann nicht wieder zu einem Angebot werden (gesteuert über Datensatztyp), 
+3) Stornos sind final --></errorMessage>
+        <name>SomDig_MediakampagneStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Feld Programmatic Guaranteed darf im Status &quot;Auftrag&quot; nur von Benutzern mit dem Profil &quot;SomDig_Billing&quot; oder von &quot;Sales Steering&quot; geändert werden --></errorMessage>
+        <name>SomDig_MkAuftragProgrammaticGuaranteed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Preisliste bitte nur über die Schaltfläche oben im Layout ändern, nicht am Feld direkt. --></errorMessage>
+        <name>SomDig_Preisliste_aendern</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rabbattänderung im Auftragsstatus ist nicht erlaubt! --></errorMessage>
+        <name>SomDig_Rabbattaenderung_Auftragsstatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- wenn freigegebene Rechnungen vorliegen, darf Kampagne inkl. Positionen nicht geändert werden. --></errorMessage>
+        <name>SomDig_RechnungFreigegeben</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In der Phase Auftrag kann das Merkmal von den Profilen BI und CAM  geändert werden. --></errorMessage>
+        <name>SomDig_Restwerbezeit_Auftrag</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Das Merkmal kann nur für den Auftragstyp Standard gesetzt werden. --></errorMessage>
+        <name>SomDig_Restwerbezeit_AuftragstypStandard</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Zulässige Zeichen im Kampagnennamen nur nach ISO 8859-1, bitte Zeichen im Kampagnennamen kontrollieren. --></errorMessage>
+        <name>SomDig_Sonderzeichen_Kampagnennamen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Der Inkasso-Status des Rechnungsempfänger-Accounts ist &quot;not OK&quot;: Entweder Billing den Inkasso-Status am Rechnungsempfänger ändert lassen oder Genehmigungsanfrage in der Mediakampagne stellen, damit Billing trotz schlechtem Inkassostatus auf Auftrag setzt --></errorMessage>
+        <name>SomDig_Validierungsregel_Vorkasse</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- WT-AG Beziehung muss angegeben werden. --></errorMessage>
+        <name>SomDig_WtAgPflicht</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Account Konzernmitglied, oder dies ein Auftrag mit ausschließlich Dienstleistungen ist, dann darf keine Zahlungsbedingung mit Skonto gewählt werden --></errorMessage>
+        <name>SomDig_ZahlungsbedingungSkonto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es darf als Werbetreibender, Agentur, Rechnungsempfänger oder Auftraggeber kein ungültiger Account ausgewählt werden. --></errorMessage>
+        <name>Validierung_ungueltiger_Account</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SomDig_IaNummer__c$Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_IaNummer__c$SomDig_Werbetraergergruppierung__c</field>
+    </columns>
+    <columns>
+        <field>SomDig_IaNummer__c$SomDig_Mediagattung__c.Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_IaNummer__c$SomDig_MediagattungsSegment__c.Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_IaNummer__c$SomDig_MediagattungsDifferenzierung__c.Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_IaNummer__c$Som_SachkontokonzernintereneVerrechnung__c</field>
+    </columns>
+    <columns>
+        <field>SomDig_IaNummer__c$SomDig_BeschreibungCO__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Alle Innenauftragsnummern (IA), siehe auch KV 3342</description>
+    <format>Tabular</format>
+    <name>Innenauftragsnummern</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomDig_IaNummerBenutzerdefiniert__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>SomDig_IaNummer__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SomDig_IaNummer__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

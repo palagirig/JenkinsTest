@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Site --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Site --></value>
+    </caseValues>
+    <fields>
+        <help><!-- INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden --></help>
+        <label><!-- Migration Info --></label>
+        <name>Mig_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_IsBrand --></label>
+        <name>Mig_IsBrand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_IsSpecialInterest --></label>
+        <name>Mig_IsSpecialInterest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird --></help>
+        <label><!-- Mig_ProdiaKey --></label>
+        <name>Mig_ProdiaKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnung als Grundlage für einige Berichte - Zuordnung einer Seite zu einer Gruppe von Werbeträgern. --></help>
+        <label><!-- Werbeträgertyp --></label>
+        <name>SomDig_DEWerbetraegertyp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte kennzeichnen falls es um einen internen Mandaten mit seinen Werbeträgern handelt. --></help>
+        <label><!-- Interner Mandant --></label>
+        <name>SomDig_InternerMandant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Klassifizierung/Zuordnung des Werbeträgers zu einer Mediagattung (TV/Digital/Text) --></help>
+        <label><!-- Mediagattung --></label>
+        <name>SomDig_Mediagattung__c</name>
+        <relationshipLabel><!-- Werbeträger --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Werbeträgergruppierung sind vormals als Marke bekannt und fassen mehrere Werbeträger zusammen,Grundlage für die Zuordnung von IA Nummern &amp; Werbeträgern.
+Möglichkeit Werbeträger zu gruppieren um Marken abzubilden. --></help>
+        <label><!-- Werbeträgergruppierung --></label>
+        <name>SomDig_Werbetraergergruppierung__c</name>
+        <relationshipLabel><!-- Werbeträger --></relationshipLabel>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Site Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche. --></errorMessage>
+        <name>SomDig_NameDoubleBlank</name>
+    </validationRules>
+</CustomObjectTranslation>

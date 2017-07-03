@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_12586444</developerName>
+        <masterLabel>Phase</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Andere</otherBucketLabel>
+        <sourceColumnName>Account.Opportunities$StageName</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Geschlossene und gewonnene</sourceValue>
+            </sourceValues>
+            <value>closed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rabatt freigegeben</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Briefing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Angebot abgegeben</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Identifiziert</sourceValue>
+            </sourceValues>
+            <value>pending</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Storniert</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Geschlossen und verloren</sourceValue>
+            </sourceValues>
+            <value>lost</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_12586444</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Internationale Kunden Opp-Status</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCountry</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$StageName</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$SomTv_MN3__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Neugeschäft über Sales International</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$SomTv_Accounttypen__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Non-71M_Neugeschäft 2016,Non-TV_Neugeschäft 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$BillingCountry</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>D</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_12586444</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>International New Business</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomTv_Accounts_mit_Opps_und_Teams__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

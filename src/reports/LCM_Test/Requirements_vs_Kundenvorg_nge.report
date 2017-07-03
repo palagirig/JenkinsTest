@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lcm_Requirement__c$Name</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c$Lcm_RequirementName__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Datum_F_lligkeit__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Status</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Subject</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Tabular</format>
+    <name>Requirements vs. Kundenvorgänge</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lcm_RequirementsMitKundenvorgaenge__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lcm_Requirement__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lcm_Requirement__c$CreatedDate</dateColumn>
+        <endDate>2014-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-01-01</startDate>
+    </timeFrameFilter>
+</Report>

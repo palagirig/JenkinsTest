@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_11031529</developerName>
+        <masterLabel>Kanban Phase</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lcm_Requirement__c.Kundenvorgaenge__r$Lcm_KanbanKombi__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Backlog_</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FuncSpec_doing</sourceValue>
+            </sourceValues>
+            <value>A. Klärung (FA/Adv)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>FuncSpec_done</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dev_doing</sourceValue>
+            </sourceValues>
+            <value>B. Entwicklung</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dev_done</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Test_doing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Test_done</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GoLive_doing</sourceValue>
+            </sourceValues>
+            <value>C. Test/Umsetzung</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GoLive_done</sourceValue>
+            </sourceValues>
+            <value>D. Final</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Lcm_KanStation__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Lcm_KanStatus__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Rank__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Lcm_CaseEffortTarget__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Datum_F_lligkeit__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Subject</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Wie sieht die aktuelle Umsetzung durch KVs aus bezüglich Optimizer</description>
+    <filter>
+        <criteriaItems>
+            <column>Lcm_Requirement__c$Lcm_VersionName__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NBT 1.06 Optimizer (WBS 4.2)</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Lcm_Release__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_11031529</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Optimizer Übersicht Umsetzung</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lcm_RequirementsMitKundenvorgaenge__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lcm_Requirement__c.Kundenvorgaenge__r$Rank__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Lcm_Requirement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

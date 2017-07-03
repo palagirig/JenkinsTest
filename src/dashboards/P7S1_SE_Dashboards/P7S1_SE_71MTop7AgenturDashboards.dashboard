@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFCCCC</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>2.125E8</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#C2C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturMGMP</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>MGMP (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Millions</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>5.983E8</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturGroupM</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Group M (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Millions</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>2.234E8</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturOmnicom</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Omnicom (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>2.269E8</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturDentsuAegis</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Dentsu Aegis (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>8.77E7</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#54C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturMPG</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>MPG (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>1.301E8</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturVIVAKI</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>PUBLICIS (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>6.22E7</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#C25454</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C25454</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonAgenturPilot</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>pilot (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>1.253E8</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonRest</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Rest (Kernsender)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet</footer>
+            <gaugeMax>9.26E7</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Gewichtete TV-Opps</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsClosedWonNeueSender</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Neue Sender</title>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturMGMP</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>MGMP (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturGroupM</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>Group M (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturOmnicom</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>Omnicom (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturDentsuAegis</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>Dentsu Aegis (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturMPG</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>MPG (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturVIVAKI</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>VIVAKI (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOffenAgenturPilot</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>pilot (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOpenRest</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>Rest (Kernsender)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.P7S1_Mn3Gewichtet__c</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>aktuelles Geschäftsjahr, MN3 gewichtet, &gt;0%</footer>
+            <groupingColumn>PROBABILITY</groupingColumn>
+            <header>Sales Pipeline (gewichtet)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>P7S1_SE_71MDashboards/P7S1_SE_71MOppsOpenNeueSender</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>Neue Sender</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+    </rightSection>
+    <runningUser>martin.unsinn@sevenonemedia.de</runningUser>
+    <textColor>#000000</textColor>
+    <title>Sales Excellence Top7 Agentur Dashboards</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

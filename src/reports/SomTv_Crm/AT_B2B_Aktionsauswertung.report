@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomTv_B2BAktionsmitgliederHistory__c.SomTv_StatusAlt__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Account.SomTv_StrategischePrioritaetAT__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_ACC_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>B2B Aktionsauswertung Österreich</name>
+    <params>
+        <name>scopeid</name>
+        <value>000000000000000</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignCustomEntity$SomTv_B2BAktionsmitgliederHistory__c@SomTv_B2BAktionsmitgliederHistory__c.SomTv_B2BAktinsmitglied__c</reportType>
+    <scope>one</scope>
+    <showDetails>false</showDetails>
+</Report>

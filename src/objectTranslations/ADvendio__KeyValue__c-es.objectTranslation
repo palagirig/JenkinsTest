@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Key Value --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Key Value --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wermittelpreis der zugehörigen Kampagnen-Position --></help>
+        <label><!-- Werbemittelpreis --></label>
+        <name>SomDig_Ad_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kampagnen-Position --></help>
+        <label><!-- Kampagnen-Position --></label>
+        <name>SomDig_Campaign_Item__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Key Value Name --></nameFieldLabel>
+</CustomObjectTranslation>

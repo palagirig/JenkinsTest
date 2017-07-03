@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Benachrichtigung dass eine Opportunity vom Wiedervorlagegremium Final Approval abgelehnt wurde</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ven_Opp. Approval Wiedervorlagegremium Final Approval abgelehnt</name>
+    <style>none</style>
+    <subject>Opportunity wurde vom Wiedervorlagegremium Final Approval endgültig abgelehnt</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

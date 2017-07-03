@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Tooling Api</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Tooling Api</value>
+    </caseValues>
+    <fields>
+        <label><!-- Api Client Id --></label>
+        <name>Lcm_ApiClientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Api Client Secret --></label>
+        <name>Lcm_ApiClientSecret__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Name --></label>
+        <name>Lcm_ApiName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Passwort UND Security Token ohne Freizeichen (sollte geprüft werden) --></help>
+        <label><!-- Api Password --></label>
+        <name>Lcm_ApiPassword__c</name>
+    </fields>
+    <fields>
+        <help><!-- Benutzername OHNE Org-Name --></help>
+        <label><!-- Api Username --></label>
+        <name>Lcm_ApiUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Api Version --></label>
+        <name>Lcm_ApiVersion__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

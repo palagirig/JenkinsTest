@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SomDig_WtAgBeziehung__c$Id</field>
+    </columns>
+    <columns>
+        <field>SomDig_WtAgBeziehung__c$Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$SomDig_Quelle__c</field>
+    </columns>
+    <columns>
+        <field>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$SomDig_Quartal__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$SomDig_Mn2__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Gesamter Umsatz der als Quelle von Pivot bei WT AG (über SomDig_Umsatz) importiert wird</description>
+    <filter>
+        <criteriaItems>
+            <column>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$SomDig_Jahr__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2017</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$SomDig_JahrQuartal__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$SomDig_Mediagattung__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Umsatz Pivot Gesamt</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomDig_WT_AG_Beziehungen_mit_Umsatz_Digital__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SomDig_WtAgBeziehung__c.Umsaetze_Digital__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

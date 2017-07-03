@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Setup Audit Trail</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Setup Audit Trails</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action --></label>
+        <name>Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedById --></label>
+        <name>CreatedById__c</name>
+        <relationshipLabel><!-- SAT --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CreatedDate --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- DelegateUser --></label>
+        <name>DelegateUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display --></label>
+        <name>Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id --></label>
+        <name>Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section --></label>
+        <name>Section__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Setup Audit Trail Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

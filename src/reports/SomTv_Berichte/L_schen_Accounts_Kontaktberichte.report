@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_ACC_ID</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ACCOUNT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Som_Kontaktbericht__c.Som_Datum__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Alle Kontaktberichte an Accounts, die nach dem 1.1.2014 erstellt wurden</description>
+    <filter>
+        <criteriaItems>
+            <column>Som_Kontaktbericht__c.Som_Datum__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2013 12:00 AM</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Löschen Accounts - Kontaktberichte</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Som_Kontaktbericht__c@Som_Kontaktbericht__c.Som_Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Som_Kontaktbericht__c.Som_Datum__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

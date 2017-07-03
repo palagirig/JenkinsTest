@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>P7S1_Emp__c.P7S1_CheckSalesforceZugang__c</field>
+    </columns>
+    <columns>
+        <field>P7S1_Emp__c.P7S1_BestaetigtAm__c</field>
+    </columns>
+    <columns>
+        <field>P7S1_Emp__c.P7S1_Comment__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Liste der User, die im Zuge der Userprüfung deaktiviert wurden</description>
+    <filter>
+        <criteriaItems>
+            <column>P7S1_Emp__c.P7S1_CheckSalesforceZugang__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>wird nicht mehr benötigt</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>P7S1_Emp__c.P7S1_Comment__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Deaktiviert im Zuge der Userprüfung 2016/2 (Ticket 4683)</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Deaktivierte User</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$P7S1_Comp__c$P7S1_Emp__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>P7S1_Emp__c.P7S1_BestaetigtAm__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

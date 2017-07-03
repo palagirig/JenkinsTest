@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_ExternalId__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_ExternalId__r$P7S1_Source__c</field>
+    </columns>
+    <columns>
+        <field>Account$ungueltiger_Account__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.P7S1_ExternalId__r$P7S1_Source__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>BK 29</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$ungueltiger_Account__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>ungültige Accounts mit Debno.</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_mit_externer_ID__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$ungueltiger_Account__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

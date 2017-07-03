@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>fkx</joinTable>
+        </blockInfo>
+        <columns>
+            <field>OWNER</field>
+        </columns>
+        <columns>
+            <field>SUBJECT</field>
+        </columns>
+        <currency>EUR</currency>
+        <format>Summary</format>
+        <name>Kundenvorgänge und Requirement-Block 1</name>
+        <params>
+            <name>units</name>
+            <value>h</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CaseList@Case.Lcm_Requirement__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATEONLY</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Lcm_Requirement__c</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Lcm_Requirement__c.P7S1_Testcase__r$Name</field>
+        </columns>
+        <currency>EUR</currency>
+        <format>Summary</format>
+        <name>P7S1 Requirements mit Testfälle-Block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Lcm_RequirementsMitTestfaelle__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>Lcm_Requirement__c$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>fkx</joinTable>
+    </blockInfo>
+    <description>Requirements Kundenvorgang Testfall</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Lcm_Requirement__c.Lcm_RequirementName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>P7S1 Requirements Kundenvorgang Testfall</name>
+    <params>
+        <name>lsk</name>
+        <value>33</value>
+    </params>
+    <reportType>CaseList@Case.Lcm_Requirement__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

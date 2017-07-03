@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>E-Mail Vorlage für den Fehlerfall, wenn keine Auslieferungspriorität gefunden wurde</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SomDig_PrioModell_Fehler</name>
+    <style>none</style>
+    <subject>PrioModell Fehler</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

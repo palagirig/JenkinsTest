@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>benötigt für den Profi-Änderungs-Mechanismus in Sandboxen für CoreTeam User</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://prosiebensat1.force.com</url>
+</RemoteSiteSetting>

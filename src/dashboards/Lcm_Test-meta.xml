@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Lcm_TestSphereSomDig</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Lcm_TestSphereVen</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>LCM Test</name>
+</DashboardFolder>

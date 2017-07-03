@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lcm_TestTask__c.Lcm_TestPhase__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestTask__c.Lcm_TestPhaseName__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Lcm_TestCase__c.Lcm_TestCaseName__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Lcm_TestCase__c.Lcm_Requirement__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Lcm_TestCase__c.Lcm_RequirementName__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Lcm_TestTask__c.Lcm_TestPhase__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TP-1016,TP-1017,TP-1018,TP-1019,TP-1020,TP-1021,TP-1022</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Verwendete Testfälle in Testaufgaben</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lcm_TestTask__c@Lcm_TestTask__c.Lcm_TestCase__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

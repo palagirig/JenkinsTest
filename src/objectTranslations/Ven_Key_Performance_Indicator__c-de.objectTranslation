@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Key Performance Indicator</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Key Performance Indicators</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category3 --></label>
+        <name>Ven_Category3__c</name>
+        <picklistValues>
+            <masterLabel>Aktiva</masterLabel>
+            <translation><!-- Aktiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Earnings</masterLabel>
+            <translation><!-- Earnings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expenses</masterLabel>
+            <translation><!-- Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passiva</masterLabel>
+            <translation><!-- Passiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenues</masterLabel>
+            <translation><!-- Revenues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic channel</masterLabel>
+            <translation><!-- Traffic channel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bitte eine Kategorie auswählen --></help>
+        <label><!-- Category (KPI) --></label>
+        <name>Ven_Category_KPI__c</name>
+        <picklistValues>
+            <masterLabel>Balance Sheet</masterLabel>
+            <translation><!-- Balance Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Flow</masterLabel>
+            <translation><!-- Cash Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dedendo</masterLabel>
+            <translation><!-- Dedendo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial KPIs</masterLabel>
+            <translation><!-- Financial KPIs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freemium</masterLabel>
+            <translation><!-- Freemium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gutscheincodes</masterLabel>
+            <translation><!-- Gutscheincodes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media KPIs</masterLabel>
+            <translation><!-- Media KPIs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter</masterLabel>
+            <translation><!-- Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online KPIs</masterLabel>
+            <translation><!-- Online KPIs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational</masterLabel>
+            <translation><!-- Operational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational KPIs</masterLabel>
+            <translation><!-- Operational KPIs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P&amp;L</masterLabel>
+            <translation><!-- P&amp;L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preis24</masterLabel>
+            <translation><!-- Preis24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registrations</masterLabel>
+            <translation><!-- Registrations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tropo</masterLabel>
+            <translation><!-- Tropo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wetter.com</masterLabel>
+            <translation><!-- Wetter.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bitte geben Sie eine Beschreibung des KPIs ein --></help>
+        <label><!-- Description --></label>
+        <name>Ven_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte stellen Sie ein Filterkriterium ein --></help>
+        <label><!-- Filter --></label>
+        <name>Ven_Filter__c</name>
+        <picklistValues>
+            <masterLabel>Click-out model</masterLabel>
+            <translation><!-- Click-out model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dedendo</masterLabel>
+            <translation><!-- Dedendo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freemium</masterLabel>
+            <translation><!-- Freemium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gutscheincodes</masterLabel>
+            <translation><!-- Gutscheincodes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandatory</masterLabel>
+            <translation><!-- Mandatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preis24</masterLabel>
+            <translation><!-- Preis24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tropo</masterLabel>
+            <translation><!-- Tropo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wetter.com</masterLabel>
+            <translation><!-- Wetter.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-commerce</masterLabel>
+            <translation><!-- e-commerce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- K - Tausender-Darstellung
+M - Mio-Darstellung
+Anzahl der Nachkommastellen
+z.B. M2 =&gt; 3,21 M --></help>
+        <label><!-- Formats --></label>
+        <name>Ven_Format__c</name>
+    </fields>
+    <fields>
+        <help><!-- Weitere Gruppierungsebene nach Catagory und Subcategory --></help>
+        <label><!-- Level --></label>
+        <name>Ven_Level_KPI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value - Wert zum ausgewählten Reporting-Stichtag
+Sum - Summe year-to-date zum ausgewählten Reporting-Stichtag
+Average - Mittelwert year-to-date zum ausgewählten Reporting-Stichtag --></help>
+        <label><!-- Operator --></label>
+        <name>Ven_Operator__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation><!-- Sum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation><!-- Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bitte ggf. eine Unterkategorie wählen --></help>
+        <label><!-- Sub-Category --></label>
+        <name>Ven_Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>Assets</masterLabel>
+            <translation><!-- Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Sheet</masterLabel>
+            <translation><!-- Balance Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Flow</masterLabel>
+            <translation><!-- Cash Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customers</masterLabel>
+            <translation><!-- Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfillments Costs</masterLabel>
+            <translation><!-- Fulfillments Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liabilities</masterLabel>
+            <translation><!-- Liabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Costs</masterLabel>
+            <translation><!-- Marketing Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational</masterLabel>
+            <translation><!-- Operational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orders</masterLabel>
+            <translation><!-- Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P&amp;L</masterLabel>
+            <translation><!-- P&amp;L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratio</masterLabel>
+            <translation><!-- Ratio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returns</masterLabel>
+            <translation><!-- Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Commerce</masterLabel>
+            <translation><!-- Social Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic</masterLabel>
+            <translation><!-- Traffic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic costs</masterLabel>
+            <translation><!-- Traffic costs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bitte wählen Sie einen Supplier --></help>
+        <label><!-- Supplier --></label>
+        <name>Ven_Supplier__c</name>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company / Webtrekk</masterLabel>
+            <translation><!-- Company / Webtrekk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flaconi</masterLabel>
+            <translation><!-- Flaconi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Analytics</masterLabel>
+            <translation><!-- Google Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Searchmetrics</masterLabel>
+            <translation><!-- Searchmetrics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV Control</masterLabel>
+            <translation><!-- TV Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webtrekk</masterLabel>
+            <translation><!-- Webtrekk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bitte stellen Sie die Maßeinheit ein --></help>
+        <label><!-- Unit --></label>
+        <name>Ven_Unit__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Key Performance Indicator-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Beschreibung --></label>
+            <section>Beschreibung</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

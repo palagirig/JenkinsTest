@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font>Hallo!</font>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12pt; background-color: rgb(255, 255, 255);">für die Opportunity-Freigabe "</span><span style="background-color: rgb(255, 255, 255);"><font face="Arial, Helvetica, sans-serif">{!P7S1_OpportunityApproval__c.Name}<span style="font-size: 12pt;">" hat das Deal Sound Board die Rabattfreigabe erteilt. Bitte beachten: Die Freigabe des Media Boards ist davon unabhängig und steht ggf. noch aus!&nbsp;</span></font></span><br style="font-family: Arial, Helvetica, sans-serif;"><br style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background-color: rgb(255, 255, 255);"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12pt;">Link auf den Opportunity-Freigabeantrag:&nbsp;</span>{!P7S1_OpportunityApproval__c.Link}</font></span><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br style="font-family: Arial, Helvetica, sans-serif;"><span style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">Happy selling!</span><div><font face="Arial, Helvetica, sans-serif">{!ApprovalRequest.Process_Approver} für das Deal Sound Board</font></div></div></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<p class="p1"><span class="s1">Wenn Du Fragen zu Sales Excellence hast, dann folge bitte diesem <a href="https://p7s1.my.salesforce.com/ui/solution/SolutionBrowserPage?cid=02n570000005U1f">Link</a>.</span></p>]]></td>
+</tr>
+</table>

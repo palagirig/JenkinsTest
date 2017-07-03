@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Portal Login Event</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Portal Login Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- P7S1_EventMessage --></label>
+        <name>P7S1_EventMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- P7S1_EventTimestamp --></label>
+        <name>P7S1_EventTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- P7S1_EventType --></label>
+        <name>P7S1_EventType__c</name>
+        <picklistValues>
+            <masterLabel>activated-liferay</masterLabel>
+            <translation><!-- activated-liferay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>activated-salesforce</masterLabel>
+            <translation><!-- activated-salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>confirmed</masterLabel>
+            <translation><!-- confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>created</masterLabel>
+            <translation><!-- created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>email-send</masterLabel>
+            <translation><!-- email-send --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Portal Login --></label>
+        <name>P7S1_PortalLogin__c</name>
+        <relationshipLabel><!-- Portal Login Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- P7S1_Successful --></label>
+        <name>P7S1_Successful__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Portal Login Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

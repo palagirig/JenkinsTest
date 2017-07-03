@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>P7S1_SendInviteRefusalEmail</name>
+    <style>none</style>
+    <subject>Schade, dass Sie nicht dabei sind!</subject>
+    <textOnly>{!CampaignMember.Anrede_Brief_Deutsch__c},
+
+vielen Dank für Ihre Absage zum SevenOne Media FRÜHJAHRS-SCREENING 2016.
+
+Wir bedauern sehr, dass Sie nicht an der Veranstaltung teilnehmen können!
+
+Bei Rückfragen zur Veranstaltung wenden Sie sich gern an Sara Helleisz unter +49 89 9507-2453 oder per E-Mail an event@sevenonemedia.de.
+
+Mit freundlichen Grüßen
+Ihre SevenOne Media</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

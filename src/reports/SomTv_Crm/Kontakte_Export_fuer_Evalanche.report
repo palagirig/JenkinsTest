@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.SomTv_EvalancheId__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Alle Kontakte mit Evalanche-ID und Salesforce-ID zum Erstmaligen Verknüpfen der Evalanche-Profile mit CRM-Sales (Ablösung der ProRex-Funktions-ID durch die Evalanche-ID)</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.SomTv_EvalancheId__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Kontakte_Export_fuer_Evalanche</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

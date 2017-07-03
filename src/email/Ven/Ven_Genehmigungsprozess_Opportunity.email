@@ -1,0 +1,5 @@
+Folgende Opportunity {!Opportunity.Name} wurde zur Genehmigung eingereicht.
+
+Die Opportunity befindet sich in der Phase {!Opportunity.StageName} und durchläuft die vorgegebenen Genehmigungsschritte.
+
+Hier der Link zur Opportunity: {!Opportunity.Link}

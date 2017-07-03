@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_52330022</developerName>
+        <masterLabel>Account Creation Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account$Owner</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alexandra Kurmulis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Constantin Thyssen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erik Stollberg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Florian Weber</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Georg Hien</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katharina de Cruppe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Lange</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philip Fischer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philipp Rouenhoff</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephan Link</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Urs Fischer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Verena Argauer</sourceValue>
+            </sourceValues>
+            <value>7V Deal Manager</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$StageName</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Ven_NetPotentialCurrentYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Account$Ven_HatOpportunity__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$LastStageChangeDate</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$CreatedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>1/1/2017 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_52330022</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>7V Deal Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$P7S1_Unit__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>7Ventures</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_52330022</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dashboard Flo Weber</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>P7S1_SE_AccountsWithOrWithoutOpportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREVY</interval>
+    </timeFrameFilter>
+</Report>

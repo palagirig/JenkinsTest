@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Campaign Item --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Campaign Item --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird --></help>
+        <label><!-- Mig_ProdiaKey --></label>
+        <name>Mig_ProdiaKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- in allen Buchungsaufträgen (positionsbasiert) festzuhalten; Relevante Dokumente sind: Auftragsbestätigungen, Berichte und Rechnungen. --></help>
+        <label><!-- ADGap ID --></label>
+        <name>SomDig_ADGapID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Die erreichbaren Impressions berechnen sich über OSI_Wert x Impressionziel gesamt --></help>
+        <label><!-- AI/Clicks erreichbar --></label>
+        <name>SomDig_AIClicksErreichbar__c</name>
+    </fields>
+    <fields>
+        <help><!-- Berechnet die auszuliefernden Impressions oder Clicks tagesaktuell während der Laufzeit des Line-Items, lineare Verteilung --></help>
+        <label><!-- AI/Clicks SOLL bis Heute --></label>
+        <name>SomDig_AIClicksSollBisHeute__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kombination aus Ad Id und weiteren Ad IDs --></help>
+        <label><!-- Ad IDs Gesamt --></label>
+        <name>SomDig_AdIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- KV 03459. True, wenn der RecordType der Werbeform nicht Standard ist. Bei Pakethüllen immer false. --></help>
+        <label><!-- SomDig_AdServerRelevant --></label>
+        <name>SomDig_AdServerRelevant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Werbemittel-ID des Werbepreises, durch Workflow automatisch gefüllt --></help>
+        <label><!-- Werbemittel-Id --></label>
+        <name>SomDig_AdSpec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advertising Form Shortform --></label>
+        <name>SomDig_AdvertisingFormShortform__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fügt Anzahl der AIs oder Clicks ein, abhängig von Abrechnungsart --></help>
+        <label><!-- AI/Clicks IST --></label>
+        <name>SomDig_AiClicksIst__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auftragstyp --></label>
+        <name>SomDig_Auftragstyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verfügbarkeit --></label>
+        <name>SomDig_Availability__c</name>
+    </fields>
+    <fields>
+        <help><!-- Freitextfeld für die Begrundung und Dokumentation für weiteres Vorgehen wegen der Unterlieferung --></help>
+        <label><!-- Begründung der Unterlieferung --></label>
+        <name>SomDig_BegrundungUnterlieferung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auswahlmöglichkeiten für Begründungen der Unterlieferung --></help>
+        <label><!-- Behandlung der Unterlieferung --></label>
+        <name>SomDig_BehandlungUnterlieferung__c</name>
+        <picklistValues>
+            <masterLabel>Kunde will nicht nachliefern</masterLabel>
+            <translation><!-- Kunde will nicht nachliefern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Umbuchung in anderer Mediakampagne</masterLabel>
+            <translation><!-- Umbuchung in anderer Mediakampagne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Umbuchung innerhalb Mediakampagne</masterLabel>
+            <translation><!-- Umbuchung innerhalb Mediakampagne --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Belegungseinheit Typ --></label>
+        <name>SomDig_BelegungseinheitTyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Belegungseinheit --></label>
+        <name>SomDig_Belegungseinheit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt an, ob die MN3 zwischen ursprünglicher Position und Stornoposition abweichen. --></help>
+        <label><!-- Check Storno MN3 --></label>
+        <name>SomDig_Check_Storno_MN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conception --></label>
+        <name>SomDig_Conception__c</name>
+    </fields>
+    <fields>
+        <help><!-- DWH Auftragsart (mit/ohne Commitment, bei Eigenwerbung ohne Commitment) --></help>
+        <label><!-- DWH Geschäftsart --></label>
+        <name>SomDig_DWHGeschaeftsart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Data Monthly --></label>
+        <name>SomDig_DeliveryDataMonthly__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bestätigung seitens CS, daß die Dokumentation zwecks Produktion vollständig ist --></help>
+        <label><!-- Dokumentation erhalten --></label>
+        <name>SomDig_DokumentationErhalten__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl der Tage zwischen Start- und Enddatum wenn durchgebucht wurde. --></help>
+        <label><!-- Duration at Booking --></label>
+        <name>SomDig_DurationAtBooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld: Clicks geliefert Daily (als Summe aus DeliveryData) --></help>
+        <label><!-- SomDig_DwhDeliveredClicksSum --></label>
+        <name>SomDig_DwhDeliveredClicksSum__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld: Impressions geliefert Daily (als Summe aus DeliveryData) --></help>
+        <label><!-- SomDig_DwhDeliveredImpressionsSum --></label>
+        <name>SomDig_DwhDeliveredImpressionsSum__c</name>
+    </fields>
+    <fields>
+        <help><!-- Berechnung des eCPM aufgrund der Leistungsdaten für die jeweiligen Abrechnungsarten CPC sowie Festplatzierung (ausgelieferte Clicks und Impressions Stand HEUTE). Sollten noch keine Lieferdaten bestehen, wird der Wert aus nCPM/nCPC übernommen --></help>
+        <label><!-- eCPM --></label>
+        <name>SomDig_Ecpm__c</name>
+    </fields>
+    <fields>
+        <help><!-- wird im RTA Report benötigt --></help>
+        <label><!-- FC hinterlegt --></label>
+        <name>SomDig_FC_Hinterlegt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag zur Markierung der zeitkritischen Produktionsvorgängen --></help>
+        <label><!-- Flag Dokumentation --></label>
+        <name>SomDig_FlagDokumentation__c</name>
+    </fields>
+    <fields>
+        <help><!-- ist rot, wenn die Position nicht durchgebucht ist --></help>
+        <label><!-- Flag Durchbuchung --></label>
+        <name>SomDig_FlagDurchbuchung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Warnhinweis, falls gelieferte AIs/Clicks grösser als bestellt --></help>
+        <label><!-- Flag Überlieferung --></label>
+        <name>SomDig_FlagUeberlieferung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gebe hier deinen (Frei-)Text ein, welcher auf den Dokumenten unter „Positionskommentar“ zusätzlich mit allen weiteren Informationen wie NR, OPT, etc. erscheint (max.120 Zeichen) --></help>
+        <label><!-- Freitextnotiz (Sichtbarkeit begrenzt!) --></label>
+        <name>SomDig_Freitextnotiz__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld als Basis für Rollup --></help>
+        <label><!-- Gesamtrabatt Konsekutiv (Help) --></label>
+        <name>SomDig_GesamtrabattKonsekutivHelp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gesamtrabatt wird konsekutiv berechnet aus AR, KR (bezogen auf benutzerdefinierte Rabatte) und SR --></help>
+        <label><!-- Gesamtrabatt Konsekutiv (Formel) --></label>
+        <name>SomDig_GesamtrabattKonsekutiv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Benutzer alias --></help>
+        <label><!-- Inhaber-Kürzel --></label>
+        <name>SomDig_Inhaber_Kuerzel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Welche Inventarklasse wird das CampaignItem zugeordnet? Erfolgt per Trigger, Indikatoren ist Rotationstyp an der Belegungseinheit, MG-Differenzierung der Werbeform, Preisgruppe des Werbemittels und Auftragstyp der Preisliste. --></help>
+        <label><!-- Inventarklasse --></label>
+        <name>SomDig_Inventarklasse__c</name>
+        <relationshipLabel><!-- Kampagnen Positionen --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- KEM Sperre für SomDIg BI --></label>
+        <name>SomDig_KEM_SOmDigBIBlocked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gestartet? --></label>
+        <name>SomDig_KEM_ValidateStart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id 18 der Kampagnenposition --></help>
+        <label><!-- Kampagnen Positions Id --></label>
+        <name>SomDig_KampagnenPositionsId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last AdServer Status Change --></label>
+        <name>SomDig_LastAdServerStatusChange__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last AdServerStatus Process --></label>
+        <name>SomDig_LastAdServerStatusProcess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Optimization Activation Date --></label>
+        <name>SomDig_LastOptimizationActivationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- OSI vom Vortag --></help>
+        <label><!-- Leistungskennzahl Vortag --></label>
+        <name>SomDig_LeistungskennzahlVortag__c</name>
+    </fields>
+    <fields>
+        <help><!-- legt fest ob ein Line Item abzurechnen ist --></help>
+        <label><!-- Abzurechnen? --></label>
+        <name>SomDig_LineItemAbzurechnen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link zum LineItem in DFP --></help>
+        <label><!-- LineItem in AdServer --></label>
+        <name>SomDig_LineItemInAdServer__c</name>
+    </fields>
+    <fields>
+        <help><!-- kennzeichnet lowCPM Positionen (MN1 vs. MB3 &gt;= 80%) --></help>
+        <label><!-- Low CPM --></label>
+        <name>SomDig_LowCPM__c</name>
+    </fields>
+    <fields>
+        <help><!-- MG-Name für RollUps, Reports etc. Info kommt automatisch via Werbemittel vom Werbeträger --></help>
+        <label><!-- Mediagattung Name --></label>
+        <name>SomDig_MediagattungName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id der Mediagattung, welche am Werbeträger des Werbemittels gepflegt ist. Wird per Formel automatisch befüllt. --></help>
+        <label><!-- Mediagattung-Id --></label>
+        <name>SomDig_Mediagattung__c</name>
+    </fields>
+    <fields>
+        <help><!-- MGD-Name für RollUps, Reports etc. Info kommt automatisch via Werbemittel aus der Werbeform --></help>
+        <label><!-- Mediagattungs-Differenzierung Name --></label>
+        <name>SomDig_MediagattungsDifferenzierungName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id der M.-Differenzierung, welche an der Werbeform des Werbemittels gepflegt ist. Wird per Formel befüllt. --></help>
+        <label><!-- Mediagattungs-Differenzierung-Id --></label>
+        <name>SomDig_MediagattungsDifferenzierung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mediagattungs-Segment Name für RollUps, Reports etc.. Info kommt automatisch via Werbemittel von der Belegungseinheit --></help>
+        <label><!-- Mediagattungs-Segment Name --></label>
+        <name>SomDig_MediagattungsSegmentName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id des M.-Segments, welches an der Belegungseinheit des Werbemittels gepflegt ist. Wird per Formel befüllt. --></help>
+        <label><!-- Mediagattungs-Segment-Id --></label>
+        <name>SomDig_MediagattungsSegment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link zur Mediakampagne in DFP --></help>
+        <label><!-- Mediakampagne in AdServer --></label>
+        <name>SomDig_MediakampagneInAdServer__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus Mediakampagne --></help>
+        <label><!-- Mediakampagnennummer --></label>
+        <name>SomDig_Mediakampagnennummer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mindest-TKP Preis, der einzuhalten ist (abgelegt am Werbemittelpreis) --></help>
+        <label><!-- Min. CPM Price --></label>
+        <name>SomDig_MinCPMPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld zur Steuerung vom Genehmigungsprozess; wird automatisch markiert wenn Mindestpreis unterschritten ist --></help>
+        <label><!-- Mindestpreis TKP unterschritten --></label>
+        <name>SomDig_MindestpreisTKPunterschritten__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mindestpreis zuletzt Genehmigt --></label>
+        <name>SomDig_MindestpreisZuletztGenehmigt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld zum erstellen von Formeln für nCPM und eCPM, da Zeichenanzahl sonst zu lang. Wird automatisch per Workflow/Feldaktualisierung befüllt --></help>
+        <label><!-- MN2 help --></label>
+        <name>SomDig_Mn2Help__c</name>
+    </fields>
+    <fields>
+        <help><!-- MN2-Wert minus Skonto (wenn ein Skonto für die Mediakampagne ausgewählt wurde) ergibt MN3 --></help>
+        <label><!-- MN3 --></label>
+        <name>SomDig_Mn3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ist das Motiv im Adserver eingebucht bzw. hinterlegt? --></help>
+        <label><!-- Motiv eingebucht --></label>
+        <name>SomDig_MotivEingebucht__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet eine Multiscreen Belegungseinheit. --></help>
+        <label><!-- Multiscreen --></label>
+        <name>SomDig_Multiscreen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Berechnung des nCPM aufgrund der Buchungsdaten, jeweils Abrechnungsmethode CPM und Festplatzierung (CPD/CPW): MN2 / Anzahl AI * 1.000 --></help>
+        <label><!-- nCPM --></label>
+        <name>SomDig_Ncpm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Netzwerk-Typ --></label>
+        <name>SomDig_NetworkType__c</name>
+    </fields>
+    <fields>
+        <help><!-- internes Hilfsfeld, für Rollup verwendet, per WF gefüllt. 
+Kennzeichnet NonMedia/Dienstleistungs Items. 
+keine Checkbox sondern Textfeld, da Workflow einfacher --></help>
+        <label><!-- NonMedia --></label>
+        <name>SomDig_NonMedia__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSI (custom) --></label>
+        <name>SomDig_OSIcustom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wird diese Checkbox aktiviert, wird für das CampaignItem der OTP-Aufschlag aus dem Werbemittel (AdSpec) auf den Listenpreis aufgeschlagen und dieser erhöhte Preis als SalesPrice gesetzt. --></help>
+        <label><!-- OTP-Aufschlag --></label>
+        <name>SomDig_OtpAufschlag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld dient der internen Beschreibung durch den PAM. --></help>
+        <label><!-- PAM Kommentar --></label>
+        <name>SomDig_PAMKommentar2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAM Kommentar --></label>
+        <name>SomDig_PAMKommentar__c</name>
+    </fields>
+    <fields>
+        <help><!-- -Inaktiv:durchgebucht,kein Motiv
+-bereit:im AdServer aktiviert
+-normal:AIist&gt;=AIsollbisheute
+-@Risk:AIist&lt;AIsollbisheute
+-pausiert:laufender Flight wurde gestoppt
+-erfüllt:beendet &amp; AIist&gt;=AIsoll
+-unterliefert:beendet &amp; AIist&lt;AIsoll --></help>
+        <label><!-- Position Status --></label>
+        <name>SomDig_PositionStatus__c</name>
+        <picklistValues>
+            <masterLabel>Ad Status aktualisieren</masterLabel>
+            <translation><!-- Ad Status aktualisieren --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>An Adserver übermitteln</masterLabel>
+            <translation><!-- An Adserver übermitteln --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auslieferung-@Risk</masterLabel>
+            <translation><!-- Auslieferung-@Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auslieferung-normal</masterLabel>
+            <translation><!-- Auslieferung-normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NonAdserver</masterLabel>
+            <translation><!-- NonAdserver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Position gestoppt</masterLabel>
+            <translation><!-- Position gestoppt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Position pausiert</masterLabel>
+            <translation><!-- Position pausiert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>abgelaufen-erfüllt</masterLabel>
+            <translation><!-- abgelaufen-erfüllt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>abgelaufen-unterliefert</masterLabel>
+            <translation><!-- abgelaufen-unterliefert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bereit</masterLabel>
+            <translation><!-- bereit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>inaktiv</masterLabel>
+            <translation><!-- inaktiv --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- zeigt ob das Enddatum des Lineitems mindestens einen Tag in der Vergangenheit liegt und die Ist-Auslieferung kleiner der Soll-Auslieferung ist. --></help>
+        <label><!-- Position unterliefert --></label>
+        <name>SomDig_PositionUnterliefert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wenn &apos;WAHR&apos; - die Position verändert aber noch nicht im AdServer gebucht --></help>
+        <label><!-- Position verändert --></label>
+        <name>SomDig_PositionVeraendert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Positionsnummer inkl. Anhang --></help>
+        <label><!-- Positionsnr. --></label>
+        <name>SomDig_Positionsnr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzeige des Preiskriterium des Werbemittelpreises, wenn hier ein Kritrium in der Position ausgewählt wurde (z.B. Sekunden für InStream-Werbeform). --></help>
+        <label><!-- Preiskriterium --></label>
+        <name>SomDig_Preiskriterium__c</name>
+    </fields>
+    <fields>
+        <help><!-- temporäres Feld für Backup der Prio-Werte im Rahmen Ticket 04218. --></help>
+        <label><!-- Prio (Backup) --></label>
+        <name>SomDig_PrioBackup__c</name>
+    </fields>
+    <fields>
+        <help><!-- PrioCheck, Ticket 4218 --></help>
+        <label><!-- Prio (Check) --></label>
+        <name>SomDig_PrioCheck__c</name>
+    </fields>
+    <fields>
+        <help><!-- soll angekreuzt werden, wenn intern produziert; signalisiert ob Produktions-LIs anglegt werden müssen und ob die Produktionszeiten zu berücksichtigen sind --></help>
+        <label><!-- Produktion erforderlich --></label>
+        <name>SomDig_Produktion_Erforderlich__c</name>
+    </fields>
+    <fields>
+        <help><!-- zeigt ob alle relevante Rabatte genehmigt sind :
+grün=genehmigt oder unter den Limit,
+rot=abgelehnt oder Gen.prozess nicht gestartet --></help>
+        <label><!-- Rabatte freigegeben oder  unter Limit --></label>
+        <name>SomDig_RabattFreigegeben__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, wird automatisch markiert, wenn Rabattlimits überschritten sind und/oder Mindestpreis erreicht ist aber nicht genehmigt --></help>
+        <label><!-- Rabatte nicht freigegeben --></label>
+        <name>SomDig_RabatteFreigegebenCheck__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld zur Steuerung vom Genehmigungsprozess; wird automatisch markiert wenn Rabattlimit erreicht ist. --></help>
+        <label><!-- Rabattlimit unterschritten --></label>
+        <name>SomDig_RabattlimitUnterschritten__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt an die restliche Tage (inkl. heute) --></help>
+        <label><!-- Restliche Tage --></label>
+        <name>SomDig_Resttage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bei Aktivieren dieser Checkbox wird der Retargeting Aufschlag des Werbemittels bei der Preisberechnung einbezogen. --></help>
+        <label><!-- Retargeting --></label>
+        <name>SomDig_Retargeting__c</name>
+    </fields>
+    <fields>
+        <help><!-- verlorener Umsatz; MN3 multipliziert mit @risk nach dem Flightstart (falls Risk&gt;0) --></help>
+        <label><!-- Umsatz real unterliefert --></label>
+        <name>SomDig_RiskMN3Umsatz__c</name>
+    </fields>
+    <fields>
+        <help><!-- Soll-Ist-Vergleich in % über die gesamte Dauer --></help>
+        <label><!-- @risk --></label>
+        <name>SomDig_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rotationstyp --></label>
+        <name>SomDig_Rotationstyp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ist der Screenshot schon erstellt und an die Agentur/Werbetreibenden versendet? Wenn die Check-Box markiert ist, ist dies erledigt. --></help>
+        <label><!-- Screenshot erstellt --></label>
+        <name>SomDig_ScreenshotErstellt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt den möglichen Skontobetrag für diese Position wieder (netto). --></help>
+        <label><!-- Skontobetrag netto --></label>
+        <name>SomDig_SkontobetragNetto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Campaign Item --></label>
+        <name>SomDig_SourceCampaignItem__c</name>
+        <relationshipLabel><!-- Kampagnen Positionen (Source Campaign Item) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Status Flag wird über Position Status gesteuert:
+rot: Entwurf, Inaktiv, pausiert
+grau: abgelaufen-unterliefert/erfüllt
+grün: bereit, Auslieferung-normal/@risk --></help>
+        <label><!-- Status Flag Position --></label>
+        <name>SomDig_StatusFlagPosition__c</name>
+    </fields>
+    <fields>
+        <help><!-- True, wenn die Position storniert wurde. --></help>
+        <label><!-- Stornoposition --></label>
+        <name>SomDig_Stornoposition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Gelieferten AIs aus &quot;Umsatzplan&quot;. --></help>
+        <label><!-- Sum Delivered AIs (manual) --></label>
+        <name>SomDig_SumDeliveredAIsManual__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig_SumDeliveredImpressions --></label>
+        <name>SomDig_SumDeliveredImpressions__c</name>
+    </fields>
+    <fields>
+        <help><!-- beschreibt Nettoumsatz nach tatsächlichen AIs; bezogen auf MN2 --></help>
+        <label><!-- Umsatz geliefert --></label>
+        <name>SomDig_UmsatzGeliefert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rot: Auslieferung @Risk
+Gelb: abgeschlossen / unterliefert
+Grün: abgeschlossen / erfüllt --></help>
+        <label><!-- Unterlieferungsflag --></label>
+        <name>SomDig_Unterlieferungsflag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verteilung --></label>
+        <name>SomDig_Verteilung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeform --></label>
+        <name>SomDig_Werbeform__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeträger --></label>
+        <name>SomDig_Werbetraeger__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen von Werbeträger --></help>
+        <label><!-- Werbeträgergruppierung --></label>
+        <name>SomDig_Werbetraegergruppierung__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus Mediakampagne --></help>
+        <label><!-- Werbetreibender --></label>
+        <name>SomDig_Werbetreibender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Duration Change --></label>
+        <name>SomgDig_LastDurationChange__c</name>
+    </fields>
+    <fields>
+        <help><!-- gibt Info, ob die Screenshots abgelegt und an Kunden weitergegeben sind. --></help>
+        <label><!-- Status Screenshot --></label>
+        <name>Status_Screenshot__c</name>
+        <picklistValues>
+            <masterLabel>abgelegt</masterLabel>
+            <translation><!-- abgelegt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>offen</masterLabel>
+            <translation><!-- offen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>versendet</masterLabel>
+            <translation><!-- versendet --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Campaign Item Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- In den Felder &quot;Ad ID&quot; und &quot;weitere AD Ids&quot; dürfen nur Zahlen und Kommas vorkommen. --></errorMessage>
+        <name>SomDig_AdIDFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Mit einem Ausschluss-Identifier darf nicht der Operator &apos;gleich&apos; ausgewählt werden. --></errorMessage>
+        <name>SomDig_AusschlussIdentifier</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Angegebene Menge (hier: Tage oder Wochen bei Festplatzierung) passt nicht zum Datumszeitraum der Kampagnenposition überein: Bei CPD ist ein Tag eine Menge, bei CPW ist eine Woche eine Menge. Entsprechend das Datum der Position auswählen/pflegen. --></errorMessage>
+        <name>SomDig_CPD_CPW_Datum_Menge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn die Mediakampagne bereits auf Auftrag gesetzt wurde, dürfen diverse Informationen an der Position nicht mehr verändert bzw. angepasst werden. --></errorMessage>
+        <name>SomDig_CampaignItemAuftragFeldfixierung</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bei CPD/CPW kein Targeting/FC möglich! --></errorMessage>
+        <name>SomDig_FCTargetingUnterbindungBeiCPDCPW</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bei CPD/CPW keine Änderung der vorbelegten FC möglich! --></errorMessage>
+        <name>SomDig_FCUnterbindungBeiCPDundFixenFC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Zur Auswahl eines Frequency Cappings an KampagnePosition müssen alle zwei Felder/Parameter ausgefüllt sein; dies bitte kontrollieren und ggf. vervollständigen (FC Menge und FC Periode). Zudem darf keine Null(0) ausgewählt sein. --></errorMessage>
+        <name>SomDig_FrequencyCapping</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Für dieses Werbemittel ist kein Skonto erlaubt. Laut Zahlungsbedingungen auf der Mediakampagne ist ein Skonto für aller Positionen gegeben! --></errorMessage>
+        <name>SomDig_KeinSkonto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Naturalrabatt darf nicht auf InStream-Produkte (Video) gegeben werden! --></errorMessage>
+        <name>SomDig_NRaufVideo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es wurde in der Position OTP-Aufschlag ausgewählt, welches für dieses Werbemittel bzw. Produkt aktuell nicht zur Verfügung steht. --></errorMessage>
+        <name>SomDig_OtpWerbemittel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn freigegebene Rechnungen vorliegen, darf Kampagne inkl. Positionen nicht geändert werden. --></errorMessage>
+        <name>SomDig_RechnungFreigegeben</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Die neue Menge darf die, der bereits ausgelieferten Einheiten nicht unterschreiten. --></errorMessage>
+        <name>SomDig_ReduzierungDerMenge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Als Sonderrabatt darf nur &apos;Positionsrabatt Natural&apos; ausgewählt werden. --></errorMessage>
+        <name>SomDig_SonderrabattSales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Der Startzeitpunkt der Position befindet sich außerhalb des Gültigkeitsbereichs der Preisliste. Bitte Startzeitpunkt ändern oder neue Preisliste auswählen. --></errorMessage>
+        <name>SomDig_StartPositionPreisliste</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es darf kein Positionstorno vor Leistungsfluss durchgeführt werden, wenn die Position bereits gestartet ist. --></errorMessage>
+        <name>SomDig_StornoOhneLeistungsfluss</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,1 @@
+Sehr geehrte(r) {!Case.SuppliedName},   vielen Dank für Ihre online übermittelte Frage. Kundenvorgangsnummer{!Case.CaseNumber}: "{!Case.Subject}" wurde erstellt und Sie erhalten in Kürze Antwort von einem Kundenberater von {!Organization.Name}.     Vielen Dank!    Kundenberaterteam  {!Organization.Name}

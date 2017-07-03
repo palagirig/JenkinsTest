@@ -1,0 +1,2 @@
+Sehr geehrte(r) {!Contact.FirstName}, vielen Dank für das heutige Gespräch. Meiner Meinung nach ist das Angebot von {!Organization.Name} für {!Account.Name} sehr interessant. Ich freue mich auf unser nächstes Meeting.    Mit freundlichen Grüßen  {!User.FirstName}
+{!Benutzer__c.MobilePhone}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Account-Freigabe Antrag auf Genehmigung Eingereicht (alle Typen: Account-Übernahme, Aufnahme ins Account Team, Logo-Integration)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>P7S1_SE_Letterhead</letterhead>
+    <name>AccountAccess Approval Request Submitted</name>
+    <style>formalLetter</style>
+    <subject>Mit der Bitte um Genehmigung: {!P7S1_AccountAccess__c.Name}</subject>
+    <textOnly>Hallo!
+Ich bitte Dich um folgende Account-Freigabe:
+
+
+
+{!P7S1_AccountAccess__c.Name}
+
+
+
+Um die Genehmigung durchzuführen, klicke bitte auf den folgenden Link: {!ApprovalRequest.Internal_URL}
+
+
+
+Vielen Dank!
+
+{!P7S1_AccountAccess__c.OwnerFullName} ({!P7S1_AccountAccess__c.OwnerEmail})
+Wenn Du Fragen zu Sales Excellence hast, dann folge bitte diesem Link.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

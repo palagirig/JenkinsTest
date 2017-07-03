@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Benachrichtigung dass der SOM Call den Lead Abgelehnt hat</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SOM-Call Lead wurde Abgelehnt</name>
+    <style>none</style>
+    <subject>Lead wurde vom &quot;SOM-Call&quot; Abgelehnt</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

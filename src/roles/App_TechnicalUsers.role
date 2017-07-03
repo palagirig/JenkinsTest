@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>None</contactAccessLevel>
+    <description>Technical Users</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Technical Users</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>P7S1_Applications</parentRole>
+</Role>

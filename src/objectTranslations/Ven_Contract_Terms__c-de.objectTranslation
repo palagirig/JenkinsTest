@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Contract Terms</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Contract Terms</value>
+    </caseValues>
+    <fields>
+        <help><!-- Bitte den abweichenden Term hier eintragen. --></help>
+        <label><!-- Abweichender Term --></label>
+        <name>Ven_Abweichender_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Der Term ist gültig im Standart wenn die Checkbox gesetzt ist. --></help>
+        <label><!-- Gültig --></label>
+        <name>Ven_G_ltig__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte die Begründung angeben, warum ein Term im Standard nicht gültig ist. --></help>
+        <label><!-- Kommentar warum nicht gültig --></label>
+        <name>Ven_Kommentar_warum_nicht_g_ltig__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld dient nur zur Übersicht, damit im Term selber auch einsehbar ist zu welcher Opportunity dieser gehört. --></help>
+        <label><!-- Opportunity --></label>
+        <name>Ven_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priorität --></label>
+        <name>Ven_Priorit_t__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier wir der nur ein Auszug vom Term angezeigt. --></help>
+        <label><!-- Standard Term (kurz) --></label>
+        <lookupFilter>
+            <errorMessage><!-- Es werden nur Aktive Standart Terms angezeigt! --></errorMessage>
+        </lookupFilter>
+        <name>Ven_Standard_Term_kurz__c</name>
+        <relationshipLabel><!-- Contract Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hier wir der komplette Term angezeigt. --></help>
+        <label><!-- Standard Terms (lang) --></label>
+        <name>Ven_Standard_Terms_lang__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier wird die Verbindung eines Contract Terms zum Vertrag eingetragen. --></help>
+        <label><!-- Vertrag (SevenVentures) --></label>
+        <name>Ven_Vertrag_SevenVentures__c</name>
+        <relationshipLabel><!-- Contract Terms --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Contract Term-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Terms --></label>
+            <section>Terms</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Bitte den abweichenden Term eintragen! --></errorMessage>
+        <name>Wenn_Standard_Term_nicht_gueltig_Abweich</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bitte einen Kommentar warum der Term nicht gültig ist eintragen! --></errorMessage>
+        <name>Wenn_Standard_Term_nicht_gueltig_Comment</name>
+    </validationRules>
+</CustomObjectTranslation>

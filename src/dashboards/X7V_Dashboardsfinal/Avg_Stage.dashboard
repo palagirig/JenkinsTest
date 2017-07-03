@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Alexandra Kurmulis</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Constantin Thyssen</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Erik Stollberg</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Florian Weber</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Georg Hien</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Hans Langthaler</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Katharina de Cruppe</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Michael Lange</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Nicolas Kirschner</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Philip Fischer</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Philipp Rouenhoff</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Stephan Link</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Urs Fischer</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Verena Argauer</values>
+        </dashboardFilterOptions>
+        <name>Opportunity Owner</name>
+    </dashboardFilters>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>FULL_NAME</column>
+            </dashboardFilterColumns>
+            <dashboardTableColumn>
+                <column>OPPORTUNITY_NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Average</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>PROBABILITY</column>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>Opportunity.Ven_NetPotentialCurrentYear__c.CONVERT</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Current Year</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>KPI_Tracking/Top_30_Pipeline_Deals</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <title>Pipeline: Opportunities</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>FULL_NAME</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Avg. calculated on # of deals, NOT GMV-distribution</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>KPI_Tracking/Avg_Yield_by_Deal_Manager</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Pipeline: Avg. Yield (DO NOT USE)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>FULL_NAME</column>
+            </dashboardFilterColumns>
+            <dashboardTableColumn>
+                <column>OPPORTUNITY_NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Average</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>PROBABILITY</column>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>Opportunity.Ven_NetPotentialNextYear__c.CONVERT</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Next Year</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>KPI_Tracking/Top_30_Pipeline_Deals_Next_Year1</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <title>Pipeline: Opportunities</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>FULL_NAME</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Avg. calculated on # of deals, NOT GMV-distribution</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>KPI_Tracking/Avg_Yield_by_Deal_Manager_Next_Year</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Pipeline: Avg. Yield</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>OWNER_NAME</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Both Years</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>KPI_Tracking/Sales_Cycle_DM_Level</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>true</showPicturesOnCharts>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Avg. Stage Duration</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>FULL_NAME</column>
+            </dashboardFilterColumns>
+            <dashboardTableColumn>
+                <column>OPPORTUNITY_NAME</column>
+                <sortBy>RowLabelDescending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Recently = Last 30 Days</footer>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>KPI_Tracking/Net_Potential_Recently_Closed_Deals_BY</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>Recently Closed Deals</title>
+        </components>
+    </rightSection>
+    <runningUser>marcel.woehrle@sevenventures.de</runningUser>
+    <textColor>#000000</textColor>
+    <title>Deal Manager Detail Analysis</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

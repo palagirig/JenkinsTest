@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>P7S1_SendInviteConfirmationEmail</name>
+    <style>none</style>
+    <subject>Wir freuen uns auf Sie!</subject>
+    <textOnly>{!CampaignMember.Anrede_Brief_Deutsch__c},
+
+vielen Dank für Ihre Registrierung zum SevenOne Media FRÜHJAHRS-SCREENING 2016.
+
+Wir freuen uns auf Sie!
+
+Eine Bestätigung werden wir Ihnen rechtzeitig vor der Veranstaltung per E-mail zusenden.
+
+Bei Rückfragen zur Veranstaltung wenden Sie sich gern an Sara Helleisz unter +49 89 9507-2453 oder per E-Mail an event@sevenonemedia.de.
+
+Mit freundlichen Grüßen
+Ihre SevenOne Media</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

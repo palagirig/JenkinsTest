@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Land (P7S1)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Länder (P7S1)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alpha-2 Code --></label>
+        <name>Alpha_2_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alpha-3 Code --></label>
+        <name>Alpha_3_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name DE --></label>
+        <name>Name_DE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name EN --></label>
+        <name>Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numeric Code --></label>
+        <name>Numeric_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Abkürzung des Landes, wie von ProDia benötigt. --></help>
+        <label><!-- P7S1 Abkürzung --></label>
+        <name>P7S1_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <label><!-- P7S1 Sphere --></label>
+        <name>P7S1_Sphere__c</name>
+        <picklistValues>
+            <masterLabel>Aer</masterLabel>
+            <translation><!-- Aer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S71</masterLabel>
+            <translation><!-- S71 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sgn</masterLabel>
+            <translation><!-- Sgn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomAt</masterLabel>
+            <translation><!-- SomAt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomCh</masterLabel>
+            <translation><!-- SomCh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDe</masterLabel>
+            <translation><!-- SomDe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven</masterLabel>
+            <translation><!-- Ven --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- AE = EU-Land; AS = Deutschland; AD = Rest --></help>
+        <label><!-- Steuerkennzeichen --></label>
+        <name>P7S1_Steuerkennzeichen__c</name>
+        <picklistValues>
+            <masterLabel>AD</masterLabel>
+            <translation><!-- AD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AE</masterLabel>
+            <translation><!-- AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Country will be sorted in top part of select list --></help>
+        <label><!-- Top Country --></label>
+        <name>P7S1_TopCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Not DACH Region --></help>
+        <label><!-- Ventures International --></label>
+        <name>Ven_International__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Ven_Region__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Country Layout</layout>
+        <sections>
+            <label><!-- Access Options --></label>
+            <section>Access Options</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- ISO Codes --></label>
+            <section>ISO Codes</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

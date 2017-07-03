@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>SomTv_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>AdF Projekte</relationshipLabel>
+        <relationshipName>AdF_Projekte</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AdFConceptAdSales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Umbenannt zum 01.03.15 von &quot;Verkäufer AdF Special Ad Sales&quot; zu &quot;Verkäufer AdF Concept Sales&quot;</description>
+        <externalId>false</externalId>
+        <label>Verkäufer AdF Concept Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SomTv_AdFConceptAdSales</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AdFConceptioner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AdF Conceptioner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AdF_Projekte1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AdFLicensingSales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Verkäufer AdF Licensing Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AdF_Projekte</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AdFProjectManager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AdF Project Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SomTv_AdFProjectManager</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AgencyServiceTeam__c</fullName>
+        <description>Auswahl des zugehörigen Agency Service Teams.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auswahl des zugehörigen Agency Service Teams.</inlineHelpText>
+        <label>Agency Service Team</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aegis</fullName>
+                    <default>false</default>
+                    <label>Aegis</label>
+                </value>
+                <value>
+                    <fullName>Group M</fullName>
+                    <default>false</default>
+                    <label>Group M</label>
+                </value>
+                <value>
+                    <fullName>Internal Agency</fullName>
+                    <default>false</default>
+                    <label>Internal Agency</label>
+                </value>
+                <value>
+                    <fullName>Kundenabhängig</fullName>
+                    <default>false</default>
+                    <label>Kundenabhängig</label>
+                </value>
+                <value>
+                    <fullName>Magna Global</fullName>
+                    <default>false</default>
+                    <label>Magna Global</label>
+                </value>
+                <value>
+                    <fullName>Omnicom</fullName>
+                    <default>false</default>
+                    <label>Omnicom</label>
+                </value>
+                <value>
+                    <fullName>Special Ads</fullName>
+                    <default>false</default>
+                    <label>Special Ads</label>
+                </value>
+                <value>
+                    <fullName>Vivaki</fullName>
+                    <default>false</default>
+                    <label>Vivaki</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRDigital__c</fullName>
+        <description>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1Digital_c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1Digital_c</inlineHelpText>
+        <label>BR (%) Digital</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRGesamt__c</fullName>
+        <description>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Gesamt_c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Gesamt_c</inlineHelpText>
+        <label>BR (%) gesamt</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRLizenz__c</fullName>
+        <description>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Lizenz_c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Lizenz_c</inlineHelpText>
+        <label>BR (%) Lizenzen</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRPlacements__c</fullName>
+        <description>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Placments_c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Placments_c</inlineHelpText>
+        <label>BR (%) Placements</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRRabattierfaehig__c</fullName>
+        <description>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Rabattierfaehig_c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Rabattierfaehig_c</inlineHelpText>
+        <label>BR (%) rabattierfähig</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRTestimonial__c</fullName>
+        <externalId>false</externalId>
+        <label>BR (%) Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BRTvfrei__c</fullName>
+        <description>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Tvfrei_c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gewichtetes Mittel Barrabatt in %
+(Summe (OLI.SomTv_MB1_Kopf_AdF_c*OLI.BRc))/SomTv_MB1_Tvfrei_c</inlineHelpText>
+        <label>BR (%) freigabepflichtig</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_DigitalSales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Verkäufer SOM Digital Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SomTv_DigitalSales</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Digital__c</fullName>
+        <description>Zwischensumme Mediabrutto1 der Digital-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto1 der Digital-Produkte</inlineHelpText>
+        <label>MB1 Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Gesamt__c</fullName>
+        <description>Zwischensumme Mediabrutto1 aller Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto1 aller Produkte</inlineHelpText>
+        <label>MB1 gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Lizenz__c</fullName>
+        <description>Zwischensumme Mediabrutto1 der Lizenz-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto1 der Lizenz-Produkte</inlineHelpText>
+        <label>MB1 Lizenzen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Placements__c</fullName>
+        <description>Zwischensumme Mediabrutto1 der Placement-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto1 der Placement-Produkte</inlineHelpText>
+        <label>MB1 Placements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Rabattierfaehig__c</fullName>
+        <description>Zwischensumme Mediabrutto1 der rabattierfähigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto1 der rabattierfähigen TV-Produkte</inlineHelpText>
+        <label>MB1 rabattierfähig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Testimonial__c</fullName>
+        <externalId>false</externalId>
+        <label>MB1 Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Tvfrei__c</fullName>
+        <description>Zwischensumme Mediabrutto1 der freigabepflichtigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto1 der freigabepflichtigen TV-Produkte</inlineHelpText>
+        <label>MB1 freigabepflichtig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Digital__c</fullName>
+        <description>Zwischensumme Mediabrutto3 der Digital-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto3 der Digital-Produkte</inlineHelpText>
+        <label>MB3 Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Gesamt__c</fullName>
+        <description>Summe Mediabrutto3 aller Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe Mediabrutto3 aller Produkte</inlineHelpText>
+        <label>MB3 gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Lizenz__c</fullName>
+        <description>Zwischensumme Mediabrutto3 der Lizenz-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto3 der Lizenz-Produkte</inlineHelpText>
+        <label>MB3 Lizenzen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Placements__c</fullName>
+        <description>Zwischensumme Mediabrutto3  der Placement-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto3 der Placement-Produkte</inlineHelpText>
+        <label>MB3 Placements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Rabattierfaehig__c</fullName>
+        <description>Zwischensumme Mediabrutto 3 der rabattierfähigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto 3 der rabattierfähigen TV-Produkte</inlineHelpText>
+        <label>MB3 rabattierfähig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Testimonial__c</fullName>
+        <externalId>false</externalId>
+        <label>MB3 Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3Tvfrei__c</fullName>
+        <description>Zwischensumme Mediabrutto3 der freigabepflichtigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Mediabrutto3 der freigabepflichtigen TV-Produkte</inlineHelpText>
+        <label>MB3 freigabepflichtig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Digital__c</fullName>
+        <description>Zwischensumme Medianetto1 der Digital-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto1 der Digital-Produkte</inlineHelpText>
+        <label>MN1 Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Gesamt__c</fullName>
+        <description>Summe Medianetto1 aller Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe Medianetto1 aller Produkte</inlineHelpText>
+        <label>MN1 gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Lizenz__c</fullName>
+        <description>Zwischensumme Medianetto1 der Lizenz-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto1 der Lizenz-Produkte</inlineHelpText>
+        <label>MN1 Lizenzen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Placements__c</fullName>
+        <description>Zwischensumme Medianetto1 der Placement-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto1 der Placement-Produkte</inlineHelpText>
+        <label>MN1 Placements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Rabattierfaehig__c</fullName>
+        <description>Zwischensumme Medianetto1 der rabattierfähigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto1 der rabattierfähigen TV-Produkte</inlineHelpText>
+        <label>MN1 rabattierfähig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Testimonial__c</fullName>
+        <externalId>false</externalId>
+        <label>MN1 Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN1Tvfrei__c</fullName>
+        <description>Zwischensumme Medianetto1 der freigabepflichtigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto1 der freigabepflichtigen TV-Produkte</inlineHelpText>
+        <label>MN1 freigabepflichtig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Digital__c</fullName>
+        <description>Zwischensumme Medianetto2 der Digital-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto2 der Digital-Produkte</inlineHelpText>
+        <label>MN2 Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Gesamt__c</fullName>
+        <description>Summe Medianetto2 aller Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe Medianetto2 aller Produkte</inlineHelpText>
+        <label>MN2 gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Lizenz__c</fullName>
+        <description>Zwischensumme Medianetto2 der Lizenz-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto2 der Lizenz-Produkte</inlineHelpText>
+        <label>MN2  Lizenzen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Placements__c</fullName>
+        <description>Zwischensumme Medianetto2 der Placement-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto2 der Placement-Produkte</inlineHelpText>
+        <label>MN2 Placements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Rabattierfaehig__c</fullName>
+        <description>Zwischensumme Medianetto1 der rabattierfähigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto1 der rabattierfähigen TV-Produkte</inlineHelpText>
+        <label>MN2 rabattierfähig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Testimonial__c</fullName>
+        <externalId>false</externalId>
+        <label>MN2 Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2Tvfrei__c</fullName>
+        <description>Zwischensumme Medianetto2 der freigabepflichtigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto2 der freigabepflichtigen TV-Produkte</inlineHelpText>
+        <label>MN2 freigabepflichtig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Digital__c</fullName>
+        <description>Zwischensumme Medianetto3 der Digital-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto3 der Digital-Produkte</inlineHelpText>
+        <label>MN3 Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Gesamt__c</fullName>
+        <description>Summe Medianetto3 aller Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe Medianetto3 aller Produkte</inlineHelpText>
+        <label>MN3 gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Lizenz__c</fullName>
+        <description>Zwischensumme Medianetto3 der Lizenz-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto3 der Lizenz-Produkte</inlineHelpText>
+        <label>MN3 Lizenzen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Placements__c</fullName>
+        <description>Zwischensumme Medianetto3 der Placement-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto3 der Placement-Produkte</inlineHelpText>
+        <label>MN3 Placements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Rabattierfaehig__c</fullName>
+        <description>Zwischensumme Medianetto3 der rabattierfähigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto3 der rabattierfähigen TV-Produkte</inlineHelpText>
+        <label>MN3 rabattierfähig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Testimonial__c</fullName>
+        <externalId>false</externalId>
+        <label>MN3 Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Tvfrei__c</fullName>
+        <description>Zwischensumme Medianetto3 der freigabepflichtigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zwischensumme Medianetto3 der freigabepflichtigen TV-Produkte</inlineHelpText>
+        <label>MN3 freigabepflichtig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_PfadZumKundenordner__c</fullName>
+        <description>Hier kann der Link zum S-Laufwerk eingetragen werden damit dieser dann im AdF Projekt klickbar angezeigt wird.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier kann der Link zum S-Laufwerk eingetragen werden damit dieser dann im AdF Projekt klickbar angezeigt wird.</inlineHelpText>
+        <label>Pfad zum Kundenordner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_PhaseProjekt__c</fullName>
+        <description>Beschreibt den Status der Rabattfreigabe von AdF-Projekten und Bausteinen. Phase des Projektes muss auf &quot;in Anlage&quot; stehen, um &quot;Für Genehmigung einzureichen&quot; zu aktivieren.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibt den Status der Rabattfreigabe von AdF-Projekten und Bausteinen. Phase des Projektes muss auf &quot;in Anlage&quot; stehen, um &quot;Für Genehmigung einzureichen&quot; zu aktivieren.</inlineHelpText>
+        <label>Phase</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>true</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>angelegt</fullName>
+                    <default>false</default>
+                    <label>angelegt</label>
+                </value>
+                <value>
+                    <fullName>in Briefing</fullName>
+                    <default>false</default>
+                    <label>in Briefing</label>
+                </value>
+                <value>
+                    <fullName>Rabatt freigegeben</fullName>
+                    <default>false</default>
+                    <label>Rabatt freigegeben</label>
+                </value>
+                <value>
+                    <fullName>Rabatt abgelehnt</fullName>
+                    <default>false</default>
+                    <label>Rabatt abgelehnt</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomTv_SomTvSales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Verkäufer SOM-TV Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SomTv_SomTvSales</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldDigital__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3Digital__c=0, 0, SomTv_MN3Digital__c/SomTv_MB3Digital__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Yield (%) Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldGesamt__c</fullName>
+        <description>Yield aller Produkte innerhalb des AdF-Projektes</description>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3Gesamt__c=0, 0,SomTv_MN3Gesamt__c/SomTv_MB3Gesamt__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Yield aller Produkte innerhalb des AdF-Projektes</inlineHelpText>
+        <label>Yield (%) gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldLizenz__c</fullName>
+        <description>Yield der Lizenz-Produkte</description>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3Lizenz__c=0, 0, SomTv_MN3Lizenz__c/SomTv_MB3Lizenz__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Yield der Lizenz-Produkte</inlineHelpText>
+        <label>Yield (%) Lizenzen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldPlacements__c</fullName>
+        <description>Yield der Placement-Produkte</description>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3Placements__c=0, 0, SomTv_MN3Placements__c/SomTv_MB3Placements__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Yield der Placement-Produkte</inlineHelpText>
+        <label>Yield (%) Placements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldRabattierfaehig__c</fullName>
+        <description>Yield der rabattierfähigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3Rabattierfaehig__c=0, 0, SomTv_MN3Rabattierfaehig__c/SomTv_MB3Rabattierfaehig__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Yield der rabattierfähigen TV-Produkte</inlineHelpText>
+        <label>Yield (%) rabattierfähig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldTestimonial__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( SomTv_MB3Testimonial__c=0, 0,  SomTv_MN3Testimonial__c /SomTv_MB3Testimonial__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Yield (%) Testimonial</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_YieldTvfrei__c</fullName>
+        <description>Yield aller freigabepflichtigen TV-Produkte</description>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3Tvfrei__c=0, 0, SomTv_MN3Tvfrei__c/SomTv_MB3Tvfrei__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Yield aller freigabepflichtigen TV-Produkte</inlineHelpText>
+        <label>Yield (%) freigabepflichtig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>tftemp__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(
+&apos;file://&apos;&amp;
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( SomTv_PfadZumKundenordner__c, &apos; &apos;, &apos;%20&apos;), &apos;\\&apos;, &apos;/&apos;), &apos;//&apos;,&apos;/&apos;)
+,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( SomTv_PfadZumKundenordner__c,  &apos; &apos;, &apos;%20&apos;), &apos;\\&apos;, &apos;/&apos;), &apos;:&apos;,&apos;&apos;)
+,
+&apos;_blank&apos;
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>tftemp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>AdF Projekt</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SomTv_MB1Gesamt__c</columns>
+        <columns>SomTv_BRGesamt__c</columns>
+        <columns>SomTv_MB3Gesamt__c</columns>
+        <columns>SomTv_MN3Gesamt__c</columns>
+        <columns>SomTv_PhaseProjekt__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>AdF Projekt-Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>AdF Projekte</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SomTv_Factsheet</fullName>
+        <availability>online</availability>
+        <description>Zeigt den Adf Factsheet Report zum zugehörigen Projekt an.</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Factsheet</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00OD0000006QeBy?pv0={! SomTv_AdfProjekt__c.Name }</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SomTv_Kundenordner</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Kundenordner</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>file://{!SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( SomTv_AdfProjekt__c.SomTv_PfadZumKundenordner__c , &apos; &apos;, &apos;%20&apos;), &apos;\\&apos;, &apos;/&apos;), &apos;:&apos;,&apos;&apos;)}
+
+/*
+{!SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(  SomTv_AdfProjekt__c.SomTv_PfadZumKundenordner__c , &apos; &apos;, &apos;%20&apos;), &apos;\\&apos;, &apos;/&apos;), &apos;//&apos;,&apos;/&apos;)}
+
+
+file://{!SUBSTITUTE(SUBSTITUTE( SomTv_AdfProjekt__c.SomTv_PfadZumKundenordner__c , &apos; &apos;, &apos;%20&apos;), &apos;\\&apos;, &apos;/&apos;)}
+
+
+file://{!SUBSTITUTE( SomTv_AdfProjekt__c.SomTv_PfadZumKundenordner__c , &apos; &apos;, &apos;%20&apos;)}
+
+
+file://{!SomTv_AdfProjekt__c.SomTv_PfadZumKundenordner__c}
+*/</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SomTv_OLI_FactSheetExcel</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>FactSheet (Excel)</masterLabel>
+        <openType>newWindow</openType>
+        <page>SomTv_OLI_AdfExport</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

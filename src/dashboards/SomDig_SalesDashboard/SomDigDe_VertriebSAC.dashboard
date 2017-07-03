@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>LoggedInUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MB3__c.CONVERT</column>
+            </chartSummary>
+            <chartSummary>
+                <aggregate>Average</aggregate>
+                <axisBinding>y2</axisBinding>
+                <column>Opportunity$MB3__c.CONVERT</column>
+            </chartSummary>
+            <componentType>ColumnLine</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Offen: Wkt. zw. 1 und 99 Prozent</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <header>SAC-Opportunities offen Gesamtjahr</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_SacOpportunityOffenAll2</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>VB / MB3 Sum &amp; Average</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MB3__c.CONVERT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Offen: Wkt. zw. 1 und 99 Prozent / Pipeline: Schlusstermin &gt; heute</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <groupingColumn>Opportunity$CloseDate</groupingColumn>
+            <header>SAC-Opportunities offen Zukunft (Pipeline)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_SacOpportunityOffenPipeline</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>VB / Monat / MB3 Sum</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
+            <footer>SAC-Oppties mit Schlusstermin &gt; heute</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_OffeneSacOpportunities</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Offene Angebote nach VB-Team</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>SAC-Oppties nicht gewonnen/verloren</footer>
+            <groupingColumn>Opportunity$Campaign.Parent</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_OffeneSacOpportunities</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Offene Angebote nach B2B-Aktion</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MB3__c.CONVERT</column>
+            </chartSummary>
+            <chartSummary>
+                <aggregate>Average</aggregate>
+                <axisBinding>y2</axisBinding>
+                <column>Opportunity$MB3__c.CONVERT</column>
+            </chartSummary>
+            <componentType>ColumnLine</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Verloren: Wkt. ist 0 Prozent</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <header>SAC-Opportunities verloren Gesamtjahr</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_SacOpportunityVerlorenAll</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>VB / MB3 Sum &amp; Average</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MB3__c.CONVERT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Verloren: Wkt. ist 0 Prozent</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <groupingColumn>Opportunity$CloseDate</groupingColumn>
+            <header>SAC-Opportunities verloren Gesamtjahr</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_SacOpportunityVerlorenAll</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>VB / Monat / MB3 Sum</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MN2__c.CONVERT</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>MN2 der Opportunities (Status: Auftrag) nach Team</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <header>SAC-Opportunities gewonnen Gesamtjahr</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SAC_Opportunity_Auftraege</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>VB / Sum MN2</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MN2__c</column>
+            </chartSummary>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y2</axisBinding>
+                <column>Opportunity$MN2__c</column>
+            </chartSummary>
+            <componentType>ColumnLine</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Gewonnen: Wkt. ist 100 %</footer>
+            <groupingColumn>Opportunity$Owner.VB_Location__c</groupingColumn>
+            <header>SAC-Opportunities offen Gesamtjahr</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>SomDig_Sales/SomDigDe_SacOpportunityGewonnenAll</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>VB / MN2 Sum &amp; Average</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <column>FORMULA1</column>
+            </chartSummary>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <header>ConversionRate aktuelles GJ</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Aufträge / Kampagnen (%)</metricLabel>
+            <report>SomDig_Sales/SomDigDe_SacOpportunitieyAll</report>
+        </components>
+    </rightSection>
+    <runningUser>dennis.mueller@p7s1.net</runningUser>
+    <textColor>#000000</textColor>
+    <title>Vertrieb SAC</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Id</field>
+    </columns>
+    <columns>
+        <field>Account$AccountNumber</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_ExternalId__r$P7S1_Source__c</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_ExternalId__r$Name</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Alle Accounts, die eine externe ID hinterlegt haben (außer Nielsen-ID)</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.P7S1_ExternalId__r$P7S1_Source__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Debitorennr BK 29,Debitorennr BK 29 - Barter,Debitorennr TV,ProSa/ProSedi,Sachkonto konzernintern,Vermarkter-Id (ProSa)</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Löschen Accounts - Externe ID</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_mit_externer_ID__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

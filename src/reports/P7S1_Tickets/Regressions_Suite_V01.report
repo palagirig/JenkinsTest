@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestCase__c.Lcm_TestCaseName__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestCase__c.Lcm_Description__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestCase__c.Lcm_Precondition__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestCase__c.Lcm_Testdata__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestCase__c.Lcm_ExpResult__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lcm_TestCase__c.Lcm_RequirementName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Regressions-Suite V01</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lcm_TestCase__c@Lcm_TestCase__c.Lcm_Requirement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lcm_TestCase__c.Lcm_Testdata__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

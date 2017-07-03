@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>ADvendio__DeliveryData__c.ADvendio__DeliveredImpressions__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ADvendio__DeliveryData__c$ADvendio__Type__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Summer AI je Typ</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>ADvendio__DeliveryData__c$Name</field>
+    </columns>
+    <columns>
+        <field>ADvendio__DeliveryData__c$ADvendio__Month__c</field>
+    </columns>
+    <columns>
+        <field>ADvendio__DeliveryData__c$ADvendio__Day__c</field>
+    </columns>
+    <columns>
+        <field>ADvendio__DeliveryData__c$ADvendio__DeliveredImpressions__c</field>
+    </columns>
+    <columns>
+        <field>ADvendio__DeliveryData__c$CreatedBy</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Dieser Report zeigt alle Lieferzahlen einer Kampagnenposition an, die manuell im System hinterlegt wurden.</description>
+    <filter>
+        <criteriaItems>
+            <column>ADvendio__DeliveryData__c$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Interface SomDig Adsvr</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADvendio__DeliveryData__c$ADvendio__CampaignItem__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADvendio__DeliveryData__c$ADvendio__Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Lieferzahlen von Benutzern</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomDig_LieferzahlenPerPosition__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>ADvendio__DeliveryData__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

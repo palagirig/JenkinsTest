@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Gültige Werbeleistung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Gültige Werbeleistungen</value>
+    </caseValues>
+    <fields>
+        <help><!-- Hiermit wird die Verbindung zwischen dem Vertrag und der Werbeleistung hergestellt. --></help>
+        <label><!-- Vertrag (Sevenventures) --></label>
+        <name>Ven_Vertrag_Sevenventures__c</name>
+        <relationshipLabel><!-- Gültige Werbeleistungen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hiermit wird die Verbindung zwischen dem Vertrag und der Werbeleistung hergestellt. --></help>
+        <label><!-- Werbeleistungen --></label>
+        <name>Ven_Werbeleistungen__c</name>
+        <relationshipLabel><!-- Gültig in Verträgen --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Verbindungsobjekt Werbeleistung-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- B2B Aktionsmitglieder Feedback --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- B2B Aktionsmitglieder Feedback --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Gewünschter Abflugort --></label>
+        <name>P7S1_Abflugort__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Feld nicht in Verwendung) --></label>
+        <name>P7S1_AbweichendeRechnungsadresse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anrede Brief --></label>
+        <name>P7S1_AnredeBrief__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anrede (dyn. Language) --></label>
+        <name>P7S1_AnredeDynLanguage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anrede --></label>
+        <name>P7S1_Anrede__c</name>
+    </fields>
+    <fields>
+        <label><!-- B2B Aktionsmitglied ID --></label>
+        <name>P7S1_B2BAktionsmitgliedID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonuskarten-Nr --></label>
+        <name>P7S1_BonuskartenNr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>P7S1_Contact__c</name>
+        <relationshipLabel><!-- B2B Aktionsmitglieder Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Datenschutzbedingungen akzeptiert --></label>
+        <name>P7S1_DatenschutzbedingungenAkzeptiert__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Mail --></label>
+        <name>P7S1_EMail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abweichende Rechnungsadresse --></label>
+        <name>P7S1_EigeneAnreise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eigene Snowboardschuhe --></label>
+        <name>P7S1_EigeneSnowboardschuhe__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eigener Snowboard --></label>
+        <name>P7S1_EigenerSnowboard__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eishockey --></label>
+        <name>P7S1_Eishockey__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eisstock --></label>
+        <name>P7S1_Eisstock__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Essen --></label>
+        <name>P7S1_Essen__c</name>
+        <picklistValues>
+            <masterLabel>Trifft nicht zu.</masterLabel>
+            <translation><!-- Trifft nicht zu. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegan</masterLabel>
+            <translation><!-- Vegan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegetarisch</masterLabel>
+            <translation><!-- Vegetarisch --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Teilnahme --></label>
+        <name>P7S1_EventTeilnahme__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Firma --></label>
+        <name>P7S1_Firma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fluggesellschaft --></label>
+        <name>P7S1_Fluggesellschaft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gewicht --></label>
+        <name>P7S1_Gewicht__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hausnummer --></label>
+        <name>P7S1_Hausnummer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Körpergröße --></label>
+        <name>P7S1_Koerpergroesse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language Code --></label>
+        <name>P7S1_LanguageCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wenn Ja, darf die Mobilnummer an den Teilnehmerkreis kommuniziert werden. --></help>
+        <label><!-- Mobil Teilnehmerkreis --></label>
+        <name>P7S1_MobilTeilnehmerkreis__c</name>
+        <picklistValues>
+            <masterLabel>Ja</masterLabel>
+            <translation><!-- Ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein</masterLabel>
+            <translation><!-- Nein --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobil --></label>
+        <name>P7S1_Mobil__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>P7S1_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ort --></label>
+        <name>P7S1_Ort__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLZ --></label>
+        <name>P7S1_PLZ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parkplatz --></label>
+        <name>P7S1_Parkplatz__c</name>
+        <picklistValues>
+            <masterLabel>Ja</masterLabel>
+            <translation><!-- Ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein</masterLabel>
+            <translation><!-- Nein --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rechnungsadresse --></label>
+        <name>P7S1_Rechnungsadresse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registrierungscode --></label>
+        <name>P7S1_Registrierungscode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schuhgröße --></label>
+        <name>P7S1_Schuhgrosse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shuttle Bus --></label>
+        <name>P7S1_ShuttleBus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eigene Ski --></label>
+        <name>P7S1_SkiSnowboard__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Skifahrer --></label>
+        <name>P7S1_Skifahrer__c</name>
+        <picklistValues>
+            <masterLabel>Anfänger / Beginner</masterLabel>
+            <translation>Beginner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fortgeschritten / Advanced learner</masterLabel>
+            <translation>Advanced learner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kein Interesse / No interest</masterLabel>
+            <translation>No interest</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profi / Professional</masterLabel>
+            <translation>Professional</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eigene Skischuhe --></label>
+        <name>P7S1_SkischuheSnowboardschuhe__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eigene Skistöcke --></label>
+        <name>P7S1_Skistoecke__c</name>
+        <picklistValues>
+            <masterLabel>Ja / Yes</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nein / No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Snowboarder --></label>
+        <name>P7S1_Snowboarder__c</name>
+        <picklistValues>
+            <masterLabel>Anfänger / Beginner</masterLabel>
+            <translation>Beginner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fortgeschritten / Advanced learner</masterLabel>
+            <translation>Advanced learner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kein Interesse / No interest</masterLabel>
+            <translation>No interest</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profi / Professional</masterLabel>
+            <translation>Professional</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>P7S1_Status__c</name>
+        <picklistValues>
+            <masterLabel>Absage</masterLabel>
+            <translation><!-- Absage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zusage</masterLabel>
+            <translation><!-- Zusage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Strasse --></label>
+        <name>P7S1_Strasse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eigene Anreise --></label>
+        <name>P7S1_Veranstaltungsort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vorname --></label>
+        <name>P7S1_Vorname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zustimmung Kosten --></label>
+        <name>P7S1_ZustimmungKosten__c</name>
+    </fields>
+    <layouts>
+        <layout>B2B Aktionsmitglieder Feedback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eishockey / Eisstock --></label>
+            <section>Eishockey / Eisstock</section>
+        </sections>
+        <sections>
+            <label><!-- Kontaktinformationen --></label>
+            <section>Kontaktinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Rechnungsadresse --></label>
+            <section>Rechnungsadresse</section>
+        </sections>
+        <sections>
+            <label><!-- Ski --></label>
+            <section>Ski</section>
+        </sections>
+        <sections>
+            <label><!-- Snowboard --></label>
+            <section>Snowboard</section>
+        </sections>
+        <sections>
+            <label><!-- Teilnahme-Details --></label>
+            <section>Teilnahme-Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- B2B Aktionsmitglied Feedback --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

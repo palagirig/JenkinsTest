@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Top1 Wirtschaftsbereich</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Top1 Wirtschaftsbereich</value>
+    </caseValues>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration
+Hilfetext	Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branchen-Experte aus dem Bereich Sales Steering &amp; Market Insights (MI) --></help>
+        <label><!-- Branchen Champion MI --></label>
+        <name>Som_BranchenChampionMi__c</name>
+        <relationshipLabel><!-- Top1 Wirtschaftsbereich (Branchen Champion MI) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Branchen-Experte aus dem Bereich Sales --></help>
+        <label><!-- Branchen Champion Sales --></label>
+        <name>Som_BranchenChampion__c</name>
+        <relationshipLabel><!-- Top1 Wirtschaftsbereich (Branchen Champion Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Aktuelle sowie künftige Trends im Wirtschaftsbereich --></help>
+        <label><!-- Trends - ex ante --></label>
+        <name>Som_TrendsExAnte__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entwicklung der Bruttowerbespendings (lt. Nielsen Media Research) im Wirtschaftsbereich [Verantwortlich: BC Market Insights] --></help>
+        <label><!-- Werbemarkt --></label>
+        <name>Som_Werbemarkt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ergänzungen und besondere Informationen --></help>
+        <label><!-- Zusatzinformation Branche --></label>
+        <name>Som_Zusatzinformationen__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Som_Top1WirtschaftsbereichLayout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Factsheet --></label>
+            <section>Factsheet</section>
+        </sections>
+        <sections>
+            <label><!-- Informationen --></label>
+            <section>Informationen</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

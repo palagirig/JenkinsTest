@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_ExternalId__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$P7S1_UstIdNr__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCountry</field>
+    </columns>
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.P7S1_ExternalId__r$P7S1_Source__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Debitorennr BK 29,Debitorennr BK 29 - Barter,Debitorennr TV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$P7S1_UstIdNr__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Account.ung_ltiger_Account</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Bericht Acc mit Debi ohne UST.ID</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_mit_externer_ID__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

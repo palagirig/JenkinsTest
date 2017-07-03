@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.P7S1_KonzernAgenturverbundZugehoerigkeit__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <booleanFilter>((1 or 2 or 3 or 4)) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>mec</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>concept media</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>best of Media</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Som_KonzernAgenturverbund__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>mec</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.SomTv_Accounttypen__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>kein Werbetreibender,nicht relevant 71M Sales D,Non-71M_Bestand 2016,Non-71M_Neugeschäft 2016,Non-TV_Bestand 2016,Non-TV_Neugeschäft 2016,Winback 2016</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>mec potentiale</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$SomDig_WtAgBeziehung__c@SomDig_WtAgBeziehung__c.SomDig_Agentur__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.P7S1_KonzernAgenturverbundZugehoerigkeit__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

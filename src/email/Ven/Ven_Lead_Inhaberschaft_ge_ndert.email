@@ -1,0 +1,5 @@
+Die Inhaberschaft im Lead {!Lead.Company} hat sich geändert.
+Hier der Link zum Lead: {!Lead.Link}
+
+Alter Inhaber: {!Lead.00ND0000004eP9c}
+Neuer Inhaber: {!Lead.00ND0000004eP9b}

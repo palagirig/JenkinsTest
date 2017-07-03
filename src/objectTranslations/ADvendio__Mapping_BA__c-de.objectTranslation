@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- RG Empfänger P7S1 Konzernmitglied --></label>
+        <name>RG_Empfaenger_P7S1_Konzernmitglied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adservertyp --></label>
+        <name>SomDig_Adservertyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auftragstyp --></label>
+        <name>SomDig_Auftragstyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattung --></label>
+        <name>SomDig_Mediagattung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Differenzierung --></label>
+        <name>SomDig_Mediagattungs_Differenzierung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Segment Name --></label>
+        <name>SomDig_Mediagattungs_Segment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Segment --></label>
+        <name>SomDig_Mediagattungs_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Id --></label>
+        <name>SomDig_PartnerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preisliste --></label>
+        <name>SomDig_Preisliste__c</name>
+    </fields>
+    <fields>
+        <label><!-- Steuerkennzeichen --></label>
+        <name>SomDig_Steuerkennzeichen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeträger --></label>
+        <name>SomDig_Werbetraeger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zahlungsbedingungen (SAP) --></label>
+        <name>SomDig_Zahlungsbedingungen_SAP__c</name>
+    </fields>
+</CustomObjectTranslation>

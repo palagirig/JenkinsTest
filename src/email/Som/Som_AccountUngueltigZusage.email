@@ -1,0 +1,10 @@
+Lieber {!Account.OwnerFirstName} {!Account.OwnerLastName}, 
+
+Deine Anfrage den Account "{!Account.Name}" ungültig zu setzen wurde soeben final genehmigt. Der Account wurde als ungültig markiert.
+
+Bitte prüfe nun alle dazugehörigen Kontakte und führe gegebenenfalls deren Unternehmenswechsel durch.
+
+Hier der Link zum Account: {!Account.Link}
+
+Gruß
+Salesforce-Support

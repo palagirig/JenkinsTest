@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Batch Log</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Batch Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- AsyncApexJob Id --></label>
+        <name>Lcm_AsyncApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>Lcm_Message__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

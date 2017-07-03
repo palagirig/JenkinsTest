@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SomDig_WtAgBeziehung__c.SomDig_PrognoseGesamtAj__c:SUM - SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtVj__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Differenz Prognose AJ_Umsatz VJ</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtVj__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtAj__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzMedDiffInStream__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzMedDiffInPage__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzMedDiffRest__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_PrognoseGesamtAj__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_PrognoseMedDiffInStream__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_PrognoseMedDiffInPage__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_PrognoseMedDiffRest__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>SomDig_WtAgBeziehung__c.SomDig_PrognoseGesamtAj__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtAj__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtVj__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_WtAgBeziehung__c.SomDig_AgenturKonzernmutter__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_WtAgBeziehung__c.SomDig_Agentur__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Prognosen_alle Teams_Agenturen_2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$SomDig_WtAgBeziehung__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Umsatz Digital</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Umsätze Digital</value>
+    </caseValues>
+    <fields>
+        <help><!-- mögliche Werte: CPD, CPM, CPX, -, unbekannt
+Details siehe https://emea.salesforce.com/501D0000000bTk9 --></help>
+        <label><!-- Abrechnungsmodell --></label>
+        <name>SomDig_Abrechnungsmodell__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name der verlinkten Agentur aus der WT AG Beziehung, wird automatisch per Formel befüllt --></help>
+        <label><!-- Agentur --></label>
+        <name>SomDig_Agentur__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stand der Daten (Zeitpunkt des Exports vom Quellsystem)
+siehe auch Feld &quot;Quelle&quot; für weitere Infos. --></help>
+        <label><!-- Datenstand --></label>
+        <name>SomDig_Datenstand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jahr-Quartal --></label>
+        <name>SomDig_JahrQuartal__c</name>
+    </fields>
+    <fields>
+        <help><!-- In welchem Geschäftsjahr ist der Umsatz aufgelaufen? --></help>
+        <label><!-- Jahr --></label>
+        <name>SomDig_Jahr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung des Umsatz-Datensatzes zur Mediagattung (Digital, TV, Text) --></help>
+        <label><!-- Mediagattung --></label>
+        <name>SomDig_Mediagattung__c</name>
+        <relationshipLabel><!-- Umsätze Digital --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung des Umsatz-Datensatzes zum Mediagattungs-Segment (z.B. InApp, InBrowser, Connected TV) und  bezeichnet das Werbemittel der Übertragung --></help>
+        <label><!-- Mediagattungs-Differenzierung --></label>
+        <name>SomDig_MediagattungsDifferenzierung__c</name>
+        <relationshipLabel><!-- Umsätze Digital --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c) --></help>
+        <label><!-- Mediagattungs-Differenzierungs-Name --></label>
+        <name>SomDig_MediagattungsDifferenzierungsName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c) --></help>
+        <label><!-- Mediagattungs-Name --></label>
+        <name>SomDig_MediagattungsName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c) --></help>
+        <label><!-- Mediagattungs-Segment-Name --></label>
+        <name>SomDig_MediagattungsSegmentName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung des Umsatz-Datensatzes zum Mediagattungs-Differenzierung (z.B. InStream, InDisplay) und bezeichnet die Art des Werbemittels --></help>
+        <label><!-- Mediagattungs-Segment --></label>
+        <name>SomDig_MediagattungsSegment__c</name>
+        <relationshipLabel><!-- Umsätze Digital --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Monetärer Wert, MN2 bedeutet nach Abzug aller Rabatte (vor Skonto) --></help>
+        <label><!-- MN2 --></label>
+        <name>SomDig_Mn2__c</name>
+    </fields>
+    <fields>
+        <help><!-- In welchem Quartal des jeweiligen Geschäftsjahres ist der Umsatz entstanden (Q1 bis Q4) --></help>
+        <label><!-- Quartal --></label>
+        <name>SomDig_Quartal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibt detailliert die Quelle und die jeweils zugrundeliegenden Filterkriterien --></help>
+        <label><!-- Quelle --></label>
+        <name>SomDig_Quelle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wobei handelt es sich um das im Umsatz ausgewählt (Geschäfts-)Jahr: ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Wird automatisch befüllt. --></help>
+        <label><!-- relatives Jahr help --></label>
+        <name>SomDig_RelativesJahrHelp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wobei handelt sich hierbei um das im Umsatz ausgewählt (Geschäfts-)Jahr: zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Wird automatisch befüllt. --></help>
+        <label><!-- relatives Jahr --></label>
+        <name>SomDig_RelativesJahr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name des verlinkten Werbetreibenden aus der WT AG Beziehung, wird automatisch per Formel befüllt --></help>
+        <label><!-- Werbetreibender --></label>
+        <name>SomDig_Werbetreibender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verknüpfung der Umsatz-Datensätze an das JunctionObject &quot;WT AG Beziehungen&quot; statt an Accounts direkt. Für jede WT AG Beziehung muss ein Datensatz exisitieren --></help>
+        <label><!-- WT AG Beziehung --></label>
+        <name>SomDig_WtAgBeziehung__c</name>
+        <relationshipLabel><!-- Umsätze Digital --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Real Date for Year Calculation --></help>
+        <label><!-- Jahr (Datum) --></label>
+        <name>SomTv_JahrDatum__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Umsatz Digital</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Umsatz Digital --></label>
+            <section>Umsatz Digital</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

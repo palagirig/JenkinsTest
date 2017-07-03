@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- prüft, ob Tag außerhalb des Positions-Zeitraums. temp. Hilfsfeld um diese fehlerhaften Daten für DWH auszufiltern, siehe Ticket 4237 --></help>
+        <label><!-- Tag außerhalb Position --></label>
+        <name>SomDig_CheckDay__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhAIClicksSollBisHeute --></label>
+        <name>SomDig_DwhAIClicksSollBisHeute__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhAiBooked --></label>
+        <name>SomDig_DwhAiBooked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhAmount_B3 --></label>
+        <name>SomDig_DwhAmount_B3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhAmount --></label>
+        <name>SomDig_DwhAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhAmount_net --></label>
+        <name>SomDig_DwhAmount_net__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhAmount_net_net --></label>
+        <name>SomDig_DwhAmount_net_net__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig_DwhClicksBooked --></label>
+        <name>SomDig_DwhClicksBooked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhList_Price --></label>
+        <name>SomDig_DwhList_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhMn3 --></label>
+        <name>SomDig_DwhMn3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhRate_Discount_4_Name --></label>
+        <name>SomDig_DwhRate_Discount_4_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhRate_Discount_4 --></label>
+        <name>SomDig_DwhRate_Discount_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Für DWH Schnittstelle werden die Werte aus CampaignItem direkt hier als Formel benötigt --></help>
+        <label><!-- SomDig_DwhSales_Price --></label>
+        <name>SomDig_DwhSales_Price__c</name>
+    </fields>
+</CustomObjectTranslation>

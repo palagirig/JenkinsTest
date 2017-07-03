@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ADvendio__AdServer_ID__c$Name</field>
+    </columns>
+    <columns>
+        <field>ADvendio__AdServer_ID__c$ADvendio__AdServer_ID__c</field>
+    </columns>
+    <columns>
+        <field>ADvendio__AdServer_ID__c$ADvendio__Parent_AdServer_ID__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Alle Ad Units nach Formate geordnet (somit können z.B. die Ad Units kontrolliert werden, die noch keinem Format zugeordnet sind)</description>
+    <filter>
+        <criteriaItems>
+            <column>ADvendio__AdServer_ID__c$ADvendio__Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ad Unit</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADvendio__AdServer_ID__c$P7S1_Format__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Ad Units Format</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomDig_AdserverIdsMitWerbemittel__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>ADvendio__AdServer_ID__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

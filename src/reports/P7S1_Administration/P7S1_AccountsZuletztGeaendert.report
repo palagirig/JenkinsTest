@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Bericht für Dashboard: Welche Sphäre hat Accounts in den letzten 6 Monaten wie geändert?</description>
+    <filter>
+        <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Account$LastModifiedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_MONTHS:5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$LastModifiedBy.P7S1_UserType__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>System</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$LastModifiedBy.Profile</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Systemadministrator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$LastModifiedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Account$LastModifiedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$LastModifiedBy.P7S1_Sphere__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>P7S1 Accounts zuletzt geändert</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_mit_Benutzerinfo__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Adv_ReichweitenRelevant --></label>
+        <name>Adv_ReichweitenRelevant__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig_MediaCampaignID --></label>
+        <name>SomDig_MediaCampaignID__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Sie sind nicht berechtigt &quot;Kompensation&quot; auszuwählen. --></errorMessage>
+        <name>SomDig_KompensationProfiles</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sie sind nicht berechtigt &quot;Positionsrabatt Natural&quot; auszuwählen. --></errorMessage>
+        <name>SomDig_PositionsrabattNaturalProfiles</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sie sind nicht berechtigt &quot;Storno ohne Leistungsfluss&quot; auszuwählen. --></errorMessage>
+        <name>SomDig_StornoOhneLeistungsflussProfiles</name>
+    </validationRules>
+</CustomObjectTranslation>

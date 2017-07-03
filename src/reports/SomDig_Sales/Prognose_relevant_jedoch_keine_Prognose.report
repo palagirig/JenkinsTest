@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Account ist für AJ Prognoserelevant jedoch gibt es keine Prognose</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.SomDig_PrognoseGesamtAj__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.SomDig_UmsatzGesamtVJ__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>EUR 10000</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.SomDig_SalesTeam__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Prognose relevant jedoch keine Prognose</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

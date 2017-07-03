@@ -1,0 +1,20 @@
+Hallo {!Case.OwnerFirstName},
+
+dir wurde soeben das Ticket {!Case.CaseNumber} zugewiesen.
+Wir bitten dies zu beachten und das Ticket zu bearbeiten. Vielen Dank!    
+
+{!Case.Link}
+
+Gruß
+
+SaS Solutions
+P7S1 Applications
+
+########################
+Interne Infos:
+Zugewiesen durch: {!Case.LastModifiedBy} 
+Projekt: {!Case.Projekt__c}
+Sprint: {!Case.Lcm_Release__c}
+Kanban: {!Case.Lcm_KanbanKombi__c}
+Priorität: {!Case.Priority}
+Rank: {!Case.Rank__c}

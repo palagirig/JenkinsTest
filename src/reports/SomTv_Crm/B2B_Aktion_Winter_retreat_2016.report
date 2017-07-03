@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>P7S1_B2BAktionsmitgliederFeedback__c.P7S1_EMail__c</field>
+    </columns>
+    <columns>
+        <field>P7S1_B2BAktionsmitgliederFeedback__c.P7S1_Name__c</field>
+    </columns>
+    <columns>
+        <field>P7S1_B2BAktionsmitgliederFeedback__c.P7S1_LanguageCode__c</field>
+    </columns>
+    <columns>
+        <field>P7S1_B2BAktionsmitgliederFeedback__c.P7S1_Status__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Tabular</format>
+    <name>B2B Aktion - Winter retreat 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$P7S1_B2BAktionsmitgliederFeedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

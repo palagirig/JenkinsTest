@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Ad Price --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Ad Price --></value>
+    </caseValues>
+    <fields>
+        <label><!-- MIG_SPEC_PRODIAKEY_PRICE --></label>
+        <name>MIG_SPEC_PRODIAKEY_PRICE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_ADvendio__List_price --></label>
+        <name>Mig_ADvendio_List_price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_AufpreisVideolaenge --></label>
+        <name>Mig_AufpreisVideolaenge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_Basispreis_Sekundenaufschlag --></label>
+        <name>Mig_Basispreis_Sekundenaufschlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_Basispreis --></label>
+        <name>Mig_Basispreis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_BookingPosition --></label>
+        <name>Mig_BookingPosition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_CountCampItems --></label>
+        <name>Mig_CountCampItems__c</name>
+    </fields>
+    <fields>
+        <help><!-- INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update --></help>
+        <label><!-- Migration_Info --></label>
+        <name>Mig_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_IstMoi --></label>
+        <name>Mig_IstMoi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_MgDifferenzierungsName --></label>
+        <name>Mig_MgDifferenzierungsName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_ProdiaKey_Ad_Specs --></label>
+        <name>Mig_ProdiaKey_Ad_Specs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_ProdiaKey_ForPrice_Spec --></label>
+        <name>Mig_ProdiaKey_ForPrice_Spec__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird --></help>
+        <label><!-- Mig_ProdiaKey --></label>
+        <name>Mig_ProdiaKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mig_VAbfrage --></label>
+        <name>Mig_VAbfrage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abrechnung als Festplatzierung --></label>
+        <name>SomDig_AbrechnungFestplatzierung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auftragstyp --></label>
+        <name>SomDig_Auftragstyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- BT fähig --></label>
+        <name>SomDig_BtFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPX fähig --></label>
+        <name>SomDig_CpxFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- FC fähig --></label>
+        <name>SomDig_FcFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geo Targeting unterbunden --></label>
+        <name>SomDig_GeoTargetingUnterbunden__c</name>
+    </fields>
+    <fields>
+        <label><!-- GT fähig --></label>
+        <name>SomDig_GtFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verkaufspreis bearbeitbar --></label>
+        <name>SomDig_KEM_PriceEdit__c</name>
+    </fields>
+    <fields>
+        <label><!-- KeyValue Targeting unterbunden --></label>
+        <name>SomDig_KeyValueTargetingUnterbunden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum-RollUp auf AdPrice ob Datensatz vorhanden und dieses Feld in TabRegel anfragen. Wenn &gt;0, dann Buttons für BehTargeting in Tab der KEM anzeigen, sonst ausblenden. --></help>
+        <label><!-- Kontrolle KeyAdpriceAssignment --></label>
+        <name>SomDig_KontrolleKeyAdpriceAssignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mediagattungs-Differenzierung --></label>
+        <name>SomDig_MediagattungsDifferenzierung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metabuchungslogik --></label>
+        <name>SomDig_Metabuchungslogik__c</name>
+        <relationshipLabel><!-- Ad Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Mindest-TKP Preis, der einzuhalten ist --></help>
+        <label><!-- Min. CPM Price --></label>
+        <name>SomDig_MinCPM_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement --></label>
+        <name>SomDig_Placement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retargeting fähig --></label>
+        <name>SomDig_RetargetingFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rotationstyp --></label>
+        <name>SomDig_Rotationstyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- TKP fähig --></label>
+        <name>SomDig_TkpFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- WB fähig --></label>
+        <name>SomDig_WbFaehig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeformgruppe --></label>
+        <name>SomDig_Werbeformgruppe__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Ad Price No. --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

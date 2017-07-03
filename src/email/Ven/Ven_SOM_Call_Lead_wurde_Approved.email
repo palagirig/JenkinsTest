@@ -1,0 +1,12 @@
+Hallo Investment Manager, 
+
+folgender Lead zur Firma {!Lead.Company} wurde vom SOM Call Approved.
+
+Der Lead wurde mit dem Lead-Status "Approved" markiert und wird nun vom CRM Team konvertiert.
+
+Der Lead ist weiterhin zur Bearbeitung gesperrt.
+
+Hier der Link zum Lead: {!Lead.Id}
+
+Mit freundlichen Grüßen 
+Ihr SalesForce Team

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Nombre de usuario para el AdServer DART. Utilizado para configurar el Vendedor y el Coordinador de publicidad principal para un pedido DART.</help>
+        <label><!-- DART User Name --></label>
+        <name>ADvendio__DartUserName__c</name>
+    </fields>
+    <fields>
+        <label><!-- complimentary close --></label>
+        <name>ADvendio__complimentary_close__c</name>
+        <picklistValues>
+            <masterLabel>best regards</masterLabel>
+            <translation>atentamente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>kind regards</masterLabel>
+            <translation>cordialmente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>regards</masterLabel>
+            <translation>saludos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- scanned Sign --></label>
+        <name>ADvendio__scanned_Sign__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Region --></label>
+        <name>DB_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier können komma-separiert Sandboxnamen/-präfixe eingetragen werden. Bei der Erstellung einer darauf matchenden Sandbox wird für diesen User automatisch die Nachbearbeitung aus Klasse Lcm_Sandbox_Setup ausgelöst. --></help>
+        <label><!-- Sandboxes --></label>
+        <name>Lcm_Sandboxes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hält den Firmensitz des Unternehmens um diese in die Fusszeile von Email zu bringen. --></help>
+        <label><!-- Firmensitz laut HRB --></label>
+        <name>P7S1Firmensitz_laut_HRB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mitarbeiter --></label>
+        <name>P7S1_EmpLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mitarbeiter-Id --></label>
+        <name>P7S1_Emp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hält die gültigen Geschäftsführer für die Fusszeile einer Email. --></help>
+        <label><!-- Geschäftsführer --></label>
+        <name>P7S1_Geschaeftsfuehrer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hält die Handelsregisternummer für die Fusszeile einer Email. --></help>
+        <label><!-- HRB --></label>
+        <name>P7S1_HRB__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt an, ob der User über seine Rolle Teil von Sales Excellence ist --></help>
+        <label><!-- Has SE Role --></label>
+        <name>P7S1_Has_SE_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Host (eu.., cs8, cs16...) in Kleinbuchstaben --></help>
+        <label><!-- P7S1_Host --></label>
+        <name>P7S1_Host__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfefeld für die Migration der Games-Daten --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet User, die nicht Administrator oder Schnittstellenuser sind --></help>
+        <label><!-- Is Business User --></label>
+        <name>P7S1_IsBusinessUser__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt an, ob es sich um eine Salesforce Sandbox handelt --></help>
+        <label><!-- P7S1_IsSandbox --></label>
+        <name>P7S1_IsSandbox__c</name>
+    </fields>
+    <fields>
+        <help><!-- P7S1_MigrationInsertUpdate__c --></help>
+        <label><!-- P7S1_MigrationInsertUpdate__c --></label>
+        <name>P7S1_MigrationInsertUpdate__c</name>
+    </fields>
+    <fields>
+        <help><!-- P7S1_MigrationsComment__c --></help>
+        <label><!-- P7S1_MigrationsComment__c --></label>
+        <name>P7S1_MigrationsComment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Benutzer ist Teilnehmer von Entwicklungsprojekten (Projektteam, Tester, Fachbereich). Dient zur Steuerung von Einstellungen in Testumgebungen --></help>
+        <label><!-- Projektmitglied --></label>
+        <name>P7S1_Projects__c</name>
+        <picklistValues>
+            <masterLabel>AdC_CoreTeam</masterLabel>
+            <translation><!-- AdC_CoreTeam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdC_Fachbereich</masterLabel>
+            <translation><!-- AdC_Fachbereich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRMSALES_CoreTeam</masterLabel>
+            <translation><!-- CRMSALES_CoreTeam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRMSALES_Fachbereich</masterLabel>
+            <translation><!-- CRMSALES_Fachbereich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SalesExcellence_CoreTeam</masterLabel>
+            <translation><!-- SalesExcellence_CoreTeam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SalesExcellence_Fachbereich</masterLabel>
+            <translation><!-- SalesExcellence_Fachbereich --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- zur Steuerung, welche User für Schulung aktiviert wurden.
+Datum der Schulung wird eingetragen
+Das Feld wird nur in Sandbox VP/VP2 benötigt / gefüllt. --></help>
+        <label><!-- Schulungsdatum --></label>
+        <name>P7S1_Schulungsdatum__c</name>
+    </fields>
+    <fields>
+        <help><!-- User ist im CoreTeam eines Projekts und es handelt sich um eine Sandbox --></help>
+        <label><!-- Show Testuser Links --></label>
+        <name>P7S1_ShowTestuserLinks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Steuert das Hüllenmodel (Sphere) für alle Unternehmensbereiche welche die zentrale sf.com-Instance nutzen - steuert und Datentechnisch voneinander trennt. --></help>
+        <label><!-- P7S1_Sphere --></label>
+        <name>P7S1_Sphere__c</name>
+        <picklistValues>
+            <masterLabel>Aer</masterLabel>
+            <translation><!-- Aer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sgn</masterLabel>
+            <translation><!-- Sgn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomAt</masterLabel>
+            <translation><!-- SomAt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDe</masterLabel>
+            <translation><!-- SomDe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven</masterLabel>
+            <translation><!-- Ven --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hält die Steuernummer des Unternehmens um diese in die Fusszeile von Email zu bringen. --></help>
+        <label><!-- Steuernummer --></label>
+        <name>P7S1_Steuernummer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hält die Umsatzsteuer-Identnummer des Unternehmens um diese in die Fusszeile von Email zu bringen. --></help>
+        <label><!-- UmsatzsteuerID-Nr --></label>
+        <name>P7S1_UmsatzsteuerID_Nr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enthält die Information welcher Unit der User zugeordnet ist --></help>
+        <label><!-- Unit --></label>
+        <name>P7S1_Unit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte das Windows Login = Active Directory Benutzername eintragen (Format: abc0000z) --></help>
+        <label><!-- P7S1_UserId --></label>
+        <name>P7S1_UserId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Typ des Benutzers, zur Unterscheidung von &quot;echten&quot; Benutzers und den unterschiedlichen System-Benutzern (Test, Import, Interface) --></help>
+        <label><!-- P7S1_UserType --></label>
+        <name>P7S1_UserType__c</name>
+        <picklistValues>
+            <masterLabel>Guest_Chatter</masterLabel>
+            <translation><!-- Guest_Chatter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Dev</masterLabel>
+            <translation><!-- System_Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Import</masterLabel>
+            <translation><!-- System_Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Interface</masterLabel>
+            <translation><!-- System_Interface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Reuse</masterLabel>
+            <translation><!-- System_Reuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Tester</masterLabel>
+            <translation><!-- System_Tester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User_external</masterLabel>
+            <translation><!-- User_external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User_internal</masterLabel>
+            <translation><!-- User_internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Wenn Checkbox True dann weichen E-Mail und Benutzername voneinander ab. --></help>
+        <label><!-- Benutzername ungleich E-Mail --></label>
+        <name>P7S1_UsernameEmailDifferent__c</name>
+    </fields>
+    <fields>
+        <help><!-- ProRex FunktionsIDs des Mitarbeiters --></help>
+        <label><!-- ProRex-Funktions-Ids --></label>
+        <name>ProRexFunktionsIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- eindeutige Verkäufer-ID. Muss bei SomTv-Verkäufern gefüllt werden. Manuell ab 2000.
+(ehemals ProRex PersonenID des Mitarbeiters) --></help>
+        <label><!-- Verkäufer-Id --></label>
+        <name>ProRexId__c</name>
+    </fields>
+    <fields>
+        <help><!-- ProRex FunktionsID des Mitarbeiters --></help>
+        <label><!-- ProRex-Funktions-Id --></label>
+        <name>ProRex_Funktions_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Item Forwarder inaktiv --></label>
+        <name>SomDig_CampaignItemForwarderInactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet einen User als PAM TeamLead. --></help>
+        <label><!-- Is TeamLead --></label>
+        <name>SomDig_IsTeamLead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für die SOM Digital Sales, wird primär für Reportzwecken genutzt (Datensätze wie Oppties etc. werden in den Reports u.a. nach diesen Werten gruppiert). Bitte bei jedem Digital-Vertriebler auswählen. Nachfolger-Feld von Vertriebs-Team/Location --></help>
+        <label><!-- Vertriebsteam Digital --></label>
+        <name>SomDig_SalesTeam__c</name>
+        <picklistValues>
+            <masterLabel>Vertrieb Berlin</masterLabel>
+            <translation><!-- Vertrieb Berlin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb Düsseldorf</masterLabel>
+            <translation><!-- Vertrieb Düsseldorf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb ECC</masterLabel>
+            <translation><!-- Vertrieb ECC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb Frankfurt</masterLabel>
+            <translation><!-- Vertrieb Frankfurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb Hamburg</masterLabel>
+            <translation><!-- Vertrieb Hamburg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb München</masterLabel>
+            <translation><!-- Vertrieb München --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb RTA</masterLabel>
+            <translation><!-- Vertrieb RTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vertrieb Steuerung</masterLabel>
+            <translation><!-- Vertrieb Steuerung --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SomTv Betreuer Gültig Bis --></label>
+        <name>SomTv_BetreuerGueltigBis__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomTv Betreuer Gültig Von --></label>
+        <name>SomTv_BetreuerGueltigVon__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wird NUR bei Profil SomTv_Sales benötigt
+SomDe=3776, SomAt: 22584 --></help>
+        <label><!-- Verkaufsbüro ID --></label>
+        <name>SomTv_Location_Id__c</name>
+        <picklistValues>
+            <masterLabel>22584</masterLabel>
+            <translation><!-- 22584 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3779</masterLabel>
+            <translation><!-- 3779 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die ID zur Verkaufsgruppe an. Diese ID muss vom Fachbereich geliefert werden. Wird aber NUR bei Profil SomTv_Sales benötigt --></help>
+        <label><!-- Verkaufsgruppe ID --></label>
+        <name>SomTv_SalesTeam_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verkaufsgruppe zum zugehörigen Verkaufsbüro. Diese muss vom Fachbereich geliefert werden. Wird aber NUR bei Profil SomTv_Sales benötigt --></help>
+        <label><!-- Verkaufsgruppe --></label>
+        <name>SomTv_SalesTeam__c</name>
+        <picklistValues>
+            <masterLabel>ENTERTAINMENT/ECC</masterLabel>
+            <translation><!-- ENTERTAINMENT/ECC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GESCHÄFTSFÜHRUNG</masterLabel>
+            <translation><!-- GESCHÄFTSFÜHRUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW BUSINESS</masterLabel>
+            <translation><!-- NEW BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES</masterLabel>
+            <translation><!-- SALES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES COMMERCE</masterLabel>
+            <translation><!-- SALES COMMERCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES INTERNATIONAL</masterLabel>
+            <translation><!-- SALES INTERNATIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES PARTNER</masterLabel>
+            <translation><!-- SALES PARTNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES POTENTIAL</masterLabel>
+            <translation><!-- SALES POTENTIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM BÖTTCHER</masterLabel>
+            <translation><!-- SALES TEAM BÖTTCHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM HAUPT</masterLabel>
+            <translation><!-- SALES TEAM HAUPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM HIRSCHMANN</masterLabel>
+            <translation><!-- SALES TEAM HIRSCHMANN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM HORSMANN</masterLabel>
+            <translation><!-- SALES TEAM HORSMANN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM HUSMANN</masterLabel>
+            <translation><!-- SALES TEAM HUSMANN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM JÜRGENS</masterLabel>
+            <translation><!-- SALES TEAM JÜRGENS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM KLABUNDT</masterLabel>
+            <translation><!-- SALES TEAM KLABUNDT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM MAYER</masterLabel>
+            <translation><!-- SALES TEAM MAYER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM MEYER-SCHÖNBERG</masterLabel>
+            <translation><!-- SALES TEAM MEYER-SCHÖNBERG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM SCHLIMGEN</masterLabel>
+            <translation><!-- SALES TEAM SCHLIMGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM SEEMANN</masterLabel>
+            <translation><!-- SALES TEAM SEEMANN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM VOLLSTUBEN</masterLabel>
+            <translation><!-- SALES TEAM VOLLSTUBEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALES TEAM ZWINGMANN</masterLabel>
+            <translation><!-- SALES TEAM ZWINGMANN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALESTEAM SCHLIMGEN/WEITEKAMP/SCHEPERS</masterLabel>
+            <translation><!-- SALESTEAM SCHLIMGEN/WEITEKAMP/SCHEPERS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team ID --></label>
+        <name>Team_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- an welchem Standort ist der Mitarbeiter ansässig --></help>
+        <label><!-- Vertriebs-Standort --></label>
+        <name>VB_Location__c</name>
+        <picklistValues>
+            <masterLabel>Berlin</masterLabel>
+            <translation><!-- Berlin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Düsseldorf</masterLabel>
+            <translation><!-- Düsseldorf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frankfurt</masterLabel>
+            <translation><!-- Frankfurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hamburg</masterLabel>
+            <translation><!-- Hamburg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>München</masterLabel>
+            <translation><!-- München --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wien</masterLabel>
+            <translation><!-- Wien --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pipeline checked last week --></label>
+        <name>Ven_PipeCheckedLastWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline checked --></label>
+        <name>Ven_PipelineChecked__c</name>
+    </fields>
+    <layouts>
+        <layout>Benutzerprofil-Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- 7Ventures --></label>
+            <section>7Ventures</section>
+        </sections>
+        <sections>
+            <label><!-- ADvendio --></label>
+            <section>ADvendio</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefiniert --></label>
+            <section>Benutzerdefiniert</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- SomTv-Migration --></label>
+            <section>SomTv-Migration</section>
+        </sections>
+        <sections>
+            <label><!-- SomTv_Sales --></label>
+            <section>SomTv_Sales</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Es handelt sich beim Benutzer um einen Sales-Mitarbeiter der SevenOne Media Digital; hier bitte immer das Feld &apos;Vertriebsteam Digital&apos; pflegen --></errorMessage>
+        <name>SomDig_VertriebsteamDigital</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Portal Login</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Portal Logins</value>
+    </caseValues>
+    <fields>
+        <help><!-- Zustimmung des Benutzers zu den AGB --></help>
+        <label><!-- Zustimmung zu AGB --></label>
+        <name>P7S1_AGB__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datum, an dem der Benutzer den AGB zugestimmt hat --></help>
+        <label><!-- AGB akzeptiert am --></label>
+        <name>P7S1_AGB_akzeptiert_am__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aktivierungslink für das Portal - wird in der E-Mail an den Kunden versendet --></help>
+        <label><!-- Activation Link --></label>
+        <name>P7S1_ActivationLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datum der Aktivierung durch P7S1 Mitarbeiter --></help>
+        <label><!-- Aktiviert am --></label>
+        <name>P7S1_Aktiviert_am__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anrede des Benutzers --></help>
+        <label><!-- Anrede --></label>
+        <name>P7S1_Anrede__c</name>
+        <picklistValues>
+            <masterLabel>Frau</masterLabel>
+            <translation><!-- Frau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Herr</masterLabel>
+            <translation><!-- Herr --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bereich des Benutzers --></help>
+        <label><!-- Bereich --></label>
+        <name>P7S1_Bereich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Weitere Informationen und Hinweise --></help>
+        <label><!-- Beschreibung --></label>
+        <name>P7S1_Beschreibung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kontakt mit Zugang zum Portal --></help>
+        <label><!-- Kontakt --></label>
+        <name>P7S1_Contact__c</name>
+        <relationshipLabel><!-- Portal Logins --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Datum der letzten Deaktivierung --></help>
+        <label><!-- Deaktiviert am --></label>
+        <name>P7S1_Deaktiviert_am__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Confirm Link --></label>
+        <name>P7S1_DeleteConfirmLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Registrierte E-Mail Adresse --></help>
+        <label><!-- E-Mail Adresse --></label>
+        <name>P7S1_EMail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zugehöriger Mitarbeiter, soweit der Kontakt ein Konzernmitglied ist. --></help>
+        <label><!-- Mitarbeiter --></label>
+        <name>P7S1_Emp__c</name>
+        <relationshipLabel><!-- Portal Logins --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Faxnummer des Benutzers --></help>
+        <label><!-- Fax --></label>
+        <name>P7S1_Fax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Firma des Benutzers --></help>
+        <label><!-- Firma --></label>
+        <name>P7S1_Firma__c</name>
+    </fields>
+    <fields>
+        <help><!-- Funktion des Benutzers --></help>
+        <label><!-- Funktion --></label>
+        <name>P7S1_Funktion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geburtstag --></label>
+        <name>P7S1_Geburtstag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datum der Löschung des Portalzugangs --></help>
+        <label><!-- Gelöscht am --></label>
+        <name>P7S1_Geloescht_am__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hausnummer des Benutzers --></help>
+        <label><!-- Hausnummer --></label>
+        <name>P7S1_Hausnummer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Land des Benutzers --></help>
+        <label><!-- Land --></label>
+        <name>P7S1_Land__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt an, wann der Kunde seine Daten das letzte Mal selbst angepasst hat. --></help>
+        <label><!-- Letzte Änderung durch Kunde --></label>
+        <name>P7S1_LetzteAenderungKunde__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mobiltelefonnummer des Benutzers --></help>
+        <label><!-- Mobil --></label>
+        <name>P7S1_Mobil__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nachname des Benutzers --></help>
+        <label><!-- Nachname --></label>
+        <name>P7S1_Nachname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newsletter Subscribe Link --></label>
+        <name>P7S1_NewsletterSubscribeLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newsletter --></label>
+        <name>P7S1_Newsletter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ort des Benutzers --></help>
+        <label><!-- Ort --></label>
+        <name>P7S1_Ort__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id aus dem Portal zur Identifizierung des Logins --></help>
+        <label><!-- Portal Id --></label>
+        <name>P7S1_PortalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status für das Portal --></help>
+        <label><!-- Portal Status --></label>
+        <name>P7S1_Portal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Adfactory Aktiv</masterLabel>
+            <translation><!-- Adfactory Aktiv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aktiv</masterLabel>
+            <translation><!-- Aktiv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gelöscht</masterLabel>
+            <translation><!-- Gelöscht --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gesperrt</masterLabel>
+            <translation><!-- Gesperrt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liferay Aktiv</masterLabel>
+            <translation><!-- Liferay Aktiv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neu</masterLabel>
+            <translation><!-- Neu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Auswahl des Portals für das der Zugang gilt --></help>
+        <label><!-- Portal --></label>
+        <name>P7S1_Portal__c</name>
+        <picklistValues>
+            <masterLabel>sevenone-adfactory.de</masterLabel>
+            <translation><!-- sevenone-adfactory.de --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sevenonemedia.ch</masterLabel>
+            <translation><!-- sevenonemedia.ch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sevenonemedia.com</masterLabel>
+            <translation><!-- sevenonemedia.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sevenonemedia.de</masterLabel>
+            <translation><!-- sevenonemedia.de --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Postleitzahl des Benutzers --></help>
+        <label><!-- Postleitzahl --></label>
+        <name>P7S1_Postleitzahl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Strasse des Benutzers --></help>
+        <label><!-- Strasse --></label>
+        <name>P7S1_Strasse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nachname des Benutzers --></help>
+        <label><!-- Telefon --></label>
+        <name>P7S1_Telefon__c</name>
+    </fields>
+    <fields>
+        <help><!-- Titel des Benutzers --></help>
+        <label><!-- Titel --></label>
+        <name>P7S1_Titel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unternehmensart des Benutzers --></help>
+        <label><!-- Unternehmensart --></label>
+        <name>P7S1_Unternehmensart__c</name>
+        <picklistValues>
+            <masterLabel>Mediaagentur</masterLabel>
+            <translation><!-- Mediaagentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Werbeagentur</masterLabel>
+            <translation><!-- Werbeagentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Werbungtreibender</masterLabel>
+            <translation><!-- Werbungtreibender --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Vorname des Benutzers --></help>
+        <label><!-- Vorname --></label>
+        <name>P7S1_Vorname__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Portal Login Layout</layout>
+        <sections>
+            <label><!-- Beschreibung --></label>
+            <section>Beschreibung</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Historie --></label>
+            <section>Historie</section>
+        </sections>
+        <sections>
+            <label><!-- Portaldaten --></label>
+            <section>Portaldaten</section>
+        </sections>
+        <sections>
+            <label><!-- Zugehörig --></label>
+            <section>Zugehörig</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Activate --></label>
+        <name>Activate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Contact --></label>
+        <name>Create_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Portal_User --></label>
+        <name>Delete_Portal_User</name>
+    </webLinks>
+</CustomObjectTranslation>

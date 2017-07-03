@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Quotexdaten TV</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Quotexdaten TV</value>
+    </caseValues>
+    <fields>
+        <help><!-- Brutto-Umsatz laut Nielsen --></help>
+        <label><!-- Brutto --></label>
+        <name>Som_Brutto__c</name>
+    </fields>
+    <fields>
+        <help><!-- Geschäftsjahr --></help>
+        <label><!-- Jahr --></label>
+        <name>Som_Jahr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nielsen-ID laut Pinball --></help>
+        <label><!-- Nielsen-ID --></label>
+        <name>Som_NielsenId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nielsen-Firmenname --></help>
+        <label><!-- Nielsen-Name --></label>
+        <name>Som_NielsenName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Accountnummer des Kunden --></help>
+        <label><!-- Accountnummer --></label>
+        <name>Som_ProRexId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quotexdaten --></label>
+        <name>Som_Quotexdaten__c</name>
+        <relationshipLabel><!-- Quotexdaten TV --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Vermarkter laut Nielsen --></help>
+        <label><!-- Vermarkter --></label>
+        <name>Som_Vermarkter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nielsen-Werbeträger --></help>
+        <label><!-- Werbeträger --></label>
+        <name>Som_Werbetraeger__c</name>
+    </fields>
+    <fields>
+        <help><!-- GJ=Gesamtjahr, YTM=YearToMonth --></help>
+        <label><!-- Zeitraum --></label>
+        <name>Som_ZeitraumTyp__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Som_QuotexTv</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Um vertrauliche Anhänge an Opportunities anzuhängen, die von allen Units im Konzern mit Accountzugriff gesehen werden können, ist es möglich Notizen und Anhänge an dieses speziellen Objekt auszulagern.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_Beschreibung__c</fullName>
+        <description>Um welche Art von Anhängen handelt es sich.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Um welche Art von Anhängen handelt es sich.</inlineHelpText>
+        <label>Beschreibung</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Opportunity__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Zugehörige Opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zugehörige Opportunity</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Private_Notizen_und_Anh_nge</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Vertrauliche Notizen und Anhänge</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Vertraulich-{000000}</displayFormat>
+        <label>Vertrauliche Notizen und Anhänge Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Vertrauliche Notizen und Anhänge</pluralLabel>
+    <searchLayouts>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>P7S1_Beschreibung__c</searchFilterFields>
+        <searchFilterFields>P7S1_Opportunity__c</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

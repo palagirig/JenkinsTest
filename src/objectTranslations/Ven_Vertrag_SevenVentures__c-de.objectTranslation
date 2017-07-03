@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Vertrag (Sevenventures)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Verträge (Sevenventures)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comment (Valuation Parameters) --></label>
+        <name>Comment_Valuation_Parameters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung des Schieberechts von P7S1“) - Beschreibung des Schieberechts von P7S1 --></help>
+        <label><!-- Media Shifting P7S1 --></label>
+        <name>Media_Shifting_P7S1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly GMV Commitment (SevenVentures) --></label>
+        <name>Monthly_GMV_Commitment_SevenVentures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte den Service Level auswählen. --></help>
+        <label><!-- Service Level --></label>
+        <name>Service_Level__c</name>
+        <picklistValues>
+            <masterLabel>Bronze (&lt;20% MG)</masterLabel>
+            <translation><!-- Bronze (&lt;20% MG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold (25-30% MG oder strategischer Deal)</masterLabel>
+            <translation><!-- Gold (25-30% MG oder strategischer Deal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platin (&gt;=30% MG oder strat. Prio-Deal)</masterLabel>
+            <translation><!-- Platin (&gt;=30% MG oder strat. Prio-Deal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silber (20-24% MG oder Media Investment)</masterLabel>
+            <translation><!-- Silber (20-24% MG oder Media Investment) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Wird mit der E-Mail Adresse des Account Inhabers befüllt, soweit dieser Mitarbeiter von 7V ist --></help>
+        <label><!-- Account-Owner (if 7V) --></label>
+        <name>Ven_AccountOwner7V__c</name>
+    </fields>
+    <fields>
+        <help><!-- Besonderheiten bitte hier eintragen! --></help>
+        <label><!-- Additional Information --></label>
+        <name>Ven_Additional_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Bemerkungen zu dem Feld &quot;Bewertungsparameter&quot; eintragen. --></help>
+        <label><!-- Bemerkung zu den Bewertungsparametern --></label>
+        <name>Ven_Bemerkung_zu_den_Bewertungsparameter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Bemerkungen zu dem Feld &quot;Informationspflichten&quot; eintragen. --></help>
+        <label><!-- Comment (Information Requirements) --></label>
+        <name>Ven_Bemerkung_zu_den_Informationspflich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Bemerkungen zum Schlusstermin eintragen. --></help>
+        <label><!-- Comment (Closing Date) --></label>
+        <name>Ven_Bemerkung_zum_Schlusstermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Bemerkungen zu dem Feld &quot;Beteiligungshöhe&quot; eintragen. --></help>
+        <label><!-- Comment (Equity Participation) --></label>
+        <name>Ven_Bemerkung_zur_Beteiligungsh_he__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Bemerkungen zu dem Feld &quot;Gesellschafterstruktur&quot; eintragen. --></help>
+        <label><!-- Comment (Shareholder Structure) --></label>
+        <name>Ven_Bemerkung_zur_Gesellschafterstruktur__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte Bemerkungen zu dem Feld &quot;Minimumbeteiligung&quot; eintragen. --></help>
+        <label><!-- Comment (Minimum Participation) --></label>
+        <name>Ven_Bemerkung_zur_Minimumbeteiligung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte GMV Informationen eintragen. --></help>
+        <label><!-- Beschreibung zum GMV --></label>
+        <name>Ven_Beschreibung_zum_GMV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte Informationen zur Fälligkeit eintragen. --></help>
+        <label><!-- Beschreibung zur Fälligkeit --></label>
+        <name>Ven_Beschreibung_zur_F_lligkeit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung einer Nachlaufphase nach Kampagnen- / oder Vertragsende --></help>
+        <label><!-- Deferred Participation --></label>
+        <name>Ven_Beschreibung_zur_Nachlaufphase__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte Informationen zur festen Vergütung (Minimumgarantie) eintragen. --></help>
+        <label><!-- Beschreibung zur festen Vergütung --></label>
+        <name>Ven_Beschreibung_zur_festen_Verg_tung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung – leistungsabhängige Vergütung --></help>
+        <label><!-- Variable Proceeds (%) --></label>
+        <name>Ven_Beschreibung_zur_variablen_Verg_tung__c</name>
+    </fields>
+    <fields>
+        <help><!-- gibt an, ob eine zusätzliche Beteiligungskomponente zu dem Medialeistungsvertrag existiert. Die Auswahl beeinflusst die Standard Terms --></help>
+        <label><!-- Beteiligung --></label>
+        <name>Ven_Beteiligung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Beteiligungshöhe eintragen! --></help>
+        <label><!-- 7V Equity Share --></label>
+        <name>Ven_Beteiligunhgsh_he__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte Bewertungsparameter eintragen! --></help>
+        <label><!-- Bewertungsparameter --></label>
+        <name>Ven_Bewertungsparameter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Share --></label>
+        <name>Ven_ChannelShare__c</name>
+    </fields>
+    <fields>
+        <help><!-- Einhaltung der Senderschiene auf Jahres-/Monatsbasis --></help>
+        <label><!-- Channel Share (Period) --></label>
+        <name>Ven_Channel_Share__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation><!-- Year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comment (Additional Information) --></label>
+        <name>Ven_Comment_Additional_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bewertungsparameter - Multiple (wovon, in welcher Höhe, zu welchem Zeitpunkt) --></help>
+        <label><!-- Comment (Ownership Interest) --></label>
+        <name>Ven_Comment_Ownership_Interest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Das Vertragsende (Datum) wird hier erfasst. --></help>
+        <label><!-- Contract End --></label>
+        <name>Ven_Contract_End__c</name>
+    </fields>
+    <fields>
+        <help><!-- Der Vertragsstart (Datum) wird hier erfasst. --></help>
+        <label><!-- Contract Start --></label>
+        <name>Ven_Contract_Start__c</name>
+    </fields>
+    <fields>
+        <help><!-- Der Vertragsstatus wird hiermit erfasst. --></help>
+        <label><!-- Contract Status --></label>
+        <name>Ven_Contract_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Termination - Compensation --></label>
+        <name>Ven_Contract_Termination_Compensation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kündigungsrechte des Vertragspartners --></help>
+        <label><!-- Contract Termination (Customer) --></label>
+        <name>Ven_Contract_Termination_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daypart Share --></label>
+        <name>Ven_DaypartShare__c</name>
+    </fields>
+    <fields>
+        <help><!-- Einhaltung der Zeitschiene auf Jahres-/Monatsbasis --></help>
+        <label><!-- Daypart Share (Period) --></label>
+        <name>Ven_Daypart_Share__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation><!-- Year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deadline --></label>
+        <name>Ven_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Structure Other --></label>
+        <name>Ven_DealStructureOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Structure --></label>
+        <name>Ven_DealStructure__c</name>
+        <picklistValues>
+            <masterLabel>Equity only</masterLabel>
+            <translation><!-- Equity only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG only</masterLabel>
+            <translation><!-- MG only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG+EK</masterLabel>
+            <translation><!-- MG+EK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG+EP</masterLabel>
+            <translation><!-- MG+EP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG+EP Light</masterLabel>
+            <translation><!-- MG+EP Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG+RevShare</masterLabel>
+            <translation><!-- MG+RevShare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG+RevShare+EP</masterLabel>
+            <translation><!-- MG+RevShare+EP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hiermit wird die Vertragsart definiert. --></help>
+        <label><!-- Deal Type --></label>
+        <name>Ven_Deal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Call Option</masterLabel>
+            <translation><!-- Call Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Equity (majority)</masterLabel>
+            <translation><!-- Direct Equity (majority) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Equity (minority)</masterLabel>
+            <translation><!-- Direct Equity (minority) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exit-Participation</masterLabel>
+            <translation><!-- Exit-Participation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medialeistungsvertrag (inkl. EP Light)</masterLabel>
+            <translation><!-- Medialeistungsvertrag (inkl. EP Light) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier wir die Laufzeit des Vertrags automatisch berechnet (in Monate).
+Wenn ein Vertrag ab dem zweiten Monat länger als 15 Tage läuft, wird dieser als ein voller Monat gerechnet! --></help>
+        <label><!-- Duration --></label>
+        <name>Ven_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung - Verteilung des Bruttomediavolumens (BMV) über die Vertragslaufzeit --></help>
+        <label><!-- GMV Distribution --></label>
+        <name>Ven_GMV_Distribution__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte GMV Informationen eintragen. --></help>
+        <label><!-- GMV Informationen --></label>
+        <name>Ven_GMV_Informationen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte hier die Gesellschafterstruktur angeben! --></help>
+        <label><!-- Shareholder Structure --></label>
+        <name>Ven_Gesellschafterstruktur__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use full number --></help>
+        <label><!-- GMV Year 1 --></label>
+        <name>Ven_GmvYear1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use full number --></help>
+        <label><!-- GMV Year 2 --></label>
+        <name>Ven_GmvYear2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use full number --></help>
+        <label><!-- GMV Year 3 --></label>
+        <name>Ven_GmvYear3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zusammenfassung von Daten aus Theorem Analytics, die nach der Migration nicht mehr benötigt werden. --></help>
+        <label><!-- Historische Daten --></label>
+        <name>Ven_Historische_Daten__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Informationspflichten hier angeben! --></help>
+        <label><!-- Information Requirements --></label>
+        <name>Ven_Informationspflichten__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing MG - Commitment --></label>
+        <name>Ven_Invoicing_MG_Commitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing MG - Due Date --></label>
+        <name>Ven_Invoicing_MG_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Revenue - Commitment --></label>
+        <name>Ven_Invoicing_Revenue_Commitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Revenue - Due Date --></label>
+        <name>Ven_Invoicing_Revenue_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing --></label>
+        <name>Ven_Invoicing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte angeben ob eine Beteiligung beim Kunden besteht! --></help>
+        <label><!-- Additional Equity or equity-like Comp. --></label>
+        <name>Ven_Kombination_mit_Beteiligung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier bitte ggf. Kooperations-Informationen eintragen. --></help>
+        <label><!-- Kooperationsinformationen --></label>
+        <name>Ven_Kooperationsinformationen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Owner --></label>
+        <name>Ven_LegalOwner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nachschlagen auf SevenVentures Kontakte mit Rolle = &quot;Legal&quot; --></help>
+        <label><!-- Legal Owner --></label>
+        <name>Ven_Legal_Owner_2__c</name>
+        <relationshipLabel><!-- Verträge --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Nachschlagebeziehung zu einen Benutzer der als Legal Owner des Vertrages definiert wird! --></help>
+        <label><!-- Legal Owner old --></label>
+        <name>Ven_Legal_Owner__c</name>
+        <relationshipLabel><!-- Verträge (Sevenventures) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Media &amp; Analytics Owner --></label>
+        <name>Ven_MediaAndAnalyticsOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Shifting Customer (Annually) --></label>
+        <name>Ven_MediaShiftingCustomerAnnually__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Shifting Customer (Monthly) --></label>
+        <name>Ven_MediaShiftingCustomerMonthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Shifting SevenVentures (Annually) --></label>
+        <name>Ven_MediaShiftingSevenVenturesAnnually__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Shifting SevenVentures (Monthly) --></label>
+        <name>Ven_MediaShiftingSevenVenturesMonthly__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung des Schieberechts des Kunden --></help>
+        <label><!-- Media Shifting Customer --></label>
+        <name>Ven_Media_Shifting_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment (belongs to Minimum Guarantee) --></label>
+        <name>Ven_MinimumGuaranteeComment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aufteilung der Minimumgarantie über die Vertragslaufzeit --></help>
+        <label><!-- Minimum Guarantee (%) --></label>
+        <name>Ven_Minimum_Guarantee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte eine Minimumbeteiligung angeben! --></help>
+        <label><!-- Minimum Participation --></label>
+        <name>Ven_Minimumbeteiligung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly GMV Commitment (Customer) --></label>
+        <name>Ven_Monthly_GMV_Commitment_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vertragliche Information zur Monatsplanung --></help>
+        <label><!-- Monthly Planning --></label>
+        <name>Ven_Monthly_Planning__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mit diesem Feld wird die Verknüpfung der Vertrages mit eine Opportunity hergestellt. --></help>
+        <label><!-- Opportunity Name --></label>
+        <name>Ven_Opportunity__c</name>
+        <relationshipLabel><!-- Verträge --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comment (belongs to Optional GMV Volume) --></label>
+        <name>Ven_OptionalGmvVolumeComment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optional GMV Volume --></label>
+        <name>Ven_OptionalGmvVolume__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use full number --></help>
+        <label><!-- Optional GMV Year 1 --></label>
+        <name>Ven_OptionalGmvYear1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use full number --></help>
+        <label><!-- Optional GMV Year 2 --></label>
+        <name>Ven_OptionalGmvYear2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use full number --></help>
+        <label><!-- Optional GMV Year 3 --></label>
+        <name>Ven_OptionalGmvYear3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other deviations --></label>
+        <name>Ven_OtherDeviations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Shares --></label>
+        <name>Ven_OtherShares__c</name>
+    </fields>
+    <fields>
+        <help><!-- Informationen zum Vertrag von Seven Ventures. --></help>
+        <label><!-- Post Contract Participation --></label>
+        <name>Ven_Post_Contract_Participation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte das Textfeld ausfüllen! --></help>
+        <label><!-- Preamble --></label>
+        <name>Ven_Pr_ambel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment (belongs to PRAP Yield) --></label>
+        <name>Ven_PrapYieldComment__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRAP Yield (%) --></label>
+        <name>Ven_PrapYield__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Produkte und die Kooperationsart beschreiben in der Seven Ventures involviert ist. --></help>
+        <label><!-- Product and Cooperation --></label>
+        <name>Ven_Produkte_und_Kooperation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Berechnet das Datum für den Reminder in Abhängigkeit von der Vertragsdauer --></help>
+        <label><!-- Reminder --></label>
+        <name>Ven_Reminder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Royalty Report --></label>
+        <name>Ven_Royalty_Report__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte einen Schlusstermin eintragen! --></help>
+        <label><!-- Closing Date --></label>
+        <name>Ven_Schlusstermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Geographische Region z.B. DACH-Region --></help>
+        <label><!-- Scope --></label>
+        <name>Ven_Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- SevenContracts ID --></label>
+        <name>Ven_SevenContractsId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>Ven_Topic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of Optional GMV Year 1 to 3 --></help>
+        <label><!-- Total Optional GMV --></label>
+        <name>Ven_TotalOptionalGmv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of GMV Year 1 to 3 --></help>
+        <label><!-- Total GMV (without optional volume) --></label>
+        <name>Ven_Total_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total GMV (without optional volume) --></label>
+        <name>Ven_Total_GMVold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Bewertungsparameter eintragen. --></help>
+        <label><!-- Valuation Parameters --></label>
+        <name>Ven_Valuation_Parameters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte Informationen zum Vertragsgebiet angeben! --></help>
+        <label><!-- Vertragsgebiet --></label>
+        <name>Ven_Vertragsgebiet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte Kommentare zum Vertrag eintragen. --></help>
+        <label><!-- Comment --></label>
+        <name>Ven_Vertragskommentar__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Vertragssprache angeben! --></help>
+        <label><!-- Language --></label>
+        <name>Ven_Vertragssprache__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Yearly GMV Commitment (Customer) --></label>
+        <name>Ven_Yearly_GMV_Commitment_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly GMV Commitment (SevenVentures) --></label>
+        <name>Ven_Yearly_GMV_Commitment_SevenVentures__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Ven_Default</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Media --></label>
+            <section>Media</section>
+        </sections>
+        <sections>
+            <label><!-- Media Spendings --></label>
+            <section>Media Spendings</section>
+        </sections>
+        <sections>
+            <label><!-- Reminder if different topic and contract end --></label>
+            <section>Reminder if different topic and contract end</section>
+        </sections>
+        <sections>
+            <label><!-- Standard Fields --></label>
+            <section>Standard Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Ventures Default --></label>
+        <name>Ven_Default</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Medialeistungsvertrag (inkl. EP Light) --></label>
+        <name>Ven_Old</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If Deal Structure is set to &quot;Other&quot;, Deal Structure Other must not be empty. --></errorMessage>
+        <name>Ven_DealStructureOtherMustNotBeEmpty</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Ven_NewContract --></label>
+        <name>Ven_NewContract</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- This contract is about to expire!
+ Please contact your client immediately. --></description>
+        <name>Ven_Vertragsende</name>
+        <subject><!-- Reminder Contract Ending --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

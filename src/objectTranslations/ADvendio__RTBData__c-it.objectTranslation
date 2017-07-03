@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- PA Data (deprecated) --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- PA Data (deprecated) --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Datum und Stunde der letzten Änderung --></help>
+        <label><!-- Zuletzt geändert (Stunde) --></label>
+        <name>SomDig_ChangedHour2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datum und Stunde der letzten Änderung --></help>
+        <label><!-- Zuletzt geändert (Stunde) --></label>
+        <name>SomDig_ChangedHour__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nettoumsatz (12% Fee) --></help>
+        <label><!-- Nettoumsatz --></label>
+        <name>SomDig_Netto__c</name>
+    </fields>
+    <fields>
+        <help><!-- Jahr und Monat des Startdatums (indiziert) --></help>
+        <label><!-- Jahr/Monat --></label>
+        <name>SomDig_YearMonth__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- PA No --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

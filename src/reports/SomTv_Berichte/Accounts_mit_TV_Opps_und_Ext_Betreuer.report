@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$SomTv_Accounttypen__c</field>
+    </columns>
+    <columns>
+        <field>Account$ProRex_Rolle__c</field>
+    </columns>
+    <columns>
+        <field>Account.Externe_Betreuer__r$SomTv_Externer_Betreuer__c</field>
+    </columns>
+    <columns>
+        <field>Account.Externe_Betreuer__r$SomTv_Rolle__c</field>
+    </columns>
+    <columns>
+        <field>Account.Externe_Betreuer__r$SomTv_Agentur__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.SomTv_BuchungenOhneVertraege,Opportunity.SomTv_Commitment,Opportunity.SomTv_Paket,Opportunity.SomTv_Zubuchung</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>StageName</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Geschlossene und gewonnene</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>Opportunity</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>EUR</currency>
+    <description>CRMSALES-341</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$SomTv_Accounttypen__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bestandskunde,Konzern,Non-71M Bestand,Non-71M Neugeschäft,Non-TV Bestand,Non-TV Neugeschäft</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>SalesMgmt - Acc TV Opps &amp; Ext Betreuer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomTv_Account_mit_Externen_Betreuern__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

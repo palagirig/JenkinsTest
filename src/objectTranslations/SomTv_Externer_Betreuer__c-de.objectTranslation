@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Externer Betreuer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Externe Betreuer</value>
+    </caseValues>
+    <fields>
+        <help><!-- Firma des Betreuers --></help>
+        <label><!-- Agentur --></label>
+        <name>SomTv_Agentur__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beschreibung --></label>
+        <name>SomTv_Beschreibung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Referenz auf den Kontakt der als externer Betreuer in der ausgewählten Rolle zu diesem Account agiert. --></help>
+        <label><!-- Externer Betreuer --></label>
+        <name>SomTv_Externer_Betreuer__c</name>
+        <relationshipLabel><!-- Externe Betreuer --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Betreuter Kunde --></help>
+        <label><!-- Kunde --></label>
+        <name>SomTv_Kunde__c</name>
+        <relationshipLabel><!-- Externe Betreuer --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Es handelts sich um einen Kontakt von der Agentur mit Zuständigkeit innerhalb der Agentur für einen bestimmten Werbungstreibenden. --></help>
+        <label><!-- Rolle --></label>
+        <name>SomTv_Rolle__c</name>
+        <picklistValues>
+            <masterLabel>Agenturgeschäftsführer</masterLabel>
+            <translation><!-- Agenturgeschäftsführer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Einkäufer</masterLabel>
+            <translation><!-- Einkäufer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motiv-Bearbeiter</masterLabel>
+            <translation><!-- Motiv-Bearbeiter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimierer</masterLabel>
+            <translation><!-- Optimierer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planer</masterLabel>
+            <translation><!-- Planer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonstiges</masterLabel>
+            <translation><!-- Sonstiges --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tel --></label>
+        <name>SomTv_Tel__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Externer Betreuer-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>salow@silpion.de</contactEmail>
+    <label>interface_liferay</label>
+    <oauthConfig>
+        <callbackUrl>https://ahead-dev.silpion.de/salesforce/callback</callbackUrl>
+        <consumerKey>3MVG9lcxCTdG2VbtWAnBLcHTY.7aWd7RUapP5fMybMMEMYrSMd2.xILKyYfiSa_RP23hZHe4DPfyt8yefGPKY</consumerKey>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

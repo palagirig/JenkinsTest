@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Testphase</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Testphasen</value>
+    </caseValues>
+    <fields>
+        <help><!-- Ende der Testphase --></help>
+        <label><!-- Ende --></label>
+        <name>Lcm_Ende__c</name>
+    </fields>
+    <fields>
+        <help><!-- Start der Testphase --></help>
+        <label><!-- Start --></label>
+        <name>Lcm_Start__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung zur jeweiligen Test-Sphere. Hilfefeld für die Freigabeeinstellung --></help>
+        <label><!-- Lcm_TestSphere --></label>
+        <name>Lcm_TestSphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name der Testphase --></help>
+        <label><!-- Testphasen-Name --></label>
+        <name>Lcm_TestphaseName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Versions-Name --></label>
+        <name>Lcm_VersionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Version, die in der Testphase getestet wird. --></help>
+        <label><!-- Versions-Nr --></label>
+        <name>Lcm_Version__c</name>
+        <relationshipLabel><!-- Testphasen --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Testphase-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

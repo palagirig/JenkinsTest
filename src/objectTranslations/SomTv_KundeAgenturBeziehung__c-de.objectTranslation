@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Beziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Beziehungen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agentur --></label>
+        <name>Agentur__c</name>
+        <relationshipLabel><!-- Beziehungen (Agentur) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agenturverbund --></label>
+        <name>Agenturverbund__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH Agentur ProRexID --></label>
+        <name>DWH_AgenturProRexID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH Agenturverbund ProRexID --></label>
+        <name>DWH_Agenturverbund_ProRexID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH Konzern ProRexID --></label>
+        <name>DWH_Konzern_ProRexID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH Kunden ProRexID --></label>
+        <name>DWH_KundenProRexID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bis wann ist diese Kd.-Agentur-Beziehung gültig? --></help>
+        <label><!-- gültig bis --></label>
+        <name>GueltigBis__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ab wann ist diese Kd.-Agentur-Beziehung gültig? --></help>
+        <label><!-- gültig von --></label>
+        <name>GueltigVon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Konzern --></label>
+        <name>Konzern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kunde --></label>
+        <name>Kunde__c</name>
+        <relationshipLabel><!-- Beziehungen (Kunde) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beschreibung --></label>
+        <name>SomTv_Beschreibung__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH_VKZID_SF --></label>
+        <name>SomTv_DWH_VKZID_SF__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH_VKZID --></label>
+        <name>SomTv_DWH_VKZID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kundenart --></label>
+        <name>SomTv_Kundenart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet die für diesen Account relevante Beziehung, um die richtigen Ansprechpartner identifizieren zu können. --></help>
+        <label><!-- Relevante Beziehung --></label>
+        <name>SomTv_RelevanteBeziehung__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueKey --></label>
+        <name>SomTv_UniqueKey__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Beziehungs-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Bitte ein gültiges Datum nach dem Datum von eingeben. --></errorMessage>
+        <name>Datum_Bis_nach_Datum_Von</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Eine relevante Kundenagentur Beziehung ist bereits vorhanden. Es darf nur eine relevante K-A-Beziehung angelegt sein&quot; --></errorMessage>
+        <name>SomTv_MehrAlsEineRelevanteKABeziehung</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Neue_Beziehung_Agentur --></label>
+        <name>Neue_Beziehung_Agentur</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Neue_Beziehung_Kunde --></label>
+        <name>Neue_Beziehung_Kunde</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Teammember_austauschen_AgenturOnRecord --></label>
+        <name>Teammember_austauschen_AgenturOnRecord</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Teammember_austauschen_KundeOnRecord --></label>
+        <name>Teammember_austauschen_KundeOnRecord</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Teammember_austauschen_agentur --></label>
+        <name>Teammember_austauschen_agentur</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Teammember_austauschen_kunde --></label>
+        <name>Teammember_austauschen_kunde</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Parent</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$Som_Datum__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r.Teilnehmer__r$Som_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$SomTv_AngesprocheneThemen__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$Som_ProdukteGattungen__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$Som_Beschreibung__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>alle Kontaktberichte 2015 mit Teilnehmern</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Kontaktberichte__r$Som_Datum__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2015 12:00 AM</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Kontaktberichte 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Som_Kontaktberichte_mit_Accounts_und_Teilnehmern__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Kontaktberichte__r$Som_Datum__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

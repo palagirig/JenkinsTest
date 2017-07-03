@@ -1,0 +1,6 @@
+Hallo {!Opportunity.OwnerFullName},
+
+folgende Opportunity {!Opportunity.Name} wurde durch das Supervisory Board freigegeben und ist endgültig genehmigt und mit Approved markiert worden.
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

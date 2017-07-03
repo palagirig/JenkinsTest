@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Parent</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$Som_GrundDesKontakts__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r$Som_Datum__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kontaktberichte__r.Teilnehmer__r$Som_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account$Som_TV_LetzterPersoenlicherTermin__c</field>
+    </columns>
+    <columns>
+        <field>Account$Som_TV_LetzterVeranstaltungsTermin__c</field>
+    </columns>
+    <columns>
+        <field>Account$Som_TV_LetzterTelefonTermin__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>letzter Besuch beim Kontakt</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Kontaktberichte__r$Som_Datum__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Kontaktberichte__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Constanze</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Kontaktberichte Statistik</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Som_Kontaktberichte_mit_Accounts_und_Teilnehmern__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Kontaktberichte__r$Som_Datum__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Rate Card --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Rate Card --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Mig_CountPrices --></label>
+        <name>Mig_CountPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird --></help>
+        <label><!-- Mig_ProdiaKey --></label>
+        <name>Mig_ProdiaKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Auftragstypen angeben. Diese steuert die Auslieferungsprioritäten in den AdServern, die Einschränkung auf mögliche Produkte/Werbemittel, ggf. auch Steuerung von fixem FC bei einigen Auftragstypen &amp; Voreinstellung der Rechnungsstellung etc. --></help>
+        <label><!-- Auftragstyp --></label>
+        <name>SomDig_AuftragstypId__c</name>
+        <relationshipLabel><!-- Preislisten --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für die DWH-Schnittstelle. Liefert Auftragstyp als Text. --></help>
+        <label><!-- Auftragstyp DWH --></label>
+        <name>SomDig_Auftragstyp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung der Preisliste --></help>
+        <label><!-- Beschreibung --></label>
+        <name>SomDig_Beschreibung__c</name>
+    </fields>
+    <fields>
+        <help><!-- DWH Geschäftsart mit/ohne Commitment (bei Eigenwerbung nur &apos;ohne Commitment&apos;) --></help>
+        <label><!-- DWH Geschäftsart --></label>
+        <name>SomDig_DWHGeschaeftsart__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Rate Card Name --></nameFieldLabel>
+</CustomObjectTranslation>

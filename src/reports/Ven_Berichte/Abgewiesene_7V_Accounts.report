@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Abgewiesene 7V Accounts von 71M Steering</description>
+    <filter>
+        <criteriaItems>
+            <column>P7S1_AccountIndex__c.P7S1_OwnerUnitFormula__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>71M</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7Ventures</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <name>Abgewiesene 7V Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$P7S1_AccountIndex__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

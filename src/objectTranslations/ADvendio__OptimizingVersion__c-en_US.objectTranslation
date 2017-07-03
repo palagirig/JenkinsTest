@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Genehmigt Verfügbarkeit --></label>
+        <name>Adv_AvailabilityApproved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Genehmigt Umsatzdifferenz MN2 --></label>
+        <name>Adv_DeltaMN2Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letzte Verfügbarkeitsabfrage --></label>
+        <name>Adv_LastAvailabilityCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adv_LastUpdateReichweitenRelevanz --></label>
+        <name>Adv_LastUpdateReichweitenRelevanz__c</name>
+    </fields>
+    <fields>
+        <label><!-- ActivationStarting --></label>
+        <name>SomDig_ActivationStarting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Versionsnummer --></label>
+        <name>SomDig_Versionsnummer__c</name>
+    </fields>
+</CustomObjectTranslation>

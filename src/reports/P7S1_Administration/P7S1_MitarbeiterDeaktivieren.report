@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>P7S1_Emp__c.P7S1_DateExit__c</field>
+    </columns>
+    <columns>
+        <field>P7S1_Emp__c.P7S1_CheckSalesforceZugang__c</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>P7S1_Emp__c.P7S1_Profile__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Entweder ist Austrittsdatum gepflegt und fällig(!) oder Manager hat Info gegeben dass SF nicht mehr benötigt</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>P7S1_Emp__c.P7S1_IsActive__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>P7S1_Emp__c.P7S1_CheckSalesforceZugang__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>wird nicht mehr benötigt</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>P7S1_Emp__c.P7S1_DateExit__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>NEXT_WEEK</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>P7S1 Mitarbeiter deaktivieren</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$P7S1_Comp__c$P7S1_Emp__c@P7S1_Emp__c.P7S1_Manager__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CHILD_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

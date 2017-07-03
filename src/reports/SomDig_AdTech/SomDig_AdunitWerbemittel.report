@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>u</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <currency>EUR</currency>
+        <filter>
+            <criteriaItems>
+                <column>ADvendio__AdServer_ID__c.ADvendio__Type__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Ad Unit</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>ADvendio__AdServer_ID__c.ADvendio__Status__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>notEqual</operator>
+                <value>Inactive,Archived,Deleted</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>AdServer IDs-Block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$ADvendio__AdServer_ID__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CUST_CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B2</blockId>
+            <joinTable>u</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CHILD_NAME</field>
+        </columns>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <currency>EUR</currency>
+        <filter>
+            <criteriaItems>
+                <column>ADvendio__AdServer_ID__c.ADvendio__Type__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Ad Unit</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>ADvendio__AdServer_ID__c.ADvendio__Status__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>notEqual</operator>
+                <value>Inactive,Archived,Deleted</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>AdServer IDs mit AdServer ID Wer-Block 3</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntityCustomEntity$ADvendio__AdServer_ID__c$ADvendio__AdServer_ID_AdSpec_Assigment__c@ADvendio__AdServer_ID_AdSpec_Assigment__c.ADvendio__Ad_Spec__c</reportType>
+        <scope>organization</scope>
+        <sortColumn>CHILD_NAME</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>CUST_CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>u</joinTable>
+    </blockInfo>
+    <description>Übersicht hinsichtlich aktiver Ad Units und Werbemittel, drei Möglichkeiten: 1.) Welche Ad Unit ist keinem Werbemittel zugeordnet 2.) Welche Werbemittel haben keine zugeordneten Ad Units 3.) Welche Ad Units und Werbemittel sind zugeordnet?</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADvendio__AdServer_ID__c.ADvendio__AdServer_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Ad Unit Werbemittel</name>
+    <params>
+        <name>lsk</name>
+        <value>33</value>
+    </params>
+    <reportType>CustomEntity$ADvendio__AdServer_ID__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

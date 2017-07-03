@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Account Hierarchie Historie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Account Hierarchie Histories</value>
+    </caseValues>
+    <fields>
+        <help><!-- ehemalige Child ProRex Id --></help>
+        <label><!-- Accountnummer untergeordneter Account --></label>
+        <name>ChildProRexId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enddatum für den übergeordneten Account --></help>
+        <label><!-- gültig bis --></label>
+        <name>GueltigBis__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anfangsdatum für den übergeordneten Account --></help>
+        <label><!-- gültig von --></label>
+        <name>GueltigVon__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- ehemalige Parent ProRex Id --></help>
+        <label><!-- Accountnummer übergeordneter Account --></label>
+        <name>ParentProRexId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomTv_DWH_ChildProRexID --></label>
+        <name>SomTv_DWH_ChildProRexID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte wählen Sie den Typ der Hierarchie aus. 1 = Agentur / Agenturverbund
+2 = Werbungtreibender /Konzern --></help>
+        <label><!-- Nr Rolle DWH --></label>
+        <name>Som_NrRolleDwh__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Oberste &quot;Mutter&quot; von diesem Account --></help>
+        <label><!-- Übergeordneter Account --></label>
+        <name>UebergeordneterAccount__c</name>
+        <relationshipLabel><!-- Account Hierarchie Histories (Übergeordneter Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Untergeordneter Account --></label>
+        <name>UntergeordneterAccount__c</name>
+        <relationshipLabel><!-- Account Hierarchie Histories (Untergeordneter Account) --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SomTv_AccHierarchyHistory_Default</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

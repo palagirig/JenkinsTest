@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Forecast TV --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Forecast TV --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>SomTV_Account__c</name>
+        <relationshipLabel><!-- Forecasts TV --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Zugehörige Agentur für die dieser Forecast erstellt wird --></help>
+        <label><!-- Agentur --></label>
+        <name>SomTv_Agentur__c</name>
+        <relationshipLabel><!-- Forecast TV (Agentur) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Automatically filled and checked on uniqueness
+One Forecast per account per year --></help>
+        <label><!-- Check One Forecast per Year --></label>
+        <name>SomTv_CheckOneForecastPerYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Commitments Kernsender MN3 --></label>
+        <name>SomTv_ForecastCommitmentsKernsenderMN3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die Kernsender an. 
+Forecast TV - Opportunities --></help>
+        <label><!-- Gap Kernsender --></label>
+        <name>SomTv_ForecastDifferenzKernsender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die neuen Sendera an. 
+Forecast TV - Opportunities --></help>
+        <label><!-- Gap Neue Sender --></label>
+        <name>SomTv_ForecastDifferenzNeueSender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast K1 Doku MN3 --></label>
+        <name>SomTv_ForecastK1DokuMN3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aus Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3) --></help>
+        <label><!-- Summe Forecast Kernsender MN3 --></label>
+        <name>SomTv_ForecastKernsenderMNGesamt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Pakete Kernsender MN3 --></label>
+        <name>SomTv_ForecastPaketeKernsenderMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Pro7 MAXX MN3 --></label>
+        <name>SomTv_ForecastPro7MAXXMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast SAT.1 GOLD MN3 --></label>
+        <name>SomTv_ForecastSAT1GOLDMN3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt an, ob dieser Forecast TV für das aktuelle Jahr gilt --></help>
+        <label><!-- Forecast TV für aktuelles Jahr --></label>
+        <name>SomTv_ForecastTVfueraktuellesJahr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Zubuchung Kernsender MN3 --></label>
+        <name>SomTv_ForecastZubuchungKernsenderMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast sixx MN3 --></label>
+        <name>SomTv_ForecastsixxMN3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Öffne Liste der Opportunities dieses Accounts in eigenem Fenster oder Tab. --></help>
+        <label><!-- Gehe zu --></label>
+        <name>SomTv_GeheZuOppListe__c</name>
+    </fields>
+    <fields>
+        <help><!-- Erläuterungen für Delta von Forecast zu Opportunities --></help>
+        <label><!-- Information --></label>
+        <name>SomTv_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte das Jahr auswählen, für das der Forecast gilt --></help>
+        <label><!-- Jahr --></label>
+        <name>SomTv_Jahr__c</name>
+        <picklistValues>
+            <masterLabel>2013</masterLabel>
+            <translation><!-- 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014</masterLabel>
+            <translation><!-- 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015</masterLabel>
+            <translation><!-- 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016</masterLabel>
+            <translation><!-- 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017</masterLabel>
+            <translation><!-- 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018</masterLabel>
+            <translation><!-- 2018 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Commitments Kernsender (MN3) aus dem Account --></help>
+        <label><!-- Opps Commitment Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJCommitment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aus Opportunities Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3) --></help>
+        <label><!-- Summe Opportunities Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJGesamt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities K1 Doku (MN3) aus dem Account --></help>
+        <label><!-- Opportunities K1 Doku MN3 --></label>
+        <name>SomTv_OpptiAJK1Doku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Neue Sender MN3 --></label>
+        <name>SomTv_OpptiAJNeueSender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities P7 MAXX (MN3) aus dem Account --></help>
+        <label><!-- Opportunities P7 MAXX MN3 --></label>
+        <name>SomTv_OpptiAJP7MAXX__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Pakete Kernsender (MN3) aus dem Account --></help>
+        <label><!-- Opps Pakete Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJPakete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Zubuchung  Kernsender (MN3) aus dem Account --></help>
+        <label><!-- Opps Zubuchung Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJZubuchung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities sixx (MN3) aus dem Account --></help>
+        <label><!-- Opportunities sixx MN3 --></label>
+        <name>SomTv_OpptiAJsixx__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Sat.1 GOLD (MN3) aus dem Account --></help>
+        <label><!-- Opportunities Sat.1 GOLD MN3 --></label>
+        <name>SomTv_OpptiSat1GOLD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Commitments Kernsender (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opps Commitments Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJCommitment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aus Opportunities Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3) des Vorjahrs --></help>
+        <label><!-- Summe Opportunities Kernsender VJ MN3 --></label>
+        <name>SomTv_OpptiVJGesamt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities K1 Doku (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opportunities K1 Doku Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJK1Doku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Neue Sender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJNeueSender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities P7 MAXX (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opportunities P7 MAXX Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJP7MAXX__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Pakete (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opps Pakete Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJPaket__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Sat.1 GOLD (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opportunities Sat.1 GOLD Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJSat1GOLD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities Zubuchung Kernsender (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opps Zubuchung Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJZubuchung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe der Opportunities sixx (MN3) des Vorjahres aus dem Account --></help>
+        <label><!-- Opportunities sixx Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJsixx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relevante Agentur --></label>
+        <name>SomTv_RelevantAgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Forecast Neue Sender MN3 --></label>
+        <name>SomTv_SummeForecastNeueSenderMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Neue Sender Vorjahr MN3 --></label>
+        <name>omTv_OpptiVJNeueSender__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast TV Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV (MN3) --></label>
+            <section>Forecast TV (MN3)</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vorjahr --></label>
+            <section>Vorjahr</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Forecast TV --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+    <webLinks>
+        <label>New Forecast TV</label>
+        <name>SomTv_NeuerForecastTV</name>
+    </webLinks>
+</CustomObjectTranslation>

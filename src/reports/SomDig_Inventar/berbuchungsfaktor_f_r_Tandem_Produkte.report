@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ADvendio__Ad_Specs__c.ADvendio__Site__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ADvendio__Ad_Specs__c.ADvendio__OverbookingFactor__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Überbuchungsfaktor für die Tandem-Produkte Preroll tandem sky und preroll tandem wrap</description>
+    <filter>
+        <criteriaItems>
+            <column>ADvendio__Ad_Specs__c.ADvendio__Ad_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>PreRoll VideoAd Tandem Wrap,PreRoll VideoAd Tandem Skyscraper</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADvendio__Ad_Specs__c.ADvendio__Ad_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Überbuchungsfaktor für Tandem-Produkte</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ADvendio__Ad_Specs__c@ADvendio__Ad_Specs__c.ADvendio__Placement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ADvendio__Ad_Specs__c.ADvendio__Site__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

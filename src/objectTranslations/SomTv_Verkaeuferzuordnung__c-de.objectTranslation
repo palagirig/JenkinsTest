@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Verkäuferzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Verkäuferzuordnungen</value>
+    </caseValues>
+    <fields>
+        <label><!-- DWH Agentur ProRexID --></label>
+        <name>DWH_Agentur_ProRexID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH Kunden ProRexID --></label>
+        <name>DWH_Kunden_ProRexID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DWH Verkäufer ProRexId --></label>
+        <name>DWH_Verk_ufer_ProRexId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- gültig bis --></label>
+        <name>SomTv_GueltigBis__c</name>
+    </fields>
+    <fields>
+        <label><!-- gültig von --></label>
+        <name>SomTv_GueltigVon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kd-Agentur Beziehung --></label>
+        <name>SomTv_KdAgenturBeziehung__c</name>
+        <relationshipLabel><!-- Verkäuferzuordnungen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Laufende Nummer für DWH --></help>
+        <label><!-- SomTv Lfd Nr --></label>
+        <name>SomTv_Lfd_Nr__c</name>
+    </fields>
+    <fields>
+        <help><!-- relevant für TV_Kundenverkäufer-Rolle im AccountTeam:
+a) Gültig
+b) Rolle=TV_Kundenverkäufer
+c) an relevanter Beziehung
+d) aktiver Benutzer --></help>
+        <label><!-- TV-Kundenverkäufer relevant --></label>
+        <name>SomTv_TvKundenverkaeuferRelevant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verkäufer --></label>
+        <name>SomTv_Verkaeufer__c</name>
+        <relationshipLabel><!-- Verkäuferzuordnungen --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Verkäuferrolle --></label>
+        <name>SomTv_Verkaeuferrolle__c</name>
+        <picklistValues>
+            <masterLabel>TV_Einkaufsagenturverkäufer</masterLabel>
+            <translation><!-- TV_Einkaufsagenturverkäufer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV_Kundenverkäufer</masterLabel>
+            <translation><!-- TV_Kundenverkäufer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV_Leadverkäufer</masterLabel>
+            <translation><!-- TV_Leadverkäufer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV_Planungsagenturverkäufer</masterLabel>
+            <translation><!-- TV_Planungsagenturverkäufer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1 = TV_ Kundenverkäufer 
+2 = TV_Einkaufsagenturverkäufer 
+3 = TV_Planungsagenturverkäufer 
+4 = TV_Leadverkäufer (formerly: Verkaufsdirektor) --></help>
+        <label><!-- VerkäuferzuordnungNr --></label>
+        <name>SomTv_VerkaeuferzuordnungNr__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SomTv_Verkäuferzuordnung</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Systeminformationen --></label>
+            <section>Systeminformationen</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Die Gültigkeit der Verkäuferzuordnung liegt nicht in der Gültigkeit der Beziehung. --></errorMessage>
+        <name>SomTv_GueltigkeitInBeziehungsgueltigkeit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Gültig von&quot; darf nicht größer &quot;Gültig bis&quot; sein --></errorMessage>
+        <name>SomTv_VerkaueferGueltigVonGueltigBis</name>
+    </validationRules>
+</CustomObjectTranslation>

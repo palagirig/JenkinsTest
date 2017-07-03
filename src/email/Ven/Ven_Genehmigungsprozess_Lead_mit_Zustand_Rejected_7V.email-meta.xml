@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Genehmigungsprozess Lead mit Zustand Rejcted 7V</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Genehmigungsprozess Lead mit Zustand Rejected 7V</name>
+    <style>none</style>
+    <subject>Folgender Lead wurde erneut zur Genehmigung eingereicht</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

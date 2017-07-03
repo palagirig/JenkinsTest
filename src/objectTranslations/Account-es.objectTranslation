@@ -1,0 +1,4224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>ADvendio__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Clasificación por código postal (por ejemplo, datos de área de Nielsen)</help>
+        <label><!-- Area Classification --></label>
+        <name>ADvendio__Area_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>ADvendio__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Bajo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>Intermedio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the external ID of this account. This ID can also be used to push values into DFPs external ID on the company level. --></help>
+        <label><!-- External ID --></label>
+        <name>ADvendio__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Email --></label>
+        <name>ADvendio__InvoiceEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>ADvendio__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <help><!-- The OVK participant ID for this account --></help>
+        <label><!-- OVK Participant ID --></label>
+        <name>ADvendio__OVKParticipantID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>ADvendio__Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Vorauskasse</masterLabel>
+            <translation>Término 1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>ADvendio__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>ADvendio__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>ADvendio__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Net Revenue Last Year --></label>
+        <name>ADvendio__TotalNetRevenueLastYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Revenue Next Year --></label>
+        <name>ADvendio__TotalNetRevenueNextYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Revenue This Year --></label>
+        <name>ADvendio__TotalNetRevenueThisYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Revenue Year Before Last --></label>
+        <name>ADvendio__TotalNetRevenueYearBeforeLast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue Last Year --></label>
+        <name>ADvendio__TotalRevenueLastYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue Next Year --></label>
+        <name>ADvendio__TotalRevenueNextYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue This Year --></label>
+        <name>ADvendio__TotalRevenueThisYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue Year Before Last --></label>
+        <name>ADvendio__TotalRevenueYearBeforeLast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>ADvendio__UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- VAT identification number (VATIN) --></help>
+        <label><!-- VAT ID --></label>
+        <name>ADvendio__VATID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the ISO Code for the account&apos;s country. --></help>
+        <label><!-- VAT Country --></label>
+        <name>ADvendio__VatIdCountryPrefix__c</name>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BG</masterLabel>
+            <translation><!-- BG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CY</masterLabel>
+            <translation><!-- CY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CZ</masterLabel>
+            <translation><!-- CZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DK</masterLabel>
+            <translation><!-- DK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EE</masterLabel>
+            <translation><!-- EE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES</masterLabel>
+            <translation><!-- ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI</masterLabel>
+            <translation><!-- FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GR</masterLabel>
+            <translation><!-- GR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HU</masterLabel>
+            <translation><!-- HU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IE</masterLabel>
+            <translation><!-- IE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT</masterLabel>
+            <translation><!-- LT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LU</masterLabel>
+            <translation><!-- LU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV</masterLabel>
+            <translation><!-- LV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT</masterLabel>
+            <translation><!-- PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RO</masterLabel>
+            <translation><!-- RO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SI</masterLabel>
+            <translation><!-- SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK</masterLabel>
+            <translation><!-- SK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When a VAT-ID is check here the interface will show you the results from the inquiry. --></help>
+        <label><!-- VAT ID Status Message --></label>
+        <name>ADvendio__VatIdInquiryResults__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the last time the web service ran to check the VAT-ID using the VIES web service. --></help>
+        <label><!-- Last VAT ID Check --></label>
+        <name>ADvendio__VatIdLastCheck__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the VAT - ID without the Prefix. --></help>
+        <label><!-- VAT Id Number --></label>
+        <name>ADvendio__VatIdNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- green checkmark = VAT-ID valid
+red X = VAT-ID invalid
+orange ball = technical problems occurred
+gray ball = VAT-ID not entered/not checked --></help>
+        <label><!-- VAT ID Status --></label>
+        <name>ADvendio__VatIdStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kurzform des Accountnamen zur einfachen Suche Beispiel
+SevenOne Media GmbH - &gt; 71M SOM --></help>
+        <label><!-- Accountname Kurzform --></label>
+        <name>Accountname_Kurzform__c</name>
+    </fields>
+    <fields>
+        <help><!-- Inhalte werden aus Top1 Wirtschaftsbereich vererbt und können durch AdF Concept Sales überschrieben werden. --></help>
+        <label><!-- AdF-Branchencluster --></label>
+        <name>AdF_Branchencluster__c</name>
+        <relationshipLabel><!-- Accounts (AdF-Branchencluster) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Account Nummer des übergeordneten Accounts --></help>
+        <label><!-- Parent Account Number --></label>
+        <name>Dig_ParentAccountNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt an ob es untergeordneten Account gibt. Es wird von Trigger automatisch gepflegt. --></help>
+        <label><!-- Untergeordneter Account --></label>
+        <name>HasChildAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visuelle Anzeige des Inkasso-Status eines Accounts. Information wird manuell von Dilek oder Roman im Feld &quot;Inkasso-Status&quot; befüllt und gepflegt. --></help>
+        <label><!-- Inkasso-Status Symbol --></label>
+        <name>Inkasso_Status_Symbol__c</name>
+    </fields>
+    <fields>
+        <help><!-- stellt den Status eines Account dar in Bezug auf seinen Zahlungsstatus bei uns. Wird manuell von Dilek oder Roman mit Informationen von FI/REWE befüllt und gepflegt. Der Status &quot;notOk&quot; sieht Vorauskasse nach sich in der Auftragserfassung. --></help>
+        <label><!-- Inkasso-Status --></label>
+        <name>Inkasso_Status__c</name>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not OK</masterLabel>
+            <translation><!-- not OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>offene Posten</masterLabel>
+            <translation><!-- offene Posten --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unbekannt</masterLabel>
+            <translation><!-- unbekannt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Angabe, welcher Account dem aktuellen Account am höchsten übergeordnet ist. (Root in der Account Hierarchie) --></help>
+        <label><!-- Konzernmutter --></label>
+        <name>Konzernmutter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>MA_Cluster__c</name>
+        <picklistValues>
+            <masterLabel>7NXT</masterLabel>
+            <translation><!-- 7NXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Tech</masterLabel>
+            <translation><!-- Ad Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beauty &amp; Accessories</masterLabel>
+            <translation><!-- Beauty &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bio Household &amp; Family</masterLabel>
+            <translation><!-- Bio Household &amp; Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcasting</masterLabel>
+            <translation><!-- Broadcasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP: Non-Scripted</masterLabel>
+            <translation><!-- CP: Non-Scripted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP: Scripted</masterLabel>
+            <translation><!-- CP: Scripted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer  Med. Devices</masterLabel>
+            <translation><!-- Consumer  Med. Devices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home shopping</masterLabel>
+            <translation><!-- Home shopping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Gen/Classifieds</masterLabel>
+            <translation><!-- Lead Gen/Classifieds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life &amp; Health  Services/Products</masterLabel>
+            <translation><!-- Life &amp; Health  Services/Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCN/Video</masterLabel>
+            <translation><!-- MCN/Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Med. Cosmetics  &amp; Personal Care</masterLabel>
+            <translation><!-- Med. Cosmetics  &amp; Personal Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Nutrition</masterLabel>
+            <translation><!-- New Nutrition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Verticals</masterLabel>
+            <translation><!-- New Verticals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTC</masterLabel>
+            <translation><!-- OTC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overall Digital Entertainment</masterLabel>
+            <translation><!-- Overall Digital Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power sales</masterLabel>
+            <translation><!-- Power sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports</masterLabel>
+            <translation><!-- Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel &amp; Gift</masterLabel>
+            <translation><!-- Travel &amp; Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>“Strukturvertrieb”</masterLabel>
+            <translation><!-- “Strukturvertrieb” --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EBITDA --></label>
+        <name>MA_EBITDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- M&amp;A Account Inhaber --></label>
+        <name>MA_MAAccountInhaber__c</name>
+        <relationshipLabel><!-- Accounts (M&amp;A Account Inhaber) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- P7S1 Unit --></label>
+        <name>MA_P7S1Unit__c</name>
+        <picklistValues>
+            <masterLabel>1-V-Commerce</masterLabel>
+            <translation><!-- 1-V-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Innovate</masterLabel>
+            <translation><!-- 7Innovate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Next</masterLabel>
+            <translation><!-- 7Next --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Next Video</masterLabel>
+            <translation><!-- 7Next Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig Entertain</masterLabel>
+            <translation><!-- Dig Entertain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Games</masterLabel>
+            <translation><!-- Games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magic Internet</masterLabel>
+            <translation><!-- Magic Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1 Group</masterLabel>
+            <translation><!-- P7S1 Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSD</masterLabel>
+            <translation><!-- PSD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay-VoD</masterLabel>
+            <translation><!-- Pay-VoD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puls 4</masterLabel>
+            <translation><!-- Puls 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red Arrow</masterLabel>
+            <translation><!-- Red Arrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seven Ventures</masterLabel>
+            <translation><!-- Seven Ventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenOne</masterLabel>
+            <translation><!-- SevenOne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenOne Capital</masterLabel>
+            <translation><!-- SevenOne Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenTravel</masterLabel>
+            <translation><!-- SevenTravel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVD</masterLabel>
+            <translation><!-- TVD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V-Digital</masterLabel>
+            <translation><!-- V-Digital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue --></label>
+        <name>MA_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Visibility --></label>
+        <name>MA_UnitVisibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>MA_Unit__c</name>
+        <picklistValues>
+            <masterLabel>(A) Commerce</masterLabel>
+            <translation><!-- (A) Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(B) Digital Entertainment</masterLabel>
+            <translation><!-- (B) Digital Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(C) 7NXT &amp; Adjacent</masterLabel>
+            <translation><!-- (C) 7NXT &amp; Adjacent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(D) Specialty Consumer</masterLabel>
+            <translation><!-- (D) Specialty Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(E) Broadcasting &amp; Content Production</masterLabel>
+            <translation><!-- (E) Broadcasting &amp; Content Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(F) General M&amp;A / Transformative</masterLabel>
+            <translation><!-- (F) General M&amp;A / Transformative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(G) 7Innovate</masterLabel>
+            <translation><!-- (G) 7Innovate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier wird das durch die Postleitzahl der Rechnungsadresse ermittelte Nielsengebiet ausgegeben. --></help>
+        <label><!-- Nielsengebiet --></label>
+        <name>NielsenAreaCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account bearbeitbar --></label>
+        <name>P7S1_AccountBearbeitbar__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die 18-stellige Id des Accounts an, um sie z.B. in Berichten zu verwenden. --></help>
+        <label><!-- Account Id --></label>
+        <name>P7S1_AccountId18__c</name>
+    </fields>
+    <fields>
+        <help><!-- Steuert die Erstellung und Synchronisation eines Account Index für diesen Account --></help>
+        <label><!-- Account Index erzeugen --></label>
+        <name>P7S1_AccountIndexErzeugen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Koordinator --></label>
+        <name>P7S1_AccountKoordinator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld, welches die Eindeutigkeit des Standardfelds &quot;AccountNumber&quot; sicherstellt --></help>
+        <label><!-- P7S1_AccountNumberUnique --></label>
+        <name>P7S1_AccountNumberUnique__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of the account or if a parent account exists, the number of the parent account --></help>
+        <label><!-- Account or Parent Number --></label>
+        <name>P7S1_AccountOrParentNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the account or if a parent account exists, the name of the parent account --></help>
+        <label><!-- Account or Parent --></label>
+        <name>P7S1_AccountOrParent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for sharing, depends on visibility state
+100 = visible (not invalid, not deleted)
+50 = invalid (not deleted)
+0 = deleted --></help>
+        <label><!-- Account Visibility --></label>
+        <name>P7S1_AccountVisibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl K-A-Beziehungen Analyse --></label>
+        <name>P7S1_AnzahlKABeziehungenAnalyse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl K-A-Beziehungen relevant --></label>
+        <name>P7S1_AnzahlKABeziehungenRelevant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl K-A-Beziehungen --></label>
+        <name>P7S1_AnzahlKABeziehungen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Autonummernfeld, befüllt 1:1 AutoNumber --></help>
+        <label><!-- P7S1_AutoNumber__c --></label>
+        <name>P7S1_AutoNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field is set on submission of Approval Process and sets the time a record will be approved automatically. --></help>
+        <label><!-- automatische Genehmigung --></label>
+        <name>P7S1_AutomaticalApproval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte trage hier die Quelle und den Grund ein, weshalb der Account gültig/ungültig gesetzt werden soll. --></help>
+        <label><!-- Begründung gültig/ungültig setzen --></label>
+        <name>P7S1_Begruendung_Ungueltig_setzen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sphäre (SomDe, SomAt...) des Erstellers des Accounts --></help>
+        <label><!-- Ersteller-Sphäre --></label>
+        <name>P7S1_CreatorSphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- Liefert die Accountnummer (ProRexID) als Text an. Wird so von DWH benötigt.
+Gefüllt mit Feldaktualisierung. --></help>
+        <label><!-- ProRex-ID (DWH) --></label>
+        <name>P7S1_DWH_ProRexID__c</name>
+    </fields>
+    <fields>
+        <label><!-- d&amp;a Sales Cluster --></label>
+        <name>P7S1_DandACluster__c</name>
+        <picklistValues>
+            <masterLabel>7COMMERCE</masterLabel>
+            <translation><!-- 7COMMERCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7NXT</masterLabel>
+            <translation><!-- 7NXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7TRAVEL</masterLabel>
+            <translation><!-- 7TRAVEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>d&amp;a Sales</masterLabel>
+            <translation><!-- d&amp;a Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- d&amp;a Sales Kundenstatus --></label>
+        <name>P7S1_DandASalesKundenstatus__c</name>
+        <picklistValues>
+            <masterLabel>Bestandskunde</masterLabel>
+            <translation><!-- Bestandskunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neukunde</masterLabel>
+            <translation><!-- Neukunde --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Nachricht wird dynamisch im Account Dashboard angezeigt --></help>
+        <label><!-- Dashboard Message --></label>
+        <name>P7S1_Dash_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dashboard Severity --></label>
+        <name>P7S1_Dash_Severity__c</name>
+        <picklistValues>
+            <masterLabel>danger</masterLabel>
+            <translation><!-- danger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>info</masterLabel>
+            <translation><!-- info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>none</masterLabel>
+            <translation><!-- none --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>warning</masterLabel>
+            <translation><!-- warning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Status der Datenprüfung. Zeigt an, ob Datensätze zur Datenprüfung anstehend sind oder Prüfung erfolgt ist. --></help>
+        <label><!-- Datenprüfung --></label>
+        <name>P7S1_DataCheck__c</name>
+        <picklistValues>
+            <masterLabel>ausstehend</masterLabel>
+            <translation><!-- ausstehend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>geprüft</masterLabel>
+            <translation><!-- geprüft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>irrelevant</masterLabel>
+            <translation><!-- irrelevant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- erweiterte 4-stufige Account-Hierachie --></help>
+        <label><!-- übergeordneter Account (erw.) --></label>
+        <name>P7S1_ExtHierarchy__c</name>
+        <relationshipLabel><!-- untergeordnete Accounts (erw.) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Hier wird aus dem Genehmigungsprozess zum ungültig setzen der Status vorgehalten. Wird durch den Genehmigungsprozess gesetzt. --></help>
+        <label><!-- Genehmigungsstatus ungültig --></label>
+        <name>P7S1_Genehmigungsstatusungueltig__c</name>
+        <picklistValues>
+            <masterLabel>Abgelehnt</masterLabel>
+            <translation><!-- Abgelehnt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eingereicht</masterLabel>
+            <translation><!-- Eingereicht --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Genehmigt</masterLabel>
+            <translation><!-- Genehmigt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>erneut gültig</masterLabel>
+            <translation><!-- erneut gültig --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Konzermutter ID --></label>
+        <name>P7S1_Konzermutter_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zugehörigkeit zu Konzern oder Agenturverbund --></help>
+        <label><!-- Konzern-/Agenturverbunds-Zugehörigkeit --></label>
+        <name>P7S1_KonzernAgenturverbundZugehoerigkeit__c</name>
+        <picklistValues>
+            <masterLabel>Konzern/Agenturverbund</masterLabel>
+            <translation><!-- Konzern/Agenturverbund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konzerntochter/Agenturtochter</masterLabel>
+            <translation><!-- Konzerntochter/Agenturtochter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>konzernfrei/verbundfrei</masterLabel>
+            <translation><!-- konzernfrei/verbundfrei --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ist dieser Account Teil der ProSieben Sat1 Konzerngruppe? --></help>
+        <label><!-- P7S1 Konzernmitglied --></label>
+        <name>P7S1_Konzernmitglied__c</name>
+    </fields>
+    <fields>
+        <help><!-- Die letzte Änderung am Kontakt wurde durchgeführt durch folgende Unit --></help>
+        <label><!-- Letzte Änderung durch Unit --></label>
+        <name>P7S1_LetzteAenderungUnit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt den letzten Bearbeiter des Datensatzes an, ohne automatische Aktualisierungen und Admintätigkeiten --></help>
+        <label><!-- Letzter Bearbeiter Business --></label>
+        <name>P7S1_LetzterBearbeiterBusiness__c</name>
+        <relationshipLabel><!-- Accounts (Letzter Bearbeiter Business) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Ländernamen und Kürzel --></help>
+        <label><!-- Link zu Länderliste --></label>
+        <name>P7S1_LinkzuLaenderliste__c</name>
+    </fields>
+    <fields>
+        <help><!-- DWH Name abweichend --></help>
+        <label><!-- Accountname (DWH abweichend) --></label>
+        <name>P7S1_NameDwhDifferent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Accountname, nur mit Zeichen die für DWH verarbeitbar sind (ISO_8859-1) --></help>
+        <label><!-- Accountname (DWH) --></label>
+        <name>P7S1_NameDwh__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account ist in der steuerlichen Organschaft von P7S1 --></help>
+        <label><!-- Organschaft --></label>
+        <name>P7S1_Organschaft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planumsatz --></label>
+        <name>P7S1_Planumsatz__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous RecordTypeId --></label>
+        <name>P7S1_PreviousRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relevante Agentur --></label>
+        <name>P7S1_RelevantAgency__c</name>
+        <relationshipLabel><!-- Accounts (Relevante Agentur) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung zur jeweiligen Sphere Hilfefeld für die Freigabeeinstellung --></help>
+        <label><!-- P7S1_SphereCopy --></label>
+        <name>P7S1_SphereCopy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung zur jeweiligen Sphere --></help>
+        <label><!-- P7S1_Sphere --></label>
+        <name>P7S1_Sphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- temporäres Feld für die Account Migration für AT --></help>
+        <label><!-- Status AT --></label>
+        <name>P7S1_StatusAT__c</name>
+        <picklistValues>
+            <masterLabel>Accountteam gesetzt</masterLabel>
+            <translation><!-- Accountteam gesetzt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inhaber gesetzt</masterLabel>
+            <translation><!-- Inhaber gesetzt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>markiert</masterLabel>
+            <translation><!-- markiert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zu prüfen</masterLabel>
+            <translation><!-- zu prüfen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Wenn es sich um einen konzerninternen Account handelt wird ein Steuerkennzeichen benötigt um für den Fall einer Werbebuchung für diesen Account dies richtig zu bestimmen. --></help>
+        <label><!-- Steuerkennzeichen --></label>
+        <name>P7S1_Steuerkennzeichen__c</name>
+        <picklistValues>
+            <masterLabel>A0</masterLabel>
+            <translation><!-- A0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A6</masterLabel>
+            <translation><!-- A6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AD</masterLabel>
+            <translation><!-- AD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AE</masterLabel>
+            <translation><!-- AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Der aktuelle Einreicher einer Genehmigungsanfrage --></help>
+        <label><!-- Submitter for Approval --></label>
+        <name>P7S1_Submitter4Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top Account --></label>
+        <name>P7S1_TopAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique User des Account. (Siehe auch Lösung dazu) --></help>
+        <label><!-- Unique User --></label>
+        <name>P7S1_UniqueUser__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die Unit des Erstellers an --></help>
+        <label><!-- Ersteller Unit --></label>
+        <name>P7S1_UnitCreator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Units mit denen der Account über Criteria Based Sharing geteilt wird --></help>
+        <label><!-- Unit Sharing --></label>
+        <name>P7S1_UnitSharing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unit des Account Inhabers --></help>
+        <label><!-- Unit --></label>
+        <name>P7S1_Unit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Umsatzsteuer-Identifikationsnummer. 
+in Deutschland: DE + Block mit 9 Ziffern, deren erste Ziffer &gt; 0 sein muss) -&gt; http://de.wikipedia.org/wiki/USt-ID --></help>
+        <label><!-- USt-IdNr. --></label>
+        <name>P7S1_UstIdNr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet einen Account anhand des Datensatztyps als relevant für Sales Excellence --></help>
+        <label><!-- Valid for Sales Excellence --></label>
+        <name>P7S1_ValidSalesExcellence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld bildet die historischen Rollen aus dem Altsystem ProRex ab. --></help>
+        <label><!-- Rolle --></label>
+        <name>ProRex_Rolle__c</name>
+        <picklistValues>
+            <masterLabel>Agentur</masterLabel>
+            <translation><!-- Agentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agenturverbund</masterLabel>
+            <translation><!-- Agenturverbund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konzern</masterLabel>
+            <translation><!-- Konzern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kunde</masterLabel>
+            <translation><!-- Kunde --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 2016 71M Accountbereinigung --></label>
+        <name>SOM_Accountbereinigung__c</name>
+        <picklistValues>
+            <masterLabel>DELETE</masterLabel>
+            <translation><!-- DELETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVALID</masterLabel>
+            <translation><!-- INVALID --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Digital Sales --></label>
+        <name>SOM_DigitalSales__c</name>
+        <relationshipLabel><!-- Accounts (Digital Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DooH Sales --></label>
+        <name>SOM_DooHSales__c</name>
+        <relationshipLabel><!-- Accounts (DooH Sales) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Einkaufsagenturverkäufer --></label>
+        <name>SOM_Einkaufsagenturverkaeufer__c</name>
+        <relationshipLabel><!-- Accounts (Einkaufsagenturverkäufer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Helper DooH Sales Team --></label>
+        <name>SOM_HelperDooHSalesTeam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planungsagenturverkäufer --></label>
+        <name>SOM_Planungsagenturverkaeufer__c</name>
+        <relationshipLabel><!-- Accounts (Planungsagenturverkäufer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TV Kundenverkäufer --></label>
+        <name>SOM_TVKundenverkaeufer__c</name>
+        <relationshipLabel><!-- Accounts (TV Kundenverkäufer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz Vorjahr (VJ) zu Prognose aktuelles Jahr (AJ) an --></help>
+        <label><!-- Abweichung Prognose AJ vs. Umsatz VJ --></label>
+        <name>SomDig_AbweichungPrognosevsAjVsUmsatzVj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die absolute Differenz zwischen Umsatz zu Prognose des aktuelles Geschäftsahr (AJ)  an --></help>
+        <label><!-- Abweichung Umsatz AJ vs. Prognose AJ --></label>
+        <name>SomDig_AbweichungUmsatzAjVsPrognoseAj__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kundenart Digital --></label>
+        <name>SomDig_Accounttypen__c</name>
+        <picklistValues>
+            <masterLabel>Bestand</masterLabel>
+            <translation><!-- Bestand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neu</masterLabel>
+            <translation><!-- Neu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Aufsummierung aller Digitalen Angebote für as aktuelle Geschäftsjahr OHNE mit der Wahrscheinlichkeit des Angebotes multipliziert zu sein --></help>
+        <label><!-- Angebotssumme AJ --></label>
+        <name>SomDig_AngebotssummeAj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aufsummierung aller Angebote für das aktuelle GJ, welche jeweils mit der Wahrscheinlichkeit des entsprechenden Angebotes multipliziert wurden --></help>
+        <label><!-- Angebotssumme gewichtet AJ --></label>
+        <name>SomDig_AngebotssummeGewichtetAj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Validierung &quot;SomDig_AccKonzernmExtIdSachkto. Wenn &gt; 0, existiert eine Externe ID vom Typ Sachkonto --></help>
+        <label><!-- Sachkonten konzernintern (Externe ID) --></label>
+        <name>SomDig_CountExterneIDSachkonto__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig DebitorennrBarter --></label>
+        <name>SomDig_DebitorennrBarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- SomDig Debitorennr --></label>
+        <name>SomDig_Debitorennr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kundencluster nach Prognose des aktuellen Jahres
+A: Prognose gesamt &gt; 800.000 EUR
+B: Prognose gesamt &gt; 200.000 EUR &amp; &lt;= 800.000 EUR
+C: Prognose gesamt &gt; 50.000 EUR &amp; &lt;= 200.000 EUR
+D: Prognose gesamt: &lt;= 50.000 EUR --></help>
+        <label><!-- Kunden-Cluster Planung --></label>
+        <name>SomDig_KundenClusterPlanung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner ID --></label>
+        <name>SomDig_PartnerId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fasst alle Prognosen (des aktuellen Geschäftsjahres) eines Werbetreibenden am Account zusammen --></help>
+        <label><!-- Prognose gesamt AJ --></label>
+        <name>SomDig_PrognoseGesamtAj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Prognose InPage AJ --></label>
+        <name>SomDig_PrognoseMedDiffInPageAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Prognose InStream AJ --></label>
+        <name>SomDig_PrognoseMedDiffInStreamAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Prognose Digital TV(inkl. Mediaaufw.) AJ --></label>
+        <name>SomDig_PrognoseMedDiffRestAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commerce bzw. Teletext hat seine eigenen Zuordnungen zu begrenzten Branchen - die werden jedoch den Nielsen- Wirtschaftsbereichen und Wirtschaftsgruppen zugeordnet --></help>
+        <label><!-- Teletext Branchen --></label>
+        <name>SomDig_TeletextBranchen__c</name>
+        <picklistValues>
+            <masterLabel>Automobil</masterLabel>
+            <translation><!-- Automobil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banken</masterLabel>
+            <translation><!-- Banken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erotik</masterLabel>
+            <translation><!-- Erotik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finanzen</masterLabel>
+            <translation><!-- Finanzen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food</masterLabel>
+            <translation><!-- Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gewinnspiele</masterLabel>
+            <translation><!-- Gewinnspiele --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horoskope</masterLabel>
+            <translation><!-- Horoskope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immobilien</masterLabel>
+            <translation><!-- Immobilien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Klingeltöne</masterLabel>
+            <translation><!-- Klingeltöne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kreditvermittlung</masterLabel>
+            <translation><!-- Kreditvermittlung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lotterie</masterLabel>
+            <translation><!-- Lotterie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medien</masterLabel>
+            <translation><!-- Medien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reise</masterLabel>
+            <translation><!-- Reise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (Hotlines etc.)</masterLabel>
+            <translation><!-- Service (Hotlines etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping/Versand</masterLabel>
+            <translation><!-- Shopping/Versand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonstige</masterLabel>
+            <translation><!-- Sonstige --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonstige - nicht zugeordnet</masterLabel>
+            <translation><!-- Sonstige - nicht zugeordnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telekommunikation</masterLabel>
+            <translation><!-- Telekommunikation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Versicherungen</masterLabel>
+            <translation><!-- Versicherungen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wellness/Beauty</masterLabel>
+            <translation><!-- Wellness/Beauty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ö-Urlaub/Hotels</masterLabel>
+            <translation><!-- Ö-Urlaub/Hotels --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Fasst alle Umsätze eines Werbetreibenden am Account zusammen (Summe aller Mediagattungs-Differenzierungen) des aktuellen Geschäftsjahres (AJ) --></help>
+        <label><!-- Umsatz gesamt AJ --></label>
+        <name>SomDig_UmsatzGesamtAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe Umsatz des Vorjahres, Mediagattung gleich Digital --></help>
+        <label><!-- Umsatz gesamt VJ --></label>
+        <name>SomDig_UmsatzGesamtVJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Umsatz InPage AJ --></label>
+        <name>SomDig_UmsatzMedDiffInPageAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Umsatz InStream AJ --></label>
+        <name>SomDig_UmsatzMedDiffInStreamAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr. --></help>
+        <label><!-- Umsatz Digital TV(inkl. Mediaaufwand) AJ --></label>
+        <name>SomDig_UmsatzMedDiffRestAJ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Liefert die zugeordnete ProSedi ID für den aktuellen Account. Bei mehreren ProSedi Ids wird die aktuellste (höchste) ausgegeben. --></help>
+        <label><!-- Aktuellste ProSedi ID --></label>
+        <name>SomTV_AktuellsteProSediId__c</name>
+    </fields>
+    <fields>
+        <help><!-- allgemein gültige E-Mail Adresse des Unternehmens, wie z.B. info@musterfirma.de --></help>
+        <label><!-- Account E-Mail --></label>
+        <name>SomTv_AccountEMail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beschreibt den TV Kundentyp --></help>
+        <label><!-- Kundenart TV --></label>
+        <name>SomTv_Accounttypen__c</name>
+        <picklistValues>
+            <masterLabel>Agentur</masterLabel>
+            <translation><!-- Agentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agenturverbund</masterLabel>
+            <translation><!-- Agenturverbund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bestandskunde 2017</masterLabel>
+            <translation><!-- Bestandskunde 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konzern</masterLabel>
+            <translation><!-- Konzern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-P7S1 Bestand 2017</masterLabel>
+            <translation><!-- Non-P7S1 Bestand 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-P7S1 Neugeschäft 2017</masterLabel>
+            <translation><!-- Non-P7S1 Neugeschäft 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-TV Bestand 2017</masterLabel>
+            <translation><!-- Non-TV Bestand 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-TV Neugeschäft 2017</masterLabel>
+            <translation><!-- Non-TV Neugeschäft 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Winback 2017</masterLabel>
+            <translation><!-- Winback 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>kein Werbetreibender</masterLabel>
+            <translation><!-- kein Werbetreibender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nicht relevant 71M Sales D</masterLabel>
+            <translation><!-- nicht relevant 71M Sales D --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier wird der Kundentyp der Adfactory ausgewählt. --></help>
+        <label><!-- AdF Typ --></label>
+        <name>SomTv_AdF_Typ__c</name>
+        <picklistValues>
+            <masterLabel>DEFEND</masterLabel>
+            <translation><!-- DEFEND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESIRE</masterLabel>
+            <translation><!-- DESIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEVELOP</masterLabel>
+            <translation><!-- DEVELOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOUBT</masterLabel>
+            <translation><!-- DOUBT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>keine</masterLabel>
+            <translation><!-- keine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Link zum aktuellen Forecacst TV --></help>
+        <label><!-- Aktueller Forecast TV --></label>
+        <name>SomTv_AktuellerForecastTV__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Bei Anforderung einer Debitorennummer bitte aktivieren. --></help>
+        <label><!-- Anforderung Debitorennummer(n) --></label>
+        <name>SomTv_AnforderungDebitorennummernCheck__c</name>
+    </fields>
+    <fields>
+        <help><!-- für CRM-Sales, Haken gesetzt = IDs sind angefordert --></help>
+        <label><!-- Anforderung ProSedi-IDs --></label>
+        <name>SomTv_AnforderungProSediIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- für CRM-Sales, Status Debitorennummer(n) --></help>
+        <label><!-- Status Anforderung Debitorennummer(n) --></label>
+        <name>SomTv_Anforderung_Debitorennummer_n__c</name>
+        <picklistValues>
+            <masterLabel>angefordert</masterLabel>
+            <translation><!-- angefordert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>benötigt</masterLabel>
+            <translation><!-- benötigt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hinterlegt</masterLabel>
+            <translation><!-- hinterlegt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Gibt die Anzahl der ProSa und ProSedi Ids des Accounts aus --></help>
+        <label><!-- Anzahl ProSa ProSedi Ids --></label>
+        <name>SomTv_AnzahlProSaProSediIds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auswahl der Branche in Österreich --></help>
+        <label><!-- Branchen AT --></label>
+        <name>SomTv_BranchenAT__c</name>
+        <picklistValues>
+            <masterLabel>Aus- und Weiterbildung</masterLabel>
+            <translation><!-- Aus- und Weiterbildung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autoindustrie</masterLabel>
+            <translation><!-- Autoindustrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bauwirtschaft (Baumärkte, Gartenausstattung, Sanitär, Möbelhäuser, etc.)</masterLabel>
+            <translation><!-- Bauwirtschaft (Baumärkte, Gartenausstattung, Sanitär, Möbelhäuser, etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bekleidungsindustrie</masterLabel>
+            <translation><!-- Bekleidungsindustrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bürobedarf</masterLabel>
+            <translation><!-- Bürobedarf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDV</masterLabel>
+            <translation><!-- EDV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elektroindustrie</masterLabel>
+            <translation><!-- Elektroindustrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energie</masterLabel>
+            <translation><!-- Energie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erotik</masterLabel>
+            <translation><!-- Erotik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finanzwesen (Banken, Versicherungen, etc,)</masterLabel>
+            <translation><!-- Finanzwesen (Banken, Versicherungen, etc,) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Getränkeindustrie</masterLabel>
+            <translation><!-- Getränkeindustrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kosmetik</masterLabel>
+            <translation><!-- Kosmetik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kultur</masterLabel>
+            <translation><!-- Kultur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lebensmittelindustrie</masterLabel>
+            <translation><!-- Lebensmittelindustrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Musik-/Filmindustrie</masterLabel>
+            <translation><!-- Musik-/Filmindustrie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optik</masterLabel>
+            <translation><!-- Optik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma</masterLabel>
+            <translation><!-- Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printmedien</masterLabel>
+            <translation><!-- Printmedien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spielwaren</masterLabel>
+            <translation><!-- Spielwaren --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tourismus</masterLabel>
+            <translation><!-- Tourismus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vereine</masterLabel>
+            <translation><!-- Vereine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verkehrsmittel</masterLabel>
+            <translation><!-- Verkehrsmittel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wettanbieter</masterLabel>
+            <translation><!-- Wettanbieter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- für CRM-Sales; Dieses Feld ist notwendig, um die Tochterfirma der P7S1 Media AG für die Anforderung der Debitorennummer anzugeben --></help>
+        <label><!-- Buchungskreis --></label>
+        <name>SomTv_Buchungskreis__c</name>
+        <picklistValues>
+            <masterLabel>0011 ProSieben Television GmbH</masterLabel>
+            <translation><!-- 0011 ProSieben Television GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0012 Kabel 1  K1 Fernsehen GmbH</masterLabel>
+            <translation><!-- 0012 Kabel 1  K1 Fernsehen GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0029 ProSiebenSat.1 Digital GmbH</masterLabel>
+            <translation><!-- 0029 ProSiebenSat.1 Digital GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0051 SevenOne Media GmbH</masterLabel>
+            <translation><!-- 0051 SevenOne Media GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0063 SevenOne Brands GmbH</masterLabel>
+            <translation><!-- 0063 SevenOne Brands GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0064 SevenOne AdFactory GmbH</masterLabel>
+            <translation><!-- 0064 SevenOne AdFactory GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0065 SIXX GmbH</masterLabel>
+            <translation><!-- 0065 SIXX GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0072 TVD GmbH (S1 Gold, P7 Maxx)</masterLabel>
+            <translation><!-- 0072 TVD GmbH (S1 Gold, P7 Maxx) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0200 Sat.1 Satelliten Fernsehen GmbH</masterLabel>
+            <translation><!-- 0200 Sat.1 Satelliten Fernsehen GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0230 Sat.1 (Schweiz)</masterLabel>
+            <translation><!-- 0230 Sat.1 (Schweiz) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0231 Sat.1 Austria Wien</masterLabel>
+            <translation><!-- 0231 Sat.1 Austria Wien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0232 AUSTRIA 9 TV GmbH</masterLabel>
+            <translation><!-- 0232 AUSTRIA 9 TV GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0320 SevenOneMedia Schweiz AG</masterLabel>
+            <translation><!-- 0320 SevenOneMedia Schweiz AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0321 ProSieben (Schweiz) AG</masterLabel>
+            <translation><!-- 0321 ProSieben (Schweiz) AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0340 SevenOneMedia Austria  GmbH</masterLabel>
+            <translation><!-- 0340 SevenOneMedia Austria  GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0341 ProSieben Austria GmbH</masterLabel>
+            <translation><!-- 0341 ProSieben Austria GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0342 PULS CITY TV GmbH</masterLabel>
+            <translation><!-- 0342 PULS CITY TV GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0346 PULS 4 TV GmbH</masterLabel>
+            <translation><!-- 0346 PULS 4 TV GmbH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Benutzer, der das &quot;behalten&quot; angefordert hat. --></help>
+        <label><!-- behalten (von) --></label>
+        <name>SomTv_CleanUpFrom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account-Bereinigung 04/2015: soll nicht gelöscht werden. --></help>
+        <label><!-- behalten --></label>
+        <name>SomTv_CleanUpKeep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account-Bereinigung 04/2015: soll gelöscht werden (Vorschlag) --></help>
+        <label><!-- soll gelöscht werden --></label>
+        <name>SomTv_CleanUp_Delete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnung des Vorhandenseins von Compliance Richtlinie --></help>
+        <label><!-- Compliance Richtlinie vorhanden --></label>
+        <name>SomTv_ComplianceRichtlinieVorhanden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier hast Du die Möglichkeit, jeden Kunden dem jeweiligen Thema zuzuordnen. Beispiel: ein Kunde hat nur ein Teletextangebot erhalten = potentieller &quot;TXT Kunde&quot;. --></help>
+        <label><!-- Conversion Typ --></label>
+        <name>SomTv_Conversion_Typ__c</name>
+        <picklistValues>
+            <masterLabel>Bestandskunde DRTV</masterLabel>
+            <translation><!-- Bestandskunde DRTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bestandskunde Infomercial</masterLabel>
+            <translation><!-- Bestandskunde Infomercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bestandskunde TXT</masterLabel>
+            <translation><!-- Bestandskunde TXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPO Kunde</masterLabel>
+            <translation><!-- CPO Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gegengeschäft</masterLabel>
+            <translation><!-- Gegengeschäft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Potential</masterLabel>
+            <translation><!-- Non Potential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>potentieller DRTV Kunde</masterLabel>
+            <translation><!-- potentieller DRTV Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>potentieller Infomercial Kunde</masterLabel>
+            <translation><!-- potentieller Infomercial Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>potentieller TXT Kunde</masterLabel>
+            <translation><!-- potentieller TXT Kunde --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Link für TV Sales zum Erstellen eines neuen Forecast TV für das aktuelle Jahr --></help>
+        <label><!-- Erstelle Forecast TV --></label>
+        <name>SomTv_CreateForecastTV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für WF &quot; SomTv_AccNameDebNummerExistiert &quot;. &quot;AccountTrigger&quot; setzt diesen Flag, wenn Accountname geändert wurde und Som_Quelle__c = DebitorenNr &amp;&amp; Som_ExterneID__c gefüllt ist. --></help>
+        <label><!-- DebitorennummerCheckerEmailVersendet --></label>
+        <name>SomTv_DebCheckerEmailVersendet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für WF &quot; SomTv_AccNameDebNummerExistiert &quot;. &quot;AccountTrigger&quot; setzt diesen Flag, wenn Accountname geändert wurde und Som_Quelle__c = DebitorenNr &amp;&amp; Som_ExterneID__c gefüllt ist. --></help>
+        <label><!-- DebitorennummerChecker --></label>
+        <name>SomTv_DebitorennummerChecker__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wenn Rechtsform = Einzelunternehmen, dann sind Vor.- und Nachname des Firmeninhabers zwingend. --></help>
+        <label><!-- Firmeninhaber Nachname --></label>
+        <name>SomTv_FirmeninhaberNachname__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wenn Rechtsform = Einzelunternehmen, dann sind Vor.- und Nachname des Firmeninhabers zwingend. --></help>
+        <label><!-- Firmeninhaber Vorname --></label>
+        <name>SomTv_FirmeninhaberVorname__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die Kernsender an.
+Forecast TV - Opportunities --></help>
+        <label><!-- Gap Kernsender --></label>
+        <name>SomTv_ForecastDifferenzKernsender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die neuen Sendera an.
+Forecast TV - Opportunities --></help>
+        <label><!-- Gap Neue Sender --></label>
+        <name>SomTv_ForecastDifferenzNeueSender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast K1 Doku MN3 --></label>
+        <name>SomTv_ForecastK1DokuMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Pro7 MAXX MN3 --></label>
+        <name>SomTv_ForecastPro7MAXXMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast SAT.1 GOLD MN3 --></label>
+        <name>SomTv_ForecastSAT1GOLDMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast sixx MN3 --></label>
+        <name>SomTv_ForecastsixxMN3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Springe zur Liste der Opportunities dieses Accounts --></help>
+        <label><!-- Gehe zu --></label>
+        <name>SomTv_GeheZuOppListe__c</name>
+    </fields>
+    <fields>
+        <help><!-- Jahr der Gründung --></help>
+        <label><!-- Gründungsjahr --></label>
+        <name>SomTv_Gruendungsjahr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auflistung von Gruppen, die den Accounts zugeordnet werden sollen (Österreich) --></help>
+        <label><!-- Gruppe AT --></label>
+        <name>SomTv_GruppeAT__c</name>
+        <picklistValues>
+            <masterLabel>Fachpresse</masterLabel>
+            <translation><!-- Fachpresse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HD</masterLabel>
+            <translation><!-- HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hersteller SAT</masterLabel>
+            <translation><!-- Hersteller SAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hersteller TV</masterLabel>
+            <translation><!-- Hersteller TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Händler</masterLabel>
+            <translation><!-- Händler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kabelnetzbetreiber</masterLabel>
+            <translation><!-- Kabelnetzbetreiber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobilfunk</masterLabel>
+            <translation><!-- Mobilfunk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 10 Kunde</masterLabel>
+            <translation><!-- Top 10 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 10 Mediaagentur</masterLabel>
+            <translation><!-- Top 10 Mediaagentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 100 Kunde</masterLabel>
+            <translation><!-- Top 100 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 20 Kunde</masterLabel>
+            <translation><!-- Top 20 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 20 Mediaagentur</masterLabel>
+            <translation><!-- Top 20 Mediaagentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 200 Kunde</masterLabel>
+            <translation><!-- Top 200 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 30 Kunde</masterLabel>
+            <translation><!-- Top 30 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 50 Kunde</masterLabel>
+            <translation><!-- Top 50 Kunde --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Die Nummer des Unternehmens, die im Handelsregister geführt wird. --></help>
+        <label><!-- Handelsregisternummer HRB --></label>
+        <name>SomTv_HandelsregisternummerHRB__c</name>
+    </fields>
+    <fields>
+        <help><!-- wird per Trigger befüllt. Dient zur Aufnahme der ProRex Rollenwerte. Filter in AnsprechpartnerZustaendigkeit__r.Agentur__c und AnsprechpartnerZustaendigkeit__r.Kunde__c referenzieren auf dieses Hilfsfeld --></help>
+        <label><!-- HilfsfeldProRexRolle --></label>
+        <name>SomTv_HilfsfeldProRexRolle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Erläuterungen für Delta von Forecast zu Opportunities --></help>
+        <label><!-- Information --></label>
+        <name>SomTv_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link für TV Sales zum Erstellen eines neuen Forecast TV für das aktuelle Jahr oder zu vorhandenem Forecast TV --></help>
+        <label><!-- Forecast TV --></label>
+        <name>SomTv_OpenCreateForecastTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opps Commitments Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJCommitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJGesamt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Neue Sender MN3 --></label>
+        <name>SomTv_OpptiAJNeueSender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opps Pakete Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJPaket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opps Zubuchungen Kernsender MN3 --></label>
+        <name>SomTv_OpptiAJZubuchung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities K1 Doku MN3 --></label>
+        <name>SomTv_OpptiK1Doku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities P7 MAXX MN3 --></label>
+        <name>SomTv_OpptiP7MAXX__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities Sat.1 GOLD MN3 --></label>
+        <name>SomTv_OpptiSat1GOLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opps Commitments Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJCommitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJGesamt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities K1 Doku Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJK1Doku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opps Neue Sender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJNeueSender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities P7 MAXX Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJP7MAXX__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opps Pakete Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJPaket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities Sat.1 GOLD Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJSat1GOLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opps Zubuchungen Kernsender Vorjahr MN3 --></label>
+        <name>SomTv_OpptiVJZubuchung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities sixx Vorjahr  MN3 --></label>
+        <name>SomTv_OpptiVJsixx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities sixx MN3 --></label>
+        <name>SomTv_Opptisixx__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beurteilung der strategischen Wichtigkeit/Bedeutung von TV Neukunden --></help>
+        <label><!-- Strategische Priorität NewBusiness --></label>
+        <name>SomTv_Priority_NewBusiness__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Zur Anforderung der Debitorennummer muss angegeben sein, für welche ProSedi-Geschäftsart die Debitorennummern zu erstellen sind. --></help>
+        <label><!-- ProSedi-Geschäftsart --></label>
+        <name>SomTv_ProSediGeschaeftsart__c</name>
+        <picklistValues>
+            <masterLabel>Gegengeschäft</masterLabel>
+            <translation><!-- Gegengeschäft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Werbezeit</masterLabel>
+            <translation><!-- Werbezeit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Forecast Commitments Kernsender MN3 --></label>
+        <name>SomTv_PrognoseCommitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Forecast Kernsender MN3 --></label>
+        <name>SomTv_PrognoseGesamt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Pakete Kernsender MN3 --></label>
+        <name>SomTv_PrognosePaket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Zubuchungen Kernsender MN3 --></label>
+        <name>SomTv_PrognoseZubuchung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt die TV Relevanz an --></help>
+        <label><!-- SomTv_Relevanz --></label>
+        <name>SomTv_Relevanz__c</name>
+    </fields>
+    <fields>
+        <help><!-- Die Nummer des Unternehmens, die im Finanzamt geführt wird. --></help>
+        <label><!-- Steuernummer --></label>
+        <name>SomTv_Steuernummer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beurteilung der strategischen Wichtigkeit/Bedeutung von Kunden aus Österreich --></help>
+        <label><!-- Strategische Priorität AT --></label>
+        <name>SomTv_StrategischePrioritaetAT__c</name>
+        <picklistValues>
+            <masterLabel>Fachpresse</masterLabel>
+            <translation><!-- Fachpresse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HD</masterLabel>
+            <translation><!-- HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hersteller SAT</masterLabel>
+            <translation><!-- Hersteller SAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hersteller TV</masterLabel>
+            <translation><!-- Hersteller TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Händler</masterLabel>
+            <translation><!-- Händler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kabelnetzbetreiber</masterLabel>
+            <translation><!-- Kabelnetzbetreiber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobilfunk</masterLabel>
+            <translation><!-- Mobilfunk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 10 Kunde</masterLabel>
+            <translation><!-- Top 10 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 10 Mediaagentur</masterLabel>
+            <translation><!-- Top 10 Mediaagentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 100 Kunde</masterLabel>
+            <translation><!-- Top 100 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 20 Kunde</masterLabel>
+            <translation><!-- Top 20 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 20 Mediaagentur</masterLabel>
+            <translation><!-- Top 20 Mediaagentur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 200 Kunde</masterLabel>
+            <translation><!-- Top 200 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 30 Kunde</masterLabel>
+            <translation><!-- Top 30 Kunde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 50 Kunde</masterLabel>
+            <translation><!-- Top 50 Kunde --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Account bucht relevanten Umsatz auf entsprechender Produktebene bzw. ist auf Grund der Historie affin für entsprechende Produktebene --></help>
+        <label><!-- Strategische Priorität AdFactory --></label>
+        <name>SomTv_StrategischePrioritaetAdFactory__c</name>
+        <picklistValues>
+            <masterLabel>Alles</masterLabel>
+            <translation><!-- Alles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Marketing</masterLabel>
+            <translation><!-- Content Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOoH</masterLabel>
+            <translation><!-- DOoH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konvergenz</masterLabel>
+            <translation><!-- Konvergenz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensing</masterLabel>
+            <translation><!-- Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marktguru</masterLabel>
+            <translation><!-- Marktguru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Placement</masterLabel>
+            <translation><!-- Product Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Splits/Spots</masterLabel>
+            <translation><!-- Splits/Spots --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsoring</masterLabel>
+            <translation><!-- Sponsoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV-Digital</masterLabel>
+            <translation><!-- TV-Digital --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Beurteilung der strategischen Wichtigkeit/Bedeutung von Online Kunden --></help>
+        <label><!-- Strategische Priorität Online --></label>
+        <name>SomTv_StrategischePrioritaetOnline__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Beurteilung der strategischen Wichtigkeit/Bedeutung von TV Kunden --></help>
+        <label><!-- Strategische Priorität TV --></label>
+        <name>SomTv_StrategischePrioritaetTV__c</name>
+        <picklistValues>
+            <masterLabel>Angriff</masterLabel>
+            <translation><!-- Angriff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verteidigung</masterLabel>
+            <translation><!-- Verteidigung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>direkt</masterLabel>
+            <translation><!-- direkt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summe Forecast Neue Sender MN3 --></label>
+        <name>SomTv_SummeForecastNeueSenderMN3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Opportunities gewonnen MN3 --></label>
+        <name>SomTv_SummeOpptisGewonnenMn3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld DWH: Top1 Wirtschaftsbereich als Name statt ID --></help>
+        <label><!-- Top1 Wirtschaftsbereich (DWH) --></label>
+        <name>SomTv_Top1WirtschaftsbereichName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Der Wirtschafts-bereich mit den höchsten Werbespendings des Accounts für das Vorjahr  laut Nielsen --></help>
+        <label><!-- Top1 Wirtschaftsbereich --></label>
+        <name>SomTv_Top1Wirtschaftsbereich__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Die Wirtschaftsgruppe mit den höchsten Werbespendings des Accounts für das Vorjahr laut Nielsen --></help>
+        <label><!-- Top1 Wirtschaftsgruppe --></label>
+        <name>SomTv_Top1Wirtschaftsgruppe__c</name>
+        <picklistValues>
+            <masterLabel>AKUSTIK</masterLabel>
+            <translation><!-- AKUSTIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALKOHOLFREIE GETRAENKE</masterLabel>
+            <translation><!-- ALKOHOLFREIE GETRAENKE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANLAGEN-LEASING + -VERMIETUNG</masterLabel>
+            <translation><!-- ANLAGEN-LEASING + -VERMIETUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTRIEBE + LAGER</masterLabel>
+            <translation><!-- ANTRIEBE + LAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARZNEIMITTEL</masterLabel>
+            <translation><!-- ARZNEIMITTEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUDIO-GERAETE</masterLabel>
+            <translation><!-- AUDIO-GERAETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUSBILDUNG</masterLabel>
+            <translation><!-- AUSBILDUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAD + SANITAER</masterLabel>
+            <translation><!-- BAD + SANITAER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAU-STOFFE + BAU-ZUBEHOER</masterLabel>
+            <translation><!-- BAU-STOFFE + BAU-ZUBEHOER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAU-WIRTSCHAFT FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- BAU-WIRTSCHAFT FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEKLEIDUNG</masterLabel>
+            <translation><!-- BEKLEIDUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BERATUNGSDIENSTE</masterLabel>
+            <translation><!-- BERATUNGSDIENSTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIER</masterLabel>
+            <translation><!-- BIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BILD- + TONTRAEGER MUSIK</masterLabel>
+            <translation><!-- BILD- + TONTRAEGER MUSIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BROT + DAUERBACKWAREN</masterLabel>
+            <translation><!-- BROT + DAUERBACKWAREN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BROTAUFSTRICH</masterLabel>
+            <translation><!-- BROTAUFSTRICH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARITATIVE ORGANISATIONEN</masterLabel>
+            <translation><!-- CARITATIVE ORGANISATIONEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER + -ZUSATZGERAETE</masterLabel>
+            <translation><!-- COMPUTER + -ZUSATZGERAETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER + BUERO FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- COMPUTER + BUERO FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONVENIENCE FOOD</masterLabel>
+            <translation><!-- CONVENIENCE FOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEKORATIVE KOSMETIK</masterLabel>
+            <translation><!-- DEKORATIVE KOSMETIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEODORANTS</masterLabel>
+            <translation><!-- DEODORANTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DESSERTS</masterLabel>
+            <translation><!-- DESSERTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIAETEN + SPORTLERNAHRUNG</masterLabel>
+            <translation><!-- DIAETEN + SPORTLERNAHRUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIENSTLEISTUNGEN FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- DIENSTLEISTUNGEN FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIENSTLEISTUNGEN SONSTIGE</masterLabel>
+            <translation><!-- DIENSTLEISTUNGEN SONSTIGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-COMMERCE</masterLabel>
+            <translation><!-- E-COMMERCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDV-DIENSTLEISTUNGEN</masterLabel>
+            <translation><!-- EDV-DIENSTLEISTUNGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EINRICHTUNG GEWERBE + INDUSTRIE</masterLabel>
+            <translation><!-- EINRICHTUNG GEWERBE + INDUSTRIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EINRICHTUNGEN GESUNDHEIT + PFLEGE</masterLabel>
+            <translation><!-- EINRICHTUNGEN GESUNDHEIT + PFLEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELEKTROGERAETE HAUSHALT</masterLabel>
+            <translation><!-- ELEKTROGERAETE HAUSHALT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENERGIE -WB RANGE-</masterLabel>
+            <translation><!-- ENERGIE -WB RANGE- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENERGIE FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- ENERGIE FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENERGIETECHNIK</masterLabel>
+            <translation><!-- ENERGIETECHNIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENERGIEVERSORGUNG</masterLabel>
+            <translation><!-- ENERGIEVERSORGUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERNAEHRUNG -WB RANGE-</masterLabel>
+            <translation><!-- ERNAEHRUNG -WB RANGE- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAHRZEUG-ZUBEHOER</masterLabel>
+            <translation><!-- FAHRZEUG-ZUBEHOER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARBEN + TAPETEN</masterLabel>
+            <translation><!-- FARBEN + TAPETEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FASERN + GARNE</masterLabel>
+            <translation><!-- FASERN + GARNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FDL FIRMENKUNDEN</masterLabel>
+            <translation><!-- FDL FIRMENKUNDEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FDL PRIVATKUNDEN</masterLabel>
+            <translation><!-- FDL PRIVATKUNDEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEINKOST</masterLabel>
+            <translation><!-- FEINKOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FESTNETZ</masterLabel>
+            <translation><!-- FESTNETZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FILM</masterLabel>
+            <translation><!-- FILM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINANZANLAGEN</masterLabel>
+            <translation><!-- FINANZANLAGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINANZEN FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- FINANZEN FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLEISCH + FISCH</masterLabel>
+            <translation><!-- FLEISCH + FISCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLUGLINIEN + -TOURISTIK</masterLabel>
+            <translation><!-- FLUGLINIEN + -TOURISTIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOTO</masterLabel>
+            <translation><!-- FOTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREMDENVERKEHR</masterLabel>
+            <translation><!-- FREMDENVERKEHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRUECHTE + GEMUESE</masterLabel>
+            <translation><!-- FRUECHTE + GEMUESE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSSBOEDEN</masterLabel>
+            <translation><!-- FUSSBOEDEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GARTEN- + LANDWIRTSCHAFT</masterLabel>
+            <translation><!-- GARTEN- + LANDWIRTSCHAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GARTENGERAETE</masterLabel>
+            <translation><!-- GARTENGERAETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GESICHTSPFLEGE</masterLabel>
+            <translation><!-- GESICHTSPFLEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GESUNDHEIT + PHARMAZIE SONSTIGE</masterLabel>
+            <translation><!-- GESUNDHEIT + PHARMAZIE SONSTIGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GESUNDHEIT+PHARMAZIE FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- GESUNDHEIT+PHARMAZIE FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEWUERZE + GEWUERZSAUCEN</masterLabel>
+            <translation><!-- GEWUERZE + GEWUERZSAUCEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAARPFLEGE</masterLabel>
+            <translation><!-- HAARPFLEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDEL FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- HANDEL FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDEL SONSTIGER</masterLabel>
+            <translation><!-- HANDEL SONSTIGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAUS- + GARTENAUSSTAT.FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- HAUS- + GARTENAUSSTAT.FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAUSHALTS-ARTIKEL</masterLabel>
+            <translation><!-- HAUSHALTS-ARTIKEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAUSTIER-NAHRUNG</masterLabel>
+            <translation><!-- HAUSTIER-NAHRUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEIMTEXTILIEN</masterLabel>
+            <translation><!-- HEIMTEXTILIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEIZUNGSTECHNIK</masterLabel>
+            <translation><!-- HEIZUNGSTECHNIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOTELS + GASTRONOMIE</masterLabel>
+            <translation><!-- HOTELS + GASTRONOMIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMOBILIEN</masterLabel>
+            <translation><!-- IMMOBILIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTR.VERBR.GUETER FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- INDUSTR.VERBR.GUETER FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTIMHYGIENE</masterLabel>
+            <translation><!-- INTIMHYGIENE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVESTITIONSGUETER FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- INVESTITIONSGUETER FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAFFEE, TEE, KAKAO</masterLabel>
+            <translation><!-- KAFFEE, TEE, KAKAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAUFHAEUSER</masterLabel>
+            <translation><!-- KAUFHAEUSER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KFZ-MARKT FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- KFZ-MARKT FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KLEBESTOFFE</masterLabel>
+            <translation><!-- KLEBESTOFFE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOERPERHYGIENE ( ZELLSTOFF )</masterLabel>
+            <translation><!-- KOERPERHYGIENE ( ZELLSTOFF ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOERPERPFLEGE</masterLabel>
+            <translation><!-- KOERPERPFLEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOERPERSCHAFTEN</masterLabel>
+            <translation><!-- KOERPERSCHAFTEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRAFT- + SCHMIERSTOFFE</masterLabel>
+            <translation><!-- KRAFT- + SCHMIERSTOFFE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRAFTFAHRZEUG-MARKT -WB RANGE-</masterLabel>
+            <translation><!-- KRAFTFAHRZEUG-MARKT -WB RANGE- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KUNST + KULTUR</masterLabel>
+            <translation><!-- KUNST + KULTUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEBENSMITTELEINZELHANDEL</masterLabel>
+            <translation><!-- LEBENSMITTELEINZELHANDEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEDERWAREN</masterLabel>
+            <translation><!-- LEDERWAREN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LICHT-TECHNIK</masterLabel>
+            <translation><!-- LICHT-TECHNIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOTTERIEN / LOTTO + TOTO</masterLabel>
+            <translation><!-- LOTTERIEN / LOTTO + TOTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARKETING + WERBUNG</masterLabel>
+            <translation><!-- MARKETING + WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARKISEN + JALOUSIEN</masterLabel>
+            <translation><!-- MARKISEN + JALOUSIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASCHINELLE ANLAGEN</masterLabel>
+            <translation><!-- MASCHINELLE ANLAGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDIEN FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- MEDIEN FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MESSEN, AUSSTELLUNGEN, SEMINARE</masterLabel>
+            <translation><!-- MESSEN, AUSSTELLUNGEN, SEMINARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MILCHPRODUKTE - GELBE LINIE</masterLabel>
+            <translation><!-- MILCHPRODUKTE - GELBE LINIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MILCHPRODUKTE - WEISSE LINIE</masterLabel>
+            <translation><!-- MILCHPRODUKTE - WEISSE LINIE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILNETZ</masterLabel>
+            <translation><!-- MOBILNETZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOEBEL + EINRICHTUNG</masterLabel>
+            <translation><!-- MOEBEL + EINRICHTUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUNDPFLEGE</masterLabel>
+            <translation><!-- MUNDPFLEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAEHRMITTEL</masterLabel>
+            <translation><!-- NAEHRMITTEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ONLINE-DIENSTLEISTUNGEN</masterLabel>
+            <translation><!-- ONLINE-DIENSTLEISTUNGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPTIK</masterLabel>
+            <translation><!-- OPTIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARFUMS + DUFTPRODUKTE</masterLabel>
+            <translation><!-- PARFUMS + DUFTPRODUKTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFLEGE + KOSMETIK KOMPLETT-SERIEN</masterLabel>
+            <translation><!-- PFLEGE + KOSMETIK KOMPLETT-SERIEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PKW</masterLabel>
+            <translation><!-- PKW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUBLIKUMSZEITSCHRIFTEN-WERBUNG</masterLabel>
+            <translation><!-- PUBLIKUMSZEITSCHRIFTEN-WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUTZ- + PFLEGEMITTEL</masterLabel>
+            <translation><!-- PUTZ- + PFLEGEMITTEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RADIO-WERBUNG</masterLabel>
+            <translation><!-- RADIO-WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RASIERER + ZUBEHOER</masterLabel>
+            <translation><!-- RASIERER + ZUBEHOER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REIFEN</masterLabel>
+            <translation><!-- REIFEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REISE-GESELLSCHAFTEN</masterLabel>
+            <translation><!-- REISE-GESELLSCHAFTEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBRIKEN-WERBUNG</masterLabel>
+            <translation><!-- RUBRIKEN-WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHIFFSLINIEN + -TOURISTIK</masterLabel>
+            <translation><!-- SCHIFFSLINIEN + -TOURISTIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHREIBGERAETE</masterLabel>
+            <translation><!-- SCHREIBGERAETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHUHE</masterLabel>
+            <translation><!-- SCHUHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHWIMMBAD + SAUNA</masterLabel>
+            <translation><!-- SCHWIMMBAD + SAUNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEKT</masterLabel>
+            <translation><!-- SEKT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOFTWARE</masterLabel>
+            <translation><!-- SOFTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SONSTIGE MEDIEN / VERLAGE</masterLabel>
+            <translation><!-- SONSTIGE MEDIEN / VERLAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPEISEFETTE + -OELE</masterLabel>
+            <translation><!-- SPEISEFETTE + -OELE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPIELE + SPIEL-COMPUTER</masterLabel>
+            <translation><!-- SPIELE + SPIEL-COMPUTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPIELZEUG</masterLabel>
+            <translation><!-- SPIELZEUG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPIRITUOSEN</masterLabel>
+            <translation><!-- SPIRITUOSEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPORT + CAMPING</masterLabel>
+            <translation><!-- SPORT + CAMPING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STRUEMPFE</masterLabel>
+            <translation><!-- STRUEMPFE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUESSWAREN</masterLabel>
+            <translation><!-- SUESSWAREN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELEFON- + FAXDIENSTE</masterLabel>
+            <translation><!-- TELEFON- + FAXDIENSTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELEKOMMUNIKATION FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- TELEKOMMUNIKATION FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELEKOMMUNIKATION KOMBINATIONEN</masterLabel>
+            <translation><!-- TELEKOMMUNIKATION KOMBINATIONEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELEKOMMUNIKATIONS-GERAETE</masterLabel>
+            <translation><!-- TELEKOMMUNIKATIONS-GERAETE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILIEN + BEKLEID. FIRMEN-/ IMAGE-WBG</masterLabel>
+            <translation><!-- TEXTILIEN + BEKLEID. FIRMEN-/ IMAGE-WBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILIEN + BEKLEIDUNG -WB RANGE-</masterLabel>
+            <translation><!-- TEXTILIEN + BEKLEIDUNG -WB RANGE- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIEFKUEHLKOST</masterLabel>
+            <translation><!-- TIEFKUEHLKOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIER-PFLEGE</masterLabel>
+            <translation><!-- TIER-PFLEGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV PROGRAMM</masterLabel>
+            <translation><!-- TV PROGRAMM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV-WERBUNG</masterLabel>
+            <translation><!-- TV-WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UHREN + SCHMUCK</masterLabel>
+            <translation><!-- UHREN + SCHMUCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNTERHALTUNGSELEKTRONIK -WB RANGE-</masterLabel>
+            <translation><!-- UNTERHALTUNGSELEKTRONIK -WB RANGE- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNTERNEHMENS-WERBUNG</masterLabel>
+            <translation><!-- UNTERNEHMENS-WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERSANDHANDEL</masterLabel>
+            <translation><!-- VERSANDHANDEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERSICHERUNGEN</masterLabel>
+            <translation><!-- VERSICHERUNGEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAESCHE</masterLabel>
+            <translation><!-- WAESCHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASCH- + BADEKOSMETIK</masterLabel>
+            <translation><!-- WASCH- + BADEKOSMETIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASCHMITTEL</masterLabel>
+            <translation><!-- WASCHMITTEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEIN</masterLabel>
+            <translation><!-- WEIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WERKZEUGE</masterLabel>
+            <translation><!-- WERKZEUGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZEITUNGEN-WERBUNG</masterLabel>
+            <translation><!-- ZEITUNGEN-WERBUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZUSTELLER</masterLabel>
+            <translation><!-- ZUSTELLER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZWEIRAD-INDUSTRIE</masterLabel>
+            <translation><!-- ZWEIRAD-INDUSTRIE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Team CRM. WF &quot;Account zu überprüfen&quot; setzt Haken, wenn ein Account erstellt oder bearbeitet wurde. --></help>
+        <label><!-- zu überprüfen --></label>
+        <name>SomTv_ZuUeberpruefenAcc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Agency. WF &quot;Account zu überprüfen Faktura&quot; setzt Haken, wenn ein Account erstellt oder bearbeitet wurde. --></help>
+        <label><!-- zu Überprüfen Faktura --></label>
+        <name>SomTv_zuUeberpruefenFakturaAcc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Sales Steering. WF &quot;Account zu überprüfen Sales Steering&quot; setzt Haken, wenn ein Account erstellt wurde. --></help>
+        <label><!-- zu überprüfen Sales Steering --></label>
+        <name>SomTv_zuUeberpruefenSalesSteeringAcc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Persönlichen Termins für AT an --></help>
+        <label><!-- AT Letzter Persönlicher Termin --></label>
+        <name>Som_AT_LetzterPersoenlicherTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Telefonischen Termins für AT an --></help>
+        <label><!-- AT Letzter Telefon Termin --></label>
+        <name>Som_AT_LetzterTelefonTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Termins auf einer Veranstaltung für AT an --></help>
+        <label><!-- AT Letzter Veranstaltungs Termin --></label>
+        <name>Som_AT_LetzterVeranstaltungsTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Persönlichen Termins für AdFactory an --></help>
+        <label><!-- AdF Letzter Persönlicher Termin --></label>
+        <name>Som_AdF_LetzterPersoenlicherTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Telefonischen Termins für AdFactory an --></help>
+        <label><!-- AdF Letzter Telefon Termin --></label>
+        <name>Som_AdF_LetzterTelefonTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Termins auf einer Veranstaltung für AdFactory an --></help>
+        <label><!-- AdF Letzter Veranstaltungs Termin --></label>
+        <name>Som_AdF_LetzterVeranstaltungsTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Persönlichen Termins für Digital an --></help>
+        <label><!-- Digital Letzter Persönlicher Termin --></label>
+        <name>Som_DIG_LetzterPersoenlicherTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Telefonischen Termins für Digital an --></help>
+        <label><!-- Digital Letzter Telefon Termin --></label>
+        <name>Som_DIG_LetzterTelefonTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Termins auf einer Veranstaltung für Digital an --></help>
+        <label><!-- Digital Letzter Veranstaltungs Termin --></label>
+        <name>Som_DIG_LetzterVeranstaltungsTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeige Top-Kategorie des Konzerns --></help>
+        <label><!-- Top-Kategorie des Konzerns --></label>
+        <name>Som_KategorieKonzern__c</name>
+    </fields>
+    <fields>
+        <help><!-- zugehöriger Konzern bzw. Agenturverbund --></help>
+        <label><!-- Konzern/Agenturverbund --></label>
+        <name>Som_KonzernAgenturverbund__c</name>
+        <relationshipLabel><!-- Accounts (Konzern/Agenturverbund) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Datum, wann die letzte Änderung am Account durchgeführt wurde. --></help>
+        <label><!-- Letzte Aktivität Account --></label>
+        <name>Som_LetzteAktivitaetAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datum des letzten Kontaktberichts, welche mit dem Account verknüpft sind. --></help>
+        <label><!-- Letzter Kontaktbericht Account --></label>
+        <name>Som_LetzterKontaktberichtAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online/Mobile Strategie --></label>
+        <name>Som_OnlineMobileStrategie__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rechtsformen des Unternehmens. HINWEIS: sollte eine Rechtsform fehlen, bitte bei den Admins vom Team Sales Solutions melden, der Eintrag wird dann umgehend angelegt. --></help>
+        <label><!-- Rechtsform --></label>
+        <name>Som_Rechtsform__c</name>
+        <picklistValues>
+            <masterLabel>A/S</masterLabel>
+            <translation><!-- A/S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AB</masterLabel>
+            <translation><!-- AB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AG</masterLabel>
+            <translation><!-- AG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AG &amp; Co. KG</masterLabel>
+            <translation><!-- AG &amp; Co. KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AG &amp; Co. KGaA</masterLabel>
+            <translation><!-- AG &amp; Co. KGaA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AG &amp; Co. OHG</masterLabel>
+            <translation><!-- AG &amp; Co. OHG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anstalt des öffentlichen Rechts</masterLabel>
+            <translation><!-- Anstalt des öffentlichen Rechts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ApS</masterLabel>
+            <translation><!-- ApS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ApS &amp; Co. KG</masterLabel>
+            <translation><!-- ApS &amp; Co. KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B.V.</masterLabel>
+            <translation><!-- B.V. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corp.</masterLabel>
+            <translation><!-- Corp. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EURL</masterLabel>
+            <translation><!-- EURL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EWIV</masterLabel>
+            <translation><!-- EWIV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Einzelunternehmen</masterLabel>
+            <translation><!-- Einzelunternehmen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GbR</masterLabel>
+            <translation><!-- GbR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemeinnützige Stiftung</masterLabel>
+            <translation><!-- Gemeinnützige Stiftung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Genossenschaft</masterLabel>
+            <translation><!-- Genossenschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GesbR</masterLabel>
+            <translation><!-- GesbR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GesmbH</masterLabel>
+            <translation><!-- GesmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GesnbR</masterLabel>
+            <translation><!-- GesnbR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GmbH</masterLabel>
+            <translation><!-- GmbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GmbH &amp; Co. KGaA</masterLabel>
+            <translation><!-- GmbH &amp; Co. KGaA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GmbH &amp; Co. OHG</masterLabel>
+            <translation><!-- GmbH &amp; Co. OHG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GmbH &amp; Co.KG</masterLabel>
+            <translation><!-- GmbH &amp; Co.KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inc.</masterLabel>
+            <translation><!-- Inc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InvAG</masterLabel>
+            <translation><!-- InvAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KG</masterLabel>
+            <translation><!-- KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KGaA</masterLabel>
+            <translation><!-- KGaA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kollektivgesellschaft</masterLabel>
+            <translation><!-- Kollektivgesellschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kommanditerwerbsgesellschaft</masterLabel>
+            <translation><!-- Kommanditerwerbsgesellschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Körperschaft des öffentlichen Rechts</masterLabel>
+            <translation><!-- Körperschaft des öffentlichen Rechts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LLC</masterLabel>
+            <translation><!-- LLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LLC &amp; Co. KG</masterLabel>
+            <translation><!-- LLC &amp; Co. KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LLP</masterLabel>
+            <translation><!-- LLP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ltd.</masterLabel>
+            <translation><!-- Ltd. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ltd. &amp; Co. KG</masterLabel>
+            <translation><!-- Ltd. &amp; Co. KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microentreprise</masterLabel>
+            <translation><!-- Microentreprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N.V.</masterLabel>
+            <translation><!-- N.V. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OG</masterLabel>
+            <translation><!-- OG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHG</masterLabel>
+            <translation><!-- OHG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHG mbh</masterLabel>
+            <translation><!-- OHG mbh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offene Erwerbsgesellschaft</masterLabel>
+            <translation><!-- Offene Erwerbsgesellschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offene Handelsgesellschaft</masterLabel>
+            <translation><!-- Offene Handelsgesellschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oy</masterLabel>
+            <translation><!-- Oy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OÜ</masterLabel>
+            <translation><!-- OÜ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PBC</masterLabel>
+            <translation><!-- PBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PJSC</masterLabel>
+            <translation><!-- PJSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLC</masterLabel>
+            <translation><!-- PLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PartGG</masterLabel>
+            <translation><!-- PartGG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S.A.</masterLabel>
+            <translation><!-- S.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S.C.A.</masterLabel>
+            <translation><!-- S.C.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S.L.</masterLabel>
+            <translation><!-- S.L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S.e.c.s.</masterLabel>
+            <translation><!-- S.e.c.s. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S.r.l.</masterLabel>
+            <translation><!-- S.r.l. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA</masterLabel>
+            <translation><!-- SA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS</masterLabel>
+            <translation><!-- SAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCI</masterLabel>
+            <translation><!-- SCI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCP</masterLabel>
+            <translation><!-- SCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE &amp; Co. KG</masterLabel>
+            <translation><!-- SE &amp; Co. KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SNC</masterLabel>
+            <translation><!-- SNC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagl</masterLabel>
+            <translation><!-- Sagl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SpA</masterLabel>
+            <translation><!-- SpA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stiftung</masterLabel>
+            <translation><!-- Stiftung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stiftung &amp; Co. KG</masterLabel>
+            <translation><!-- Stiftung &amp; Co. KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stiftung &amp; Co. KGaA</masterLabel>
+            <translation><!-- Stiftung &amp; Co. KGaA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stiftung des privaten Rechts</masterLabel>
+            <translation><!-- Stiftung des privaten Rechts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stiftung des öffentlichen Rechts</masterLabel>
+            <translation><!-- Stiftung des öffentlichen Rechts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stille Gesellschaft</masterLabel>
+            <translation><!-- Stille Gesellschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sàrl</masterLabel>
+            <translation><!-- Sàrl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UG</masterLabel>
+            <translation><!-- UG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VVaG</masterLabel>
+            <translation><!-- VVaG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verein</masterLabel>
+            <translation><!-- Verein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wirtschaftlicher Verein</masterLabel>
+            <translation><!-- Wirtschaftlicher Verein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>d.o.o.</masterLabel>
+            <translation><!-- d.o.o. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e. K.</masterLabel>
+            <translation><!-- e. K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e. Kffr.</masterLabel>
+            <translation><!-- e. Kffr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e. Kfm.</masterLabel>
+            <translation><!-- e. Kfm. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e.U.</masterLabel>
+            <translation><!-- e.U. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e.V.</masterLabel>
+            <translation><!-- e.V. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eG</masterLabel>
+            <translation><!-- eG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ehf</masterLabel>
+            <translation><!-- ehf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>einfache Gesellschaft</masterLabel>
+            <translation><!-- einfache Gesellschaft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>gAG</masterLabel>
+            <translation><!-- gAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mbH</masterLabel>
+            <translation><!-- mbH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nicht bekannt</masterLabel>
+            <translation><!-- nicht bekannt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>s.r.o.</masterLabel>
+            <translation><!-- s.r.o. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sp.z.o.o</masterLabel>
+            <translation><!-- sp.z.o.o --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Persönlichen Termins für TV an --></help>
+        <label><!-- TV Letzter Persönlicher Termin --></label>
+        <name>Som_TV_LetzterPersoenlicherTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Telefonischen Termins für TV an --></help>
+        <label><!-- TV Letzter Telefon Termin --></label>
+        <name>Som_TV_LetzterTelefonTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt das Datum des letzten Termins auf einer Veranstaltung für TV an --></help>
+        <label><!-- TV Letzter Veranstaltungs Termin --></label>
+        <name>Som_TV_LetzterVeranstaltungsTermin__c</name>
+    </fields>
+    <fields>
+        <help><!-- manuell gepflegte Einteilung in Top-Kategorien --></help>
+        <label><!-- Top-Kategorie --></label>
+        <name>Som_TopKategorie__c</name>
+        <picklistValues>
+            <masterLabel>Top 1-20</masterLabel>
+            <translation><!-- Top 1-20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 21-50</masterLabel>
+            <translation><!-- Top 21-50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 51-100</masterLabel>
+            <translation><!-- Top 51-100 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comedy --></label>
+        <name>Star_Comedy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Entertainment --></label>
+        <name>Star_FamilyEntertainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Festivals --></label>
+        <name>Star_Festivals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Genre --></label>
+        <name>Star_Genre__c</name>
+        <picklistValues>
+            <masterLabel>Ausstellungen</masterLabel>
+            <translation><!-- Ausstellungen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comedy</masterLabel>
+            <translation><!-- Comedy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRTV</masterLabel>
+            <translation><!-- DRTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinnershows</masterLabel>
+            <translation><!-- Dinnershows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Entertainment</masterLabel>
+            <translation><!-- Family Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Festivals</masterLabel>
+            <translation><!-- Festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fun Sport/Sport</masterLabel>
+            <translation><!-- Fun Sport/Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indie Labels</masterLabel>
+            <translation><!-- Indie Labels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Labels</masterLabel>
+            <translation><!-- Major Labels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management</masterLabel>
+            <translation><!-- Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Messen</masterLabel>
+            <translation><!-- Messen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Musicals</masterLabel>
+            <translation><!-- Musicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partyreihen</masterLabel>
+            <translation><!-- Partyreihen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rock &amp; Pop Tour</masterLabel>
+            <translation><!-- Rock &amp; Pop Tour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonstige</masterLabel>
+            <translation><!-- Sonstige --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonstige Tour</masterLabel>
+            <translation><!-- Sonstige Tour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touristik/Ski Events</masterLabel>
+            <translation><!-- Touristik/Ski Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Varietés</masterLabel>
+            <translation><!-- Varietés --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venues</masterLabel>
+            <translation><!-- Venues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Örtliche Veranstalter</masterLabel>
+            <translation><!-- Örtliche Veranstalter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>Star_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Musicals --></label>
+        <name>Star_Musicals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Örtliche Veranstalter --></label>
+        <name>Star_OertlicheVeranstalter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rock, Pop &amp; Schlager Tourneen --></label>
+        <name>Star_RockPopSchlagerTourneen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sonstige --></label>
+        <name>Star_Sonstige__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchKey --></label>
+        <name>TRIMEC__MatchKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Level --></label>
+        <name>TRIMEC__MatchLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchScore --></label>
+        <name>TRIMEC__MatchScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entity of Account Owner in Hierarchy --></help>
+        <label><!-- Account Owner Entity --></label>
+        <name>Ven_AccountOwnerEntity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Workflow für Seven Ventures. --></help>
+        <label><!-- Aktueller Account Inhaber --></label>
+        <name>Ven_Aktueller_Account_Inhaber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Workflow für Seven Ventures. --></help>
+        <label><!-- Alter Account Inhaber --></label>
+        <name>Ven_Alter_Account_Inhaber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl der Ventures-Opportunities am Account --></help>
+        <label><!-- Anzahl Opportunities --></label>
+        <name>Ven_AnzahlOpportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld wird nicht länger benötigt und kann gelöscht werden. --></help>
+        <label><!-- Business Model LOESCHEN --></label>
+        <name>Ven_Business_Model__c</name>
+    </fields>
+    <fields>
+        <help><!-- Diese Auswahlliste ergänzt die Liste &apos;Vertical&apos; und ermöglicht somit eine eindeutige Einteilung. --></help>
+        <label><!-- Business Model --></label>
+        <name>Ven_Business_Model_new__c</name>
+        <picklistValues>
+            <masterLabel>Content</masterLabel>
+            <translation><!-- Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freemium</masterLabel>
+            <translation><!-- Freemium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation</masterLabel>
+            <translation><!-- Lead Generation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hier wird der Besitzer des Kunden eingetragen. --></help>
+        <label><!-- Client Owner --></label>
+        <name>Ven_Client_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Booming</masterLabel>
+            <translation><!-- Booming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOM</masterLabel>
+            <translation><!-- SOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenVentures</masterLabel>
+            <translation><!-- SevenVentures --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Company of Account Creator --></help>
+        <label><!-- Company Source --></label>
+        <name>Ven_Company_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Es wird der Account markiert der Customer von Seven Ventures ist. --></help>
+        <label><!-- Customer --></label>
+        <name>Ven_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieses Feld wird mit den Informationen aus dem konvertierten Lead befüllt. --></help>
+        <label><!-- Account Description --></label>
+        <name>Ven_DescriptionFromLead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Diese Information wird auf den Investment Summary übertragen. --></help>
+        <label><!-- Description --></label>
+        <name>Ven_Description_Market__c</name>
+    </fields>
+    <fields>
+        <help><!-- Diese Information wird auf den Investment Summary übertragen. --></help>
+        <label><!-- Drivers --></label>
+        <name>Ven_Drivers_Market__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Workflow für Seven Ventures. --></help>
+        <label><!-- E-Mail-Aktueller-Benutzer --></label>
+        <name>Ven_E_Mail_Aktueller_Benutzer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld für Workflow für Seven Ventures. --></help>
+        <label><!-- E-Mail alter Benutzer --></label>
+        <name>Ven_E_Mail_alter_Benutzer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Diese Information wird auf den Investment Summary übertragen. --></help>
+        <label><!-- Growth --></label>
+        <name>Ven_Growth_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hat Opportunity --></label>
+        <name>Ven_HatOpportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zusammenfassung von Daten aus Theorem Analytics, die nach der Migration nicht mehr benötigt werden. --></help>
+        <label><!-- Historische Daten --></label>
+        <name>Ven_Historische_Daten__c</name>
+    </fields>
+    <fields>
+        <help><!-- Qualification from US/San Francisco Office --></help>
+        <label><!-- Internal Business Owner (US) --></label>
+        <name>Ven_InternalBusinessOwner__c</name>
+        <picklistValues>
+            <masterLabel>7Travel</masterLabel>
+            <translation><!-- 7Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ampya</masterLabel>
+            <translation><!-- Ampya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTO D&amp;A (Clever)</masterLabel>
+            <translation><!-- CTO D&amp;A (Clever) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epic Companies</masterLabel>
+            <translation><!-- Epic Companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Games</masterLabel>
+            <translation><!-- Games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M4E &amp; M4R (7V)</masterLabel>
+            <translation><!-- M4E &amp; M4R (7V) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Video</masterLabel>
+            <translation><!-- Online Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Starwatch</masterLabel>
+            <translation><!-- Starwatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV 3.0</masterLabel>
+            <translation><!-- TV 3.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venture Capital</masterLabel>
+            <translation><!-- Venture Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maxdome</masterLabel>
+            <translation><!-- maxdome --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Falls der Account bei irgend einen anderen Account als Investor fungiert, wird diese Checkbox gesetzt. --></help>
+        <label><!-- Investor --></label>
+        <name>Ven_Investor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Info from US/San Francisco Office --></help>
+        <label><!-- Investors (US) --></label>
+        <name>Ven_Investors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hilfsfeld um den Datensatz im Account nach der Leadkonverierung korrekt setzten zu können. --></help>
+        <label><!-- Konvertiert aus einem SV Lead --></label>
+        <name>Ven_Konvertiert_aus_einem_SV_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Role --></label>
+        <name>Ven_Owner_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Soll ein Inhaberwechsel zur SOM stattfinden? --></help>
+        <label><!-- Return to SOM --></label>
+        <name>Ven_Return_to_SOM__c</name>
+    </fields>
+    <fields>
+        <help><!-- Diese Information wird auf den Investment Summary übertragen. --></help>
+        <label><!-- Size --></label>
+        <name>Ven_Size_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOM Approval --></label>
+        <name>Ven_SomApproval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte den verantwortlichen Responsible Manager auswählen. --></help>
+        <label><!-- Responsible Manager --></label>
+        <name>Ven_Sponsor__c</name>
+        <relationshipLabel><!-- Accounts (Responsible Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Bitte den Status des Customer oder Target auswählen! --></help>
+        <label><!-- Status --></label>
+        <name>Ven_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead</masterLabel>
+            <translation><!-- Dead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Account, zu dem keine abgeschlossene Opportunity von Seven Ventures besteht. --></help>
+        <label><!-- Target --></label>
+        <name>Ven_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bitte die Seven Ventures Team-Zuodnung auswählen! --></help>
+        <label><!-- Team --></label>
+        <name>Ven_Team__c</name>
+        <picklistValues>
+            <masterLabel>Digital Commerce</masterLabel>
+            <translation><!-- Digital Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth Investments</masterLabel>
+            <translation><!-- Growth Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lifestyle Commerce</masterLabel>
+            <translation><!-- Lifestyle Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M&amp;A</masterLabel>
+            <translation><!-- M&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ops &amp; Strat</masterLabel>
+            <translation><!-- Ops &amp; Strat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco</masterLabel>
+            <translation><!-- San Francisco --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Diese Information wird auf den Investment Summary übertragen. --></help>
+        <label><!-- USP --></label>
+        <name>Ven_USP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feld dient nur als Dummy für DWH SST die das Feld einliest. Feld Wurde eigentlich von Business-Owner zum löschen freigegeben. --></help>
+        <label><!-- Ven_UniqueKey --></label>
+        <name>Ven_UniqueKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- VC or PE Account which connected to this customer --></help>
+        <label><!-- VC PE --></label>
+        <name>Ven_VC_PE__c</name>
+        <relationshipLabel><!-- Related Connections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Bitte ein Wert auswählen! --></help>
+        <label><!-- Vertical --></label>
+        <name>Ven_Vertical__c</name>
+        <picklistValues>
+            <masterLabel>Apps</masterLabel>
+            <translation><!-- Apps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beauty &amp; Perfumes</masterLabel>
+            <translation><!-- Beauty &amp; Perfumes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fashion &amp; Accessories</masterLabel>
+            <translation><!-- Fashion &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home &amp; Living</masterLabel>
+            <translation><!-- Home &amp; Living --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lotto &amp; Gambling</masterLabel>
+            <translation><!-- Lotto &amp; Gambling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Places</masterLabel>
+            <translation><!-- Market Places --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports &amp; Outdoor</masterLabel>
+            <translation><!-- Sports &amp; Outdoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel &amp; Events</masterLabel>
+            <translation><!-- Travel &amp; Events --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Merkmal für die DWH-Schnittstelle für Seven Ventures. --></help>
+        <label><!-- Webtrekk --></label>
+        <name>Ven_Webtrekk__c</name>
+    </fields>
+    <fields>
+        <help><!-- Diese Information wird auf den Investment Summary übertragen. --></help>
+        <label><!-- Year of Founding --></label>
+        <name>Ven_Year_of_Founding__c</name>
+    </fields>
+    <fields>
+        <label><!-- 7Ventures Accountprüfung --></label>
+        <name>X7Ventures_Accountpr_fung__c</name>
+        <picklistValues>
+            <masterLabel>Must Have</masterLabel>
+            <translation><!-- Must Have --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parked</masterLabel>
+            <translation><!-- Parked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prüfung</masterLabel>
+            <translation><!-- Prüfung --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 7Ventures Accountqualität --></label>
+        <name>X7Ventures_Accountqualit_t__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dieser Account darf für Angebote und Aufträge nicht mehr verwendet werden - es handelt sich um eine Dublette/Fehleingabe oder die Firma gibt es so nicht. Zur Aktivierung/Deaktivierung, bitte den Genehmigungsprozess in der Themenliste starten. --></help>
+        <label><!-- ungültiger Account --></label>
+        <name>ungueltiger_Account__c</name>
+    </fields>
+    <layouts>
+        <layout>Adminlayout</layout>
+        <sections>
+            <label><!-- Account-Ziele Digital WT --></label>
+            <section>Account-Ziele Digital WT</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatistik --></label>
+            <section>Besuchsstatistik</section>
+        </sections>
+        <sections>
+            <label><!-- Games --></label>
+            <section>Games</section>
+        </sections>
+        <sections>
+            <label><!-- Kennzahlen (KPIs) WT --></label>
+            <section>Kennzahlen (KPIs) WT</section>
+        </sections>
+        <sections>
+            <label><!-- Nielsen-Daten --></label>
+            <section>Nielsen-Daten</section>
+        </sections>
+        <sections>
+            <label><!-- ProRex Ids --></label>
+            <section>ProRex Ids</section>
+        </sections>
+        <sections>
+            <label><!-- erweiterte Hierarchie --></label>
+            <section>erweiterte Hierarchie</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MA_Default</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pflichtfelder --></label>
+            <section>Pflichtfelder</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>P7S1_Ungueltig</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Adminfelder --></label>
+            <section>Adminfelder</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatisik --></label>
+            <section>Besuchsstatisik</section>
+        </sections>
+        <sections>
+            <label><!-- Datenüberprüfung und Account-Gültigkeit --></label>
+            <section>Datenüberprüfung und Account-Gültigkeit</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV --></label>
+            <section>Forecast TV</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 2 --></label>
+            <section>Forecast TV 2</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 3 --></label>
+            <section>Forecast TV 3</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Prognose und Umsatz Digital --></label>
+            <section>Prognose und Umsatz Digital</section>
+        </sections>
+        <sections>
+            <label><!-- Stammdatenprozess --></label>
+            <section>Stammdatenprozess</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>P7S1_tocheck</layout>
+        <sections>
+            <label><!-- AccDashboard --></label>
+            <section>AccDashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Kontaktinformationen --></label>
+            <section>Kontaktinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- Neuer Account - Freigabe --></label>
+            <section>Neuer Account - Freigabe</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- TrimData Entry Check &amp; Dupe Alert --></label>
+            <section>TrimData Entry Check &amp; Dupe Alert</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomDig_Agentur</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatistik --></label>
+            <section>Besuchsstatistik</section>
+        </sections>
+        <sections>
+            <label><!-- erweiterte Hierarchie --></label>
+            <section>erweiterte Hierarchie</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomDig_Werbetreibender</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatistik --></label>
+            <section>Besuchsstatistik</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV --></label>
+            <section>Forecast TV</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 3 --></label>
+            <section>Forecast TV 3</section>
+        </sections>
+        <sections>
+            <label><!-- ForecastTV 2 --></label>
+            <section>ForecastTV 2</section>
+        </sections>
+        <sections>
+            <label><!-- Kennzahlen Digital (Umsatz &amp; Prognose) --></label>
+            <section>Kennzahlen Digital (Umsatz &amp; Prognose)</section>
+        </sections>
+        <sections>
+            <label><!-- erweiterte Hierarchie --></label>
+            <section>erweiterte Hierarchie</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomTv_Default</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatisik --></label>
+            <section>Besuchsstatisik</section>
+        </sections>
+        <sections>
+            <label><!-- Prognose TV --></label>
+            <section>Prognose TV</section>
+        </sections>
+        <sections>
+            <label><!-- Stammdatenprozess --></label>
+            <section>Stammdatenprozess</section>
+        </sections>
+        <sections>
+            <label><!-- Strategische Priorität --></label>
+            <section>Strategische Priorität</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomTv_Default_SEnew</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatisik --></label>
+            <section>Besuchsstatisik</section>
+        </sections>
+        <sections>
+            <label><!-- Datenüberprüfung und Account-Gültigkeit --></label>
+            <section>Datenüberprüfung und Account-Gültigkeit</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV --></label>
+            <section>Forecast TV</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 2 --></label>
+            <section>Forecast TV 2</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 3 --></label>
+            <section>Forecast TV 3</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Kontaktinformationen --></label>
+            <section>Kontaktinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- Prognose Digital --></label>
+            <section>Prognose Digital</section>
+        </sections>
+        <sections>
+            <label><!-- Stammdatenprozess --></label>
+            <section>Stammdatenprozess</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- Strategische Priorität --></label>
+            <section>Strategische Priorität</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Som_Default</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Adminfelder --></label>
+            <section>Adminfelder</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatisik --></label>
+            <section>Besuchsstatisik</section>
+        </sections>
+        <sections>
+            <label><!-- Datenüberprüfung und Account-Gültigkeit --></label>
+            <section>Datenüberprüfung und Account-Gültigkeit</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV --></label>
+            <section>Forecast TV</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 2 --></label>
+            <section>Forecast TV 2</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast TV 3 --></label>
+            <section>Forecast TV 3</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Prognose und Umsatz Digital --></label>
+            <section>Prognose und Umsatz Digital</section>
+        </sections>
+        <sections>
+            <label><!-- Stammdatenprozess --></label>
+            <section>Stammdatenprozess</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Som_Schreibschutz</layout>
+        <sections>
+            <label><!-- Account-Ziele Online --></label>
+            <section>Account-Ziele Online</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Besuchsstatistik --></label>
+            <section>Besuchsstatistik</section>
+        </sections>
+        <sections>
+            <label><!-- Kennzahlen (KPIs) Online --></label>
+            <section>Kennzahlen (KPIs) Online</section>
+        </sections>
+        <sections>
+            <label><!-- Systeminformation --></label>
+            <section>Systeminformation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Star_Default</layout>
+        <sections>
+            <label><!-- AccDashboard --></label>
+            <section>AccDashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Genres --></label>
+            <section>Genres</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Kennzahlen --></label>
+            <section>Kennzahlen</section>
+        </sections>
+        <sections>
+            <label><!-- Kontaktinformationen --></label>
+            <section>Kontaktinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- TrimData Entry Check &amp; Dupe Alert --></label>
+            <section>TrimData Entry Check &amp; Dupe Alert</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ventures Customer</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ventures VC PE Fund</layout>
+        <sections>
+            <label><!-- Account Dashboard --></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>bp_AccountMinimum</layout>
+        <sections>
+            <label><!-- AccDashboard --></label>
+            <section>AccDashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Kennzahlen --></label>
+            <section>Kennzahlen</section>
+        </sections>
+        <sections>
+            <label><!-- Kontaktinformationen --></label>
+            <section>Kontaktinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- TrimData Entry Check &amp; Dupe Alert --></label>
+            <section>TrimData Entry Check &amp; Dupe Alert</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>d&amp;a Sales Account default</layout>
+        <sections>
+            <label><!-- AccDashboard --></label>
+            <section>AccDashboard</section>
+        </sections>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hinweise und Informationen --></label>
+            <section>Hinweise und Informationen</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Kennzahlen --></label>
+            <section>Kennzahlen</section>
+        </sections>
+        <sections>
+            <label><!-- Kontaktinformationen --></label>
+            <section>Kontaktinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- Steuer- und Registerinformationen --></label>
+            <section>Steuer- und Registerinformationen</section>
+        </sections>
+        <sections>
+            <label><!-- TrimData Entry Check &amp; Dupe Alert --></label>
+            <section>TrimData Entry Check &amp; Dupe Alert</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account - Intermediary --></label>
+        <name>AccountIntermediary</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Account - Agency --></label>
+        <name>Account_Agency</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Account - Client --></label>
+        <name>Account_Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Account - Competitor --></label>
+        <name>Account_Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Agentur --></label>
+        <name>Agentur</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mandant --></label>
+        <name>Mandant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- zu überprüfen --></label>
+        <name>P7S1_tocheck</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProRex-Import --></label>
+        <name>ProRex_Import</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mitbewerber --></label>
+        <name>Som_Mitbewerber</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Venture Customer --></label>
+        <name>Ven_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ventures VC PE Fund --></label>
+        <name>Ventures_VC_PE_Fund</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Werbetreibender --></label>
+        <name>Werbetreibender</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- sonstiger Partner --></label>
+        <name>sonstiger_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ungültiger Account --></label>
+        <name>ung_ltiger_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Wert kann nur durch AdF Concept Sales geändert werden! --></errorMessage>
+        <name>AdF_Branchencluster</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bei einem P7S1 Konzernmitglied  muss bei Externer ID ein Sachkonto konzernintern angelegt sein. --></errorMessage>
+        <name>P7S1_KonzernmExtIdSachkto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Konzernmitglieder werden nur durch Admins gepflegt. --></errorMessage>
+        <name>P7S1_Konzernmitglied</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Accountname darf maximal 125 Zeichen besitzen. --></errorMessage>
+        <name>P7S1_NameMaxLength</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Kein Konzernmitglied, daher keine Organschaft möglich --></errorMessage>
+        <name>P7S1_OrganschaftUndKonzernmitglied</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- P7S1 Konzernmitglied und Partnergesellschafts-ID müssen gleichzeitig gefüllt oder leer sein. --></errorMessage>
+        <name>P7S1_PartnerId</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Name des Accounts ist mit der entsprechenden Rechtsform einzugeben. --></errorMessage>
+        <name>SomTv_AccNameCheckRechtsform</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Debitorennummer(n) angefordert werden, dann muss das Feld
+- Buchungskreis
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfDebitorenNrFuerBuchungskreis</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn die Rechtsform des Unternehmens eine Personengesellschaft ist (GbR, OHG, KG, Einzelunternehmen, Stille Gesellschaft), dann müssen die Felder &quot;Firmeninhaber Vorname&quot; und &quot;Firmeninhaber Nachname&quot; ausgefüllt werden! --></errorMessage>
+        <name>SomTv_AnfDebitorenNrPersonengesell</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Debitorennummer(n) angefordert werden, dann muss das Feld
+- ProSedi-Geschaeftsart
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfDebitorenNrProSediGeschaeftsart</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Debitorennummer(n) angefordert werden, dann müssen ALLE Felder
+der Rechnungsanschrift
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfDebitorenNrRechnungsanschrift</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Debitorennummer(n) angefordert werden, dann muss das Feld
+- Rechtsform
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfDebitorenNrRechtsform</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn Debitorennummer(n) angefordert werden, dann muss das Feld Ust-IdNr. gefüllt sein. --></errorMessage>
+        <name>SomTv_AnfDebitorenNrUstIdNr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn die Rechtsform des Unternehmens eine Personengesellschaft ist (GbR, OHG, KG, Einzelunternehmen, Stille Gesellschaft), dann müssen die Felder &quot;Firmeninhaber Vorname&quot; und &quot;Firmeninhaber Nachname&quot; ausgefüllt werden! --></errorMessage>
+        <name>SomTv_AnfProSediIDPersonengesell</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn ProSedi-ID´s angefordert werden, dann muss das Feld
+- ProSedi-Geschaeftsart
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfProSediIDProSediGeschaeftsart</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn ProSedi-ID´s angefordert werden, dann müssen ALLE Felder
+- Rechnungsanschrift
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfProSediIDRechnungsanschrift</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wenn ProSedi-ID angefordert werden, dann muss das Feld
+- Rechtsform
+gefüllt sein --></errorMessage>
+        <name>SomTv_AnfProSediIDRechtsform</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stadt der Rechnungsadresse muss gefüllt sein. --></errorMessage>
+        <name>Som_BillingCityMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Land der Rechnungsadresse muss gefüllt sein. --></errorMessage>
+        <name>Som_BillingCountryMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postleitzahl der Rechnungsadresse muss gefüllt sein. --></errorMessage>
+        <name>Som_BillingPostalCodeMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Konzern/Agenturverbund&quot;  muss bei &quot;Konzerntochter/Agenturtochter&quot; gepflegt sein. Sonst bleibt &quot;Konzern/Agenturverbund&quot; leer. --></errorMessage>
+        <name>Som_KonzernAgenturverbundZugehoerigkeit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ungültige Accounts dürfen nicht mehr bearbeitet werden. Bitte wenden Sie sich an einen Administrator. --></errorMessage>
+        <name>Som_UngueltigeAccounts</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Enhanced_Visit_Report --></label>
+        <name>ADvendio__Enhanced_Visit_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- VatIdVerify --></label>
+        <name>ADvendio__VatIdVerify</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BerichtAgKonzernhierarchiePrognosenUmsaetzeAj --></label>
+        <name>BerichtAgKonzernhierarchiePrognosenUmsaetzeAj</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Collapse --></label>
+        <name>Collapse</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- P7S1_Unfollow --></label>
+        <name>P7S1_Unfollow</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sales_Team_Management --></label>
+        <name>Sales_Team_Management</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SomDig_BerichtAccountUmsatzMediagattungAj --></label>
+        <name>SomDig_BerichtAccountUmsatzMediagattungAj</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SomDig_BerichtWtKonzernhierarchiePrognosenUmsaetzeAj --></label>
+        <name>SomDig_BerichtWtKonzernhierarchiePrognosenUmsaetzeAj</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>TRIMEC__Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

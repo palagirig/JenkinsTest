@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SomDig_WtAgBeziehung__c.SomDig_Agentur__c</field>
+    </columns>
+    <columns>
+        <field>SomDig_WtAgBeziehung__c.SomDig_BeziehungAccountnameHelp__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtAj__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtVj__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Zeigt alle WT AG - Beziehungen die im AJ Umsatz generiert haben, jedoch keinem Inhaber zugewiesen sind.</description>
+    <filter>
+        <criteriaItems>
+            <column>SomDig_WtAgBeziehung__c.SomDig_UmsatzGesamtAj__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SomDig_WtAgBeziehung__c.SomDig_BeziehungInhaber__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_WtAgBeziehung__c.SomDig_BeziehungInhaber__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MUC - 8 WT-AG Bez. ohne Inhaber</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$SomDig_WtAgBeziehung__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,26 @@
+Hallo zusammen,
+
+{!Case.LastModifiedBy} has just added the following comment to  the ticket priority to {!Case.CaseNumber}: {!Case.Subject}
+
+=============================================
+
+[ COMMENT ]
+
+=============================================
+
+
+Link to ticket:
+{!Case.Link} 
+
+Gruß 
+
+SaS Solutions 
+P7S1 Applications 
+
+######################## 
+Interne Infos: 
+Projekt: {!Case.Projekt__c} 
+Sprint: {!Case.Lcm_Release__c} 
+Kanban: {!Case.Lcm_KanbanKombi__c} 
+Priorität: {!Case.Priority} 
+Rank: {!Case.Rank__c}

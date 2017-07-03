@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lcm_Requirement__c$Lcm_Status__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Subject</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Status</field>
+    </columns>
+    <columns>
+        <field>Lcm_Requirement__c.Kundenvorgaenge__r$Owner</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lcm_Requirement__c$Lcm_VersionName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lcm_Requirement__c$P7S1_Priority__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lcm_Requirement__c$Lcm_RequirementName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>P7S1 Requirements mit Kundenvorgängen</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Lcm_RequirementsMitKundenvorgaenge__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lcm_Requirement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,5 @@
+Ad Analytics & Development hat die Rabatte im Rahmen Deines AdFactory-Projektes "{!SomTv_AdfProjekt__c.Name}" freigegeben.
+
+Hier der Link zu Deinem Projekt in Salesforce: 
+
+{!SomTv_AdfProjekt__c.Link}

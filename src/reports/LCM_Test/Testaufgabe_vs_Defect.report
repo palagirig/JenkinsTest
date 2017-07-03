@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestTaskAssignCase__c.Lcm_TestTask__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestTaskAssignCase__c.Lcm_TestCaseName__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestTaskAssignCase__c.Lcm_TestTaskErrorState__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestTaskAssignCase__c.Lcm_CaseName__c</field>
+    </columns>
+    <columns>
+        <field>Lcm_TestTaskAssignCase__c.Lcm_CaseState__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Tabular</format>
+    <name>Testaufgabe vs. Defect</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Lcm_TestTaskAssignCase__c@Lcm_TestTaskAssignCase__c.Lcm_Case__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lcm_TestTaskAssignCase__c.Lcm_CaseDue_c__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

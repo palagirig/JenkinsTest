@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Publication Placement Content Assignment --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Publication Placement Content Assignment --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Publication Placement Content Assignment --></nameFieldLabel>
+</CustomObjectTranslation>

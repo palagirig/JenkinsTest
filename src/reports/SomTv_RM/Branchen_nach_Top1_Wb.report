@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.SomTv_Top1Wirtschaftsbereich__c</field>
+    </columns>
+    <columns>
+        <field>Account.SomTv_Top1Wirtschaftsgruppe__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>auf Basis von Quotexbewertung der Top1 Wirtschaftsbereichen</description>
+    <format>Tabular</format>
+    <name>Branchen_nach Top1 Wb</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCustomEntity$SomTv_Angebot__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

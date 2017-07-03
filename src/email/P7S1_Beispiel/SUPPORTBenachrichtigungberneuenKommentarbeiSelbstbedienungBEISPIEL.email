@@ -1,0 +1,1 @@
+Ihre Kundenvorgangsnummer {!Case.CaseNumber}: {!Case.Subject} wurde aktualisiert.  Klicken Sie auf den nachfolgenden Link, um diesen Kundenvorgang über das Selbstbedienungsportal anzuzeigen. <Link zur Anmeldeseite Ihres Selbstbedienungsportals hier einfügen> {!Organization.Name}-Kundensupport

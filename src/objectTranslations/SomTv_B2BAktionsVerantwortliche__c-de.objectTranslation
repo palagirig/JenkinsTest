@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>B2B Aktionsverantwortliche</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>B2B Aktionsverantwortliche</value>
+    </caseValues>
+    <fields>
+        <help><!-- Auswahl des Benutzers für die B2B Aktion. --></help>
+        <label><!-- Benutzer --></label>
+        <name>SomTv_Benutzer__c</name>
+        <relationshipLabel><!-- B2B Aktionsverantwortliche --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Welche Funktion nimmt der Benutzer innerhalb der B2B Aktion ein. --></help>
+        <label><!-- Funktion des Verantwortlichen --></label>
+        <name>SomTv_FunktionDesVerantwortlichen__c</name>
+        <picklistValues>
+            <masterLabel>Projektleiter</masterLabel>
+            <translation><!-- Projektleiter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projektmitglied/Teilprojektleiter</masterLabel>
+            <translation><!-- Projektmitglied/Teilprojektleiter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Auswahl der B2B Aktion. --></help>
+        <label><!-- B2B Aktion --></label>
+        <name>SomTv_Kampagne__c</name>
+        <relationshipLabel><!-- B2B Aktionsverantwortliche --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Aktions-Verantwortliche-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SomTv_ AktionsVerantwortliche</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

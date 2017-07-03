@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Kontaktquote: Telefonat oder persönlicher Termin im aktuellen GJ ist als Kontaktbericht auf dem Account hinterlegt. MARKIERUNG=Stand Ende Q1 / Ende Q2</footer>
+            <gaugeMax>140.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Kontaktbericht 2017 hinterlegt</header>
+            <indicatorBreakpoint1>84.0</indicatorBreakpoint1>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#54C254</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Kontaktquote_A_Kunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>A-Kunden</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Angebotsquote: Opportunity aktuelles GJ ist auf dem Account hinterlegt. MARKIERUNG=Stand Ende Q1 / Ende Q2</footer>
+            <gaugeMax>140.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Opportunity / Angebot 2017 abgegeben</header>
+            <indicatorBreakpoint1>50.0</indicatorBreakpoint1>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#54C254</indicatorLowColor>
+            <indicatorMiddleColor>#54C254</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Angebotsquote_A_Kunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>A-Kunden</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>1050.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>PRIO NEUKUNDEN Kontaktquote</header>
+            <indicatorBreakpoint1>140.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>700.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C28B</indicatorHighColor>
+            <indicatorLowColor>#54C28B</indicatorLowColor>
+            <indicatorMiddleColor>#54C28B</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Kontaktquote_PRIO_Neukunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>1050.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>PRIO NEUKUNDEN Angebotsquote</header>
+            <indicatorHighColor>#54C28B</indicatorHighColor>
+            <indicatorLowColor>#54C28B</indicatorLowColor>
+            <indicatorMiddleColor>#54C28B</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Angebotsquote_PRIO_Neukunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Kontaktquote: Telefonat oder persönlicher Termin im aktuellen GJ ist als Kontaktbericht auf dem Account hinterlegt. MARKIERUNG=Stand Ende Q1 / Ende Q2</footer>
+            <gaugeMax>560.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Kontaktbericht 2017 hinterlegt</header>
+            <indicatorBreakpoint1>150.0</indicatorBreakpoint1>
+            <indicatorHighColor>#C2C254</indicatorHighColor>
+            <indicatorLowColor>#C2C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Kontaktquote_B_Kunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>B-Kunden</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Angebotsquote: Opportunity aktuelles GJ ist auf dem Account hinterlegt. MARKIERUNG=Stand Ende Q1 / Ende Q2</footer>
+            <gaugeMax>560.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Opportunity / Angebot 2017 abgegeben</header>
+            <indicatorBreakpoint1>55.0</indicatorBreakpoint1>
+            <indicatorHighColor>#C2C254</indicatorHighColor>
+            <indicatorLowColor>#C2C254</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Angebotsquote_B_Kunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>B-Kunden</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <gaugeMax>500.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>+ RESTPORTFOLIO Kontaktquote</header>
+            <indicatorHighColor>#54799C</indicatorHighColor>
+            <indicatorLowColor>#54799C</indicatorLowColor>
+            <indicatorMiddleColor>#54799C</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Kontaktquote_REST_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <gaugeMax>500.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>+ RESTPORTFOLIO Angebotsquote</header>
+            <indicatorHighColor>#54799C</indicatorHighColor>
+            <indicatorLowColor>#54799C</indicatorLowColor>
+            <indicatorMiddleColor>#54799C</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Angebotsquote_REST_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Kontaktquote: Telefonat oder persönlicher Termin im aktuellen GJ ist als Kontaktbericht auf dem Account hinterlegt. MARKIERUNG=Stand Ende Q1 / Ende Q2</footer>
+            <gaugeMax>350.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Kontaktbericht 2017 hinterlegt</header>
+            <indicatorBreakpoint1>45.0</indicatorBreakpoint1>
+            <indicatorHighColor>#C28B54</indicatorHighColor>
+            <indicatorLowColor>#C28B54</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Kontaktquote_C_Kunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>C-Kunden</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>Angebotsquote: Opportunity aktuelles GJ ist auf dem Account hinterlegt. MARKIERUNG=Stand Ende Q2</footer>
+            <gaugeMax>350.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Opportunity / Angebot 2017 abgegeben</header>
+            <indicatorBreakpoint1>19.0</indicatorBreakpoint1>
+            <indicatorHighColor>#C28B54</indicatorHighColor>
+            <indicatorLowColor>#C28B54</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Angebotsquote_C_Kunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>C-Kunden</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>1550.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>= ALLE NEUKUNDEN Kontaktquote</header>
+            <indicatorHighColor>#666666</indicatorHighColor>
+            <indicatorLowColor>#666666</indicatorLowColor>
+            <indicatorMiddleColor>#666666</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Kontaktquote_ALLE_Neukunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>1550.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>= ALLE NEUKUNDEN Angebotsquote</header>
+            <indicatorHighColor>#666666</indicatorHighColor>
+            <indicatorLowColor>#666666</indicatorLowColor>
+            <indicatorMiddleColor>#666666</indicatorMiddleColor>
+            <report>SomTv_SalesNewBusiness/Angebotsquote_ALLE_Neukunden_2017</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+    </rightSection>
+    <runningUser>dominik.barthelme@sevenonemedia.de</runningUser>
+    <textColor>#000000</textColor>
+    <title>Kontakt- und Angebotsquote 2017</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

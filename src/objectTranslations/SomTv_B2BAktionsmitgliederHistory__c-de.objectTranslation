@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>B2B Aktionsmitglieder History</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>B2B Aktionsmitglieder Histories</value>
+    </caseValues>
+    <fields>
+        <help><!-- Zeigt Datum und Uhrzeit an, da dies nicht mit dem Standardfeld im Bericht möglich ist --></help>
+        <label><!-- Zuletzt geändert um --></label>
+        <name>P7S1_ZuletztGeaendertUm__c</name>
+    </fields>
+    <fields>
+        <label><!-- B2B Aktionsmitglied --></label>
+        <name>SomTv_B2BAktinsmitglied__c</name>
+        <relationshipLabel><!-- B2B Aktionsmitglieder Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kampagne --></label>
+        <name>SomTv_Kampagne__c</name>
+        <relationshipLabel><!-- B2B Aktionsmitglieder Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mitglied ID --></label>
+        <name>SomTv_MitgliedID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status alt --></label>
+        <name>SomTv_StatusAlt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status neu --></label>
+        <name>SomTv_StatusNeu__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuverlässigkeit des Kontakts bei Rückmeldung zu diesem Event. --></help>
+        <label><!-- Zuverlässigkeitsindex --></label>
+        <name>Som_ReliabilityIndex__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>B2B Aktionsmitglieder History-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AdF Factsheet Verkauftmail</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Leer</letterhead>
+    <name>AdF Factsheet Verkauftmail</name>
+    <style>freeForm</style>
+    <subject>VK_7.1AdF_FS_{!SomTv_AdfProjekt__c.SomTv_Account__c}_Agentur_Bausteine_Sender_Format</subject>
+    <textOnly>Hallo liebe Kollegen,
+
+anbei sende ich Euch das Factsheet, die Buchungsbestätigung und das Angebot zu einer Buchung des Kunden {!SomTv_AdfProjekt__c.SomTv_Account__c}.
+
+Anbei die Eckdaten zur Buchung:
+
+Kunde/Account: {!SomTv_AdfProjekt__c.SomTv_Account__c}
+Konzern:
+• Kundenprodukt:
+• Sender:
+• Format:
+• SoWeFo:
+• Buchungszeitraum:
+
+Anmerkungen:
+
+• Detailinfos (gebuchte Umfelder / Angebote etc.) siehe 2. Reiter im FS
+• Infos zur Motivanweisung
+• …
+
+Anbei der Link zum Salesforce Projekt: {!SomTv_AdfProjekt__c.Link}
+
+Bei Rückfragen meldet Euch jederzeit gerne bei mir!
+Viele Grüße
+{!User.FirstName}
+___________________________________
+{!User.Phone}
+{!User.Email}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

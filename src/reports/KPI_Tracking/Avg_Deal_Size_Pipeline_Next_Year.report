@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Ven_NetPotentialCurrentYear__c.CONVERT:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Net Potential Current Year</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.Ven_NetPotentialNextYear__c.CONVERT:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Net Potential Next Year</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.Ven_FullNetPotentialCurrentYear__c.CONVERT:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Full Potential Current Year</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.Ven_FullNetPotentialNextYear__c.CONVERT:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Full Net Potential Next Year</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Ven_NetPotentialCurrentYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Ven_FullNetPotentialCurrentYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Ven_NetPotentialNextYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Ven_FullNetPotentialNextYear__c.CONVERT</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.P7S1_OpportunityOwnerUnit__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>7Ventures</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Rabatt freigegeben,In Briefing,SE_In Briefing/Erstgespräch,SE_Rabatt freigegeben,M2N (Mandate to Negotiate),SE_Deal Approval,Deal approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Ven_ValuesCashNextYear__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Ven_ValuespRapNextYear__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>EUR 0</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Avg. Deal Size Pipeline Next Year</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_UPDATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

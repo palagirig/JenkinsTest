@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>PROBABILITY:SUM * Opportunity.MN3__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Welcher Umsatz ist zu erwarten?</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Potential umsatz</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.MN3__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Opportunity-Pipeline der nächsten 30 Tage (Schlusstermin).</description>
+    <filter>
+        <criteriaItems>
+            <column>CLOSE_DATE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NEXT_N_DAYS:30</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.SomDig_SalesTeam__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opportunity-Pipeline 30 Tage</name>
+    <params>
+        <name>open</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

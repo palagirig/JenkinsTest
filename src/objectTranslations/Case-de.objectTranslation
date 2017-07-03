@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>false</plural>
+            <value>Ticketzugriff</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>true</plural>
+            <value>Ticketzugriffe</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketzugriff</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketzugriffe</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_access</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Zugriffsebene</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Zugriffsebenen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_access_level</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Account</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Accounts</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_account</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Warnung in Bezug auf Ticket</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Warnungen in Bezug auf Ticket</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_alert</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketartikel</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_article</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketartikel-ID</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_article_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Vermögenswert des Tickets</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_asset</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Zuordnungsregel für Tickets</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Zuordnungsregeln für Tickets</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_assignment_rule</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketerfassung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketerfassungen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_capture</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Informationen zur Ticketerfassung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Informationen zur Ticketerfassung</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_capture_information</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>false</plural>
+            <value>Seite zur Ticketerfassung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Seite zur Ticketerfassung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Seiten zur Ticketerfassung</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_capture_page</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket schließen</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickets schließen</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_close</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket geschlossen</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickets geschlossen</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_closed</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketabschluss</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_closure</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>false</plural>
+            <value>Ticketkommentar</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketkommentar</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketkommentare</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_comment</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketkommentar-ID</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketkommentar-IDs</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_comment_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Informationen zum Ticketkommentar</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_comment_information</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Firma</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Firmen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_company</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Kontakt</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Kontakte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_contact</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketkontaktrolle</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_contact_role</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket erstellt am</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickets erstellt am</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_created_date</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket erstellt von</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickets erstellt von</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_creator</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketwährung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketwährungen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_currency</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Benutzerdefiniertes Ticketfeld</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Benutzerdefinierte Ticketfelder</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_custom_field</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Beschreibung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Beschreibungen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_description</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Detail-Link</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Detail-Links</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_detail_link</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Abteilung</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_division</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket bearbeiten</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickets bearbeiten</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_edit</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>true</plural>
+            <value>Ticket-E-Mails</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-E-Mail</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-E-Mails</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_email</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>false</plural>
+            <value>Ticketfeed</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>true</plural>
+            <value>Ticketfeeds</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketfeed</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketfeeds</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_feed</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Genitive</caseType>
+            <plural>true</plural>
+            <value>Ticketfelder</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketfeld</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketfelder</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_field</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketverlauf</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketverläufe</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_history</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketverlauf-ID</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketverlauf-IDs</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_history_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Information zum Ticketverlauf</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_history_info</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Inhaber des Ticketverlaufs</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_history_owner</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Verlaufsbericht</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_history_report</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Status des Ticketverlaufs</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_history_status</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-ID</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-IDs</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>false</plural>
+            <value>Ticketinformationen</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketinformationen</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketinformationen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_information</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket zuletzt geändert</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickets zuletzt geändert</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_last_modified</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Lebenszyklus des Tickets</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_lifecycle</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketlebenszyklus - Bericht</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_lifecycle_report</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketliste</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_list</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>false</plural>
+            <value>Ticketmeilenstein</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Genitive</caseType>
+            <plural>false</plural>
+            <value>Ticketmeilensteins</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketmeilenstein</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketmeilensteine</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_milestone</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Name</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Namen</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Nr.</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Nr.</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_number</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketursprung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketursprünge</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_origin</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketinhaber</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketinhaber</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_owner</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Tel.</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Tel.</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_phone</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketauswahlliste</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketauswahllisten</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_picklist</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketpriorität</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketprioritäten</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_priority</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Warteschlange für Ticket</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Warteschlangen für Ticket</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_queue</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketursache</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketursachen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_reason</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Datensatztyp</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticket-Datensatztypen</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_record_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticket-Datensatztypen-ID</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_record_type_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketbericht</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketberichte</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_report</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketlösung</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketlösungen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_solution</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketlösungs-ID</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketlösungs-IDs</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_solution_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketbegrüßungsseite</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketbegrüßungsseite</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_splash_page</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketphasen-ID</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_stage_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketstatus</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketstati</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_status</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketthema</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketthemen</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_subject</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Accusative</caseType>
+            <plural>false</plural>
+            <value>Ticketteam</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>false</plural>
+            <value>Ticketteam</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Genitive</caseType>
+            <plural>false</plural>
+            <value>Ticketteams</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketteam</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketteams</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_team</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>true</plural>
+            <value>Mitgliedern des Ticketteams</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Mitglied des Ticketteams</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Mitglieder des Ticketteams</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>case_team_member</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Mitgliedsrolle des Ticketteams</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Mitgliedsrollen des Ticketteams</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_team_member_role</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketteam-Datensatz</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketteam-Datensätze</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_team_record</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Tickettyp</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Tickettypen</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>case_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketansicht</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketansichten</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>case_view</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Detailseite für Tickets</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Detailseiten für Tickets</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>cases_detail_page</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Registerkarte Tickets</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Registerkarten Tickets</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>cases_tab</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Zugehörige Ticket</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Zugehörige Tickets</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>child_case</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketnotiz</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Ticketnotizen</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>feed_filter_case_note</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Übergeordnete Ticket-Nr.</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Übergeordnete Ticket-Nr.</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>parent_case</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>ID des übergeordneten Tickets</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>parent_case_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketnotiz schreiben</value>
+        </caseValues>
+        <gender>Feminine</gender>
+        <name>publisher_private_answer</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Ticketdetail anzeigen</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>publisher_view_details</name>
+    </fields>
+    <fields>
+        <help><!-- Bis wann soll das Ticket selber oder das nächste ToDo erledigt sein? --></help>
+        <label><!-- Datum Fälligkeit --></label>
+        <name>Datum_F_lligkeit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was ist die aktuelle Phase eines Tickets des Typs Funktion? --></help>
+        <label><!-- Funktionsphase --></label>
+        <name>Funktionsphase__c</name>
+        <picklistValues>
+            <masterLabel>Anforderung finalisiert</masterLabel>
+            <translation><!-- Anforderung finalisiert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aufwand geschätzt</masterLabel>
+            <translation><!-- Aufwand geschätzt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Idee wurde übertragen</masterLabel>
+            <translation><!-- Idee wurde übertragen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>abgenommen</masterLabel>
+            <translation><!-- abgenommen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ausgerollt</masterLabel>
+            <translation><!-- ausgerollt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>beauftragt</masterLabel>
+            <translation><!-- beauftragt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>geliefert / bereitgestellt</masterLabel>
+            <translation><!-- geliefert / bereitgestellt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>getestet</masterLabel>
+            <translation><!-- getestet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Gruppierung des Tickets bezüglich Inhalt zu einem konkreten Themenbereich. --></help>
+        <label><!-- Komponente --></label>
+        <name>Komponente__c</name>
+        <picklistValues>
+            <masterLabel>Berechtigungen</masterLabel>
+            <translation><!-- Berechtigungen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bericht/Dashboard</masterLabel>
+            <translation><!-- Bericht/Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buchung</masterLabel>
+            <translation><!-- Buchung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dokumentation</masterLabel>
+            <translation><!-- Dokumentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layout</masterLabel>
+            <translation><!-- Layout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preis</masterLabel>
+            <translation><!-- Preis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produkt</masterLabel>
+            <translation><!-- Produkt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prozesse</masterLabel>
+            <translation><!-- Prozesse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rechnungslauf</masterLabel>
+            <translation><!-- Rechnungslauf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stammdaten</masterLabel>
+            <translation><!-- Stammdaten --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User/Person</masterLabel>
+            <translation><!-- User/Person --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name der Version des zugeordneten Requirements --></help>
+        <label><!-- Version-Name --></label>
+        <name>LCM_VersionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wenn ein Ticket geschlossen wird, muss ein entsprechendes Outcome hinterlegt werden. --></help>
+        <label><!-- Lösung --></label>
+        <name>L_sung__c</name>
+        <picklistValues>
+            <masterLabel>Dublette</masterLabel>
+            <translation><!-- Dublette --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>behoben</masterLabel>
+            <translation><!-- behoben --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>funktioniert wie angefordert</masterLabel>
+            <translation><!-- funktioniert wie angefordert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>kann nicht reproduziert werden</masterLabel>
+            <translation><!-- kann nicht reproduziert werden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nicht behoben</masterLabel>
+            <translation><!-- nicht behoben --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Akzeptanzkriterien, für die Abnahme der Userstory --></help>
+        <label><!-- Akzeptanzkriterien --></label>
+        <name>Lcm_Aceptancecriteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- (geschätzte) tatsächliche Stunden für die Umsetzung des Tickets --></help>
+        <label><!-- Ist-Std. --></label>
+        <name>Lcm_CaseEffortActual__c</name>
+    </fields>
+    <fields>
+        <help><!-- GROBE Aufwandsschätzung in Stunden für die Umsetzung des jeweiligen Tickets. --></help>
+        <label><!-- Aufwand Schätzung --></label>
+        <name>Lcm_CaseEffortEstimated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aufwandsschätzung in Stunden für die Umsetzung des jeweiligen Tickets (Schätzung). --></help>
+        <label><!-- Soll-Std. --></label>
+        <name>Lcm_CaseEffortTarget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Komplexität der Umsetzung in Storypoints --></help>
+        <label><!-- Storypoints --></label>
+        <name>Lcm_Complexity__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Instructions for PRE- or POST-Deployment steps. --></help>
+        <label><!-- Deployment Instructions --></label>
+        <name>Lcm_DeploymentInstructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The current state of the development. --></help>
+        <label><!-- Development Status --></label>
+        <name>Lcm_DevelopmentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Deployed to Prod</masterLabel>
+            <translation><!-- Deployed to Prod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployed to SharedDev</masterLabel>
+            <translation><!-- Deployed to SharedDev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployed to VP</masterLabel>
+            <translation><!-- Deployed to VP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developed</masterLabel>
+            <translation><!-- Developed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reviewed</masterLabel>
+            <translation><!-- Reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kanban Farbe --></label>
+        <name>Lcm_KanColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kanban Station --></label>
+        <name>Lcm_KanStation__c</name>
+        <picklistValues>
+            <masterLabel>Backlog_Old</masterLabel>
+            <translation><!-- Backlog_Old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dev</masterLabel>
+            <translation><!-- Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FuncSpec</masterLabel>
+            <translation><!-- FuncSpec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GoLive</masterLabel>
+            <translation><!-- GoLive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TechSpec</masterLabel>
+            <translation><!-- TechSpec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kanban Status --></label>
+        <name>Lcm_KanStatus__c</name>
+        <picklistValues>
+            <masterLabel>doing</masterLabel>
+            <translation><!-- doing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>done</masterLabel>
+            <translation><!-- done --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kanban Kombi (sortiert) --></label>
+        <name>Lcm_KanbanKombiSorted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kombination aus Kanban Station und Kanban Status, Hilfsfeld für Organisation (Bericht) --></help>
+        <label><!-- Kanban Kombi --></label>
+        <name>Lcm_KanbanKombi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rank (kombiniert) --></label>
+        <name>Lcm_RankCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Backup der Rankwerte, die bis zur automatischen Befüllung von Rank gepflegt wurden --></help>
+        <label><!-- Rank (Old) --></label>
+        <name>Lcm_RankOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sprint, in dem Ticket umgesetzt werden soll --></help>
+        <label><!-- Sprint --></label>
+        <name>Lcm_Release__c</name>
+        <relationshipLabel><!-- Tickets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requirement-Name --></label>
+        <name>Lcm_RequirementName__c</name>
+    </fields>
+    <fields>
+        <help><!-- LCM Requirement, dass durch dieses TI beschrieben oder umgesetzt wird --></help>
+        <label><!-- Requirement --></label>
+        <name>Lcm_Requirement__c</name>
+        <relationshipLabel><!-- Tickets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The user who reviewed the development. --></help>
+        <label><!-- Reviewed by --></label>
+        <name>Lcm_ReviewedBy__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Beschreibung der Anforderung in Form einer &quot;Story&quot; nach dem Muster:
+Als NUTZER will ich FUNKTION oder EIGENSCHAFT, damit NUTZEN --></help>
+        <label><!-- User-Story --></label>
+        <name>Lcm_Story__c</name>
+    </fields>
+    <fields>
+        <help><!-- Scrum-Teams, Projekt-Teams --></help>
+        <label><!-- Team --></label>
+        <name>Lcm_Team__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes or specifications which should be persisted before the actual development starts (e.g. in Refinements sessions). --></help>
+        <label><!-- Technical Specification --></label>
+        <name>Lcm_TechnicalSpecification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests erfolgreich oder obsolet der Developer --></help>
+        <label><!-- Anzahl Dev erfolgreich/obsolet --></label>
+        <name>Lcm_TestDevErfolgreich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests nicht erfolgreich der Developer --></help>
+        <label><!-- Anzahl Dev nicht erfolgreich --></label>
+        <name>Lcm_TestDevNichtErfolgreich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests offen der Developer --></help>
+        <label><!-- Anzahl Dev offen --></label>
+        <name>Lcm_TestDevOffen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests erfolgreich oder obsolet des Fachbereichs --></help>
+        <label><!-- Anzahl Fb erfolgreich/obsolet --></label>
+        <name>Lcm_TestFbErfolgreich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests nicht erfolgreich des Fachbereichs --></help>
+        <label><!-- Anzahl Fb nicht erfolgreich --></label>
+        <name>Lcm_TestFbNichtErfolgreich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests offen des Fachbereichs --></help>
+        <label><!-- Anzahl Fb offen --></label>
+        <name>Lcm_TestFbOffen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests erfolgreich oder obsolet der Requirementsmanager --></help>
+        <label><!-- Anzahl Req erfolgreich/obsolet --></label>
+        <name>Lcm_TestReqErfolgreich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests nicht erfolgreich der Requirementsmanager --></help>
+        <label><!-- Anzahl Req nicht erfolgreich --></label>
+        <name>Lcm_TestReqNichtErfolgreich__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl Tests offen der Requirementsmanager --></help>
+        <label><!-- Anzahl Req offen --></label>
+        <name>Lcm_TestReqOffen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gesamtergebnis, ob Ticket-Tests offen, erfolgreich oder nicht erfolgreich sind --></help>
+        <label><!-- Test-Ergebnis --></label>
+        <name>Lcm_TestResult__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung zur jeweiligen Test-Sphere. Hilfefeld für die Freigabeeinstellung --></help>
+        <label><!-- Lcm_TestSphere --></label>
+        <name>Lcm_TestSphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anzahl aller Ticket-Tests (Dev, Req, Fb) --></help>
+        <label><!-- Anzahl Tests --></label>
+        <name>Lcm_TestTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Alle für die Umsetzung notwendigen Komponenten --></help>
+        <label><!-- Benötigte Komponenten --></label>
+        <name>P7S1_BenoetigteKomponenten__c</name>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch</masterLabel>
+            <translation><!-- Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Berechtigung</masterLabel>
+            <translation><!-- Berechtigung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bericht</masterLabel>
+            <translation><!-- Bericht --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Button</masterLabel>
+            <translation><!-- Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboard</masterLabel>
+            <translation><!-- Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datensatztyp</masterLabel>
+            <translation><!-- Datensatztyp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feld</masterLabel>
+            <translation><!-- Feld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Genehmigungsprozess</masterLabel>
+            <translation><!-- Genehmigungsprozess --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layout</masterLabel>
+            <translation><!-- Layout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Link</masterLabel>
+            <translation><!-- Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Objekt</masterLabel>
+            <translation><!-- Objekt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Builder</masterLabel>
+            <translation><!-- Process Builder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sites</masterLabel>
+            <translation><!-- Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trigger</masterLabel>
+            <translation><!-- Trigger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validierungsregel</masterLabel>
+            <translation><!-- Validierungsregel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visualforce</masterLabel>
+            <translation><!-- Visualforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webservice</masterLabel>
+            <translation><!-- Webservice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workflow</masterLabel>
+            <translation><!-- Workflow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Abschätzung des Business Value durch den Fachbereich --></help>
+        <label><!-- Business Value --></label>
+        <name>P7S1_BusinessValue__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ticket im aktuellem Sprint --></label>
+        <name>P7S1_CaseInAktuellemRelease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Innerhalb eines Projektes können Arbeitspakete als Erweiterung oder Änderung gekennzeichnet werden. --></help>
+        <label><!-- Funktionstyp im Projekt --></label>
+        <name>P7S1_Change__c</name>
+        <picklistValues>
+            <masterLabel>Erweiterung</masterLabel>
+            <translation><!-- Erweiterung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Änderung</masterLabel>
+            <translation><!-- Änderung --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sandbox, where development takes place --></help>
+        <label><!-- Sandbox --></label>
+        <name>P7S1_DevSandbox__c</name>
+    </fields>
+    <fields>
+        <help><!-- externe Ticketnummer, über SalesforceToSalesforce erhalten --></help>
+        <label><!-- externe Ticket-Nr. --></label>
+        <name>P7S1_ExtCaseNo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Datum der Fälligkeit des externen Tickets --></help>
+        <label><!-- externe Fälligkeit --></label>
+        <name>P7S1_ExtDueDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- externe Prio, von SalesforceToSalesforce erhalten --></help>
+        <label><!-- externe Priorität --></label>
+        <name>P7S1_ExtPrio__c</name>
+        <picklistValues>
+            <masterLabel>Prios von Advendio</masterLabel>
+            <translation><!-- Prios von Advendio --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Welcher externer Projektmanager arbeitet an dem Ticket, welches wir über SalesforceToSalesforce erhalten haben --></help>
+        <label><!-- externer Projektmanager --></label>
+        <name>P7S1_ExtProjektmanager__c</name>
+    </fields>
+    <fields>
+        <help><!-- externer Status, von SalesforceToSalesforce erhalten --></help>
+        <label><!-- externer Status --></label>
+        <name>P7S1_ExtState__c</name>
+        <picklistValues>
+            <masterLabel>externe Status von Advendio</masterLabel>
+            <translation><!-- externe Status von Advendio --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incident --></label>
+        <name>P7S1_Incident__c</name>
+    </fields>
+    <fields>
+        <help><!-- KW Fälligkeit --></help>
+        <label><!-- KW Fälligkeit --></label>
+        <name>P7S1_KW__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last Comment on this Case - used for E-Mail notification --></help>
+        <label><!-- Last Comment on this Case --></label>
+        <name>P7S1_LastCaseComment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mitarbeiter --></label>
+        <name>P7S1_Mitarbeiter__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Thema des übergeordneten Tickets --></help>
+        <label><!-- Übergeordnetes Thema --></label>
+        <name>P7S1_ParentName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sortierkriterium:
+1. offen/geschlossen
+2. Projekt
+3. Inhaber --></help>
+        <label><!-- Sortierung --></label>
+        <name>P7S1_Sort__c</name>
+    </fields>
+    <fields>
+        <help><!-- Spiegelung des Ticketinhabers als Text, um diese Info an bestehende Verbindungen zu senden (z.B. ADvendio) damit dem Verbindungspartner der Inhaber unseres TIs angezeigt wird (Standardfeld &apos;TI-Inhaber&apos; spiegelt nur die ID, nicht den Namen) --></help>
+        <label><!-- Ticketinhaber-Verbindung --></label>
+        <name>P7S1_TicketinhaberVerbindung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wert Storypoints --></label>
+        <name>P7S1_WertStorypoints__c</name>
+    </fields>
+    <fields>
+        <help><!-- Welches Projekt betrifft dieser Vorgang? --></help>
+        <label><!-- Projekt --></label>
+        <name>Projekt__c</name>
+        <picklistValues>
+            <masterLabel>7Screen</masterLabel>
+            <translation><!-- 7Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advendio</masterLabel>
+            <translation><!-- Advendio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architektur</masterLabel>
+            <translation><!-- Architektur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM-TV</masterLabel>
+            <translation><!-- CRM-TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D&amp;A</masterLabel>
+            <translation><!-- D&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LCM</masterLabel>
+            <translation><!-- LCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liferay 2 SF</masterLabel>
+            <translation><!-- Liferay 2 SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Transparency</masterLabel>
+            <translation><!-- Media Transparency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puls4</masterLabel>
+            <translation><!-- Puls4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Excellence</masterLabel>
+            <translation><!-- Sales Excellence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenVentures GmbH</masterLabel>
+            <translation><!-- SevenVentures GmbH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Quotient aus Wert und Aufwand, also Nutzen (hier: wenn vorhanden konkreter Aufwand, sonst geschätzter Aufwand). --></help>
+        <label><!-- Quotient --></label>
+        <name>Quotient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verhältnis zwischen BusinessValue (Nutzen) und StoryPoints (Komplexität), automatisch berechnet.
+Leer, wenn BusinessValue oder StoryPoints leer --></help>
+        <label><!-- Rank --></label>
+        <name>Rank__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ranglistenwert bezüglich der Abarbeitung des Kundenvorganges innerhalb eines konkreten Projektes. --></help>
+        <label><!-- Rank per Projekt --></label>
+        <name>Rank_per_Projekt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier wird automatisch das aktuelle Erstelldatum oder Wiedereröffnungsdatum des Vorgangs eingetragen. --></help>
+        <label><!-- (Re-)Open Date/Time --></label>
+        <name>ReOpenDateTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kurze Zusammenfassung was die Anforderung war und was (wie) gelöst wurde --></help>
+        <label><!-- Release-Notes --></label>
+        <name>Release_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- In welcher Phase steht das Ticket --></help>
+        <label><!-- SCRUM-Phase --></label>
+        <name>SCRUM_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Grooming</masterLabel>
+            <translation><!-- Grooming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinement</masterLabel>
+            <translation><!-- Refinement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sprint</masterLabel>
+            <translation><!-- Sprint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1 - Salesforce/Advendio nicht erreichbar 
+2 - Keine Fortführung der Haupttätigkeit möglich 
+3 - Verlust wichtiger Funktion (Workarounds &amp; zeitunkritisch)
+4 - Service Request --></help>
+        <label><!-- Severity --></label>
+        <name>Severity__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Einteilung der Advendio-Tickets in Cluster --></help>
+        <label><!-- Cluster --></label>
+        <name>SomDig_Cluster__c</name>
+        <picklistValues>
+            <masterLabel>AdTech</masterLabel>
+            <translation><!-- AdTech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BI</masterLabel>
+            <translation><!-- BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C&amp;B ADvendio</masterLabel>
+            <translation><!-- C&amp;B ADvendio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C&amp;B SaS</masterLabel>
+            <translation><!-- C&amp;B SaS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAM</masterLabel>
+            <translation><!-- CAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DooH</masterLabel>
+            <translation><!-- DooH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM InPage</masterLabel>
+            <translation><!-- PM InPage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM InStream</masterLabel>
+            <translation><!-- PM InStream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmatic</masterLabel>
+            <translation><!-- Programmatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting DWH</masterLabel>
+            <translation><!-- Reporting DWH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting SaS</masterLabel>
+            <translation><!-- Reporting SaS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Kalkulierte Ersparnis an Manntage aller betroffener Mitarbeiter in einem Jahr, wenn der Kundenvorgang erfolgreich umgesetzt wäre (Business Value). Mögliche Umsatzefährdung oder Strafumfänge wegen Missachtung von Gesetzen oder rechtlichen Empfehlungen. --></help>
+        <label><!-- Wert --></label>
+        <name>Wert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gibt es ein anderes System in dem dieser Fall ebenfalls auftaucht? --></help>
+        <label><!-- externer Link --></label>
+        <name>externer_Link__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>P7S1_CaseClosed</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Development --></label>
+            <section>Development</section>
+        </sections>
+        <sections>
+            <label><!-- SCRUM --></label>
+            <section>SCRUM</section>
+        </sections>
+        <sections>
+            <label><!-- Scrum 2 --></label>
+            <section>Scrum 2</section>
+        </sections>
+        <sections>
+            <label><!-- externe Freigabe --></label>
+            <section>externe Freigabe</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>P7S1_ChangeIncidentProblem</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Development --></label>
+            <section>Development</section>
+        </sections>
+        <sections>
+            <label><!-- SCRUM --></label>
+            <section>SCRUM</section>
+        </sections>
+        <sections>
+            <label><!-- Scrum 2 --></label>
+            <section>Scrum 2</section>
+        </sections>
+        <sections>
+            <label><!-- externe Freigabe --></label>
+            <section>externe Freigabe</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>P7S1_Service</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Neues Ticket --></label>
+        <name>P7S1_ServiceRequest</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Change --></label>
+        <name>P7S1_Change</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Incident --></label>
+        <name>P7S1_Incident</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Geschlossen</label>
+        <name>P7S1_KundenvorgangGeschlossen</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Offen</label>
+        <name>P7S1_KundenvorgangOffen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Problem --></label>
+        <name>P7S1_Problem</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service --></label>
+        <name>P7S1_Service</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Geschlossenes Ticket kann nicht geöffnet oder geändert werden. --></errorMessage>
+        <name>Lcm_BlockReopenTicket</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es können nur Tickets für das Projekt &quot;Adv Sonstiges&quot; angelegt werden. Die Zuordnung zu den anderen Adv Projekten erfolgt im Refinement! --></errorMessage>
+        <name>P7S1_AdvProjektAdmin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dublette für diesen Rank im jeweiligen Projekt, bitte einen anderen Rank auswählen. --></errorMessage>
+        <name>Rank_Dublette</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- technical_Specification --></label>
+        <name>technical_Specification</name>
+    </webLinks>
+</CustomObjectTranslation>

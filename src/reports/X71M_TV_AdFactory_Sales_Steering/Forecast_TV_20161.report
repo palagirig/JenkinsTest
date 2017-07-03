@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>SomTv_ForecastTV__c.SomTv_OpptiAJGesamt__c</field>
+    </columns>
+    <columns>
+        <field>SomTv_ForecastTV__c.SomTv_ForecastKernsenderMNGesamt__c</field>
+    </columns>
+    <columns>
+        <field>SomTv_ForecastTV__c.SomTv_OpptiAJNeueSender__c</field>
+    </columns>
+    <columns>
+        <field>SomTv_ForecastTV__c.SomTv_SummeForecastNeueSenderMN3__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.AdF_Branchencluster__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <format>Tabular</format>
+    <name>Forecast TV 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SomTv_ForecastTV__c@SomTv_ForecastTV__c.SomTV_Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

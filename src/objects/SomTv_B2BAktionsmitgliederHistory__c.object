@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_ZuletztGeaendertUm__c</fullName>
+        <description>Zeigt Datum und Uhrzeit an, da dies nicht mit dem Standardfeld im Bericht möglich ist</description>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt Datum und Uhrzeit an, da dies nicht mit dem Standardfeld im Bericht möglich ist</inlineHelpText>
+        <label>Zuletzt geändert um</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_B2BAktinsmitglied__c</fullName>
+        <externalId>false</externalId>
+        <label>B2B Aktionsmitglied</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>B2B Aktionsmitglieder Histories</relationshipLabel>
+        <relationshipName>B2B_Aktionsmitglieder_Histories</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SomTv_Kampagne__c</fullName>
+        <externalId>false</externalId>
+        <label>Kampagne</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>B2B Aktionsmitglieder Histories</relationshipLabel>
+        <relationshipName>B2B_Aktionsmitglieder_Histories</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SomTv_MitgliedID__c</fullName>
+        <externalId>true</externalId>
+        <label>Mitglied ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_StatusAlt__c</fullName>
+        <externalId>false</externalId>
+        <label>Status alt</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_StatusNeu__c</fullName>
+        <externalId>false</externalId>
+        <label>Status neu</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Som_ReliabilityIndex__c</fullName>
+        <description>CRMSALES-355 Zuverlässigkeit des Kontakts bei Rückmeldung zu diesem Event</description>
+        <externalId>false</externalId>
+        <formula>IF( SomTv_StatusAlt__c = &quot;Zusage&quot;  &amp;&amp; (SomTv_StatusNeu__c = &quot;Teilnehmer&quot;  || 
+       SomTv_StatusNeu__c = &quot;Danke verschickt&quot;), 5 , 
+      IF(SomTv_StatusAlt__c = &quot;Absage&quot;  &amp;&amp;  (SomTv_StatusNeu__c = &quot;Nicht-Teilnehmer&quot;), 3,0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zuverlässigkeit des Kontakts bei Rückmeldung zu diesem Event.</inlineHelpText>
+        <label>Zuverlässigkeitsindex</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>B2B Aktionsmitglieder History</label>
+    <listViews>
+        <fullName>Alle</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>B2B-History-{0}</displayFormat>
+        <label>B2B Aktionsmitglieder History-Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>B2B Aktionsmitglieder Histories</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

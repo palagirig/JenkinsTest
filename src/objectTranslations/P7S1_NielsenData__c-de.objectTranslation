@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Nielsen-Rohdaten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Nielsen-Rohdaten</value>
+    </caseValues>
+    <fields>
+        <help><!-- Brutto-Umsatz --></help>
+        <label><!-- Brutto --></label>
+        <name>P7S1_Brutto__c</name>
+    </fields>
+    <fields>
+        <label><!-- InPage/InStream --></label>
+        <name>P7S1_InPageInStream__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medienklasse --></label>
+        <name>P7S1_Medienklasse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monat --></label>
+        <name>P7S1_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nielsen-Daten --></label>
+        <name>P7S1_NielsenAggr__c</name>
+        <relationshipLabel><!-- Nielsen-Rohdaten --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Nielsen-Id --></label>
+        <name>P7S1_NielsenId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nielsen-Name --></label>
+        <name>P7S1_NielsenName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vermarkter --></label>
+        <name>P7S1_Vermarkter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Werbeträger --></label>
+        <name>P7S1_Werbetraeger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jahr --></label>
+        <name>P7S1_Year__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

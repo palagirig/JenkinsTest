@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DB Activity Type --></label>
+        <name>DB_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kategorien (werden mit Outlook synchronisiert) --></help>
+        <label><!-- Aufgabenkategorie --></label>
+        <name>P7S1_Aufgabenkategorie__c</name>
+    </fields>
+    <layouts>
+        <layout>Ereignislayout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- VisitReportEnhanced --></label>
+        <name>ADvendio__VisitReportEnhanced</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Visit_Report --></label>
+        <name>ADvendio__Visit_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Som_KontaktberichtErstellen --></label>
+        <name>Som_KontaktberichtErstellen</name>
+    </webLinks>
+</CustomObjectTranslation>

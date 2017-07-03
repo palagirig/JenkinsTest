@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SomDig_PRAP__c$Name</field>
+    </columns>
+    <columns>
+        <field>SomDig_PRAP__c$SomDig_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_PRAP__c$SomDig_AbgerechneteErloese__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SomDig_PRAP__c$SomDig_AbzugrenzendeErloese__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <field>SomDig_PRAP__c$SomDig_Rechnungsposition__c.ADvendio__CampaignItem__c.ADvendio__Media_Campaign__c.ADvendio__Amount_net_net__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Passive Rechnungsabgrenzungsposten</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_PRAP__c$SomDig_Rechnungsposition__c.ADvendio__CampaignItem__c.SomDig_Mediakampagnennummer__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SomDig_PRAP__c$SomDig_Abrechnungsmonat__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Passive Rechnungsabgrenzungsposten</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Passive_Rechnungsabgrenzungsposten__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SomDig_PRAP__c$SomDig_Abrechnungsmonatsende__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

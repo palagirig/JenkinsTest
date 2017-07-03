@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Account Dashboard Logo Dependencies</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Account Dashboard Logo Dependencies</value>
+    </caseValues>
+    <fields>
+        <label><!-- Logo Naming Field (API-Name) --></label>
+        <name>P7S1_Logo_Naming_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>P7S1_Unit__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

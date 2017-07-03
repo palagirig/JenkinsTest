@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Benachrichtigung über die Anlage eines Angebotes</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SomTv_Angebot</name>
+    <style>none</style>
+    <subject>{!Opportunity.Name}_{!Opportunity.SomTv_Plattform__c}_{!Opportunity.SomTv_Agentur__c}_{!Opportunity.SomTv_Agenturverbund__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

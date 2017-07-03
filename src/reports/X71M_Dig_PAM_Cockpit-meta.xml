@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>julia.allgeyer@sevenonemedia.de</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>P7S1_ProfilesSomDig_PAM</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>71M Dig PAM Cockpit</name>
+</ReportFolder>

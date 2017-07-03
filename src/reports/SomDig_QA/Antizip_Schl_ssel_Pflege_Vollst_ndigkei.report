@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ADvendio__Site__c.ADvendio__Placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>ADvendio__Site__c$Name</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>Zeigt alle Belegungseinheite je Antizipationsschlüssel an</description>
+    <filter>
+        <criteriaItems>
+            <column>ADvendio__Site__c.ADvendio__Placements__r$SomDig_Rotationstyp__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADvendio__Site__c.ADvendio__Placements__r$SomDig_AntizipationsVS__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Antizip.Schlüssel: Pflege Vollständigkei</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SomDig_WerbemittelMitWerbetraegerUndWerbeform__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>ADvendio__Site__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

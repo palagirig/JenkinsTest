@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Programm Kampagne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Programm Kampagnen</value>
+    </caseValues>
+    <fields>
+        <label><!-- BMV --></label>
+        <name>Star_BMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beschreibung --></label>
+        <name>Star_Beschreibung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ende --></label>
+        <name>Star_Ende__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gesamttrailerlänge (in Sekunden) --></label>
+        <name>Star_GesamttrailerlaengeInSekunden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kundenanteil Spotlänge (in Sekunden) --></label>
+        <name>Star_KundenanteilSpotlaengeInSekunden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Star_Opportunity__c</name>
+        <relationshipLabel><!-- Programm Kampagnen --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue --></label>
+        <name>Star_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender --></label>
+        <name>Star_Sender__c</name>
+        <picklistValues>
+            <masterLabel>Kabel eins</masterLabel>
+            <translation><!-- Kabel eins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kabel eins Classics</masterLabel>
+            <translation><!-- Kabel eins Classics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kabel eins Doku</masterLabel>
+            <translation><!-- Kabel eins Doku --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProSieben</masterLabel>
+            <translation><!-- ProSieben --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProSieben Fun</masterLabel>
+            <translation><!-- ProSieben Fun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProSieben maxx</masterLabel>
+            <translation><!-- ProSieben maxx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sat.1</masterLabel>
+            <translation><!-- Sat.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sat.1 Emotions</masterLabel>
+            <translation><!-- Sat.1 Emotions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sat.1 Gold</masterLabel>
+            <translation><!-- Sat.1 Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixx</masterLabel>
+            <translation><!-- Sixx --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Spot Kundenintegrationsantel --></label>
+        <name>Star_SpotKundenintegrationsantel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>Star_Start__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Programm Kampagne Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Financial Model Version</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Financial Model Versions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Ven_Opportunity__c</name>
+        <relationshipLabel><!-- Financial Model Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Wird automatisch beim Upload gesetzt. --></help>
+        <label><!-- Version number --></label>
+        <name>Ven_version_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- wird automatisch gesetzt --></help>
+        <label><!-- write protection --></label>
+        <name>Ven_write_protection__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Financial Model Version-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Actual Data --></label>
+        <name>Ven_Actual_Data</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Budget Data --></label>
+        <name>Ven_Budget_Data</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Plan Data --></label>
+        <name>Ven_Plan_Data</name>
+    </recordTypes>
+</CustomObjectTranslation>

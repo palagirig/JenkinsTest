@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>SevenVentures Custom Settings</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>SevenVentures Custom Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The accountnumber of the Seven Ventures account. It is used to identify the account for the CapTable. --></help>
+        <label><!-- SevenVentures Account Number --></label>
+        <name>Ven_SvAccountNumber__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

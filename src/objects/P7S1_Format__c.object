@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Formate wie zum Beispiel Anna und die Liebe oder 2 Broke Grils</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_Assettyp__c</fullName>
+        <description>Für welche Bereiche haben wir entsprechende Rechte zur Ausstrahlung bzw. für welche Bereich ist dieses Format relevant?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Für welche Bereiche haben wir entsprechende Rechte zur Ausstrahlung bzw. für welche Bereich ist dieses Format relevant?</inlineHelpText>
+        <label>Assettyp</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Digital</fullName>
+                    <default>false</default>
+                    <label>Digital</label>
+                </value>
+                <value>
+                    <fullName>TV</fullName>
+                    <default>false</default>
+                    <label>TV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>P7S1_GueltigBis__c</fullName>
+        <description>Bis wann ist dieses Format gültig?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bis wann ist dieses Format gültig?</inlineHelpText>
+        <label>gültig bis</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_GueltigVon__c</fullName>
+        <description>ab wann ist dieses Format gültig?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ab wann ist dieses Format gültig?</inlineHelpText>
+        <label>gültig von</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IstGueltig__c</fullName>
+        <description>Ist Format zum heutigen Tag gültig.</description>
+        <externalId>false</externalId>
+        <formula>P7S1_GueltigVon__c &lt;=  TODAY()
+&amp;&amp;
+TODAY() &lt;= P7S1_GueltigBis__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Ist Format zum heutigen Tag gültig.</inlineHelpText>
+        <label>Ist aktuell gültig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_PowerMamsContentID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Verbindung dieses Formates zu PowerMams ID</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Verbindung dieses Formates zu PowerMams ID</inlineHelpText>
+        <label>PowerMams Content ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Unique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>wird gefüllt per Workflow aus Name und stellt damit Unique-Eigenschaft für Name sicher</description>
+        <externalId>false</externalId>
+        <inlineHelpText>stellt Unique-Eigenschaft für Name sicher</inlineHelpText>
+        <label>P7S1_Unique</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7s1_Beschreibung__c</fullName>
+        <externalId>false</externalId>
+        <label>Beschreibung</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Format</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Assettyp__c</columns>
+        <columns>P7s1_Beschreibung__c</columns>
+        <columns>P7S1_GueltigVon__c</columns>
+        <columns>P7S1_GueltigBis__c</columns>
+        <columns>P7S1_IstGueltig__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Digital</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Assettyp__c</columns>
+        <columns>P7s1_Beschreibung__c</columns>
+        <columns>P7S1_GueltigVon__c</columns>
+        <columns>P7S1_GueltigBis__c</columns>
+        <columns>P7S1_IstGueltig__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Assettyp__c</field>
+            <operation>includes</operation>
+            <value>Digital</value>
+        </filters>
+        <label>Digital</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>TV</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Assettyp__c</columns>
+        <columns>P7s1_Beschreibung__c</columns>
+        <columns>P7S1_GueltigVon__c</columns>
+        <columns>P7S1_GueltigBis__c</columns>
+        <columns>P7S1_IstGueltig__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Assettyp__c</field>
+            <operation>includes</operation>
+            <value>TV</value>
+        </filters>
+        <label>TV</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>aktuell_g_ltig</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Assettyp__c</columns>
+        <columns>P7s1_Beschreibung__c</columns>
+        <columns>P7S1_GueltigVon__c</columns>
+        <columns>P7S1_GueltigBis__c</columns>
+        <columns>P7S1_IstGueltig__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_IstGueltig__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>aktuell gültig</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>aktuell_ung_ltig</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Assettyp__c</columns>
+        <columns>P7s1_Beschreibung__c</columns>
+        <columns>P7S1_GueltigVon__c</columns>
+        <columns>P7S1_GueltigBis__c</columns>
+        <columns>P7S1_IstGueltig__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_IstGueltig__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>aktuell ungültig</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Format-Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Formate</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>P7S1_Assettyp__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7s1_Beschreibung__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>P7S1_Assettyp__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>P7s1_Beschreibung__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>P7S1_Assettyp__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>P7s1_Beschreibung__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>P7S1_Assettyp__c</searchFilterFields>
+        <searchFilterFields>P7s1_Beschreibung__c</searchFilterFields>
+        <searchResultsAdditionalFields>P7S1_Assettyp__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7s1_Beschreibung__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>P7S1_VonKleinerBis</fullName>
+        <active>true</active>
+        <errorConditionFormula>P7S1_GueltigVon__c &gt; P7S1_GueltigBis__c</errorConditionFormula>
+        <errorMessage>Das Von-Datum darf nicht größer als das Bis-Datum sein</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>P7S1_Formatzuordnung</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Formatzuordnung</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/vfp_P7S1_Format_AdServerLinking?formatId={!P7S1_Format__c.Id}</url>
+    </webLinks>
+</CustomObject>

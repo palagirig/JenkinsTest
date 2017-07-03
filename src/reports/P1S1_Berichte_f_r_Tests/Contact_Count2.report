@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contact$P7S1_Sphere__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>SomDe</value>
+        </criteriaItems>
+        <language>de</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$P7S1_AccountVisibility__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contact  Count</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Kontakte__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Austrittsdatum__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

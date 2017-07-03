@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>DURATIONHOURS</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>wöchentlicher Bericht</description>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Fradinger,Frühberger,Weissenbök,Marksteiner,Schrempf,Callender,Morkos,Brettner,Brightwell,Hackl,Krautz,Schoder,Isecke,Zahovic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Urlaub,Mittagsmeeting,Jour Fix,to Do,JF,Anfahrt,Geburtstag,Stundenliste,Home,weekly call,SAL adaptieren,Aquise,Projekt</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_SUBTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Sales Termine kurz</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CREATED_BY</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2017-03-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-03-03</startDate>
+    </timeFrameFilter>
+</Report>

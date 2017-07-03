@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Requirement</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Requirements</value>
+    </caseValues>
+    <fields>
+        <help><!-- kurze Beschreibung des Requirements in Stichworten. Für Langbeschreibungen Notizen oder Anhänge verwenden --></help>
+        <label><!-- Beschreibung --></label>
+        <name>Lcm_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zu welchem Datum wird dieses Funktionspaket/Req voraussichtlich auf Prod zur Verfügung stehen? --></help>
+        <label><!-- ETA --></label>
+        <name>Lcm_ETA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bezeichnung des Requirements --></help>
+        <label><!-- Requirement-Name --></label>
+        <name>Lcm_RequirementName__c</name>
+    </fields>
+    <fields>
+        <help><!-- in welcher Phase befindet sich dies Anfoderung --></help>
+        <label><!-- Status --></label>
+        <name>Lcm_Status__c</name>
+        <picklistValues>
+            <masterLabel>ready for test</masterLabel>
+            <translation><!-- ready for test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to be developed</masterLabel>
+            <translation><!-- to be developed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to be rollout</masterLabel>
+            <translation><!-- to be rollout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to clarify</masterLabel>
+            <translation><!-- to clarify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to specify</masterLabel>
+            <translation><!-- to specify --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Zuordnung zur jeweiligen Test-Sphere. Hilfefeld für die Freigabeeinstellung --></help>
+        <label><!-- Lcm_TestSphere --></label>
+        <name>Lcm_TestSphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- eine oder mehrere Units, die dem fachlich Requirement zugeordnet werden. --></help>
+        <label><!-- Unit --></label>
+        <name>Lcm_Unit__c</name>
+        <picklistValues>
+            <masterLabel>AdTech</masterLabel>
+            <translation><!-- AdTech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C&amp;B</masterLabel>
+            <translation><!-- C&amp;B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DWH</masterLabel>
+            <translation><!-- DWH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OBI</masterLabel>
+            <translation><!-- OBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAM</masterLabel>
+            <translation><!-- PAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFAdmins</masterLabel>
+            <translation><!-- SFAdmins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yield</masterLabel>
+            <translation><!-- Yield --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Versions-Name --></label>
+        <name>Lcm_VersionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Version, in der Requirement umgesetzt wird/ist --></help>
+        <label><!-- Versions-Nr --></label>
+        <name>Lcm_Version__c</name>
+        <relationshipLabel><!-- Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Titel des groben Arbeitspaketes Ebene 1 --></help>
+        <label><!-- WBS Ebene 1 --></label>
+        <name>Lcm_WbsLevel1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Titel des groben Arbeitspaketes Ebene 2 --></help>
+        <label><!-- WBS Ebene 2 --></label>
+        <name>Lcm_WbsLevel2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Nummer des groben Arbeitspaketes --></help>
+        <label><!-- WBS No. --></label>
+        <name>Lcm_WbsNo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration --></help>
+        <label><!-- P7S1_IdOld --></label>
+        <name>P7S1_IdOld__c</name>
+    </fields>
+    <fields>
+        <help><!-- Names des Moduls, an welches das RQ via Version hängt --></help>
+        <label><!-- Modul --></label>
+        <name>P7S1_Modul__c</name>
+    </fields>
+    <fields>
+        <help><!-- Priorität des Requirements --></help>
+        <label><!-- Priorität --></label>
+        <name>P7S1_Priority__c</name>
+        <picklistValues>
+            <masterLabel>must have - golive relevant</masterLabel>
+            <translation><!-- must have - golive relevant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>n/a</masterLabel>
+            <translation><!-- n/a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nice to have</masterLabel>
+            <translation><!-- nice to have --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out of scope</masterLabel>
+            <translation><!-- out of scope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>should have</masterLabel>
+            <translation><!-- should have --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Requirement-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Beschreibung --></label>
+            <section>Beschreibung</section>
+        </sections>
+        <sections>
+            <label><!-- Sonstiges --></label>
+            <section>Sonstiges</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

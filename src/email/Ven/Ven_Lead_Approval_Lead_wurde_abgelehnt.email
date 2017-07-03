@@ -1,0 +1,11 @@
+Hallo Investment Manager,
+
+folgender Lead {!Lead.Company} wurde durch den Lead Approver Team abgelehnt.
+Über folgenden Link erreichen Sie den Lead mit der Bitte diesen zu überarbeiten:
+
+https://emea.salesforce.com/{!Lead.Id}
+
+Über die Funktion “Für Genehmigung einreichen“ können Sie den Freigabeprozess erneut starten.
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

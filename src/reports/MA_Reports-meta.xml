@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>marina.zavorotniy@p7s1.net</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>MA</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <name>M&amp;A Reports</name>
+</ReportFolder>

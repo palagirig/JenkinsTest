@@ -1,0 +1,8 @@
+{!ApprovalRequest.Process_Assignee} möchte den Account {!Account.Name} auf gültig setzen. Hierfür ist Deine Genehmigung in Salesforce erforderlich.
+
+Zur Bearbeitung am besten direkt in der Genehmigungsmaske {!ApprovalRequest.Internal_URL} oder über die Themenliste "Genehmigungsverlauf" am Account {!Account.Link} die Anfrage genehmigen oder ablehnen.
+
+Vielen Dank
+
+
+Salesforce-Support

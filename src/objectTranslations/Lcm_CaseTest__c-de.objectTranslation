@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ticket-Test</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ticket-Tests</value>
+    </caseValues>
+    <fields>
+        <help><!-- Ergebnis des Tests --></help>
+        <label><!-- Ergebnis --></label>
+        <name>Lcm_TestErgebnis__c</name>
+        <picklistValues>
+            <masterLabel>erfolgreich</masterLabel>
+            <translation><!-- erfolgreich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nicht erfolgreich</masterLabel>
+            <translation><!-- nicht erfolgreich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>obsolet</masterLabel>
+            <translation><!-- obsolet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>offen</masterLabel>
+            <translation><!-- offen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Test-Kommentar --></label>
+        <name>Lcm_TestKommentar__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rolle, die den Test durchführt --></help>
+        <label><!-- Rolle --></label>
+        <name>Lcm_TestRolle__c</name>
+        <picklistValues>
+            <masterLabel>1 Developer</masterLabel>
+            <translation><!-- 1 Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Requirementsmanager</masterLabel>
+            <translation><!-- 2 Requirementsmanager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Fachbereich</masterLabel>
+            <translation><!-- 3 Fachbereich --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name des Testers --></help>
+        <label><!-- Tester --></label>
+        <name>Lcm_TestTester__c</name>
+        <relationshipLabel><!-- Ticket-Tests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Ticket-Nr. --></help>
+        <label><!-- Ticket-Nr. --></label>
+        <name>Lcm_TestTicketNr__c</name>
+        <relationshipLabel><!-- Ticket-Tests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ACHTUNG --></label>
+        <name>Lcm_Warning__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Ticket-Tests-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

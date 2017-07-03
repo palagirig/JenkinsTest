@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>markus.thun@p7s1.net</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>mirsad.puskar@p7s1applications.de</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <name>P1S1 Berichte für Tests</name>
+</ReportFolder>

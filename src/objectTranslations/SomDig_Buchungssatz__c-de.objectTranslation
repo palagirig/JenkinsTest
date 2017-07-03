@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Buchungssatz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Buchungssätze</value>
+    </caseValues>
+    <fields>
+        <help><!-- SAP Faktura - Datum des Belegs --></help>
+        <label><!-- Belegdatum --></label>
+        <name>SomDig_Belegdatum__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Identifizierender Text zum Beleg (einheitlich pro Belegnummer) --></help>
+        <label><!-- Belegkopftext --></label>
+        <name>SomDig_Belegkopftext__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Belegnummer des Datensatzes. Alles Datensätze zu einer Belegnummer gehören zusammen und müssen im Soll und Haben ausgeglichen sein. Die Belegnummer beginnt in jeder Datei bei 1 und ist unterbrechungsfrei aufsteigend --></help>
+        <label><!-- Belegnr --></label>
+        <name>SomDig_Belegnr__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Belegnummer der Faktura --></help>
+        <label><!-- Belegnummer --></label>
+        <name>SomDig_Belegnummer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Betrag (Formel) --></label>
+        <name>SomDig_BetragFormel__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura / SAP Erlösaufteilung - Buchungsbetrag --></help>
+        <label><!-- Betrag --></label>
+        <name>SomDig_Betrag__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Buchungskreis der Instanz --></help>
+        <label><!-- Buchungskreis --></label>
+        <name>SomDig_Buchungskreis__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Kodierung Soll und Haben --></help>
+        <label><!-- Buchungsschlüssel --></label>
+        <name>SomDig_Buchungsschluessel__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura / SAP Erlösaufteilung - Buchungstext, einheitlich für eine Belegnummer --></help>
+        <label><!-- Buchungstext --></label>
+        <name>SomDig_Buchungstext__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Debitorennummer des Belegempfängers --></help>
+        <label><!-- Debitorennummer --></label>
+        <name>SomDig_Debitorennummer__c</name>
+    </fields>
+    <fields>
+        <help><!-- stammt aus AdVendio Paket --></help>
+        <label><!-- Delivery Data --></label>
+        <name>SomDig_DeliveryData__c</name>
+        <relationshipLabel><!-- Buchungssätze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Unterscheidung nach Rechnung und Gutschrift --></help>
+        <label><!-- Dokumenttyp --></label>
+        <name>SomDig_Dokumenttyp__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura / SAP Erlösaufteilung - Erlöskonto/Sachkonto --></help>
+        <label><!-- Erlöskonto/Sachkonto --></label>
+        <name>SomDig_Erloeskonto_Sachkonto__c</name>
+    </fields>
+    <fields>
+        <help><!-- Buchungssatz wird anhand diverser Parameter zu einer IA-Nummer zugeordnet --></help>
+        <label><!-- IA Nummer --></label>
+        <name>SomDig_IaNummer__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura / SAP Erlösaufteilung - Sammel-Innenauftrag / Innenauftragsnummer --></help>
+        <label><!-- Innenauftragsnummer --></label>
+        <name>SomDig_Innenauftragsnummer__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus dem Objekt Account --></help>
+        <label><!-- Konzern Intern --></label>
+        <name>SomDig_KonzernIntern__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Nicht genutzt, immer leer --></help>
+        <label><!-- Kostenstelle --></label>
+        <name>SomDig_Kostenstelle__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus Werbeträger, Multiscreen berücksichtigt --></help>
+        <label><!-- Mediagattung --></label>
+        <name>SomDig_Mediagattung__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus der Werbeform --></help>
+        <label><!-- Mediagattungs-Differenzierung --></label>
+        <name>SomDig_MediagattungsDifferenzierung__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus Lieferdaten und AdServerId --></help>
+        <label><!-- Mediagattungs-Segment --></label>
+        <name>SomDig_MediagattungsSegment__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner-ID --></label>
+        <name>SomDig_PartnerId__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus der Mediakampagne --></help>
+        <label><!-- Preisliste --></label>
+        <name>SomDig_Preisliste__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rechnung --></label>
+        <name>SomDig_Rechnung__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Rechnungsposition, die mit dem Buchungssatz verlinkt ist --></help>
+        <label><!-- Rechnungsposition --></label>
+        <name>SomDig_Rechnungsposition__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Text, einheitlich für eine Belegnummer --></help>
+        <label><!-- Referenz --></label>
+        <name>SomDig_Referenz__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Buchungsdatum, abhängig vom Rechnungsdatum bzw. Belegdatum und im Format YYMM. --></help>
+        <label><!-- SAP Buchungsdatum --></label>
+        <name>SomDig_SAP_Buchungsdatum__c</name>
+    </fields>
+    <fields>
+        <help><!-- steuert die Buchung zu einem Sachkonto anhand diverser Parameter --></help>
+        <label><!-- Sachkonto --></label>
+        <name>SomDig_Sachkonto__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP-Datei --></label>
+        <name>SomDig_SapDatei__c</name>
+        <relationshipLabel><!-- Buchungssätze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Soll/Haben Kennzeichen des Belegs --></help>
+        <label><!-- Soll/Haben Kennzeichen --></label>
+        <name>SomDig_Soll_Haben_Kennzeichen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status SAP --></label>
+        <name>SomDig_Status_SAP__c</name>
+        <picklistValues>
+            <masterLabel>offen</masterLabel>
+            <translation><!-- offen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>übermittelt</masterLabel>
+            <translation><!-- übermittelt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Bezeichnung vom Status der Rechnung --></help>
+        <label><!-- Status --></label>
+        <name>SomDig_Status__c</name>
+        <picklistValues>
+            <masterLabel>fakturiert</masterLabel>
+            <translation><!-- fakturiert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre-invoice</masterLabel>
+            <translation><!-- pre-invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>storniert</masterLabel>
+            <translation><!-- storniert --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura / SAP Erlösaufteilung - SAP-Steuerkennzeichen (MwSt) --></help>
+        <label><!-- Steuerkennzeichen --></label>
+        <name>SomDig_Steuerkennzeichen__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Steuerrelevanz --></help>
+        <label><!-- Steuerrelevanz --></label>
+        <name>SomDig_Steuerrelevanz__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueKey --></label>
+        <name>SomDig_UniqueKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verrechnungsmonat (SAP) --></label>
+        <name>SomDig_VerrechnungsmonatSAP__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Monat (als Ultimo des Monats), in dem der Beleg zu verbuchen ist --></help>
+        <label><!-- Verrechnungsmonat --></label>
+        <name>SomDig_Verrechnungsmonat__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Auf die Rechnung abzuführende Werbeabgabe (AT) --></help>
+        <label><!-- Werbeabgabe --></label>
+        <name>SomDig_Werbeabgabe__c</name>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus Lieferdaten &amp; AdServerId --></help>
+        <label><!-- Werbeträger --></label>
+        <name>SomDig_Werbetraeger__c</name>
+        <relationshipLabel><!-- Buchungssaetze --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- übernommen aus Werbeträger und Lieferdaten --></help>
+        <label><!-- Werbeträgergruppierung --></label>
+        <name>SomDig_Werbetraegergruppierung__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Faktura - Zahlungsbedingung des Belegs im SAP Format --></help>
+        <label><!-- Zahlungsbedingung --></label>
+        <name>SomDig_Zahlungsbedingung__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAP Erlösaufteilung - Nicht genutzt, immer leer --></help>
+        <label><!-- Zuordnung --></label>
+        <name>SomDig_Zuordnung__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bezeichnung vom Status der Rechnung --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>fakturiert</masterLabel>
+            <translation><!-- fakturiert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pre-invoice</masterLabel>
+            <translation><!-- pre-invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>storniert</masterLabel>
+            <translation><!-- storniert --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Buchungssatz-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Quellinformationen - Bezüge --></label>
+            <section>Quellinformationen - Bezüge</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Erlösaufteilung --></label>
+            <section>SAP Erlösaufteilung</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Faktura --></label>
+            <section>SAP Faktura</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Faktura &amp; SAP Erlösaufteilung --></label>
+            <section>SAP Faktura &amp; SAP Erlösaufteilung</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Erlösaufteilung --></label>
+        <name>Erloesaufteilung</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Faktura --></label>
+        <name>Faktura</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hochrechnung --></label>
+        <name>Hochrechnung</name>
+    </recordTypes>
+</CustomObjectTranslation>

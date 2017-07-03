@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>P7S1 Standard</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <formula>NOT ( ISNEW() )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>p7s1.thomaspuhl@gmx.de</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>equals</operation>
+                <value>Roman.Walek@sevenonemedia.de</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>equals</operation>
+                <value>dilek.duyar@sevenonemedia.de</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CreatedById</field>
+                <operation>equals</operation>
+                <value>Roman Walek</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CreatedById</field>
+                <operation>equals</operation>
+                <value>Dilek Duyar</value>
+            </criteriaItems>
+            <team>Adv C&amp;B Projektteam</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>dennis.mueller@p7s1.net</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Case.Projekt__c</field>
+                <operation>equals</operation>
+                <value>ADcalibur Deutschland,ADcalibur Deutschland Erweiterungen I,Prodia Ablöse Österreich</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Projekt__c</field>
+                <operation>startsWith</operation>
+                <value>Adv</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tobias.forstmeier@p7s1.net</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Komponente__c</field>
+                <operation>equals</operation>
+                <value>User/Person</value>
+            </criteriaItems>
+            <team>Sales Solutions (SaS)</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tobias.forstmeier@p7s1.net</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Projekt__c</field>
+                <operation>equals</operation>
+                <value>Sales Excellence</value>
+            </criteriaItems>
+            <team>Sales Excellence</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tobias.forstmeier@p7s1.net</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Projekt__c</field>
+                <operation>equals</operation>
+                <value>SevenVentures GmbH</value>
+            </criteriaItems>
+            <team>Ventures</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tobias.forstmeier@p7s1.net</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Projekt__c</field>
+                <operation>equals</operation>
+                <value>Liferay 2 SF</value>
+            </criteriaItems>
+            <team>LifeRay</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>markus.thun@p7s1.net</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Projekt__c</field>
+                <operation>equals</operation>
+                <value>Architektur,LCM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>P7S1_Case</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.P7S1_ExtCaseNo__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>P7S1_Case</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISNEW()</formula>
+            <team>Sales Solutions (SaS)</team>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>P7S1_ExterneKVs</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>P7S1_Case</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.P7S1_ExtCaseNo__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <team>Sales Solutions (SaS)</team>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>P7S1_StandardNew</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <formula>NOT ( ISNEW() )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>P7S1_Case</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISNEW()</formula>
+            <team>Sales Solutions (SaS)</team>
+            <template>P7S1_Ticket/P7S1_TicketErstelltOderAktualisiert</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Ven_ Genehmigungsgremium VIC I hat Opportunity abgelehnt</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ven_ Genehmigungsgremium VIC I hat Opportunity abgelehnt</name>
+    <style>none</style>
+    <subject>Die Opportunity {!Opportunity.Name} wurde vom Genehmigungsgremium VIC I abgelehnt</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

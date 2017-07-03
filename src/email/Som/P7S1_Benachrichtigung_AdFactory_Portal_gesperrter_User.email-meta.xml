@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Benachrichtigung AdFactory Portal gesperrter User</name>
+    <style>none</style>
+    <subject>{!P7S1_PortalLogin__c.P7S1_Portal__c} User wurde gesperrt</subject>
+    <textOnly>Hallo,
+der User {!P7S1_PortalLogin__c.P7S1_Vorname__c} {!P7S1_PortalLogin__c.P7S1_Nachname__c} hat seine Daten im Portal aktualisiert.
+
+Bitte die Änderungen prüfen und den Status des Users aktualisieren.  {!P7S1_PortalLogin__c.Link} 
+
+Viele Grüße
+dein Salesforce Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Anzahl von 7Ventures Activities der letzten 7 Tage</description>
+    <groupColumn>Opportunity.P7S1_OpportunityOwnerUnit__c</groupColumn>
+    <mappings>
+        <sourceField>ExecutionTime</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>Ven_ReportSnapshot__c.Name</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>FORMULA1</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>Ven_ReportSnapshot__c.Ven_NumberOfActivitiesAndEvents__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Opportunity.P7S1_OpportunityOwnerUnit__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Ven_ReportSnapshot__c.Ven_OpportunityOwnerUnit__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ExecutionTime</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>Ven_ReportSnapshot__c.Ven_ReportEnds__c</targetField>
+    </mappings>
+    <name># of Activities and Events per Week</name>
+    <runningUser>juliana.duhnsen@sevenventures.de</runningUser>
+    <sourceReport>Ven_Berichte/Ven_ActivitiesLast7days</sourceReport>
+    <targetObject>Ven_ReportSnapshot__c</targetObject>
+</AnalyticSnapshot>

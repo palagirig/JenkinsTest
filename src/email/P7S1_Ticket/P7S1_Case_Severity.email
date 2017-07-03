@@ -1,0 +1,19 @@
+Hallo,
+
+{!Case.LastModifiedBy} has just changed the ticket severity to {!Case.Severity__c}
+
+Link to ticket:
+{!Case.Link} 
+
+Gruß 
+
+SaS Solutions 
+P7S1 Applications 
+
+######################## 
+Interne Infos: 
+Projekt: {!Case.Projekt__c} 
+Sprint: {!Case.Lcm_Release__c} 
+Kanban: {!Case.Lcm_KanbanKombi__c} 
+Severity: {!Case.Severity__c} 
+Rank: {!Case.Rank__c}

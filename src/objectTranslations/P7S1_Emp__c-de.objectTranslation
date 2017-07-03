@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Mitarbeiter</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Mitarbeiter</value>
+    </caseValues>
+    <fields>
+        <help><!-- Falls vom Manager abweichender Ansprechpartner für Userüberprüfung, bitte hier eintragen --></help>
+        <label><!-- Ansprechpartner für Userprüfung --></label>
+        <name>P7S1_AP_Usercheck__c</name>
+        <relationshipLabel><!-- Zu überprüfende Mitarbeiter --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>P7S1_AccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bestätigt am --></label>
+        <name>P7S1_BestaetigtAm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hier das Ticket verlinken, in dem der Mitarbeiter beantragt wurde. --></help>
+        <label><!-- Angefordert in --></label>
+        <name>P7S1_CaseRequest__c</name>
+        <relationshipLabel><!-- Mitarbeiter --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Account des Mitarbeiters abweichend vom Account des Kontakts --></help>
+        <label><!-- Check Account Emp Contact --></label>
+        <name>P7S1_CheckAccountEmpContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Active --></label>
+        <name>P7S1_CheckActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kontakt nicht in SomDe Sphäre --></help>
+        <label><!-- Check Contact Sphere --></label>
+        <name>P7S1_CheckContactSphere__c</name>
+    </fields>
+    <fields>
+        <help><!-- Benutzername abweichend zu E-Mail (am Mitarbeiter) --></help>
+        <label><!-- Check Email Benutzername --></label>
+        <name>P7S1_CheckEmailBenutzername__c</name>
+    </fields>
+    <fields>
+        <help><!-- E-Mail am User und Mitarbeiter unterschiedlich. --></help>
+        <label><!-- Check E-Mail --></label>
+        <name>P7S1_CheckEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prüft ob Firma am User unterschiedlich zu Firma am Mitarbeiter --></help>
+        <label><!-- Check Firma 1 --></label>
+        <name>P7S1_CheckFirma1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prüft, ob am Mitarbeiter &quot;Firma&quot; unterschiedlich zu &quot;Firma (Text)&quot; --></help>
+        <label><!-- Check Firma 2 --></label>
+        <name>P7S1_CheckFirma2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Manager --></label>
+        <name>P7S1_CheckManager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Profile --></label>
+        <name>P7S1_CheckProfile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Role --></label>
+        <name>P7S1_CheckRole__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kontrolle, ob der User weiterhin den Salesforce-Zugang benötig. Intervall: Jährlich (somit 2015/2016 aktuell) --></help>
+        <label><!-- Check Salesforce Zugang --></label>
+        <name>P7S1_CheckSalesforceZugang__c</name>
+        <picklistValues>
+            <masterLabel>Salesforce weiterhin</masterLabel>
+            <translation><!-- Salesforce weiterhin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>wird nicht mehr benötigt</masterLabel>
+            <translation><!-- wird nicht mehr benötigt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Checkt DWH Felder am User vs.Mitarbeiter/Team --></help>
+        <label><!-- Check Team Nr --></label>
+        <name>P7S1_CheckTeamNr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links =&gt; User / Rechts =&gt; Mitarbeiter (bei Abweichung) --></help>
+        <label><!-- Check Unit --></label>
+        <name>P7S1_CheckUnit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Land des Users. Sehr wichtig für Advendio Billing. Muss dem Wert entsprechen, der im CustomSetting &quot;VAT&quot; definiert ist. Relevant für User die als Betreuer PAM in Mediakampagne ausgewählt sind. --></help>
+        <label><!-- Check User Land --></label>
+        <name>P7S1_CheckUserCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link Mitarbeiter =&gt; User und User =&gt; Mitarbeiter korrekt? --></help>
+        <label><!-- Check User Mitarbeiter-Id --></label>
+        <name>P7S1_CheckUserEmpId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kollege --></label>
+        <name>P7S1_Colleague__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bemerkungen --></label>
+        <name>P7S1_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firmenname --></label>
+        <name>P7S1_CompName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firma (Text) --></label>
+        <name>P7S1_CompText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firma --></label>
+        <name>P7S1_Comp__c</name>
+        <relationshipLabel><!-- Mitarbeiter --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kontakt --></label>
+        <name>P7S1_Contact__c</name>
+        <relationshipLabel><!-- Mitarbeiter --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Austrittsdatum --></help>
+        <label><!-- Austrittsdatum --></label>
+        <name>P7S1_DateExit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abteilung --></label>
+        <name>P7S1_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Mail --></label>
+        <name>P7S1_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- fortlaufende Nummer. Wird u.a. von DWH benötigt (als Verkäufer-Id) --></help>
+        <label><!-- Mitarbeiter-Nummer --></label>
+        <name>P7S1_EmpNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vorname --></label>
+        <name>P7S1_Firstname__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuweisung Advendio Lizenzen (Paket) --></help>
+        <label><!-- Gehe zu --></label>
+        <name>P7S1_GeheZuAdv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zuweisung Berechtigunssätze (Permission Sets) --></help>
+        <label><!-- Gehe zum --></label>
+        <name>P7S1_Gehe_zum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aktiviert --></label>
+        <name>P7S1_IsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kennzeichnet einen Mitarbeiter als PAM TeamLead. --></help>
+        <label><!-- Is TeamLead --></label>
+        <name>P7S1_IsTeamLead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mitarbeiter gehört zu Firma die P7S1 Konzernmitglied ist --></help>
+        <label><!-- P7S1 Konzernmitglied --></label>
+        <name>P7S1_Konzernmitglied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nachname --></label>
+        <name>P7S1_Lastname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager (Text) --></label>
+        <name>P7S1_ManagerText__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auswahl des Vorgesetzten Mitarbeiters --></help>
+        <label><!-- Manager --></label>
+        <name>P7S1_Manager__c</name>
+        <relationshipLabel><!-- Team --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Meine Mitarbeiter --></label>
+        <name>P7S1_MeineMitarbeiter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zeigt verwendete ADvendio Lizenzen an. --></help>
+        <label><!-- Gehe zu --></label>
+        <name>P7S1_PackageUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>P7S1_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profil --></label>
+        <name>P7S1_Profile__c</name>
+        <picklistValues>
+            <masterLabel>DA_Default</masterLabel>
+            <translation><!-- DA_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA_Default</masterLabel>
+            <translation><!-- MA_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max_Default</masterLabel>
+            <translation><!-- Max_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1_Applications</masterLabel>
+            <translation><!-- P7S1_Applications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1_Interface</masterLabel>
+            <translation><!-- P7S1_Interface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1_NoRights</masterLabel>
+            <translation><!-- P7S1_NoRights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSD_Default</masterLabel>
+            <translation><!-- PSD_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE_Default</masterLabel>
+            <translation><!-- SE_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE_ReadOnly</masterLabel>
+            <translation><!-- SE_ReadOnly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDig_AdTech</masterLabel>
+            <translation><!-- SomDig_AdTech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDig_BI</masterLabel>
+            <translation><!-- SomDig_BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDig_Billing</masterLabel>
+            <translation><!-- SomDig_Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDig_PAM</masterLabel>
+            <translation><!-- SomDig_PAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDig_PM</masterLabel>
+            <translation><!-- SomDig_PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDig_Sales</masterLabel>
+            <translation><!-- SomDig_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_ADFactory</masterLabel>
+            <translation><!-- SomTv_ADFactory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_Conversion</masterLabel>
+            <translation><!-- SomTv_Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_Marketing</masterLabel>
+            <translation><!-- SomTv_Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_RM</masterLabel>
+            <translation><!-- SomTv_RM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_Sales</masterLabel>
+            <translation><!-- SomTv_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_SalesManagement</masterLabel>
+            <translation><!-- SomTv_SalesManagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_SalesSteering</masterLabel>
+            <translation><!-- SomTv_SalesSteering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomTv_TeamCRM</masterLabel>
+            <translation><!-- SomTv_TeamCRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_Lic_Default</masterLabel>
+            <translation><!-- Som_Lic_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_ReadOnly</masterLabel>
+            <translation><!-- Som_ReadOnly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports_Default</masterLabel>
+            <translation><!-- Sports_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star_Default</masterLabel>
+            <translation><!-- Star_Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systemadministrator</masterLabel>
+            <translation><!-- Systemadministrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Controlling</masterLabel>
+            <translation><!-- Ven_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_DataManager</masterLabel>
+            <translation><!-- Ven_DataManager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Extern</masterLabel>
+            <translation><!-- Ven_Extern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_InvestmentManager</masterLabel>
+            <translation><!-- Ven_InvestmentManager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_MediaExpert</masterLabel>
+            <translation><!-- Ven_MediaExpert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_ReadOnly</masterLabel>
+            <translation><!-- Ven_ReadOnly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Standard</masterLabel>
+            <translation><!-- Ven_Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relevant für Userprüfung --></label>
+        <name>P7S1_RelevantUserpruefung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rolle --></label>
+        <name>P7S1_Role__c</name>
+        <picklistValues>
+            <masterLabel>AdF_Admin</masterLabel>
+            <translation><!-- AdF_Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_BrandIntegration</masterLabel>
+            <translation><!-- AdF_BrandIntegration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_ConceptSales</masterLabel>
+            <translation><!-- AdF_ConceptSales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_Conception</masterLabel>
+            <translation><!-- AdF_Conception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_Director</masterLabel>
+            <translation><!-- AdF_Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_FinanceSteering</masterLabel>
+            <translation><!-- AdF_FinanceSteering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_GF</masterLabel>
+            <translation><!-- AdF_GF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_LicensingSales</masterLabel>
+            <translation><!-- AdF_LicensingSales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_MediaContentManagement</masterLabel>
+            <translation><!-- AdF_MediaContentManagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AdF_ProjektManagement</masterLabel>
+            <translation><!-- AdF_ProjektManagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aer</masterLabel>
+            <translation><!-- Aer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App_ExternalUsers</masterLabel>
+            <translation><!-- App_ExternalUsers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App_TechnicalUsers</masterLabel>
+            <translation><!-- App_TechnicalUsers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto_Controlling</masterLabel>
+            <translation><!-- Auto_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto_Sales</masterLabel>
+            <translation><!-- Auto_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto_Steering</masterLabel>
+            <translation><!-- Auto_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COO</masterLabel>
+            <translation><!-- COO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Com_7CommerceInvestments</masterLabel>
+            <translation><!-- Com_7CommerceInvestments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comm</masterLabel>
+            <translation><!-- Comm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comm_Controlling</masterLabel>
+            <translation><!-- Comm_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comm_Sales</masterLabel>
+            <translation><!-- Comm_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comm_Steering</masterLabel>
+            <translation><!-- Comm_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA</masterLabel>
+            <translation><!-- DA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA_7Innovate</masterLabel>
+            <translation><!-- DA_7Innovate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA_Sales</masterLabel>
+            <translation><!-- DA_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA_Sales_Controlling</masterLabel>
+            <translation><!-- DA_Sales_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA_Sales_Steering</masterLabel>
+            <translation><!-- DA_Sales_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA_StratOps</masterLabel>
+            <translation><!-- DA_StratOps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_AdTech</masterLabel>
+            <translation><!-- Dig_AdTech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_AddressableTV</masterLabel>
+            <translation><!-- Dig_AddressableTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_BusinessIntelligenceProgrammatic</masterLabel>
+            <translation><!-- Dig_BusinessIntelligenceProgrammatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_DisplayPublisher</masterLabel>
+            <translation><!-- Dig_DisplayPublisher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_ECC</masterLabel>
+            <translation><!-- Dig_ECC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_PAM</masterLabel>
+            <translation><!-- Dig_PAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_ProductManagement</masterLabel>
+            <translation><!-- Dig_ProductManagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_ProductMarketing</masterLabel>
+            <translation><!-- Dig_ProductMarketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_SalesManagement</masterLabel>
+            <translation><!-- Dig_SalesManagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_StrategyBusinessDevelopment</masterLabel>
+            <translation><!-- Dig_StrategyBusinessDevelopment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_VBDuesseldorf</masterLabel>
+            <translation><!-- Dig_VBDuesseldorf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_VBFrankfurt</masterLabel>
+            <translation><!-- Dig_VBFrankfurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_VBHamburgBerlin</masterLabel>
+            <translation><!-- Dig_VBHamburgBerlin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dig_VBMuenchenInternational</masterLabel>
+            <translation><!-- Dig_VBMuenchenInternational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital_Sales</masterLabel>
+            <translation><!-- Digital_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund_Investments</masterLabel>
+            <translation><!-- Fund_Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guru</masterLabel>
+            <translation><!-- Guru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guru_Controlling</masterLabel>
+            <translation><!-- Guru_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guru_Sales</masterLabel>
+            <translation><!-- Guru_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guru_Steering</masterLabel>
+            <translation><!-- Guru_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lic</masterLabel>
+            <translation><!-- Lic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lic_Controlling</masterLabel>
+            <translation><!-- Lic_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lic_Sales</masterLabel>
+            <translation><!-- Lic_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lic_Steering</masterLabel>
+            <translation><!-- Lic_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life</masterLabel>
+            <translation><!-- Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life_Controlling</masterLabel>
+            <translation><!-- Life_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life_Steering</masterLabel>
+            <translation><!-- Life_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magic</masterLabel>
+            <translation><!-- Magic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MediaAnalytics</masterLabel>
+            <translation><!-- MediaAnalytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media_SE</masterLabel>
+            <translation><!-- Media_SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NXT</masterLabel>
+            <translation><!-- NXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NXT_Controlling</masterLabel>
+            <translation><!-- NXT_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NXT_Sales</masterLabel>
+            <translation><!-- NXT_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NXT_Steering</masterLabel>
+            <translation><!-- NXT_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1_Applications</masterLabel>
+            <translation><!-- P7S1_Applications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P7S1_InternalAgency</masterLabel>
+            <translation><!-- P7S1_InternalAgency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdBr</masterLabel>
+            <translation><!-- PsdBr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdBr_Controlling</masterLabel>
+            <translation><!-- PsdBr_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdBr_Sales</masterLabel>
+            <translation><!-- PsdBr_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdBr_Steering</masterLabel>
+            <translation><!-- PsdBr_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdDe</masterLabel>
+            <translation><!-- PsdDe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdDe_Controlling</masterLabel>
+            <translation><!-- PsdDe_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdDe_Sales</masterLabel>
+            <translation><!-- PsdDe_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PsdDe_Steering</masterLabel>
+            <translation><!-- PsdDe_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puls4</masterLabel>
+            <translation><!-- Puls4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOM</masterLabel>
+            <translation><!-- SOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SevenVentures</masterLabel>
+            <translation><!-- SevenVentures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevengames_Controlling</masterLabel>
+            <translation><!-- Sevengames_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevengames_Sales</masterLabel>
+            <translation><!-- Sevengames_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevengames_Steering</masterLabel>
+            <translation><!-- Sevengames_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sgn</masterLabel>
+            <translation><!-- Sgn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sgn_Staff</masterLabel>
+            <translation><!-- Sgn_Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomAt</masterLabel>
+            <translation><!-- SomAt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDe</masterLabel>
+            <translation><!-- SomDe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_7Screen</masterLabel>
+            <translation><!-- Som_7Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_7ScreenSales</masterLabel>
+            <translation><!-- Som_7ScreenSales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_AdFactory</masterLabel>
+            <translation><!-- Som_AdFactory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_Controlling</masterLabel>
+            <translation><!-- Som_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_Digital</masterLabel>
+            <translation><!-- Som_Digital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_DigitalCommerceDRTV</masterLabel>
+            <translation><!-- Som_DigitalCommerceDRTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_Geschaeftsfuehrung</masterLabel>
+            <translation><!-- Som_Geschaeftsfuehrung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_MarketIntelligence</masterLabel>
+            <translation><!-- Som_MarketIntelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_MasterUser</masterLabel>
+            <translation><!-- Som_MasterUser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_NewBusiness</masterLabel>
+            <translation><!-- Som_NewBusiness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_SalesInternational</masterLabel>
+            <translation><!-- Som_SalesInternational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_SalesManagement</masterLabel>
+            <translation><!-- Som_SalesManagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_Steering</masterLabel>
+            <translation><!-- Som_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_TVMarketInsights</masterLabel>
+            <translation><!-- Som_TVMarketInsights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_TVMarketing</masterLabel>
+            <translation><!-- Som_TVMarketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_TVSales</masterLabel>
+            <translation><!-- Som_TVSales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_VBDuesseldorf</masterLabel>
+            <translation><!-- Som_VBDuesseldorf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_VBFrankfurt</masterLabel>
+            <translation><!-- Som_VBFrankfurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_VBHamburg</masterLabel>
+            <translation><!-- Som_VBHamburg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Som_VBMuenchen</masterLabel>
+            <translation><!-- Som_VBMuenchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports</masterLabel>
+            <translation><!-- Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports_Controlling</masterLabel>
+            <translation><!-- Sports_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports_Sales</masterLabel>
+            <translation><!-- Sports_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports_Steering</masterLabel>
+            <translation><!-- Sports_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star</masterLabel>
+            <translation><!-- Star --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star_Controlling</masterLabel>
+            <translation><!-- Star_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star_Sales</masterLabel>
+            <translation><!-- Star_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star_Steering</masterLabel>
+            <translation><!-- Star_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>StrategyInvestments</masterLabel>
+            <translation><!-- StrategyInvestments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studio71</masterLabel>
+            <translation><!-- Studio71 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVD</masterLabel>
+            <translation><!-- TVD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVD_CentralMarketing</masterLabel>
+            <translation><!-- TVD_CentralMarketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tra_7TravelInvestments</masterLabel>
+            <translation><!-- Tra_7TravelInvestments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel_Controlling</masterLabel>
+            <translation><!-- Travel_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel_Sales</masterLabel>
+            <translation><!-- Travel_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel_Steering</masterLabel>
+            <translation><!-- Travel_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven</masterLabel>
+            <translation><!-- Ven --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Analyst</masterLabel>
+            <translation><!-- Ven_Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Austria</masterLabel>
+            <translation><!-- Ven_Austria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_BusinessDevelopment</masterLabel>
+            <translation><!-- Ven_BusinessDevelopment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Controlling</masterLabel>
+            <translation><!-- Ven_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Investment_Manager</masterLabel>
+            <translation><!-- Ven_Investment_Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_ManagingDirectors</masterLabel>
+            <translation><!-- Ven_ManagingDirectors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Scout</masterLabel>
+            <translation><!-- Ven_Scout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Staff</masterLabel>
+            <translation><!-- Ven_Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Steering</masterLabel>
+            <translation><!-- Ven_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven_Switzerland</masterLabel>
+            <translation><!-- Ven_Switzerland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>coops</masterLabel>
+            <translation><!-- coops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>coops_Controlling</masterLabel>
+            <translation><!-- coops_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>coops_Sales</masterLabel>
+            <translation><!-- coops_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>coops_Steering</masterLabel>
+            <translation><!-- coops_Steering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maxdome</masterLabel>
+            <translation><!-- maxdome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maxdome_Controlling</masterLabel>
+            <translation><!-- maxdome_Controlling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maxdome_Sales</masterLabel>
+            <translation><!-- maxdome_Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>maxdome_Steering</masterLabel>
+            <translation><!-- maxdome_Steering --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sphäre --></label>
+        <name>P7S1_Sphere__c</name>
+        <picklistValues>
+            <masterLabel>Aer</masterLabel>
+            <translation><!-- Aer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sgn</masterLabel>
+            <translation><!-- Sgn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomAt</masterLabel>
+            <translation><!-- SomAt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SomDe</masterLabel>
+            <translation><!-- SomDe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ven</masterLabel>
+            <translation><!-- Ven --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Startet den Wizard zum Entfernen des Users aus Teams --></help>
+        <label><!-- Starte User Deaktivieren --></label>
+        <name>P7S1_StarteUserDeaktivieren__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync --></label>
+        <name>P7S1_Sync__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mitarbeiter-Team --></help>
+        <label><!-- Mitarbeiter-Team --></label>
+        <name>P7S1_Team__c</name>
+        <relationshipLabel><!-- Mitarbeiter --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>P7S1_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>P7S1_Unit__c</name>
+        <picklistValues>
+            <masterLabel>- No Unit -</masterLabel>
+            <translation><!-- - No Unit - --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12Auto</masterLabel>
+            <translation><!-- 12Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>71M</masterLabel>
+            <translation><!-- 71M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Commerce</masterLabel>
+            <translation><!-- 7Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Games</masterLabel>
+            <translation><!-- 7Games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Life</masterLabel>
+            <translation><!-- 7Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7NXT</masterLabel>
+            <translation><!-- 7NXT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Screen</masterLabel>
+            <translation><!-- 7Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Sports</masterLabel>
+            <translation><!-- 7Sports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Travel</masterLabel>
+            <translation><!-- 7Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7Ventures</masterLabel>
+            <translation><!-- 7Ventures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7coops</masterLabel>
+            <translation><!-- 7coops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aeria</masterLabel>
+            <translation><!-- Aeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App</masterLabel>
+            <translation><!-- App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCO Sales</masterLabel>
+            <translation><!-- CCO Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D&amp;A</masterLabel>
+            <translation><!-- D&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution</masterLabel>
+            <translation><!-- Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensing</masterLabel>
+            <translation><!-- Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M&amp;A</masterLabel>
+            <translation><!-- M&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magic</masterLabel>
+            <translation><!-- Magic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maxdome</masterLabel>
+            <translation><!-- Maxdome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSD Branded Reselling</masterLabel>
+            <translation><!-- PSD Branded Reselling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSD Digital Entertainment</masterLabel>
+            <translation><!-- PSD Digital Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puls4</masterLabel>
+            <translation><!-- Puls4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Starwatch</masterLabel>
+            <translation><!-- Starwatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studio71</masterLabel>
+            <translation><!-- Studio71 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>d&amp;a Sales</masterLabel>
+            <translation><!-- d&amp;a Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>glomex</masterLabel>
+            <translation><!-- glomex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>marktguru</masterLabel>
+            <translation><!-- marktguru --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Benutzer (User) --></label>
+        <name>P7S1_UserLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Typ des Benutzers, zur Unterscheidung von &quot;echten&quot; Benutzers und den unterschiedlichen System-Benutzern (Test, Import, Interface) --></help>
+        <label><!-- User-Typ --></label>
+        <name>P7S1_UserType__c</name>
+        <picklistValues>
+            <masterLabel>System_Import</masterLabel>
+            <translation><!-- System_Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Interface</masterLabel>
+            <translation><!-- System_Interface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System_Tester</masterLabel>
+            <translation><!-- System_Tester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User_external</masterLabel>
+            <translation><!-- User_external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User_internal</masterLabel>
+            <translation><!-- User_internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Benutzer (Person) --></label>
+        <name>P7S1_User__c</name>
+        <relationshipLabel><!-- Mitarbeiter --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Salesforce-Benutzername. Auch in Sandboxen OHNE Zusatz des Sandboxnamens. Die Synchronisierung hängt am User automatisch den Sandboxnamen an. --></help>
+        <label><!-- Benutzername --></label>
+        <name>P7S1_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Windows-Kennung --></label>
+        <name>P7S1_WindowsID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kontaktbericht Teilnehmer von --></label>
+        <name>Som_KontaktberichtTeilnehmerVon__c</name>
+    </fields>
+    <fields>
+        <help><!-- liefert ans DWH die alte ProRex-Id, solange alter DWH-SST nicht umgestellt ist auf Salesforce-Id des Mitarbeiters --></help>
+        <label><!-- Verkäufer-Id --></label>
+        <name>Som_ProRexId__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>P7S1_Emp</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Checks --></label>
+            <section>Checks</section>
+        </sections>
+        <sections>
+            <label><!-- DWH SST --></label>
+            <section>DWH SST</section>
+        </sections>
+        <sections>
+            <label><!-- Firma --></label>
+            <section>Firma</section>
+        </sections>
+        <sections>
+            <label><!-- Rechte --></label>
+            <section>Rechte</section>
+        </sections>
+        <sections>
+            <label><!-- System --></label>
+            <section>System</section>
+        </sections>
+        <sections>
+            <label><!-- Userprüfung --></label>
+            <section>Userprüfung</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>P7S1_Emp_User</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+        <sections>
+            <label><!-- Firma --></label>
+            <section>Firma</section>
+        </sections>
+        <sections>
+            <label><!-- System --></label>
+            <section>System</section>
+        </sections>
+        <sections>
+            <label><!-- Überprüfung --></label>
+            <section>Überprüfung</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Die Pflichtinformationen können nur von Admins bearbeitet werden. --></errorMessage>
+        <name>NonAdminChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Für Synchronisierung muss &quot;Firma&quot; korrekt gefüllt sein und &quot;Firma(Text)&quot; leer sein --></errorMessage>
+        <name>P7S1_CompanyCheck</name>
+    </validationRules>
+    <webLinks>
+        <label>Erstelle Kontakt</label>
+        <name>CRM_Erstelle_Kontakt</name>
+    </webLinks>
+</CustomObjectTranslation>

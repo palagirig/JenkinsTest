@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Werbeträger Gruppierung sind vormals als Marke bekannt und fassen mehrere Werbeträger zusammen, Grundlage für die Zuordnung von IA Nummern und Werbeträgern.
+Dient der Sicherstellung von Konsistenz innerhalb des Buchungstools.</description>
+    <mobileReady>false</mobileReady>
+    <motif>Custom53: Bell</motif>
+</CustomTab>

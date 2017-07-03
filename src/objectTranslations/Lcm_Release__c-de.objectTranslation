@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Sprint</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Sprints</value>
+    </caseValues>
+    <fields>
+        <label><!-- Tickets --></label>
+        <name>Lcm_CaseCountAll__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tickets Dev offen --></label>
+        <name>Lcm_CaseCountDevOpen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dev. relevante Tickets (von Dev_doing bis GoLive_done) --></help>
+        <label><!-- Tickets Dev --></label>
+        <name>Lcm_CaseCountDev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tickets offen --></label>
+        <name>Lcm_CaseCountOpen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Ist-Std. --></label>
+        <name>Lcm_CaseEffortActual__c</name>
+    </fields>
+    <fields>
+        <help><!-- GROBE Aufwandsschätzung in Stunden für die Umsetzung der Sprint-Tickets. --></help>
+        <label><!-- Summe Aufwand Schätzung --></label>
+        <name>Lcm_CaseEffortEstimated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Soll-Std. --></label>
+        <name>Lcm_CaseEffortTarget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Release ist aktuell bezogen auf Start/Ende --></help>
+        <label><!-- aktuell --></label>
+        <name>Lcm_Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ende --></label>
+        <name>Lcm_EndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- verbleibende Tage bis Ende des Releases --></help>
+        <label><!-- verbleibendeTage --></label>
+        <name>Lcm_RemainingDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sprint-Ziel --></label>
+        <name>Lcm_SprintGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>Lcm_StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summe Story Points --></label>
+        <name>Lcm_SumOfStoryPoints__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Sprint-Layout</layout>
+        <sections>
+            <label><!-- Benutzerdefinierte Links --></label>
+            <section>Benutzerdefinierte Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Lcm_Kanban --></label>
+        <name>Lcm_Kanban</name>
+    </webLinks>
+</CustomObjectTranslation>
