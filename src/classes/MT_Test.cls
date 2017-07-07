@@ -6,7 +6,6 @@ public class MT_Test {
   @isTest public static void Init() {
     Account acc = new Account(Name = 'Test');
     insert acc;
-    System.Debug('++++' + acc);
 
     Schema.DescribeFieldResult fieldResult = Opportunity.StageName.getDescribe();
     List<Schema.PicklistEntry> ples = fieldResult.getPicklistValues();

@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -49,6 +45,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -115,25 +112,30 @@
         <fullName>MT_OrderType__c</fullName>
         <externalId>false</externalId>
         <label>Order Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Spot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsoring</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Overbooking</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Spot</fullName>
+                    <default>false</default>
+                    <label>Spot</label>
+                </value>
+                <value>
+                    <fullName>Sponsoring</fullName>
+                    <default>false</default>
+                    <label>Sponsoring</label>
+                </value>
+                <value>
+                    <fullName>Overbooking</fullName>
+                    <default>false</default>
+                    <label>Overbooking</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_ProSaOrderID__c</fullName>
@@ -169,61 +171,74 @@
         <fullName>MT_Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Error</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_Timeslot__c</fullName>
         <externalId>false</externalId>
         <label>Timeslot</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1.[06-09]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2.[09-13]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3.[13-17]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4.[17-20]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5.[20-23]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6.[23-01]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>7.[01-06]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>true</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>1.[06-09]</fullName>
+                    <default>false</default>
+                    <label>1.[06-09]</label>
+                </value>
+                <value>
+                    <fullName>2.[09-13]</fullName>
+                    <default>false</default>
+                    <label>2.[09-13]</label>
+                </value>
+                <value>
+                    <fullName>3.[13-17]</fullName>
+                    <default>false</default>
+                    <label>3.[13-17]</label>
+                </value>
+                <value>
+                    <fullName>4.[17-20]</fullName>
+                    <default>false</default>
+                    <label>4.[17-20]</label>
+                </value>
+                <value>
+                    <fullName>5.[20-23]</fullName>
+                    <default>false</default>
+                    <label>5.[20-23]</label>
+                </value>
+                <value>
+                    <fullName>6.[23-01]</fullName>
+                    <default>false</default>
+                    <label>6.[23-01]</label>
+                </value>
+                <value>
+                    <fullName>7.[01-06]</fullName>
+                    <default>false</default>
+                    <label>7.[01-06]</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Media Broadcast Import Data</label>
     <listViews>
@@ -269,7 +284,7 @@
     <validationRules>
         <fullName>MT_BC_ImportData_EmptyBrutVolume</fullName>
         <active>true</active>
-        <errorConditionFormula>AND(OR(ISBLANK(MT_MB1__c), ISNULL(MT_MB1__c)), OR(ISBLANK(MT_MB3__c), ISNULL(MT_MB3__c)))</errorConditionFormula>
+        <errorConditionFormula>IF(OR(ISBLANK(MT_MB1__c), ISNULL(MT_MB1__c)), IF(OR(ISBLANK(MT_MB3__c), ISNULL(MT_MB3__c)), true, MT_MB3__c &lt; 0), MT_MB1__c &lt; 0)</errorConditionFormula>
         <errorMessage>Bitte einen Wert &gt;=0 in MB1 oder MB3 eintragen</errorMessage>
     </validationRules>
     <validationRules>
@@ -315,20 +330,6 @@
         <errorMessage>Bitte eine ProSa Auftragsnummer hinzufügen.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>MT_BC_ImportData_InvalidMB1Volume</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_MB1__c)), MT_MB1__c &lt; 0)</errorConditionFormula>
-        <errorDisplayField>MT_MB1__c</errorDisplayField>
-        <errorMessage>Bitte einen Wert &gt;=0 eintragen</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_BC_ImportData_InvalidMB3Volume</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_MB3__c)), MT_MB3__c &lt; 0)</errorConditionFormula>
-        <errorDisplayField>MT_MB3__c</errorDisplayField>
-        <errorMessage>Bitte einen Wert &gt;=0 eintragen</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>MT_BC_ImportData_InvalidMonth</fullName>
         <active>true</active>
         <errorConditionFormula>YEAR(MT_Month__c) &lt; 2015 || YEAR(MT_Month__c) &gt; 2099</errorConditionFormula>
@@ -342,6 +343,7 @@
         <errorDisplayField>MT_Timeslot__c</errorDisplayField>
         <errorMessage>Unbekannte Zeitschiene</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>MT_StartTransformation</fullName>
         <availability>online</availability>

@@ -1,1 +1,0 @@
-<apex:page standardController="P7S1_AccountAccess__c" action="{!URLFOR($Action.P7S1_AccountAccess__c.New, null, [Name='autofilled'], true)}" />

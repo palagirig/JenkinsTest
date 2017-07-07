@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -49,6 +45,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -327,13 +324,16 @@
     <fields>
         <fullName>MT_FixRevenue_Type__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_FixRevenueTypes</globalPicklist>
         <label>Fixe Umsatzart</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_FixRevenueTypes</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_FixRevenue_Yield__c</fullName>
@@ -442,7 +442,6 @@
         <lookupFilter>
             <active>true</active>
             <booleanFilter>((1 AND 2) OR (3 AND 4)) AND 5</booleanFilter>
-            <errorMessage>Der ausgewählte Kampagnentyp ist inaktiv oder passt nicht zur Kampagne.</errorMessage>
             <filterItems>
                 <field>MT_MediaCampaignType__c.MT_Type__c</field>
                 <operation>equals</operation>
@@ -657,47 +656,58 @@
         <fullName>MT_Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Draft</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Planning final</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Campaign approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Campaign changed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cancelled</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Completed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>In Approvals</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contract signed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Planning final</fullName>
+                    <default>false</default>
+                    <label>Planning final</label>
+                </value>
+                <value>
+                    <fullName>Campaign approved</fullName>
+                    <default>false</default>
+                    <label>Campaign approved</label>
+                </value>
+                <value>
+                    <fullName>Campaign changed</fullName>
+                    <default>false</default>
+                    <label>Campaign changed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>In Approvals</fullName>
+                    <default>false</default>
+                    <label>In Approvals</label>
+                </value>
+                <value>
+                    <fullName>Contract signed</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Contract signed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_Sys_BuildingBlockMatrix__c</fullName>
@@ -848,13 +858,16 @@
     <fields>
         <fullName>MT_VariableRevenue1_SoldUnit__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 1 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_ProductSalesUnit</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_TotalRevenue__c</fullName>
@@ -909,13 +922,16 @@
     <fields>
         <fullName>MT_VariableRevenue2_SoldUnit__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 2 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_ProductSalesUnit</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_TotalRevenue__c</fullName>
@@ -970,13 +986,16 @@
     <fields>
         <fullName>MT_VariableRevenue3_SoldUnit__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 3 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_ProductSalesUnit</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_TotalRevenue__c</fullName>
@@ -1031,13 +1050,16 @@
     <fields>
         <fullName>MT_VariableRevenue4_SoldUnit__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 4 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_ProductSalesUnit</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_TotalRevenue__c</fullName>
@@ -1092,13 +1114,16 @@
     <fields>
         <fullName>MT_VariableRevenue5_SoldUnit__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 5 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_ProductSalesUnit</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_TotalRevenue__c</fullName>
@@ -1116,13 +1141,16 @@
     <fields>
         <fullName>MT_VariableRevenue_ConsiderationPeriod__c</fullName>
         <externalId>false</externalId>
-        <globalPicklist>MT_YieldConsiderationPeriods</globalPicklist>
         <label>Betrachtungszeitraum Variabler Yield</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MT_YieldConsiderationPeriods</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue_TotalRevenue__c</fullName>
@@ -1177,7 +1205,7 @@
         <active>true</active>
         <label>External Media Campaign</label>
         <picklistValues>
-            <picklist>MT_FixRevenueTypes</picklist>
+            <picklist>MT_FixRevenue_Type__c</picklist>
             <values>
                 <fullName>None</fullName>
                 <default>true</default>
@@ -1188,29 +1216,6 @@
             </values>
             <values>
                 <fullName>Yield</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_ProductSalesUnit</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1246,7 +1251,122 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>MT_YieldConsiderationPeriods</picklist>
+            <picklist>MT_VariableRevenue1_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue2_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue3_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue4_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue5_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue_ConsiderationPeriod__c</picklist>
             <values>
                 <fullName>0 Monate</fullName>
                 <default>false</default>
@@ -1274,7 +1394,7 @@
         <active>true</active>
         <label>Internal Media Campaign</label>
         <picklistValues>
-            <picklist>MT_FixRevenueTypes</picklist>
+            <picklist>MT_FixRevenue_Type__c</picklist>
             <values>
                 <fullName>None</fullName>
                 <default>true</default>
@@ -1285,29 +1405,6 @@
             </values>
             <values>
                 <fullName>Yield</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_ProductSalesUnit</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1343,7 +1440,122 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>MT_YieldConsiderationPeriods</picklist>
+            <picklist>MT_VariableRevenue1_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue2_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue3_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue4_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue5_SoldUnit__c</picklist>
+            <values>
+                <fullName>Abonnenten</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compilation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MT_VariableRevenue_ConsiderationPeriod__c</picklist>
             <values>
                 <fullName>0 Monate</fullName>
                 <default>false</default>
@@ -1755,6 +1967,7 @@ IF( ISBLANK ( MT_VariableRevenue5_SoldAmount__c ) , 0 , 1)
         <errorDisplayField>MT_VariableRevenue5_SoldAmount__c</errorDisplayField>
         <errorMessage>Bitte geben Sie eine Anzahl &gt; 0 ein.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>Request_Approval</fullName>
         <availability>online</availability>

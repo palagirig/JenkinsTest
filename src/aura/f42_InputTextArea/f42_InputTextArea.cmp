@@ -1,3 +1,0 @@
-<aura:component extends="ui:inputTextArea">
-    <aura:attribute name="referenceId" type="String" access="public" />
-</aura:component>
