@@ -113,10 +113,6 @@
         <members>MT_Units</members>
         <members>P7S1_OpportunityApproval_TriggerHandler</members>
         <members>MT_BroadcastImportDataValidator</members>
-        <members>1</members>
-        <members>1</members>
-        <members>1</members>
-        <members>1</members>
         <name>ApexClass</name>
     </types>
     <types>
