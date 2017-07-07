@@ -284,7 +284,7 @@
     <validationRules>
         <fullName>MT_BC_ImportData_EmptyBrutVolume</fullName>
         <active>true</active>
-        <errorConditionFormula>IF(OR(ISBLANK(MT_MB1__c), ISNULL(MT_MB1__c)), IF(OR(ISBLANK(MT_MB3__c), ISNULL(MT_MB3__c)), true, MT_MB3__c &lt; 0), MT_MB1__c &lt; 0)</errorConditionFormula>
+        <errorConditionFormula>AND(OR(ISBLANK(MT_MB1__c), ISNULL(MT_MB1__c)), OR(ISBLANK(MT_MB3__c), ISNULL(MT_MB3__c)))</errorConditionFormula>
         <errorMessage>Bitte einen Wert &gt;=0 in MB1 oder MB3 eintragen</errorMessage>
     </validationRules>
     <validationRules>
@@ -328,6 +328,20 @@
         <errorConditionFormula>OR(ISBLANK(MT_ProSaOrderID__c), ISNULL(MT_ProSaOrderID__c))</errorConditionFormula>
         <errorDisplayField>MT_ProSaOrderID__c</errorDisplayField>
         <errorMessage>Bitte eine ProSa Auftragsnummer hinzufügen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MT_BC_ImportData_InvalidMB1Volume</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(ISBLANK(MT_MB1__c)), MT_MB1__c &lt; 0)</errorConditionFormula>
+        <errorDisplayField>MT_MB1__c</errorDisplayField>
+        <errorMessage>Bitte einen Wert &gt;=0 eintragen</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MT_BC_ImportData_InvalidMB3Volume</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(ISBLANK(MT_MB3__c)), MT_MB3__c &lt; 0)</errorConditionFormula>
+        <errorDisplayField>MT_MB3__c</errorDisplayField>
+        <errorMessage>Bitte einen Wert &gt;=0 eintragen</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>MT_BC_ImportData_InvalidMonth</fullName>

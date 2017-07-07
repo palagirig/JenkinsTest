@@ -14,14 +14,6 @@ public class MT_MediaBIControlData_TriggerHandler extends TriggerController {
     super(isAfter, isBefore, isDelete, isInsert, isUndelete, isUpdate, lstNewItems, mapNewItems, lstOldItems, mapOldItems);
   }
   
-  public override void runBeforeInsert() {
-    
-    for(MT_MediaBroadcastImportControlData__c controlRec : (List<MT_MediaBroadcastImportControlData__c>)lstNewItems){
-        controlRec.Import_Date_Unique__c = String.valueOf(controlRec.MT_ImportDate__c) ;
-    }
-
-  }
-
   public override void runAfterInsert() {
   	
   	for (MT_MediaBroadcastImportControlData__c controlRec : (List<MT_MediaBroadcastImportControlData__c>) lstNewItems){
@@ -29,6 +21,4 @@ public class MT_MediaBIControlData_TriggerHandler extends TriggerController {
 	  }
 
   }
-
-
 }

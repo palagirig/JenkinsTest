@@ -1378,7 +1378,7 @@
         <members>P7S1_Unit__c.MT_ContextFields</members>
         <name>FieldSet</name>
     </types>
-<!--     <types>
+    <types>
         <members>MT_LockOldForecastVersion-1</members>
         <members>MT_MCamp_CopyAccountOwnerUnit-1</members>
         <members>MT_MediaProduct_CopyAccountOwnerUnit-1</members>
@@ -1395,7 +1395,7 @@
         <members>MT_MentionMediaBoardWhenInternalCampaignIsCreated</members>
         <members>MT_UpdateHistory_CopyAccountOwnerUnit</members>
         <name>FlowDefinition</name>
-    </types> -->
+    </types>
     <types>
         <members>MT_FixRevenueTypes</members>
         <members>MT_ProductSalesUnit</members>
@@ -1479,7 +1479,7 @@
         <members>MT_Media_Transparency_Reports/MT_BroadcastImportErrors</members>
         <name>Report</name>
     </types>
-<!--     <types>
+    <types>
         <members>P7S1_Unit__c.MT_12Auto_Unit</members>
         <members>P7S1_Unit__c.MT_71M_DSB_Unit</members>
         <members>P7S1_Unit__c.MT_7Commerce_Unit</members>
@@ -1516,8 +1516,8 @@
         <members>P7S1_Unit__c.MT_marktguru_CampaignOwnerRole</members>
         <members>P7S1_Unit__c.MT_maxdome_CampaignOwnerRole</members>
         <name>SharingOwnerRule</name>
-    </types> -->
-<!--     <types>
+    </types>
+    <types>
         <members>MT_AdvertisedMediaProduct__c</members>
         <members>MT_ForecastValue__c</members>
         <members>MT_ForecastVersion__c</members>
@@ -1530,7 +1530,7 @@
         <members>P7S1_Settings__c</members>
         <members>P7S1_Unit__c</members>
         <name>SharingRules</name>
-    </types> -->
+    </types>
     <types>
         <members>MediaTransparancyDemo_ToDelete</members>
         <members>jasmine2_5_2</members>
@@ -1571,6 +1571,8 @@
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_EmptyMonth</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_EmptyNetVolume</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_EmptyProSaOrderId</members>
+        <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidMB1Volume</members>
+        <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidMB3Volume</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidMonth</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidTimeslot</members>
         <members>MT_MediaBuildingBlockMonthlyPlan__c.MT_BMV_Sponsoring_MUST_BE_POSITIVE</members>

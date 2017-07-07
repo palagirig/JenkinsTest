@@ -136,6 +136,14 @@
         <name>MT_BC_ImportData_EmptyProSaOrderId</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Bitte einen Wert &gt;=0 eintragen --></errorMessage>
+        <name>MT_BC_ImportData_InvalidMB1Volume</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bitte einen Wert &gt;=0 eintragen --></errorMessage>
+        <name>MT_BC_ImportData_InvalidMB3Volume</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Das Jahr liegt außerhalb des zulässigen Bereichs 2015 - 2099. --></errorMessage>
         <name>MT_BC_ImportData_InvalidMonth</name>
     </validationRules>

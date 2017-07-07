@@ -107,39 +107,47 @@
     <nameFieldLabel><!-- Media Broadcast Import Data Name --></nameFieldLabel>
     <startsWith><!-- Consonant --></startsWith>
     <validationRules>
-        <errorMessage><!-- Bitte einen Wert &gt;=0 in MB1 oder MB3 eintragen --></errorMessage>
+        <errorMessage>Please enter a value &gt;= 0 in MB1 or MB3.</errorMessage>
         <name>MT_BC_ImportData_EmptyBrutVolume</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Bitte eine KampagnenID eintragen --></errorMessage>
+        <errorMessage>Please enter a campaign id.</errorMessage>
         <name>MT_BC_ImportData_EmptyCampaignId</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Bitte einen Sendernamen eintragen. --></errorMessage>
+        <errorMessage>Please enter a channel name.</errorMessage>
         <name>MT_BC_ImportData_EmptyChannelName</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Bitte eine Sendernummer eintragen. --></errorMessage>
+        <errorMessage>Please enter a channel number.</errorMessage>
         <name>MT_BC_ImportData_EmptyChannelNumber</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Bitte einen Monat eingeben. --></errorMessage>
+        <errorMessage>Please enter a month.</errorMessage>
         <name>MT_BC_ImportData_EmptyMonth</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Bitte einen Wert &gt;=0 eintragen --></errorMessage>
+        <errorMessage>Please enter a value &gt;= 0.</errorMessage>
         <name>MT_BC_ImportData_EmptyNetVolume</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Bitte eine ProSa Auftragsnummer hinzufügen. --></errorMessage>
+        <errorMessage>Please enter a ProSa order number.</errorMessage>
         <name>MT_BC_ImportData_EmptyProSaOrderId</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Das Jahr liegt außerhalb des zulässigen Bereichs 2015 - 2099. --></errorMessage>
+        <errorMessage>Please enter a value &gt;= 0.</errorMessage>
+        <name>MT_BC_ImportData_InvalidMB1Volume</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Please enter a value &gt;= 0.</errorMessage>
+        <name>MT_BC_ImportData_InvalidMB3Volume</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>The year exceed the allowed range 2015 - 2099.</errorMessage>
         <name>MT_BC_ImportData_InvalidMonth</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Unbekannte Zeitschiene --></errorMessage>
+        <errorMessage>Unknown timeslot.</errorMessage>
         <name>MT_BC_ImportData_InvalidTimeslot</name>
     </validationRules>
     <webLinks>
