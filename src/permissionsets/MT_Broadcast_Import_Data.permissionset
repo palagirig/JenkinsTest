@@ -4950,9 +4950,5 @@
         <tab>MT_MediaBroadcastImportData__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBroadcastImportControlData__c.Import_Date_Unique__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+
 </PermissionSet>
