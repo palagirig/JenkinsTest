@@ -1,8 +1,0 @@
-Hallo {!Opportunity.OwnerFullName},
-
-folgende Opportunity {!Opportunity.Name} wurde durch das D&A Board abgelehnt.
-
-Über folgenden Link erreichen Sie die Opportunity mit der Bitte diesen zu überarbeiten: {!Opportunity.Link}
-
-Mit freundlichen Grüßen
-Ihr SalesForce Team

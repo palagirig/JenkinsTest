@@ -118,7 +118,7 @@ public with sharing class MT_BroadcastImportDataTransformator implements Databas
       String bcdKey = importRecord.MT_ProSaOrderID__c + '-' + monthKey + '-' + importRecord.MT_SenderNumber__c + '-' + importRecord.MT_Timeslot__c;
 
       if (importRecordsByKey.containsKey(bcdKey)) {
-        logError(importRecordsByKey.get(bcdKey), Label.MT_BC_ImportDataTransformator_ERROR_NewerRecordFound, errors, null);
+        logError(importRecordsByKey.get(bcdKey), Label.MT_BC_ImportDataTransformator_ERROR_NewerRecordFound, errors, processedImportRecords);
       }
 
       importRecordsByKey.put(bcdKey, importRecord);
@@ -186,8 +186,16 @@ public with sharing class MT_BroadcastImportDataTransformator implements Databas
 
       if (importRecordsByKey.containsKey(bcdKey)) {
         MT_MediaBroadcastImportData__c importData = importRecordsByKey.get(bcdKey);
+        importRecordsByKey.remove(bcdKey);
+        processedImportRecords.add(importData);
 
-        String sourceField = orders.get(proSaOrderIdsByOrderNumber.get(importData.MT_ProSaOrderID__c)).MT_MediaCampaign_ref__r.MT_MediaCampaignType_ref__r.MT_BMV_SourceField__c;
+        MT_ProSaOrder__c order = extractProSaOrderFromImportData(importData, orders, proSaOrderIdsByOrderNumber, errors, null);
+
+        if (order == null) {
+          continue;
+        }
+
+        String sourceField = order.MT_MediaCampaign_ref__r.MT_MediaCampaignType_ref__r.MT_BMV_SourceField__c;
         Decimal newBrutVolume = sourceField == 'MB1' ? importData.MT_MB1__c : importData.MT_MB3__c;
 
         if (bcd.MT_BMV__c != newBrutVolume || bcd.MT_MN3__c != importData.MT_MN3__c || bcd.MT_LastImportDate__c != importData.MT_LastExport__c) {
@@ -198,9 +206,6 @@ public with sharing class MT_BroadcastImportDataTransformator implements Databas
         } else {
           unchangedRecords++;
         }
-
-        processedImportRecords.add(importData);
-        importRecordsByKey.remove(bcdKey);
       }
     }
 
@@ -209,21 +214,14 @@ public with sharing class MT_BroadcastImportDataTransformator implements Databas
     for (String bcdKey : importRecordsByKey.keySet()) {
       MT_MediaBroadcastImportData__c importData = importRecordsByKey.get(bcdKey);
 
-      if (!proSaOrderIdsByOrderNumber.containsKey(importData.MT_ProSaOrderID__c)) {
-        logError(importData, Label.MT_BC_ImportDataTransformator_ERROR_NoProSaOrderFound, errors, processedImportRecords);
-        continue;
-      }
+      MT_ProSaOrder__c order = extractProSaOrderFromImportData(importData, orders, proSaOrderIdsByOrderNumber, errors, processedImportRecords);
 
-      Id orderId = proSaOrderIdsByOrderNumber.get(importData.MT_ProSaOrderID__c);
-      MT_ProSaOrder__c order = orders.get(orderId);
-
-      if (order.MT_MediaCampaign_ref__r.MT_KRSID__c != importData.MT_CampaignID__c) {
-        logError(importData, Label.MT_BC_ImportDataTransformator_ERROR_ProSaOrderCampaignMismatch, order.MT_MediaCampaign_ref__r, order, errors, processedImportRecords);
+      if (order == null) {
         continue;
       }
 
       String monthKey = importData.MT_Month__c.year() + '-' + importData.MT_Month__c.month();
-      if (!monthlyPlanIdsByProSaOrderId.get(orderId).containsKey(monthKey)) {
+      if (!monthlyPlanIdsByProSaOrderId.get(order.Id).containsKey(monthKey)) {
         logError(importData, Label.MT_BC_ImportDataTransformator_ERROR_MonthOutsideContractRuntime, order.MT_MediaCampaign_ref__r, order, errors, processedImportRecords);
         continue;
       }
@@ -232,7 +230,7 @@ public with sharing class MT_BroadcastImportDataTransformator implements Databas
       Decimal brutVolume = sourceField == 'MB1' ? importData.MT_MB1__c : importData.MT_MB3__c;
 
       insBroadcastData.add(new MT_MediaBroadcastData__c(
-        MT_MonthlyPlan_ref__c = monthlyPlanIdsByProSaOrderId.get(orderId).get(monthKey),
+        MT_MonthlyPlan_ref__c = monthlyPlanIdsByProSaOrderId.get(order.Id).get(monthKey),
         MT_ProSaOrder_ref__c = proSaOrderIdsByOrderNumber.get(importData.MT_ProSaOrderID__c),
         MT_TvSenderNumber__c = Decimal.valueOf(importData.MT_SenderNumber__c),
         MT_BMV__c = brutVolume,
@@ -295,5 +293,25 @@ public with sharing class MT_BroadcastImportDataTransformator implements Databas
     if (processedImportRecords != null) {
       processedImportRecords.add(affected);
     }
+  }
+
+  /**
+   * Validate the prosa order of the given import data record to exist and match the campaign id.
+   */
+  private MT_ProSaOrder__c extractProSaOrderFromImportData(MT_MediaBroadcastImportData__c importData, Map<Id, MT_ProSaOrder__c> orders, Map<String, Id> proSaOrderIdsByOrderNumber, List<MT_MediaBroadcastImportError__c> errors, List<MT_MediaBroadcastImportData__c> processedImportRecords) {
+    if (!proSaOrderIdsByOrderNumber.containsKey(importData.MT_ProSaOrderID__c)) {
+      logError(importData, Label.MT_BC_ImportDataTransformator_ERROR_NoProSaOrderFound, errors, processedImportRecords);
+      return null;
+    }
+
+    Id orderId = proSaOrderIdsByOrderNumber.get(importData.MT_ProSaOrderID__c);
+    MT_ProSaOrder__c order = orders.get(orderId);
+
+    if (order.MT_MediaCampaign_ref__r.MT_KRSID__c != importData.MT_CampaignID__c) {
+      logError(importData, Label.MT_BC_ImportDataTransformator_ERROR_ProSaOrderCampaignMismatch, order.MT_MediaCampaign_ref__r, order, errors, processedImportRecords);
+      return null;
+    }
+
+    return order;
   }
 }

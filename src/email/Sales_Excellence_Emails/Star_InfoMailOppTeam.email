@@ -1,9 +1,0 @@
-Hallo,
-
-Du wurdest von {!OpportunityTeamMember.CreatedBy} ins Opportunity Team der Opportunity {!Opportunity.Name} als Starwatch Produktmanager hinzugefügt.
-{!Opportunity.Link}
-
-Die Opportunity ist auf dem Account {!Account.Name}.
-
-Viele Grüße,
-{!User.Name}

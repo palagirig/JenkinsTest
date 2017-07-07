@@ -1,8 +1,0 @@
-{!ApprovalRequest.Process_Assignee} möchte die Mediakampagne {!ADvendio__MediaCampaign__c.ADvendio__Offer_Number__c} auf Auftrag setzen, obwohl der Rechnungsempfänger {!ADvendio__MediaCampaign__c.ADvendio__invoice_recipient__c} den Inkassostatus "not good" besitzt. Hierfür ist Deine Genehmigung in Salesforce erforderlich bei erfolgter Vorkasse.
-
-Zur Bearbeitung am besten direkt in der Genehmigungsmaske {!ApprovalRequest.Internal_URL} oder über die Themenliste "Genehmigungsverlauf" an der Mediakampagne {!ADvendio__MediaCampaign__c.Link} die Anfrage genehmigen oder ablehnen.
-
-Gruß
-
-
-Salesforce-Support

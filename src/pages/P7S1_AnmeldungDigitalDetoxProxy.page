@@ -1,2 +1,0 @@
-<apex:page controller="P7S1_AnmeldungDigitalDetoxProxyCtrl" action="{!goNext}">
-</apex:page>

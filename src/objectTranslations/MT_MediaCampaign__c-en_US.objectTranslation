@@ -556,14 +556,6 @@
         <name>MT_VariableRevenue5_SoldAmount_MinValue</name>
     </validationRules>
     <webLinks>
-        <label><!-- Open_Business_Planning --></label>
-        <name>Open_Business_Planning</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Open_Flight_Planning --></label>
-        <name>Open_Flight_Planning</name>
-    </webLinks>
-    <webLinks>
         <label><!-- Request_Approval --></label>
         <name>Request_Approval</name>
     </webLinks>

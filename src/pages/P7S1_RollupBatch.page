@@ -1,2 +1,0 @@
-<apex:page controller="P7S1_Rollup" action="{!recalculate}">
-</apex:page>

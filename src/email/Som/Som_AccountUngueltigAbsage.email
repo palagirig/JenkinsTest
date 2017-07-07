@@ -1,8 +1,0 @@
-Lieber {!Account.OwnerFirstName} {!Account.OwnerLastName}, 
-
-Deine Anfrage den Account "{!Account.Name}" ungültig zu setzen wurde soeben final abgelehnt. Der Account bleibt aktiv. 
-
-Hier der Link zum Account: {!Account.Link} 
-
-Gruß 
-Salesforce-Support

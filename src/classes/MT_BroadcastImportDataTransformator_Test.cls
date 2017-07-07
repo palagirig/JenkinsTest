@@ -83,7 +83,7 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
         MT_OpportunityApproval_ref__c = oppApps.get(i).Id,
         MT_MediaCampaignType_ref__c = mct.get(Math.mod(i, 2)).Id,
         MT_BmvTv__c = 1000000,
-        RecordType = campRecordType,
+        RecordTypeId = campRecordType.Id,
         MT_KRSID__c = '0815' + i
       );
       campaigns.add(c);
@@ -141,7 +141,7 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
 
     System.assertEquals(TEST_VOLUME, imported.size());
 
-        /* ensure MB1 / MB3 selection works (it's setup with modulo 2, so even index uses MB3, odd index uses MB1) */
+    /* ensure MB1 / MB3 selection works (it's setup with modulo 2, so even index uses MB3, odd index uses MB1) */
     System.assertEquals(DEFAULT_MB3_VALUE, imported.get(0).MT_BMV__c);
     System.assertEquals(DEFAULT_MN3_VALUE, imported.get(0).MT_MN3__c);
 
@@ -199,7 +199,7 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
 
     List<MT_MediaBroadcastImportData__c> imports = new List<MT_MediaBroadcastImportData__c>();
 
-        /* update to an already existing import record, making the old one obsolete and throw an error*/
+    /* update to an already existing import record, making the old one obsolete and throw an error*/
     imports.add(new MT_MediaBroadcastImportData__c(
       MT_CampaignID__c = c.MT_KRSID__c,
       MT_Status__c = 'New',
@@ -213,7 +213,7 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
       MT_MN3__c = DEFAULT_MN3_VALUE
     ));
 
-        /* outside range */
+    /* outside range */
     imports.add(new MT_MediaBroadcastImportData__c(
       MT_CampaignID__c = c.MT_KRSID__c,
       MT_Status__c = 'New',
@@ -227,7 +227,7 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
       MT_MN3__c = DEFAULT_MN3_VALUE
     ));
 
-        /* invalid prosa order number */
+    /* invalid prosa order number */
     imports.add(new MT_MediaBroadcastImportData__c(
       MT_CampaignID__c = c.MT_KRSID__c,
       MT_Status__c = 'New',
@@ -241,7 +241,7 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
       MT_MN3__c = DEFAULT_MN3_VALUE
     ));
 
-        /* invalid campaign id number */
+    /* invalid campaign id number */
     imports.add(new MT_MediaBroadcastImportData__c(
       MT_CampaignID__c = c.MT_KRSID__c + '1',
       MT_Status__c = 'New',
@@ -264,12 +264,15 @@ public with sharing class MT_BroadcastImportDataTransformator_Test {
 
     Test.stopTest();
 
-        /* order by name (autonumber) - which is insert order */
+    // ensure that all MT_MediaBroadcastImportData records were deleted
+    System.assertEquals(0, [SELECT COUNT() FROM MT_MediaBroadcastImportData__c]);
+
+    /* order by name (autonumber) - which is insert order */
     List<MT_MediaBroadcastImportError__c> errorImports = [SELECT Id, MT_Error__c, MT_MB3__c FROM MT_MediaBroadcastImportError__c ORDER BY Name ASC];
     System.debug(errorImports);
     System.assertEquals(4, errorImports.size());
 
-        /* the older records will be marked as erroneous and ignored, so the basic setup entry will be affected */
+    /* the older records will be marked as erroneous and ignored, so the basic setup entry will be affected */
     System.assertEquals(DEFAULT_MB3_VALUE, errorImports.get(0).MT_MB3__c);
     System.assertEquals(Label.MT_BC_ImportDataTransformator_ERROR_NewerRecordFound, errorImports.get(0).MT_Error__c);
 

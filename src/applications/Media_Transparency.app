@@ -2,7 +2,6 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <customApplicationComponents>
         <alignment>right</alignment>
-        <customApplicationComponent>MediaTransperancyGlobalComponent</customApplicationComponent>
         <customApplicationComponent>Console.BuiltInComponent.mostRecentlyUsed</customApplicationComponent>
     </customApplicationComponents>
     <defaultLandingTab>standard-home</defaultLandingTab>

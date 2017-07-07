@@ -1,5 +1,0 @@
-Die Inhaberschaft im Account {!Account.Name} hat sich geändert.
-Hier der Link zum Account: {!Account.Link}
-
-Alter Inhaber: {!Account.Ven_Alter_Account_Inhaber__c}
-Neuer Inhaber: {!Account.Ven_Aktueller_Account_Inhaber__c}

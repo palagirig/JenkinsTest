@@ -499,12 +499,4 @@
         <errorMessage><!-- Dieses Feld ist ein Pflichtfeld, bitte tragen Sie etwas ein. --></errorMessage>
         <name>MT_SLMDifferenceFieldRequired</name>
     </validationRules>
-    <webLinks>
-        <label>Businessplan öffnen</label>
-        <name>Open_Business_Planning</name>
-    </webLinks>
-    <webLinks>
-        <label>Flightplan öffnen</label>
-        <name>Open_Flight_Planning</name>
-    </webLinks>
 </CustomObjectTranslation>

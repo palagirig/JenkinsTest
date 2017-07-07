@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <customButtons>Open_Business_Planning</customButtons>
-    <customButtons>Open_Flight_Planning</customButtons>
     <customButtons>Request_Approval</customButtons>
-    <customConsoleComponents>
-        <subtabComponents>
-            <containers>
-                <height>100</height>
-                <isContainerAutoSizeEnabled>false</isContainerAutoSizeEnabled>
-                <region>Top</region>
-                <sidebarComponents>
-                    <componentType>VisualForcePage</componentType>
-                    <page>MT_Combined_ConsoleComp</page>
-                    <unit>Percentage</unit>
-                    <width>100</width>
-                </sidebarComponents>
-                <style>Stack</style>
-                <unit>Pixel</unit>
-            </containers>
-        </subtabComponents>
-    </customConsoleComponents>
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
@@ -382,7 +363,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h6E000000IiXh</masterLabel>
+        <masterLabel>00h9E000000JhS5</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>2</sizeY>
         <summaryLayoutItems>

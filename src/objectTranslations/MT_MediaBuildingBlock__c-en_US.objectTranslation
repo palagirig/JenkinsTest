@@ -498,12 +498,4 @@
         <errorMessage>This field is required.</errorMessage>
         <name>MT_SLMDifferenceFieldRequired</name>
     </validationRules>
-    <webLinks>
-        <label><!-- Open_Business_Planning --></label>
-        <name>Open_Business_Planning</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Open_Flight_Planning --></label>
-        <name>Open_Flight_Planning</name>
-    </webLinks>
 </CustomObjectTranslation>

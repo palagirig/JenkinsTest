@@ -1,1 +1,0 @@
-*** BENACHRICHTIGUNG: NEUER LEAD ZUGEORDNET ***  Der folgende Lead wird Ihnen zugeordnet.   Firma:  {!Lead.Company}  Leadname:  {!Lead.Name}    Klicken Sie auf den Link, um direkt auf den Lead zuzugreifen:  {!Lead.Link}

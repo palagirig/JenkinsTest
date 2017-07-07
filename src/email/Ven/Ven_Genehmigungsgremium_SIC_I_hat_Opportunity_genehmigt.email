@@ -1,6 +1,0 @@
-Hallo {!Opportunity.OwnerFullName},
-
-folgende Opportunity {!Opportunity.Name} wurde durch das Genehmigungsgremium SIC I genehmigt.
-
-Mit freundlichen Grüßen
-Ihr SalesForce Team

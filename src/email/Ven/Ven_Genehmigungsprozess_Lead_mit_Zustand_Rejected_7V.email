@@ -1,4 +1,0 @@
-Folgender Lead zur Firma {!Lead.Company} wurde zur erneuten Genehmigung eingereicht.
-Der Ausgangsstatus des Lead war "Rejected 7V".
-
-Hier der Link zum Lead: https://emea.salesforce.com/{!Lead.Id}

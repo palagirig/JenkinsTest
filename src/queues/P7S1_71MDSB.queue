@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
-    <doesSendEmailToMembers>false</doesSendEmailToMembers>
-    <name>71M DSB</name>
-    <queueSobject>
-        <sobjectType>P7S1_OpportunityApproval__c</sobjectType>
-    </queueSobject>
-</Queue>

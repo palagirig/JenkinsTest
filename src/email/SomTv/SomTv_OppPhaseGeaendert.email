@@ -1,7 +1,0 @@
-Liebes Ad Commitment Controlling Team,
-
-Die Opportunity:
-{!Opportunity.SomTv_Jahr__c}_{!Opportunity.SomTv_Plattform__c}_{!Opportunity.RecordType}_{!Opportunity.Account}_{!Opportunity.SomTv_Agenturverbund__c}_{!Opportunity.SomTv_Agentur__c}_{!Opportunity.SomTv_Laufende_Nummer_ProCommit__c}_{!Opportunity.StageName}. 
-wurde geschlossen oder Rabatt freigegeben
-
-{!Opportunity.Link}

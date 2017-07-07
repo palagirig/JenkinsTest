@@ -1,7 +1,0 @@
-Die Inhaberschaft in der Opportunity {!Opportunity.Name} hat sich geändert.
-Hier der Link zur Opportunity: {!Opportunity.Link} 
-
-Alter Inhaber: {!Opportunity.P7S1_OldOwnerEmail__c}
-Neuer Inhaber: {!Opportunity.P7S1_CurrentOwnerEmail__c}
-
-Geändert durch: {!Opportunity.LastModifiedBy}

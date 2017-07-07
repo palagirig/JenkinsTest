@@ -1,6 +1,0 @@
-Hallo {!Opportunity.OwnerFullName},
-
-folgende Opportunity {!Opportunity.Name} wurde durch das D&A Board freigegeben.
-
-Mit freundlichen Grüßen
-Ihr SalesForce Team
