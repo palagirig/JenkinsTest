@@ -21,6 +21,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -46,7 +50,6 @@
     <description>Media Broadcast Import Control Data object will have a single record summarizing the total number of records and their value totals for each of the data load by external integrating system</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -217,5 +220,4 @@
         <errorDisplayField>MT_SumMN3__c</errorDisplayField>
         <errorMessage>Sum of MN3 is empty or &lt; 0</errorMessage>
     </validationRules>
-    <visibility>Public</visibility>
 </CustomObject>

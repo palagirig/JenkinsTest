@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CanUseRevenueSchedule</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DisplayUrl</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ExternalDataSourceId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>OOI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Misc</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Je</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AdFerloesrelevant__c</fullName>
+        <description>TA gesteuert</description>
+        <externalId>false</externalId>
+        <label>AdF erlösrelevant</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_GAausserhalbCommitment__c</fullName>
+        <description>Geschäftsart außerhalb Commitment / Zubuchung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Geschäftsart außerhalb Commitment / Zubuchung</inlineHelpText>
+        <label>GA außerhalb Commitment/Zubuchung</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_GAinnerhalbCommitment__c</fullName>
+        <description>Geschäftsart innerhalb Commitment / Zubuchung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Geschäftsart innerhalb Commitment / Zubuchung</inlineHelpText>
+        <label>GA innerhalb Commitment/Zubuchung</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ManuellNichtKonvergent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>manuell</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_PaketExtra__c</fullName>
+        <description>Geschäftsarten für Pakete Extra und Diverse (außerhalb Commitment)
+Kunde / Konzern exkl. Agentur</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Geschäftsarten für Pakete Extra und Diverse (außerhalb Commitment)
+Kunde / Konzern exkl. Agentur</inlineHelpText>
+        <label>GA Paket Extra / Diverse</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1105 DRTV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1107 Gegengeschäft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1115 Paket Extra Standard Spot 12Min</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1121 Paket Extra SpecialAds 12Min</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1122 Paket Extra SpecialAds Non12Min</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1139 Freispot / Goodwill Inflation / Panel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1177 Wahlwerbung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1180 Sonstige Erlöse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1184 Wunschplatzierung Spotkontigent P7S1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1189 Sonstiges</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1191 Restwerbezeit klassisch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1192 Restwerbezeit Special Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1194 Spotkontigent P7S1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1195 Barter-Agentur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1195 Sondervolumen-Agentur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkthierarchieebene1__c</fullName>
+        <externalId>false</externalId>
+        <label>Produkthierarchieebene 1</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1. Sponsoring</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2. Splits/Spots</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3. Placements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4. Promostory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5. Gewinnspiele</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6. Lizenzierung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7. Testimonial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8. Online</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9. Content Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10. Produktionskosten</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkthierarchieebene2__c</fullName>
+        <externalId>false</externalId>
+        <label>Produkthierarchieebene 2</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1.1 Program Sponsoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.2 Trailersponsoring A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.4 Icon-/ Grafiksponsoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1 Splits</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.2 Spots</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkthierarchieebene3__c</fullName>
+        <externalId>false</externalId>
+        <label>Produkthierarchieebene 3</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2.1.1 Cut-In</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2 Single-Split (auch Single-Split weather oder News-Countdown)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.3 Trailer-Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.4 Programm-Split (auch LiveProgram Split)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.5 Pre-Split (u.a. MoveSplit/Diary)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.6 Highlight-Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.7 Abspann-Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.2.1 Sender-Spot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkthierarchieebene4__c</fullName>
+        <externalId>false</externalId>
+        <label>Produkthierarchieebene 4</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2.1.2.1 Single-Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.2 Single-Split Weather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.3 Single-Split News Countdown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkthierarchieebene_5__c</fullName>
+        <description>5. Ebene der Produkte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>5. Ebene der Produkte</inlineHelpText>
+        <label>Produkthierarchieebene 5</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2.1.2.1.1 Individualität I: Single Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.1.2 Individualität II: Single Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.1.3 Individualität III: Single Split</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.2.1 Individualität I: Weather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.2.2 Individualität II: Weather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.3.1 Individualität I: News-Countdown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1.2.3.2 Individualität II: News-Countdown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Rabattierfaehig__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Gliedert AdFactory Produkte nach grundsätzlicher Rabattierfähigkeit.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gliedert AdFactory Produkte nach grundsätzlicher Rabattierfähigkeit.</inlineHelpText>
+        <label>rabattierfähig</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_SpecialAds12Min__c</fullName>
+        <description>Geschäftsart Special Ads 12 Min</description>
+        <externalId>false</externalId>
+        <label>Special Ads 12 Min</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_SpecialAdsNon12Min__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Geschäftsarten Special Ads non 12 Min - Paket extra</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Geschäftsarten Special Ads non 12 Min - Paket extra</inlineHelpText>
+        <label>Special Ads non 12 Min</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_SpecialAdsRelevant__c</fullName>
+        <description>TA gesteuert</description>
+        <externalId>false</externalId>
+        <label>Special Ads relevant</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_TAGesamt__c</fullName>
+        <externalId>false</externalId>
+        <label>TA gesamt</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Adf_aktiv</fullName>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>SomTv_AdFerloesrelevant__c</columns>
+        <columns>SomTv_GAausserhalbCommitment__c</columns>
+        <columns>SomTv_Produkthierarchieebene1__c</columns>
+        <columns>SomTv_Produkthierarchieebene2__c</columns>
+        <columns>SomTv_Produkthierarchieebene3__c</columns>
+        <columns>SomTv_SpecialAdsNon12Min__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomTv_Produkthierarchieebene1__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Adf aktiv</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Alle</fullName>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>SomTv_AdFerloesrelevant__c</columns>
+        <columns>SomTv_GAausserhalbCommitment__c</columns>
+        <columns>SomTv_Produkthierarchieebene1__c</columns>
+        <columns>SomTv_Produkthierarchieebene2__c</columns>
+        <columns>SomTv_Produkthierarchieebene3__c</columns>
+        <columns>SomTv_SpecialAdsNon12Min__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

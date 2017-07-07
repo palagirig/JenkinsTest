@@ -21,6 +21,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -45,7 +49,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -131,16 +134,13 @@
     <fields>
         <fullName>MT_FixRevenue_Type__c</fullName>
         <externalId>false</externalId>
+        <globalPicklist>MT_FixRevenueTypes</globalPicklist>
         <label>Fixe Umsatzart</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_FixRevenueTypes</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_OpportunityId__c</fullName>
@@ -287,16 +287,13 @@
     <fields>
         <fullName>MT_VariableRevenue1_SoldUnit__c</fullName>
         <externalId>false</externalId>
+        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 1 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_TotalRevenue__c</fullName>
@@ -351,16 +348,13 @@
     <fields>
         <fullName>MT_VariableRevenue2_SoldUnit__c</fullName>
         <externalId>false</externalId>
+        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 2 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_TotalRevenue__c</fullName>
@@ -415,16 +409,13 @@
     <fields>
         <fullName>MT_VariableRevenue3_SoldUnit__c</fullName>
         <externalId>false</externalId>
+        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 3 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_TotalRevenue__c</fullName>
@@ -479,16 +470,13 @@
     <fields>
         <fullName>MT_VariableRevenue4_SoldUnit__c</fullName>
         <externalId>false</externalId>
+        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 4 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_TotalRevenue__c</fullName>
@@ -543,16 +531,13 @@
     <fields>
         <fullName>MT_VariableRevenue5_SoldUnit__c</fullName>
         <externalId>false</externalId>
+        <globalPicklist>MT_ProductSalesUnit</globalPicklist>
         <label>Var. Umsatz 5 - Verkaufseinheit</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_TotalRevenue__c</fullName>
@@ -585,22 +570,19 @@
         <fullName>MT_Variable_Yield_Type__c</fullName>
         <externalId>false</externalId>
         <label>Variable Yield Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Revenue Share</fullName>
+                <default>true</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Revenue Share</fullName>
-                    <default>true</default>
-                    <label>Revenue Share</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>P7S1_AccountOwnerUnitCopy__c</fullName>
@@ -683,36 +665,30 @@
         <fullName>P7S1_ApprovalState__c</fullName>
         <externalId>false</externalId>
         <label>Genehmigungsstatus</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Eingereicht</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Diskussion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Genehmigt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abgelehnt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Eingereicht</fullName>
-                    <default>false</default>
-                    <label>Eingereicht</label>
-                </value>
-                <value>
-                    <fullName>In Diskussion</fullName>
-                    <default>false</default>
-                    <label>In Diskussion</label>
-                </value>
-                <value>
-                    <fullName>Genehmigt</fullName>
-                    <default>false</default>
-                    <label>Genehmigt</label>
-                </value>
-                <value>
-                    <fullName>Abgelehnt</fullName>
-                    <default>false</default>
-                    <label>Abgelehnt</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>P7S1_Approved71MDSB__c</fullName>
@@ -1025,26 +1001,22 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <externalId>false</externalId>
         <inlineHelpText>Fallen die qualitativen Kriterien unter die bestehenden CCO Board Rahmenfreigaben?</inlineHelpText>
         <label>CCO Freigabe</label>
+        <picklist>
+            <picklistValues>
+                <fullName>keine Rahmenfreigabe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rahmenfreigabe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>keine Rahmenfreigabe</fullName>
-                    <default>false</default>
-                    <label>keine Rahmenfreigabe</label>
-                </value>
-                <value>
-                    <fullName>Rahmenfreigabe</fullName>
-                    <default>false</default>
-                    <label>Rahmenfreigabe</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>P7S1_CashYieldTvCustomerIntegration__c</fullName>
@@ -2140,166 +2112,134 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <fullName>P7S1_internerPartner__c</fullName>
         <externalId>false</externalId>
         <label>interner Partner</label>
+        <picklist>
+            <picklistValues>
+                <fullName>12Auto Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7NXT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7Sports</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advopedia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amorelie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comvel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Discavo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>etraveli</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>fem (sixx)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flaconi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gymondo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Magic Internet Holding</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marktguru</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>maxdome</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>moebel.de</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>mydays</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>P7S1 Digital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>P7S1 Licensing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>P7S1 PayTV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>preis24.de</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SilverTours</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>sonstiger</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Starwatch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Studio 71</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stylight GmbH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>tropo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TVRL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Valmano</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Verivox</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>wetter.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>true</sorted>
-                <value>
-                    <fullName>12Auto Group</fullName>
-                    <default>false</default>
-                    <label>12Auto Group</label>
-                </value>
-                <value>
-                    <fullName>7NXT</fullName>
-                    <default>false</default>
-                    <label>7NXT</label>
-                </value>
-                <value>
-                    <fullName>7Sports</fullName>
-                    <default>false</default>
-                    <label>7Sports</label>
-                </value>
-                <value>
-                    <fullName>Advopedia</fullName>
-                    <default>false</default>
-                    <label>Advopedia</label>
-                </value>
-                <value>
-                    <fullName>Amorelie</fullName>
-                    <default>false</default>
-                    <label>Amorelie</label>
-                </value>
-                <value>
-                    <fullName>Comvel</fullName>
-                    <default>false</default>
-                    <label>Comvel</label>
-                </value>
-                <value>
-                    <fullName>Discavo</fullName>
-                    <default>false</default>
-                    <label>Discavo</label>
-                </value>
-                <value>
-                    <fullName>etraveli</fullName>
-                    <default>false</default>
-                    <label>etraveli</label>
-                </value>
-                <value>
-                    <fullName>fem (sixx)</fullName>
-                    <default>false</default>
-                    <label>fem (sixx)</label>
-                </value>
-                <value>
-                    <fullName>Flaconi</fullName>
-                    <default>false</default>
-                    <label>Flaconi</label>
-                </value>
-                <value>
-                    <fullName>Gymondo</fullName>
-                    <default>false</default>
-                    <label>Gymondo</label>
-                </value>
-                <value>
-                    <fullName>Magic Internet Holding</fullName>
-                    <default>false</default>
-                    <label>Magic Internet Holding</label>
-                </value>
-                <value>
-                    <fullName>Marktguru</fullName>
-                    <default>false</default>
-                    <label>Marktguru</label>
-                </value>
-                <value>
-                    <fullName>maxdome</fullName>
-                    <default>false</default>
-                    <label>maxdome</label>
-                </value>
-                <value>
-                    <fullName>moebel.de</fullName>
-                    <default>false</default>
-                    <label>moebel.de</label>
-                </value>
-                <value>
-                    <fullName>mydays</fullName>
-                    <default>false</default>
-                    <label>mydays</label>
-                </value>
-                <value>
-                    <fullName>P7S1 Digital</fullName>
-                    <default>false</default>
-                    <label>P7S1 Digital</label>
-                </value>
-                <value>
-                    <fullName>P7S1 Licensing</fullName>
-                    <default>false</default>
-                    <label>P7S1 Licensing</label>
-                </value>
-                <value>
-                    <fullName>P7S1 PayTV</fullName>
-                    <default>false</default>
-                    <label>P7S1 PayTV</label>
-                </value>
-                <value>
-                    <fullName>preis24.de</fullName>
-                    <default>false</default>
-                    <label>preis24.de</label>
-                </value>
-                <value>
-                    <fullName>SilverTours</fullName>
-                    <default>false</default>
-                    <label>SilverTours</label>
-                </value>
-                <value>
-                    <fullName>sonstiger</fullName>
-                    <default>false</default>
-                    <label>sonstiger</label>
-                </value>
-                <value>
-                    <fullName>Starwatch</fullName>
-                    <default>false</default>
-                    <label>Starwatch</label>
-                </value>
-                <value>
-                    <fullName>Studio 71</fullName>
-                    <default>false</default>
-                    <label>Studio 71</label>
-                </value>
-                <value>
-                    <fullName>Stylight GmbH</fullName>
-                    <default>false</default>
-                    <label>Stylight GmbH</label>
-                </value>
-                <value>
-                    <fullName>tropo</fullName>
-                    <default>false</default>
-                    <label>tropo</label>
-                </value>
-                <value>
-                    <fullName>TVRL</fullName>
-                    <default>false</default>
-                    <label>TVRL</label>
-                </value>
-                <value>
-                    <fullName>Valmano</fullName>
-                    <default>false</default>
-                    <label>Valmano</label>
-                </value>
-                <value>
-                    <fullName>Verivox</fullName>
-                    <default>false</default>
-                    <label>Verivox</label>
-                </value>
-                <value>
-                    <fullName>wetter.com</fullName>
-                    <default>false</default>
-                    <label>wetter.com</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>P7S1_sonstigerInternerPartner__c</fullName>
@@ -2789,7 +2729,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <active>true</active>
         <label>External Campaign Opportunity Approval</label>
         <picklistValues>
-            <picklist>MT_FixRevenue_Type__c</picklist>
+            <picklist>MT_FixRevenueTypes</picklist>
             <values>
                 <fullName>None</fullName>
                 <default>true</default>
@@ -2804,99 +2744,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>MT_VariableRevenue1_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue2_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue3_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue4_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue5_SoldUnit__c</picklist>
+            <picklist>MT_ProductSalesUnit</picklist>
             <values>
                 <fullName>Abonnenten</fullName>
                 <default>false</default>
@@ -3080,7 +2928,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <active>true</active>
         <label>Internal Campaign Opportunity Approval</label>
         <picklistValues>
-            <picklist>MT_FixRevenue_Type__c</picklist>
+            <picklist>MT_FixRevenueTypes</picklist>
             <values>
                 <fullName>None</fullName>
                 <default>true</default>
@@ -3095,99 +2943,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>MT_VariableRevenue1_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue2_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue3_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue4_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue5_SoldUnit__c</picklist>
+            <picklist>MT_ProductSalesUnit</picklist>
             <values>
                 <fullName>Abonnenten</fullName>
                 <default>false</default>
@@ -3832,7 +3588,6 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
         <errorDisplayField>P7S1_sonstigerInternerPartner__c</errorDisplayField>
         <errorMessage>Bitte sonstigen internen Partner genauer beschreiben</errorMessage>
     </validationRules>
-    <visibility>Public</visibility>
     <webLinks>
         <fullName>MT_ViewMediaCampaign</fullName>
         <availability>online</availability>

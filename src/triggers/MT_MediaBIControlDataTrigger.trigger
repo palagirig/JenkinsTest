@@ -1,7 +1,7 @@
 /************************************************************************************************************
 Name:  		MT_MediaBIControlDataTrigger
 ======================================================
-Purpose: To trigger a data import batch job 
+Purpose: To trigger a data import batch job
 ======================================================
 History
 -------

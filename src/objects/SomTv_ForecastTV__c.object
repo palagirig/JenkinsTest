@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>SomTv_ForecastTVOverrideNEW</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Ganzjährige Eingabe des Forecasts  für TV</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>SomTV_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Forecasts TV</relationshipLabel>
+        <relationshipName>Forecasts_TV</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Agentur__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Zugehörige Agentur für die dieser Forecast erstellt wird</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zugehörige Agentur für die dieser Forecast erstellt wird</inlineHelpText>
+        <label>Agentur</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Forecast TV (Agentur)</relationshipLabel>
+        <relationshipName>Forecast_TV</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_CheckOneForecastPerYear__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Automatically filled and checked on uniqueness
+One Forecast per account per year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically filled and checked on uniqueness
+One Forecast per account per year</inlineHelpText>
+        <label>Check One Forecast per Year</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastCommitmentsKernsenderMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast Commitments Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastDifferenzKernsender__c</fullName>
+        <description>Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die Kernsender an. 
+Forecast TV - Opportunities</description>
+        <externalId>false</externalId>
+        <formula>SomTv_ForecastKernsenderMNGesamt__c - SomTv_OpptiAJGesamt__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die Kernsender an. 
+Forecast TV - Opportunities</inlineHelpText>
+        <label>Gap Kernsender</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastDifferenzNeueSender__c</fullName>
+        <description>Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die neuen Sendera an. 
+Forecast TV - Opportunities</description>
+        <externalId>false</externalId>
+        <formula>SomTv_SummeForecastNeueSenderMN3__c - SomTv_OpptiAJNeueSender__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die Differenz des Forecast TV zu den aktuellen Opportunities des laufenden Jahres für die neuen Sendera an. 
+Forecast TV - Opportunities</inlineHelpText>
+        <label>Gap Neue Sender</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastK1DokuMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast K1 Doku MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastKernsenderMNGesamt__c</fullName>
+        <description>Summe aus Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3)</description>
+        <externalId>false</externalId>
+        <formula>SomTv_ForecastCommitmentsKernsenderMN3__c + SomTv_ForecastPaketeKernsenderMN3__c + SomTv_ForecastZubuchungKernsenderMN3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe aus Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3)</inlineHelpText>
+        <label>Summe Forecast Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastPaketeKernsenderMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast Pakete Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastPro7MAXXMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast Pro7 MAXX MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastSAT1GOLDMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast SAT.1 GOLD MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastTVfueraktuellesJahr__c</fullName>
+        <description>Zeigt an, ob dieser Forecast TV für das aktuelle Jahr gilt</description>
+        <externalId>false</externalId>
+        <formula>YEAR ( DATE ( VALUE ( TEXT ( SomTv_Jahr__c ) ) , 1 , 1 ) ) = YEAR ( TODAY() )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt an, ob dieser Forecast TV für das aktuelle Jahr gilt</inlineHelpText>
+        <label>Forecast TV für aktuelles Jahr</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastZubuchungKernsenderMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast Zubuchung Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ForecastsixxMN3__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecast sixx MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_GeheZuOppListe__c</fullName>
+        <description>Öffne Liste der Opportunities dieses Accounts in eigenem Fenster oder Tab.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &apos;/006?rlid=RelatedOpportunityList&amp;id=&apos; &amp;  SomTV_Account__c , &apos;Opportunity Liste&apos;, &apos;_blank&apos; )</formula>
+        <inlineHelpText>Öffne Liste der Opportunities dieses Accounts in eigenem Fenster oder Tab.</inlineHelpText>
+        <label>Gehe zu</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Information__c</fullName>
+        <description>Erläuterungen für Delta von Forecast zu Opportunities</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Erläuterungen für Delta von Forecast zu Opportunities</inlineHelpText>
+        <label>Information</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SomTv_Jahr__c</fullName>
+        <description>Bitte das Jahr auswählen, für das der Forecast gilt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Jahr auswählen, für das der Forecast gilt</inlineHelpText>
+        <label>Jahr</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2013</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2017</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2018</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJCommitment__c</fullName>
+        <description>Summe der Opportunities Commitments Kernsender (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiAJCommitment__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Commitments Kernsender (MN3) aus dem Account</inlineHelpText>
+        <label>Opps Commitment Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJGesamt__c</fullName>
+        <description>Summe aus Opportunities Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3)</description>
+        <externalId>false</externalId>
+        <formula>SomTv_OpptiAJCommitment__c + SomTv_OpptiAJPakete__c + SomTv_OpptiAJZubuchung__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe aus Opportunities Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3)</inlineHelpText>
+        <label>Summe Opportunities Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJK1Doku__c</fullName>
+        <description>Summe der Opportunities K1 Doku (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiK1Doku__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities K1 Doku (MN3) aus dem Account</inlineHelpText>
+        <label>Opportunities K1 Doku MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJNeueSender__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiAJNeueSender__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Summe Opps Neue Sender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJP7MAXX__c</fullName>
+        <description>Summe der Opportunities P7 MAXX (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiP7MAXX__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities P7 MAXX (MN3) aus dem Account</inlineHelpText>
+        <label>Opportunities P7 MAXX MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJPakete__c</fullName>
+        <description>Summe der Opportunities Pakete Kernsender (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiAJPaket__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Pakete Kernsender (MN3) aus dem Account</inlineHelpText>
+        <label>Opps Pakete Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJZubuchung__c</fullName>
+        <description>Summe der Opportunities Zubuchung  Kernsender (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiAJZubuchung__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Zubuchung  Kernsender (MN3) aus dem Account</inlineHelpText>
+        <label>Opps Zubuchung Kernsender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiAJsixx__c</fullName>
+        <description>Summe der Opportunities sixx (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_Opptisixx__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities sixx (MN3) aus dem Account</inlineHelpText>
+        <label>Opportunities sixx MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiSat1GOLD__c</fullName>
+        <description>Summe der Opportunities Sat.1 GOLD (MN3) aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiSat1GOLD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Sat.1 GOLD (MN3) aus dem Account</inlineHelpText>
+        <label>Opportunities Sat.1 GOLD MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJCommitment__c</fullName>
+        <description>Summe der Opportunities Commitments Kernsender (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJCommitment__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Commitments Kernsender (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opps Commitments Kernsender Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJGesamt__c</fullName>
+        <description>Summe aus Opportunities Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3) des Vorjahrs</description>
+        <externalId>false</externalId>
+        <formula>SomTv_OpptiVJCommitment__c + SomTv_OpptiVJPaket__c + SomTv_OpptiVJZubuchung__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe aus Opportunities Commitments Kernsender, Zubuchung Kernsender und Paketen (MN3) des Vorjahrs</inlineHelpText>
+        <label>Summe Opportunities Kernsender VJ MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJK1Doku__c</fullName>
+        <description>Summe der Opportunities K1 Doku (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJK1Doku__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities K1 Doku (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opportunities K1 Doku Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJNeueSender__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJNeueSender__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Summe Opps Neue Sender Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJP7MAXX__c</fullName>
+        <description>Summe der Opportunities P7 MAXX (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJP7MAXX__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities P7 MAXX (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opportunities P7 MAXX Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJPaket__c</fullName>
+        <description>Summe der Opportunities Pakete (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJPaket__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Pakete (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opps Pakete Kernsender Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJSat1GOLD__c</fullName>
+        <description>Summe der Opportunities Sat.1 GOLD (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJSat1GOLD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Sat.1 GOLD (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opportunities Sat.1 GOLD Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJZubuchung__c</fullName>
+        <description>Summe der Opportunities Zubuchung Kernsender (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJZubuchung__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities Zubuchung Kernsender (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opps Zubuchung Kernsender Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpptiVJsixx__c</fullName>
+        <description>Summe der Opportunities sixx (MN3) des Vorjahres aus dem Account</description>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJsixx__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe der Opportunities sixx (MN3) des Vorjahres aus dem Account</inlineHelpText>
+        <label>Opportunities sixx Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_RelevantAgency__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.P7S1_RelevantAgency__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Relevante Agentur</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_SummeForecastNeueSenderMN3__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_SummeForecastNeueSenderMN3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Summe Forecast Neue Sender MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>omTv_OpptiVJNeueSender__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTV_Account__r.SomTv_OpptiVJNeueSender__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Summe Opps Neue Sender Vorjahr MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Forecast TV</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SomTV_Account__c</columns>
+        <columns>SomTv_Jahr__c</columns>
+        <columns>SomTv_ForecastCommitmentsKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastPaketeKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastZubuchungKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastK1DokuMN3__c</columns>
+        <columns>SomTv_ForecastPro7MAXXMN3__c</columns>
+        <columns>SomTv_ForecastSAT1GOLDMN3__c</columns>
+        <columns>SomTv_ForecastsixxMN3__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Forecast TV</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Forecast_TV_aktuelles_Jahr</fullName>
+        <columns>NAME</columns>
+        <columns>SomTV_Account__c</columns>
+        <columns>SomTv_Jahr__c</columns>
+        <columns>SomTv_ForecastCommitmentsKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastPaketeKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastZubuchungKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastK1DokuMN3__c</columns>
+        <columns>SomTv_ForecastPro7MAXXMN3__c</columns>
+        <columns>SomTv_ForecastSAT1GOLDMN3__c</columns>
+        <columns>SomTv_ForecastsixxMN3__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomTv_ForecastTVfueraktuellesJahr__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Alle Forecast TV aktuelles Jahr</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Forecast_TV_aktuelles_Jahr</fullName>
+        <columns>NAME</columns>
+        <columns>SomTV_Account__c</columns>
+        <columns>SomTv_Jahr__c</columns>
+        <columns>SomTv_ForecastPaketeKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastCommitmentsKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastZubuchungKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastK1DokuMN3__c</columns>
+        <columns>SomTv_ForecastPro7MAXXMN3__c</columns>
+        <columns>SomTv_ForecastSAT1GOLDMN3__c</columns>
+        <columns>SomTv_ForecastsixxMN3__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>SomTv_ForecastTVfueraktuellesJahr__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Meine Forecast TV aktuelles Jahr</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>SomTV_FCTVMitAgentur</fullName>
+        <columns>NAME</columns>
+        <columns>SomTv_Agentur__c</columns>
+        <columns>SomTV_Account__c</columns>
+        <columns>SomTv_Jahr__c</columns>
+        <columns>SomTv_ForecastCommitmentsKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastPaketeKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastZubuchungKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastK1DokuMN3__c</columns>
+        <columns>SomTv_ForecastPro7MAXXMN3__c</columns>
+        <columns>SomTv_ForecastSAT1GOLDMN3__c</columns>
+        <columns>SomTv_ForecastsixxMN3__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomTv_ForecastTVfueraktuellesJahr__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Alle Forecast TV Ansicht mit Agentur</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>SOM</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SomTv_AllFC</fullName>
+        <columns>NAME</columns>
+        <columns>SomTV_Account__c</columns>
+        <columns>SomTv_Jahr__c</columns>
+        <columns>SomTv_ForecastCommitmentsKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastPaketeKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastZubuchungKernsenderMN3__c</columns>
+        <columns>SomTv_ForecastK1DokuMN3__c</columns>
+        <columns>SomTv_ForecastPro7MAXXMN3__c</columns>
+        <columns>SomTv_ForecastSAT1GOLDMN3__c</columns>
+        <columns>SomTv_ForecastsixxMN3__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Forecast TV</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Forecast TV</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Forecast TV</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SomTv_Jahr__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_ForecastKernsenderMNGesamt__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_OpptiAJGesamt__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_ForecastDifferenzKernsender__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_OpptiVJGesamt__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_SummeForecastNeueSenderMN3__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_OpptiAJNeueSender__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_ForecastDifferenzNeueSender__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomTv_OpptiVJNeueSender__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>SomTv_Jahr__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomTv_ForecastDifferenzKernsender__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomTv_ForecastDifferenzNeueSender__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomTv_Information__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>SomTv_NeuerForecastTV</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Neuer Forecast TV</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a4E/e
+?Name=wird+automatisch+gefuellt
+&amp;00N57000006I8MD={!TEXT(YEAR(TODAY()))}
+&amp;retURL=%2F{!Account.Id}
+&amp;CF00N57000006I8M2_lkid={!Account.Id}
+&amp;CF00N57000006I8M2={!Account.Name}
+&amp;nooverride=true</url>
+    </webLinks>
+</CustomObject>

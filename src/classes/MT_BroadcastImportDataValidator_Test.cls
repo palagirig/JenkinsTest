@@ -3,6 +3,10 @@
  */
 @IsTest
 private class MT_BroadcastImportDataValidator_Test {
+  private final static String MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD = 'createNewSystemEmailFor';
+  private final static String MT_SYSTEMEMAIL_SUBJECT_METHOD = 'subject';
+  private final static String MT_SYSTEMEMAIL_PLAINTEXTBODY_METHOD = 'plainTextBody';
+  private final static String MT_SYSTEMEMAIL_SENDEMAIL_METHOD = 'sendEmail';
 
   @IsTest
   public static void testConstructorEmptyControl() {
@@ -84,163 +88,181 @@ private class MT_BroadcastImportDataValidator_Test {
 
   @IsTest
   public static void testFinishWithError() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
+
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
 
     MT_BroadcastImportDataValidator validator = new MT_BroadcastImportDataValidator(createControlRecord());
     validator.errorOccurred = true;
     validator.caughtException = new MT_BroadcastImportDataValidator.MT_BroadcastImportDataValidatorException('test exception');
 
-    Test.startTest();
+    // startTest
     validator.finish(null);
-    Test.stopTest();
+    // stopTest
 
-    // FIXME assert that error email is sent out
-    // FIXME assert that error email is correct
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert(jobs.size() == jobsAfter.size(), 'Transformator batch job has been called although an error occurred!');
+    mock.assertMethodWasCalled(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, 1);
+    MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+    mock.assertMethodWasCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD, 1);
+
+    mock.assertMethodWasCalled(new MethodCall(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, MT_SystemEmail.class, new List<Type>{Id.class}, new List<String>(), new List<Object>{UserInfo.getUserId()}));
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_SUBJECT_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedSubject}));
+    String body = String.format(System.Label.MT_BC_ImportDataControl_ERROR_ValidationExceptionBody, new List<String> {
+      validator.caughtException.getMessage(),
+      validator.caughtException.getStackTraceString()
+    });
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_PLAINTEXTBODY_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{body}));
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 0, 'Transformator batch job has been called although an error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithCountMismatch() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
 
-    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(21, 0, 0, 0);
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
+
+    Integer expectedCount = 21;
+    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(expectedCount, 0, 0, 0);
     MT_BroadcastImportDataValidator validator = new MT_BroadcastImportDataValidator(ctrlRec);
 
     validator.recordCount = 17;
 
-    Test.startTest();
+    // startTest
     validator.finish(null);
-    Test.stopTest();
+    // stopTest
 
+    mock.assertMethodWasCalled(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, 1);
+    MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+    mock.assertMethodWasCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD, 1);
 
-    // FIXME assert that email is sent out
-    // FIXME assert that email is correct
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert(jobs.size() == jobsAfter.size(), 'Transformator batch job has been called although an error occurred!');
+    mock.assertMethodWasCalled(new MethodCall(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, MT_SystemEmail.class, new List<Type>{Id.class}, new List<String>(), new List<Object>{UserInfo.getUserId()}));
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_SUBJECT_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedSubject}));
+    String body = String.format(System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedBody, new List<String> {
+      String.valueOf(expectedCount), String.valueOf(validator.recordCount),
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(0), String.valueOf(0)
+    });
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_PLAINTEXTBODY_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{body}));
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 0, 'Transformator batch job has been called although an error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithMB1SumMismatch() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
 
-    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(0, 9876.543, 0, 0);
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
+
+    Decimal expectedSum = 9876.543;
+    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(0, expectedSum, 0, 0);
     MT_BroadcastImportDataValidator validator = new MT_BroadcastImportDataValidator(ctrlRec);
 
     validator.mb1Sum = 12345.678;
 
-    Test.startTest();
+    // startTest
     validator.finish(null);
-    Test.stopTest();
+    // stopTest
 
+    mock.assertMethodWasCalled(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, 1);
+    MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+    mock.assertMethodWasCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD, 1);
 
-    // FIXME assert that email is sent out
-    // FIXME assert that email is correct
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert(jobs.size() == jobsAfter.size(), 'Transformator batch job has been called although an error occurred!');
+    mock.assertMethodWasCalled(new MethodCall(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, MT_SystemEmail.class, new List<Type>{Id.class}, new List<String>(), new List<Object>{UserInfo.getUserId()}));
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_SUBJECT_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedSubject}));
+    String body = String.format(System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedBody, new List<String> {
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(expectedSum), String.valueOf(validator.mB1Sum),
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(0), String.valueOf(0)
+    });
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_PLAINTEXTBODY_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{body}));
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 0, 'Transformator batch job has been called although an error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithMB3SumMismatch() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
 
-    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(0, 0, 9876.543, 0);
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
+
+    Decimal expectedSum = 9876.543;
+    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(0, 0, expectedSum, 0);
     MT_BroadcastImportDataValidator validator = new MT_BroadcastImportDataValidator(ctrlRec);
 
     validator.mb3Sum = 12345.678;
 
-    Test.startTest();
+    // startTest
     validator.finish(null);
-    Test.stopTest();
+    // stopTest
 
+    mock.assertMethodWasCalled(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, 1);
+    MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+    mock.assertMethodWasCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD, 1);
 
-    // FIXME assert that email is sent out
-    // FIXME assert that email is correct
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert(jobs.size() == jobsAfter.size(), 'Transformator batch job has been called although an error occurred!');
+    mock.assertMethodWasCalled(new MethodCall(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, MT_SystemEmail.class, new List<Type>{Id.class}, new List<String>(), new List<Object>{UserInfo.getUserId()}));
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_SUBJECT_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedSubject}));
+    String body = String.format(System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedBody, new List<String> {
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(expectedSum), String.valueOf(validator.mB3Sum),
+      String.valueOf(0), String.valueOf(0)
+    });
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_PLAINTEXTBODY_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{body}));
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 0, 'Transformator batch job has been called although an error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithMN3Mismatch() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
 
-    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(0, 0, 0, 9876.543);
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
+
+    Decimal expectedSum = 9876.543;
+    MT_MediaBroadcastImportControlData__c ctrlRec = createControlRecord(0, 0, 0, expectedSum);
     MT_BroadcastImportDataValidator validator = new MT_BroadcastImportDataValidator(ctrlRec);
 
     validator.mn3Sum = 12345.678;
 
+    // start test
     validator.finish(null);
+    // stop test
 
+    mock.assertMethodWasCalled(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, 1);
+    MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+    mock.assertMethodWasCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD, 1);
 
-    // FIXME assert that email is sent out
-    // FIXME assert that email is correct
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert(jobs.size() == jobsAfter.size(), 'Transformator batch job has been called although an error occurred!');
+    mock.assertMethodWasCalled(new MethodCall(MT_SystemEmailFactory.getInstance(), MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD, MT_SystemEmail.class, new List<Type>{Id.class}, new List<String>(), new List<Object>{UserInfo.getUserId()}));
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_SUBJECT_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedSubject}));
+    String body = String.format(System.Label.MT_BC_ImportDataControl_ERROR_ValidationFailedBody, new List<String> {
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(0), String.valueOf(0),
+      String.valueOf(expectedSum), String.valueOf(validator.mn3Sum)
+    });
+    mock.assertMethodWasCalled(new MethodCall(mail, MT_SYSTEMEMAIL_PLAINTEXTBODY_METHOD, MT_SystemEmail.class, new List<Type>{String.class}, new List<String>(), new List<Object>{body}));
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 0, 'Transformator batch job has been called although an error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithRoundingUp() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
+
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
 
     final String numbers = '0.5555555555555555555555555555555555555555555555555';
 
@@ -261,27 +283,26 @@ private class MT_BroadcastImportDataValidator_Test {
     validator.mb3Sum = Decimal.valueOf(numbers.left(2 + mb3Scale));
     validator.mn3Sum = Decimal.valueOf(numbers.left(2 + mn3Scale));
 
+    // startTest
     validator.finish(null);
+    // stopTest
 
-    // FIXME assert that no email is sent out
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert((jobs.size() + 1) == jobsAfter.size(), 'Transformator batch job has not been called although no error occurred!');
+    if (mock.invocations.containsKey(MT_SystemEmailFactory.getInstance()) &&
+        mock.invocations.get(MT_SystemEmailFactory.getInstance()).containsKey(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD)) {
+      MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+      mock.assertMethodWasNotCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD);
+    }
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 1, 'Transformator batch job has not been called although no error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithRoundingDown() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
+
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
 
     final String numbers = '0.44444444444444444444444444444444444444444444';
 
@@ -302,48 +323,47 @@ private class MT_BroadcastImportDataValidator_Test {
     validator.mb3Sum = Decimal.valueOf(numbers.left(2 + mb3Scale));
     validator.mn3Sum = Decimal.valueOf(numbers.left(2 + mn3Scale));
 
+    // startTest
     validator.finish(null);
+    // stopTest
 
-    // FIXME assert that no email is sent out
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert((jobs.size() + 1) == jobsAfter.size(), 'Transformator batch job has not been called although no error occurred!');
+    if (mock.invocations.containsKey(MT_SystemEmailFactory.getInstance()) &&
+      mock.invocations.get(MT_SystemEmailFactory.getInstance()).containsKey(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD)) {
+      MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+      mock.assertMethodWasNotCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD);
+    }
+
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 1, 'Transformator batch job has not been called although no error occurred!');
   }
 
 
   @IsTest
   public static void testFinishWithTransformerInvocation() {
-    List<AsyncApexJob> jobs = [SELECT Id
-                                 FROM AsyncApexJob
-                                WHERE JobType = 'BatchApex'
-                                  AND Status IN ('Holding', 'Queued')
-                                  AND ApexClass.NamespacePrefix = null
-                                  AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
+    MockProvider mock = new MockProvider();
+    MT_SystemEmailFactory.INSTANCE = (MT_SystemEmailFactory) Test.createStub(MT_SystemEmailFactory.class, mock);
+
+    Integer noOfOldJobs = getNumberOfPendingTransformatorJobs();
 
     MT_BroadcastImportDataValidator validator = new MT_BroadcastImportDataValidator(createControlRecord());
 
+    // startTest
     validator.finish(null);
+    // stopTest
 
+    if (mock.invocations.containsKey(MT_SystemEmailFactory.getInstance()) &&
+      mock.invocations.get(MT_SystemEmailFactory.getInstance()).containsKey(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD)) {
+      MT_SystemEmail mail = (MT_SystemEmail) mock.invocations.get(MT_SystemEmailFactory.getInstance()).get(MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD).get(0).returnValue;
+      mock.assertMethodWasNotCalled(mail, MT_SYSTEMEMAIL_SENDEMAIL_METHOD);
+    }
 
-    // FIXME assert that no email is sent out
-
-    List<AsyncApexJob> jobsAfter = [SELECT Id
-                                      FROM AsyncApexJob
-                                     WHERE JobType = 'BatchApex'
-                                       AND Status IN ('Holding', 'Queued')
-                                       AND ApexClass.NamespacePrefix = null
-                                       AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()];
-    System.assert((jobs.size() + 1) == jobsAfter.size(), 'Transformator batch job has not been invoked');
+    assertNumberOfNewTransformatorJobs(noOfOldJobs, 1, 'Transformator batch job has not been invoked');
   }
 
 
   private static MT_MediaBroadcastImportControlData__c createControlRecord() {
     return createControlRecord(0, 0, 0, 0);
   }
+
 
   private static MT_MediaBroadcastImportControlData__c createControlRecord(Integer recCount, Decimal sumMB1, Decimal sumMB3, Decimal sumMN3) {
     return new MT_MediaBroadcastImportControlData__c(
@@ -353,5 +373,124 @@ private class MT_BroadcastImportDataValidator_Test {
         MT_SumMB3__c = sumMB3,
         MT_SumMN3__c = sumMN3
     );
+  }
+
+
+  private static Integer getNumberOfPendingTransformatorJobs() {
+    return [SELECT Id
+              FROM AsyncApexJob
+             WHERE JobType = 'BatchApex'
+               AND Status IN ('Holding', 'Queued')
+               AND ApexClass.NamespacePrefix = null
+               AND ApexClass.Name = :MT_BroadcastImportDataTransformator.class.getName()].size();
+  }
+
+
+  private static void assertNumberOfNewTransformatorJobs(Integer numberOfOldJobs, Integer numberOfNewJobs, String msg) {
+    System.assertEquals(numberOfOldJobs + numberOfNewJobs, getNumberOfPendingTransformatorJobs(), msg);
+  }
+
+
+
+  /**
+   * Provides mocks for testing the validator in terms of
+   * email handling.
+   */
+  private class MockProvider implements System.StubProvider {
+    /**
+     * Maps the stubbed Object instance to a map of method
+     * invocations (method name -> invocations).
+     */
+    private Map<Object,Map<String,List<MT_BroadcastImportDataValidator_Test.MethodCall>>> invocations = new Map<Object,Map<String,List<MT_BroadcastImportDataValidator_Test.MethodCall>>>();
+
+
+    public Object handleMethodCall(Object stubbedObject, String stubbedMethodName, Type returnType, List<Type> listOfParamTypes, List<String> listOfParamNames, List<Object> listOfArgs) {
+      if (!invocations.containsKey(stubbedObject)) {
+        invocations.put(stubbedObject, new Map<String,List<MT_BroadcastImportDataValidator_Test.MethodCall>>());
+      }
+      MT_BroadcastImportDataValidator_Test.MethodCall mc = new MethodCall(stubbedObject, stubbedMethodName, returnType, listOfParamTypes, listOfParamNames, listOfArgs);
+      if (!invocations.get(stubbedObject).containsKey(stubbedMethodName)) {
+        invocations.get(stubbedObject).put(stubbedMethodName, new List<MT_BroadcastImportDataValidator_Test.MethodCall>());
+      }
+      invocations.get(stubbedObject).get(stubbedMethodName).add(mc);
+
+      if (stubbedObject instanceof MT_SystemEmailFactory) {
+        if (stubbedMethodName == MT_SYSTEMEMAILFACTORY_CREATE_MAIL_METHOD) {
+          Object retVal = Test.createStub(returnType, this);
+          mc.returnValue = retVal;
+          return retVal;
+        }
+      } else if (stubbedObject instanceof MT_SystemEmail) {
+        mc.returnValue = stubbedObject;
+        return stubbedObject;
+      }
+      return null;
+    }
+
+
+    private void assertMethodWasCalled(Object stubbedObject, String stubbedMethodName) {
+      System.assertEquals(true, invocations.containsKey(stubbedObject), 'Stubbed object "' + stubbedObject + '" was never used');
+      System.assertEquals(true, invocations.get(stubbedObject).containsKey(stubbedMethodName), 'method "' + stubbedMethodName + '" on object "' + stubbedObject + '" was never called');
+    }
+
+    private void assertMethodWasNotCalled(Object stubbedObject, String stubbedMethodName) {
+      if (invocations.containsKey(stubbedObject)) {
+        System.assertEquals(false, invocations.get(stubbedObject).containsKey(stubbedMethodName), 'method "' + stubbedMethodName + '" on object "' + stubbedObject + '" was called');
+      }
+    }
+
+    private void assertMethodWasCalled(Object stubbedObject, String stubbedMethodName, Integer numberOfCalls) {
+      if (numberOfCalls == 0) {
+        assertMethodWasNotCalled(stubbedMethodName, stubbedMethodName);
+      } else {
+        assertMethodWasCalled(stubbedObject, stubbedMethodName);
+        System.assertEquals(numberOfCalls, invocations.get(stubbedObject).get(stubbedMethodName).size(), 'method "' + stubbedMethodName + '" on object "' + stubbedObject + '" was called invalid number of times');
+      }
+    }
+
+    private void assertMethodWasCalled(MT_BroadcastImportDataValidator_Test.MethodCall call) {
+      assertMethodWasCalled(call.obj, call.methodName);
+      for (MT_BroadcastImportDataValidator_Test.MethodCall callTest : invocations.get(call.obj).get(call.methodName)) {
+        if (callTest.equals(call)) {
+          return;
+        }
+      }
+      System.assertEquals(true, false, 'method "' + call.methodName + '" on object "' + call.obj + '" was never called with the provided parameters: ' + call);
+    }
+  }
+
+
+  /**
+   * Container for a mocked method call.
+   */
+  private class MethodCall {
+    private Object obj;
+    private String methodName;
+    private Type returnType;
+    private List<Type> paramTypes;
+    private List<String> paramNames;
+    private List<Object> paramValues;
+
+    private Object returnValue;
+
+    private MethodCall(Object obj, String methodName, Type returnType, List<Type> paramTypes, List<String> paramNames, List<Object> paramValues) {
+      this.obj = obj;
+      this.methodName = methodName;
+      this.returnType = returnType;
+      this.paramTypes = paramTypes;
+      this.paramNames = paramNames;
+      this.paramValues = paramValues;
+    }
+
+    public Boolean equals(Object obj) {
+      MethodCall other = (MT_BroadcastImportDataValidator_Test.MethodCall) obj;
+      return this.obj.equals(other.obj) &&
+        this.methodName.equals(other.methodName) &&
+        this.returnType.equals(other.returnType) &&
+        this.paramTypes.equals(other.paramTypes) &&
+        //this.paramNames.equals(other.paramNames) &&
+        this.paramValues.equals(other.paramValues);
+      // do not compare return value, as this is only an internal reference
+    }
   }
 }

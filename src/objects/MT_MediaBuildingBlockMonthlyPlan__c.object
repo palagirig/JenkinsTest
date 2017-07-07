@@ -21,6 +21,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -46,7 +50,6 @@
     <description>Track monthly distribution of the volume of a specific media channel used by a campaign</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -1008,5 +1011,4 @@
         <errorConditionFormula>MT_NoSpotFlights__c &gt; 5</errorConditionFormula>
         <errorMessage>Only 5 Spot Flights can be created per month</errorMessage>
     </validationRules>
-    <visibility>Public</visibility>
 </CustomObject>

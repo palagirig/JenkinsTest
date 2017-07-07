@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>ADvendio__BillingRun</links>
+    <links>ADvendio__CancelInvoiceItems</links>
+    <links>SomDig_ErstellteRechnungen</links>
+    <links>SomDig_ErstellteRechnungslaeufe</links>
+    <links>SomDig_PAMRechnungfreigabe</links>
+    <links>SomDig_BillingRechnungfreigabeBericht</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

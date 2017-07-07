@@ -112,6 +112,11 @@
         <members>MT_UnitService_Test</members>
         <members>MT_Units</members>
         <members>P7S1_OpportunityApproval_TriggerHandler</members>
+        <members>MT_BroadcastImportDataValidator</members>
+        <members>1</members>
+        <members>1</members>
+        <members>1</members>
+        <members>1</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -1159,6 +1164,12 @@
         <members>P7S1_Settings__c.MT_ExternalCampaignOppAppRecordTypeID__c</members>
         <members>P7S1_Settings__c.MT_InternalCampaignOppAppRecordTypeID__c</members>
         <members>P7S1_Unit__c.P7S1_Segment__c</members>
+        <members>MT_MediaBroadcastImportControlData__c.Import_Date_Unique__c</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_ImportDate__c</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_RecordCount__c</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_SumMB1__c</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_SumMB3__c</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_SumMN3__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -1274,6 +1285,7 @@
         <members>P7S1_OpportunityApproval__c</members>
         <members>P7S1_Settings__c</members>
         <members>P7S1_Unit__c</members>
+        <members>MT_MediaBroadcastImportControlData__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -1378,7 +1390,7 @@
         <members>P7S1_Unit__c.MT_ContextFields</members>
         <name>FieldSet</name>
     </types>
-    <types>
+<!--     <types>
         <members>MT_LockOldForecastVersion-1</members>
         <members>MT_MCamp_CopyAccountOwnerUnit-1</members>
         <members>MT_MediaProduct_CopyAccountOwnerUnit-1</members>
@@ -1395,7 +1407,7 @@
         <members>MT_MentionMediaBoardWhenInternalCampaignIsCreated</members>
         <members>MT_UpdateHistory_CopyAccountOwnerUnit</members>
         <name>FlowDefinition</name>
-    </types>
+    </types> -->
     <types>
         <members>MT_FixRevenueTypes</members>
         <members>MT_ProductSalesUnit</members>
@@ -1479,7 +1491,7 @@
         <members>MT_Media_Transparency_Reports/MT_BroadcastImportErrors</members>
         <name>Report</name>
     </types>
-    <types>
+<!--     <types>
         <members>P7S1_Unit__c.MT_12Auto_Unit</members>
         <members>P7S1_Unit__c.MT_71M_DSB_Unit</members>
         <members>P7S1_Unit__c.MT_7Commerce_Unit</members>
@@ -1516,8 +1528,8 @@
         <members>P7S1_Unit__c.MT_marktguru_CampaignOwnerRole</members>
         <members>P7S1_Unit__c.MT_maxdome_CampaignOwnerRole</members>
         <name>SharingOwnerRule</name>
-    </types>
-    <types>
+    </types> -->
+<!--     <types>
         <members>MT_AdvertisedMediaProduct__c</members>
         <members>MT_ForecastValue__c</members>
         <members>MT_ForecastVersion__c</members>
@@ -1530,7 +1542,7 @@
         <members>P7S1_Settings__c</members>
         <members>P7S1_Unit__c</members>
         <name>SharingRules</name>
-    </types>
+    </types> -->
     <types>
         <members>MediaTransparancyDemo_ToDelete</members>
         <members>jasmine2_5_2</members>
@@ -1571,8 +1583,6 @@
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_EmptyMonth</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_EmptyNetVolume</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_EmptyProSaOrderId</members>
-        <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidMB1Volume</members>
-        <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidMB3Volume</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidMonth</members>
         <members>MT_MediaBroadcastImportData__c.MT_BC_ImportData_InvalidTimeslot</members>
         <members>MT_MediaBuildingBlockMonthlyPlan__c.MT_BMV_Sponsoring_MUST_BE_POSITIVE</members>
@@ -1747,6 +1757,11 @@
         <members>P7S1_OpportunityApproval__c.P7S1_OppFreigabePflichtfeldNetBarterVol</members>
         <members>P7S1_OpportunityApproval__c.P7S1_OppFreigabePflichtfeldTvSpotLenCust</members>
         <members>P7S1_OpportunityApproval__c.P7S1_OppFreigabePflichtfeldTvSpotLength</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_BroadcastImportControlData_validation</members>
+        <members>MT_MediaBroadcastImportControlData__c.MT_RecordCount_Validation</members>
+        <members>MT_MediaBroadcastImportControlData__c.Sum_MB1_Validation</members>
+        <members>MT_MediaBroadcastImportControlData__c.Sum_MB3_Validation</members>
+        <members>MT_MediaBroadcastImportControlData__c.Sum_MN3_Validation</members>
         <name>ValidationRule</name>
     </types>
     <types>

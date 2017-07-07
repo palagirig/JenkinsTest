@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Fasst alle Prognosen auf Basis der Werbetreibenden und Agenturen auch wenn es eine 1:n Beziehung ist</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>SomDig_AccountBeziehungsname__c</fullName>
+        <description>Name bestehend aus Kombi WT und AG</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_BeziehungAccountname__c</formula>
+        <inlineHelpText>Name bestehend aus Kombi WT und AG</inlineHelpText>
+        <label>Account Beziehungsname</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Agentur__c</fullName>
+        <description>Welcher Account ist die Agentur (Info kommt aus WT AG Beziehung)</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_Agentur__r.Name</formula>
+        <inlineHelpText>Welcher Account ist der Agentur (Info kommt aus WT AG Beziehung)</inlineHelpText>
+        <label>Agentur</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Inhaber__c</fullName>
+        <description>Welcher Benutzer ist Inhaber der Prognose (gleich Benutzer/Inhaber der WT AG Beziehung)</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_BeziehungInhaber__r.FirstName &amp; &quot; &quot; &amp;  SomDig_WtAgBeziehung__r.SomDig_BeziehungInhaber__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Welcher Benutzer ist Inhaber der Prognose (gleich Benutzer/Inhaber der WT AG Beziehung)</inlineHelpText>
+        <label>Inhaber</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Jahr__c</fullName>
+        <description>Für welches Geschäftsjahr gilt diese Prognose?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Für welches Geschäftsjahr gilt diese Prognose?</inlineHelpText>
+        <label>gültig für Geschäftsjahr</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2017</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2018</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MedDiffGesamt__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomDig_MedDiffInPage__c + SomDig_MedDiffInStream__c + SomDig_MedDiffRest__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Prognose Gesamt aus Mediagattungs-Diff.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MedDiffInPage__c</fullName>
+        <description>Prognose/Forecast-Wert für diesen Account im Bereich InPage des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognose/Forecast-Wert für diesen Account im Bereich InPage des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose InPage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MedDiffInStream__c</fullName>
+        <description>Prognose/Forecast-Wert für diesen Account im Bereich InStream des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognose/Forecast-Wert für diesen Account im Bereich InStream des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose InStream</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MedDiffRest__c</fullName>
+        <description>Kumulierter Prognose/Forecast-Wert für diesen Account im Bereich Digital Tv + Media Aufwand des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Prognose/Forecast-Wert für diesen Account im Bereich Digital Tv + Media Aufwand des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose DigitalTV (inkl. Mediaaufwand)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseGesamt__c</fullName>
+        <description>Summe aller Quartalswerte MN2</description>
+        <externalId>false</externalId>
+        <formula>SomDig_PrognoseQ1__c  +  SomDig_PrognoseQ2__c + SomDig_PrognoseQ3__c  +  SomDig_PrognoseQ4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Summe aller Quartalswerte MN2</inlineHelpText>
+        <label>Prognose gesamt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ1__c</fullName>
+        <description>Prognose/Forecast-Wert für diesen Account  im Quartal 1 des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognose/Forecast-Wert für diesen Account  im Quartal 1 des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose Q1</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ2__c</fullName>
+        <description>Prognose/Forecast-Wert für diesen Account  im Quartal 2 des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognose/Forecast-Wert für diesen Account  im Quartal 2 des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose Q2</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ3__c</fullName>
+        <description>Prognose/Forecast-Wert für diesen Account  im Quartal 3 des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognose/Forecast-Wert für diesen Account  im Quartal 3 des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose Q3</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ4__c</fullName>
+        <description>Prognose/Forecast-Wert für diesen Account  im Quartal 4 des aktuellen Kalender-/ Geschäftsjahr (MN2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognose/Forecast-Wert für diesen Account  im Quartal 4 des aktuellen Kalender-/ Geschäftsjahr (MN2).</inlineHelpText>
+        <label>Prognose Q4</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_RelativesJahrHelp__c</fullName>
+        <description>Wobei handelt es sich um das in der Prognose ausgewählt Geschäftsjahr, ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb der Betrachtung. Dynamisches Infofeld zum Jahreswechsel. Dient dazu, in Formeln/RollUps nicht immer die Jahre wechseln zu müssen. Ist ein Hilffeld, um Feld &quot;relatives Jahr&quot; per WF zu befüllen (dieses Formelfeld kann in den RollUps nicht als Kriteriumswert ausgewählt werden)</description>
+        <externalId>false</externalId>
+        <formula>CASE( 
+
+Value(Text(SomDig_Jahr__c)), Year(Today()), &quot;AJ&quot;, Year(Today())-1, &quot;VJ&quot; , Year(Today())+1, &quot;NJ&quot;
+ 
+,&quot;out of scope&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Wobei handelt es sich um das in der Prognose ausgewählt Geschäftsjahr, ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb der Betrachtung.</inlineHelpText>
+        <label>relatives Jahr help</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_RelativesJahr__c</fullName>
+        <description>Wobei handelt es sich hierbei um das in der Prognose ausgewählt Geschäftsjahr: ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Dynamisches Infofeld zum Jahreswechsel. Dient dazu, in Formeln/RollUps nicht immer die Jahre wechseln zu müssen. Wird per Workflow/Feldaktualisierung befüllt, Basis ist Feld &quot;SomDig_RelativesJahrHelp&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wobei handelt sich hierbei um das in der Prognose ausgewählt Geschäftsjahr: zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Wird automatisch befüllt.</inlineHelpText>
+        <label>relatives Jahr</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Unique__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Eindeutiger Schlüssel aus: GJ, WT ID, Agentur ID. Wird verwendet, um doppelte Prognosen innerhalb eines Geschäftjahres zu verhindern. Wird per Feldaktualisierung automatisch befüllt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Eindeutiger Schlüssel aus: GJ, WT ID, Agentur ID. Wird verwendet, um doppelte Prognosen innerhalb eines Geschäftjahres zu verhindern. Wird per Feldaktualisierung automatisch befüllt</inlineHelpText>
+        <label>KeyUnique</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Vertriebsteam__c</fullName>
+        <description>In welchem Vertriebsteam arbeitet der Prognose-Inhaber (gleich Inhaber der WT AG Beziehung)</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_BeziehungInhaberVertriebsteam__c</formula>
+        <inlineHelpText>In welchem Vertriebsteam arbeitet der Prognose-Inhaber (gleich Inhaber der WT AG Beziehung)</inlineHelpText>
+        <label>Vertriebsteam</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbetreibender__c</fullName>
+        <description>Welcher Account ist der Werbetreibender (Info kommt aus WT AG Beziehung)</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_Werbetreibender__r.Name</formula>
+        <inlineHelpText>Welcher Account ist der Werbetreibender (Info kommt aus WT AG Beziehung)</inlineHelpText>
+        <label>Werbetreibender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_WtAgBeziehung__c</fullName>
+        <description>Prognosen werden an &apos;WT AG Beziehungen&apos; verknüpft stat an einzelne Accounts. Sollte keine gewünschte Beziehung existieren, muss diese vorher noch im Objekt &apos;WT AG Beziehung&apos; angelegt werden</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prognosen werden an &apos;WT AG Beziehungen&apos; verknüpft stat an einzelne Accounts. Sollte keine gewünschte Beziehung existieren, muss diese vorher noch im Objekt &apos;WT AG Beziehung&apos; angelegt werden</inlineHelpText>
+        <label>WT AG Beziehung</label>
+        <referenceTo>SomDig_WtAgBeziehung__c</referenceTo>
+        <relationshipLabel>Prognosen Digital</relationshipLabel>
+        <relationshipName>Prognosen_Digital</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Prognose Digital</label>
+    <listViews>
+        <fullName>PrognosenVertriebsteamMucAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb München</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam MUC AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>PrognosenVertriebsteamRtaAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb RTA</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam RTA AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_AllePrognosen</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Jahr__c</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <columns>SomDig_Vertriebsteam__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Prognosen</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenGesamtAj</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <columns>SomDig_Vertriebsteam__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Gesamt AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenGesamtNj</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <columns>SomDig_Vertriebsteam__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>NJ</value>
+        </filters>
+        <label>Prognosen Gesamt NJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenGesamtVj</fullName>
+        <columns>SomDig_Jahr__c</columns>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <columns>SomDig_Vertriebsteam__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>VJ</value>
+        </filters>
+        <label>Prognosen Gesamt VJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenVertriebsteamBerAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb Berlin</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam BER AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenVertriebsteamDusAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb Düsseldorf</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam DUS AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenVertriebsteamEccAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb ECC</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam ECC AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenVertriebsteamFraAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb Frankfurt</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam FRA AJ</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_PrognosenVertriebsteamHhAj</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SomDig_AccountBeziehungsname__c</columns>
+        <columns>SomDig_PrognoseGesamt__c</columns>
+        <columns>SomDig_PrognoseQ1__c</columns>
+        <columns>SomDig_PrognoseQ2__c</columns>
+        <columns>SomDig_PrognoseQ3__c</columns>
+        <columns>SomDig_PrognoseQ4__c</columns>
+        <columns>SomDig_Inhaber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Vertriebsteam__c</field>
+            <operation>equals</operation>
+            <value>Vertrieb Hamburg</value>
+        </filters>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Prognosen Vertriebsteam HH AJ</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000}</displayFormat>
+        <label>Prognose-Digital</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Prognosen Digital</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SomDig_AccountBeziehungsname__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_PrognoseGesamt__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_PrognoseQ1__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_PrognoseQ2__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_PrognoseQ3__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_PrognoseQ4__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Inhaber__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Vertriebsteam__c</customTabListAdditionalFields>
+        <listViewButtons>SomDig_Prognosen_bearbeiten</listViewButtons>
+        <lookupDialogsAdditionalFields>SomDig_PrognoseGesamt__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_PrognoseQ1__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_PrognoseQ2__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_PrognoseQ3__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_PrognoseQ4__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_PrognoseGesamt__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_PrognoseQ1__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_PrognoseQ2__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_PrognoseQ3__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_PrognoseQ4__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>SomDig_PrognoseGesamt__c</searchFilterFields>
+        <searchFilterFields>SomDig_PrognoseQ1__c</searchFilterFields>
+        <searchFilterFields>SomDig_PrognoseQ2__c</searchFilterFields>
+        <searchFilterFields>SomDig_PrognoseQ3__c</searchFilterFields>
+        <searchFilterFields>SomDig_PrognoseQ4__c</searchFilterFields>
+        <searchResultsAdditionalFields>SomDig_PrognoseGesamt__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_PrognoseQ1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_PrognoseQ2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_PrognoseQ3__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_PrognoseQ4__c</searchResultsAdditionalFields>
+        <searchResultsCustomButtons>SomDig_Prognosen_bearbeiten</searchResultsCustomButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SomDig_SummeQ1234IstSummeMediagattungen</fullName>
+        <active>true</active>
+        <description>Ab GJ 2015 muss die Summe der Prognosen für Q1 bis Q4 der Summe der Felder für Mediagattungen entsprechen</description>
+        <errorConditionFormula>AND (
+CASE ( SomDig_Jahr__c ,
+&apos;2011&apos; , 0 ,
+&apos;2012&apos; , 0 ,
+&apos;2013&apos; , 0 ,
+&apos;2014&apos; , 0 ,
+1 ) = 1 ,
+SomDig_PrognoseGesamt__c &lt;&gt; SomDig_MedDiffGesamt__c
+)</errorConditionFormula>
+        <errorMessage>Die Summe der Prognosen Q1 - Q4 muss der Summe der Prognosen für die Kennzahlen InStream, InPage und Digital TV + Media entsprechen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_UngueltigerAccount</fullName>
+        <active>true</active>
+        <description>Es darf keine Prognose erstellt und an eine Beziehung geknüpft werden, welche einen ungültigen Account beinhaltet.</description>
+        <errorConditionFormula>AND(
+ISNEW() 
+,
+OR(SomDig_WtAgBeziehung__r.SomDig_Werbetreibender__r.RecordType.Id = &quot;012D0000000QYxb&quot;,
+ SomDig_WtAgBeziehung__r.SomDig_Agentur__r.RecordType.Id = &quot;012D0000000QYxb&quot;
+)
+)</errorConditionFormula>
+        <errorMessage>Es darf keine Prognose erstellt und an eine Beziehung geküpft werden, welche einen ungültigen Account beinhaltet.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>SomDig_Prognosen_bearbeiten</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Prognosen bearbeiten</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/SomDig_Prognose_ListEdit</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,221 @@
+<aura:component >
+
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
+				/resource/f42_ionicons/ionicons/css/ionicons.min.css,
+				/resource/f42_FontAwesome/f42_FontAwesome/css/font-awesome.min.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                		/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js,
+                                		/resource/f42_TableSorter,
+                                		/resource/f42_FixedHeader"
+
+ 		afterScriptsLoaded="{!c.doInitScripts}"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    <aura:attribute name="stageNames" type="Object[]" required="true" access="global"/>
+
+    <aura:handler event="aura:doneRendering" action="{!c.doUpdateTableSorter}"></aura:handler>
+
+    <aura:attribute name="summaryItems" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="currentYear" type="Integer" access="public"></aura:attribute>
+    <aura:attribute name="currentDay" type="Integer" access="private"></aura:attribute>
+    <aura:attribute name="userId" type="String" access="public"></aura:attribute>
+    <aura:attribute name="isIm" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isInPermissionSet" type="Boolean" default="false" access="public"></aura:attribute>
+
+    <aura:attribute name="itemChanged" type="Boolean" default="false" access="public"/>
+    <aura:attribute name="itemChangedStage" type="Boolean" default="false" access="global"/>
+
+    <aura:registerEvent name="summaryItemClick" type="c:Ven_OppPipeSummaryEvt"></aura:registerEvent>
+    <aura:registerEvent name="summaryItemChanged" type="c:Ven_OppPipeSummaryEvt"></aura:registerEvent>
+    
+    <aura:handler name="onChangeSelected" event="c:f42_InputChangeEvt" action="{!c.onStageChange}" />
+    <aura:handler name="onChangeInputNumber" event="c:f42_InputChangeEvt" action="{!c.onItemChange}" />
+
+    <div style="height:600px">
+    
+    	<div aura:id="checker" class="slds-popover slds-popover--tooltip slds-nubbin--bottom-left toolt hideIt" role="tooltip" id="help">
+		  <div class="slds-popover__body">Please consider adjusting probability when status is changed.</div>
+		</div>
+	    <table aura:id="oppPipeTable" class="table table-bordered table-striped table-hover">
+			<thead>
+				<tr class="fixTr">
+					<th style="width:40px"></th>
+
+					<th class="opp-header" style="width:50px" onclick="{!c.doHandleTableHeaderClick}">Ownership <i class="fa fa-sort"></i></th>
+					<th class="opp-header" style="width:120px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Opp +' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:120px; z-index:1;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Status+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:60px;" onclick="{!c.doHandleTableHeaderClick}">CL<i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:70px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Im}1 <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_DealType+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:70px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Country+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:70px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Cash+' '} {!$Label.c.Ven_lbl_Yield+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:60px;" onclick="{!c.doHandleTableHeaderClick}">Eff. {!' '+$Label.c.Ven_lbl_Yield+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:90px" onclick="{!c.doHandleTableHeaderClick}">var. comp. <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_DealStart}<i class="fa fa-sort"></i></th>
+
+					<th class="gmv-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Gmv+' '+ v.currentYear} <i class="fa fa-sort"></i></th>
+
+					<th class="gmv-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Gmv+' '+ (v.currentYear+1)} <i class="fa fa-sort"></i></th>
+
+					<th class="gmv-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Gmv} {!' '+$Label.c.Ven_lbl_Total+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="potential-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_NetPotential+' '+ v.currentYear} <i class="fa fa-sort"></i></th>
+
+					<th class="potential-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_NetPotential+' '+ (v.currentYear+1)} <i class="fa fa-sort"></i></th>
+
+					<th class="potential-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_NetPotential+' '} {!$Label.c.Ven_lbl_Total+' '} <i class="fa fa-sort"></i></th>
+
+					<th onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_LastModified+' Date '} <i class="fa fa-sort"></i></th>
+
+					<th onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_LastModified+' By '} <i class="fa fa-sort"></i></th>
+
+
+				</tr>
+			</thead>
+
+			<tbody>
+				<aura:iteration items="{!v.summaryItems}" var="item">
+
+					<tr style="{!item.Ven_ShowInPipe__c ? '' : 'display:none'}" >
+						<td style="width:1px!important;text-align:center">
+							<button style="{!v.itemChanged ? 'display:none' : ''}" class="btn btn-primary goDetail btn-xs" data-id="{!item.Id}" onclick="{!c.goDetail}">
+								<i class="ionicons ion-android-more-horizontal" data-id="{!item.Id}"></i>
+							</button>
+
+							<i class="ionicons ion-flash" style="{!if( and( !empty( item.Opportunity_Pipelines__r), v.currentDay > 8), 'color:red', 'display:none')}"></i>
+						</td>
+
+						<!--**** OLD ***
+						<td class="{! (and(v.userId == item.OwnerId, empty(item.Ven_Im2__c), empty(item.Ven_ScoutText__c), empty(item.Ven_MediaPlanner__c)) ) ? 'own-opp' : 'team-opp'}">
+							{! (and(v.userId == item.OwnerId, empty(item.Ven_Im2__c), empty(item.Ven_ScoutText__c), empty(item.Ven_MediaPlanner__c)) ) ? 'Own' : 'Team'}
+						</td>-->
+
+                        <td class="{! if(or(or(v.isInPermissionSet, v.userId == item.OwnerId), v.userId == item.Ven_Im2__c), if(empty(item.Ven_Im2__c), 'own-opp', 'team-opp'), '')}">
+							{! if(or(or(v.isInPermissionSet, v.userId == item.OwnerId), v.userId == item.Ven_Im2__c), if(empty(item.Ven_Im2__c), 'Own', 'Team'), '')}
+						</td>
+                        
+						<td style="width:30px!important; cursor:pointer; text-decoration:underline"
+							data-oppid="{!item.Id}" onclick="{!c.doGoOpp}">
+							{!item.Name}
+						</td>
+
+						<td data-oppid="{!item.Id}">
+							<span style="display:none;">{!item.StageName}</span> <!-- needed for sorting -->
+							
+							<c:f42_SelectListCmp selectedId="{!item.StageName}"
+								selectedLbl="{!item.StageName}"
+								options="{!v.stageNames}"
+								indicatorStr="{!item.Id}"
+								required="true"
+								setEmptyOption="false"
+								fireChangeEvt="true"
+								cssStyleBtn="width:100px;height:30px !important"/>
+
+							<!-- *** OLD ***
+							<c:f42_Select2Cmp value="{!item.StageName}"
+								options="{!v.stageNames}"
+								required="true"
+								onChange="{!c.onStageChange}"
+								setEmptyOption="false"/> -->
+
+							<!-- *** OLD ***
+							<ui:inputSelect class="form-control input-sm smallFont" change="{!c.onStageChange}">
+					            <aura:iteration items="{!v.stageNames}" var="sn">
+					                 <ui:inputSelectOption text="{!sn.text}" label="{!sn.label}" value="{!sn.text == item.StageName}"/>
+					            </aura:iteration>
+					        </ui:inputSelect>-->
+						</td>
+
+						<td class="text-right" data-oppid="{!item.Id}">
+							<span style="display:none">{!item.Probability}</span>
+							
+							<c:f42_InputNumber value="{!item.Probability}"
+								min="0"
+								max="100"
+								required="true"
+								isInteger="true"
+								isValid="true"
+								textAlign="right"
+								inputSize="input-sm"
+								indicatorStr="{!item.Id}"
+								method2Execute="probability"
+								fireChangeEvt="true"/>
+						</td>
+
+						<td>{!item.Owner.FirstName + ' ' + item.Owner.LastName}</td>
+
+						<td>{!item.Ven_DealType__c}</td>
+
+						<td>{!item.Ven_Country__r.Name_EN__c}</td>
+
+						<td class="text-right" data-oppid="{!item.Id}">
+							<span style="display:none">{!item.Ven_EstimateCashYieldCurrentYear__c}</span>
+
+							<c:f42_InputNumber value="{!item.Ven_EstimateCashYieldCurrentYear__c}"
+								min="0"
+								max="100"
+								required="true"
+								isInteger="false"
+								isValid="true"
+								textAlign="right"
+								inputSize="input-sm"
+								decimalPlaces="1"
+								indicatorStr="{!item.Id}"
+								method2Execute="cashYield"
+								fireChangeEvt="true"
+								format="###,###,##0.#"/>
+						</td>
+
+						<td class="text-right">{!item.Ven_EffectiveYield__c + '%'}</td>
+
+						<td>
+							<aura:renderIf isTrue="{!item.Ven_Ep__c}">EP<br/></aura:renderIf>
+							<aura:renderIf isTrue="{!item.Ven_EpLight__c}">EP light<br/></aura:renderIf>
+							<aura:renderIf isTrue="{!item.Ven_RevShare__c}">Rev Share</aura:renderIf>
+						</td>
+
+						<td>{!item.Ven_DealStartMonth__c}</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalGmvCurrentYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalGmvNextYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalGmv__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_NetPotentialCurrentYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_NetPotentialNextYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalNetPotential__c}"></ui:outputNumber>
+						</td>
+
+						<td>{!item.Ven_LastModifiedDate__c}</td>
+
+						<td>{!item.Ven_LastModifiedBy__c}</td>
+					</tr>
+				</aura:iteration>
+			</tbody>
+		</table>
+	</div>
+</aura:component>

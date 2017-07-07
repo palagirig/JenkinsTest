@@ -11,18 +11,4 @@
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
-    <rules>
-        <fullName>Media Broadcast control Data Import Date Unique</fullName>
-        <actions>
-            <name>Media_Broadcast_control_Import_Date_Uniq</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>MT_MediaBroadcastImportControlData__c.MT_ImportDate__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <description>to maintain uniqueness</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
 </Workflow>

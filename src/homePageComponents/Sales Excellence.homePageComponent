@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;p&gt;&lt;u&gt;&lt;b&gt;Infos zum Rollout:&lt;/b&gt;&lt;/u&gt;&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;12Auto Group sind seit dem 22.12.2016 live - &lt;a href=&quot;https://p7s1--c.eu4.content.force.com/servlet/servlet.FileDownload?file=01557000004cYkE&quot;&gt;Infos zum Thema&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Starwatch sind seit dem 19.12.206 live - &lt;a href=&quot;https://p7s1--c.eu4.content.force.com/servlet/servlet.FileDownload?file=01557000004cYk9&quot;&gt;Infos zum Thema&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;7Sports sind seit dem 20.12.2016 live - &lt;a href=&quot;https://p7s1--c.eu4.content.force.com/servlet/servlet.FileDownload?file=01557000004cWlP&quot;&gt;Infos zum Thema&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;7Coops sind seit dem 28.06.2016 live - &lt;a href=&quot;/servlet/servlet.FileDownload?file=01557000004GgBN&quot; target=&quot;_blank&quot;&gt;Infos zum Team&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;SevenOne AdFactory Licensing Sales sind seit 28.06.16 vollständig live  - &lt;a href=&quot;/servlet/servlet.FileDownload?file=01557000004Gh2H&quot; target=&quot;_blank&quot;&gt;Infos zum Team&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;maxdome Partner Management &amp;amp; Distribution Team sind seit 01.03.2016 live - &lt;a href=&quot;/servlet/servlet.FileDownload?file=01557000002b8D4&quot; target=&quot;_blank&quot;&gt;Infos zum Team&lt;/a&gt;&lt;/li&gt;&lt;li&gt;d&amp;amp;a Sales Team sind seit 17.02.2016 live - &lt;a href=&quot;/servlet/servlet.FileDownload?file=01557000002avXQ&quot; target=&quot;_blank&quot;&gt;Infos zum Team&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;u&gt;&lt;b&gt;Wichtige Dokumente&lt;/b&gt;:&lt;/u&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/ui/solution/SolutionBrowserPage?cid=02n570000005U1f&quot;&gt;Sales Excellence Trainingsunterlagen&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Definition &lt;a href=&quot;/servlet/servlet.FileDownload?file=01557000002b8DJ&quot;&gt;SevenOne Media Kundenart TV&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Anleitung zur Anlage von &lt;a href=&quot;/servlet/servlet.FileDownload?file=00P5700001Aca8a&quot;&gt;Accounts&lt;/a&gt; und &lt;a href=&quot;/servlet/servlet.FileDownload?file=00P5700001Aca8f&quot;&gt;Kontakten&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+Bei&lt;b&gt; Fragen oder Problemen &lt;/b&gt;öffnet bitte ein Ticket über folgenden Link:&lt;b&gt; &lt;a href=&quot;/500/e?retURL=%2Fhome%2Fhome.jsp&amp;amp;00ND0000003Mkps=Sales%20Excellence&quot;&gt;Ticket anlegen&lt;/a&gt; &lt;/b&gt;&lt;br&gt; 
+&lt;hr&gt;&lt;/hr&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

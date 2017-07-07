@@ -21,6 +21,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -45,7 +49,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -104,25 +107,21 @@
         <fullName>MT_BMV_SourceField__c</fullName>
         <externalId>false</externalId>
         <label>BMV Kennzahlen Standard</label>
+        <picklist>
+            <picklistValues>
+                <fullName>MB1</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MB3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
         <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>MB1</fullName>
-                    <default>true</default>
-                    <label>MB1</label>
-                </value>
-                <value>
-                    <fullName>MB3</fullName>
-                    <default>false</default>
-                    <label>MB3</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>MT_ExternalID__c</fullName>
@@ -147,25 +146,21 @@
         <fullName>MT_Type__c</fullName>
         <externalId>false</externalId>
         <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
         <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Internal</fullName>
-                    <default>false</default>
-                    <label>Internal</label>
-                </value>
-                <value>
-                    <fullName>External</fullName>
-                    <default>false</default>
-                    <label>External</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <label>Media Campaign Type</label>
     <listViews>
@@ -185,5 +180,4 @@
     <pluralLabel>Media Campaign Types</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

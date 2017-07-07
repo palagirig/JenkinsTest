@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_AccessReason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Detaillierte Begründung warum Account Lead zur eigenen Unit wechseln sollte, Zielsetzung Vertriebsaktivitäten, Mehrwert für den Konzern</inlineHelpText>
+        <label>Begründung Account Übernahme</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>P7S1_AccountIndex__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Index</label>
+        <referenceTo>P7S1_AccountIndex__c</referenceTo>
+        <relationshipLabel>Account Freigaben</relationshipLabel>
+        <relationshipName>Account_Freigaben</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_AccountOwnerID__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;1&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_AccountOwnerUnit__c</fullName>
+        <externalId>false</externalId>
+        <formula>P7S1_Account__r.Owner.P7S1_Unit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AccountOwnerUnit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_AccountOwner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Account_Freigaben</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Freigaben</relationshipLabel>
+        <relationshipName>Account_Freigaben</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_AgencyContact__c</fullName>
+        <externalId>false</externalId>
+        <label>Ansprechpartner Agentur + Funktion</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Agentur</label>
+        <referenceTo>P7S1_AccountIndex__c</referenceTo>
+        <relationshipLabel>Account Freigaben (Agentur)</relationshipLabel>
+        <relationshipName>Account_Freigaben1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_ApprovalState__c</fullName>
+        <externalId>false</externalId>
+        <label>Genehmigungsstatus</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Abgelehnt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eingereicht</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Genehmigt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_CampaignEnd__c</fullName>
+        <externalId>false</externalId>
+        <label>Kampagnenende</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_CampaignStart__c</fullName>
+        <externalId>false</externalId>
+        <label>Kampagnenstart</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_CustomerContact__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>wenn kein Name vorhanden, Abteilung für die Deal-Ansprache hinterlegen</inlineHelpText>
+        <label>Ansprechpartner oder Abteilung Kunde</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_CustomerGroup__c</fullName>
+        <externalId>false</externalId>
+        <formula>P7S1_Account__r.Som_KonzernAgenturverbund__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Konzern</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_CustomerProduct__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Angabe des Kunden Produkts, was beworben werden soll</inlineHelpText>
+        <label>Kundenprodukt</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Customer__c</fullName>
+        <externalId>false</externalId>
+        <formula>P7S1_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Kunde</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IsApproved__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT( P7S1_ApprovalState__c ) == &apos;Genehmigt&apos; , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ist genehmigt</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_LogoIntegration__c</fullName>
+        <externalId>false</externalId>
+        <label>Variante Logo Integration</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Spot Integration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spot Integration mit voice-over</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Mn3TargetEstimated__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Einschätzung potentieller MN3 für Media Deal: bei Anfrage an 71M TV-Anteil hinterlegen, bei Anfrage an D&amp;A Gesamt-Deal einschätzen</inlineHelpText>
+        <label>Ziel MN3 (geschätzt)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_OwnerUnit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.P7S1_Unit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Unit (Antragsteller)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_ProjectDescription__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Detaillierte Erläuterung des Projektes und Zielsetzung
+(kann auch auf Konzeptpapier im Anhang verwiesen werden)</inlineHelpText>
+        <label>Projektbeschreibung</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>P7S1_ProjectTitle__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Sprechender Titel des Projektes / des Antrags</inlineHelpText>
+        <label>Projekttitel</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Wiedervorlage__c</fullName>
+        <externalId>false</externalId>
+        <label>Wiedervorlage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Som_DigitalSales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Digital Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Account_Freigaben1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Som_Einkaufsagenturverkaeufer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Einkaufsagenturverkäufer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Account_Freigaben3</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Som_Planungsagenturverkaeufer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Planungsagenturverkäufer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Account_Freigaben4</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Som_TVKundenverkaeufer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>TV Kundenverkäufer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Account_Freigaben2</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Account Freigabe</label>
+    <listViews>
+        <fullName>Alle_eingereichten_Freigabe_Antr_ge</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+            <value>Eingereicht</value>
+        </filters>
+        <label>Alle eingereichten Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_AlleAbgelehntenFreigabe_Antr_ge</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+            <value>Abgelehnt</value>
+        </filters>
+        <label>Alle abgelehnten Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_AlleFreigabeAntraegeOhneStatus</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Alle Freigabe-Anträge ohne Status</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_AlleFreigabeantraege</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_AlleGenehmigtenFreigabeAntraege</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+            <value>Genehmigt</value>
+        </filters>
+        <label>Alle genehmigten Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_MeineAbgelehntenFreigabe_Antr_ge</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+            <value>Abgelehnt</value>
+        </filters>
+        <label>Meine abgelehnten Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_MeineEingereichtenFreigabeAntraege</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+            <value>Eingereicht</value>
+        </filters>
+        <label>Meine eingereichten Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_MeineFreigabeAntraegeOhneStatus</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Meine Freigabe-Anträge ohne Status</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_MeineFreigabeantraege</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Meine Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_MeineGenehmigtenFreigabeAntraege</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_AccountIndex__c</columns>
+        <columns>P7S1_CustomerProduct__c</columns>
+        <columns>P7S1_Mn3TargetEstimated__c</columns>
+        <columns>P7S1_AccessReason__c</columns>
+        <columns>P7S1_LogoIntegration__c</columns>
+        <columns>P7S1_ApprovalState__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>P7S1_OwnerUnit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>P7S1_ApprovalState__c</field>
+            <operation>equals</operation>
+            <value>Genehmigt</value>
+        </filters>
+        <label>Meine genehmigten Freigabe-Anträge</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_SteeringDandASales_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering d&amp;a Sales</label>
+        <queue>P7S1_SteeringDandASales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_SteeringDooH_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering DooH</label>
+        <queue>P7S1_SteeringDooH</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_SteeringPuls4_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering Puls4</label>
+        <queue>P7S1_SteeringPuls4</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_7Life_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 7Life</label>
+        <queue>P7S1_Steering_7Life</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_7Sports_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 7Sports</label>
+        <queue>P7S1_Steering_7Sports</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_Auto_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 12Auto</label>
+        <queue>P7S1_Steering_Auto</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_Comm_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 7Commerce</label>
+        <queue>P7S1_Steering_Comm</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_Guru_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering marktguru</label>
+        <queue>P7S1_Steering_Guru</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_NXT_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 7NXT</label>
+        <queue>P7S1_Steering_NXT</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_Travel_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 7Travel</label>
+        <queue>P7S1_Steering_Travel</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>P7S1_Steering_coops_P7S1_AccountAccess</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Steering 7coops</label>
+        <queue>P7S1_Steering_coops</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Account Freigabe-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Account Freigaben</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>P7S1_AccountUebernahme</fullName>
+        <active>true</active>
+        <label>Account Übernahme</label>
+        <picklistValues>
+            <picklist>P7S1_ApprovalState__c</picklist>
+            <values>
+                <fullName>Abgelehnt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eingereicht</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Genehmigt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>P7S1_LogoIntegration__c</picklist>
+            <values>
+                <fullName>Spot Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spot Integration mit voice-over</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>P7S1_AufnahmeAccountTeam</fullName>
+        <active>true</active>
+        <label>Aufnahme ins Account Team</label>
+        <picklistValues>
+            <picklist>P7S1_ApprovalState__c</picklist>
+            <values>
+                <fullName>Abgelehnt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eingereicht</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Genehmigt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>P7S1_LogoIntegration__c</picklist>
+            <values>
+                <fullName>Spot Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spot Integration mit voice-over</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>P7S1_LogoIntegration</fullName>
+        <active>true</active>
+        <label>Logo Integration</label>
+        <picklistValues>
+            <picklist>P7S1_ApprovalState__c</picklist>
+            <values>
+                <fullName>Abgelehnt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eingereicht</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Genehmigt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>P7S1_LogoIntegration__c</picklist>
+            <values>
+                <fullName>Spot Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spot Integration mit voice-over</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>P7S1_AccountIndex__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_CustomerProduct__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_Mn3TargetEstimated__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_AccessReason__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_LogoIntegration__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_ApprovalState__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_OwnerUnit__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <searchResultsAdditionalFields>P7S1_AccountIndex__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_CustomerProduct__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_Mn3TargetEstimated__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_AccessReason__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_LogoIntegration__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_ApprovalState__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_OwnerUnit__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>P7S1_AccountUebernahmeAcc</fullName>
+        <availability>online</availability>
+        <description>Button zur Verwendung im Account</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Account Übernahme Acc</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/a2D/e?CF00N57000006LnED={!Account.Name}
+&amp;CF00N57000006LnED_lkid={!Account.Id}
+&amp;retURL=%2F{!Account.Id}
+&amp;RecordType=012570000007QSJAA2
+&amp;ent=01I57000000mSJv
+&amp;Name=wird%20automatisch%20gesetzt</url>
+    </webLinks>
+    <webLinks>
+        <fullName>P7S1_AccountUebernahmeInd</fullName>
+        <availability>online</availability>
+        <description>Button zur Verwendung im Account Index</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Account Übernahme Ind</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a2D/e?ent=01I57000000mSJv
+&amp;RecordType=012570000007QSJAA2
+&amp;CF00N57000006LnEC={!P7S1_AccountIndex__c.Name}
+&amp;CF00N57000006LnEC_lkid={!P7S1_AccountIndex__c.Id}
+&amp;Name=wird%20automatisch%20gesetzt
+&amp;retURL=/{!P7S1_AccountIndex__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>P7S1_AufnahmeAccountTeamInd</fullName>
+        <availability>online</availability>
+        <description>Button zur Verwendung im Account Index</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Aufnahme Account Team</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/a2D/e?ent=01I57000000mSJv
+&amp;RecordType=012570000007QSKAA2
+&amp;CF00N57000006LnEC={!P7S1_AccountIndex__c.Name}
+&amp;CF00N57000006LnEC_lkid={!P7S1_AccountIndex__c.Id}
+&amp;Name=wird%20automatisch%20gesetzt
+&amp;retURL=/{!P7S1_AccountIndex__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>P7S1_LogoIntegrationAcc</fullName>
+        <availability>online</availability>
+        <description>Button zur Verwendung im Account</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Logo Integration Acc</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a2D/e?CF00N57000006LnED={!Account.Name}
+&amp;CF00N57000006LnED_lkid={!Account.Id}
+&amp;retURL=%2F{!Account.Id}
+&amp;RecordType=012570000007QSLAA2
+&amp;ent=01I57000000mSJv
+&amp;Name=wird%20automatisch%20gesetzt</url>
+    </webLinks>
+    <webLinks>
+        <fullName>P7S1_LogoIntegrationInd</fullName>
+        <availability>online</availability>
+        <description>Button zur Verwendung im Account Index</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Logo Integration Ind</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/a2D/e?ent=01I57000000mSJv
+&amp;RecordType=012570000007QSLAA2
+&amp;CF00N57000006LnEC={!P7S1_AccountIndex__c.Name}
+&amp;CF00N57000006LnEC_lkid={!P7S1_AccountIndex__c.Id}
+&amp;Name=wird%20automatisch%20gesetzt
+&amp;retURL=/{!P7S1_AccountIndex__c.Id}</url>
+    </webLinks>
+</CustomObject>

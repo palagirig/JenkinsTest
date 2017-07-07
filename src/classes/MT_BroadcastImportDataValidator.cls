@@ -25,7 +25,6 @@ public with sharing class MT_BroadcastImportDataValidator implements Database.Ba
   @TestVisible
   private Exception caughtException;
 
-
   /**
    * Instantiates a new instance based on the provided control record.
    *
@@ -129,19 +128,12 @@ public with sharing class MT_BroadcastImportDataValidator implements Database.Ba
 
 
   private void sendMail(String subject, String body) {
-    Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
-
-    message.setSaveAsActivity(false);
-    message.setTargetObjectId(UserInfo.getUserId());
-
-
-    message.setSubject(subject);
-    message.setPlainTextBody(body);
-    message.setTreatBodiesAsTemplate(false);
-
-    Messaging.sendEmail(new List<Messaging.SingleEmailMessage>{
-      message
-    });
+    MT_SystemEmailFactory.getInstance().createNewSystemEmailFor(UserInfo.getUserId()).
+        saveAsActivity(false).
+        subject(subject).
+        plainTextBody(body).
+        treatBodiesAsTemplate(false).
+        sendEmail();
   }
 
 

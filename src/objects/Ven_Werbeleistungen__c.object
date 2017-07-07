@@ -1,0 +1,2405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Hier werden die Werbeleistungen für eine Opportunity angelegt.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>Senderschiene</fullName>
+        <description>ContractWizard</description>
+        <displayedFields>
+            <field>Ven_Pro7__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Pro7_min__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Pro7__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Pro7_max__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Sat1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Sat1_min__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Sat_1__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Sat1_max__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Kabel_eins__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Kabel_eins_min__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Kabel_eins__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Kabel_eins_max__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Sixx__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Sixx_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Sixx__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Sixx_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Sat_1_Gold__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Sat1_Gold_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Sat_1_Gold__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Sat_1_Gold_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Pro7_Maxx__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Pro7_Maxx_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Verteilung_des_Target_auf_Pro7_Maxx__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Pro7_Maxx_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Neuer_Sender__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Neuer_Sender_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Neuer_Send__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Neuer_Sender_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Senderschiene</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>StandardFields</fullName>
+        <description>ContractWizard</description>
+        <displayedFields>
+            <field>Ven_Typ__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Kampagnenzeitraum_von__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Kampagnenzeitraum_bis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Volumen__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Abrechnung__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Umsetzung__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Kosten_bernahme__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Description__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Kommentar__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Learning__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Standard Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>StandardMedialeistungsvertragsFelder</fullName>
+        <description>ContractWizard</description>
+        <displayedFields>
+            <field>Ven_Target_Group__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Standard Medialeistungsvertrags Felder</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Zeitschiene</fullName>
+        <description>ContractWizard</description>
+        <displayedFields>
+            <field>Ven_Morning_Time_6_00_9_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Morning_Time_1_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Morning_Ti__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Morning_Time_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Day_Time_1_9_00_13_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Day_Time_1_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Day_Time_1__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Day_Time_1_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Day_Time_2_13_00_17_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Day_Time_2_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Day_Time_2__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Day_Time_2_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Access_Prime_17_00_20_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Access_Prime_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Access_Pri__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Access_Prime_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Prime_Time_20_00_23_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Prime_Time_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Prime_Time__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Prime_Time_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Late_Prime_23_00_1_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Late_Prime_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Late_Prime__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Late_Prime_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Night_Time_1_00_6_00__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Night_Time_min__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_des_Target_auf_Night_Time__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ven_Verteilung_auf_Night_Time_max__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Zeitschiene</label>
+    </fieldSets>
+    <fields>
+        <fullName>Ven_Abrechnung__c</fullName>
+        <description>Fedl von Seven Ventures.
+Angaben zur Werbeleistung.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wird das Volumen über die TV-Kampagne abgerechnet (bei TV-Bezogenen Werbeformen), oder als zusätzliche Leistung verbucht?</inlineHelpText>
+        <label>Billing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Access_Prime_17_00_20_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Access Prime (17:00 - 20:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Day_Time_1_9_00_13_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Day Time 1 (9:00 - 13:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Day_Time_2_13_00_17_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Day Time 2 (13:00 - 17:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Description__c</fullName>
+        <description>Feld von SevenVentures. Beschreibende Informationen die über die vorhandenen Feldern nicht erfasst wird.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibende Informationen die über die vorhandenen Feldern nicht erfasst wird.</inlineHelpText>
+        <label>Description</label>
+        <length>15000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_Kabel_eins__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Kabel eins</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Kampagnenplanung__c</fullName>
+        <description>Details zur Kampagne.
+Für Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier bitte Details zur Kampagne eintragen.</inlineHelpText>
+        <label>Kampagnenplanung</label>
+        <length>15000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_Kampagnenzeitraum_bis__c</fullName>
+        <description>Hier wird der Kampagnenzeitraum für die Werbeleistung angegeben.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird der Kampagnenzeitraum für die Werbeleistung angegeben.</inlineHelpText>
+        <label>Media End</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Kampagnenzeitraum_von__c</fullName>
+        <description>Hier wird der Kampagnenzeitraum für die Werbeleistung angegeben.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird der Kampagnenzeitraum für die Werbeleistung angegeben.</inlineHelpText>
+        <label>Media Start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Kommentar__c</fullName>
+        <description>Das Beschreibungsfeld ist für das Objekt Werbeleistung von Seven Ventures vorgesehen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zusätzliche Kommentar zur gewählten Werbeform.</inlineHelpText>
+        <label>Comment</label>
+        <length>15000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_Kosten_bernahme__c</fullName>
+        <description>Kostenübernahme für die Produktion des Media-Contents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kostenübernahme der Produktion</inlineHelpText>
+        <label>Costs</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Late_Prime_23_00_1_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Late Prime (23:00 - 1:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Learning__c</fullName>
+        <description>Informationen über das Reporting.
+Für Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Informationen über das Reporting.</inlineHelpText>
+        <label>Learning</label>
+        <length>15000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_Morning_Time_6_00_9_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Morning Time (6:00 - 9:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Neuer_Sender__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Neuer Sender</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Night_Time_1_00_6_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Night Time (1:00 - 6:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Opportunity__c</fullName>
+        <description>Die Verknüpfung der Werbeleistung zur Opportunity wird hier hergestellt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Die Verknüpfung der Werbeleistung zu einer Opportunity wird hier eingetragen. Es handelt sich hier um eine Pflichtangabe.</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Werbeleistungen</relationshipLabel>
+        <relationshipName>Werbeleistungen</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ven_Prime_Time_20_00_23_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Daypart Share eintragen!</inlineHelpText>
+        <label>Prime Time (20:00 - 23:00)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Pro7_Maxx__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Pro7 Maxx</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Pro7__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Pro7</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Sat1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Sat.1</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Sat_1_Gold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Sat.1 Gold</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Sixx__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Feld für Seven Ventures im Objekt Werbeleistungen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist dieser Sender im Sendersplit enthalten?</inlineHelpText>
+        <label>Sixx</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Status__c</fullName>
+        <description>Hier wird der Status der Werbeleistungen angegeben.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Status der Werbeleistung angeben.</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Target_Group__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>z.B. E14+</inlineHelpText>
+        <label>Target Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Typ__c</fullName>
+        <description>Jede Vertragsart hat bestimmte Typen die zur Verfügung stehen. Diese werden hier angezeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte einen Typ auswählen der für diesen Vertrag gültig ist.</inlineHelpText>
+        <label>Typ</label>
+        <picklist>
+            <picklistValues>
+                <fullName>TV-Spots</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Splits/Diary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Topic Break</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GWS-Trailer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Individual Creation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Placement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Short</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Island</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>InPage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>InStream</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Full 7.1 M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>StandBy 7.1M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Traffic Creation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HbbTV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Teletext</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Video-Content</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Celebrity Shareholder</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Informationssendung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>My Video</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Namenspatronat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online Content</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thementage/-Wochen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eco System - Booming</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eco System - Sugar Ray</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Joint Performance / AM Purchasing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Ad Inventory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Privat Label</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trusted Shop Siegel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>X-Promotion / X-Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Umsetzung__c</fullName>
+        <description>Verantwortlichkeit für die Produktion des Media-Contens.
+Für Seven Ventures!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verantwortlichkeit für die Produktion des Media-Contens</inlineHelpText>
+        <label>Realization</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Access_Prime_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Access Prime (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Access_Prime_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Access Prime (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Day_Time_1_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Day Time 1 (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Day_Time_1_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Day Time 1 (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Day_Time_2_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Day Time 2 (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Day_Time_2_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Day Time 2 (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Kabel_eins_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Kabel eins (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Kabel_eins_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Kabel eins (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Late_Prime_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Late Prime (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Late_Prime_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Late Prime (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Morning_Time_1_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Morning Time (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Morning_Time_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Morning Time (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Neuer_Sender_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Neuer Sender (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Neuer_Sender_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Neuer Sender (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Night_Time_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Night Time (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Night_Time_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Night Time (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Prime_Time_max__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Prime Time (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Prime_Time_min__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Prime Time (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Pro7_Maxx_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Pro7 Maxx (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Pro7_Maxx_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Pro7 Maxx (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Pro7_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Pro7 (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Pro7_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Pro7 (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Sat1_Gold_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sat.1 Gold (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Sat1_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sat1 (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Sat1_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Minimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sat1 (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Sat_1_Gold_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sat.1 Gold (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Sixx_max__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sixx (max.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_auf_Sixx_min__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Mimimum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sixx (min.)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Access_Pri__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Access Prime (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Day_Time_1__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Day Time 1 (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Day_Time_2__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Day Time 2 (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Kabel_eins__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte eine % Verteilung des Target für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Kabel eins (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Late_Prime__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Late Prime (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Morning_Ti__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Morning Time (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Neuer_Send__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Maximum der % Verteilung für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Neuer Sender (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Night_Time__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Night Time (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Prime_Time__c</fullName>
+        <description>SevenVentures Feld.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte das Target (in %) für diesen Daypart Share angeben.</inlineHelpText>
+        <label>% Verteilung auf Prime Time (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Pro7__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte eine % Verteilung des Target für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Pro7 (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Sat_1_Gold__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte eine % Verteilung des Target für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sat.1 Gold (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Sat_1__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte eine % Verteilung des Target für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sat.1 (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Verteilung_des_Target_auf_Sixx__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte eine % Verteilung des Target für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Sixx (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Volumen__c</fullName>
+        <description>Hier wird der Umfang der Kampagne eingetragen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Geplantes GMV.</inlineHelpText>
+        <label>Gross Media Volumen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Zeitschiene__c</fullName>
+        <description>Hier wird die Zeitschiene ausgewählt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier bitte die Zeitschiene auswählen!</inlineHelpText>
+        <label>Zeitschiene</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Morning Time     06:00 - 09:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Day Time 1         09:00 - 13:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Day Time 2         13:00 - 17:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Access Prime     17:00 - 20:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prime Time         20:00 - 23:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Late Time            23:00 - 01:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Night Time          01:00 - 06:00</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Verteilung_des_Target_auf_Pro7_Maxx__c</fullName>
+        <description>Es wird die % Verteilung auf einen Sender angeben für die Medialeistungsverträge von Seven Ventures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte eine % Verteilung des Target für diesen Sender angeben.</inlineHelpText>
+        <label>% Verteilung auf Pro7 Maxx (target)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Werbeleistungen</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>WL-{0000000}</displayFormat>
+        <label>Werbeleistungen-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Werbeleistungen</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Ven_Formats_Editorial</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>Formats/Editorial</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>Celebrity Shareholder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Informationssendung</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Namenspatronat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thementage%2F-Wochen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ven_Online</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>Online</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>Full 7%2E1 M</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InPage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InStream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>StandBy 7%2E1M</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traffic Creation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ven_Other</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>Other</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>Eco System - Booming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eco System - Sugar Ray</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joint Performance %2F AM Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Ad Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Privat Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trusted Shop Siegel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X-Promotion %2F X-Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ven_Special_Content</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>Special Content</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>HbbTV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teletext</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video-Content</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ven_TV</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>TV</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>Splits%2FDiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV-Spots</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Topic Break</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ven_TV_Special_Creations</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>TV - Special Creations</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>GWS-Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual Creation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Placement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ven_WKZ</fullName>
+        <active>true</active>
+        <description>Datensartztyp für das Objekt Werbeleistungngen für Seven Ventures</description>
+        <label>WKZ</label>
+        <picklistValues>
+            <picklist>Ven_Abrechnung__c</picklist>
+            <values>
+                <fullName>Contracted Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Top Volume</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Kosten_bernahme__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Status__c</picklist>
+            <values>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Discussion</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Typ__c</picklist>
+            <values>
+                <fullName>Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Short</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Umsetzung__c</picklist>
+            <values>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SevenVentures</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ven_Zeitschiene__c</picklist>
+            <values>
+                <fullName>Access Prime     17%3A00 - 20%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 1         09%3A00 - 13%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day Time 2         13%3A00 - 17%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Time            23%3A00 - 01%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning Time     06%3A00 - 09%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Night Time          01%3A00 - 06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Time         20%3A00 - 23%3A00</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ven_Typ__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ven_Opportunity__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ven_Typ__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ven_Opportunity__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_NeuerSen</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Neuer_Sender_min__c   &gt;  Ven_Verteilung_auf_Neuer_Sender_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Neuer_Sender_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_Pro7Maxx</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Pro7_Maxx_min__c   &gt;  Ven_Verteilung_auf_Pro7_Maxx_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Pro7_Maxx_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_Sat1Gold</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Sat1_Gold_min__c &gt; Ven_Verteilung_auf_Sat_1_Gold_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Sat1_Gold_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_Sixx</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Sixx_min__c    &gt;  Ven_Verteilung_auf_Sixx_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Sixx_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_sein_Kab</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Kabel_eins_min__c  &gt;  Ven_Verteilung_auf_Kabel_eins_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Kabel_eins_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_sein_Pro</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Pro7_min__c &gt; Ven_Verteilung_auf_Pro7_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Pro7_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Split_min_darf_nicht_gr_sse_max_sein_Sat</fullName>
+        <active>true</active>
+        <description>Bei der % Verteilung beim Sendersplit darf der Wert im Feld min. nicht &gt; sein als der Wert im Feld max.</description>
+        <errorConditionFormula>Ven_Verteilung_auf_Sat1_min__c &gt; Ven_Verteilung_auf_Sat1_max__c</errorConditionFormula>
+        <errorDisplayField>Ven_Verteilung_auf_Sat1_min__c</errorDisplayField>
+        <errorMessage>Der Wert im Feld min. darf nicht größer sein als der Wert im Feld max.!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Typ_darf_nicht_leer_sein</fullName>
+        <active>true</active>
+        <description>Das Feld Typ in der Werbeleistung darf nicht leer ein.</description>
+        <errorConditionFormula>ISPICKVAL(Ven_Typ__c , &quot;&quot;)</errorConditionFormula>
+        <errorDisplayField>Ven_Typ__c</errorDisplayField>
+        <errorMessage>Bitte ein Typ auswählen!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Kabeleins_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Kabel_eins__c   = true  &amp;&amp;   ISBLANK(  Ven_Verteilung_auf_Kabel_eins_max__c )  &amp;&amp;  ISBLANK(  Ven_Verteilung_auf_Kabel_eins_min__c )</errorConditionFormula>
+        <errorDisplayField>Ven_Kabel_eins__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Neuer_Sen_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Neuer_Sender__c     = true  &amp;&amp;   ISBLANK(      Ven_Verteilung_auf_Neuer_Sender_max__c   )  &amp;&amp;  ISBLANK(   Ven_Verteilung_auf_Neuer_Sender_min__c)</errorConditionFormula>
+        <errorDisplayField>Ven_Neuer_Sender__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Pro7Maxx_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Pro7_Maxx__c   = true  &amp;&amp;   ISBLANK(    Ven_Verteilung_auf_Pro7_Maxx_max__c   )  &amp;&amp;  ISBLANK(   Ven_Verteilung_auf_Pro7_Maxx_min__c  )</errorConditionFormula>
+        <errorDisplayField>Ven_Pro7_Maxx__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Pro7_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Pro7__c  = true  &amp;&amp;   ISBLANK( Ven_Verteilung_auf_Pro7_max__c )  &amp;&amp;  ISBLANK( Ven_Verteilung_auf_Pro7_min__c )</errorConditionFormula>
+        <errorDisplayField>Ven_Pro7__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Sat1Gold_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Sat_1_Gold__c    = true  &amp;&amp;   ISBLANK(     Ven_Verteilung_auf_Sat_1_Gold_max__c   )  &amp;&amp;  ISBLANK(   Ven_Verteilung_auf_Sat1_Gold_min__c )</errorConditionFormula>
+        <errorDisplayField>Ven_Sat_1_Gold__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Sat1_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Sat1__c = true  &amp;&amp;   ISBLANK(Ven_Verteilung_auf_Sat1_max__c)  &amp;&amp;  ISBLANK( Ven_Verteilung_auf_Sat1_min__c )</errorConditionFormula>
+        <errorDisplayField>Ven_Sat1__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Sixx_markiert_dann_Sendersplit</fullName>
+        <active>true</active>
+        <description>Wenn eine Sender ausgewählt wird dann muss dazu auch ein Sendersplit ausgefüllt werden. Mindestens eines der beiden Felder (min. oder max.)</description>
+        <errorConditionFormula>Ven_Sixx__c   = true  &amp;&amp;   ISBLANK(   Ven_Verteilung_auf_Sixx_max__c  )  &amp;&amp;  ISBLANK(   Ven_Verteilung_auf_Sixx_min__c  )</errorConditionFormula>
+        <errorDisplayField>Ven_Sixx__c</errorDisplayField>
+        <errorMessage>Bitte mindestens ein Feld % Verteilung min. oder max. ausfüllen.</errorMessage>
+    </validationRules>
+</CustomObject>
