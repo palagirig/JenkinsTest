@@ -113,6 +113,13 @@
         <members>MT_Units</members>
         <members>P7S1_OpportunityApproval_TriggerHandler</members>
         <members>MT_BroadcastImportDataValidator</members>
+        <members>MT_BroadcastImportDataValidator_Test</members>
+        <members>MT_MediaBIControlData_TriggerHandler</members>
+        <members>MT_MediaBIControlData_TriggerHandlerTest</members>
+        <members>MT_SystemEmail</members>
+        <members>MT_SystemEmailFactory</members>
+        <members>MT_SystemEmailFactory_Test</members>
+        <members>MT_SystemEmail_Test</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -142,6 +149,7 @@
         <members>MT_MediaUpdateHistoryTrigger</members>
         <members>Opportunity</members>
         <members>P7S1_OpportunityApproval</members>
+        <members>MT_MediaBIControlDataTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
@@ -1344,6 +1352,7 @@
         <members>P7S1_Asset__c</members>
         <members>P7S1_OpportunityApproval__c</members>
         <members>P7S1_Unit__c</members>
+        <members>MT_MediaBroadcastImportControlData__c</members>
         <name>CustomTab</name>
     </types>
     <types>
