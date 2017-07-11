@@ -4,7 +4,7 @@
  * History
  * -------
  * Date        AUTHOR                      DETAIL
- * 17.11.2016  Duc Nguyen Tien             Initial architecture & development
+ * 17.11.2016  Duc Nguyen Tien             Initial architecture & development Test
  * 15.02.2017  Falco Aulitzky              Added 'actual' and 'delta' variable
  * 20.04.2017  Falco Aulitzky              Technical documentation
  */
