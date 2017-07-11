@@ -6,7 +6,7 @@
 * History
 * -------
 * DATE        AUTHOR                      DETAIL
-* 17.02.2017  Falco Aulitzky              Initial architecture and development
+* 17.02.2017  Falco Aulitzky              Initial architecture and development z
 * 12.04.2017  Falco Aulitzky              Adding JavaDoc-Styled documentation
 *
 */
