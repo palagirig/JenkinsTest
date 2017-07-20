@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>38.0</apiVersion>
+    <apiVersion>40.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>MT_KPI_Global_ConsoleComp</label>
+    <description>Test</description>
+    <label>z_Feature1_VfPage_1</label>
 </ApexPage>
