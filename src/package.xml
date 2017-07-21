@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MT_MediaCampaign__c-Media Campaign Feed Layout - External</members>
+        <members>MT_MediaCampaign__c-Media Campaign Feed Layout - Internal</members>
+        <members>P7S1_OpportunityApproval__c-MT Opportunity Freigabe Feed Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>40.0</version>
+</Package>
