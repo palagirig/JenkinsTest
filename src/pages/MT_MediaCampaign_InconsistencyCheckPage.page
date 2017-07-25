@@ -1,7 +1,0 @@
-<apex:page standardController="MT_MediaCampaign__c" action="{!checkConsistency}" extensions="MT_MediaCampaign_InconsistencyCheckCtlr" showHeader="false" sidebar="false" tabStyle="MT_MediaCampaign__c">
-	<apex:form >
-    <apex:outputPanel id="test">
-    	<apex:pageMessages />
-    </apex:outputPanel>
-    </apex:form>
-</apex:page>
