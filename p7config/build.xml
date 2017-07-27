@@ -19,7 +19,7 @@
 		</target>
 
 		<target name="Validate_AND_Deploy_MTBETADEV" depends="checkPackage" if="continue">
-			  <subant failonerror="true" target="Validate_MTBETADEV" buildpath="."/>
-			  <subant failonerror="true" target="Deploy_MTBETADEV" buildpath="."/> 
+			  <subant failonerror="true" target="Validate_MTBETADEV" buildpath=".."/>
+			  <subant failonerror="true" target="Deploy_MTBETADEV" buildpath=".."/> 
 		</target>
 </project>
