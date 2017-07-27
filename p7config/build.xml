@@ -10,16 +10,16 @@
 		 	<available file="../delta/src/package.xml" property="continue"/>
 		</target>
 
-		<target name="Validate_MTBETADEV" depends="checkPackage" if="continue">
+		<target name="Validate_CITEST" depends="checkPackage" if="continue">
 			<sf:deploy username="${sf.username_MTBETADEV}" password="${sf.password_MTBETADEV}" serverurl="${sf.serverurl_MTBETADEV}" maxPoll="${sf.maxPoll}"  deployRoot="../delta/src" checkOnly="true"/> 
 		</target>
 
-		<target name="Deploy_MTBETADEV" depends="checkPackage" if="continue">
+		<target name="Deploy_CITEST" depends="checkPackage" if="continue">
 		     <sf:deploy username="${sf.username_MTBETADEV}" password="${sf.password_MTBETADEV}" serverurl="${sf.serverurl_MTBETADEV}" maxPoll="${sf.maxPoll}"  deployRoot="../delta/src"/> 
 		</target>
 
-		<target name="Validate_AND_Deploy_MTBETADEV" depends="checkPackage" if="continue">
-			  <subant failonerror="true" target="Validate_MTBETADEV" buildpath="."/>
-			  <subant failonerror="true" target="Deploy_MTBETADEV" buildpath="."/> 
+		<target name="Validate_AND_Deploy_CITEST" depends="checkPackage" if="continue">
+			  <subant failonerror="true" target="Validate_CITEST" buildpath="."/>
+			  <subant failonerror="true" target="Deploy_CITEST" buildpath="."/> 
 		</target>
 </project>
