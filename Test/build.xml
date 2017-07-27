@@ -1,0 +1,21 @@
+<project name="p7config" basedir="." xmlns:sf="antlib:com.salesforce">
+	<property file="sfdc_logins.properties"/>
+	<property environment="env"/>
+
+		<target name="checkPackage">
+		 	<available file="/var/lib/jenkins/workspace/J_PRJ_NNN/delta/src/package.xml" property="continue"/>
+		</target>
+
+		<target name="Validate_SB_NNN" depends="checkPackage" if="continue">
+			<sf:deploy username="${sf.username_SB_NNN}" password="${sf.password_SB_NNN}" serverurl="${sf.serverurl_SB_NNN}" maxPoll="${sf.maxPoll}"  deployRoot="/var/lib/jenkins/workspace/J_PRJ_NNN/delta/src" checkOnly="true"/> 
+		</target>
+
+		<target name="Deploy_SB_NNN" depends="checkPackage" if="continue">
+		     <sf:deploy username="${sf.username_SB_NNN}" password="${sf.password_SB_NNN}" serverurl="${sf.serverurl_SB_NNN}" maxPoll="${sf.maxPoll}"  deployRoot="/var/lib/jenkins/workspace/J_PRJ_NNN/delta/src"/> 
+		</target>
+
+		<target name="Validate_AND_Deploy_SB_NNN" depends="checkPackage" if="continue">
+			  <subant failonerror="true" target="Validate_SB_NNN" buildpath="."/>
+			  <subant failonerror="true" target="Deploy_SB_NNN" buildpath="."/> 
+		</target>
+</project>
