@@ -11,11 +11,11 @@
 		</target>
 
 		<target name="Validate_CITEST" depends="checkPackage" if="continue">
-			<sf:deploy username="${sf.username_MTBETADEV}" password="${sf.password_MTBETADEV}" serverurl="${sf.serverurl_MTBETADEV}" maxPoll="${sf.maxPoll}"  deployRoot="../delta/src" checkOnly="true"/> 
+			<sf:deploy username="${sf.username_CITEST}" password="${sf.password_CITEST}" serverurl="${sf.serverurl_CITEST}" maxPoll="${sf.maxPoll}"  deployRoot="../delta/src" checkOnly="true"/> 
 		</target>
 
 		<target name="Deploy_CITEST" depends="checkPackage" if="continue">
-		     <sf:deploy username="${sf.username_MTBETADEV}" password="${sf.password_MTBETADEV}" serverurl="${sf.serverurl_MTBETADEV}" maxPoll="${sf.maxPoll}"  deployRoot="../delta/src"/> 
+		     <sf:deploy username="${sf.username_CITEST}" password="${sf.password_CITEST}" serverurl="${sf.serverurl_CITEST}" maxPoll="${sf.maxPoll}"  deployRoot="../delta/src"/> 
 		</target>
 
 		<target name="Validate_AND_Deploy_CITEST" depends="checkPackage" if="continue">
