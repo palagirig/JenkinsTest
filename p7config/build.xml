@@ -10,7 +10,7 @@
 		 	<available file="delta/src/package.xml" property="continue"/>
 		</target>
 
-		<target name="Validate_MTBETADEV">
+		<target name="Validate_MTBETADEV" depends="checkPackage" if="continue">
 			<sf:deploy username="${sf.username_MTBETADEV}" password="${sf.password_MTBETADEV}" serverurl="${sf.serverurl_MTBETADEV}" maxPoll="${sf.maxPoll}"  deployRoot="delta/src" checkOnly="true"/> 
 		</target>
 
