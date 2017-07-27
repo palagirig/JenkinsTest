@@ -1,11 +1,13 @@
 #!/bin/bash
-rm -rf /p7config/CITEST/delta
-mkdir /CITEST/delta
-git diff-tree --no-commit-id --diff-filter=ACM --name-only -r HEAD | xargs -I {} cp --parents {} /CITEST/delta
-deltaPath="/CITEST/delta/src"
-if [ -e $deltaPath ] 
+rm -rf /var/lib/jenkins/workspace/CITEST/delta
+mkdir /var/lib/jenkins/workspace/CITEST/delta
+
+git diff-tree --no-commit-id --diff-filter=ACM --name-only -r HEAD | xargs -I {} cp --parents {} /var/lib/jenkins/workspace/CITEST/delta
+deltaCount=$(git diff-tree --no-commit-id --diff-filter=ACM --name-only -r HEAD src| wc -l)
+echo $deltaCount " files to process ..."
+if(expr $deltaCount > 0)
 then
-groovy /CITEST/p7config/componentPackager.groovy /CITEST/p7config/componentHandler.json /CITEST/delta/src/ /CITEST/delta/src/package.xml
+touch delta/go.further
 else
-echo "error"
+echo "Nothing to deploy this time!!"
 fi
