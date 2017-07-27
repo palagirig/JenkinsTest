@@ -1,7 +1,11 @@
 <project name="p7config" basedir="." xmlns:sf="antlib:com.salesforce">
 	<property file="sfdc_logins.properties"/>
 	<property environment="env"/>
-
+	<taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <pathelement location="ant-salesforce.jar" />
+        </classpath>
+    </taskdef>
 		<target name="checkPackage">
 		 	<available file="delta/src/package.xml" property="continue"/>
 		</target>
