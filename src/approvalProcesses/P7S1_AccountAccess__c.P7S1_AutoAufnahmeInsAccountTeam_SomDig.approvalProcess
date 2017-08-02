@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>RecordType</field>
+        <field>Owner</field>
+        <field>P7S1_CustomerGroup__c</field>
+        <field>P7S1_Account__c</field>
+        <field>P7S1_Agency__c</field>
+        <field>P7S1_Customer__c</field>
+        <field>P7S1_CustomerProduct__c</field>
+        <field>P7S1_Mn3TargetEstimated__c</field>
+        <field>P7S1_ProjectTitle__c</field>
+        <field>P7S1_ProjectDescription__c</field>
+        <field>P7S1_AccessReason__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>p7s1.jmiksch@factory42.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>IF (BEGINS(Owner:User.Profile.Name, &apos;SomDig_&apos;)  , false, true)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Profile = SomDig</label>
+        <name>Profile_SomDig</name>
+    </approvalStep>
+    <description>All Users where Profile starts with SomDig_ are automatically approved. 7Screen is not automatically approved.</description>
+    <emailTemplate>Sales_Excellence_Emails/P7S1_AccountAccess_ApprovalRequestSubmitted</emailTemplate>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>P7S1_AccountAccess__c.RecordType</field>
+            <operation>equals</operation>
+            <value>Aufnahme ins Account Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Profile</field>
+            <operation>startsWith</operation>
+            <value>SomDig_</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.UserRole</field>
+            <operation>notEqual</operation>
+            <value>71M 7Screen (DooH)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.UserRole</field>
+            <operation>notEqual</operation>
+            <value>71M 7Screen (DooH) Sales</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>P7S1_Genehmigt</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>P7S1_Abgelehnt</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>P7S1_AutomaticAccessApprovalRequestDigitalSales</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>P7S1_Eingereicht</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Auto Aufnahme ins Account Team SomDig</label>
+    <recallActions>
+        <action>
+            <name>P7S1_Zurueckgezogen</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

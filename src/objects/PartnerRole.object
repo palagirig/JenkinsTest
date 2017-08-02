@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ReverseRole</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Werber</fullName>
+                <default>false</default>
+                <reverseRole>Verkäufer</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agentur</fullName>
+                <default>false</default>
+                <reverseRole>Kunde</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Makler</fullName>
+                <default>false</default>
+                <reverseRole>Agent</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Berater</fullName>
+                <default>false</default>
+                <reverseRole>Kunde</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <reverseRole>Verkäufer</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Systemintegrator</fullName>
+                <default>false</default>
+                <reverseRole>Kunde</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agentur (?)</fullName>
+                <default>false</default>
+                <reverseRole>Kunde (?)</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Einkaufsagentur</fullName>
+                <default>false</default>
+                <reverseRole>Kunde</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prognose Agentur Online 2012</fullName>
+                <default>false</default>
+                <reverseRole>Prognose Werbetreibender Online 2012</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WKZ-Partner</fullName>
+                <default>false</default>
+                <reverseRole>Kunde</reverseRole>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+</CustomObject>

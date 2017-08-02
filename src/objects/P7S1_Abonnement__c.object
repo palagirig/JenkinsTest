@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Newsletter Abonnements für Portaluser und Kontakte</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_AbgeschlossenAm__c</fullName>
+        <description>Beginn des Abonnements</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beginn des Abonnements</inlineHelpText>
+        <label>Abgeschlossen am</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Aktiv__c</fullName>
+        <description>Zeigt an, ob das Abonnement aktiv ist.</description>
+        <externalId>false</externalId>
+        <formula>AND (  
+  NOT(ISBLANK ( P7S1_AbgeschlossenAm__c )),
+  P7S1_AbgeschlossenAm__c &lt;= NOW(),
+  OR (
+    ISBLANK ( P7S1_Kuendigungsdatum__c ),
+    P7S1_Kuendigungsdatum__c &gt;= NOW(),
+    AND(P7S1_Kuendigungsdatum__c &lt; NOW(), P7S1_AbgeschlossenAm__c &gt; P7S1_Kuendigungsdatum__c)
+  )
+)</formula>
+        <inlineHelpText>Zeigt an, ob das Abonnement aktiv ist.</inlineHelpText>
+        <label>Aktiv</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Kontakt der das Abonnement abgeschlossen hat</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kontakt der das Abonnement abgeschlossen hat</inlineHelpText>
+        <label>Kontakt</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Abonnements</relationshipLabel>
+        <relationshipName>Abonnements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Kuendigungsdatum__c</fullName>
+        <description>Ende des Abonnements</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ende des Abonnements</inlineHelpText>
+        <label>Kündigungsdatum</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Newsletter_Unsubscribe_Endpoint__c</fullName>
+        <defaultValue>&quot;https://lr2sf-prosiebensat1.cs83.force.com/newsletterunsubscribe&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Newsletter Unsubscribe Endpoint</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Newsletter_Unsubscribe_Url__c</fullName>
+        <externalId>false</externalId>
+        <formula>P7S1_Newsletter_Unsubscribe_Endpoint__c + &quot;?abonnementId=&quot;+ Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Newsletter Unsubscribe Url</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Newsletter__c</fullName>
+        <description>Abonnement für Newsletter</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Abonnement für Newsletter</inlineHelpText>
+        <label>Newsletter</label>
+        <referenceTo>P7S1_Newsletter__c</referenceTo>
+        <relationshipLabel>Abonnements</relationshipLabel>
+        <relationshipName>Abonnements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>P7S1_PortalLogin__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Abonnement durch Benutzer des Portals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Abonnement durch Benutzer des Portals</inlineHelpText>
+        <label>Portal Benutzer</label>
+        <referenceTo>P7S1_PortalLogin__c</referenceTo>
+        <relationshipLabel>Abonnements</relationshipLabel>
+        <relationshipName>Abonnements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Abonnement</label>
+    <listViews>
+        <fullName>AboAktiv</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>P7S1_PortalLogin__c</columns>
+        <columns>P7S1_Newsletter__c</columns>
+        <columns>P7S1_AbgeschlossenAm__c</columns>
+        <columns>P7S1_Kuendigungsdatum__c</columns>
+        <columns>P7S1_Aktiv__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Aktiv__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Aktive Abos</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AboInaktiv</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>P7S1_PortalLogin__c</columns>
+        <columns>P7S1_Newsletter__c</columns>
+        <columns>P7S1_AbgeschlossenAm__c</columns>
+        <columns>P7S1_Kuendigungsdatum__c</columns>
+        <columns>P7S1_Aktiv__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Aktiv__c</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Inaktive Abos</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AboOhneKontakt</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>P7S1_PortalLogin__c</columns>
+        <columns>P7S1_Newsletter__c</columns>
+        <columns>P7S1_AbgeschlossenAm__c</columns>
+        <columns>P7S1_Kuendigungsdatum__c</columns>
+        <columns>P7S1_Aktiv__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Aktiv__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>P7S1_Contact__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Abos ohne Kontakt</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AboOhnePL</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>P7S1_PortalLogin__c</columns>
+        <columns>P7S1_Newsletter__c</columns>
+        <columns>P7S1_AbgeschlossenAm__c</columns>
+        <columns>P7S1_Kuendigungsdatum__c</columns>
+        <columns>P7S1_Aktiv__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Aktiv__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>P7S1_PortalLogin__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Abos ohne Portal Login</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>P7S1_PortalLogin__c</columns>
+        <columns>P7S1_Newsletter__c</columns>
+        <columns>P7S1_AbgeschlossenAm__c</columns>
+        <columns>P7S1_Kuendigungsdatum__c</columns>
+        <columns>P7S1_Aktiv__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Abos</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>NL-Abo-{000000}</displayFormat>
+        <label>Abonnement Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Abonnements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

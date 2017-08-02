@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Täglicher Ticketstand</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Lcm_BusinessValue__c</fullName>
+        <description>Abschätzung des Business Value durch den Fachbereich</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Abschätzung des Business Value durch den Fachbereich</inlineHelpText>
+        <label>Business Value</label>
+        <picklist>
+            <picklistValues>
+                <fullName>100</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>40</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_ClosedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Datum/Uhrzeit geschlossen</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Cluster__c</fullName>
+        <description>Einteilung der Advendio-Tickets in Cluster</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Einteilung der Advendio-Tickets in Cluster</inlineHelpText>
+        <label>Cluster</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AdTech</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C&amp;B ADvendio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C&amp;B SaS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reporting DWH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reporting SaS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Complexity__c</fullName>
+        <description>Komplexität der Umsetzung in Storypoints</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Komplexität der Umsetzung in Storypoints</inlineHelpText>
+        <label>Storypoints</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>80</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>100</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_CreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Datum/Uhrzeit geöffnet</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_ExtCaseNo__c</fullName>
+        <externalId>false</externalId>
+        <label>externe Ticket-Nr.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_KanStation__c</fullName>
+        <externalId>false</externalId>
+        <label>Kanban Station</label>
+        <picklist>
+            <picklistValues>
+                <fullName>FuncSpec</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dev</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GoLive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_KanStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Kanban Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>doing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>done</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Prioritaet__c</fullName>
+        <description>Priorisierung des Tickets: 
+Blocker - keine Fortführung der Haupttätigkeit möglich; 
+Kritisch - Workarounds für Haupttätigkeit vorhanden; 
+Schwer - Workarounds vorhanden; 
+Unwesentlich - Verlust unbedeutender Funktion; 
+Trival - &quot;nice to have&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Priorisierung des Tickets: 
+Blocker - keine Fortführung der Haupttätigkeit möglich; 
+Kritisch - Workarounds für Haupttätigkeit vorhanden; 
+Schwer - Workarounds vorhanden; 
+Unwesentlich - Verlust unbedeutender Funktion; 
+Trival - &quot;nice to have&quot;.</inlineHelpText>
+        <label>Priorität</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Blocker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kritisch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Schwer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unwesentlich</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trivial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Projekt__c</fullName>
+        <description>Welches Projekt betrifft dieser Vorgang?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Welches Projekt betrifft dieser Vorgang?</inlineHelpText>
+        <label>Projekt</label>
+        <picklist>
+            <picklistValues>
+                <fullName>7Games</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7Screen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adv Betrieb</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adv Delta Force</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adv Features</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adv Modularisierung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adv Sonstiges</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CRM-TV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LCM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Liferay 2 SF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>M&amp;A Integration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media Transparency</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prodia Ablöse Österreich</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Puls4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Excellence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SevenVentures GmbH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Studio71</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Architektur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_ReOpenDateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>(Re-)Open Date/Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_RequirementName__c</fullName>
+        <externalId>false</externalId>
+        <label>Requirement-Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_RequirementNr__c</fullName>
+        <externalId>false</externalId>
+        <label>Requirement-Nr.</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Severity__c</fullName>
+        <description>Kritikalität des Tickets, Vegrabe durch Incident Manager 
+
+1 - keine Fortführung Haupttätigkeit 
+2 - Blocker/Kritisch: Workarounds Haupttätigkeit vorhanden (hoher Aufwand &amp; zeitkritisch) 
+3 - Schwer: Verlust wichtiger Funktion (Workarounds &amp; zeitunkritisch) 
+4 - Unwesentlich: Verlust unbedeutender Funktion</description>
+        <externalId>false</externalId>
+        <inlineHelpText>1 - keine Fortführung Haupttätigkeit 
+2 - Blocker/Kritisch: Workarounds Haupttätigkeit vorhanden (hoher Aufwand &amp; zeitkritisch) 
+3 - Schwer: Verlust wichtiger Funktion (Workarounds &amp; zeitunkritisch) 
+4 - Unwesentlich: Verlust unbedeutender Funktion</inlineHelpText>
+        <label>Severity</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Sprint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sprint</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Status__c</fullName>
+        <description>Was ist der aktuelle Status des Tickets?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Was ist der aktuelle Status des Tickets?</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Neu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Neuer Kommentar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>in Bearbeitung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>in Warteschleife</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wartet auf Feedback</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wartet auf Dienstleister</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eskaliert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Geschlossen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Team</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Team A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Team B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Team Reporting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Team Andere Projekte</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Team E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Team F</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestErgebnis__c</fullName>
+        <externalId>false</externalId>
+        <label>Test-Ergebnis</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_TicketNr__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket-Nr.</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Ticketinhaber__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticketinhaber</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_Typ__c</fullName>
+        <description>Klassifizierung des Tickets: 
+Funktionsanforderung - neue oder erweiterte Funktion; 
+Problem - Programm- oder Softwarefehler; 
+Frage - Anfragen zu diversen Themen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Klassifizierung des Tickets: 
+Funktionsanforderung - neue oder erweiterte Funktion; 
+Problem - Programm- oder Softwarefehler; 
+Frage - Anfragen zu diversen Themen.</inlineHelpText>
+        <label>Typ</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Funktion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Frage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aufgabe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sammelvorgang</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Ticket Snapshot</label>
+    <nameField>
+        <displayFormat>TISS-{0000}</displayFormat>
+        <label>Ticket Snapshot-Nr.</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ticket Snapshots</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

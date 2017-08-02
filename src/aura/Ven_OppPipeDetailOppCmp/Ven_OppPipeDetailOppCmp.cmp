@@ -1,0 +1,276 @@
+<aura:component >
+    <ltng:require styles="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+
+                  scripts="   /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js">
+    </ltng:require>
+
+    <aura:attribute name="opp" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="countryInternational" type="Object" access="public"></aura:attribute>
+    <aura:attribute name="userRoles" type="Object" access="public"></aura:attribute>
+    <aura:attribute name="selectOptLsts" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="isNewOpp" type="Boolean" default="false" access="public"></aura:attribute>
+
+    <aura:attribute name="isValid" type="Boolean" access="public" ></aura:attribute>
+    <aura:attribute name="isValidName" type="Boolean" access="public" ></aura:attribute>
+    <aura:attribute name="effYieldValid" type="Boolean" default="true" access="public"></aura:attribute>
+
+    <aura:attribute name="austriaRole" type="String"  access="public"></aura:attribute>
+    <aura:attribute name="switzerlandRole" type="String" access="public" ></aura:attribute>
+
+    <aura:attribute name="setProbability" type="Boolean" access="global"/>
+
+    <aura:attribute name="isLostCancelled" type="Boolean" access="public"></aura:attribute>
+    <aura:attribute name="isIm" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isScout" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isAnalyst" type="Boolean" default="false" access="public"></aura:attribute>
+
+    <aura:attribute name="verticalsText" type="String" access="private" />
+
+    <aura:attribute name="statusString" type="String" access="public" />
+
+    <aura:handler name="change" value="{!v.opp.Name}" action="{!c.doHandleNameChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.StageName}" action="{!c.doHandleStatusChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.Ven_Country__c}" action="{!c.doHandleCountryChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.OwnerId}" action="{!c.doHandleOwnerChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.Probability}" action="{!c.doHandleClientLikelihoodChange}"></aura:handler>
+
+    <!--**** BS 31.07.17 - EUR as default Currency ****
+    <aura:handler name="change" value="{!v.opp.CurrencyIsoCode}" action="{!c.doHandleCurrencyChange}"></aura:handler>
+    -->
+
+    <aura:registerEvent name="ccyLikelihoodChanged" type="c:Ven_OppPipeDetailOppEvent"></aura:registerEvent>
+
+    <aura:method name="checkDetailOppCmpValid" action="{!c.checkValid}" description="check if cmp is valid" />
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Account}</label>
+
+                <c:f42_LookupCmp objType="Account"
+                                 labelApiName="Name"
+                                 objId="{!v.opp.AccountId}"
+                                 objLabel="{!v.opp.Account.Name}"
+                                 isValid="true"
+                                 required="true"
+                                 aura:id="checkField" />
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Status}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.StageName}"
+                                     options="{!v.selectOptLsts.stageNames}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group" style="{!v.isLostCancelled ? '' : 'display:none'}">
+                <label>{!$Label.c.Ven_lbl_ReasonLostCancelled}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_Stage_Finished_Subcategory__c}"
+                                     options="{!v.selectOptLsts.reasons}"
+                                     required="{!v.isLostCancelled}"
+                                     setEmptyOption="true"
+                                     isValid="{!v.reasonValid}"
+                                     cssStyleBtn="width:100%;height:30px !important"/>
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Vertical}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_Verticals__c}"
+                                     selectedLbl="{!v.verticalsText}"
+                                     options="{!v.selectOptLsts.verticals}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Country}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_Country__c}"
+                                     options="{!v.selectOptLsts.countries}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Opp} Name</label>
+                <ui:inputText aura:id="oppName" class="form-control" value="{!v.opp.Name}"/>
+            </div>
+
+            <div aura:id="likelihoodTT" class="slds-popover slds-popover--tooltip slds-nubbin--bottom-left toolt hideIt" role="tooltip" id="help">
+                <div class="slds-popover__body">Please consider adjusting probability when status is changed.</div>
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_ClientLikelihood}</label>
+                <div class="input-group">
+
+                    <c:f42_InputNumber value="{!v.opp.Probability}"
+                                       min="0"
+                                       max="100"
+                                       required="true"
+                                       isInteger="true"
+                                       isValid="true"
+                                       textAlign="right"
+                                       aura:id="checkField">
+                    </c:f42_InputNumber>
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+
+
+            <div class="form-group" style="{!v.isLostCancelled ? '' : 'display:none'}">
+              <label>{!$Label.c.Ven_lbl_CommentLostCancelled}</label>
+              <textarea class="form-control" onchange="{!c.doHandleCommentChange}" value="{!v.opp.Ven_Comment__c}" style="height:auto!important"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_BusinessModel}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_BusinessModel__c}"
+                                     options="{!v.selectOptLsts.businessmodel}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_MediaPlanner}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_MediaPlanner__c}"
+                                     options="{!v.selectOptLsts.analysts}"
+                                     required="false"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Im} 1</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.OwnerId}"
+                                     options="{!v.selectOptLsts.ims}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Im} 2</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_Im2__c}"
+                                     options="{!v.selectOptLsts.ims}"
+                                     required="false"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group" style="{!v.isLostCancelled ? '' : 'display:none'}"></div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_BusinessType}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_BusinessType__c}"
+                                     options="{!v.selectOptLsts.businesstype}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_CustomerAssesment}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_CustomerAssesment__c}"
+                                     options="{!v.selectOptLsts.customerAssesment}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+        </div>
+
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_IndustryChampion}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_IndustryChampion__c}"
+                                     options="{!v.selectOptLsts.ims}"
+                                     required="{!not(v.verticalsText == 'Others')}"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Scout}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_ScoutText__c}"
+                                     options="{!v.selectOptLsts.scouts}"
+                                     required="{!and(v.isScout, v.isNewOpp)}"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            <div class="form-group" style="{!v.isLostCancelled ? '' : 'display:none'}"></div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_RiskProfile}</label>
+
+                <c:f42_SelectListCmp selectedId="{!v.opp.Ven_RiskProfile__c}"
+                                     options="{!v.selectOptLsts.risk}"
+                                     required="true"
+                                     setEmptyOption="true"
+                                     isValid="true"
+                                     cssStyleBtn="width:100%;height:30px !important"
+                                     aura:id="checkField" />
+
+            </div>
+
+            
+        </div>
+
+    </div>
+
+
+</aura:component>

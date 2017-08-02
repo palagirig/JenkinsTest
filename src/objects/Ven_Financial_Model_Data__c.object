@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Objekt zur Speicherung der monatlichen Plan- und Istwerte jedes KPIs des Investments.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Financial_Model_Version__c</fullName>
+        <description>Stellt die Verbindung zum übergeordneten Objekt her</description>
+        <externalId>false</externalId>
+        <inlineHelpText>bitte Financial Model Version eintragen</inlineHelpText>
+        <label>Financial Model Version</label>
+        <referenceTo>Ven_Financial_Model_Version__c</referenceTo>
+        <relationshipLabel>Financial Model Data</relationshipLabel>
+        <relationshipName>Financial_Model_Data</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Key_Performance_Indicator__c</fullName>
+        <description>Stellt die Verbindung zu den KPIs her</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wird automatisch befüllt bei Upload des Financial Models</inlineHelpText>
+        <label>Key Performance Indicator</label>
+        <referenceTo>Ven_Key_Performance_Indicator__c</referenceTo>
+        <relationshipName>Financial_Models</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <description>Wird benötigt, um in Berichten die Datensätze nach Jahren gruppieren zu können. Wird in Layouts nicht angezeigt.</description>
+        <externalId>false</externalId>
+        <formula>Month( Ven_Datum__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Wird benötigt, um in Berichten die Datensätze nach Jahren gruppieren zu können. Wird in Layouts nicht angezeigt.</inlineHelpText>
+        <label>Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Datum__c</fullName>
+        <description>Beinhlatet Tag, Monat und Jahr der KPI Werte</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wird bei Upload eines Financial Models automatisch befüllt</inlineHelpText>
+        <label>Datum</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Key_Performance_Indicator__r.Ven_Unit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Value__c</fullName>
+        <description>Beinhaltet den Wert des KPI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beinhaltet den Wert des KPI</inlineHelpText>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Write_protection_FMD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>sperrt den Datensatz für automatische Updates</description>
+        <externalId>false</externalId>
+        <inlineHelpText>wird automatisch gesetzt</inlineHelpText>
+        <label>Write protection</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <description>Wird benötigt, um in Berichten die Datensätze nach Jahren gruppieren zu können. Wird in Layouts nicht angezeigt.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Year( Ven_Datum__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Wird benötigt, um in Berichten die Datensätze nach Jahren gruppieren zu können. Wird in Layouts nicht angezeigt.</inlineHelpText>
+        <label>Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Financial Model Data</label>
+    <nameField>
+        <label>Financial Model-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Financial Model Data</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

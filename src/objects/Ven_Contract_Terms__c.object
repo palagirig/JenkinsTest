@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Ven_Abweichender_Term__c</fullName>
+        <description>Hier wird der abweichende Term von Vertriebsmitarbeiter eingetragen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den abweichenden Term hier eintragen.</inlineHelpText>
+        <label>Abweichender Term</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_G_ltig__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Diese Checkbox gibt an ob ein Term im Standard gültig ist oder nicht.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Der Term ist gültig im Standart wenn die Checkbox gesetzt ist.</inlineHelpText>
+        <label>Gültig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Kommentar_warum_nicht_g_ltig__c</fullName>
+        <description>Begründung warum ein Term in Standard nicht gültig ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier bitte die Begründung angeben, warum ein Term im Standard nicht gültig ist.</inlineHelpText>
+        <label>Kommentar warum nicht gültig</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_Opportunity__c</fullName>
+        <description>Dieses Feld dient nur zur Übersicht, damit im Term selber auch einsehbar ist zu welcher Opportunity dieser gehört.</description>
+        <externalId>false</externalId>
+        <formula>Ven_Vertrag_SevenVentures__r.Ven_Opportunity__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Dieses Feld dient nur zur Übersicht, damit im Term selber auch einsehbar ist zu welcher Opportunity dieser gehört.</inlineHelpText>
+        <label>Opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Priorit_t__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Ven_Standard_Term_kurz__r.Ven_Priorit_t__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Priorität</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Standard_Term_kurz__c</fullName>
+        <description>Hier wir der nur ein Auszug vom Term angezeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wir der nur ein Auszug vom Term angezeigt.</inlineHelpText>
+        <label>Standard Term (kurz)</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Es werden nur Aktive Standart Terms angezeigt!</errorMessage>
+            <filterItems>
+                <field>Ven_Standart_Terms__c.Ven_Aktiv__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Ven_Standart_Terms__c</referenceTo>
+        <relationshipLabel>Contract Terms</relationshipLabel>
+        <relationshipName>Contract_Terms</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ven_Standard_Terms_lang__c</fullName>
+        <description>Hier wir der komplette Term angezeigt.</description>
+        <externalId>false</externalId>
+        <formula>Ven_Standard_Term_kurz__r.Ven_Standard_Term_Lang__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hier wir der komplette Term angezeigt.</inlineHelpText>
+        <label>Standard Terms (lang)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Vertrag_SevenVentures__c</fullName>
+        <description>Hier wird die Verbindung eines Contract Terms zum Vertrag eingetragen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird die Verbindung eines Contract Terms zum Vertrag eingetragen.</inlineHelpText>
+        <label>Vertrag (SevenVentures)</label>
+        <referenceTo>Ven_Vertrag_SevenVentures__c</referenceTo>
+        <relationshipLabel>Contract Terms</relationshipLabel>
+        <relationshipName>Contract_Terms</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Contract Terms</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_kurz__c</columns>
+        <columns>Ven_G_ltig__c</columns>
+        <columns>Ven_Opportunity__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Ven_Vertrag_SevenVentures__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>VenCT-{0000000}</displayFormat>
+        <label>Contract Term-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Contract Terms</pluralLabel>
+    <searchLayouts>
+        <searchFilterFields>Ven_Standard_Term_kurz__c</searchFilterFields>
+        <searchFilterFields>Ven_Standard_Terms_lang__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Wenn_Standard_Term_nicht_gueltig_Abweich</fullName>
+        <active>true</active>
+        <description>Wenn Standard Term nicht gültig dann müssen der abweichende Term  eingetragen werden</description>
+        <errorConditionFormula>(Ven_G_ltig__c  = false  &amp;&amp; Ven_Abweichender_Term__c =&quot;&quot;)</errorConditionFormula>
+        <errorDisplayField>Ven_Abweichender_Term__c</errorDisplayField>
+        <errorMessage>Bitte den abweichenden Term eintragen!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wenn_Standard_Term_nicht_gueltig_Comment</fullName>
+        <active>true</active>
+        <description>Wenn Standard Term nicht gültig dann müssen der abweichende Term und ein Kommentar warum eingetragen werden</description>
+        <errorConditionFormula>(Ven_G_ltig__c  = false  &amp;&amp;  Ven_Kommentar_warum_nicht_g_ltig__c =&quot;&quot; )</errorConditionFormula>
+        <errorDisplayField>Ven_Kommentar_warum_nicht_g_ltig__c</errorDisplayField>
+        <errorMessage>Bitte einen Kommentar warum der Term nicht gültig ist eintragen!</errorMessage>
+    </validationRules>
+</CustomObject>

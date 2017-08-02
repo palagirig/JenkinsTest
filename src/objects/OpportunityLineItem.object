@@ -1,0 +1,2060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Agentur_A__c</fullName>
+        <externalId>false</externalId>
+        <label>Agentur (A)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Agentur_Cash__c</fullName>
+        <externalId>false</externalId>
+        <label>Agentur-Cash</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Agentur_Natural__c</fullName>
+        <externalId>false</externalId>
+        <label>Agentur-Natural</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Agentur_P__c</fullName>
+        <externalId>false</externalId>
+        <label>Agentur (P)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Agentur_V__c</fullName>
+        <externalId>false</externalId>
+        <label>Agentur (V)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>BR__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>BR (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Kunde_A__c</fullName>
+        <externalId>false</externalId>
+        <label>Kunde (A)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Kunde_Cash__c</fullName>
+        <externalId>false</externalId>
+        <label>Kunde-Cash</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Kunde_Natural__c</fullName>
+        <externalId>false</externalId>
+        <label>Kunde Natural</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Kunde_P__c</fullName>
+        <externalId>false</externalId>
+        <label>Kunde (P)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Kunde_V__c</fullName>
+        <externalId>false</externalId>
+        <label>Kunde (V)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Branche__c</fullName>
+        <externalId>false</externalId>
+        <label>Branche</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Audio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital Games &amp; Applications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DVD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverages</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home &amp; Living</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Personal Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publishing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stationary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Toys &amp; Games</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lic_CashFlow1__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Flow 1</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lic_CashFlow2__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Flow 2</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lic_CashFlow3__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Flow 3</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lic_CashFlow4__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Flow 4</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lic_CashFlow5__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Flow 5</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lic_CashFlow6__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Flow 6</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lic_GarantiesummeRoyalty__c</fullName>
+        <externalId>false</externalId>
+        <label>Garantiesumme / Royalty</label>
+        <picklist>
+            <picklistValues>
+                <fullName>GS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ROY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Gebiet__c</fullName>
+        <externalId>false</externalId>
+        <label>Gebiet</label>
+        <picklist>
+            <picklistValues>
+                <fullName>G</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GAS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>S</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Leistung__c</fullName>
+        <externalId>false</externalId>
+        <label>Leistung</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Produkt-Lizenz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Promotion-Lizenz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media-Lizenz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Lizenzart__c</fullName>
+        <externalId>false</externalId>
+        <label>Lizenzart</label>
+        <picklist>
+            <picklistValues>
+                <fullName>intern</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>extern</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Lizenzmarke__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lizenzmarke</label>
+        <referenceTo>Lic_Lizenzmarke__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Lizenzmarke_old__c</fullName>
+        <externalId>false</externalId>
+        <label>Lizenzmarke</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lic_Lizenzumsatz__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTv_MN3__c * Lic_SharePSL__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lizenzumsatz</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lic_RechnungsmonatLicensing__c</fullName>
+        <externalId>false</externalId>
+        <label>Rechnungsmonat (Licensing)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Jan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feb</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mrz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mai</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jun</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jul</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aug</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Okt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nov</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dez</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lic_SharePSL__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lic_Lizenzmarke__r.Lic_SharePSL__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Share PSL %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lic_SharePSL_old__c</fullName>
+        <externalId>false</externalId>
+        <label>Share PSL %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lic_Vertragsnummer7Contracts__c</fullName>
+        <externalId>false</externalId>
+        <label>Vertragsnummer (7Contracts)</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Online_Position__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( (PricebookEntry.Product2.Name = &quot;invalid_invalid_invalid&quot;) || (PricebookEntry.Product2.Name = &quot;Other Products&quot;),0,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Online Position</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>SOmTv_CloserSek__c</fullName>
+        <externalId>false</externalId>
+        <label>Closer Sek</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>SomTV_MN1__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomTv_MB1Bezahlt__c - SomTv_MB1Bezahlt__c * BR__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MN1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AE_inProzent__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Agenturprovision in %</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Agenturprovision in %</inlineHelpText>
+        <label>AE (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AbzurechnendeLaenge__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Kundenanteil</inlineHelpText>
+        <label>Abzurechnende Länge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_AdFProductHelper__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>NICHT IM LAYOUT
+Feld wird für Visualforce Seite verwendet, um nach Produkten suchen zu können.
+VISUALFORCE HELPER FIELD</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Opportunity Product (Product)</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AnteilAmGesamtinvest__c</fullName>
+        <externalId>false</externalId>
+        <label>%-Anteil am Gesamtinvest</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_AuftragsnummerProdia__c</fullName>
+        <externalId>false</externalId>
+        <label>Auftragsnummer Prodia</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_AuftragsnummerProsa__c</fullName>
+        <externalId>false</externalId>
+        <label>Auftragsnummer Prosa</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Ausstrahlung__c</fullName>
+        <externalId>false</externalId>
+        <label>Ausstrahlung</label>
+        <picklist>
+            <picklistValues>
+                <fullName>EA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EA/WH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EA/RR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WH/RR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EA/WH/RR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_BausteinNo__c</fullName>
+        <externalId>false</externalId>
+        <label>Baustein No</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Baustein__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Baustein</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Opportunity-Produkt</relationshipLabel>
+        <relationshipName>Opportunity_Produkt</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Buchungssystem__c</fullName>
+        <externalId>false</externalId>
+        <label>Buchungssystem</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ProSa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ProDia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Merlis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Buchungszeitraum_bisF__c</fullName>
+        <description>Zeigt den Buchungszeitraum aus der Opportunity an.</description>
+        <externalId>false</externalId>
+        <formula>Opportunity.SomTv_BuchungszeitraumBis__c</formula>
+        <inlineHelpText>Zeigt den Buchungszeitraum aus der Opportunity an.</inlineHelpText>
+        <label>Buchungszeitraum bis</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Buchungszeitraum_vonF__c</fullName>
+        <description>Zeigt den Buchungszeitraum aus der Opportunity an.</description>
+        <externalId>false</externalId>
+        <formula>Opportunity.SomTv_BuchungszeitraumVon__c</formula>
+        <inlineHelpText>Zeigt den Buchungszeitraum aus der Opportunity an.</inlineHelpText>
+        <label>Buchungszeitraum von</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_CloserAnzahl__c</fullName>
+        <externalId>false</externalId>
+        <label>Closer Anzahl</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ContentMarketing__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Bei Produkten die zu CM gehören sollen, bitte Ja auswählen.</inlineHelpText>
+        <label>Content Marketing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Detail_Informationen__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Info zu Trailerlängen, Kundentanteil etc.</inlineHelpText>
+        <label>Detail-Informationen</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Differenz_zur_Vorwoche_MB1__c</fullName>
+        <description>Mediabrutto1-Veränderung zur Vorwoche</description>
+        <externalId>false</externalId>
+        <formula>SomTv_MB1__c - SomTv_MB1_Vorwoche__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Mediabrutto1-Veränderung zur Vorwoche</inlineHelpText>
+        <label>Differenz zur Vorwoche MB1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Differenz_zur_Vorwoche_MN3__c</fullName>
+        <description>Medianetto3-Veränderung zur Vorwoche</description>
+        <externalId>false</externalId>
+        <formula>SomTv_MN3__c - SomTv_MN3Vorwoche__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Medianetto3-Veränderung zur Vorwoche</inlineHelpText>
+        <label>Differenz zur Vorwoche MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_DispoPreisprozent__c</fullName>
+        <externalId>false</externalId>
+        <label>Dispo-Preisprozent</label>
+        <precision>5</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_FakturaInfofeld__c</fullName>
+        <externalId>false</externalId>
+        <label>Faktura Infofeld</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Faktura__c</fullName>
+        <externalId>false</externalId>
+        <label>Faktura</label>
+        <picklist>
+            <picklistValues>
+                <fullName>automatisch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>manuell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Folgen__c</fullName>
+        <externalId>false</externalId>
+        <label>Folgen</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_FormatInfofeld__c</fullName>
+        <externalId>false</externalId>
+        <label>Format Infofeld</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Prio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Standard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_FormatNew__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Format</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>No valid Format found.</errorMessage>
+            <filterItems>
+                <field>P7S1_Format__c.P7S1_IstGueltig__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Actual valid formats.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>P7S1_Format__c</referenceTo>
+        <relationshipLabel>Opportunity-Produkt</relationshipLabel>
+        <relationshipName>Opportunity_Produkt</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Fremdbezug__c</fullName>
+        <description>nur in Ausnahmen wird mit FREMDBEZUG gebucht - Rg.-Stellung der TV-Media (Cash-extern) erfolgt im Falle &quot;FREMDBEZUG&quot; über SOM Digital (keine Rechnungsstellung in ProSedi)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>nur in Ausnahmen wird mit FREMDBEZUG gebucht - Rg.-Stellung der TV-Media (Cash-extern) erfolgt im Falle &quot;FREMDBEZUG&quot; über SOM Digital (keine Rechnungsstellung in ProSedi)</inlineHelpText>
+        <label>Fremdbezug</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ja</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>nein</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_GaPaketExtra__c</fullName>
+        <description>GA bei Diverse
+1194 Program Sponsoring, Spots, Spec Ads (Spotkontingent P7S1)
+1184 Wunschplatzierung Spotkontingent P7S1
+1117 Free Holding (Eigenwerbung P7S1)
+GA bei Paket Extra
+1121 Spec Ads 12Min
+1122 Spec Ads non 12Min
+1115 Standard Spot 12Min</description>
+        <externalId>false</externalId>
+        <inlineHelpText>GA bei Diverse
+1194 Program Sponsoring, Spots, Spec Ads (Spotkontingent P7S1)
+1184 Wunschplatzierung Spotkontingent P7S1
+1117 Free Holding (Eigenwerbung P7S1)
+GA bei Paket Extra
+1121 Spec Ads 12Min
+1122 Spec Ads non 12Min
+1115 Standard Spot 12Min</inlineHelpText>
+        <label>GA Paket Extra / Diverse</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_GaSonder__c</fullName>
+        <description>Sonderfall für abweichende Geschäftsart</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sonderfall für abweichende Geschäftsart</inlineHelpText>
+        <label>GA Sonderfall</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Genre__c</fullName>
+        <externalId>false</externalId>
+        <label>Genre</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Unterhaltung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spielfilm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Magazin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wetter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Serie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sport</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_GeschaeftsartUnbezahlt__c</fullName>
+        <description>Geschäftsarten unbezahlt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Geschäftsarten unbezahlt</inlineHelpText>
+        <label>Geschäftsart unbezahlt</label>
+        <picklist>
+            <controllingField>SomTv_NrGoodwill__c</controllingField>
+            <picklistValues>
+                <fullName>1190	 Freispot / NR Social</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1152	 Freispot / NR bilateral 12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1157	 Freispot / NR bilateral Non12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1151 Freispot / LA bilaterale Verträge</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1154	 Freispot / NR Sonder bilateral 12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1158	 Freispot / NR Sonder bilateral Non12Min / SoWeFo (AUT)</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1172	 Freispot / NR-LA Marketingangebot</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1188	 AL Werbungtreibender</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1150 Freispot / NR Neukunde</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1156 Freispot / NR Bündelung</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1174	 Freispot / NR Sonder Pool</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1181 Freispot / LA Pool</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1187	 AL Agentur</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR innerhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1163 Freispot / NR Pakete Social</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR ausserhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1164	 Freispot / NR Pakete 12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR ausserhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1169	 Freispot / NR Pakete Sales Non12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR ausserhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1129 NR-Package SoWeFo (GER) / Sonderwerbeformen (manuell) AT)</fullName>
+                <default>false</default>
+                <controllingFieldValues>NR ausserhalb</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1168	 Freispot / Goodwill-Sales 12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>Goodwill</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1199 Freispot / Goodwill-Sales Non12Min</fullName>
+                <default>false</default>
+                <controllingFieldValues>Goodwill</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1159	 Freispot / Goodwill RW-Ausgleich / Programmperformance (Sales Operations)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Goodwill</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1160	 Freispot / Goodwill Motivbuchungen/Sendetechnik</fullName>
+                <default>false</default>
+                <controllingFieldValues>Goodwill</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1165	 Freispot / Goodwill TKP-Ausgleich (SB/SC)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Goodwill</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1196	 Freispot / Goodwill Infomercials / Volumendeals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Goodwill</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1107 Gegengeschäft - kein Cash extern</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1195 Barter-Agentur</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1108 Reservierungen + Vorbereitung Package (kein Cash - Reservierung)</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1131 Langfristreservierung (kein Cash - Reservierung)</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1184 Wunschplatzierung Spotkontigent P7S1 - kein Cash extern</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1194 Spotkontigent P7S1 - kein Cash extern</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1117 Eigenwerbung P7S1 - kein Cash extern</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1138 Freispot / Füllspots P7S1 - kein Cash extern</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1175 Freispot / NR Kooperation - kein Cash extern</fullName>
+                <default>false</default>
+                <controllingFieldValues>diverse</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Geschaeftsart__c</fullName>
+        <externalId>false</externalId>
+        <label>Geschäftsart</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Innerhalb_Commitment__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.SomTV_Innerhalb_Commitment__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Innerhalb Commitment / Zubuchung</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_KonvergentFormel__c</fullName>
+        <description>Zeigt bei konvergente Projekten &quot;ja&quot; falls in der zugehörigen Opportunity gesetzt.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity.SomTv_Konvergent__c )</formula>
+        <inlineHelpText>Zeigt bei konvergente Projekten &quot;ja&quot; falls in der zugehörigen Opportunity gesetzt.</inlineHelpText>
+        <label>konvergent</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Kundenprodukt__c</fullName>
+        <externalId>false</externalId>
+        <label>Kundenprodukt</label>
+        <length>150</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1Bezahlt__c</fullName>
+        <description>MB1+Dispopreisprozent=Brutto Bezahlt (BB)</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(TEXT(SomTv_NrGoodwill__c)), SomTv_MB1__c * SomTv_DispoPreisprozent__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>MB1+Dispopreisprozent=Brutto Bezahlt (BB)</inlineHelpText>
+        <label>MB1 (bezahlt)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1_1FS__c</fullName>
+        <description>Mediabrutto 1-Volumen des ersten Factsheets. Dieser Wert wird manuell gepflegt und darf nicht verändert werden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mediabrutto 1-Volumen des ersten Factsheets. Dieser Wert wird manuell gepflegt und darf nicht verändert werden.</inlineHelpText>
+        <label>MB1 1. FS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1_Kopf_AdF__c</fullName>
+        <description>entspricht MB1 (bezahlt), MB1+Dispopreisprozent=Brutto Bezahlt (BB)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>entspricht MB1 (bezahlt), MB1+Dispopreisprozent=Brutto Bezahlt (BB)</inlineHelpText>
+        <label>MB1 Kopf</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1_Vorwoche__c</fullName>
+        <externalId>false</externalId>
+        <label>MB1 Vorwoche</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB1__c</fullName>
+        <description>Verkaufspreis=Bruttolistenpreis (BL)</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(TEXT(SomTv_NrGoodwill__c)),  UnitPrice , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Verkaufspreis=Bruttolistenpreis (BL)</inlineHelpText>
+        <label>MB1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3_Kopf__c</fullName>
+        <description>MB1 Kopf + Sonder-BR% (abhängig von Auf- und Abschlägen auf einzelne Werbeformen</description>
+        <externalId>false</externalId>
+        <inlineHelpText>MB1 Kopf + Sonder-BR% (abhängig von Auf- und Abschlägen auf einzelne Werbeformen</inlineHelpText>
+        <label>MB3 Kopf</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MB3__c</fullName>
+        <externalId>false</externalId>
+        <label>MB3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (ISBLANK (SomTv_AE_inProzent__c), SomTV_MN1__c ,  SomTV_MN1__c - SomTV_MN1__c * SomTv_AE_inProzent__c)</formula>
+        <label>MN2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3Vorwoche__c</fullName>
+        <externalId>false</externalId>
+        <label>MN3 Vorwoche</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3_1FS__c</fullName>
+        <description>Medianetto3-Volumen des ersten Factsheets. Dieser Wert wird manuell gepflegt und darf nicht verändert werden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Medianetto3-Volumen des ersten Factsheets. Dieser Wert wird manuell gepflegt und darf nicht verändert werden.</inlineHelpText>
+        <label>MN3 1. FS</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_MN3__c</fullName>
+        <description>SomTv_MB1Bezahlt__c*(1-BR__c)*(1-SomTv_AE_inProzent__c)*(1-Skonto__c)</description>
+        <externalId>false</externalId>
+        <formula>SomTv_MB1Bezahlt__c*(1-BR__c)*(1-SomTv_AE_inProzent__c)*(1-SomTv_Skonto__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>SomTv_MB1Bezahlt__c*(1-BR__c)*(1-SomTv_AE_inProzent__c)*(1-Skonto__c)</inlineHelpText>
+        <label>MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_NR__c</fullName>
+        <externalId>false</externalId>
+        <label>NR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Non12MinNew__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.SomTv_SpecialAdsNon12Min__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Non 12 Min</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Non12MinOld__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>kann gelöscht werden ab Mitte November 2014, 
+siehe https://jira.sim-technik.de/browse/CRMSALES-1489</description>
+        <externalId>false</externalId>
+        <label>Non 12 Min (alt)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_NrGoodwillInEUR__c</fullName>
+        <externalId>false</externalId>
+        <label>NR/Goodwill/Diverse in EUR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_NrGoodwill__c</fullName>
+        <externalId>false</externalId>
+        <label>NR/Goodwill/Diverse</label>
+        <picklist>
+            <picklistValues>
+                <fullName>NR ausserhalb</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Goodwill</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NR innerhalb</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>diverse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_NrProzent__c</fullName>
+        <externalId>false</externalId>
+        <label>NR (%)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_NumberOfTimesToClone__c</fullName>
+        <description>This field is used only for cloning the line-item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used only for cloning the line-item.</inlineHelpText>
+        <label>Anzahl Oli Kopien</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_OliRabattierfaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>rabattierfähig</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpenerAnzahl__c</fullName>
+        <externalId>false</externalId>
+        <label>Opener Anzahl</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_OpenerSek__c</fullName>
+        <externalId>false</externalId>
+        <label>Opener Sek</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Paket_Extra__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Kennzeichen, ob eine Geschäftsart aus Paket Extra / Diverse zum Tragen kommt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kennzeichen, ob eine Geschäftsart aus Paket Extra / Diverse zum Tragen kommt.</inlineHelpText>
+        <label>Paket Extra / Diverse</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_PreiseFixFlexibel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Preise fix/flexibel</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkt__c</fullName>
+        <externalId>false</externalId>
+        <label>Produkt</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sponsoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spots/Splits</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Placements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Promostory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gewinnspiele</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Klassisch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gegengeschäft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Produkthierarchiebene1__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.SomTv_Produkthierarchieebene1__c)</formula>
+        <label>Produkthierarchiebene 1</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ProjektFormel__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.SomTv_AdFProjekt__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Projekt</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Projektname__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Projektname</label>
+        <referenceTo>SomTv_AdfProjekt__c</referenceTo>
+        <relationshipLabel>Opportunity-Produkt</relationshipLabel>
+        <relationshipName>Opportunity_Produkt</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_ReminderAnzahl__c</fullName>
+        <externalId>false</externalId>
+        <label>Reminder Anzahl</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ReminderSek__c</fullName>
+        <externalId>false</externalId>
+        <label>Reminder Sek</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ScharnierAnzahl__c</fullName>
+        <externalId>false</externalId>
+        <label>Scharnier Anzahl</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_ScharnierSek__c</fullName>
+        <externalId>false</externalId>
+        <label>Scharnier Sek</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_SendeDatumBis__c</fullName>
+        <description>Zeigt den Sendezeitraum des Produktes an</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zeigt den Sendezeitraum des Produktes an</inlineHelpText>
+        <label>Sendedatum bis</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_SendeDatumVon__c</fullName>
+        <description>Zeigt den Sendezeitraum des Produktes an</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zeigt den Sendezeitraum des Produktes an</inlineHelpText>
+        <label>Sendedatum von</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_SendeZeitBis__c</fullName>
+        <externalId>false</externalId>
+        <label>Sendezeit bis</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_SendeZeitVon__c</fullName>
+        <externalId>false</externalId>
+        <label>Sendezeit von</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Sender__c</fullName>
+        <externalId>false</externalId>
+        <label>Sender</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SAT.1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ProSieben</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>kabel eins</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>sixx</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAT.1 Emotion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ProSieben Fun</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>kabel eins Classic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>maxdome</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ProSieben Maxx</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sat.1 Gold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>kabel eins Doku</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diverse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Sendezeit__c</fullName>
+        <description>Betreffender Monat des Sendezeitraums</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Betreffender Monat des Sendezeitraums</inlineHelpText>
+        <label>Sendemonat</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Januar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Februar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>März</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>April</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mai</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Juni</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Juli</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>August</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>September</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oktober</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>November</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dezember</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Skonto__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Skonto in Prozent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Skonto in Prozent</inlineHelpText>
+        <label>Skonto</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_SplitsSpots__c</fullName>
+        <externalId>false</externalId>
+        <label>Split-/Spot-/Trailer-Anzahl</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Sponsoring__c</fullName>
+        <externalId>false</externalId>
+        <label>Sponsoring</label>
+        <picklist>
+            <picklistValues>
+                <fullName>fix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>flexibel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Tarifart__c</fullName>
+        <externalId>false</externalId>
+        <label>Tarifart</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_TechnischeLaenge__c</fullName>
+        <externalId>false</externalId>
+        <label>Technische Länge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Tochter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Tochter</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunity-Produkt (Tochter)</relationshipLabel>
+        <relationshipName>Opportunity_Produkt1</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_TrailerGesamtlaenge__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Sender und Kundenanteil bei Buchung des Trailer Sponsorings</inlineHelpText>
+        <label>Trailer Gesamtlänge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_TrailerSponsoringSek12MinRelevant__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Kunden-Anteil</inlineHelpText>
+        <label>Trailer Sponsoring Sek (12-Min relevant)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_UmfeldFormat__c</fullName>
+        <externalId>false</externalId>
+        <label>Umfeld / Format</label>
+        <length>150</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomTv_Umsatzaenderung__c</fullName>
+        <externalId>false</externalId>
+        <label>Umsatzänderung</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Einbuchung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kampagnenoptimierung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Keine Freigabe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Korrektur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preisänderung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Programmänderung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rabattänderung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sendestörung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Storno</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Umbuchung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Werbeblockreduzierung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zubuchung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Umsatzdifferenz_MB1__c</fullName>
+        <description>Differenz aus aktuellem MB1 und MB1 des ersten Factsheets.</description>
+        <externalId>false</externalId>
+        <formula>SomTv_MB1__c - SomTv_MB1_1FS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Differenz aus aktuellem MB1 und MB1 des ersten Factsheets.</inlineHelpText>
+        <label>Umsatzdifferenz MB1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Umsatzdifferenz_MN3__c</fullName>
+        <description>Differenz aus aktuellem MN3 und MN3 des ersten Factsheets.</description>
+        <externalId>false</externalId>
+        <formula>SomTv_MN3__c - SomTv_MN3_1FS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Differenz aus aktuellem MN3 und MN3 des ersten Factsheets.</inlineHelpText>
+        <label>Umsatzdifferenz MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Werbeprodukt__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Werbeprodukt</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Opportunity-Produkt (Werbeprodukt)</relationshipLabel>
+        <relationshipName>Opportunity_Produkt1</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Wochentag__c</fullName>
+        <externalId>false</externalId>
+        <label>Wochentag</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Montag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dienstag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mittwoch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Donnerstag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Freitag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samstag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sonntag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mo - Fr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sa - So</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mo - Do</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mo - So</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mo - Sa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_Yield__c</fullName>
+        <description>Yield des Opportunityprodukts (AdFactory Bausteins)</description>
+        <externalId>false</externalId>
+        <formula>IF (SomTv_MB3_Kopf__c=0, 0, SomTv_MN3__c/SomTv_MB3_Kopf__c)</formula>
+        <inlineHelpText>Yield des Opportunityprodukts (AdFactory Bausteins)</inlineHelpText>
+        <label>Yield</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+        <inlineHelpText>Verkaufspreis = Bruttolistenpreis (BL)</inlineHelpText>
+    </fields>
+    <fields>
+        <fullName>Volumen__c</fullName>
+        <externalId>false</externalId>
+        <label>Volumen</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <validationRules>
+        <fullName>SomTv_OliQuantity</fullName>
+        <active>true</active>
+        <description>Quantity darf nur &quot;1&quot; sein</description>
+        <errorConditionFormula>Quantity &lt;&gt; 1</errorConditionFormula>
+        <errorDisplayField>Quantity</errorDisplayField>
+        <errorMessage>Als Menge darf nur 1 eingetragen werden</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomTv_SendezeitBis</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Id != $Label.ProfileIdAdmin
+&amp;&amp;
+NOT ( ISBLANK ( SomTv_SendeZeitBis__c ) ) 
+&amp;&amp;
+NOT ( 
+REGEX( SomTv_SendeZeitBis__c , &quot;^([0-1][0-9]|[2][0-3]):([0-5][0-9])$&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>SomTv_SendeZeitBis__c</errorDisplayField>
+        <errorMessage>keine gültige Uhrzeit ( Format hh:mm)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomTv_SendezeitVon</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Id != $Label.ProfileIdAdmin 
+&amp;&amp; 
+NOT ( ISBLANK ( SomTv_SendeZeitVon__c ) ) 
+&amp;&amp;
+NOT ( 
+REGEX( SomTv_SendeZeitVon__c , &quot;^([0-1][0-9]|[2][0-3]):([0-5][0-9])$&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>SomTv_SendeZeitVon__c</errorDisplayField>
+        <errorMessage>keine gültige Uhrzeit ( Format hh:mm)</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Clone</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>duplizieren</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SomTv_OLI_Clone?opptIds={!OpportunityLineItem.Id}&amp;retURL=%2F{!OpportunityLineItem.Id}&amp;p=s</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CloneList</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>duplizieren</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var records = {!GETRECORDIDS($ObjectType.OpportunityLineItem)};
+if(records[0] == null) {
+alert(&quot;Please select at least one product to clone.&quot;);
+} else {
+window.parent.location.href=&quot;/apex/SomTv_OLI_Clone?retURL=%2F{!Opportunity.Id}&amp;p=l&amp;opptIds=&quot;+records;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>P7S1_MassDelete</fullName>
+        <availability>online</availability>
+        <description>Button ermöglicht die mit Hilfe der Checkboxen ausgewählten Produkte zu löschen.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Löschen</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+
+var records = {!GETRECORDIDS( $ObjectType.OpportunityLineItem )};
+
+if (records[0] == null) {
+alert(&quot;Bitte mindestens ein Produkt auswählen.&quot;) }
+else {
+
+var errors = [];
+var result = sforce.connection.deleteIds(records);
+if (result &amp;&amp; result.length){
+var numFailed = 0;
+var numSucceeded = 0;
+for (var i = 0; i &lt; result.length; i++){
+var res = result[i];
+if (res &amp;&amp; res.success == &apos;true&apos;){
+numSucceeded++;
+} else {
+var es = res.getArray(&quot;errors&quot;);
+if (es.length &gt; 0) {
+errors.push(es[0].message);
+}
+numFailed++;
+}
+}
+if (numFailed &gt; 0){
+alert(&quot;Ein Fehler ist aufgetreten bei: &quot; + numFailed + &quot;\nErfolgreich gelöscht: &quot; + numSucceeded + &quot; \n Fehlermeldung: &quot; + errors.join(&quot;\n&quot;));
+} else {
+alert(&quot;Anzahl gelöschter Datensätze: &quot; + numSucceeded);
+}
+}
+window.location.reload();
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Produkt_aendern</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Produkt ändern</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SomTv_OLI_ChangeProduct?Id={!OpportunityLineItem.Id}</url>
+    </webLinks>
+</CustomObject>

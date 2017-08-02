@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>aggregierte Umsätze aus ProDia. Werden täglich automatisiert befüllt.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>SomDig_Abrechnungsmodell__c</fullName>
+        <description>mögliche Werte: CPD, CPM, CPX, -, unbekannt
+Details siehe https://emea.salesforce.com/501D0000000bTk9</description>
+        <externalId>false</externalId>
+        <inlineHelpText>mögliche Werte: CPD, CPM, CPX, -, unbekannt
+Details siehe https://emea.salesforce.com/501D0000000bTk9</inlineHelpText>
+        <label>Abrechnungsmodell</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Agentur__c</fullName>
+        <description>Name der verlinkten Agentur aus der WT AG Beziehung, wird automatisch per Formel befüllt</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_Agentur__r.Name</formula>
+        <inlineHelpText>Name der verlinkten Agentur aus der WT AG Beziehung, wird automatisch per Formel befüllt</inlineHelpText>
+        <label>Agentur</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Datenstand__c</fullName>
+        <description>Stand der Daten (Zeitpunkt des Exports vom Quellsystem)
+siehe auch Feld &quot;Quelle&quot; für weitere Infos.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stand der Daten (Zeitpunkt des Exports vom Quellsystem)
+siehe auch Feld &quot;Quelle&quot; für weitere Infos.</inlineHelpText>
+        <label>Datenstand</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_JahrQuartal__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomDig_Jahr__c &amp; &apos;-&apos; &amp; SomDig_Quartal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jahr-Quartal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Jahr__c</fullName>
+        <description>In welchem Geschäftsjahr ist der Umsatz aufgelaufen? Wird automatisch per SST befüllt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In welchem Geschäftsjahr ist der Umsatz aufgelaufen?</inlineHelpText>
+        <label>Jahr</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mediagattung__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Zuordnung des Umsatz-Datensatzes zur Mediagattung (Digital, TV, Text)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zuordnung des Umsatz-Datensatzes zur Mediagattung (Digital, TV, Text)</inlineHelpText>
+        <label>Mediagattung</label>
+        <referenceTo>SomDig_Mediagattung__c</referenceTo>
+        <relationshipLabel>Umsätze Digital</relationshipLabel>
+        <relationshipName>Umsaetze_Digital</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsDifferenzierung__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Zuordnung des Umsatz-Datensatzes zum Mediagattungs-Segment (z.B. InApp, InBrowser, Connected TV) und bezeichnet das Werbemittel der Übertragung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zuordnung des Umsatz-Datensatzes zum Mediagattungs-Segment (z.B. InApp, InBrowser, Connected TV) und  bezeichnet das Werbemittel der Übertragung</inlineHelpText>
+        <label>Mediagattungs-Differenzierung</label>
+        <referenceTo>SomDig_MediagattungsDifferenzierung__c</referenceTo>
+        <relationshipLabel>Umsätze Digital</relationshipLabel>
+        <relationshipName>SomDig_Umsaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsDifferenzierungsName__c</fullName>
+        <description>Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c)</inlineHelpText>
+        <label>Mediagattungs-Differenzierungs-Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsName__c</fullName>
+        <description>Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c)</inlineHelpText>
+        <label>Mediagattungs-Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsSegmentName__c</fullName>
+        <description>Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hilfsfeld, das per Workflow befüllt wird. Wird für Roll-Up Filter der WT-AG-Beziehung verwendet (z.B. SomDig_UmsatzMedDiffInStream__c)</inlineHelpText>
+        <label>Mediagattungs-Segment-Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsSegment__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Zuordnung des Umsatz-Datensatzes zum Mediagattungs-Differenzierung (z.B. InStream, InDisplay) und bezeichnet die Art des Werbemittels</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zuordnung des Umsatz-Datensatzes zum Mediagattungs-Differenzierung (z.B. InStream, InDisplay) und bezeichnet die Art des Werbemittels</inlineHelpText>
+        <label>Mediagattungs-Segment</label>
+        <referenceTo>SomDig_MediagattungsSegment__c</referenceTo>
+        <relationshipLabel>Umsätze Digital</relationshipLabel>
+        <relationshipName>SomDig_Umsaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mn2__c</fullName>
+        <description>Monetärer Wert, MN2 bedeutet nach Abzug aller Rabatte (vor Skonto)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Monetärer Wert, MN2 bedeutet nach Abzug aller Rabatte (vor Skonto)</inlineHelpText>
+        <label>MN2</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Quartal__c</fullName>
+        <description>In welchem Quartal des jeweiligen Geschäftsjahres ist der Umsatz entstanden (Q1 bis Q4). Wird automatisch via SST befüllt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In welchem Quartal des jeweiligen Geschäftsjahres ist der Umsatz entstanden (Q1 bis Q4)</inlineHelpText>
+        <label>Quartal</label>
+        <length>1</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Quelle__c</fullName>
+        <description>Beschreibt detailliert die Quelle und die jeweils zugrundeliegenden Filterkriterien</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibt detailliert die Quelle und die jeweils zugrundeliegenden Filterkriterien</inlineHelpText>
+        <label>Quelle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_RelativesJahrHelp__c</fullName>
+        <description>Wobei handelt es sich um das im Umsatz hinterlegte (Geschäfts-)Jahr, ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb der Betrachtung. Dynamisches Infofeld zum Jahreswechsel. Dient dazu, in Formel/RollUps nicht immer die Jahre wechseln zu müssen. Ist ein Hilfefeld, um Feld &quot;relatives Jahr&quot; per WF zu befüllen (dieses Formelfeld kann in den RollUps nicht als Kriteriumswert ausgewählt werden)</description>
+        <externalId>false</externalId>
+        <formula>CASE( 
+
+Value( SomDig_Jahr__c ), Year(Today()), &quot;AJ&quot;, Year(Today())-1, &quot;VJ&quot; , Year(Today())+1, &quot;NJ&quot; 
+
+,&quot;out of scope&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Wobei handelt es sich um das im Umsatz ausgewählt (Geschäfts-)Jahr: ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Wird automatisch befüllt.</inlineHelpText>
+        <label>relatives Jahr help</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_RelativesJahr__c</fullName>
+        <description>Wobei handelt es sich hierbei um das im Umsatz ausgewählt (Geschäfts-)Jahr: ist es zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Dynamisches Infofeld zum Jahreswechsel. Dient dazu, in Formeln/RollUps nicht immer die Jahre wechseln zu müssen. Wird per Workflow/Feldaktualisierung befüllt, Basis ist Feld &quot;SomDig_RelativesJahrHelp&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wobei handelt sich hierbei um das im Umsatz ausgewählt (Geschäfts-)Jahr: zum Zeitpunkt der Betrachtung das aktuelle Jahr (AJ), vorherige Jahr (VJ), nächste Jahr (NJ) oder außerhalb des Betrachtungszeitraums (out of scope). Wird automatisch befüllt.</inlineHelpText>
+        <label>relatives Jahr</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbetreibender__c</fullName>
+        <description>Name des verlinkten Werbetreibenden aus der WT AG Beziehung, wird automatisch per Formel befüllt</description>
+        <externalId>false</externalId>
+        <formula>SomDig_WtAgBeziehung__r.SomDig_Werbetreibender__r.Name</formula>
+        <inlineHelpText>Name des verlinkten Werbetreibenden aus der WT AG Beziehung, wird automatisch per Formel befüllt</inlineHelpText>
+        <label>Werbetreibender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_WtAgBeziehung__c</fullName>
+        <description>Verknüpfung der Umsatz-Datensätze an das JunctionObject &quot;WT AG Beziehungen&quot; statt an Accounts direkt. Für jede WT AG Beziehung muss ein Datensatz exisitieren</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verknüpfung der Umsatz-Datensätze an das JunctionObject &quot;WT AG Beziehungen&quot; statt an Accounts direkt. Für jede WT AG Beziehung muss ein Datensatz exisitieren</inlineHelpText>
+        <label>WT AG Beziehung</label>
+        <referenceTo>SomDig_WtAgBeziehung__c</referenceTo>
+        <relationshipLabel>Umsätze Digital</relationshipLabel>
+        <relationshipName>Umsaetze_Digital</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SomTv_JahrDatum__c</fullName>
+        <description>Real Date for Year Calculation</description>
+        <externalId>false</externalId>
+        <formula>Date ( Value ( SomDig_Jahr__c ) , 1 , 1 )</formula>
+        <inlineHelpText>Real Date for Year Calculation</inlineHelpText>
+        <label>Jahr (Datum)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Umsatz Digital</label>
+    <listViews>
+        <fullName>SomDig_AlleUmsaetze</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_JahrQuartal__c</columns>
+        <columns>SomDig_WtAgBeziehung__c</columns>
+        <columns>SomDig_Werbetreibender__c</columns>
+        <columns>SomDig_Agentur__c</columns>
+        <columns>SomDig_Mediagattung__c</columns>
+        <columns>SomDig_MediagattungsSegment__c</columns>
+        <columns>SomDig_MediagattungsDifferenzierung__c</columns>
+        <columns>SomDig_Abrechnungsmodell__c</columns>
+        <columns>SomDig_Mn2__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Umsätze</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_UmsaetzeAj</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_WtAgBeziehung__c</columns>
+        <columns>SomDig_Werbetreibender__c</columns>
+        <columns>SomDig_Agentur__c</columns>
+        <columns>SomDig_Jahr__c</columns>
+        <columns>SomDig_Quartal__c</columns>
+        <columns>SomDig_Mediagattung__c</columns>
+        <columns>SomDig_MediagattungsSegment__c</columns>
+        <columns>SomDig_MediagattungsDifferenzierung__c</columns>
+        <columns>SomDig_Abrechnungsmodell__c</columns>
+        <columns>SomDig_Mn2__c</columns>
+        <columns>SomDig_Datenstand__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </filters>
+        <label>Umsätze AJ</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000}</displayFormat>
+        <label>Umsatz Digital</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Umsätze Digital</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

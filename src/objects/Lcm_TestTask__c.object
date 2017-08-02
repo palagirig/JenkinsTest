@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Testaufgabe, mit der im Rahmen einer Testphase ein Testfall getestet/ausgeführt wird.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Lcm_ErrorState__c</fullName>
+        <description>Fehlerstatus bei nicht erfolgreichen Testaufgaben</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fehlerstatus bei nicht erfolgreichen Testaufgaben</inlineHelpText>
+        <label>Fehler-Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>in Behebung</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>behoben</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bedienfehler</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>neues/abweichendes Requirement</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>akzeptiert</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_RequirementDescription__c</fullName>
+        <description>Beschreibung des Requirements</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibung des Requirements</inlineHelpText>
+        <label>Requirement-Beschreibung</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_RequirementName__c</fullName>
+        <description>Bezeichnung des Requirements</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bezeichnung des Requirements</inlineHelpText>
+        <label>Requirement-Name</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_ResultDescription__c</fullName>
+        <description>Beschreibung des Testergebnis. Sowohl im positiven, wie auch im negativen Fall.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibung des Testergebnis. Sowohl im positiven, wie auch im negativen Fall.</inlineHelpText>
+        <label>Testergebnis-Beschreibung</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_ResultState__c</fullName>
+        <description>Ergebnis der Testaufgabe.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ergebnis der Testaufgabe.</inlineHelpText>
+        <label>Testergebnis-Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>offen</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>erfolgreich</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>nicht erfolgreich</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_StateCopy__c</fullName>
+        <description>wird per Trigger aus Formelfeld Lcm_State gefüllt, um einen Feldverlauf zu ermöglichen</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status der Testaufgabe. Ergibt sich aus Testergebnis-Status und Fehler-Status.</inlineHelpText>
+        <label>Gesamt-Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>offen</fullName>
+                <color>#33CCFF</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>erfolgreich</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>nicht erfolgreich</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>in Fehlerbehebung</fullName>
+                <color>#FF6666</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retest offen</fullName>
+                <color>#3366FF</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_State__c</fullName>
+        <description>Status der Testaufgabe. Ergibt sich aus Testergebnis-Status und Fehler-Status.</description>
+        <externalId>false</externalId>
+        <formula>CASE ( Text(Lcm_ResultState__c),
+  &apos;offen&apos; , &apos;offen&apos;,
+  &apos;erfolgreich&apos; , &apos;erfolgreich&apos;,
+  &apos;nicht erfolgreich&apos;, CASE ( Text ( Lcm_ErrorState__c),
+    &apos;in Fehlerbehebung&apos;, &apos;in Fehlerbehebung&apos;,
+    &apos;behoben&apos;, &apos;Retest offen&apos;,
+    &apos;Bedienfehler&apos;, &apos;Retest offen&apos;,
+    &apos;akzeptiert&apos;, &apos;erfolgreich&apos;,
+    &apos;neues/abweichendes Requirement&apos;, &apos;erfolgreich&apos;,
+    &apos;nicht erfolgreich&apos;),
+
+  &apos;unbekannt&apos;
+  )</formula>
+        <inlineHelpText>Status der Testaufgabe. Ergibt sich aus Testergebnis-Status und Fehler-Status.</inlineHelpText>
+        <label>Gesamt-Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCaseDescription__c</fullName>
+        <description>Beschreibung des Testfalls</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibung des Testfalls</inlineHelpText>
+        <label>Testfall-Beschreibung</label>
+        <length>500</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCaseExpResult__c</fullName>
+        <description>erwartetes Ergebnis am Ende der Testausführung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>erwartetes Ergebnis am Ende der Testausführung</inlineHelpText>
+        <label>Testfall-Erwartetes Ergebnis</label>
+        <length>1500</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCaseName__c</fullName>
+        <description>Name des Testfalls, Kurzbeschreibung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name des Testfalls, Kurzbeschreibung</inlineHelpText>
+        <label>Testfall-Name</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCasePrecondition__c</fullName>
+        <description>Vorbedingungen, die erfüllt sein müssen, damit Testfall ausgeführt werden kann.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vorbedingungen, die erfüllt sein müssen, damit Testfall ausgeführt werden kann.</inlineHelpText>
+        <label>Testfall-Vorbedingungen</label>
+        <length>1000</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCaseSteps__c</fullName>
+        <description>Testschritte des Testfalls</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testschritte des Testfalls</inlineHelpText>
+        <label>Testschritte</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCaseTestdata__c</fullName>
+        <description>Hinweise zu Testdaten, mit denen der Testfall ausgeführt werden soll</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hinweise zu Testdaten, mit denen der Testfall ausgeführt werden soll</inlineHelpText>
+        <label>Testfall-Testdaten</label>
+        <length>1000</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestCase__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Testfall der durch Testaufgabe durchzuführen ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testfall der durch Testaufgabe durchzuführen ist.</inlineHelpText>
+        <label>Testfall-Nr</label>
+        <referenceTo>Lcm_TestCase__c</referenceTo>
+        <relationshipLabel>Testaufgaben</relationshipLabel>
+        <relationshipName>Testaufgaben</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestPhaseName__c</fullName>
+        <description>Name der Testphase</description>
+        <externalId>false</externalId>
+        <formula>Lcm_TestPhase__r.Lcm_TestphaseName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Name der Testphase</inlineHelpText>
+        <label>Testphase-Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestPhase__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Testphase in der Testaufgabe durchgeführt wird</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Testphase in der Testaufgabe durchgeführt wird</inlineHelpText>
+        <label>Testphase-Nr</label>
+        <referenceTo>Lcm_TestPhase__c</referenceTo>
+        <relationshipLabel>Testaufgaben</relationshipLabel>
+        <relationshipName>Testaufgaben</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lcm_TestSphere__c</fullName>
+        <description>Zuordnung zur jeweiligen Test-Sphere. Hilfefeld für die Freigabeeinstellung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zuordnung zur jeweiligen Test-Sphere. Hilfefeld für die Freigabeeinstellung</inlineHelpText>
+        <label>Lcm_TestSphere</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lcm_VersionsName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lcm_TestCase__r.Lcm_Requirement__r.Lcm_VersionName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Versions-Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Testaufgabe</label>
+    <listViews>
+        <fullName>Adv_Regressiontests</fullName>
+        <columns>Lcm_VersionsName__c</columns>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_VersionsName__c</field>
+            <operation>equals</operation>
+            <value>Adv Regressiontests</value>
+        </filters>
+        <filters>
+            <field>Lcm_TestPhaseName__c</field>
+            <operation>equals</operation>
+            <value>Adc Regressionstest Rel.4-17</value>
+        </filters>
+        <label>Adv Regressiontests</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Adv_Regressiontests_offen</fullName>
+        <columns>Lcm_VersionsName__c</columns>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_VersionsName__c</field>
+            <operation>equals</operation>
+            <value>Adv Regressiontests</value>
+        </filters>
+        <filters>
+            <field>Lcm_TestPhaseName__c</field>
+            <operation>equals</operation>
+            <value>Adc Regressionstest Rel.4-17</value>
+        </filters>
+        <filters>
+            <field>Lcm_ResultState__c</field>
+            <operation>equals</operation>
+            <value>offen</value>
+        </filters>
+        <label>Adv Regressiontests offen</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestSphere__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Tobi</fullName>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_TestCaseName__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OWNER.LAST_NAME</field>
+            <operation>equals</operation>
+            <value>unsinn</value>
+        </filters>
+        <label>Alle Tobi</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>ErrorTestTask</fullName>
+        <columns>Lcm_VersionsName__c</columns>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_State__c</field>
+            <operation>equals</operation>
+            <value>nicht erfolgreich</value>
+        </filters>
+        <label>Alle nicht erfolgreichen Testaufgaben</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Meine_Testaufgaben</fullName>
+        <columns>Lcm_VersionsName__c</columns>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Meine Testaufgaben</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>OpenTestTask</fullName>
+        <columns>Lcm_VersionsName__c</columns>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_State__c</field>
+            <operation>contains</operation>
+            <value>offen</value>
+        </filters>
+        <label>Alle offenen Testaufgaben</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>in_Fehlerbebung</fullName>
+        <columns>Lcm_TestPhase__c</columns>
+        <columns>Lcm_TestSphere__c</columns>
+        <columns>Lcm_TestPhaseName__c</columns>
+        <columns>NAME</columns>
+        <columns>Lcm_TestCase__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Lcm_State__c</columns>
+        <columns>Lcm_ResultState__c</columns>
+        <columns>Lcm_ErrorState__c</columns>
+        <columns>Lcm_ResultDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lcm_ErrorState__c</field>
+            <operation>equals</operation>
+            <value>in Behebung</value>
+        </filters>
+        <label>in Fehlerbebung</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>TT-{0000}</displayFormat>
+        <label>Testaufgabe-Nr</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Testaufgaben</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Lcm_TestPhase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_TestPhaseName__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_TestCase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_State__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_ResultState__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_ErrorState__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Lcm_ResultDescription__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Lcm_TestCaseSteps__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Lcm_TestCaseName__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

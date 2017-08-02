@@ -1,0 +1,11 @@
+.THIS .error {
+    border: solid 1px #B22222!important;
+}
+
+.THIS .date-error {
+    border: solid 1px #ffec8b!important;
+}
+
+.THIS .uiInputDate .display {
+    display: none;
+}

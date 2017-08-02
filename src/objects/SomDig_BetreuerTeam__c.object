@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Gibt die Informatiormationen bezüglich Team und Vermarkter zu der einzelnen Mediakampagne im NBT</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BetreuerVermarkter__c</fullName>
+        <description>In welchem Auftrag wird die Mediakampagne angelegt und betreut?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In welchem Auftrag wird die Mediakampagne angelegt und betreut?</inlineHelpText>
+        <label>Betreuer Vermarkter</label>
+        <picklist>
+            <picklistValues>
+                <fullName>71M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CSMA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AdAudience</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_TeamUngueltig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Soll das Team in neuen Kampagnen noch auswählbar sein oder nicht? Steuert den Nachschlagefilter in der Mediakampagne des Feldes &quot;Betreuer Team&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Soll das Team in neuen Kampagnen noch auswählbar sein oder nicht? Steuert den Nachschlagefilter in der Mediakampagne des Feldes &quot;Betreuer Team&quot;</inlineHelpText>
+        <label>Team ungültig</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Betreuer Team</label>
+    <listViews>
+        <fullName>SomDig_AlleBetreuerTeams</fullName>
+        <columns>SomDig_TeamUngueltig__c</columns>
+        <columns>NAME</columns>
+        <columns>SomDig_BetreuerVermarkter__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Betreuer Teams</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Betreuer Team</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Betreuer Teams</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>SomDig_BetreuerVermarkter__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_BetreuerVermarkter__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

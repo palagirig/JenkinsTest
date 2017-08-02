@@ -1,0 +1,240 @@
+<aura:component >
+    <ltng:require styles="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+
+                  scripts="   /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js">
+    </ltng:require>
+
+    <aura:attribute name="oppPipeDetail" type="Object" required="true" access="public"/>
+    <aura:attribute name="somLikelihoods" type="Ven_SomLikelihood__c[]" required="true" access="public"/>
+
+    <aura:attribute name="isValid" type="Boolean" default="true" access="public"/>
+    <aura:attribute name="effYieldValid" type="Boolean" default="true" access="public"/>
+    <aura:attribute name="dealStructureValid" type="Boolean" default="true" access="public"/>
+
+    <aura:attribute name="currencyy" type="String" access="public" default="EUR"/>
+
+    <aura:handler name="change" value="{!v.oppPipeDetail.opp.Ven_EstimateCashYieldCurrentYear__c}" action="{!c.doSetEffYield}"/>
+    <aura:handler name="change" value="{!v.oppPipeDetail.opp.Ven_EstimatePrapYieldCurrentYear__c}" action="{!c.doSetEffYield}"/>
+
+    <!--**** BS 31.07.17 - EUR as default Currency ****
+    <aura:handler event="c:Ven_OppPipeDetailOppEvent" action="{!c.doHandleOppPipeDetailOppEvent}"></aura:handler>
+    -->
+
+    <aura:method name="checkDetailPipeCmpValid" action="{!c.checkValid}" description="check if cmp is valid" />
+
+    <div class="row">
+
+        <div class="col-sm-2">
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Cash+' '} {!$Label.c.Ven_lbl_Yield}</label>
+                <div class="input-group">
+                    <c:f42_InputNumber aura:id="cashYield"
+                                       value="{!v.oppPipeDetail.opp.Ven_EstimateCashYieldCurrentYear__c}"
+                                       min="0"
+                                       max="100"
+                                       required="true"
+                                       isInteger="false"
+                                       isValid="true"
+                                       textAlign="right"
+                                       format="###,###,##0.#" />
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Prap+' '} {!$Label.c.Ven_lbl_Yield}</label>
+                <div class="input-group">
+                    <c:f42_InputNumber aura:id="prapYield"
+                                       value="{!v.oppPipeDetail.opp.Ven_EstimatePrapYieldCurrentYear__c}"
+                                       min="0"
+                                       max="100"
+                                       required="true"
+                                       isInteger="false"
+                                       isValid="true"
+                                       textAlign="right"
+                                       format="###,###,##0.#" />
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_Effective +' '} {!$Label.c.Ven_lbl_Yield}</label>
+                <div class="{! if( v.effYieldValid, 'input-group', 'input-group yieldErr')}">
+                    <ui:outputNumber aura:id="effYield"
+                                     class="form-control text-right text-disabled"
+                                     value="{!v.oppPipeDetail.opp.Ven_EffectiveYield__c}"/>
+                    <span class="input-group-addon">%</span>
+                </div>
+                <p class="yieldErrTxt" style="{! if( v.effYieldValid, 'display:none', '')}">
+                    Yield is mandatory for Pipeline Opportunities
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="form-group">
+              <label>{!$Label.c.Ven_lbl_Cash+' '} {!$Label.c.Ven_lbl_Invest}</label>
+              <div class="input-group">
+                <c:f42_InputNumber aura:id="cashInvest"
+                                   value="{!v.oppPipeDetail.opp.Ven_CashInvest__c}"
+                                   required="true"
+                                   isInteger="true"
+                                   isValid="true"
+                                   textAlign="right" />
+                <span class="input-group-addon">{!v.currencyy}</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label>Contract Start Date</label>
+
+                <c:f42_InputDate aura:id="checkField"
+                               required="true"
+                               value="{!v.oppPipeDetail.approval.MT_ContractStartdate__c}"
+                               displayDatePicker="true"
+                               noDateSelect="noDate" />
+            </div>
+
+            <div class="form-group">
+                <label>Campaign Start Date</label>
+
+                <c:f42_InputDate aura:id="checkField"
+                               required="true"
+                               value="{!v.oppPipeDetail.approval.MT_RunTimeTVStart__c}"
+                               displayDatePicker="true"
+                               noDateSelect="noDate" />
+            </div>
+        </div>
+
+
+        <div class="col-sm-2">
+            <div class="form-group">
+              <!-- Placeholder -->
+            </div>
+
+            <div class="form-group">
+                <label>Contract End Date</label>
+              
+                <c:f42_InputDate aura:id="checkField"
+                               required="true"
+                               value="{!v.oppPipeDetail.approval.MT_ContractEnddate__c}"
+                               displayDatePicker="true"
+                               checkDateSelect="{!v.oppPipeDetail.approval.MT_ContractStartdate__c}"
+                               noDateSelect="before" />
+
+            </div>
+
+            <div class="form-group">
+                <label>Campaign End Date</label>
+
+                <c:f42_InputDate aura:id="checkField"
+                               required="true"
+                               value="{!v.oppPipeDetail.approval.MT_RunTimeTVEnd__c}"
+                               displayDatePicker="true"
+                               checkDateSelect="{!v.oppPipeDetail.approval.MT_RunTimeTVStart__c}"
+                               noDateSelect="before" />
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <label>{!$Label.c.Ven_lbl_VariableComponent}</label>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Minimum Guarantee"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_MG__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Revenue Share"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_RevShare__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Exit Participation"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_Ep__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <div class="input-group">
+                            <ui:outputText class="form-control" value="Exit Participation Light"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_EpLight__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <aura:if isTrue="{!not(v.dealStructureValid)}" >
+                          <p style="color: #B22222;padding-top:5px;">Select at least one checkbox of deal structure!</p>
+                        </aura:if>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Fill-Up"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_Fillup__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Equity"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_Equity__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Bridge"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_Bridge__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+
+                        <div class="input-group myCheckbox">
+                            <ui:outputText class="form-control" value="Test Deal"/>
+
+                            <span class="input-group-addon">
+                                <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_TestDeal__c}" aura:id="dealStructure"/>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <label>{!$Label.c.Ven_lbl_Gmv+' '} {!v.oppPipeDetail.currentYear.year}</label>
+    <c:Ven_OppPipeDetailPipeYearCmp oppPipeYear="{!v.oppPipeDetail.currentYear}"
+                                    effYield="{!v.oppPipeDetail.opp.Ven_EffectiveYield__c}"
+                                    isValid="true"
+                                    somLikelihoods="{!v.somLikelihoods}"
+                                    isCurrentYear="true"
+                                    aura:id="checkField" />
+
+    <label>{!$Label.c.Ven_lbl_Gmv+' '} {!v.oppPipeDetail.nextYear.year}</label>
+    <c:Ven_OppPipeDetailPipeYearCmp oppPipeYear="{!v.oppPipeDetail.nextYear}"
+                                    effYield="{!v.oppPipeDetail.opp.Ven_EffectiveYield__c}"
+                                    isValid="true"
+                                    somLikelihoods="{!v.somLikelihoods}"
+                                    isCurrentYear="false"
+                                    aura:id="checkField" />
+
+</aura:component>

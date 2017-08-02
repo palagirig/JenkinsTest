@@ -1,0 +1,170 @@
+<aura:component >
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js">
+   	</ltng:require>
+
+   	<aura:attribute name="totalNetPot" type="Decimal" access="public"></aura:attribute>
+   	<aura:attribute name="oppPipeYear" type="Object" required="true" access="public"></aura:attribute>
+   	<aura:attribute name="clientLikelihood" type="Integer" access="public"></aura:attribute>
+   	<aura:attribute name="effYield" type="Integer" required="true" access="public"></aura:attribute>
+   	<aura:attribute name="isValid" type="Boolean" default="true" access="public"></aura:attribute>
+   	<aura:attribute name="somLikelihoods" type="Ven_SomLikelihood__c[]" required="true" access="public"></aura:attribute>
+   	<aura:attribute name="currentMonth" type="Integer" access="private"></aura:attribute>
+   	<aura:attribute name="isCurrentYear" type="Boolean" default="true" access="public"></aura:attribute>
+   	
+   	<aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[0].Ven_Amount__c}" action="{!c.doSetSum1}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[1].Ven_Amount__c}" action="{!c.doSetSum2}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[2].Ven_Amount__c}" action="{!c.doSetSum3}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[3].Ven_Amount__c}" action="{!c.doSetSum4}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[4].Ven_Amount__c}" action="{!c.doSetSum5}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[5].Ven_Amount__c}" action="{!c.doSetSum6}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[6].Ven_Amount__c}" action="{!c.doSetSum7}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[7].Ven_Amount__c}" action="{!c.doSetSum8}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[8].Ven_Amount__c}" action="{!c.doSetSum9}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[9].Ven_Amount__c}" action="{!c.doSetSum10}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[10].Ven_Amount__c}" action="{!c.doSetSum11}"></aura:handler>
+   	<aura:handler name="change" value="{!v.oppPipeYear.oppPipeMonths[11].Ven_Amount__c}" action="{!c.doSetSum12}"></aura:handler>
+
+   	<aura:handler name="change" value="{!v.oppPipeYear.totalAmount}" action="{!c.doHandleAmountChange}"></aura:handler>
+   	<aura:handler name="change" value="{!v.effYield}" action="{!c.doHandleEffYieldChange}"></aura:handler>
+
+
+   	<aura:handler event="c:Ven_OppPipeDetailOppEvent" action="{!c.doHandleOppPipeDetailOppEvent}"></aura:handler>
+
+
+	<div aura:id="monthtt" class="slds-popover slds-popover--tooltip slds-nubbin--bottom-left toolt hideIt" role="tooltip" id="help">
+	  <div class="slds-popover__body">Please consider to only update GMVs for current or future months</div>
+	</div>
+
+   	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>{!$Label.c.Ven_lbl_JanuaryShort}</th>
+				<th>{!$Label.c.Ven_lbl_FebruaryShort}</th>
+				<th>{!$Label.c.Ven_lbl_MarchShort}</th>
+				<th>{!$Label.c.Ven_lbl_AprilShort}</th>
+				<th>{!$Label.c.Ven_lbl_MayShort}</th>
+				<th>{!$Label.c.Ven_lbl_JuneShort}</th>
+				<th>{!$Label.c.Ven_lbl_JulyShort}</th>
+				<th>{!$Label.c.Ven_lbl_AugustShort}</th>
+				<th>{!$Label.c.Ven_lbl_SeptemberShort}</th>
+				<th>{!$Label.c.Ven_lbl_OctoberShort}</th>
+				<th>{!$Label.c.Ven_lbl_NovemberShort}</th>
+				<th>{!$Label.c.Ven_lbl_DecemberShort}</th>
+				<th>{!$Label.c.Ven_lbl_Total + ' '} {!$Label.c.Ven_lbl_Gmv}</th>
+				<th>{!$Label.c.Ven_lbl_Total + ' '} {!$Label.c.Ven_lbl_NetPotential}</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[0].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[0].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[1].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[1].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[2].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[2].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[3].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[3].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[4].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[4].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[5].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[5].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[6].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[6].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[7].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[7].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[8].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[8].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[9].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[9].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[10].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[10].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<c:f42_InputNumber value="{!v.oppPipeYear.oppPipeMonths[11].Ven_Amount__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.oppPipeYear.oppPipeMonths[11].isValid}">
+					</c:f42_InputNumber>
+				</td>
+
+				<td>
+					<ui:outputNumber class="form-control input-mark" value="{!v.oppPipeYear.totalAmount}"></ui:outputNumber>
+				</td>
+				<td>
+					<ui:outputNumber class="form-control input-mark" value="{!v.totalNetPot}"></ui:outputNumber>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</aura:component>

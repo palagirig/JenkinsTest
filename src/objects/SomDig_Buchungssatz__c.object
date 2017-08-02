@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Objekt in dem alle buchungsrelevanten Daten gespeichert werden</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>SomDig_Belegdatum__c</fullName>
+        <description>SAP Faktura - Datum des Belegs</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Datum des Belegs</inlineHelpText>
+        <label>Belegdatum</label>
+        <length>8</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Belegkopftext__c</fullName>
+        <description>SAP Erlösaufteilung - Identifizierender Text zum Beleg (einheitlich pro Belegnummer)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Identifizierender Text zum Beleg (einheitlich pro Belegnummer)</inlineHelpText>
+        <label>Belegkopftext</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Belegnr__c</fullName>
+        <description>SAP Erlösaufteilung - Belegnummer des Datensatzes. Alles Datensätze zu einer Belegnummer gehören zusammen und müssen im Soll und Haben ausgeglichen sein. Die Belegnummer beginnt in jeder Datei bei 1 und ist unterbrechungsfrei aufsteigend</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Belegnummer des Datensatzes. Alles Datensätze zu einer Belegnummer gehören zusammen und müssen im Soll und Haben ausgeglichen sein. Die Belegnummer beginnt in jeder Datei bei 1 und ist unterbrechungsfrei aufsteigend</inlineHelpText>
+        <label>Belegnr</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Belegnummer__c</fullName>
+        <description>SAP Faktura - Belegnummer der Faktura</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Belegnummer der Faktura</inlineHelpText>
+        <label>Belegnummer</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BetragFormel__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(SUBSTITUTE(SomDig_Betrag__c,&quot;,&quot;,&quot;.&quot;)) * IF(SomDig_Soll_Haben_Kennzeichen__c == &quot;H&quot;, 1, -1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Betrag (Formel)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Betrag__c</fullName>
+        <description>SAP Faktura / SAP Erlösaufteilung - Buchungsbetrag</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura / SAP Erlösaufteilung - Buchungsbetrag</inlineHelpText>
+        <label>Betrag</label>
+        <length>17</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Buchungskreis__c</fullName>
+        <description>SAP Faktura - Buchungskreis der Instanz</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Buchungskreis der Instanz</inlineHelpText>
+        <label>Buchungskreis</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Buchungsschluessel__c</fullName>
+        <description>SAP Erlösaufteilung - Kodierung Soll und Haben</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Kodierung Soll und Haben</inlineHelpText>
+        <label>Buchungsschlüssel</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Buchungstext__c</fullName>
+        <description>SAP Faktura / SAP Erlösaufteilung - Buchungstext, einheitlich für eine Belegnummer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura / SAP Erlösaufteilung - Buchungstext, einheitlich für eine Belegnummer</inlineHelpText>
+        <label>Buchungstext</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Debitorennummer__c</fullName>
+        <description>SAP Faktura - Debitorennummer des Belegempfängers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Debitorennummer des Belegempfängers</inlineHelpText>
+        <label>Debitorennummer</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DeliveryData__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>stammt aus AdVendio Paket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>stammt aus AdVendio Paket</inlineHelpText>
+        <label>Delivery Data</label>
+        <referenceTo>ADvendio__DeliveryData__c</referenceTo>
+        <relationshipLabel>Buchungssätze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Dokumenttyp__c</fullName>
+        <description>SAP Faktura - Unterscheidung nach Rechnung und Gutschrift</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Unterscheidung nach Rechnung und Gutschrift</inlineHelpText>
+        <label>Dokumenttyp</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Erloeskonto_Sachkonto__c</fullName>
+        <description>SAP Faktura / SAP Erlösaufteilung - Erlöskonto/Sachkonto</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura / SAP Erlösaufteilung - Erlöskonto/Sachkonto</inlineHelpText>
+        <label>Erlöskonto/Sachkonto</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_IaNummer__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Buchungssatz wird anhand diverser Parameter zu einer IA-Nummer zugeordnet</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Buchungssatz wird anhand diverser Parameter zu einer IA-Nummer zugeordnet</inlineHelpText>
+        <label>IA Nummer</label>
+        <referenceTo>SomDig_IaNummer__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Innenauftragsnummer__c</fullName>
+        <description>SAP Faktura / SAP Erlösaufteilung - Sammel-Innenauftrag / Innenauftragsnummer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura / SAP Erlösaufteilung - Sammel-Innenauftrag / Innenauftragsnummer</inlineHelpText>
+        <label>Innenauftragsnummer</label>
+        <length>9</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_KonzernIntern__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>kommt über Mediakampagne aus dem Objekt Account (Feld: P7S1_KonzernMitglied__c)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus dem Objekt Account</inlineHelpText>
+        <label>Konzern Intern</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Kostenstelle__c</fullName>
+        <description>SAP Erlösaufteilung - Nicht genutzt, immer leer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Nicht genutzt, immer leer</inlineHelpText>
+        <label>Kostenstelle</label>
+        <length>1</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mediagattung__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>übernommen aus Werbeträger, Multiscreen berücksichtigt (via Lieferdaten &amp; AdServerId)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus Werbeträger, Multiscreen berücksichtigt</inlineHelpText>
+        <label>Mediagattung</label>
+        <referenceTo>SomDig_Mediagattung__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsDifferenzierung__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>übernommen aus der Werbeform (über LineItem und Werbemittelpreis)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus der Werbeform</inlineHelpText>
+        <label>Mediagattungs-Differenzierung</label>
+        <referenceTo>SomDig_MediagattungsDifferenzierung__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsSegment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>übernommen aus Lieferdaten und AdServerId</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus Lieferdaten und AdServerId</inlineHelpText>
+        <label>Mediagattungs-Segment</label>
+        <referenceTo>SomDig_MediagattungsSegment__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PartnerId__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner-ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Preisliste__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>übernommen aus der Mediakampagne</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus der Mediakampagne</inlineHelpText>
+        <label>Preisliste</label>
+        <referenceTo>ADvendio__Pricelist__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Rechnung__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rechnung</label>
+        <referenceTo>ADvendio__Invoice__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Rechnungsposition__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Rechnungsposition, die mit dem Buchungssatz verlinkt ist</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rechnungsposition, die mit dem Buchungssatz verlinkt ist</inlineHelpText>
+        <label>Rechnungsposition</label>
+        <referenceTo>ADvendio__InvoiceItem__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Referenz__c</fullName>
+        <description>SAP Erlösaufteilung - Text, einheitlich für eine Belegnummer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Text, einheitlich für eine Belegnummer</inlineHelpText>
+        <label>Referenz</label>
+        <length>16</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_SAP_Buchungsdatum__c</fullName>
+        <description>SAP Buchungsdatum, abhängig vom Rechnungsdatum bzw. Belegdatum und im Format YYMM.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Buchungsdatum, abhängig vom Rechnungsdatum bzw. Belegdatum und im Format YYMM.</inlineHelpText>
+        <label>SAP Buchungsdatum</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Sachkonto__c</fullName>
+        <description>steuert die Buchung zu einem Sachkonto anhand diverser Parameter</description>
+        <externalId>false</externalId>
+        <inlineHelpText>steuert die Buchung zu einem Sachkonto anhand diverser Parameter</inlineHelpText>
+        <label>Sachkonto</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_SapDatei__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>SAP-Datei</label>
+        <referenceTo>SomDig_SapDatei__c</referenceTo>
+        <relationshipLabel>Buchungssätze</relationshipLabel>
+        <relationshipName>Buchungss_tze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Soll_Haben_Kennzeichen__c</fullName>
+        <description>SAP Faktura - Soll/Haben Kennzeichen des Belegs</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Soll/Haben Kennzeichen des Belegs</inlineHelpText>
+        <label>Soll/Haben Kennzeichen</label>
+        <length>1</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Status_SAP__c</fullName>
+        <externalId>false</externalId>
+        <label>Status SAP</label>
+        <picklist>
+            <picklistValues>
+                <fullName>offen</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>übermittelt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Status__c</fullName>
+        <description>Bezeichnung vom Status der Rechnung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bezeichnung vom Status der Rechnung</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Steuerkennzeichen__c</fullName>
+        <description>SAP Faktura / SAP Erlösaufteilung - SAP-Steuerkennzeichen (MwSt)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura / SAP Erlösaufteilung - SAP-Steuerkennzeichen (MwSt)</inlineHelpText>
+        <label>Steuerkennzeichen</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Steuerrelevanz__c</fullName>
+        <description>SAP Erlösaufteilung - Steuerrelevanz</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Steuerrelevanz</inlineHelpText>
+        <label>Steuerrelevanz</label>
+        <length>1</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_UniqueKey__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>UniqueKey</label>
+        <length>70</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_VerrechnungsmonatSAP__c</fullName>
+        <externalId>true</externalId>
+        <label>Verrechnungsmonat (SAP)</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Verrechnungsmonat__c</fullName>
+        <description>SAP Faktura - Monat (als Ultimo des Monats), in dem der Beleg zu verbuchen ist</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Monat (als Ultimo des Monats), in dem der Beleg zu verbuchen ist</inlineHelpText>
+        <label>Verrechnungsmonat</label>
+        <length>8</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbeabgabe__c</fullName>
+        <description>SAP Faktura - Auf die Rechnung abzuführende Werbeabgabe (AT)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Auf die Rechnung abzuführende Werbeabgabe (AT)</inlineHelpText>
+        <label>Werbeabgabe</label>
+        <length>17</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbetraeger__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>übernommen aus Lieferdaten &amp; AdServerId</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus Lieferdaten &amp; AdServerId</inlineHelpText>
+        <label>Werbeträger</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Buchungssaetze</relationshipLabel>
+        <relationshipName>Buchungssaetze</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbetraegergruppierung__c</fullName>
+        <description>übernommen aus Werbeträger via Lieferdaten &amp; AdServerId</description>
+        <externalId>false</externalId>
+        <inlineHelpText>übernommen aus Werbeträger und Lieferdaten</inlineHelpText>
+        <label>Werbeträgergruppierung</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Zahlungsbedingung__c</fullName>
+        <description>SAP Faktura - Zahlungsbedingung des Belegs im SAP Format</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Faktura - Zahlungsbedingung des Belegs im SAP Format</inlineHelpText>
+        <label>Zahlungsbedingung</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Zuordnung__c</fullName>
+        <description>SAP Erlösaufteilung - Nicht genutzt, immer leer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Erlösaufteilung - Nicht genutzt, immer leer</inlineHelpText>
+        <label>Zuordnung</label>
+        <length>1</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Bezeichnung vom Status der Rechnung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bezeichnung vom Status der Rechnung</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Buchungssatz</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>SomDig_Belegnummer__c</columns>
+        <columns>SomDig_Buchungskreis__c</columns>
+        <columns>SomDig_Debitorennummer__c</columns>
+        <columns>SomDig_Dokumenttyp__c</columns>
+        <columns>SomDig_Verrechnungsmonat__c</columns>
+        <columns>SomDig_Belegdatum__c</columns>
+        <columns>SomDig_Betrag__c</columns>
+        <columns>SomDig_Zahlungsbedingung__c</columns>
+        <columns>SomDig_Soll_Haben_Kennzeichen__c</columns>
+        <columns>SomDig_Erloeskonto_Sachkonto__c</columns>
+        <columns>SomDig_Innenauftragsnummer__c</columns>
+        <columns>SomDig_Steuerkennzeichen__c</columns>
+        <columns>SomDig_Buchungstext__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Hochrechnungsfix_Juni</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>SomDig_Belegnummer__c</columns>
+        <columns>SomDig_Buchungskreis__c</columns>
+        <columns>SomDig_Debitorennummer__c</columns>
+        <columns>SomDig_Dokumenttyp__c</columns>
+        <columns>SomDig_Verrechnungsmonat__c</columns>
+        <columns>SomDig_Belegdatum__c</columns>
+        <columns>SomDig_Betrag__c</columns>
+        <columns>SomDig_Zahlungsbedingung__c</columns>
+        <columns>SomDig_Soll_Haben_Kennzeichen__c</columns>
+        <columns>SomDig_Erloeskonto_Sachkonto__c</columns>
+        <columns>SomDig_Innenauftragsnummer__c</columns>
+        <columns>SomDig_Steuerkennzeichen__c</columns>
+        <columns>SomDig_Buchungstext__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_SapDatei__c</field>
+            <operation>equals</operation>
+            <value>SAP-Datei-00015</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>6/28/2016 12:00 AM</value>
+        </filters>
+        <label>Hochrechnungsfix Juni</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Buchungssatz-Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Buchungssätze</pluralLabel>
+    <recordTypes>
+        <fullName>Erloesaufteilung</fullName>
+        <active>true</active>
+        <label>Erlösaufteilung</label>
+        <picklistValues>
+            <picklist>SomDig_Status_SAP__c</picklist>
+            <values>
+                <fullName>offen</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>übermittelt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Status__c</picklist>
+            <values>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Faktura</fullName>
+        <active>true</active>
+        <label>Faktura</label>
+        <picklistValues>
+            <picklist>SomDig_Status_SAP__c</picklist>
+            <values>
+                <fullName>offen</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>übermittelt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Status__c</picklist>
+            <values>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Hochrechnung</fullName>
+        <active>true</active>
+        <label>Hochrechnung</label>
+        <picklistValues>
+            <picklist>SomDig_Status_SAP__c</picklist>
+            <values>
+                <fullName>offen</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>übermittelt</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Status__c</picklist>
+            <values>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>fakturiert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pre-invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>storniert</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>SomDig_Belegdatum__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_BetragFormel__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_SapDatei__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Soll_Haben_Kennzeichen__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

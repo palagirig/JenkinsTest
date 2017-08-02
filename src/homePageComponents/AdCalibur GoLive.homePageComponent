@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;div style=&quot;text-align: center;&quot;&gt;&lt;img alt=&quot;Vom Benutzer hinzugefügtes Bild&quot; src=&quot;https://p7s1--c.eu4.content.force.com/sfc/servlet.shepherd/version/download/06857000003ajeO?asPdf=false&amp;amp;operationContext=CHATTER&quot;&gt;&lt;/img&gt;&lt;br&gt; &lt;/div&gt;
+Es ist soweit! Das Altsystem ProDia wird durch das neue Buchungstool ADvendio abgelöst. Das Wachstum der SevenOne Media Digital und ein verändertes und anspruchsvolles Marktumfeld machten diese Ablösung notwendig.&lt;br&gt; &lt;br&gt;&lt;b&gt;ADvendio-Schulungsunterlagen Online verfügbar:&lt;/b&gt;&lt;br&gt;In den letzten Wochen fanden viele Schulungstermine zum neuen Tool statt. Sämtliche &lt;b&gt;Schulungsinhalte&lt;/b&gt; sind unter folgendem Link auch weiterhin für euch abrufbar:&lt;br&gt;&lt;br&gt;&lt;a href=&quot;/501?fcf=00B57000008hIZN&quot;&gt;Übersicht aller ADvendio Cheatsheets&lt;/a&gt;&lt;br&gt; &lt;br&gt;Zudem könnt ihr das ADvendio-Projektteam bei Rückfragen direkt erreichen:
+&lt;ul&gt;&lt;li&gt;per E-Mail: &lt;a href=&quot;mailto:Salesforce-support@p7s1applications.de&quot;&gt;&lt;span style=&quot;text-decoration: none;&quot;&gt;&lt;span style=&quot;color: windowtext;&quot;&gt;Salesforce-support@p7s1applications.de&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;am Telefon: 089-9507- 5511&lt;/li&gt;&lt;li&gt;Vor-Ort-Unterstützung: Gebäude G4. A, Raum 2.0060&lt;/li&gt;&lt;/ul&gt;
+ Viel Spaß mit dem neuen Buchungstool und viel Erfolg auf dem Weg zum ADvendio-Profi wünscht euch euer ADvendio-Projektteam!&lt;br&gt; 
+&lt;hr&gt;&lt;/hr&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>
