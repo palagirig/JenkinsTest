@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Anlegen</label>
+        <name>MT_Add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_BC_ImportDataControl_ERROR_ValidationExceptionBody --></label>
+        <name>MT_BC_ImportDataControl_ERROR_ValidationExceptionBody</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_BC_ImportDataControl_ERROR_ValidationFailedBody --></label>
+        <name>MT_BC_ImportDataControl_ERROR_ValidationFailedBody</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_BC_ImportDataControl_ERROR_ValidationFailedSubject --></label>
+        <name>MT_BC_ImportDataControl_ERROR_ValidationFailedSubject</name>
+    </customLabels>
+    <customLabels>
+        <label>Der Ausstrahlungsmonat liegt außerhalb der Vertragslaufzeit (es existiert kein Monatsplan-Datensatz).</label>
+        <name>MT_BC_ImportDataTransformator_ERROR_MonthOutsideContractRuntime</name>
+    </customLabels>
+    <customLabels>
+        <label>Ein neuerer Datensatz existiert für diese Kombination von Monat, Sender und Zeitschiene. Der veraltete Datensatz wird ignoriert.</label>
+        <name>MT_BC_ImportDataTransformator_ERROR_NewerRecordFound</name>
+    </customLabels>
+    <customLabels>
+        <label>Es wurde kein ProSa- Auftrag mit dieser Nummer gefunden.</label>
+        <name>MT_BC_ImportDataTransformator_ERROR_NoProSaOrderFound</name>
+    </customLabels>
+    <customLabels>
+        <label>Der ProSa- Auftrag referenziert eine Kampagne mit einer anderen KRS ID als der Importdatensatz.</label>
+        <name>MT_BC_ImportDataTransformator_ERROR_ProSaOrderCampaignMismatch</name>
+    </customLabels>
+    <customLabels>
+        <label>Kamp. Wahrsch.</label>
+        <name>MT_CampaignProbability</name>
+    </customLabels>
+    <customLabels>
+        <label>Kundenanteil</label>
+        <name>MT_CreateMediaCampaign_BmvTvCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Bausteine</label>
+        <name>MT_CreateMediaCampaign_BuildingBlocks</name>
+    </customLabels>
+    <customLabels>
+        <label>Digital</label>
+        <name>MT_CreateMediaCampaign_BuildingBlocks_Digital</name>
+    </customLabels>
+    <customLabels>
+        <label>DooH</label>
+        <name>MT_CreateMediaCampaign_BuildingBlocks_DooH</name>
+    </customLabels>
+    <customLabels>
+        <label>TV</label>
+        <name>MT_CreateMediaCampaign_BuildingBlocks_TV</name>
+    </customLabels>
+    <customLabels>
+        <label>Keine passenden Kampagnentypen gefunden.</label>
+        <name>MT_CreateMediaCampaign_CampaignType_NoMatches</name>
+    </customLabels>
+    <customLabels>
+        <label>Abbrechen</label>
+        <name>MT_CreateMediaCampaign_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label>Vertragslaufzeit</label>
+        <name>MT_CreateMediaCampaign_ContractualRuntime</name>
+    </customLabels>
+    <customLabels>
+        <label>Keine</label>
+        <name>MT_CreateMediaCampaign_ContractualRuntime_None</name>
+    </customLabels>
+    <customLabels>
+        <label>Anlegen</label>
+        <name>MT_CreateMediaCampaign_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Ein Fehler ist aufgetreten</label>
+        <name>MT_CreateMediaCampaign_ErrorTitle</name>
+    </customLabels>
+    <customLabels>
+        <label>Informationen aus der Opportunity-Freigabe</label>
+        <name>MT_CreateMediaCampaign_InformationFromOpportunityApproval</name>
+    </customLabels>
+    <customLabels>
+        <label>OK</label>
+        <name>MT_CreateMediaCampaign_Ok</name>
+    </customLabels>
+    <customLabels>
+        <label>Umsätze</label>
+        <name>MT_CreateMediaCampaign_Revenues</name>
+    </customLabels>
+    <customLabels>
+        <label>Sekunden</label>
+        <name>MT_CreateMediaCampaign_Seconds</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotlänge</label>
+        <name>MT_CreateMediaCampaign_SpotLength</name>
+    </customLabels>
+    <customLabels>
+        <label>Sekunden Kundenanteil</label>
+        <name>MT_CreateMediaCampaign_SpotLengthCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>davon</label>
+        <name>MT_CreateMediaCampaign_Thereof</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagne anlegen</label>
+        <name>MT_CreateMediaCampaign_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Variabler Umsatz 1</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue1_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Variabler Umsatz 2</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue2_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Variabler Umsatz 3</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue3_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Variabler Umsatz 4</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue4_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Variabler Umsatz 5</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue5_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Umsatz pro Einheit</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue_RevenuePerUnit</name>
+    </customLabels>
+    <customLabels>
+        <label>Verkaufte Anzahl</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue_SoldAmount</name>
+    </customLabels>
+    <customLabels>
+        <label>Verkauftes Produkt</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue_SoldProduct</name>
+    </customLabels>
+    <customLabels>
+        <label>Verkaufseinheit</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue_SoldUnit</name>
+    </customLabels>
+    <customLabels>
+        <label>Gesamtumsatz</label>
+        <name>MT_CreateMediaCampaign_VariableRevenue_TotalRevenue</name>
+    </customLabels>
+    <customLabels>
+        <label>Verteilung</label>
+        <name>MT_Distribution</name>
+    </customLabels>
+    <customLabels>
+        <label>Flight</label>
+        <name>MT_Flight</name>
+    </customLabels>
+    <customLabels>
+        <label>Account</label>
+        <name>MT_GlobalOppApp_AccountName</name>
+    </customLabels>
+    <customLabels>
+        <label>Interner Partner</label>
+        <name>MT_GlobalOppApp_AssetName</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagnenstatus</label>
+        <name>MT_GlobalOppApp_CampaignStatus</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagnentyp</label>
+        <name>MT_GlobalOppApp_CampaignType</name>
+    </customLabels>
+    <customLabels>
+        <label>Ende Laufzeit TV</label>
+        <name>MT_GlobalOppApp_RuntimeTVEnd</name>
+    </customLabels>
+    <customLabels>
+        <label>Start Laufzeit TV</label>
+        <name>MT_GlobalOppApp_RuntimeTVStart</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity Freigabe Cockpit</label>
+        <name>MT_GlobalOppApp_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Account</label>
+        <name>MT_KPI_Global_AccountName</name>
+    </customLabels>
+    <customLabels>
+        <label>Interner Partner</label>
+        <name>MT_KPI_Global_AssetName</name>
+    </customLabels>
+    <customLabels>
+        <label>BMV TV IST</label>
+        <name>MT_KPI_Global_BmvTVActuals</name>
+    </customLabels>
+    <customLabels>
+        <label>BMV TV SOLL</label>
+        <name>MT_KPI_Global_BmvTVContractual</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagnenstatus</label>
+        <name>MT_KPI_Global_CampaignStatus</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagnentyp</label>
+        <name>MT_KPI_Global_CampaignType</name>
+    </customLabels>
+    <customLabels>
+        <label>Vertragserfüllung</label>
+        <name>MT_KPI_Global_ContractualPerformance</name>
+    </customLabels>
+    <customLabels>
+        <label>Ende Laufzeit TV</label>
+        <name>MT_KPI_Global_RuntimeTVEnd</name>
+    </customLabels>
+    <customLabels>
+        <label>Start Laufzeit TV</label>
+        <name>MT_KPI_Global_RuntimeTVStart</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagnencockpit</label>
+        <name>MT_KPI_Global_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>BMV TV Interner Partner</label>
+        <name>MT_KPI_MediaCampaign_BmvTVAsset</name>
+    </customLabels>
+    <customLabels>
+        <label>BMV TV Kunde</label>
+        <name>MT_KPI_MediaCampaign_BmvTVCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Kundenanteil</label>
+        <name>MT_KPI_MediaCampaign_SpotLengthCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotlänge Gesamt</label>
+        <name>MT_KPI_MediaCampaign_SpotLengthTotal</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotanteil Unit</label>
+        <name>MT_KPI_MediaCampaign_SpotRatioAsset</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotanteil Kunde</label>
+        <name>MT_KPI_MediaCampaign_SpotRatioCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Kampagnencockpit</label>
+        <name>MT_KPI_MediaCampaign_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>BMV TV Kunde</label>
+        <name>MT_KPI_OppApp_BmvTVCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Kundenanteil</label>
+        <name>MT_KPI_OppApp_SpotLengthCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotlänge Gesamt</label>
+        <name>MT_KPI_OppApp_SpotLengthTotal</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotanteil Unit</label>
+        <name>MT_KPI_OppApp_SpotRatioAsset</name>
+    </customLabels>
+    <customLabels>
+        <label>Spotanteil Kunde</label>
+        <name>MT_KPI_OppApp_SpotRatioCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity Freigabe Cockpit</label>
+        <name>MT_KPI_OppApp_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_Max --></label>
+        <name>MT_Max</name>
+    </customLabels>
+    <customLabels>
+        <label>Felder</label>
+        <name>MT_OppApp_ApprovalHistory_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label>Zuletzt freigegebener Wert</label>
+        <name>MT_OppApp_ApprovalHistory_LastApprovedValue</name>
+    </customLabels>
+    <customLabels>
+        <label>Die Opportunity Freigabe wurde nicht zur Freigabe eingereicht.</label>
+        <name>MT_OppApp_ApprovalHistory_NoActiveApprovalProcess</name>
+    </customLabels>
+    <customLabels>
+        <label>Noch keine Freigabe vorhanden.</label>
+        <name>MT_OppApp_ApprovalHistory_NoApprovalYet</name>
+    </customLabels>
+    <customLabels>
+        <label>Keine Änderungen vorhanden</label>
+        <name>MT_OppApp_ApprovalHistory_NoChanges</name>
+    </customLabels>
+    <customLabels>
+        <label>Keine Werte vorhanden</label>
+        <name>MT_OppApp_ApprovalHistory_NoValues</name>
+    </customLabels>
+    <customLabels>
+        <label>Eingereichter Wert</label>
+        <name>MT_OppApp_ApprovalHistory_SubmittedValue</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity Freigabe - Freigabehistorie</label>
+        <name>MT_OppApp_ApprovalHistory_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_Sponsoring --></label>
+        <name>MT_Sponsoring</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_Spots --></label>
+        <name>MT_Spots</name>
+    </customLabels>
+    <customLabels>
+        <label>Gesamt</label>
+        <name>MT_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MT_Volume --></label>
+        <name>MT_Volume</name>
+    </customLabels>
+    <customLabels>
+        <label>gewichtet</label>
+        <name>MT_Weighted</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Media Ranking --></label>
+        <name>MT_Ranking</name>
+    </customTabs>
+</Translations>

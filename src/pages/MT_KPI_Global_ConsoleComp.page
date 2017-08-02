@@ -83,7 +83,7 @@
                         <div class="slds-col slds-size--1-of-6">
                             <div class="  slds-text-align--center">
                                 <p class="slds-text-title slds-truncate ">{!$Label.MT_KPI_Global_BmvTVActuals}</p>
-                                <p class="slds-text-body--regular slds-truncate"><apex:outputField value="{!MT_MediaCampaign__c.MT_ActualMonthlyBMV_sum__c}"/></p>
+                                <p class="slds-text-body--regular slds-truncate"><apex:outputField value="{!context.var['tvBlock'].MT_SumBMVMonthlyPlan__c}"/></p>
                             </div>
                         </div>
 
@@ -99,7 +99,7 @@
                         <div class="slds-col slds-size--1-of-6">
                             <div class="  slds-text-align--center">
                                 <p class="slds-text-title slds-truncate ">{!$Label.MT_KPI_Global_BmvTVContractual}</p>
-                                <p class="slds-text-body--regular slds-truncate"><apex:outputField value="{!MT_MediaCampaign__c.MT_BmvTv__c}"/></p>
+                                <p class="slds-text-body--regular slds-truncate"><apex:outputField value="{!context.var['tvBlock'].MT_MediaCampaign_BMV__c}"/></p>
                             </div>
                         </div>
                     </div>

@@ -22,13 +22,13 @@ public class MT_Test {
 
     MT_MediaCampaignType__c mct = [SELECT Id
                                      FROM MT_MediaCampaignType__c
-                                    WHERE MT_Type__c = :MT_Constants.getInstance().MediaCampaignType_External
+                                    WHERE MT_Type__c = :MT_Constants.getInstance().MediaCampaignType_Internal
                                       AND MT_IsActive__c = true
                                       AND MT_Asset_ref__c = :oppApp.MT_Asset_ref__c
                                     LIMIT 1];
 
     MT_MediaCampaign__c mc = MT_MediaCampaigns.create(oppApp.P7S1_Opportunity__r, oppApp, mct);
-    mc.RecordTypeId = MT_MediaCampaigns.getRecordTypeIdForExternalCampaign();
+    mc.RecordTypeId = MT_MediaCampaigns.getRecordTypeIdForInternalCampaign();
     mc.MT_RunTimeTVStart__c = oppApp.MT_RunTimeTVStart__c;
     mc.MT_RunTimeTVEnd__c = oppApp.MT_RunTimeTVEnd__c;
     mc.MT_BmvTv__c = oppApp.P7S1_BmvTv__c; // WE NEED TO DEFINE THAT SPECIFICALLY AND MANUALLY IN TEST. Usually this value is prepopulated in standard UI. The trigger only handles null values but not zero values. For purpose of this test, it must be assigned manually
@@ -48,7 +48,7 @@ public class MT_Test {
     MT_MediaFlight__c mf = MT_MediaFlights.create(
       Date.today().addMonths(-5),
       Date.today().addMonths(7),
-    [SELECT Id FROM MT_MediaCampaignMonthlyPlan__c LIMIT 1]
+    [SELECT Id FROM MT_MediaBuildingBlockMonthlyPlan__c LIMIT 1]
     );
     insert mf;
 
@@ -76,7 +76,7 @@ public class MT_Test {
     List<P7S1_OpportunityApproval__c> oppApprovals = initOpportunityApprovalTestData();
 
     MT_MediaCampaignType__c mct = MT_MediaCampaignTypes.create('Test', true, oppApprovals.get(0).MT_Asset_ref__r);
-    mct.MT_Type__c = MT_Constants.getInstance().MediaCampaignType_External;
+    mct.MT_Type__c = MT_Constants.getInstance().MediaCampaignType_Internal;
     insert mct;
 
     return oppApprovals;

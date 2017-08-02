@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -47,9 +43,9 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Die Ausstrahlungsdaten für Werbemotive, die vom DWH importiert wurden.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -58,7 +54,6 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>MT_BMV__c</fullName>
-        <description>Das ausgestrahlte BMV (je nach Kampagnentyp ist dies MB1 oder MB3).</description>
         <externalId>false</externalId>
         <label>BMV</label>
         <precision>18</precision>
@@ -80,7 +75,6 @@
     </fields>
     <fields>
         <fullName>MT_LastImportDate__c</fullName>
-        <description>Das Datum der letzten Aktualisierung des Wertes, unabhängig von systeminternen Bearbeitungen.</description>
         <externalId>false</externalId>
         <label>Last Import Date</label>
         <required>false</required>
@@ -89,7 +83,6 @@
     </fields>
     <fields>
         <fullName>MT_MN3__c</fullName>
-        <description>Das ausgestrahlte Volumen als MN3</description>
         <externalId>false</externalId>
         <label>MN3</label>
         <precision>18</precision>
@@ -100,10 +93,9 @@
     </fields>
     <fields>
         <fullName>MT_MonthlyPlan_ref__c</fullName>
-        <description>Der Monat(splan), in dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>Monthly Plan</label>
-        <referenceTo>MT_MediaCampaignMonthlyPlan__c</referenceTo>
+        <referenceTo>MT_MediaBuildingBlockMonthlyPlan__c</referenceTo>
         <relationshipLabel>Media Broadcast Data</relationshipLabel>
         <relationshipName>Media_Broadcasts</relationshipName>
         <relationshipOrder>0</relationshipOrder>
@@ -126,7 +118,6 @@
     <fields>
         <fullName>MT_ProSaOrder_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
-        <description>Der ProSa- Auftrag, über den die Ausstrahlung gebucht wurde.</description>
         <externalId>false</externalId>
         <label>ProSa Order</label>
         <referenceTo>MT_ProSaOrder__c</referenceTo>
@@ -138,7 +129,6 @@
     </fields>
     <fields>
         <fullName>MT_Timeslot__c</fullName>
-        <description>Die Zeitschiene, in dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>Timeslot</label>
         <length>255</length>
@@ -149,7 +139,6 @@
     </fields>
     <fields>
         <fullName>MT_TvSenderName__c</fullName>
-        <description>Der Name des Senders, auf dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>TV Sender Name</label>
         <length>255</length>
@@ -160,7 +149,6 @@
     </fields>
     <fields>
         <fullName>MT_TvSenderNumber__c</fullName>
-        <description>Die Nummer des Senders, auf dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>TV Sender Number</label>
         <precision>18</precision>
@@ -179,4 +167,5 @@
     <pluralLabel>Media Broadcast Data</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

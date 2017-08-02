@@ -149,9 +149,7 @@ public with sharing class MT_MediaCampaigns {
    * @return MT_MediaCampaigns Support for fluent api.
    */
   public MT_MediaCampaigns createCampaignStructure() {
-    List<MT_TvTarget__c> mbbsToInsert = new List<MT_TvTarget__c>();
-    List<MT_MediaCampaignMonthlyPlan__c> monthlyPlansToInsert = new List<MT_MediaCampaignMonthlyPlan__c>();
-
+    List<MT_MediaBuildingBlock__c> mbbsToInsert = new List<MT_MediaBuildingBlock__c>();
     Map<Id, MT_MediaCampaign__c> mediaCampaignCache = new Map<Id, MT_MediaCampaign__c>();
 
     for (MT_MediaCampaign__c mc : this.scope) {
@@ -159,17 +157,33 @@ public with sharing class MT_MediaCampaigns {
         mbbsToInsert.add(MT_MediaBuildingBlocks.create(mc, MT_Constants.getInstance().MediaBuildingBlock_Type_TV));
       }
 
-      monthlyPlansToInsert.addAll(MT_MediaBuildingBlockMonthlyPlans.createMonthlyPlans(mc, mc.MT_Sys_ContractOrTVRuntimeStart__c, mc.MT_Sys_ContractOrTVRuntimeEnd__c));
+      if (mc.MT_HasMediaDooH__c) {
+        mbbsToInsert.add(MT_MediaBuildingBlocks.create(mc, MT_Constants.getInstance().MediaBuildingBlock_Type_DooH));
+      }
+
+      if (mc.MT_HasMediaDigital__c) {
+        mbbsToInsert.add(MT_MediaBuildingBlocks.create(mc, MT_Constants.getInstance().MediaBuildingBlock_Type_Digital));
+      }
+
       mediaCampaignCache.put(mc.Id, mc);
     }
 
-
     if (!mbbsToInsert.isEmpty()) {
       insert mbbsToInsert;
-    }
 
-    if (!monthlyPlansToInsert.isEmpty()) {
-      insert monthlyPlansToInsert;
+      List<MT_mediaBuildingBlockMonthlyPlan__c> monthlyPlansToInsert = new List<MT_mediaBuildingBlockMonthlyPlan__c>();
+
+      for (MT_MediaBuildingBlock__c mbb : mbbsToInsert) {
+        if (mbb.MT_Type__c == MT_Constants.getInstance().MediaBuildingBlock_Type_TV) {
+          MT_MediaCampaign__c mc = mediaCampaignCache.get(mbb.MT_MediaCampaign_ref__c);
+
+          monthlyPlansToInsert.addAll(MT_MediaBuildingBlockMonthlyPlans.createMonthlyPlans(mbb, mc.MT_Sys_ContractOrTVRuntimeStart__c, mc.MT_Sys_ContractOrTVRuntimeEnd__c));
+        }
+      }
+
+      if (!monthlyPlansToInsert.isEmpty()) {
+        insert monthlyPlansToInsert;
+      }
     }
 
     return this;
@@ -191,28 +205,28 @@ public with sharing class MT_MediaCampaigns {
         filteredScope.put(mc.Id, mc);
       }
 
-      if (mc.MT_Sys_ContractOrTVRuntimeStart__c != old.MT_Sys_ContractOrTVRuntimeStart__c || mc.MT_Sys_ContractOrTVRuntimeEnd__c != old.MT_Sys_ContractOrTVRuntimeEnd__c) {
+      if (mc.MT_HasMediaTV__c && old.MT_HasMediaTV__c && (mc.MT_Sys_ContractOrTVRuntimeStart__c != old.MT_Sys_ContractOrTVRuntimeStart__c || mc.MT_Sys_ContractOrTVRuntimeEnd__c != old.MT_Sys_ContractOrTVRuntimeEnd__c)) {
         campaignDurationFilteredScope.put(mc.Id, mc);
       }
     }
 
-    Set<ID> campaignIDs= new Set<ID>();
-    campaignIDs.addAll(filteredScope.keySet());
-    campaignIDs.addAll(campaignDurationFilteredScope.keySet());
+    Set<ID> blockIdsOfScope = new Set<ID>();
+    blockIdsOfScope.addAll(filteredScope.keySet());
+    blockIdsOfScope.addAll(campaignDurationFilteredScope.keySet());
 
-    Map<Id, Map<String, MT_TvTarget__c>> temp = new Map<Id, Map<String, MT_TvTarget__c>>();
-    for (MT_TvTarget__c mbb : (List<MT_TvTarget__c>) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(campaignIDs, new Set<String>{
+    Map<Id, Map<String, MT_MediaBuildingBlock__c>> temp = new Map<Id, Map<String, MT_MediaBuildingBlock__c>>();
+    for (MT_MediaBuildingBlock__c mbb : (List<MT_MediaBuildingBlock__c>) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(blockIdsOfScope, new Set<String>{
       'Name', 'MT_Type__c', 'MT_MediaCampaign_ref__c'
     })) {
       if (!temp.containsKey(mbb.MT_MediaCampaign_ref__c)) {
-        temp.put(mbb.MT_MediaCampaign_ref__c, new Map<String, MT_TvTarget__c>());
+        temp.put(mbb.MT_MediaCampaign_ref__c, new Map<String, MT_MediaBuildingBlock__c>());
       }
 
       temp.get(mbb.MT_MediaCampaign_ref__c).put(mbb.MT_Type__c, mbb);
     }
 
-    List<MT_TvTarget__c> mbbsToDelete = new List<MT_TvTarget__c>();
-    List<MT_TvTarget__c> mbbsToInsert = new List<MT_TvTarget__c>();
+    List<MT_MediaBuildingBlock__c> mbbsToDelete = new List<MT_MediaBuildingBlock__c>();
+    List<MT_MediaBuildingBlock__c> mbbsToInsert = new List<MT_MediaBuildingBlock__c>();
 
     for (MT_MediaCampaign__c mCamp : filteredScope.values()) {
       MT_MediaCampaign__c old = this.oldScopeMap.get(mCamp.Id);
@@ -220,8 +234,21 @@ public with sharing class MT_MediaCampaigns {
       if (!mCamp.MT_HasMediaTV__c && temp.containsKey(mCamp.Id) && temp.get(mCamp.Id).containsKey(MT_Constants.getInstance().MediaBuildingBlock_Type_TV)) {
         mbbsToDelete.add(temp.get(mCamp.Id).get(MT_Constants.getInstance().MediaBuildingBlock_Type_TV));
       }
+      if (!mCamp.MT_HasMediaDigital__c && temp.containsKey(mCamp.Id) && temp.get(mCamp.Id).containsKey(MT_Constants.getInstance().MediaBuildingBlock_Type_Digital)) {
+        mbbsToDelete.add(temp.get(mCamp.Id).get(MT_Constants.getInstance().MediaBuildingBlock_Type_Digital));
+      }
+      if (!mCamp.MT_HasMediaDooH__c && temp.containsKey(mCamp.Id) && temp.get(mCamp.Id).containsKey(MT_Constants.getInstance().MediaBuildingBlock_Type_DooH)) {
+        mbbsToDelete.add(temp.get(mCamp.Id).get(MT_Constants.getInstance().MediaBuildingBlock_Type_DooH));
+      }
+
       if (mCamp.MT_HasMediaTV__c && mCamp.MT_HasMediaTV__c != this.oldScopeMap.get(mCamp.Id).MT_HasMediaTV__c) {
         mbbsToInsert.add(MT_MediaBuildingBlocks.create(mCamp, MT_Constants.getInstance().MediaBuildingBlock_Type_TV));
+      }
+      if (mCamp.MT_HasMediaDigital__c && mCamp.MT_HasMediaDigital__c != this.oldScopeMap.get(mCamp.Id).MT_HasMediaDigital__c) {
+        mbbsToInsert.add(MT_MediaBuildingBlocks.create(mCamp, MT_Constants.getInstance().MediaBuildingBlock_Type_Digital));
+      }
+      if (mCamp.MT_HasMediaDooH__c && mCamp.MT_HasMediaDooH__c != this.oldScopeMap.get(mCamp.Id).MT_HasMediaDooH__c) {
+        mbbsToInsert.add(MT_MediaBuildingBlocks.create(mCamp, MT_Constants.getInstance().MediaBuildingBlock_Type_DooH));
       }
     }
 
@@ -232,20 +259,36 @@ public with sharing class MT_MediaCampaigns {
     if (!mbbsToInsert.isEmpty()) {
       insert mbbsToInsert;
 
-    }
+      List<MT_mediaBuildingBlockMonthlyPlan__c> monthlyPlansToInsert = new List<MT_mediaBuildingBlockMonthlyPlan__c>();
 
-    Map<Id, List<MT_MediaCampaignMonthlyPlan__c>> monthlyPlanUpdateStruct = new Map<Id, List<MT_MediaCampaignMonthlyPlan__c>>();
-    for (MT_MediaCampaignMonthlyPlan__c blockPlan : (List<MT_MediaCampaignMonthlyPlan__c>) new MT_MediaBuildingBlockMonthlyPlanSelector().getRecordsByParentIds(campaignDurationFilteredScope.keySet(), new Set<String>{'Name', 'MT_PlanningDate__c', 'MT_MediaCampaign_ref__c'})) {
-      if (!monthlyPlanUpdateStruct.containsKey(blockPlan.MT_MediaCampaign_ref__c)) {
-        monthlyPlanUpdateStruct.put(blockPlan.MT_MediaCampaign_ref__c, new List<MT_MediaCampaignMonthlyPlan__c>());
+      for (MT_MediaBuildingBlock__c mbb : mbbsToInsert) {
+        if (mbb.MT_Type__c == MT_Constants.getInstance().MediaBuildingBlock_Type_TV) {
+          MT_MediaCampaign__c mc = filteredScope.get(mbb.MT_MediaCampaign_ref__c);
+          monthlyPlansToInsert.addAll(MT_MediaBuildingBlockMonthlyPlans.createMonthlyPlans(mbb, mc.MT_Sys_ContractOrTVRuntimeStart__c, mc.MT_Sys_ContractOrTVRuntimeEnd__c));
+        }
       }
-      monthlyPlanUpdateStruct.get(blockPlan.MT_MediaCampaign_ref__c).add(blockPlan);
+
+      if (!monthlyPlansToInsert.isEmpty()) {
+        insert monthlyPlansToInsert;
+      }
     }
 
-    List<MT_MediaCampaignMonthlyPlan__c> monthlyPlanToDelete = new List<MT_MediaCampaignMonthlyPlan__c>();
-    List<MT_MediaCampaignMonthlyPlan__c> monthlyPlanToInsert = new List<MT_MediaCampaignMonthlyPlan__c>();
+    Map<Id, List<MT_mediaBuildingBlockMonthlyPlan__c>> monthlyPlanUpdateStruct = new Map<Id, List<MT_mediaBuildingBlockMonthlyPlan__c>>();
+    for (MT_mediaBuildingBlockMonthlyPlan__c blockPlan : (List<MT_mediaBuildingBlockMonthlyPlan__c>) new MT_MediaBuildingBlockMonthlyPlanSelector().getTVRecordsByMediaCampaignIds(campaignDurationFilteredScope.keySet(), new Set<String>{
+      'Name', 'MT_PlanningDate__c', 'MT_MediaBuildingBlock_ref__c'
+    })) {
+      if (!monthlyPlanUpdateStruct.containsKey(blockPlan.MT_MediaBuildingBlock_ref__c)) {
+        monthlyPlanUpdateStruct.put(blockPlan.MT_MediaBuildingBlock_ref__c, new List<MT_mediaBuildingBlockMonthlyPlan__c>());
+      }
+      monthlyPlanUpdateStruct.get(blockPlan.MT_MediaBuildingBlock_ref__c).add(blockPlan);
+    }
+
+    List<MT_mediaBuildingBlockMonthlyPlan__c> monthlyPlanToDelete = new List<MT_MediaBuildingBlockMonthlyPlan__c>();
+    List<MT_mediaBuildingBlockMonthlyPlan__c> monthlyPlanToInsert = new List<MT_MediaBuildingBlockMonthlyPlan__c>();
 
     for (MT_MediaCampaign__c mCamp : campaignDurationFilteredScope.values()) {
+      MT_MediaBuildingBlock__c mBlock = temp.get(mCamp.Id).get(MT_Constants.getInstance().MediaBuildingBlock_Type_TV);
+
       Date startDate = Date.newInstance(mCamp.MT_Sys_ContractOrTVRuntimeStart__c.Year(), mCamp.MT_Sys_ContractOrTVRuntimeStart__c.Month(), 1);
       Date endDate = Date.newInstance(mCamp.MT_Sys_ContractOrTVRuntimeEnd__c.Year(), mCamp.MT_Sys_ContractOrTVRuntimeEnd__c.Month(), 1);
 
@@ -258,22 +301,23 @@ public with sharing class MT_MediaCampaigns {
         dateIterator = dateIterator.addMonths(1);
       }
 
+      if (mBlock != null && monthlyPlanUpdateStruct.containsKey(mBlock.Id)) {
+        for (MT_mediaBuildingBlockMonthlyPlan__c plan : monthlyPlanUpdateStruct.get(mBlock.Id)) {
+          if (plan.MT_PlanningDate__c >= startDate && plan.MT_PlanningDate__c <= endDate) {
+            Date d = Date.newInstance(plan.MT_PlanningDate__c.Year(), plan.MT_PlanningDate__c.Month(), 1);
 
-      for (MT_MediaCampaignMonthlyPlan__c plan : monthlyPlanUpdateStruct.get(mCamp.Id)) {
-        if (plan.MT_PlanningDate__c >= startDate && plan.MT_PlanningDate__c <= endDate) {
-          Date d = Date.newInstance(plan.MT_PlanningDate__c.Year(), plan.MT_PlanningDate__c.Month(), 1);
-
-          if (dates.contains(d)) {
-            dates.remove(d);
+            if (dates.contains(d)) {
+              dates.remove(d);
+            }
+          } else {
+            monthlyPlanToDelete.add(plan);
           }
-        } else {
-          monthlyPlanToDelete.add(plan);
         }
-      }
 
-      if (!dates.isEmpty()) {
-        for (Date d : dates) {
-          monthlyPlanToInsert.add(MT_MediaBuildingBlockMonthlyPlans.create(mCamp, d));
+        if (!dates.isEmpty()) {
+          for (Date d : dates) {
+            monthlyPlanToInsert.add(MT_MediaBuildingBlockMonthlyPlans.create(mBlock, d));
+          }
         }
       }
     }
@@ -545,15 +589,15 @@ public with sharing class MT_MediaCampaigns {
 
   private static void initializeRecordTypeIds() {
     if (MT_MEDIACAMPAIGN_RECTYPEID_INTERNAL != null ||
-      MT_MEDIACAMPAIGN_RECTYPEID_EXTERNAL != null) {
+        MT_MEDIACAMPAIGN_RECTYPEID_EXTERNAL != null) {
       return;
     }
     MT_Constants cnst = MT_Constants.getInstance();
     List<RecordType> recTypes = [SELECT Id,
-      DeveloperName
-    FROM RecordType
-    WHERE SObjectType = :MT_MediaCampaignSelector.objectAPIName
-    AND DeveloperName IN (:cnst.MediaCampaign_RecordType_Internal, :cnst.MediaCampaign_RecordType_External)];
+                                        DeveloperName
+                                   FROM RecordType
+                                  WHERE SObjectType = :MT_MediaCampaignSelector.objectAPIName
+                                    AND DeveloperName IN (:cnst.MediaCampaign_RecordType_Internal, :cnst.MediaCampaign_RecordType_External)];
     for (RecordType recType : recTypes) {
       if (recType.DeveloperName == cnst.MediaCampaign_RecordType_Internal) {
         MT_MEDIACAMPAIGN_RECTYPEID_INTERNAL = recType.Id;

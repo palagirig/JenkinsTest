@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -50,6 +46,7 @@
     <description>Track motive distribution within a campaign campaign</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -559,8 +556,8 @@
     <fields>
         <fullName>MT_MediaBuildingBlockMonthlyPlan_ref__c</fullName>
         <externalId>false</externalId>
-        <label>Media Campaign Monthly Plan</label>
-        <referenceTo>MT_MediaCampaignMonthlyPlan__c</referenceTo>
+        <label>Media Building Block Monthly Plan</label>
+        <referenceTo>MT_MediaBuildingBlockMonthlyPlan__c</referenceTo>
         <relationshipLabel>Media Flights</relationshipLabel>
         <relationshipName>MediaFlights</relationshipName>
         <relationshipOrder>0</relationshipOrder>
@@ -635,170 +632,211 @@
         <fullName>MT_TargetGroup__c</fullName>
         <externalId>false</externalId>
         <label>Zielgruppe</label>
-        <picklist>
-            <picklistValues>
-                <fullName>E 14+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 14-29</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 14-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 14-39 online- oder gamesaffin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 14-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 20-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 20-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 20-49 mit Kind unter 13 Jahren im HH</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 25-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 25-49 HHNE 2.000+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 30-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 30-59</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>E 30-59 HHNE 1.500+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 14-29</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 14-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 14-39 online- oder gamesaffin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 14-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 20-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 20-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 25-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 25-49 HHNE 2.000+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 30-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>F 30-59</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HHF 14-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HHF 20-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HHF 20-49 m. Kind unter 14</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HHF 20-59</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>HHF 30-59</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 14-29</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 14-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 14-39 online- oder gamesaffin</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 14-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 20-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 20-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 25-39</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 25-49 HHNE 2.000+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 25-59 HHNE 2.000+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 30-49</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>M 30-59</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>E 14+</fullName>
+                    <default>false</default>
+                    <label>E 14+</label>
+                </value>
+                <value>
+                    <fullName>E 14-29</fullName>
+                    <default>false</default>
+                    <label>E 14-29</label>
+                </value>
+                <value>
+                    <fullName>E 14-39</fullName>
+                    <default>false</default>
+                    <label>E 14-39</label>
+                </value>
+                <value>
+                    <fullName>E 14-39 online- oder gamesaffin</fullName>
+                    <default>false</default>
+                    <label>E 14-39 online- oder gamesaffin</label>
+                </value>
+                <value>
+                    <fullName>E 14-49</fullName>
+                    <default>false</default>
+                    <label>E 14-49</label>
+                </value>
+                <value>
+                    <fullName>E 20-39</fullName>
+                    <default>false</default>
+                    <label>E 20-39</label>
+                </value>
+                <value>
+                    <fullName>E 20-49</fullName>
+                    <default>false</default>
+                    <label>E 20-49</label>
+                </value>
+                <value>
+                    <fullName>E 20-49 mit Kind unter 13 Jahren im HH</fullName>
+                    <default>false</default>
+                    <label>E 20-49 mit Kind unter 13 Jahren im HH</label>
+                </value>
+                <value>
+                    <fullName>E 25-39</fullName>
+                    <default>false</default>
+                    <label>E 25-39</label>
+                </value>
+                <value>
+                    <fullName>E 25-49 HHNE 2.000+</fullName>
+                    <default>false</default>
+                    <label>E 25-49 HHNE 2.000+</label>
+                </value>
+                <value>
+                    <fullName>E 30-49</fullName>
+                    <default>false</default>
+                    <label>E 30-49</label>
+                </value>
+                <value>
+                    <fullName>E 30-59</fullName>
+                    <default>false</default>
+                    <label>E 30-59</label>
+                </value>
+                <value>
+                    <fullName>E 30-59 HHNE 1.500+</fullName>
+                    <default>false</default>
+                    <label>E 30-59 HHNE 1.500+</label>
+                </value>
+                <value>
+                    <fullName>F 14-29</fullName>
+                    <default>false</default>
+                    <label>F 14-29</label>
+                </value>
+                <value>
+                    <fullName>F 14-39</fullName>
+                    <default>false</default>
+                    <label>F 14-39</label>
+                </value>
+                <value>
+                    <fullName>F 14-39 online- oder gamesaffin</fullName>
+                    <default>false</default>
+                    <label>F 14-39 online- oder gamesaffin</label>
+                </value>
+                <value>
+                    <fullName>F 14-49</fullName>
+                    <default>false</default>
+                    <label>F 14-49</label>
+                </value>
+                <value>
+                    <fullName>F 20-39</fullName>
+                    <default>false</default>
+                    <label>F 20-39</label>
+                </value>
+                <value>
+                    <fullName>F 20-49</fullName>
+                    <default>false</default>
+                    <label>F 20-49</label>
+                </value>
+                <value>
+                    <fullName>F 25-39</fullName>
+                    <default>false</default>
+                    <label>F 25-39</label>
+                </value>
+                <value>
+                    <fullName>F 25-49 HHNE 2.000+</fullName>
+                    <default>false</default>
+                    <label>F 25-49 HHNE 2.000+</label>
+                </value>
+                <value>
+                    <fullName>F 30-49</fullName>
+                    <default>false</default>
+                    <label>F 30-49</label>
+                </value>
+                <value>
+                    <fullName>F 30-59</fullName>
+                    <default>false</default>
+                    <label>F 30-59</label>
+                </value>
+                <value>
+                    <fullName>HHF 14-39</fullName>
+                    <default>false</default>
+                    <label>HHF 14-39</label>
+                </value>
+                <value>
+                    <fullName>HHF 20-49</fullName>
+                    <default>false</default>
+                    <label>HHF 20-49</label>
+                </value>
+                <value>
+                    <fullName>HHF 20-49 m. Kind unter 14</fullName>
+                    <default>false</default>
+                    <label>HHF 20-49 m. Kind unter 14</label>
+                </value>
+                <value>
+                    <fullName>HHF 20-59</fullName>
+                    <default>false</default>
+                    <label>HHF 20-59</label>
+                </value>
+                <value>
+                    <fullName>HHF 30-59</fullName>
+                    <default>false</default>
+                    <label>HHF 30-59</label>
+                </value>
+                <value>
+                    <fullName>M 14-29</fullName>
+                    <default>false</default>
+                    <label>M 14-29</label>
+                </value>
+                <value>
+                    <fullName>M 14-39</fullName>
+                    <default>false</default>
+                    <label>M 14-39</label>
+                </value>
+                <value>
+                    <fullName>M 14-39 online- oder gamesaffin</fullName>
+                    <default>false</default>
+                    <label>M 14-39 online- oder gamesaffin</label>
+                </value>
+                <value>
+                    <fullName>M 14-49</fullName>
+                    <default>false</default>
+                    <label>M 14-49</label>
+                </value>
+                <value>
+                    <fullName>M 20-39</fullName>
+                    <default>false</default>
+                    <label>M 20-39</label>
+                </value>
+                <value>
+                    <fullName>M 20-49</fullName>
+                    <default>false</default>
+                    <label>M 20-49</label>
+                </value>
+                <value>
+                    <fullName>M 25-39</fullName>
+                    <default>false</default>
+                    <label>M 25-39</label>
+                </value>
+                <value>
+                    <fullName>M 25-49 HHNE 2.000+</fullName>
+                    <default>false</default>
+                    <label>M 25-49 HHNE 2.000+</label>
+                </value>
+                <value>
+                    <fullName>M 25-59 HHNE 2.000+</fullName>
+                    <default>false</default>
+                    <label>M 25-59 HHNE 2.000+</label>
+                </value>
+                <value>
+                    <fullName>M 30-49</fullName>
+                    <default>false</default>
+                    <label>M 30-49</label>
+                </value>
+                <value>
+                    <fullName>M 30-59</fullName>
+                    <default>false</default>
+                    <label>M 30-59</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_TimeShare01000600Max__c</fullName>
@@ -1975,4 +2013,5 @@
         <errorDisplayField>MT_OverbookingVolume__c</errorDisplayField>
         <errorMessage>Overbooking volume cannot be less than 0</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

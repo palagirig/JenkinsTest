@@ -1,13 +1,13 @@
 /************************************************************************************************************
-Name:       MT_MediaBuildingBlockMonthlyPlans_Test
+Name:  		MT_MediaBuildingBlockMonthlyPlans_Test
 ======================================================
-Purpose:    Test class for class MT_MediaBuildingBlockMonthlyPlans, MT_MediaBuildingBlockMonthlyPlanService and MT_MediaBuildingBlockMonthlySelector
+Purpose: 	Test class for class MT_MediaBuildingBlockMonthlyPlans, MT_MediaBuildingBlockMonthlyPlanService and MT_MediaBuildingBlockMonthlySelector
 ======================================================
 History
 -------
-Date        AUTHOR                      DETAIL
-06.02.2017  Duc Nguyen Tien             Initial development
-16.03.2017  Falco Aulitzky              Additional Tests for Service and Selector
+Date		AUTHOR						DETAIL
+06.02.2017	Duc Nguyen Tien             Initial development
+16.03.2017  Falco Aulitzky				Additional Tests for Service and Selector
 *************************************************************************************************************/
 @isTest
 private class MT_MediaBuildingBlockMonthlyPlans_Test {
@@ -16,14 +16,14 @@ private class MT_MediaBuildingBlockMonthlyPlans_Test {
   }
 
   @isTest static void constructor() {
-    MT_MediaBuildingBlockMonthlyPlans cls = new MT_MediaBuildingBlockMonthlyPlans(new List<MT_MediaCampaignMonthlyPlan__c>());
+    MT_MediaBuildingBlockMonthlyPlans cls = new MT_MediaBuildingBlockMonthlyPlans(new List<MT_mediaBuildingBlockMonthlyPlan__c>());
   }
 
   @isTest static void createMonthlyPlans() {
     Test.startTest();
     Date today = Date.newInstance(Date.today().Year(), Date.today().Month(), 1);
     Date endDate = today.addMonths(14);
-    List<MT_MediaCampaignMonthlyPlan__c> bMonthlyPlans = MT_MediaBuildingBlockMonthlyPlans.createMonthlyPlans(new MT_MediaCampaign__c(), today, endDate);
+    List<MT_mediaBuildingBlockMonthlyPlan__c> bMonthlyPlans = MT_MediaBuildingBlockMonthlyPlans.createMonthlyPlans(new MT_MediaBuildingBlock__c(), today, endDate);
 
     system.assertEquals(15, bMonthlyPlans.size());
     Integer i = 0;
@@ -39,13 +39,14 @@ private class MT_MediaBuildingBlockMonthlyPlans_Test {
 
   @isTest static void create() {
     Test.startTest();
-    MT_MediaCampaignMonthlyPlan__c plan = MT_MediaBuildingBlockMonthlyPlans.create(new MT_MediaCampaign__c(), Date.today());
+    MT_MediaBuildingBlockMonthlyPlan__c plan = MT_MediaBuildingBlockMonthlyPlans.create(new MT_MediaBuildingBlock__c(), Date.today());
     system.assertEquals(Date.today(), plan.MT_PlanningDate__c);
+    system.assertEquals(null, plan.MT_MediaBuildingBlock_ref__c);
     Test.stopTest();
   }
 
   testmethod static void getRecordsByIds() {
-    MT_MediaCampaignMonthlyPlan__c mbbmp = [SELECT Id FROM MT_MediaCampaignMonthlyPlan__c limit 1];
+    MT_MediaBuildingBlockMonthlyPlan__c mbbmp = [SELECT Id FROM MT_MediaBuildingBlockMonthlyPlan__c limit 1];
     System.assertNotEquals(null, mbbmp);
 
     Test.startTest();
@@ -59,36 +60,49 @@ private class MT_MediaBuildingBlockMonthlyPlans_Test {
   }
 
   testmethod static void getMediaBuildingBlockMonthlyPlansByParentIds() {
-    MT_MediaCampaign__c mc = [SELECT Id FROM MT_MediaCampaign__c limit 1];
-    System.assertNotEquals(null, mc);
+    MT_MediaBuildingBlock__c mbb = [SELECT Id FROM MT_MediaBuildingBlock__c limit 1];
+    System.assertNotEquals(null, mbb);
 
     Test.startTest();
 
     System.assert(!MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<Id>{
-      mc.Id
+      mbb.Id
     }).isEmpty());
     System.assert(MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<Id>()).isEmpty());
-    System.assertEquals(mc.Id, MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<Id>{
-      mc.Id
-    }).get(0).MT_MediaCampaign_ref__c);
+    System.assertEquals(mbb.Id, MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<Id>{
+      mbb.Id
+    }).get(0).MT_MediaBuildingBlock_ref__c);
 
     Test.stopTest();
   }
 
-
-  testmethod static void getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds() {
+  testmethod static void getTVRecordsByMediaCampaignIds() {
     MT_MediaCampaign__c mc = [SELECT Id FROM MT_MediaCampaign__c limit 1];
     System.assertNotEquals(null, mc);
 
     Test.startTest();
 
-    System.assert(!MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>{
+    System.assert(!MT_MediaBuildingBlockMonthlyPlanService.getTVRecordsByMediaCampaignIds(new Set<Id>{
       mc.Id
     }).isEmpty());
+    System.assert(MT_MediaBuildingBlockMonthlyPlanService.getTVRecordsByMediaCampaignIds(new Set<Id>()).isEmpty());
+
+    Test.stopTest();
+  }
+
+  testmethod static void getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds() {
+    MT_MediaBuildingBlock__c mbb = [SELECT Id FROM MT_MediaBuildingBlock__c limit 1];
+    System.assertNotEquals(null, mbb);
+
+    Test.startTest();
+
+    System.assert(!MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>{
+      mbb.Id
+    }).isEmpty());
     System.assert(MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>()).isEmpty());
-    System.assertEquals(mc.Id, MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>{
-      mc.Id
-    }).get(0).MT_MediaCampaign_ref__c);
+    System.assertEquals(mbb.Id, MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>{
+      mbb.Id
+    }).get(0).MT_MediaBuildingBlock_ref__c);
 
     Test.stopTest();
   }

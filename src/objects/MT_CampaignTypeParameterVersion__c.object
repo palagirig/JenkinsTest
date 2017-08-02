@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -50,6 +46,7 @@
     <description>Hält wichtige Daten für den Media Monatsplan in Abhängigkeit zu den Kampagnentypen</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -242,10 +239,8 @@
     <label>Media Campaign Type Parameter Version</label>
     <listViews>
         <fullName>All</fullName>
-        <columns>NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-        <language>de</language>
     </listViews>
     <nameField>
         <label>Version Name</label>
@@ -323,4 +318,5 @@
         <errorDisplayField>MT_WKZFactor__c</errorDisplayField>
         <errorMessage>Bitte stellen Sie sicher, dass der Wert nicht negativ ist.</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
 </CustomObject>

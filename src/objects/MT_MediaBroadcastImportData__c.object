@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -47,9 +43,9 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Enthält die Ausstrahlungs- Rohdaten aus dem DWH, bevor sie in die finale Datenstruktur transformiert werden.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -58,7 +54,6 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>MT_CampaignID__c</fullName>
-        <description>Die KRS- ID, zu der die Ausstrahlung erfolgt ist.</description>
         <externalId>false</externalId>
         <label>Campaign ID</label>
         <length>10</length>
@@ -69,7 +64,6 @@
     </fields>
     <fields>
         <fullName>MT_LastExport__c</fullName>
-        <description>Das Datum des letzten Exports aus dem DWH.</description>
         <externalId>false</externalId>
         <label>Last Export</label>
         <required>false</required>
@@ -78,7 +72,6 @@
     </fields>
     <fields>
         <fullName>MT_MB1__c</fullName>
-        <description>Das ausgestrahlte MB1, je nach Kampagnentyp kann stattdessen auch MB3 genutzt werden.</description>
         <externalId>false</externalId>
         <label>MB1</label>
         <precision>18</precision>
@@ -89,7 +82,6 @@
     </fields>
     <fields>
         <fullName>MT_MB3__c</fullName>
-        <description>Das ausgestrahlte MB3, je nach Kampagnentyp kann stattdessen auch MB1 genutzt werden.</description>
         <externalId>false</externalId>
         <label>MB3</label>
         <precision>18</precision>
@@ -100,7 +92,6 @@
     </fields>
     <fields>
         <fullName>MT_MN3__c</fullName>
-        <description>Das ausgestrahlte MN3.</description>
         <externalId>false</externalId>
         <label>MN3</label>
         <precision>18</precision>
@@ -111,7 +102,6 @@
     </fields>
     <fields>
         <fullName>MT_Month__c</fullName>
-        <description>Der Monat, in dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>Month</label>
         <required>false</required>
@@ -120,32 +110,35 @@
     </fields>
     <fields>
         <fullName>MT_OrderType__c</fullName>
-        <description>Die Auftragsart, zu dem das Volumen gehört. Ergibt sich später direkt aus der ProSa- Order, wird nicht unbedingt benötigt.</description>
         <externalId>false</externalId>
         <label>Order Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Spot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Sponsoring</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Overbooking</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Spot</fullName>
+                    <default>false</default>
+                    <label>Spot</label>
+                </value>
+                <value>
+                    <fullName>Sponsoring</fullName>
+                    <default>false</default>
+                    <label>Sponsoring</label>
+                </value>
+                <value>
+                    <fullName>Overbooking</fullName>
+                    <default>false</default>
+                    <label>Overbooking</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_ProSaOrderID__c</fullName>
-        <description>Die ProSa- Auftragsnummer, zu der das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>ProSa Order ID</label>
         <length>10</length>
@@ -156,7 +149,6 @@
     </fields>
     <fields>
         <fullName>MT_SenderName__c</fullName>
-        <description>Der Name des Senders, auf dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>TV Sender Name</label>
         <length>255</length>
@@ -167,7 +159,6 @@
     </fields>
     <fields>
         <fullName>MT_SenderNumber__c</fullName>
-        <description>Die Nummer des Senders, auf dem das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>Sender Number</label>
         <length>5</length>
@@ -178,68 +169,76 @@
     </fields>
     <fields>
         <fullName>MT_Status__c</fullName>
-        <description>Wird nicht mehr benötigt, kann gelöscht werden.
-
-Alt:
-Der Transformationsstatus dieses Import- Datensatzes. Neu, Fehler.</description>
         <externalId>false</externalId>
         <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>New</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Error</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MT_Timeslot__c</fullName>
-        <description>Die Zeitschiene in der das Volumen ausgestrahlt wurde.</description>
         <externalId>false</externalId>
         <label>Timeslot</label>
-        <picklist>
-            <picklistValues>
-                <fullName>1.[06-09]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2.[09-13]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3.[13-17]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4.[17-20]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>5.[20-23]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>6.[23-01]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>7.[01-06]</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>1.[06-09]</fullName>
+                    <default>false</default>
+                    <label>1.[06-09]</label>
+                </value>
+                <value>
+                    <fullName>2.[09-13]</fullName>
+                    <default>false</default>
+                    <label>2.[09-13]</label>
+                </value>
+                <value>
+                    <fullName>3.[13-17]</fullName>
+                    <default>false</default>
+                    <label>3.[13-17]</label>
+                </value>
+                <value>
+                    <fullName>4.[17-20]</fullName>
+                    <default>false</default>
+                    <label>4.[17-20]</label>
+                </value>
+                <value>
+                    <fullName>5.[20-23]</fullName>
+                    <default>false</default>
+                    <label>5.[20-23]</label>
+                </value>
+                <value>
+                    <fullName>6.[23-01]</fullName>
+                    <default>false</default>
+                    <label>6.[23-01]</label>
+                </value>
+                <value>
+                    <fullName>7.[01-06]</fullName>
+                    <default>false</default>
+                    <label>7.[01-06]</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Media Broadcast Import Data</label>
     <listViews>
@@ -358,6 +357,7 @@ Der Transformationsstatus dieses Import- Datensatzes. Neu, Fehler.</description>
         <errorDisplayField>MT_Timeslot__c</errorDisplayField>
         <errorMessage>Unbekannte Zeitschiene</errorMessage>
     </validationRules>
+    <visibility>Public</visibility>
     <webLinks>
         <fullName>MT_StartTransformation</fullName>
         <availability>online</availability>

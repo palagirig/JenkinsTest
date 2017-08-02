@@ -56,7 +56,7 @@ public without sharing class MT_CampaignImportDataTransformator implements Datab
             new P7S1_OpportunityApproval__c(),
             new MT_MediaCampaignType__c());
           campaign.MT_KRSID__c = krsId;
-          campaign.RecordTypeId = MT_MediaCampaigns.getRecordTypeIdForExternalCampaign();
+          campaign.RecordTypeId = MT_MediaCampaigns.getRecordTypeIdForInternalCampaign();
           campaign.MT_BmvTv__c = 1; // FIXME fill with import value once received from KRS with MT-679
           campaignMap.put(krsId, campaign);
           if (!opptyIdToNewCampaignsMap.containsKey(importDataRec.MT_OpportunitySalesforceId__c)) {
@@ -165,7 +165,7 @@ public without sharing class MT_CampaignImportDataTransformator implements Datab
     };
     Map<Id,Id> assetIdToMediaCampaignTypeIdMap = new Map<Id,Id>();
     for (MT_MediaCampaignType__c mct : (List<MT_MediaCampaignType__c>) new MT_MediaCampaignTypeSelector().getRecordsByAssetIds(assetIds, campaignTypeFields)) {
-      if (mct.MT_Type__c == 'External' && mct.MT_IsActive__c == true) {
+      if (mct.MT_Type__c == 'Internal' && mct.MT_IsActive__c == true) {
         assetIdToMediaCampaignTypeIdMap.put(mct.MT_Asset_ref__c, mct.Id);
       }
     }

@@ -14,7 +14,7 @@ global with sharing class MT_MediaBuildingBlockService {
    *
    * @return List<MT_MediaBuildingBlock__c> The loaded and populated media building blocks.
    */
-  global static List<MT_TvTarget__c> getMediaBuildingBlocksByIds(Set<ID> blockIds) {
+  global static List<MT_MediaBuildingBlock__c> getMediaBuildingBlocksByIds(Set<ID> blockIds) {
     return getMediaBuildingBlocksByIds(blockIds, MT_MediaBuildingBlockService.getContextFields());
   }
 
@@ -26,7 +26,7 @@ global with sharing class MT_MediaBuildingBlockService {
    *
    * @return List<MT_MediaBuildingBlock__c> The loaded and populated media building blocks.
    */
-  global static List<MT_TvTarget__c> getMediaBuildingBlocksByIds(Set<ID> blockIds, Set<String> fields) {
+  global static List<MT_MediaBuildingBlock__c> getMediaBuildingBlocksByIds(Set<ID> blockIds, Set<String> fields) {
     return new MT_MediaBuildingBlockSelector().getRecordsByIds(blockIds, fields);
   }
 
@@ -40,7 +40,7 @@ global with sharing class MT_MediaBuildingBlockService {
    *
    * @return List<MT_MediaBuildingBlock__c> The loaded and populated media building blocks.
    */
-  global static List<MT_TvTarget__c> getMediaBuildingBlocksByMediaCampaignIds(Set<ID> campIds) {
+  global static List<MT_MediaBuildingBlock__c> getMediaBuildingBlocksByMediaCampaignIds(Set<ID> campIds) {
     return getMediaBuildingBlocksByMediaCampaignIds(campIds, MT_MediaBuildingBlockService.getContextFields());
   }
 
@@ -52,7 +52,7 @@ global with sharing class MT_MediaBuildingBlockService {
    *
    * @return List<MT_MediaBuildingBlock__c> The loaded and populated media building blocks.
    */
-  global static List<MT_TvTarget__c> getMediaBuildingBlocksByMediaCampaignIds(Set<ID> campIds, Set<String> fields) {
+  global static List<MT_MediaBuildingBlock__c> getMediaBuildingBlocksByMediaCampaignIds(Set<ID> campIds, Set<String> fields) {
     return new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(campIds, fields);
   }
 
@@ -61,9 +61,9 @@ global with sharing class MT_MediaBuildingBlockService {
    */
   private static Set<String> getContextFields() {
     if (contextFields == null) {
-      contextFields = MT_FieldSet.getFields(SObjectType.MT_TvTarget__c.FieldSets.MT_ContextFields);
-      contextFields.addAll(MT_FieldSet.getFields(SObjectType.MT_TvTarget__c.FieldSets.MT_YieldFields));
-      contextFields.addAll(MT_FieldSet.getFields(SObjectType.MT_TvTarget__c.FieldSets.MT_VariableRevenueFields));
+      contextFields = MT_FieldSet.getFields(SObjectType.MT_MediaBuildingBlock__c.FieldSets.MT_ContextFields);
+      contextFields.addAll(MT_FieldSet.getFields(SObjectType.MT_MediaBuildingBlock__c.FieldSets.MT_YieldFields));
+      contextFields.addAll(MT_FieldSet.getFields(SObjectType.MT_MediaBuildingBlock__c.FieldSets.MT_VariableRevenueFields));
     }
 
     return contextFields;

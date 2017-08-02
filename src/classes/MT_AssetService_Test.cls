@@ -1,12 +1,12 @@
 /************************************************************************************************************
-Name:      MT_AssetService_Test
+Name:  		MT_AssetService_Test
 ======================================================
-Purpose:   Test class for MT_Assets, MT_AssetService and MT_AssetSelector
+Purpose: 	Test class for MT_Assets, MT_AssetService and MT_AssetSelector
 ======================================================
 History
 -------
-Date    AUTHOR            DETAIL
-18.03.2017  Falco Aulitzky             Initial architecture & development
+Date		AUTHOR						DETAIL
+18.03.2017	Falco Aulitzky             Initial architecture & development
 *************************************************************************************************************/
 
 @isTest

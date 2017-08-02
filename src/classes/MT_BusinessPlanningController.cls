@@ -23,7 +23,7 @@ public with sharing class MT_BusinessPlanningController {
   * @returns  MT_BusinessPlanningControllerDTO
   *           Map<Id, MT_MediaCampaign>        : Map of MediaTransparencyCampaign id to MediaTransparencyCampaign object
   *           Map<Id, List<Id>>                : Map of MediaTransparencyCampaign id to a list of MediaBuildingBlock ids
-  *           Map<Id, MT_TvTarget__c>: Map of MediaBuildingBlock id to MediaBuildingBlock object
+  *           Map<Id, MT_MediaBuildingBlock__c>: Map of MediaBuildingBlock id to MediaBuildingBlock object
   */
   @RemoteAction
   public static MT_BusinessPlanningControllerDTO getMediaBuildingBlock(List<Id> mbbIds) {
@@ -33,16 +33,30 @@ public with sharing class MT_BusinessPlanningController {
   }
 
   /*
+  * Remote Action that is accessed by Javascript to load MediaBuildingBlockMonthlyPlans
+  *
+  * @param    List<Id> mbbIds want a list of MediaBuildingBlock ids
+  * @returns  MT_BusinessPlanningControllerDTO
+  *           Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>>: Map of MediaBuildingBlock ids to a list of MediaBuildingBlockMonthlyPlan objects
+  */
+  @RemoteAction
+  public static MT_BusinessPlanningControllerDTO getMediaBuildingBlockMonthlyPlan(List<Id> mbbIds) {
+    return new MT_BusinessPlanningControllerDTO().initGetMediaBuildingBlockMonthlyPlanWrapper(
+      MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<Id>(mbbIds))
+    );
+  }
+
+  /*
   * Remote Action that is accessed by Javascript to load MediaBuildingBlockMonthlyPlans with MediaFlights included
   *
   * @param    List<Id> mbbIds want a list of MediaBuildingBlock ids
   * @returns  MT_BusinessPlanningControllerDTO
-  *           Map<Id, List<MT_MediaCampaignMonthlyPlan__c>>: Map of MediaBuildingBlock ids to a list of MediaBuildingBlockMonthlyPlan objects with MediaFlights included
+  *           Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>>: Map of MediaBuildingBlock ids to a list of MediaBuildingBlockMonthlyPlan objects with MediaFlights included
   */
   @RemoteAction
-  public static MT_BusinessPlanningControllerDTO getMediaBuildingBlockMonthlyPlanWithMediaFlights(List<Id> mcIds) {
-    return new MT_BusinessPlanningControllerDTO().initGetMediaBuildingBlockMonthlyPlanWithMediaFlightsWrapper( 
-      MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>(mcIds))
+  public static MT_BusinessPlanningControllerDTO getMediaBuildingBlockMonthlyPlanWithMediaFlights(List<Id> mbbIds) {
+    return new MT_BusinessPlanningControllerDTO().initGetMediaBuildingBlockMonthlyPlanWithMediaFlightsWrapper(
+      MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<Id>(mbbIds))
     );
   }
 
@@ -51,7 +65,7 @@ public with sharing class MT_BusinessPlanningController {
   *
   * @param    MT_BusinessPlanningControllerDTO data want a MT_BusinessPlanningControllerDTO
   * @returns  An updated MT_BusinessPlanningControllerDTO
-  *           Map<Id, List<MT_MediaCampaignMonthlyPlan__c>>: Map of MediaBuildingBlock ids to a list of MediaBuildingBlockMonthlyPlan objects with MediaFlights included
+  *           Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>>: Map of MediaBuildingBlock ids to a list of MediaBuildingBlockMonthlyPlan objects with MediaFlights included
   */
   @RemoteAction
   public static MT_BusinessPlanningControllerDTO upsertMediaBuildingBlockMonthlyPlansWithMediaFlights(MT_BusinessPlanningControllerDTO data) {
@@ -70,8 +84,8 @@ public with sharing class MT_BusinessPlanningController {
     Map<String, MT_ObjectAccessDTO> result = new Map<String, MT_ObjectAccessDTO>();
 
     result.put('MT_MediaCampaign__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaCampaign__c));
-    result.put('MT_TvTarget__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_TvTarget__c));
-    result.put('MT_MediaCampaignMonthlyPlan__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaCampaignMonthlyPlan__c));
+    result.put('MT_MediaBuildingBlock__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaBuildingBlock__c));
+    result.put('MT_MediaBuildingBlockMonthlyPlan__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaBuildingBlockMonthlyPlan__c));
     result.put('MT_MediaFlight__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaFlight__c));
 
     return result;
@@ -80,10 +94,10 @@ public with sharing class MT_BusinessPlanningController {
   /* MT_BusinessPlanningControllerDTO that holds and combines the fetched data from the server in readable junks for the front end. */
   public class MT_BusinessPlanningControllerDTO {
 
-    Map<Id, MT_TvTarget__c> mediaBuildingBlocks;
+    Map<Id, MT_MediaBuildingBlock__c> mediaBuildingBlocks;
     Map<Id, MT_MediaCampaign__c> mediaCampaigns;
     Map<Id, List<Id>> campaignToBuildingBlocksMapping;
-    public Map<Id, List<MT_MediaCampaignMonthlyPlan__c>> mediaBuildingBlockMonthlyPlan;
+    public Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>> mediaBuildingBlockMonthlyPlan;
     public Map<Id, List<MT_MediaFlight__c>> monthlyPlanIdsToMediaFlights;
 
     public MT_BusinessPlanningControllerDTO() {
@@ -105,7 +119,7 @@ public with sharing class MT_BusinessPlanningController {
       }
 
       if (this.mediaBuildingBlockMonthlyPlan != null && !this.mediaBuildingBlockMonthlyPlan.isEmpty()) {
-        List<MT_MediaCampaignMonthlyPlan__c> plans = new List<MT_MediaCampaignMonthlyPlan__c>();
+        List<MT_MediaBuildingBlockMonthlyPlan__c> plans = new List<MT_MediaBuildingBlockMonthlyPlan__c>();
 
         for (Id mbbId : this.mediaBuildingBlockMonthlyPlan.keySet()) {
           plans.addAll(this.mediaBuildingBlockMonthlyPlan.get(mbbId));
@@ -156,17 +170,17 @@ public with sharing class MT_BusinessPlanningController {
     /*
     * Method to fill maps with data from the data base.
     *
-    * @param    List<MT_TvTarget__c> blocks want a list of MediaBuildingBlock objects
+    * @param    List<MT_MediaBuildingBlock__c> blocks want a list of MediaBuildingBlock objects
     * @returns  MT_BusinessPlanningControllerDTO with:
     *             MediaTransparencyCampaign ids mapped to MediaTransparencyCampaign objects
     *             MediaTransparencyCampaign ids mapped to a list of MediaBuildingBlock ids
     *             MediaBuildingBlock ids mapped to MediaBuildingBlock objects
     */
-    public MT_BusinessPlanningControllerDTO initGetMediaBuildingBlockWrapper(List<MT_TvTarget__c> blocks) {
+    public MT_BusinessPlanningControllerDTO initGetMediaBuildingBlockWrapper(List<MT_MediaBuildingBlock__c> blocks) {
       this.mediaCampaigns = new Map<Id, MT_MediaCampaign__c>();
       this.campaignToBuildingBlocksMapping = new Map<Id, List<Id>>();
-      this.mediaBuildingBlocks = new Map<Id, MT_TvTarget__c>();
-      for (MT_TvTarget__c block : blocks) {
+      this.mediaBuildingBlocks = new Map<Id, MT_MediaBuildingBlock__c>();
+      for (MT_MediaBuildingBlock__c block : blocks) {
         if (block.MT_MediaCampaign_ref__c != null && block.MT_MediaCampaign_ref__r != null) {
           if (!this.mediaCampaigns.containsKey(block.MT_MediaCampaign_ref__c)) {
             if (this.campaignToBuildingBlocksMapping.containsKey(block.MT_MediaCampaign_ref__c)) {
@@ -190,18 +204,18 @@ public with sharing class MT_BusinessPlanningController {
     /*
     * Method to fill maps with data from the data base.
     *
-    * @param    List<MT_MediaCampaignMonthlyPlan__c> plans want a list of MediaBuildingBlockMonthlyPlan objects
+    * @param    List<MT_MediaBuildingBlockMonthlyPlan__c> plans want a list of MediaBuildingBlockMonthlyPlan objects
     * @returns  MT_BusinessPlanningControllerDTO with:
     *             MediaBuildingBlock ids mapped to a list of MediaBuildingBlockMonthlyPlan objects
     */
-    public MT_BusinessPlanningControllerDTO initGetMediaBuildingBlockMonthlyPlanWrapper(List<MT_MediaCampaignMonthlyPlan__c> plans) {
-      this.mediaBuildingBlockMonthlyPlan = new Map<Id, List<MT_MediaCampaignMonthlyPlan__c>>();
-      for (MT_MediaCampaignMonthlyPlan__c plan : plans) {
-        if (plan.MT_MediaCampaign_ref__c != null) {
-          if (this.mediaBuildingBlockMonthlyPlan.containsKey(plan.MT_MediaCampaign_ref__c)) {
-            this.mediaBuildingBlockMonthlyPlan.get(plan.MT_MediaCampaign_ref__c).add(plan);
+    public MT_BusinessPlanningControllerDTO initGetMediaBuildingBlockMonthlyPlanWrapper(List<MT_MediaBuildingBlockMonthlyPlan__c> plans) {
+      this.mediaBuildingBlockMonthlyPlan = new Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>>();
+      for (MT_MediaBuildingBlockMonthlyPlan__c plan : plans) {
+        if (plan.MT_MediaBuildingBlock_ref__c != null) {
+          if (this.mediaBuildingBlockMonthlyPlan.containsKey(plan.MT_MediaBuildingBlock_ref__c)) {
+            this.mediaBuildingBlockMonthlyPlan.get(plan.MT_MediaBuildingBlock_ref__c).add(plan);
           } else {
-            this.mediaBuildingBlockMonthlyPlan.put(plan.MT_MediaCampaign_ref__c, new List<MT_MediaCampaignMonthlyPlan__c>{
+            this.mediaBuildingBlockMonthlyPlan.put(plan.MT_MediaBuildingBlock_ref__c, new List<MT_MediaBuildingBlockMonthlyPlan__c>{
               plan
             });
           }
@@ -214,11 +228,11 @@ public with sharing class MT_BusinessPlanningController {
     /*
     * Method to fill maps with data from the data base.
     *
-    * @param    List<MT_MediaCampaignMonthlyPlan__c> plans want a list of MediaBuildingBlockMonthlyPlan objects
+    * @param    List<MT_MediaBuildingBlockMonthlyPlan__c> plans want a list of MediaBuildingBlockMonthlyPlan objects
     * @returns  MT_BusinessPlanningControllerDTO with:
     *             MediaBuildingBlock ids mapped to a list of MediaBuildingBlockMonthlyPlan objects that held informations about MediaFlight objects
     */
-    public MT_BusinessPlanningControllerDTO initGetMediaBuildingBlockMonthlyPlanWithMediaFlightsWrapper(List<MT_MediaCampaignMonthlyPlan__c> plans) {
+    public MT_BusinessPlanningControllerDTO initGetMediaBuildingBlockMonthlyPlanWithMediaFlightsWrapper(List<MT_MediaBuildingBlockMonthlyPlan__c> plans) {
       system.debug(plans);
       this.initGetMediaBuildingBlockMonthlyPlanWrapper(plans);
       return this;

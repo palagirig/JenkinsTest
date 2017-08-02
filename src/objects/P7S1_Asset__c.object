@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -50,6 +46,7 @@
     <description>Wird benutzt, um die Marken (Assets) der Units zu pflegen.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -78,7 +75,6 @@
     </fieldSets>
     <fields>
         <fullName>MT_IMAMail__c</fullName>
-        <description>Wird manuell eingetragen, um bei Anlage von internen Kampagnen (Kampagnentyp -&gt; Asset) eine E-Mail zu versenden und die IMA über die neue Kampagne zu informieren.</description>
         <externalId>false</externalId>
         <label>IMA Verteiler</label>
         <required>false</required>
@@ -113,4 +109,5 @@
     <pluralLabel>Assets</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

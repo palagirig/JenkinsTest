@@ -56,22 +56,6 @@
                 <behavior>Edit</behavior>
                 <field>MT_IsOverbooking__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>MT_PlannedMonthlyBMV_sum__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>MT_PlannedMonthlySponsoringBMV_sum__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>MT_PlannedMonthlySpotBmv__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>MT_ActualMonthlyBMV_sum__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -355,11 +339,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>MT_TvTarget__c.MT_MediaCampaign_ref__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaign_ref__c</relatedList>
+        <relatedList>MT_MediaBuildingBlock__c.MT_MediaCampaign_ref__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

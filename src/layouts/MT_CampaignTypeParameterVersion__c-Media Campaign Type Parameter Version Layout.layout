@@ -99,7 +99,7 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaignTypeParameterVersion_ref__c</relatedList>
+        <relatedList>MT_MediaBuildingBlockMonthlyPlan__c.MT_MediaCampaignTypeParameterVersion_ref__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

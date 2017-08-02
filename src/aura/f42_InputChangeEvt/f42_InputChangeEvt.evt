@@ -1,4 +1,0 @@
-<aura:event type="COMPONENT" description="Event template">
-	<aura:attribute name="indicator" type="String" access="global" description="Helps to indicate event source" />
-	<aura:attribute name="method2Execute" type="String" access="global" description="Helps to indicate method which should be executed" />
-</aura:event>

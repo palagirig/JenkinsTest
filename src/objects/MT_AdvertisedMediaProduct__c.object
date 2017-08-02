@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -47,9 +43,9 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Produkte, die von externen Partnern oder Assets in Media Transparency beworben werden.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -84,7 +80,6 @@
     <fields>
         <fullName>MT_Account_ref__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <description>Der Account, dem das Produkt zugeordnet ist. Alle Produkte eines Accounts (Opportunity -&gt; Account) stehen für dessen Kampagnen zur Verfügung.</description>
         <externalId>false</externalId>
         <label>Account</label>
         <referenceTo>Account</referenceTo>
@@ -98,7 +93,6 @@
     </fields>
     <fields>
         <fullName>MT_ProductNumber__c</fullName>
-        <description>Die Produktnummer, die im Motivablagesystem verwendet wird.</description>
         <externalId>false</externalId>
         <label>Product Number</label>
         <required>false</required>
@@ -109,7 +103,6 @@
     </fields>
     <fields>
         <fullName>MT_SYS_AccountOwnerUnit__c</fullName>
-        <description>Wird mittels Prozess befüllt, um das Sharing zu steuern.</description>
         <externalId>false</externalId>
         <label>Account Owner Unit</label>
         <length>255</length>
@@ -135,4 +128,5 @@
     <pluralLabel>Advertised Media Products</pluralLabel>
     <searchLayouts/>
     <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

@@ -1,4 +1,4 @@
-<apex:page id="MT_TEST_Frontend" standardController="MT_TvTarget__c"
+<apex:page id="MT_TEST_Frontend" standardController="MT_MediaBuildingBlock__c"
            extensions="MT_BusinessPlanningController" applyHtmlTag="false"
            applyBodyTag="false" standardStylesheets="false"
            sideBar="false" showHeader="false" docType="html-5.0">

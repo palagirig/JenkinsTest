@@ -7,7 +7,7 @@ private class MT_KPI_Controller_Test {
 
   @isTest static void constructor() {
     Test.startTest();
-    MT_MediaCampaign__c camp = [SELECT ID, MT_ActualMonthlyBMV_sum__c FROM MT_MediaCampaign__c limit 1];
+    MT_MediaCampaign__c camp = [Select ID from MT_MediaCampaign__c limit 1];
 
     MT_KPI_Controller ctlr = new MT_KPI_Controller(new ApexPages.StandardController(camp));
 
