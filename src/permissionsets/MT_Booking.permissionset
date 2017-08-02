@@ -141,10 +141,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>MT_MediaBuildingBlock_TriggerHandler</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>MT_MediaBuildingBlocks</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -170,10 +166,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>MT_MediaCampaignTypes</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>MT_MediaCampaign_InconsistencyCheckCtlr</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -273,10 +265,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>MT_OpportunityApproval_TriggerHandler</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>MT_OpportunityApprovals</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -286,10 +274,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>MT_OpportunityService</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>MT_OpptyFreig_MCampApprovalHandler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -646,713 +630,243 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_Amount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_MediaCampaign_BMV__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_MonthlyShifting__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_PlannedAmount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_PlannedSponsoringBmv__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_PlannedSpotBmv__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_SLMAccordingToContract__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_SLMAfterYield__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_SLMDifference__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_SendershareContractCommitted__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_SumBMVMonthlyPlan__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare01000600Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare01000600Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare06000900Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare06000900Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare09001300Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare09001300Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare13001700Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare13001700Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare17002000Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare17002000Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare20002300Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare20002300Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare23000100Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimeShare23000100Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TimelinesharesContractCommitted__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareKabelEinsClassicsMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareKabelEinsClassicsMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareKabelEinsDokuMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareKabelEinsDokuMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareKabelEinsMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareKabelEinsMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareProSiebenFunMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareProSiebenFunMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareProSiebenMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareProSiebenMaxxMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareProSiebenMaxxMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareProSiebenMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSat1EmotionsMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSat1EmotionsMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSat1GoldMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSat1GoldMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSat1Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSat1Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSixxMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_TvShareSixxMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockHistory__c.MT_YearlyShifting__c</field>
+        <editable>true</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_BMVOverbooking__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_BMVOverbooking__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_BMVSponsoring__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_BMVSponsoring__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_BMVSpot__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_BMVWeightedSpot__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_BarterRevenue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_AirTimeRate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_BarterYieldQuantifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_CoverageMarginII__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_EquityYieldQuantifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_ExitParticipationYieldQuant__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_FillUpYieldQuantifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_FixYieldQuantifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_VariableYieldQuantifier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Effective_WKZFactor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_FixRevenue_Yield__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_BMVSpot__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_FixRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_BMVWeightedSpot__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_MCamp_BarterYield__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_BarterRevenue__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaignTypeParameterVersion_ref__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_AirTimeRate__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Month__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_BarterYieldQuantifier__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_NoOverbookingFlights__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_CoverageMarginII__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_NoSponsoringFlights__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_EquityYieldQuantifier__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_ExitParticipationYieldQuant__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_FillUpYieldQuantifier__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_FixYieldQuantifier__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_VariableYieldQuantifier__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Effective_WKZFactor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_FixRevenue_Yield__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_NoSpotFlights__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_FixRevenue__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Probability__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_MCamp_BarterYield__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_ROI_Revenue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_ROI_Yield__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_MediaCampaignTypeParameterVersion_ref__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_SumBMV__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Month__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_SumOverbookingBMV__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_NoOverbookingFlights__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_SumSponsoringBMV__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_NoSponsoringFlights__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_SumSpotBMV__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_NoSpotFlights__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Probability__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_TotalBMV__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_ROI_Revenue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_ROI_Yield__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_TotalRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_SumBMV__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_TotalYield__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue1_SoldAmount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_SumOverbookingBMV__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue1_TotalRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_SumSponsoringBMV__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue1_Yield__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue2_SoldAmount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_SumSpotBMV__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue2_TotalRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_TotalBMV__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue2_Yield__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue3_SoldAmount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_TotalRevenue__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue3_TotalRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_TotalYield__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue3_Yield__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue1_SoldAmount__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue4_SoldAmount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue1_TotalRevenue__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue4_TotalRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue1_Yield__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue4_Yield__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue2_SoldAmount__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue5_SoldAmount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue2_TotalRevenue__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue5_TotalRevenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue2_Yield__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue3_SoldAmount__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_VariableRevenue5_Yield__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue3_TotalRevenue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue3_Yield__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue4_SoldAmount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue4_TotalRevenue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue4_Yield__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue5_SoldAmount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue5_TotalRevenue__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_VariableRevenue5_Yield__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlockMonthlyPlan__c.MT_Year__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_Amount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_MediaCampaign_BMV__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_MonthlyShifting__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_PlannedAmount__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_PlannedSponsoringBmv__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_PlannedSpotBmv__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_SLMAccordingToContract__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_SLMAfterYield__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_SLMDifference__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_SendershareContractCommitted__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_SumBMVMonthlyPlan__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare01000600Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare01000600Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare06000900Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare06000900Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare09001300Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare09001300Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare13001700Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare13001700Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare17002000Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare17002000Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare20002300Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare20002300Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare23000100Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimeShare23000100Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TimelinesharesContractCommitted__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareKabelEinsClassicsMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareKabelEinsClassicsMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareKabelEinsDokuMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareKabelEinsDokuMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareKabelEinsMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareKabelEinsMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareProSiebenFunMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareProSiebenFunMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareProSiebenMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareProSiebenMaxxMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareProSiebenMaxxMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareProSiebenMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSat1EmotionsMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSat1EmotionsMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSat1GoldMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSat1GoldMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSat1Max__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSat1Min__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSixxMax__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_TvShareSixxMin__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_MediaBuildingBlock__c.MT_YearlyShifting__c</field>
+        <field>MT_MediaCampaignMonthlyPlan__c.MT_Year__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1364,6 +878,11 @@
         <editable>false</editable>
         <field>MT_MediaCampaignType__c.MT_IsActive__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaign__c.MT_ActualMonthlyBMV_sum__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1519,6 +1038,21 @@
         <editable>true</editable>
         <field>MT_MediaCampaign__c.MT_Opportunity_ref__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaign__c.MT_PlannedMonthlyBMV_sum__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaign__c.MT_PlannedMonthlySponsoringBMV_sum__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_MediaCampaign__c.MT_PlannedMonthlySpotBmv__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2443,26 +1977,211 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>MT_RankingPosition__c.MT_BookingCluster__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>MT_RankingPosition__c.MT_Position__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>MT_RankingVersion__c.MT_Date__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>MT_RankingVersion__c.MT_Potential__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>MT_RankingVersion__c.MT_Simulation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_MediaCampaign_BMV__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_SendershareContractCommitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare01000600Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare01000600Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare06000900Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare06000900Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare09001300Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare09001300Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare13001700Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare13001700Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare17002000Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare17002000Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare20002300Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare20002300Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare23000100Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimeShare23000100Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TimelinesharesContractCommitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_TvShareKabelEinsClassicsMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_TvShareKabelEinsClassicsMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareKabelEinsDokuMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareKabelEinsDokuMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareKabelEinsMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareKabelEinsMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_TvShareProSiebenFunMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_TvShareProSiebenFunMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareProSiebenMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareProSiebenMaxxMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareProSiebenMaxxMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareProSiebenMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_TvShareSat1EmotionsMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MT_TvTarget__c.MT_TvShareSat1EmotionsMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareSat1GoldMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareSat1GoldMin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareSat1Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareSat1Min__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareSixxMax__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_TvTarget__c.MT_TvShareSixxMin__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3712,6 +3431,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Ven_Bridge__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Ven_BusinessModel__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Ven_BusinessType__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Ven_Call_Option__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3774,6 +3508,11 @@
         <editable>false</editable>
         <field>Opportunity.Ven_Country__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Ven_CustomerAssesment__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3872,6 +3611,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Ven_Equity__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Ven_EstimateCashYieldCurrentYear__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3912,6 +3656,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Ven_Fillup__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Ven_FullNetPotentialCurrentYear__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3947,6 +3696,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Ven_IndustryChampion__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Ven_International__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3969,6 +3723,11 @@
         <editable>false</editable>
         <field>Opportunity.Ven_Likelihood__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Ven_MG__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4099,6 +3858,11 @@
         <editable>false</editable>
         <field>Opportunity.Ven_Revenue_Comment__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Ven_RiskProfile__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4427,6 +4191,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.MT_MonthlyShiftingRight_Asset__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_OpportunityId__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4464,6 +4233,21 @@
         <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_RunTimeTVStart__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.MT_SLMAccordingToContract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.MT_SLMAfterYield__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.MT_SLMDifference__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4609,6 +4393,11 @@
         <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_Variable_Yield_Type__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.MT_YearlyShiftingRight_Asset__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -5242,6 +5031,96 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_AnnualShiftingRightsCustomer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_AnnualShiftingRightsP7S1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_DescriptionWKZPotential__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_EnvisagedTypeOfTransaction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_FeedbackAdMarketDevInitiative__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_InterestOfData__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_ListOfWebsitesApps__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_MonthlyRegistration__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_MonthlyShiftingRightsCustomer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_MonthlyShiftingRightsP7S1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_PartnerDatadeals__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_PresDatadealsWithThird__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_ProductionDescription__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_SLMDeviation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_SLM__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_SegmentDefinition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_SummarySocialDataOnRegistration__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>P7S1_OpportunityApproval__c.Ven_WKZPotentialApproved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>P7S1_Unit__c.P7S1_Segment__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -5294,30 +5173,12 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>MT_MediaBuildingBlockHistory__c</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>MT_MediaBuildingBlockMonthlyPlan__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>MT_MediaBuildingBlock__c</object>
+        <object>MT_MediaCampaignMonthlyPlan__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -5386,20 +5247,11 @@
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
+        <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>MT_RankingPosition__c</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>MT_RankingVersion__c</object>
-        <viewAllRecords>false</viewAllRecords>
+        <object>MT_TvTarget__c</object>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
@@ -5502,11 +5354,7 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>MT_MediaBuildingBlockMonthlyPlan__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>MT_MediaBuildingBlock__c</tab>
+        <tab>MT_MediaCampaignMonthlyPlan__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
@@ -5527,6 +5375,10 @@
     </tabSettings>
     <tabSettings>
         <tab>MT_ProSaOrder__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>MT_TvTarget__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>

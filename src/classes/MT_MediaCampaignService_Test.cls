@@ -108,7 +108,7 @@ private class MT_MediaCampaignService_Test {
     }, new Set<String>{
       'Name', 'MT_HasMediaDigital__c', 'MT_HasMediaDooH__c', 'MT_HasMediaTV__c'
     }).get(0);
-    MT_MediaBuildingBlock__c mbAssert = (MT_MediaBuildingBlock__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
+    MT_TvTarget__c mbAssert = (MT_TvTarget__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
       mc.Id
     }, new Set<String>{
       'Name'

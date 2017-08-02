@@ -71,7 +71,22 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
+            <field>MT_ActualMonthlyBMV_sum__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MT_PlannedMonthlySponsoringBMV_sum__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
             <field>MT_Opportunity_ref__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MT_PlannedMonthlySpotBmv__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -152,6 +167,17 @@
         </displayedFields>
         <label>MT_ContextFields</label>
     </fieldSets>
+    <fields>
+        <fullName>MT_ActualMonthlyBMV_sum__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum of BMV Monthly Plan</label>
+        <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_SumBMV__c</summarizedField>
+        <summaryForeignKey>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaign_ref__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
     <fields>
         <fullName>MT_BMVDooH__c</fullName>
         <externalId>false</externalId>
@@ -442,6 +468,7 @@
         <lookupFilter>
             <active>true</active>
             <booleanFilter>((1 AND 2) OR (3 AND 4)) AND 5</booleanFilter>
+            <errorMessage>Der ausgewählte Kampagnentyp ist inaktiv oder passt nicht zur Kampagne.</errorMessage>
             <filterItems>
                 <field>MT_MediaCampaignType__c.MT_Type__c</field>
                 <operation>equals</operation>
@@ -570,6 +597,39 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MT_PlannedMonthlyBMV_sum__c</fullName>
+        <externalId>false</externalId>
+        <label>Planned Amount</label>
+        <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_TotalBMV__c</summarizedField>
+        <summaryForeignKey>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaign_ref__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>MT_PlannedMonthlySponsoringBMV_sum__c</fullName>
+        <externalId>false</externalId>
+        <label>Sponsoring Gesamt Geplantes BMV</label>
+        <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_BMVSponsoring__c</summarizedField>
+        <summaryForeignKey>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaign_ref__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>MT_PlannedMonthlySpotBmv__c</fullName>
+        <externalId>false</externalId>
+        <label>Spot Gesamt Geplantes BMV</label>
+        <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_BMVSpot__c</summarizedField>
+        <summaryForeignKey>MT_MediaCampaignMonthlyPlan__c.MT_MediaCampaign_ref__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
     </fields>
     <fields>
         <fullName>MT_Responsible_IM_Agent__c</fullName>
@@ -1579,7 +1639,6 @@
         </picklistValues>
     </recordTypes>
     <searchLayouts>
-        <excludedStandardButtons>New</excludedStandardButtons>
         <excludedStandardButtons>Forward</excludedStandardButtons>
     </searchLayouts>
     <sharingModel>Private</sharingModel>

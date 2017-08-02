@@ -1,12 +1,12 @@
 /************************************************************************************************************
-Name:  		MT_MediaFlights
+Name:      MT_MediaFlights
 ======================================================
-Purpose: 	Domain class for MT_MediaFlight__c object
+Purpose:   Domain class for MT_MediaFlight__c object
 ======================================================
 History
 -------
-Date		AUTHOR						DETAIL
-16.03.2017	Falco Aulitzky	            Initial architecture & development
+Date    AUTHOR            DETAIL
+16.03.2017  Falco Aulitzky              Initial architecture & development
 *************************************************************************************************************/
 public with sharing class MT_MediaFlights {
   private List<MT_MediaFlight__c> scope;
@@ -15,7 +15,7 @@ public with sharing class MT_MediaFlights {
     this.scope = scope;
   }
 
-  public static MT_MediaFlight__c create(Date startDate, Date endDate, MT_MediaBuildingBlockMonthlyPlan__c buildingBlock) {
+  public static MT_MediaFlight__c create(Date startDate, Date endDate, MT_MediaCampaignMonthlyPlan__c buildingBlock) {
     return new MT_MediaFlight__c(
       MT_StartDate__c = startDate,
       MT_EndDate__c = endDate,

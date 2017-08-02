@@ -91,8 +91,8 @@ public with sharing class MT_ForecastingController {
     Map<String, MT_ObjectAccessDTO> result = new Map<String, MT_ObjectAccessDTO>();
 
     result.put('MT_MediaCampaign__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaCampaign__c));
-    result.put('MT_MediaBuildingBlock__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaBuildingBlock__c));
-    result.put('MT_MediaBuildingBlockMonthlyPlan__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaBuildingBlockMonthlyPlan__c));
+    result.put('MT_TvTarget__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_TvTarget__c));
+    result.put('MT_MediaCampaignMonthlyPlan__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaCampaignMonthlyPlan__c));
     result.put('MT_MediaFlight__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaFlight__c));
 
     return result;

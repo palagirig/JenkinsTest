@@ -1,5 +1,6 @@
 @isTest
 private class MT_MediaBuildingBlockMonthlyPlanSvc_Test {
+
   @testSetup static void setup() {
     MT_Test.init();
   }
@@ -10,7 +11,7 @@ private class MT_MediaBuildingBlockMonthlyPlanSvc_Test {
     system.assertNotEquals(null, oppApp);
 
     MT_MediaCampaign__c mc = [Select ID from MT_MediaCampaign__c limit 1];
-    MT_MediaBuildingBlock__c mbb = (MT_MediaBuildingBlock__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
+    MT_TvTarget__c mbb = (MT_TvTarget__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
       mc.Id
     }, new Set<String>{
       'Name'
@@ -19,10 +20,10 @@ private class MT_MediaBuildingBlockMonthlyPlanSvc_Test {
     Test.startTest();
 
     system.assert(!MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<ID>{
-      mbb.Id
+      mc.Id
     }).isEmpty());
     system.assertEquals(5, MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansByParentIds(new Set<ID>{
-      mbb.Id
+      mc.Id
     }).size());
 
     Test.stopTest();
@@ -34,7 +35,7 @@ private class MT_MediaBuildingBlockMonthlyPlanSvc_Test {
     system.assertNotEquals(null, oppApp);
 
     MT_MediaCampaign__c mc = [Select ID from MT_MediaCampaign__c limit 1];
-    MT_MediaBuildingBlock__c mbb = (MT_MediaBuildingBlock__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
+    MT_TvTarget__c mbb = (MT_TvTarget__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
       mc.Id
     }, new Set<String>{
       'Name'
@@ -43,10 +44,10 @@ private class MT_MediaBuildingBlockMonthlyPlanSvc_Test {
     Test.startTest();
 
     system.assert(!MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<ID>{
-      mbb.Id
+      mc.Id
     }).isEmpty());
     system.assertEquals(5, MT_MediaBuildingBlockMonthlyPlanService.getMediaBuildingBlockMonthlyPlansWithMediaFlightsByParentIds(new Set<ID>{
-      mbb.Id
+      mc.Id
     }).size());
 
     Test.stopTest();

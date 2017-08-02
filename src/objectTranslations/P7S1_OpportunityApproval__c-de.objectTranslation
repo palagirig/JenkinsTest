@@ -41,6 +41,10 @@
         <name>MT_FixRevenue_Type__c</name>
     </fields>
     <fields>
+        <label><!-- monatliches Schieberecht --></label>
+        <name>MT_MonthlyShiftingRight_Asset__c</name>
+    </fields>
+    <fields>
         <label>Opportunity ID</label>
         <name>MT_OpportunityId__c</name>
     </fields>
@@ -71,6 +75,50 @@
     <fields>
         <label><!-- Start Laufzeit (TV) --></label>
         <name>MT_RunTimeTVStart__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLM laut Vertrag --></label>
+        <name>MT_SLMAccordingToContract__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platin</masterLabel>
+            <translation><!-- Platin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silber</masterLabel>
+            <translation><!-- Silber --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SLM nach Yield --></label>
+        <name>MT_SLMAfterYield__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platin</masterLabel>
+            <translation><!-- Platin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silber</masterLabel>
+            <translation><!-- Silber --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SLM Abweichung --></label>
+        <name>MT_SLMDifference__c</name>
     </fields>
     <fields>
         <label><!-- SoundBoard Approvals TODEL --></label>
@@ -191,6 +239,10 @@
             <masterLabel>Revenue Share</masterLabel>
             <translation><!-- Revenue Share --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- jährliches Schieberecht --></label>
+        <name>MT_YearlyShiftingRight_Asset__c</name>
     </fields>
     <fields>
         <help><!-- Copy of Account owner Unit for use with Sharing --></help>
@@ -897,6 +949,134 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <name>SOM_TVKundenverkaeufer__c</name>
         <relationshipLabel><!-- Opportunity Freigaben (TV Kundenverkäufer) --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- Yearly Customer Push Right --></label>
+        <name>Ven_AnnualShiftingRightsCustomer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly P7S1 Push Right --></label>
+        <name>Ven_AnnualShiftingRightsP7S1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Ven_DescriptionWKZPotential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Envisaged Type Of Transaction --></label>
+        <name>Ven_EnvisagedTypeOfTransaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad Market Development Initiative Assessm --></label>
+        <name>Ven_FeedbackAdMarketDevInitiative__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle</masterLabel>
+            <translation><!-- Middle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Data Assessment --></label>
+        <name>Ven_InterestOfData__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>via Data Next</masterLabel>
+            <translation><!-- via Data Next --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>via basic Data-Coop</masterLabel>
+            <translation><!-- via basic Data-Coop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- List of Websites / Apps --></label>
+        <name>Ven_ListOfWebsitesApps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Registrations --></label>
+        <name>Ven_MonthlyRegistration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Customer Push Right --></label>
+        <name>Ven_MonthlyShiftingRightsCustomer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly P7S1 Push Right --></label>
+        <name>Ven_MonthlyShiftingRightsP7S1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Data Deal(s) --></label>
+        <name>Ven_PartnerDatadeals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Third  Party Data Deals --></label>
+        <name>Ven_PresDatadealsWithThird__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Ven_ProductionDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLM Deviation --></label>
+        <name>Ven_SLMDeviation__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLM --></label>
+        <name>Ven_SLM__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment Definition --></label>
+        <name>Ven_SegmentDefinition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compiled Sociodemographic Data at Regist --></label>
+        <name>Ven_SummarySocialDataOnRegistration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Approved --></label>
+        <name>Ven_WKZPotentialApproved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
     <gender>Feminine</gender>
     <layouts>
         <layout>MT Internal Opportunity Freigabe Feed Layout</layout>
@@ -975,6 +1155,14 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <sections>
             <label><!-- Rahmenfreigabe Media Board --></label>
             <section>Rahmenfreigabe Media Board</section>
+        </sections>
+        <sections>
+            <label><!-- Schieberechte P7S1 --></label>
+            <section>Schieberechte P7S1</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level Matrix --></label>
+            <section>Service Level Matrix</section>
         </sections>
         <sections>
             <label><!-- Var_1 --></label>
@@ -1068,6 +1256,14 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
             <section>Quantitative Freigabe</section>
         </sections>
         <sections>
+            <label><!-- Schieberechte P7S1 --></label>
+            <section>Schieberechte P7S1</section>
+        </sections>
+        <sections>
+            <label><!-- Service Level Matrix --></label>
+            <section>Service Level Matrix</section>
+        </sections>
+        <sections>
             <label><!-- Upside --></label>
             <section>Upside</section>
         </sections>
@@ -1123,6 +1319,14 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     <validationRules>
         <errorMessage><!-- Wenn fixe Zahlung ausgewählt ist muss eine Summe angegeben werden. --></errorMessage>
         <name>MT_RequiredValueForFixedMonthlyPayment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dieses Feld ist ein Pflichtfeld, bitte tragen Sie etwas ein. --></errorMessage>
+        <name>MT_SLMDifferenceFieldRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Die Felder &quot;jährliches Schieberecht&quot; und &quot;monatliches Schieberecht&quot; müssen einen Wert zwischen 0 und 100 aufweisen. --></errorMessage>
+        <name>MT_Shifting_Valid</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Bitte für den Variablen Umsatz immer alle drei Werte für Anzahl, Umsatzart und den Umsatzanteil ausfüllen --></errorMessage>

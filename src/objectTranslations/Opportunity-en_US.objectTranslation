@@ -2008,6 +2008,74 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <name>Ven_Beschreibung_aus_dem_Lead__c</name>
     </fields>
     <fields>
+        <label><!-- Bridge --></label>
+        <name>Ven_Bridge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Model --></label>
+        <name>Ven_BusinessModel__c</name>
+        <picklistValues>
+            <masterLabel>Booking</masterLabel>
+            <translation><!-- Booking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classified listing</masterLabel>
+            <translation><!-- Classified listing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commission</masterLabel>
+            <translation><!-- Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content</masterLabel>
+            <translation><!-- Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Commerce</masterLabel>
+            <translation><!-- E-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freemium</masterLabel>
+            <translation><!-- Freemium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead generation</masterLabel>
+            <translation><!-- Lead generation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketplace</masterLabel>
+            <translation><!-- Marketplace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation><!-- Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual items</masterLabel>
+            <translation><!-- Virtual items --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>Ven_BusinessType__c</name>
+        <picklistValues>
+            <masterLabel>Digital</masterLabel>
+            <translation><!-- Digital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical</masterLabel>
+            <translation><!-- Physical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <help><!-- Für Equity zuständig --></help>
         <label><!-- Call Option --></label>
         <name>Ven_Call_Option__c</name>
@@ -2065,6 +2133,22 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <label><!-- Country --></label>
         <name>Ven_Country__c</name>
         <relationshipLabel><!-- Opportunities (Country) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Assessment --></label>
+        <name>Ven_CustomerAssesment__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <help><!-- Wenn das Kontrollkästchen markiert ist muss dieses Gremium beim Genehmigungsprozess der Opportunity aktiv werden und die Opportunity genehmigen oder ablehnen. --></help>
@@ -2183,6 +2267,10 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <name>Ven_Equity_Share__c</name>
     </fields>
     <fields>
+        <label><!-- Equity --></label>
+        <name>Ven_Equity__c</name>
+    </fields>
+    <fields>
         <label><!-- Estimate Cash Yield (Current Year) --></label>
         <name>Ven_EstimateCashYieldCurrentYear__c</name>
     </fields>
@@ -2218,6 +2306,10 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <name>Ven_Exit_Participation__c</name>
     </fields>
     <fields>
+        <label><!-- Fill-up --></label>
+        <name>Ven_Fillup__c</name>
+    </fields>
+    <fields>
         <label><!-- Full Net Potential Current Year --></label>
         <name>Ven_FullNetPotentialCurrentYear__c</name>
     </fields>
@@ -2248,6 +2340,11 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <help><!-- Wenn die Checkbox markiert ist, befindet sich der Opportunity-Datensatz im Genehmigungsprozess. --></help>
         <label><!-- Im Genehmigungsprozess --></label>
         <name>Ven_Im_Genehmigungsprozess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Champion --></label>
+        <name>Ven_IndustryChampion__c</name>
+        <relationshipLabel><!-- Opportunities (Industry Champion) --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- International --></label>
@@ -2281,6 +2378,10 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
     <fields>
         <label><!-- Likelihood --></label>
         <name>Ven_Likelihood__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG --></label>
+        <name>Ven_MG__c</name>
     </fields>
     <fields>
         <help><!-- Bitte hier den Zielmarkt beschreiben --></help>
@@ -2348,7 +2449,7 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Media Planner --></label>
+        <label><!-- Internal Media Agency --></label>
         <name>Ven_MediaPlanner__c</name>
     </fields>
     <fields>
@@ -2468,6 +2569,18 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <help><!-- Informationen zu speziellen Revenue- und Equity-Konstrukten, Fill-ups, etc... --></help>
         <label><!-- Revenue Comment --></label>
         <name>Ven_Revenue_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Profile --></label>
+        <name>Ven_RiskProfile__c</name>
+        <picklistValues>
+            <masterLabel>Mature</masterLabel>
+            <translation><!-- Mature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risky</masterLabel>
+            <translation><!-- Risky --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <help><!-- Wenn das Kontrollkästchen markiert ist muss dieses Gremium beim Genehmigungsprozess der Opportunity aktiv werden und die Opportunity genehmigen oder ablehnen. --></help>
@@ -2951,7 +3064,7 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         <name>Ven_Variable_Proceeds__c</name>
     </fields>
     <fields>
-        <label><!-- Vertical --></label>
+        <label><!-- Industry --></label>
         <name>Ven_Vertical__c</name>
         <picklistValues>
             <masterLabel>Beauty &amp; Accessories</masterLabel>
@@ -2987,7 +3100,7 @@ Gesamt Umsatz netto (Cash-In) (MN3 TV Kundenintegration + MN3 Digital + Variable
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Vertical --></label>
+        <label><!-- Industry --></label>
         <name>Ven_Verticals__c</name>
         <relationshipLabel><!-- Opportunities --></relationshipLabel>
     </fields>

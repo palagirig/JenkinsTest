@@ -5265,6 +5265,118 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Ven_Bridge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bridge</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_BusinessModel__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Model</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Classified listing</fullName>
+                    <default>false</default>
+                    <label>Classified listing</label>
+                </value>
+                <value>
+                    <fullName>E-Commerce</fullName>
+                    <default>false</default>
+                    <label>E-Commerce</label>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Commission</fullName>
+                    <default>false</default>
+                    <label>Commission</label>
+                </value>
+                <value>
+                    <fullName>Freemium</fullName>
+                    <default>false</default>
+                    <label>Freemium</label>
+                </value>
+                <value>
+                    <fullName>Marketplace</fullName>
+                    <default>false</default>
+                    <label>Marketplace</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Booking</fullName>
+                    <default>false</default>
+                    <label>Booking</label>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                    <label>Content</label>
+                </value>
+                <value>
+                    <fullName>Lead generation</fullName>
+                    <default>false</default>
+                    <label>Lead generation</label>
+                </value>
+                <value>
+                    <fullName>Virtual items</fullName>
+                    <default>false</default>
+                    <label>Virtual items</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ven_BusinessType__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Digital</fullName>
+                    <default>false</default>
+                    <label>Digital</label>
+                </value>
+                <value>
+                    <fullName>Physical</fullName>
+                    <default>false</default>
+                    <label>Physical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Ven_Call_Option__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Für Equity zuständig</description>
@@ -5415,6 +5527,37 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ven_CustomerAssesment__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Assessment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Ven_D_A_Board__c</fullName>
@@ -5683,6 +5826,16 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <type>Percent</type>
     </fields>
     <fields>
+        <fullName>Ven_Equity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Equity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Ven_EstimateCashYieldCurrentYear__c</fullName>
         <externalId>false</externalId>
         <label>Estimate Cash Yield (Current Year)</label>
@@ -5780,6 +5933,16 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Ven_Fillup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Fill-up</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Ven_FullNetPotentialCurrentYear__c</fullName>
         <externalId>false</externalId>
         <formula>Ven_TotalGmvCurrentYear__c *  Ven_EffectiveYield__c</formula>
@@ -5869,6 +6032,19 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Ven_IndustryChampion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Industry Champion</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Benutzer</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Ven_International__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -5947,6 +6123,16 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_MG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>MG</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Ven_Market_Description__c</fullName>
@@ -6070,7 +6256,7 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
     <fields>
         <fullName>Ven_MediaPlanner__c</fullName>
         <externalId>false</externalId>
-        <label>Media Planner</label>
+        <label>Internal Media Agency</label>
         <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -6366,6 +6552,32 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_RiskProfile__c</fullName>
+        <externalId>false</externalId>
+        <label>Risk Profile</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mature</fullName>
+                    <default>false</default>
+                    <label>Mature</label>
+                </value>
+                <value>
+                    <fullName>Risky</fullName>
+                    <default>false</default>
+                    <label>Risky</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Ven_SIC_II__c</fullName>
@@ -7398,7 +7610,7 @@ ProMetheus-Name: ?</description>
     <fields>
         <fullName>Ven_Vertical__c</fullName>
         <externalId>false</externalId>
-        <label>Vertical</label>
+        <label>Industry</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -7454,7 +7666,7 @@ ProMetheus-Name: ?</description>
         <fullName>Ven_Verticals__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
-        <label>Vertical</label>
+        <label>Industry</label>
         <referenceTo>Ven_Vertical__c</referenceTo>
         <relationshipLabel>Opportunities</relationshipLabel>
         <relationshipName>Opportunities</relationshipName>

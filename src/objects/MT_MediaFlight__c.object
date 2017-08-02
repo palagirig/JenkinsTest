@@ -556,8 +556,8 @@
     <fields>
         <fullName>MT_MediaBuildingBlockMonthlyPlan_ref__c</fullName>
         <externalId>false</externalId>
-        <label>Media Building Block Monthly Plan</label>
-        <referenceTo>MT_MediaBuildingBlockMonthlyPlan__c</referenceTo>
+        <label>Media Campaign Monthly Plan</label>
+        <referenceTo>MT_MediaCampaignMonthlyPlan__c</referenceTo>
         <relationshipLabel>Media Flights</relationshipLabel>
         <relationshipName>MediaFlights</relationshipName>
         <relationshipOrder>0</relationshipOrder>

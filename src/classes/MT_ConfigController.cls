@@ -1,13 +1,13 @@
 /************************************************************************************************************
-Name:  		MT_ConfigController
+Name:       MT_ConfigController
 ======================================================
-Purpose: 	Controller for JS remote actions. Contains all the method for an angular app to access
-			common configuration.
+Purpose:    Controller for JS remote actions. Contains all the method for an angular app to access
+            common configuration.
 ======================================================
 History
 -------
-Date		AUTHOR						DETAIL
-06.01.2017	Sven Kretschmann             Initial architecture & development
+Date        AUTHOR                      DETAIL
+06.01.2017  Sven Kretschmann             Initial architecture & development
 *************************************************************************************************************/
 
 public with sharing class MT_ConfigController {
@@ -24,11 +24,12 @@ public with sharing class MT_ConfigController {
     return MT_Constants.getInstance().prepareForSerialization();
   }
 
+
   @RemoteAction
   public static MT_Config getConfig() {
     return MT_Config.getInstance()
       .loadObjectsSchemaConf(new List<Schema.sObjectType>{
-        Account.SobjectType, MT_MediaCampaign__c.SobjectType, MT_MediaBuildingBlock__c.SobjectType
+        Account.SobjectType, MT_MediaCampaign__c.SobjectType, MT_TvTarget__c.SobjectType
       })
       .prepareForSerialization();
   }

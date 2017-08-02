@@ -14,7 +14,9 @@
 
 /* Selector class to fetch data from the database */
 public with sharing class MT_MediaBuildingBlockSelector extends MT_Selector {
-  public static final String objectAPIName = MT_MediaBuildingBlock__c.SobjectType.getDescribe().getName();
+  
+  public static final String objectAPIName = MT_TvTarget__c.SobjectType.getDescribe().getName();
+
   
   /*
   * Method to fetch data stored in salesforce

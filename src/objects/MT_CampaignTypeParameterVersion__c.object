@@ -239,8 +239,10 @@
     <label>Media Campaign Type Parameter Version</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+        <language>de</language>
     </listViews>
     <nameField>
         <label>Version Name</label>

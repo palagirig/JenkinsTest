@@ -1,14 +1,14 @@
 /************************************************************************************************************
-Name:  		MT_FlightPlanningController
+Name:       MT_FlightPlanningController
 ======================================================
-Purpose: 	Controller for a page MT_FlightPlanning. Contains all the method for an angular app to access
-			the sfdc db. Refered as Backend
+Purpose:    Controller for a page MT_FlightPlanning. Contains all the method for an angular app to access
+            the sfdc db. Refered as Backend
 ======================================================
 History
 -------
-Date		    AUTHOR						          DETAIL
-17.11.2016	Duc Nguyen Tien             Initial architecture & development
-06.01.2017	Sven Kretschmann            Refactored and moved common stuff into MT_ConfigController
+Date            AUTHOR                                DETAIL
+17.11.2016  Duc Nguyen Tien             Initial architecture & development
+06.01.2017  Sven Kretschmann            Refactored and moved common stuff into MT_ConfigController
 *************************************************************************************************************/
 public with sharing class MT_FlightPlanningController {
   public MT_FlightPlanningController(ApexPages.StandardController stdController) {
@@ -55,8 +55,8 @@ public with sharing class MT_FlightPlanningController {
     Map<String, MT_ObjectAccessDTO> result = new Map<String, MT_ObjectAccessDTO>();
 
     result.put('MT_MediaCampaign__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaCampaign__c));
-    result.put('MT_MediaBuildingBlock__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaBuildingBlock__c));
-    result.put('MT_MediaBuildingBlockMonthlyPlan__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaBuildingBlockMonthlyPlan__c));
+    result.put('MT_TvTarget__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_TvTarget__c));
+    result.put('MT_MediaCampaignMonthlyPlan__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaCampaignMonthlyPlan__c));
     result.put('MT_MediaFlight__c', new MT_ObjectAccessDTO(Schema.SObjectType.MT_MediaFlight__c));
 
     return result;
@@ -74,7 +74,7 @@ public with sharing class MT_FlightPlanningController {
 
     for (ID mbbId : mbbIds) {
       if (result.mediaBuildingBlockMonthlyPlan.containsKey(mbbId)) {
-        for (MT_MediaBuildingBlockMonthlyPlan__c plan : result.mediaBuildingBlockMonthlyPlan.get(mbbId)) {
+        for (MT_MediaCampaignMonthlyPlan__c plan : result.mediaBuildingBlockMonthlyPlan.get(mbbId)) {
           for (MT_MediaFlight__c flight : plan.MediaFlights__r) {
             flightIds.add(flight.Id);
           }
@@ -142,10 +142,10 @@ public with sharing class MT_FlightPlanningController {
   }
 
   public class MT_FlightPlanningControllerDTO {
-    public Map<Id, MT_MediaBuildingBlock__c> mediaBuildingBlocks;
+    public Map<Id, MT_TvTarget__c> mediaBuildingBlocks;
     public Map<Id, MT_MediaCampaign__c> mediaCampaigns;
     public Map<Id, List<Id>> campaignToBuildingBlocksMapping;
-    public Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>> mediaBuildingBlockMonthlyPlan;
+    public Map<Id, List<MT_MediaCampaignMonthlyPlan__c>> mediaBuildingBlockMonthlyPlan;
     public Map<Id, List<MT_MediaFlight__c>> monthlyPlanIdsToMediaFlights;
     public Map<Id, List<MT_MediaFlightMotiveAllocation__c>> mediaFlightsToMotiveAllocations;
     public Map<Id, MT_MediaMotive__c> mediaMotives;
@@ -157,12 +157,12 @@ public with sharing class MT_FlightPlanningController {
 
     }
 
-    public MT_FlightPlanningControllerDTO initMediaBuildingBlocksWrapper(List<MT_MediaBuildingBlock__c> blocks) {
+    public MT_FlightPlanningControllerDTO initMediaBuildingBlocksWrapper(List<MT_TvTarget__c> blocks) {
       this.mediaCampaigns = new Map<Id, MT_MediaCampaign__c>();
       this.campaignToBuildingBlocksMapping = new Map<Id, List<Id>>();
-      this.mediaBuildingBlocks = new Map<Id, MT_MediaBuildingBlock__c>();
+      this.mediaBuildingBlocks = new Map<Id, MT_TvTarget__c>();
 
-      for (MT_MediaBuildingBlock__c block : blocks) {
+      for (MT_TvTarget__c block : blocks) {
         if (block.MT_MediaCampaign_ref__c != null && block.MT_MediaCampaign_ref__r != null) {
           if (!this.mediaCampaigns.containsKey(block.MT_MediaCampaign_ref__c)) {
 
@@ -188,15 +188,15 @@ public with sharing class MT_FlightPlanningController {
       return this;
     }
 
-    public MT_FlightPlanningControllerDTO initMonthlyPlansWrapper(List<MT_MediaBuildingBlockMonthlyPlan__c> plans) {
-      this.mediaBuildingBlockMonthlyPlan = new Map<Id, List<MT_MediaBuildingBlockMonthlyPlan__c>>();
+    public MT_FlightPlanningControllerDTO initMonthlyPlansWrapper(List<MT_MediaCampaignMonthlyPlan__c> plans) {
+      this.mediaBuildingBlockMonthlyPlan = new Map<Id, List<MT_MediaCampaignMonthlyPlan__c>>();
 
-      for (MT_MediaBuildingBlockMonthlyPlan__c plan : plans) {
-        if (plan.MT_MediaBuildingBlock_ref__c != null) {
-          if (this.mediaBuildingBlockMonthlyPlan.containsKey(plan.MT_MediaBuildingBlock_ref__c)) {
-            this.mediaBuildingBlockMonthlyPlan.get(plan.MT_MediaBuildingBlock_ref__c).add(plan);
+      for (MT_MediaCampaignMonthlyPlan__c plan : plans) {
+        if (plan.MT_MediaCampaign_ref__c != null) {
+          if (this.mediaBuildingBlockMonthlyPlan.containsKey(plan.MT_MediaCampaign_ref__c)) {
+            this.mediaBuildingBlockMonthlyPlan.get(plan.MT_MediaCampaign_ref__c).add(plan);
           } else {
-            this.mediaBuildingBlockMonthlyPlan.put(plan.MT_MediaBuildingBlock_ref__c, new List<MT_MediaBuildingBlockMonthlyPlan__c>{
+            this.mediaBuildingBlockMonthlyPlan.put(plan.MT_MediaCampaign_ref__c, new List<MT_MediaCampaignMonthlyPlan__c>{
               plan
             });
           }

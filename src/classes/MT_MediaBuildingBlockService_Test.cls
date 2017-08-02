@@ -5,7 +5,7 @@ private class MT_MediaBuildingBlockService_Test {
   }
   @isTest static void constructor() {
     Test.startTest();
-    MT_MediaBuildingBlocks mbb = new MT_MediaBuildingBlocks(new List<MT_MediaBuildingBlock__c>());
+    MT_MediaBuildingBlocks mbb = new MT_MediaBuildingBlocks(new List<MT_TvTarget__c>());
     Test.stopTest();
   }
 
@@ -16,7 +16,7 @@ private class MT_MediaBuildingBlockService_Test {
     system.assertNotEquals(null, oppApp);
 
     MT_MediaCampaign__c mc = [Select ID from MT_MediaCampaign__c limit 1];
-    MT_MediaBuildingBlock__c mb = (MT_MediaBuildingBlock__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
+    MT_TvTarget__c mb = (MT_TvTarget__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
       mc.Id
     }, new Set<String>{
       'Name'
@@ -41,7 +41,7 @@ private class MT_MediaBuildingBlockService_Test {
     system.assertNotEquals(null, oppApp);
 
     MT_MediaCampaign__c mc = [Select ID from MT_MediaCampaign__c limit 1];
-    MT_MediaBuildingBlock__c mb = (MT_MediaBuildingBlock__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
+    MT_TvTarget__c mb = (MT_TvTarget__c) new MT_MediaBuildingBlockSelector().getRecordsByMediaCampaignIds(new Set<ID>{
       mc.Id
     }, new Set<String>{
       'Name'

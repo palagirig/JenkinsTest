@@ -11,6 +11,10 @@
         <value>Media Transparency Campaigns</value>
     </caseValues>
     <fields>
+        <label><!-- Sum of BMV Monthly Plan --></label>
+        <name>MT_ActualMonthlyBMV_sum__c</name>
+    </fields>
+    <fields>
         <label><!-- BMV DooH --></label>
         <name>MT_BMVDooH__c</name>
     </fields>
@@ -108,6 +112,9 @@
     </fields>
     <fields>
         <label>Kampagnentyp</label>
+        <lookupFilter>
+            <errorMessage><!-- Der ausgewählte Kampagnentyp ist inaktiv oder passt nicht zur Kampagne. --></errorMessage>
+        </lookupFilter>
         <name>MT_MediaCampaignType_ref__c</name>
         <relationshipLabel>Kampagnen</relationshipLabel>
     </fields>
@@ -144,6 +151,18 @@
         <label><!-- Opportunity --></label>
         <name>MT_Opportunity_ref__c</name>
         <relationshipLabel>Kampagnen</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Amount --></label>
+        <name>MT_PlannedMonthlyBMV_sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsoring Gesamt Geplantes BMV --></label>
+        <name>MT_PlannedMonthlySponsoringBMV_sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spot Gesamt Geplantes BMV --></label>
+        <name>MT_PlannedMonthlySpotBmv__c</name>
     </fields>
     <fields>
         <label>Ansprechpartner Internal Media Agency</label>
@@ -361,10 +380,6 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label><!-- Detail Extension --></label>
-            <section>Detail Extension</section>
-        </sections>
-        <sections>
             <label><!-- Digital (71M) --></label>
             <section>Digital (71M)</section>
         </sections>
@@ -398,10 +413,6 @@
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Detail Extension --></label>
-            <section>Detail Extension</section>
         </sections>
         <sections>
             <label><!-- Internal Media Agency --></label>

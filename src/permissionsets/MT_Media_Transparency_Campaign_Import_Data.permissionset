@@ -76,46 +76,6 @@
         <field>MT_MediaBroadcastImportData__c.MT_Timeslot__c</field>
         <readable>false</readable>
     </fieldPermissions>
-	<fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_BMVSponsoringComplete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_BMVSpotComplete__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_DealProbabilitySpots__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>MT_CampaignMonthlyPlanImportData__c.MT_RevenueFix__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>MT Media Transparency Campaign Import Data</label>
     <license>Salesforce</license>
@@ -128,7 +88,7 @@
         <object>MT_CampaignImportData__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-	<objectPermissions>
+    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
@@ -137,6 +97,10 @@
         <object>MT_CampaignMonthlyPlanImportData__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>MT_CampaignImportData__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <tabSettings>
         <tab>MT_CampaignMonthlyPlanImportData__c</tab>
         <visibility>Visible</visibility>

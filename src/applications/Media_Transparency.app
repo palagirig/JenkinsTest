@@ -183,7 +183,7 @@
     <tab>standard-Opportunity</tab>
     <tab>P7S1_OpportunityApproval__c</tab>
     <tab>MT_MediaCampaign__c</tab>
-    <tab>MT_MediaBuildingBlock__c</tab>
+    <tab>MT_TvTarget__c</tab>
     <tab>MT_Ranking</tab>
     <tab>MT_MediaUpdateHistory__c</tab>
     <tab>MT_ForecastVersion__c</tab>
@@ -191,17 +191,14 @@
     <tab>MT_CampaignTypeParameterVersion__c</tab>
     <tab>MT_MediaCampaignType__c</tab>
     <tab>MT_MediaBroadcastImportError__c</tab>
+    <tab>MT_MediaBroadcastImportControlData__c</tab>
     <tab>MT_CampaignImportData__c</tab>
-	<tab>MT_CampaignMonthlyPlanImportData__c</tab>
     <workspaceMappings>
         <mapping>
             <tab>MT_AdvertisedMediaProduct__c</tab>
         </mapping>
         <mapping>
             <tab>MT_CampaignImportData__c</tab>
-        </mapping>
-		<mapping>
-            <tab>MT_CampaignMonthlyPlanImportData__c</tab>
         </mapping>
         <mapping>
             <tab>MT_CampaignTypeParameterVersion__c</tab>
@@ -210,11 +207,10 @@
             <tab>MT_ForecastVersion__c</tab>
         </mapping>
         <mapping>
-            <tab>MT_MediaBroadcastImportError__c</tab>
+            <tab>MT_MediaBroadcastImportControlData__c</tab>
         </mapping>
         <mapping>
-            <fieldName>MT_MediaCampaign_ref__c</fieldName>
-            <tab>MT_MediaBuildingBlock__c</tab>
+            <tab>MT_MediaBroadcastImportError__c</tab>
         </mapping>
         <mapping>
             <tab>MT_MediaCampaignType__c</tab>
@@ -230,6 +226,10 @@
         </mapping>
         <mapping>
             <tab>MT_Ranking</tab>
+        </mapping>
+        <mapping>
+            <fieldName>MT_MediaCampaign_ref__c</fieldName>
+            <tab>MT_TvTarget__c</tab>
         </mapping>
         <mapping>
             <tab>P7S1_OpportunityApproval__c</tab>

@@ -95,7 +95,7 @@
         <fullName>MT_MonthlyPlan_ref__c</fullName>
         <externalId>false</externalId>
         <label>Monthly Plan</label>
-        <referenceTo>MT_MediaBuildingBlockMonthlyPlan__c</referenceTo>
+        <referenceTo>MT_MediaCampaignMonthlyPlan__c</referenceTo>
         <relationshipLabel>Media Broadcast Data</relationshipLabel>
         <relationshipName>Media_Broadcasts</relationshipName>
         <relationshipOrder>0</relationshipOrder>
