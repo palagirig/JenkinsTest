@@ -193,12 +193,16 @@
     <tab>MT_MediaBroadcastImportError__c</tab>
     <tab>MT_MediaBroadcastImportControlData__c</tab>
     <tab>MT_CampaignImportData__c</tab>
+	<tab>MT_CampaignMonthlyPlanImportData__c</tab>
     <workspaceMappings>
         <mapping>
             <tab>MT_AdvertisedMediaProduct__c</tab>
         </mapping>
         <mapping>
             <tab>MT_CampaignImportData__c</tab>
+        </mapping>
+		<mapping>
+            <tab>MT_CampaignMonthlyPlanImportData__c</tab>
         </mapping>
         <mapping>
             <tab>MT_CampaignTypeParameterVersion__c</tab>

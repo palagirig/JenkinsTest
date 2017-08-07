@@ -72,19 +72,9 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>MT_Account_Owner_Approvals__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Checkbox for enabling Account owner approvals.</description>
-        <externalId>false</externalId>
-        <label>Account Owner Approvals TODEL</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>MT_Asset_ref__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
+        <description>Die Referenz zum internen Partner. Ersetzt mittelfristig die Pickliste P7S1_internerPartner__c. Soll genutzt werden, um Sharing zu steuern, außerdem als Verbindungspunkt für Kampagnentypen und weitere Einflussfaktoren auf die Kampagnen.</description>
         <externalId>false</externalId>
         <label>Interner Partner (Asset)</label>
         <referenceTo>P7S1_Asset__c</referenceTo>
@@ -98,6 +88,7 @@
     </fields>
     <fields>
         <fullName>MT_ContractEnddate__c</fullName>
+        <description>Das Ende der Gesamtvertragslaufzeit, alle Kampagnen- und Bausteinlaufzeiten müssen innerhalb dieser Laufzeit liegen.</description>
         <externalId>false</externalId>
         <label>Contract Enddate</label>
         <required>false</required>
@@ -108,6 +99,7 @@
     </fields>
     <fields>
         <fullName>MT_ContractStartdate__c</fullName>
+        <description>Der Start der Gesamtvertragslaufzeit, alle Kampagnen- und Bausteinlaufzeiten müssen innerhalb dieser Laufzeit liegen.</description>
         <externalId>false</externalId>
         <label>Contract Startdate</label>
         <required>false</required>
@@ -118,6 +110,7 @@
     </fields>
     <fields>
         <fullName>MT_FixRevenue_MonthlyPayment__c</fullName>
+        <description>Die Höhe der monatlichen Zahlungen, falls als fixe Umsatzart &quot;monatliche Zahlungen&quot; ausgewählt wurde. Wird genutzt, um den Fix Revenue Yield zu ermitteln, der in das Kampagnenranking einfließt.</description>
         <externalId>false</externalId>
         <label>Fixe monatliche Einnahmen</label>
         <precision>18</precision>
@@ -130,6 +123,7 @@
     </fields>
     <fields>
         <fullName>MT_FixRevenue_Type__c</fullName>
+        <description>Fixe Umsatzart: Keine, monatliche Zahlung (&quot;Payment&quot;; s. MT_FixRevenue_MonthlyPayment__c) oder prozentuale Anteile (&quot;Yield&quot;; s. MT_MediaCampaign__c.MT_YieldGesamtFixTV__c).</description>
         <externalId>false</externalId>
         <label>Fixe Umsatzart</label>
         <required>false</required>
@@ -144,6 +138,7 @@
     </fields>
     <fields>
         <fullName>MT_MonthlyShiftingRight_Asset__c</fullName>
+        <description>Das vertraglich zugesicherte monatliche Schieberecht des Assets für die BMV- Ausstrahlung. Relevant für die Kontrolle der Vertragserfüllung.</description>
         <externalId>false</externalId>
         <label>monatliches Schieberecht</label>
         <precision>18</precision>
@@ -155,31 +150,8 @@
         <type>Percent</type>
     </fields>
     <fields>
-        <fullName>MT_OpportunityId__c</fullName>
-        <externalId>false</externalId>
-        <formula>P7S1_Opportunity__r.Id</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>OpportunityId</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_OpportunityName__c</fullName>
-        <externalId>false</externalId>
-        <formula>P7S1_Opportunity__r.Name</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>MT_OpportunityName</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>MT_RunTimeDigitalEnd__c</fullName>
+        <description>Das Ende der Laufzeit für den Baustein Digital.</description>
         <externalId>false</externalId>
         <label>Ende Laufzeit (Digital)</label>
         <required>false</required>
@@ -190,6 +162,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeDigitalStart__c</fullName>
+        <description>Start der Laufzeit des Bausteins Digital.</description>
         <externalId>false</externalId>
         <label>Start Laufzeit (Digital)</label>
         <required>false</required>
@@ -200,6 +173,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeDooHEnd__c</fullName>
+        <description>Das Ende der Laufzeit für den Baustein DooH.</description>
         <externalId>false</externalId>
         <label>Ende Laufzeit (DooH)</label>
         <required>false</required>
@@ -210,6 +184,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeDooHStart__c</fullName>
+        <description>Start der Laufzeit des Bausteins DooH.</description>
         <externalId>false</externalId>
         <label>Start Laufzeit (DooH)</label>
         <required>false</required>
@@ -220,6 +195,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeTVEnd__c</fullName>
+        <description>Das Ende der Laufzeit für den Baustein TV.</description>
         <externalId>false</externalId>
         <label>Ende Laufzeit (TV)</label>
         <required>false</required>
@@ -230,6 +206,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeTVStart__c</fullName>
+        <description>Start der Laufzeit des Bausteins TV</description>
         <externalId>false</externalId>
         <label>Start Laufzeit (TV)</label>
         <required>false</required>
@@ -240,6 +217,7 @@
     </fields>
     <fields>
         <fullName>MT_SLMAccordingToContract__c</fullName>
+        <description>Die vertraglich vereinbarte Service Level Matrix.</description>
         <externalId>false</externalId>
         <label>SLM laut Vertrag</label>
         <required>false</required>
@@ -276,6 +254,7 @@
     </fields>
     <fields>
         <fullName>MT_SLMAfterYield__c</fullName>
+        <description>Die Service Level Matrix, die sich aus dem vereinbarten Yield ergibt, wird manuell eingetragen.</description>
         <externalId>false</externalId>
         <label>SLM nach Yield</label>
         <required>false</required>
@@ -312,6 +291,7 @@
     </fields>
     <fields>
         <fullName>MT_SLMDifference__c</fullName>
+        <description>Hier wird die Begründung für Unterschiede in den Feldern MT_SLMAccordingToContract__c und MT_SLMAfterYield__c eingetragen, wird via Validierungsregel zum Pflichtfeld.</description>
         <externalId>false</externalId>
         <label>SLM Abweichung</label>
         <length>255</length>
@@ -323,19 +303,9 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>MT_SoundBoard_Approvals__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Checkbox to enable for sound board approvals.</description>
-        <externalId>false</externalId>
-        <label>SoundBoard Approvals TODEL</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>MT_Sys_ApprovalSubmittedFromCampaign__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Wird zur Steuerung der Approvalprozesse MT_OppApp_ChangeExternalApproval und MT_OppApp_ChangeInternalApproval genutzt. Es wird per Code in der Klasse MT_ApprovalProcessModule aktiviert, um die Einstiegskriterien für die Prozesse zu erfüllen, die sonst nicht greifen sollen. Die Klasse wird per Custom Button aufgerufen, der Button ist jedoch zur Zeit inaktiv, da die Freigabeprozesse für MT überarbeitet werden sollen.</description>
         <externalId>false</externalId>
         <label>MT_Sys_ApprovalSubmittedFromCampaign</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -345,6 +315,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_RevenuePerUnit__c</fullName>
+        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -357,6 +328,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_SoldAmount__c</fullName>
+        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -370,6 +342,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Verkauftes Produkt</label>
         <length>255</length>
@@ -382,6 +355,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_SoldUnit__c</fullName>
+        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Verkaufseinheit</label>
         <required>false</required>
@@ -396,6 +370,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_TotalRevenue__c</fullName>
+        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue1_RevenuePerUnit__c * MT_VariableRevenue1_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -409,6 +384,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_RevenuePerUnit__c</fullName>
+        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -421,6 +397,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_SoldAmount__c</fullName>
+        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -434,6 +411,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Verkauftes Produkt</label>
         <length>255</length>
@@ -446,6 +424,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_SoldUnit__c</fullName>
+        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Verkaufseinheit</label>
         <required>false</required>
@@ -460,6 +439,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_TotalRevenue__c</fullName>
+        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue2_RevenuePerUnit__c * MT_VariableRevenue2_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -473,6 +453,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_RevenuePerUnit__c</fullName>
+        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -485,6 +466,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_SoldAmount__c</fullName>
+        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -498,6 +480,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Verkauftes Produkt</label>
         <length>255</length>
@@ -510,6 +493,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_SoldUnit__c</fullName>
+        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Verkaufseinheit</label>
         <required>false</required>
@@ -524,6 +508,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_TotalRevenue__c</fullName>
+        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue3_RevenuePerUnit__c * MT_VariableRevenue3_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -537,6 +522,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_RevenuePerUnit__c</fullName>
+        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -549,6 +535,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_SoldAmount__c</fullName>
+        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -562,6 +549,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Verkauftes Produkt</label>
         <length>255</length>
@@ -574,6 +562,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_SoldUnit__c</fullName>
+        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Verkaufseinheit</label>
         <required>false</required>
@@ -588,6 +577,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_TotalRevenue__c</fullName>
+        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue4_RevenuePerUnit__c * MT_VariableRevenue4_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -601,6 +591,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_RevenuePerUnit__c</fullName>
+        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -613,6 +604,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_SoldAmount__c</fullName>
+        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -626,6 +618,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Verkauftes Produkt</label>
         <length>255</length>
@@ -638,6 +631,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_SoldUnit__c</fullName>
+        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Verkaufseinheit</label>
         <required>false</required>
@@ -652,6 +646,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_TotalRevenue__c</fullName>
+        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue5_RevenuePerUnit__c * MT_VariableRevenue5_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -665,6 +660,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue_Total__c</fullName>
+        <description>Die Summe der Gesamtumsätze der variablen Umsatzbeteiligungskomponenten.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue1_TotalRevenue__c + MT_VariableRevenue2_TotalRevenue__c + MT_VariableRevenue3_TotalRevenue__c + MT_VariableRevenue4_TotalRevenue__c + MT_VariableRevenue5_TotalRevenue__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -679,6 +675,7 @@
     </fields>
     <fields>
         <fullName>MT_Variable_Yield_Type__c</fullName>
+        <description>Variable Umsatzart: Umsatzbeteiligung. Weitere Anforderungen werden noch spezifiziert.</description>
         <externalId>false</externalId>
         <label>Variable Yield Type</label>
         <required>false</required>
@@ -700,6 +697,7 @@
     </fields>
     <fields>
         <fullName>MT_YearlyShiftingRight_Asset__c</fullName>
+        <description>Das vertraglich zugesicherte jährliche Schieberecht des Assets für die BMV- Ausstrahlung. Relevant für die Kontrolle der Vertragserfüllung.</description>
         <externalId>false</externalId>
         <label>jährliches Schieberecht</label>
         <precision>18</precision>
@@ -936,6 +934,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_BeschreibungEquity__c</fullName>
+        <description>Kurze Erläuterung zum Equity- Anteil in diesem Vertrag.</description>
         <externalId>false</externalId>
         <label>Beschreibung Equity</label>
         <required>false</required>
@@ -946,6 +945,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_BeschreibungFillUp__c</fullName>
+        <description>Kurze Erläuterung zum Fill Up- Anteil in diesem Vertrag.</description>
         <externalId>false</externalId>
         <label>Beschreibung Fill-Up</label>
         <required>false</required>
@@ -1174,6 +1174,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_CashZahlung__c</fullName>
+        <description>Die Höhe der Cash-Zahlung als Ergänzung zur Equity.</description>
         <externalId>false</externalId>
         <label>Cash Zahlung</label>
         <precision>18</precision>
@@ -1290,6 +1291,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_EigenerBuchwertinEUR__c</fullName>
+        <description>Der Unternehmensanteil am externen Partner, der für diesen Vertrag gewährt wird.</description>
         <externalId>false</externalId>
         <label>Eigenkapital Buchwert</label>
         <precision>18</precision>
@@ -1314,6 +1316,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_EquityYield__c</fullName>
+        <description>Der errechnete Equity-Yield - (Anteil am externen Partner - Cashzahlung) / BMV TV.</description>
         <externalId>false</externalId>
         <formula>( P7S1_EigenerBuchwertinEUR__c -  P7S1_CashZahlung__c ) /  P7S1_BmvTv__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1327,6 +1330,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_ExitParticipationBeschreibung__c</fullName>
+        <description>Kurze Erläuterung zum Exit Participation- Anteil in diesem Vertrag.</description>
         <externalId>false</externalId>
         <label>Beschreibung Exit Participation</label>
         <required>false</required>
@@ -1337,6 +1341,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_ExitParticipationBetrag__c</fullName>
+        <description>Der Umsatz, der bei dem Ausstieg aus dem Unternehmen erzielt wird.</description>
         <externalId>false</externalId>
         <formula>P7S1_BmvTv__c * P7S1_ExitParticipation__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1350,6 +1355,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_ExitParticipation__c</fullName>
+        <description>Der prozentuale Anteil vom BMV, der bei einem Ausstieg gezahlt wird.</description>
         <externalId>false</externalId>
         <label>Exit Participation</label>
         <precision>18</precision>
@@ -1387,6 +1393,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_FillUpBetrag__c</fullName>
+        <description>Der Umsatz, der durch das Fill Up erzielt wird.</description>
         <externalId>false</externalId>
         <formula>P7S1_BmvTv__c *  P7S1_FillUp__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1400,6 +1407,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_FillUp__c</fullName>
+        <description>Der Fill Up- Yield. Fließt in die Gesamtbewertung des Vertrags ein.</description>
         <externalId>false</externalId>
         <label>Fill-Up</label>
         <precision>4</precision>

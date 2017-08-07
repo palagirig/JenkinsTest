@@ -43,6 +43,7 @@
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Speichert die erwarteten BMV- Werte, die ein Asset in den jeweiligen Monaten für den referenzierten Kampagnentypen erwartet.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -239,6 +240,7 @@
     <fields>
         <fullName>MT_MediaCampaignType__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Der Kampagnentyp, für den die Werte erwartet werden.</description>
         <externalId>false</externalId>
         <label>Media Campaign Type</label>
         <referenceTo>MT_MediaCampaignType__c</referenceTo>
@@ -252,6 +254,7 @@
     <fields>
         <fullName>MT_MediaForecastVersion_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Der Stand des Forecasting, zu dem die Werte gelten.</description>
         <externalId>false</externalId>
         <label>Media Forecast Version</label>
         <referenceTo>MT_ForecastVersion__c</referenceTo>
@@ -297,6 +300,7 @@
     </fields>
     <fields>
         <fullName>MT_Sys_CampaignTypeUnitName__c</fullName>
+        <description>Wird benutzt, um das Sharing der Werte zu ermöglichen. Unfertige Implementierung, es fehlt der Prozess zur Befüllung des Feldes und die Sharing- Regeln.</description>
         <externalId>false</externalId>
         <label>Unit Name</label>
         <length>255</length>

@@ -43,6 +43,7 @@
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Definiert ein Ranking (wird etwa einmal wöchentlich durchgeführt) und die Rahmenbedingungen, in denen das Ranking erstellt wird.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -55,6 +56,7 @@
     <fields>
         <fullName>MT_Date__c</fullName>
         <defaultValue>TODAY()</defaultValue>
+        <description>Das Datum, für das Ranking gilt.</description>
         <externalId>false</externalId>
         <label>Datum</label>
         <required>false</required>
@@ -64,6 +66,7 @@
     </fields>
     <fields>
         <fullName>MT_Potential__c</fullName>
+        <description>Das verfügbare Gesamtvolumen, das maximal ausgestrahlt werden kann.</description>
         <externalId>false</externalId>
         <label>Potenzial</label>
         <precision>18</precision>
@@ -76,6 +79,7 @@
     <fields>
         <fullName>MT_Simulation__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Wenn aktiviert, werden die Ranking-Positionen nicht in die Kampagnen übertragen und keine Buchungsliste erstellt.</description>
         <externalId>false</externalId>
         <label>Simulation</label>
         <trackHistory>false</trackHistory>

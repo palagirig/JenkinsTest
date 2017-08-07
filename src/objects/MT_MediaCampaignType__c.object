@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Speichert die verschiedenen Typen der Kampagnen. Jedes Asset hat seine eigenen Typen und darf auch nur diese verwenden.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -89,6 +90,7 @@
     </fieldSets>
     <fields>
         <fullName>MT_Asset_ref__c</fullName>
+        <description>Das Asset, das diesen Kampagnentypen nutzt.</description>
         <externalId>false</externalId>
         <label>Asset</label>
         <referenceTo>P7S1_Asset__c</referenceTo>
@@ -102,6 +104,7 @@
     </fields>
     <fields>
         <fullName>MT_BMV_SourceField__c</fullName>
+        <description>Für den Import von Ausstrahlungsdatensätzen. Definiert, ob MB1 oder MB3 als BMV importiert wird.</description>
         <externalId>false</externalId>
         <label>BMV Kennzahlen Standard</label>
         <required>true</required>
@@ -126,6 +129,7 @@
     </fields>
     <fields>
         <fullName>MT_ExternalID__c</fullName>
+        <description>Die ID des Typs im Altsystem (KRS).</description>
         <externalId>true</externalId>
         <label>ExternalID</label>
         <precision>18</precision>
@@ -138,6 +142,7 @@
     <fields>
         <fullName>MT_IsActive__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Inaktive Typen können bei der Anlage von Kampagnen nicht mehr genutzt werden (Lookup- Filter)</description>
         <externalId>false</externalId>
         <label>Active</label>
         <trackTrending>false</trackTrending>
@@ -145,6 +150,7 @@
     </fields>
     <fields>
         <fullName>MT_Type__c</fullName>
+        <description>Die Kategorie des Typs (intern / extern)</description>
         <externalId>false</externalId>
         <label>Type</label>
         <required>true</required>

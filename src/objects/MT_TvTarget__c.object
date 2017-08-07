@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Enthält die prozentualen Verteilungen der TV- Ausstrahlungen auf Sender und Zeitschienen, die vertraglich vereinbart wurden. Initial gilt ein Mix für die gesamte Vertragslaufzeit, es kann aber zwischenzeitlich der Mix ab einem Stichmonat geändert werden. Im Reporting werden dann beide Mixe innerhalb ihrer jeweiligen Laufzeit mit den tatsächlichen Ausstrahlungen verglichen.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -349,6 +350,10 @@
     </fieldSets>
     <fields>
         <fullName>MT_MediaCampaign_BMV__c</fullName>
+        <description>VERALTET: Kann gelöscht werden. Im Businessplan wird dieses Feld noch verwendet, sobald das auf das entsprechende Feld der Kampagne umgestellt wurde, wird dieses Feld nicht mehr benötigt.
+
+Alt:
+Zieht das BMV TV von der Kampagne zur Vereinfachung der abhängigen Formeln und Berechnungen.</description>
         <externalId>false</externalId>
         <formula>CASE( MT_Type__c , &quot;TV&quot;,  MT_MediaCampaign_ref__r.MT_BmvTv__c , 0)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -363,9 +368,11 @@
     <fields>
         <fullName>MT_MediaCampaign_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Die Kampagne, zu der diese Zielvorgaben gehören.</description>
         <externalId>false</externalId>
         <label>Media Campaign</label>
         <referenceTo>MT_MediaCampaign__c</referenceTo>
+        <relationshipLabel>TV Zielvorgaben</relationshipLabel>
         <relationshipName>TvTargets</relationshipName>
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -376,6 +383,7 @@
     <fields>
         <fullName>MT_SendershareContractCommitted__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Wenn aktiviert, müssen alle Sendershare- Felder ausgefüllt werden.</description>
         <externalId>false</externalId>
         <label>Sendershare vertraglich committed</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -568,6 +576,7 @@
     <fields>
         <fullName>MT_TimelinesharesContractCommitted__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Wenn aktiviert, müssen alle Zeitschienenshares ausgefüllt werden.</description>
         <externalId>false</externalId>
         <label>Zeitschienenshares vertraglich committed</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -603,6 +612,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsDokuMax__c</fullName>
+        <description>Maximum share of the media delivery on this TV channel</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins Doku Max</label>
         <precision>18</precision>
@@ -615,6 +625,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsDokuMin__c</fullName>
+        <description>Minimum share of the media delivery on this TV channel</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins Doku Min</label>
         <precision>18</precision>
@@ -835,6 +846,10 @@
     </fields>
     <fields>
         <fullName>MT_Type__c</fullName>
+        <description>VERALTET: Wird nicht benötigt und kann gelöscht werden. Alle Abhängigkeiten zu diesem Feld brauchen die Unterscheidung nicht mehr, da das gesamte Objekt nur noch für TV gilt.
+
+Alt:
+Unterscheidet den Typ des Bausteins nach TV, Digital oder DooH.</description>
         <externalId>false</externalId>
         <label>Type</label>
         <required>true</required>
@@ -864,7 +879,7 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <label>TV Zielvorgabe</label>
+    <label>TV Target</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -880,7 +895,7 @@
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>TV Zielvorgaben</pluralLabel>
+    <pluralLabel>TV Targets</pluralLabel>
     <searchLayouts>
         <excludedStandardButtons>New</excludedStandardButtons>
     </searchLayouts>

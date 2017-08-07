@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Planungsgrundlage für die Ausstrahlung eines Teils (oder des gesamten) BMV eines Restwerbeplatzvertrags. Enthält Informationen zur Ausstrahlung und Umsätzen, um die Planung und späteres Ranking zu ermöglichen.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -169,6 +170,7 @@
     </fieldSets>
     <fields>
         <fullName>MT_ActualMonthlyBMV_sum__c</fullName>
+        <description>Die Summe des über die Monat(splän)e ausgestrahlten Volumens.</description>
         <externalId>false</externalId>
         <label>Sum of BMV Monthly Plan</label>
         <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_SumBMV__c</summarizedField>
@@ -180,6 +182,7 @@
     </fields>
     <fields>
         <fullName>MT_BMVDooH__c</fullName>
+        <description>Das BMV DooH, das in dieser Kampagne ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>BMV DooH</label>
         <precision>18</precision>
@@ -192,6 +195,7 @@
     </fields>
     <fields>
         <fullName>MT_BarterYield__c</fullName>
+        <description>Der ermittelte Barter-Yield für diese Kampagne (Netto-Barter-Volumen / BMV TV)</description>
         <externalId>false</externalId>
         <formula>IF(MT_BmvTv__c = 0, 0, MT_NetBarterVolume__c / MT_BmvTv__c)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -205,6 +209,7 @@
     </fields>
     <fields>
         <fullName>MT_BmvDigital__c</fullName>
+        <description>Das BMV Digital, das in dieser Kampagne ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>BMV Digital</label>
         <precision>18</precision>
@@ -217,6 +222,7 @@
     </fields>
     <fields>
         <fullName>MT_BmvTotalFix__c</fullName>
+        <description>Das BMV Gesamt, das in dieser Kampagne ausgestrahlt werden soll, ermittelt als Summe aus den drei Bausteinen TV, Digital und DooH.</description>
         <externalId>false</externalId>
         <formula>MT_BmvTv__c + MT_BmvDigital__c + MT_BMVDooH__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -230,6 +236,7 @@
     </fields>
     <fields>
         <fullName>MT_BmvTvAsset__c</fullName>
+        <description>Der Anteil des internen Partners am BMV, ermittelt aus BMV TV abzüglich des Anteils des externen Partners.</description>
         <externalId>false</externalId>
         <formula>MT_BmvTv__c - MT_BmvTvCustomerIntegration__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -243,6 +250,7 @@
     </fields>
     <fields>
         <fullName>MT_BmvTvCustomerIntegration__c</fullName>
+        <description>Die Höhe des BMV des externen Partners an dieser Kampagne.</description>
         <externalId>false</externalId>
         <label>BMV TV Kundenintegration</label>
         <precision>18</precision>
@@ -269,6 +277,7 @@
     </fields>
     <fields>
         <fullName>MT_CashZahlung__c</fullName>
+        <description>Die Cash-Zahlung des externen Partners in Ergänzung zum Equity-Anteil.</description>
         <externalId>false</externalId>
         <label>Cash Zahlung</label>
         <precision>18</precision>
@@ -281,6 +290,7 @@
     </fields>
     <fields>
         <fullName>MT_ContractEnddate__c</fullName>
+        <description>Das Ende der vertraglichen Laufzeit für diese Kampagne. Die benötigten Monatspläne zu der Kampagne werden anhand dieses Datums ermittelt und per Trigger erstellt.</description>
         <externalId>false</externalId>
         <label>Vertragsende</label>
         <required>false</required>
@@ -291,6 +301,7 @@
     </fields>
     <fields>
         <fullName>MT_ContractStartdate__c</fullName>
+        <description>Der Anfang der vertraglichen Laufzeit für diese Kampagne. Die benötigten Monatspläne zu der Kampagne werden anhand dieses Datums ermittelt und per Trigger erstellt.</description>
         <externalId>false</externalId>
         <label>Vertragsbeginn</label>
         <required>false</required>
@@ -301,6 +312,7 @@
     </fields>
     <fields>
         <fullName>MT_EigenerBuchwertinEUR__c</fullName>
+        <description>Der Anteil am Unternehmen des externen Partners.</description>
         <externalId>false</externalId>
         <label>Eigenkapital Buchwert</label>
         <precision>18</precision>
@@ -313,6 +325,7 @@
     </fields>
     <fields>
         <fullName>MT_ExitParticipation__c</fullName>
+        <description>Der prozentuale Anteil am BMV, der beim Ausstieg erzielt wird.</description>
         <externalId>false</externalId>
         <label>Exit Participation</label>
         <precision>18</precision>
@@ -325,6 +338,7 @@
     </fields>
     <fields>
         <fullName>MT_FillUp__c</fullName>
+        <description>Fill Up-Yield, der für diese Kampagne vereinbart wurde.</description>
         <externalId>false</externalId>
         <label>Fill-Up</label>
         <precision>4</precision>
@@ -337,6 +351,7 @@
     </fields>
     <fields>
         <fullName>MT_FixRevenue_MonthlyPayment__c</fullName>
+        <description>Eingabemöglichkeit für die fixe monatliche Zahlung, falls bei fixer Umsatzart &quot;Zahlung&quot; ausgewählt wurde.</description>
         <externalId>false</externalId>
         <label>Fixe monatliche Einnahmen</label>
         <precision>18</precision>
@@ -349,6 +364,7 @@
     </fields>
     <fields>
         <fullName>MT_FixRevenue_Type__c</fullName>
+        <description>Die fixe Umsatzart, die in dieser Kampagne zum Tragen kommt: Keine, Yield oder Zahlung.</description>
         <externalId>false</externalId>
         <label>Fixe Umsatzart</label>
         <required>false</required>
@@ -363,6 +379,7 @@
     </fields>
     <fields>
         <fullName>MT_FixRevenue_Yield__c</fullName>
+        <description>Liefert den Fix Yield, falls bei fixer Umsatzart &quot;Yield&quot; ausgewählt wurde, sonst 0.</description>
         <externalId>false</externalId>
         <formula>IF(ISPICKVAL(MT_FixRevenue_Type__c, &quot;Yield&quot;), MT_YieldGesamtFixTV__c, 0)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -376,6 +393,7 @@
     </fields>
     <fields>
         <fullName>MT_GrossBarterVolume__c</fullName>
+        <description>Das Brutto-Barter-Volumen zur Dokumentation. Weitere Berechnungen erfolgen mit dem Netto-Barter-Volumen.</description>
         <externalId>false</externalId>
         <label>Brutto-Barter-Volumen</label>
         <precision>18</precision>
@@ -389,6 +407,7 @@
     <fields>
         <fullName>MT_HasMediaDigital__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Aktiviert den Baustein Digital für diese Kampagne.</description>
         <externalId>false</externalId>
         <label>Digital (71M)</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -399,6 +418,7 @@
     <fields>
         <fullName>MT_HasMediaDooH__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Aktiviert den Baustein DooH für diese Kampagne.</description>
         <externalId>false</externalId>
         <label>DooH (7Screen)</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -409,6 +429,7 @@
     <fields>
         <fullName>MT_HasMediaTV__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Aktiviert den Baustein TV für diese Kampagne.</description>
         <externalId>false</externalId>
         <label>TV</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -418,6 +439,7 @@
     </fields>
     <fields>
         <fullName>MT_IMAMail__c</fullName>
+        <description>Wird per Prozess gefüllt, enthält die E-Mail- Adresse aus dem zugehörigen Asset (Kampagnentyp -&gt; Asset), um bei Anlage einer internen Kampagne eine Informationsmail zu schicken.</description>
         <externalId>false</externalId>
         <label>IMA Verteiler</label>
         <required>false</required>
@@ -430,6 +452,10 @@
     <fields>
         <fullName>MT_IsContractSigned__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>VERALTET: Muss auf die Opportunity Freigabe verschoben werden, da diese den Gesamtvertrag abbildet.
+
+Alt:
+Zeigt an, dass der Vertrag unterschrieben wurde. Darf nur gesetzt werden, wenn die Kampagne vorher freigegeben wurde.</description>
         <externalId>false</externalId>
         <label>Contract signed?</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -440,6 +466,7 @@
     <fields>
         <fullName>MT_IsOverbooking__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Aktiviert die Felder zur Pflege von Overbooking in der Flightplanung. Kann nur bei internen Kampagnen gesetzt werden.</description>
         <externalId>false</externalId>
         <label>Overbooking?</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -450,6 +477,7 @@
     <fields>
         <fullName>MT_KRSID__c</fullName>
         <caseSensitive>false</caseSensitive>
+        <description>Enthält die ID aus dem Altsystem (KRS), wird beim Import befüllt.</description>
         <externalId>true</externalId>
         <label>KRS ID</label>
         <length>255</length>
@@ -463,6 +491,7 @@
     <fields>
         <fullName>MT_MediaCampaignType_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Der Typ dieser Kampagne. Steuert Konfigurationsparameter, z.B. Gewichtungsfaktoren, bei.</description>
         <externalId>false</externalId>
         <label>Media Campaign Type</label>
         <lookupFilter>
@@ -507,6 +536,7 @@
     </fields>
     <fields>
         <fullName>MT_Mn3TvCustomerIntegration__c</fullName>
+        <description>Das MN3, das der externe Partner für den TV- Anteil zahlt.</description>
         <externalId>false</externalId>
         <label>MN3 TV Kundenintegration</label>
         <precision>18</precision>
@@ -519,6 +549,7 @@
     </fields>
     <fields>
         <fullName>MT_NetBarterVolume__c</fullName>
+        <description>Das Netto-Barter-Volumen, auf Basis dessen der Yield ermittelt wird.</description>
         <externalId>false</externalId>
         <label>Netto-Barter-Volumen</label>
         <precision>18</precision>
@@ -531,6 +562,7 @@
     </fields>
     <fields>
         <fullName>MT_OppApp_HasMediaBarter__c</fullName>
+        <description>Zeigt an, ob Barter auf der Opportunity Freigabe aktiviert ist. Wird in weiteren Formeln und im Businessplan verwendet, um Informationen zum Barter anzuzeigen.</description>
         <externalId>false</externalId>
         <formula>MT_OpportunityApproval_ref__r.P7S1_HasMediaBarter__c</formula>
         <label>Barter</label>
@@ -540,6 +572,7 @@
     </fields>
     <fields>
         <fullName>MT_OppApp_HasMediaPartBarter__c</fullName>
+        <description>Zeigt an, ob Teil-Barter auf der Opportunity Freigabe aktiviert ist. Wird in weiteren Formeln und im Businessplan verwendet, um Informationen zum Barter anzuzeigen.</description>
         <externalId>false</externalId>
         <formula>MT_OpportunityApproval_ref__r.P7S1_HasMediaPartBarter__c</formula>
         <label>Teil-Barter</label>
@@ -549,6 +582,7 @@
     </fields>
     <fields>
         <fullName>MT_OpportunityApprovalStatus__c</fullName>
+        <description>Liefert den aktuellen Freigabestatus der Opportunity Freigabe, zur einfacheren Verarbeitung in Apex- Klassen.</description>
         <externalId>false</externalId>
         <formula>TEXT(MT_OpportunityApproval_ref__r.P7S1_ApprovalState__c)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -562,6 +596,7 @@
     <fields>
         <fullName>MT_OpportunityApproval_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Die Referenz zur Opportunity Freigabe, muss mit der referenzierten Opportunity übereinstimmen.</description>
         <externalId>false</externalId>
         <label>Opportunity Freigabe</label>
         <referenceTo>P7S1_OpportunityApproval__c</referenceTo>
@@ -575,6 +610,7 @@
     </fields>
     <fields>
         <fullName>MT_Opportunity_AccountId__c</fullName>
+        <description>Die ID des Accounts, zu dem die Opportunity gehört, wird im Flightplan verwendet, um die neu angelegten Produkte richtig zuzuordnen.</description>
         <externalId>false</externalId>
         <formula>CASESAFEID(MT_Opportunity_ref__r.AccountId)</formula>
         <label>Opportunity Account Id</label>
@@ -587,6 +623,7 @@
     <fields>
         <fullName>MT_Opportunity_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Die Opportunity, zu der die Kampagne gehört. Per Validierungsregel wird sichergestellt, dass die Opportunity und Opportunity Freigabe zueinander gehören. Aus der Opportunity werden weitere Informationen gezogen, der Zugriff wird mit der direkten Referenz vereinfacht.</description>
         <externalId>false</externalId>
         <label>Opportunity</label>
         <referenceTo>Opportunity</referenceTo>
@@ -600,6 +637,7 @@
     </fields>
     <fields>
         <fullName>MT_PlannedMonthlyBMV_sum__c</fullName>
+        <description>Die Summe des geplanten BMV aus den Monatsplänen.</description>
         <externalId>false</externalId>
         <label>Planned Amount</label>
         <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_TotalBMV__c</summarizedField>
@@ -611,6 +649,7 @@
     </fields>
     <fields>
         <fullName>MT_PlannedMonthlySponsoringBMV_sum__c</fullName>
+        <description>Die Summe des geplanten Sponsoring- BMV aus den Monatsplänen.</description>
         <externalId>false</externalId>
         <label>Sponsoring Gesamt Geplantes BMV</label>
         <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_BMVSponsoring__c</summarizedField>
@@ -622,6 +661,7 @@
     </fields>
     <fields>
         <fullName>MT_PlannedMonthlySpotBmv__c</fullName>
+        <description>Summe des geplanten Spot- BMV aus den Monatsplänen.</description>
         <externalId>false</externalId>
         <label>Spot Gesamt Geplantes BMV</label>
         <summarizedField>MT_MediaCampaignMonthlyPlan__c.MT_BMVSpot__c</summarizedField>
@@ -634,6 +674,7 @@
     <fields>
         <fullName>MT_Responsible_IM_Agent__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
+        <description>Der für diese Kampagne verantwortliche Benutzer von der IMA. Wird für Approval Prozesse und Benachrichtigungen im Flightplan verwendet.</description>
         <externalId>false</externalId>
         <label>Internal Media Agency Contact</label>
         <lookupFilter>
@@ -656,6 +697,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeTVEnd__c</fullName>
+        <description>Ende des Ausstrahlungszeitraums für den TV- Baustein.</description>
         <externalId>false</externalId>
         <label>Ende Laufzeit (TV)</label>
         <required>false</required>
@@ -666,6 +708,7 @@
     </fields>
     <fields>
         <fullName>MT_RunTimeTVStart__c</fullName>
+        <description>Start des Ausstrahlungszeitraums für den TV- Baustein.</description>
         <externalId>false</externalId>
         <label>Start Laufzeit (TV)</label>
         <required>false</required>
@@ -676,6 +719,10 @@
     </fields>
     <fields>
         <fullName>MT_SYS_AccountOwnerUnit__c</fullName>
+        <description>VERALTET: Wird nicht mehr benötigt und kann gelöscht werden, zusammen mit dem Prozess zur Befüllung. Die Kampagne erbt durch das Master/Detail zur Opportunity Freigabe die Sichtbarkeitseinstellungen.
+
+Alt:
+Enthält die Unit des über die Opportunity zugeordneten Account- Inhabers. Wird per Prozess gefüllt und für die Aktivierung des Sharings genutzt.</description>
         <externalId>false</externalId>
         <label>Sys Account Owner Unit</label>
         <length>255</length>
@@ -688,6 +735,7 @@
     </fields>
     <fields>
         <fullName>MT_SpotAssetanteil__c</fullName>
+        <description>Der prozentuale Anteil des internen Partners an der Motivlänge, ermittelt aus 100% abzüglich des Anteils des externen Partners.</description>
         <externalId>false</externalId>
         <formula>1 - MT_SpotKundenintegrationsanteil__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -701,6 +749,7 @@
     </fields>
     <fields>
         <fullName>MT_SpotKundenintegrationsanteil__c</fullName>
+        <description>Der prozentuale Anteil des externen Partners an der Motivlänge.</description>
         <externalId>false</externalId>
         <formula>IF(MT_TvSpotLength__c = 0, 0, (MT_TvSpotLengthCustomer__c / MT_TvSpotLength__c))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -714,6 +763,7 @@
     </fields>
     <fields>
         <fullName>MT_Status__c</fullName>
+        <description>Der aktuelle Status der Kampagne (Entwurf, Freigegeben, Abgeschlossen, Abgebrochen)</description>
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
@@ -771,6 +821,10 @@
     </fields>
     <fields>
         <fullName>MT_Sys_BuildingBlockMatrix__c</fullName>
+        <description>VERALTET: Kann gelöscht werden. Die Prüfung im Trigger steuert aktuell ausschließlich die Anlage des initialen TV- Zielvorgaben- Datensatzes, eine Löschung sollte aus vertraglichen Gründen nicht möglich sein. Daher wird auch dieses Felder nicht mehr benötigt.
+
+Alt:
+Stellt einen dreistelligen Zahlencode bereit, mit dem identifiziert wird, welche Bausteine auf der Kampagne aktiviert sind. Bei Änderungen an diesem Code wird Triggerlogik ausgeführt, die die Bausteine anlegt / löscht.</description>
         <externalId>false</externalId>
         <formula>IF( MT_HasMediaTV__c , &apos;1&apos;, &apos;0&apos;)+ IF(  MT_HasMediaDigital__c  , &apos;1&apos;, &apos;0&apos;) + IF(  MT_HasMediaDooH__c  , &apos;1&apos;, &apos;0&apos;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -783,6 +837,7 @@
     </fields>
     <fields>
         <fullName>MT_Sys_ContractOrTVRuntimeEnd__c</fullName>
+        <description>Liefert das Ende der Vertragslaufzeit oder, falls dieses leer ist, das Ende der TV Laufzeit. Wird genutzt, da die Vertragslaufzeit optional ist, um für die Erstellung der Monatspläne einen Endzeitpunkt zu haben.</description>
         <externalId>false</externalId>
         <formula>IF(ISBLANK(MT_ContractEnddate__c), MT_RunTimeTVEnd__c, MT_ContractEnddate__c)</formula>
         <label>Sys Contract Or TV Runtime End</label>
@@ -793,6 +848,7 @@
     </fields>
     <fields>
         <fullName>MT_Sys_ContractOrTVRuntimeStart__c</fullName>
+        <description>Liefert den Beginn der Vertragslaufzeit oder, falls diese leer ist, den Beginn der TV Laufzeit. Wird genutzt, da die Vertragslaufzeit optional ist, um für die Erstellung der Monatspläne einen Startzeitpunkt zu haben.</description>
         <externalId>false</externalId>
         <formula>IF(ISBLANK(MT_ContractStartdate__c), MT_RunTimeTVStart__c, MT_ContractStartdate__c)</formula>
         <label>Sys Contract Or TV Runtime Start</label>
@@ -817,6 +873,7 @@
     </fields>
     <fields>
         <fullName>MT_Sys_OppApp_OpportunityRefId__c</fullName>
+        <description>Liefert die ID der von der Opportunity Freigabe referenzierten Opportunity. Wird genutzt, um diese Referenz per Triggerlogik ebenfalls in der Kampagne zu hinterlegen.</description>
         <externalId>false</externalId>
         <formula>MT_OpportunityApproval_ref__r.P7S1_Opportunity__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -829,6 +886,7 @@
     </fields>
     <fields>
         <fullName>MT_TvSpotLengthAsset__c</fullName>
+        <description>Anteil des internen Partners an der Motivlänge, ermittelt aus der Gesamtlänge abzüglich des Anteils des externen Partners.</description>
         <externalId>false</externalId>
         <formula>MT_TvSpotLength__c - MT_TvSpotLengthCustomer__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -843,6 +901,7 @@
     </fields>
     <fields>
         <fullName>MT_TvSpotLengthCustomer__c</fullName>
+        <description>Der Anteil des externen Partners an der Motivlänge.</description>
         <externalId>false</externalId>
         <label>Kundenanteil Spotlänge (in Sekunden)</label>
         <precision>10</precision>
@@ -856,6 +915,7 @@
     </fields>
     <fields>
         <fullName>MT_TvSpotLength__c</fullName>
+        <description>Die Länge der Motive, die bei dieser Kampagne ausgestrahlt werden sollen.</description>
         <externalId>false</externalId>
         <label>Gesamtspotlänge (in Sekunden)</label>
         <precision>10</precision>
@@ -869,6 +929,7 @@
     </fields>
     <fields>
         <fullName>MT_Type__c</fullName>
+        <description>Liefert den Namen des referenzierten Kampagnentypen, zur Vereinfachung der Einbindung (z.B. in Cockpit- Seiten, die nur die Kampagne laden).</description>
         <externalId>false</externalId>
         <formula>MT_MediaCampaignType_ref__r.Name</formula>
         <label>Type</label>
@@ -880,6 +941,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_RevenuePerUnit__c</fullName>
+        <description>Der vereinbarte Umsatz pro Einheit für die Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -892,6 +954,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_SoldAmount__c</fullName>
+        <description>Die erwartete Anzahl verkaufter Einheiten für die Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -905,6 +968,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts für die Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Verkauftes Produkt</label>
         <length>255</length>
@@ -917,6 +981,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_SoldUnit__c</fullName>
+        <description>Die Verkaufseinheit für die Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 1 - Verkaufseinheit</label>
         <required>false</required>
@@ -931,6 +996,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue1_TotalRevenue__c</fullName>
+        <description>Der berechnete Gesamtumsatz für die Umsatzbeteiligungskomponente 1.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue1_RevenuePerUnit__c * MT_VariableRevenue1_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -944,6 +1010,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_RevenuePerUnit__c</fullName>
+        <description>Der vereinbarte Umsatz pro Einheit für die Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -956,6 +1023,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_SoldAmount__c</fullName>
+        <description>Die erwartete Anzahl verkaufter Einheiten für die Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -969,6 +1037,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts für die Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Verkauftes Produkt</label>
         <length>255</length>
@@ -981,6 +1050,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_SoldUnit__c</fullName>
+        <description>Die Verkaufseinheit für die Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 2 - Verkaufseinheit</label>
         <required>false</required>
@@ -995,6 +1065,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue2_TotalRevenue__c</fullName>
+        <description>Der berechnete Gesamtumsatz für die Umsatzbeteiligungskomponente 2.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue2_RevenuePerUnit__c * MT_VariableRevenue2_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1008,6 +1079,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_RevenuePerUnit__c</fullName>
+        <description>Der vereinbarte Umsatz pro Einheit für die Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -1020,6 +1092,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_SoldAmount__c</fullName>
+        <description>Die erwartete Anzahl verkaufter Einheiten für die Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -1033,6 +1106,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts für die Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Verkauftes Produkt</label>
         <length>255</length>
@@ -1045,6 +1119,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_SoldUnit__c</fullName>
+        <description>Die Verkaufseinheit für die Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 3 - Verkaufseinheit</label>
         <required>false</required>
@@ -1059,6 +1134,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue3_TotalRevenue__c</fullName>
+        <description>Der berechnete Gesamtumsatz für die Umsatzbeteiligungskomponente 3.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue3_RevenuePerUnit__c * MT_VariableRevenue3_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1072,6 +1148,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_RevenuePerUnit__c</fullName>
+        <description>Der vereinbarte Umsatz pro Einheit für die Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -1084,6 +1161,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_SoldAmount__c</fullName>
+        <description>Die erwartete Anzahl verkaufter Einheiten für die Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -1097,6 +1175,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts für die Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Verkauftes Produkt</label>
         <length>255</length>
@@ -1109,6 +1188,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_SoldUnit__c</fullName>
+        <description>Die Verkaufseinheit für die Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 4 - Verkaufseinheit</label>
         <required>false</required>
@@ -1123,6 +1203,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue4_TotalRevenue__c</fullName>
+        <description>Der berechnete Gesamtumsatz für die Umsatzbeteiligungskomponente 4.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue4_RevenuePerUnit__c * MT_VariableRevenue4_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1136,6 +1217,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_RevenuePerUnit__c</fullName>
+        <description>Der vereinbarte Umsatz pro Einheit für die Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Umsatz pro Einheit</label>
         <precision>18</precision>
@@ -1148,6 +1230,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_SoldAmount__c</fullName>
+        <description>Die erwartete Anzahl verkaufter Einheiten für die Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Verkaufte Anzahl</label>
         <precision>18</precision>
@@ -1161,6 +1244,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_SoldProduct__c</fullName>
+        <description>Die Bezeichnung des verkauften Produkts für die Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Verkauftes Produkt</label>
         <length>255</length>
@@ -1173,6 +1257,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_SoldUnit__c</fullName>
+        <description>Die Verkaufseinheit für die Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <label>Var. Umsatz 5 - Verkaufseinheit</label>
         <required>false</required>
@@ -1187,6 +1272,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue5_TotalRevenue__c</fullName>
+        <description>Der berechnete Gesamtumsatz für die Umsatzbeteiligungskomponente 5.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue5_RevenuePerUnit__c * MT_VariableRevenue5_SoldAmount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1200,6 +1286,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue_ConsiderationPeriod__c</fullName>
+        <description>Der ausgewählte Betrachtungszeitraum für den variablen Yield. Steuert die Berechnung des Yields in Kampagnen, in denen die Umsatzbeteiligung nicht monatlich abgerechnet wird.</description>
         <externalId>false</externalId>
         <label>Betrachtungszeitraum Variabler Yield</label>
         <required>false</required>
@@ -1214,6 +1301,7 @@
     </fields>
     <fields>
         <fullName>MT_VariableRevenue_TotalRevenue__c</fullName>
+        <description>Der berechnete Gesamtumsatz für alle fünf Umsatzbeteiligungskomponenten.</description>
         <externalId>false</externalId>
         <formula>MT_VariableRevenue1_TotalRevenue__c + MT_VariableRevenue2_TotalRevenue__c + MT_VariableRevenue3_TotalRevenue__c + MT_VariableRevenue4_TotalRevenue__c + MT_VariableRevenue5_TotalRevenue__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -1227,6 +1315,7 @@
     </fields>
     <fields>
         <fullName>MT_YieldGesamtFixTV__c</fullName>
+        <description>Berechnet den Gesamt-Yield für TV (MN3 / BMV)</description>
         <externalId>false</externalId>
         <formula>IF(MT_BmvTv__c = 0, 0, (MT_Mn3TvCustomerIntegration__c / MT_BmvTv__c))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

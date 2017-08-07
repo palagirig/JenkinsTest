@@ -43,7 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Track motive distribution within a campaign campaign</description>
+    <description>Track motive distribution within a campaign.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -510,6 +510,7 @@
     </fieldSets>
     <fields>
         <fullName>MT_BMVAmount__c</fullName>
+        <description>Das Volumen dieses Flights, wird im Businessplan gepflegt.</description>
         <externalId>false</externalId>
         <label>BMV Amount</label>
         <precision>18</precision>
@@ -522,6 +523,7 @@
     </fields>
     <fields>
         <fullName>MT_DesiredEnvironment__c</fullName>
+        <description>Das Wunschumfeld, in dem die Motive dieses Flights ausgestrahlt werden sollen.</description>
         <externalId>false</externalId>
         <label>Wunschumfeld</label>
         <length>32768</length>
@@ -533,6 +535,7 @@
     </fields>
     <fields>
         <fullName>MT_EndDate__c</fullName>
+        <description>Enddatum dieses Flights, muss innerhalb des Monats(plans) liegen, dem der Flight zugeordnet ist, bzw. innerhalb der TV- und Vertragslaufzeit der Kampagne.</description>
         <externalId>false</externalId>
         <label>To</label>
         <required>true</required>
@@ -543,6 +546,7 @@
     </fields>
     <fields>
         <fullName>MT_ExclusionCriteria__c</fullName>
+        <description>Freitext für Ausschlusskriterien, die bei der Platzierung der Motive dieses Flights berücksichtigt werden sollen.</description>
         <externalId>false</externalId>
         <label>Ausschlusskriterium</label>
         <length>255</length>
@@ -555,6 +559,7 @@
     </fields>
     <fields>
         <fullName>MT_MediaBuildingBlockMonthlyPlan_ref__c</fullName>
+        <description>Der Monat(splan), zu dem der Flight gehört.</description>
         <externalId>false</externalId>
         <label>Media Campaign Monthly Plan</label>
         <referenceTo>MT_MediaCampaignMonthlyPlan__c</referenceTo>
@@ -570,6 +575,7 @@
     </fields>
     <fields>
         <fullName>MT_OverbookingComment__c</fullName>
+        <description>Kommentar zur Verwendung des Overbooking- Volumens.</description>
         <externalId>false</externalId>
         <label>Overbooking Kommentar</label>
         <required>false</required>
@@ -581,6 +587,7 @@
     <fields>
         <fullName>MT_OverbookingVolume__c</fullName>
         <defaultValue>0</defaultValue>
+        <description>Das Overbooking- Volumen, dass für diesen (Spot-) Flight eingesetzt werden darf.</description>
         <externalId>false</externalId>
         <label>Overbooking</label>
         <precision>18</precision>
@@ -608,6 +615,7 @@
     </fields>
     <fields>
         <fullName>MT_SpotAllocationHint__c</fullName>
+        <description>Hinweise zur Spot- Aufteilung, die bei der Buchung berücksichtigt werden müssen.</description>
         <externalId>false</externalId>
         <label>Hinweis Spotaufteilung</label>
         <length>255</length>
@@ -620,6 +628,7 @@
     </fields>
     <fields>
         <fullName>MT_StartDate__c</fullName>
+        <description>Startdatum dieses Flights, muss innerhalb des Monats(plans) liegen, dem der Flight zugeordnet ist, bzw. innerhalb der TV- und Vertragslaufzeit der Kampagne.</description>
         <externalId>false</externalId>
         <label>From</label>
         <required>true</required>
@@ -630,6 +639,7 @@
     </fields>
     <fields>
         <fullName>MT_TargetGroup__c</fullName>
+        <description>Die Zielgruppe der Motives dieses Flights.</description>
         <externalId>false</externalId>
         <label>Zielgruppe</label>
         <required>false</required>
@@ -840,6 +850,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare01000600Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 01:00 - 06:00 Max</label>
         <precision>18</precision>
@@ -852,6 +863,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare01000600Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 01:00 - 06:00 Min</label>
         <precision>18</precision>
@@ -864,6 +876,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare06000900Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 06:00 - 09:00 Max</label>
         <precision>18</precision>
@@ -876,6 +889,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare06000900Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 06:00 - 09:00 Min</label>
         <precision>18</precision>
@@ -888,6 +902,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare09001300Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 09:00 - 13:00 Max</label>
         <precision>18</precision>
@@ -900,6 +915,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare09001300Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 09:00 - 13:00 Min</label>
         <precision>18</precision>
@@ -912,6 +928,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare13001700Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 13:00 - 17:00 Max</label>
         <precision>18</precision>
@@ -924,6 +941,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare13001700Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 13:00 - 17:00 Min</label>
         <precision>18</precision>
@@ -936,6 +954,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare17002000Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 17:00 - 20:00 Max</label>
         <precision>18</precision>
@@ -948,6 +967,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare17002000Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 17:00 - 20:00 Min</label>
         <precision>18</precision>
@@ -961,6 +981,7 @@
     <fields>
         <fullName>MT_TimeShare20002300Max__c</fullName>
         <defaultValue>0</defaultValue>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 20:00 - 23:00 Max</label>
         <precision>18</precision>
@@ -973,6 +994,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare20002300Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 20:00 - 23:00 Min</label>
         <precision>18</precision>
@@ -985,6 +1007,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare23000100Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 23:00 - 01:00 Max</label>
         <precision>18</precision>
@@ -997,6 +1020,7 @@
     </fields>
     <fields>
         <fullName>MT_TimeShare23000100Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der in dieser Zeitschiene ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Time 23:00 - 01:00 Min</label>
         <precision>18</precision>
@@ -1009,6 +1033,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsClassicsMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins CLASSICS Max</label>
         <precision>18</precision>
@@ -1021,6 +1046,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsClassicsMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins CLASSICS Min</label>
         <precision>18</precision>
@@ -1033,6 +1059,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsDokuMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins Doku Max</label>
         <precision>18</precision>
@@ -1045,6 +1072,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsDokuMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins Doku Min</label>
         <precision>18</precision>
@@ -1057,6 +1085,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins Max</label>
         <precision>18</precision>
@@ -1069,6 +1098,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareKabelEinsMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel kabel eins Min</label>
         <precision>18</precision>
@@ -1081,6 +1111,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareProSiebenFunMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel ProSieben FUN Max</label>
         <precision>18</precision>
@@ -1093,6 +1124,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareProSiebenFunMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel ProSieben FUN Min</label>
         <precision>18</precision>
@@ -1105,6 +1137,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareProSiebenMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel ProSieben Max</label>
         <precision>18</precision>
@@ -1117,6 +1150,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareProSiebenMaxxMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel ProSieben MAXX Max</label>
         <precision>18</precision>
@@ -1129,6 +1163,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareProSiebenMaxxMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel ProSieben MAXX Min</label>
         <precision>18</precision>
@@ -1141,6 +1176,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareProSiebenMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel ProSieben Min</label>
         <precision>18</precision>
@@ -1153,6 +1189,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSat1EmotionsMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel SAT.1 emotions Max</label>
         <precision>18</precision>
@@ -1165,6 +1202,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSat1EmotionsMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel SAT.1 emotions Min</label>
         <precision>18</precision>
@@ -1177,6 +1215,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSat1GoldMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel SAT.1 Gold Max</label>
         <precision>18</precision>
@@ -1189,6 +1228,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSat1GoldMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel SAT.1 Gold Min</label>
         <precision>18</precision>
@@ -1201,6 +1241,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSat1Max__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel SAT.1 Max</label>
         <precision>18</precision>
@@ -1213,6 +1254,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSat1Min__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel SAT.1 Min</label>
         <precision>18</precision>
@@ -1225,6 +1267,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSixxMax__c</fullName>
+        <description>Der maximale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel sixx Max</label>
         <precision>18</precision>
@@ -1237,6 +1280,7 @@
     </fields>
     <fields>
         <fullName>MT_TvShareSixxMin__c</fullName>
+        <description>Der minimale Anteil des Volumens, der auf diesem Sender ausgestrahlt werden soll.</description>
         <externalId>false</externalId>
         <label>Share Channel sixx Min</label>
         <precision>18</precision>

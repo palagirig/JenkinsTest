@@ -16,10 +16,6 @@
         <relationshipLabel><!-- Opportunity Freigaben --></relationshipLabel>
     </fields>
     <fields>
-        <label>Accountinhaber-Freigaben (TODEL)</label>
-        <name>MT_Account_Owner_Approvals__c</name>
-    </fields>
-    <fields>
         <label><!-- Interner Partner (Asset) --></label>
         <name>MT_Asset_ref__c</name>
         <relationshipLabel><!-- Opportunity Freigaben --></relationshipLabel>
@@ -43,14 +39,6 @@
     <fields>
         <label><!-- monatliches Schieberecht --></label>
         <name>MT_MonthlyShiftingRight_Asset__c</name>
-    </fields>
-    <fields>
-        <label>Opportunity ID</label>
-        <name>MT_OpportunityId__c</name>
-    </fields>
-    <fields>
-        <label>Opportunityname</label>
-        <name>MT_OpportunityName__c</name>
     </fields>
     <fields>
         <label><!-- Ende Laufzeit (Digital) --></label>
@@ -119,10 +107,6 @@
     <fields>
         <label><!-- SLM Abweichung --></label>
         <name>MT_SLMDifference__c</name>
-    </fields>
-    <fields>
-        <label><!-- SoundBoard Approvals TODEL --></label>
-        <name>MT_SoundBoard_Approvals__c</name>
     </fields>
     <fields>
         <label><!-- MT_Sys_ApprovalSubmittedFromCampaign --></label>

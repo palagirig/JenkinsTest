@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Definiert ein Werbe-Motiv, das im TV ausgestrahlt werden kann. Die Datensätze werden über die Flightplanung gepflegt.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -124,6 +125,7 @@
     </fieldSets>
     <fields>
         <fullName>MT_AdvertisedMediaProduct_ref__c</fullName>
+        <description>Das Produkt, das mit dem Motiv beworben wird.</description>
         <externalId>false</externalId>
         <label>Advertised Media Product</label>
         <referenceTo>MT_AdvertisedMediaProduct__c</referenceTo>
@@ -139,6 +141,7 @@
     </fields>
     <fields>
         <fullName>MT_AgencyProductNumber__c</fullName>
+        <description>Die Produktionsnummer der Agentur.</description>
         <externalId>false</externalId>
         <label>Agency Product Number</label>
         <required>false</required>
@@ -149,6 +152,7 @@
     </fields>
     <fields>
         <fullName>MT_GEMA__c</fullName>
+        <description>GEMA- Informationen zu dem Motiv.</description>
         <externalId>false</externalId>
         <label>GEMA</label>
         <length>32768</length>
@@ -161,6 +165,7 @@
     <fields>
         <fullName>MT_IsComplete__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Zeigt an, ob alle Informationen vollständig hinterlegt wurden. Wird in der Flightplanung manuell durch den Bearbeiter gesetzt.</description>
         <externalId>false</externalId>
         <label>Is Complete</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -170,6 +175,7 @@
     </fields>
     <fields>
         <fullName>MT_SpotLength__c</fullName>
+        <description>Die zeitliche Länge des Motivs (in Sekunden).</description>
         <externalId>false</externalId>
         <label>Spot Length</label>
         <precision>18</precision>
@@ -183,6 +189,7 @@
     </fields>
     <fields>
         <fullName>MT_Type__c</fullName>
+        <description>Die Art des Motivs: Haupt oder Reminder. Kein Record Type, da es keine funktionale oder logische Unterscheidung zwischen den beiden Arten gibt.</description>
         <externalId>false</externalId>
         <label>Type</label>
         <required>false</required>
@@ -209,6 +216,7 @@
     </fields>
     <fields>
         <fullName>MT_UploadID__c</fullName>
+        <description>Die Upload- ID des Motivs im Buchungssystem.</description>
         <externalId>false</externalId>
         <label>Upload ID</label>
         <required>false</required>

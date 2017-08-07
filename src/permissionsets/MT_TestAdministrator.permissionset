@@ -606,6 +606,51 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>MT_CampaignImportData__c.MT_OpportunitySalesforceId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount3__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_Amount4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_BMVSponsoringComplete__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_BMVSpotComplete__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_DealProbabilitySpots__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MT_CampaignMonthlyPlanImportData__c.MT_RevenueFix__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>MT_MediaBroadcastData__c.MT_BMV__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4316,11 +4361,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>P7S1_OpportunityApproval__c.MT_Account_Owner_Approvals__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_Asset_ref__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4347,16 +4387,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_MonthlyShiftingRight_Asset__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>P7S1_OpportunityApproval__c.MT_OpportunityId__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>P7S1_OpportunityApproval__c.MT_OpportunityName__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4402,11 +4432,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_SLMDifference__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>P7S1_OpportunityApproval__c.MT_SoundBoard_Approvals__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5297,6 +5322,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>MT_CampaignMonthlyPlanImportData__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>MT_MediaBroadcastData__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -5415,10 +5449,6 @@
         <apexPage>MT_Ranking</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <pageAccesses>
-        <apexPage>MT_TEST_Frontend</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
     <recordTypeVisibilities>
         <recordType>MT_MediaCampaign__c.MT_ExternalMediaCampaign</recordType>
         <visible>true</visible>
@@ -5429,6 +5459,10 @@
     </recordTypeVisibilities>
     <tabSettings>
         <tab>MT_CampaignImportData__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>MT_CampaignMonthlyPlanImportData__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>

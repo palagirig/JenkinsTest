@@ -43,6 +43,7 @@
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Definiert einen Stand des Forecasting (z.B. für einen Monat).</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -100,6 +101,7 @@
     <fields>
         <fullName>MT_Deadline__c</fullName>
         <defaultValue>IF(MONTH(TODAY()) &gt; 10, DATE(YEAR(TODAY()) + 1, MONTH(TODAY()) - 10, 5), DATE(YEAR(TODAY()), MONTH(TODAY()) + 2, 5))</defaultValue>
+        <description>Definiert, bis wann die Business Units ihre Werte eintragen müssen. Danach darf nur noch das MSC die Werte bearbeiten.</description>
         <externalId>false</externalId>
         <label>Deadline</label>
         <required>false</required>
@@ -110,6 +112,7 @@
     <fields>
         <fullName>MT_IsLocked__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Ist diese Checkbox aktiv, darf niemand mehr Werte zu diesem Forecasting eintragen.</description>
         <externalId>false</externalId>
         <label>Is Locked</label>
         <trackHistory>false</trackHistory>
@@ -130,6 +133,7 @@
     <fields>
         <fullName>MT_UsePlanningDataUntil__c</fullName>
         <defaultValue>IF(MONTH(TODAY()) &gt; 10, DATE(YEAR(TODAY()) + 1, MONTH(TODAY()) - 10, 1), DATE(YEAR(TODAY()), MONTH(TODAY()) + 2, 1))</defaultValue>
+        <description>Der Monat, bis zu dem Plandaten (aus den Businessplänen) im Forecasting angezeigt werden.</description>
         <externalId>false</externalId>
         <label>Use planning data until month</label>
         <required>false</required>
@@ -151,6 +155,7 @@
     <fields>
         <fullName>MT_VersionName__c</fullName>
         <defaultValue>TEXT(YEAR(TODAY())) &amp;&quot;_&quot;&amp; CASE(MONTH(TODAY())+1, 1, &quot;Januar&quot;, 2, &quot;Februar&quot;, 3, &quot;März&quot;,  4, &quot;April&quot;,  5, &quot;Mai&quot;,  6, &quot;Juni&quot;, 7, &quot;Juli&quot;, 8, &quot;August&quot;, 9, &quot;September&quot;, 10, &quot;Oktober&quot;, 11, &quot;November&quot;, 12, &quot;Dezember&quot;, 13, &quot;Januar&quot;, &quot;None&quot;) &amp; &quot;_01&quot;</defaultValue>
+        <description>Ein eindeutiger Name für diese Forecastingversion.</description>
         <externalId>false</externalId>
         <label>Version Name</label>
         <length>32</length>

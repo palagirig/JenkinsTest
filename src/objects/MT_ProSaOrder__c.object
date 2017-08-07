@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Dokumentiert einen Auftrag, der in ProSa angelegt wurde, zur Zuordnung der Ausstrahlungsdaten zu einer Kampagne.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -79,6 +80,7 @@
     </fieldSets>
     <fields>
         <fullName>MT_MediaCampaign_ref__c</fullName>
+        <description>Die Kampagne, zu der der Auftrag gehört.</description>
         <externalId>false</externalId>
         <label>Media Campaign</label>
         <referenceTo>MT_MediaCampaign__c</referenceTo>
@@ -94,6 +96,7 @@
     <fields>
         <fullName>MT_OrderNumber__c</fullName>
         <caseSensitive>false</caseSensitive>
+        <description>Die Nummer, ProSa vergeben hat.</description>
         <externalId>true</externalId>
         <label>Order Number</label>
         <length>80</length>

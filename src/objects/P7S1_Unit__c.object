@@ -43,6 +43,7 @@
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Die Business Unit, die Kampagnen mit externen Partnern oder interne Kampagnen durchführt.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -79,6 +80,7 @@
     </fieldSets>
     <fields>
         <fullName>P7S1_Segment__c</fullName>
+        <description>Das Segment, zu dem die Unit gehört. Wird im Forecasting zur Strukturierung genutzt.</description>
         <externalId>false</externalId>
         <label>Segment</label>
         <required>false</required>

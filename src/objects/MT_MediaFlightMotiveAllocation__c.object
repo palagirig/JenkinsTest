@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Speichert die Zuordnung eines Motivs zu einem Flight und enthält zusätzliche, buchungsrelevante Informationen zur Ausstrahlung.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -169,6 +170,7 @@
     </fieldSets>
     <fields>
         <fullName>MT_From__c</fullName>
+        <description>Start der Ausstrahlung des Motivs, muss innerhalb der Flightlaufzeit liegen.</description>
         <externalId>false</externalId>
         <label>From</label>
         <required>false</required>
@@ -180,6 +182,7 @@
     <fields>
         <fullName>MT_MediaFlight_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Der Flight, dem das Motiv zugeordnet wird.</description>
         <externalId>false</externalId>
         <label>Media Flight</label>
         <referenceTo>MT_MediaFlight__c</referenceTo>
@@ -193,9 +196,11 @@
     </fields>
     <fields>
         <fullName>MT_MediaMotive_ref__c</fullName>
+        <description>Das Motiv, das dem Flight zugeordnet wird.</description>
         <externalId>false</externalId>
         <label>Media Motive</label>
         <referenceTo>MT_MediaMotive__c</referenceTo>
+        <relationshipLabel>Media Flight Motive Allocations</relationshipLabel>
         <relationshipName>MediaFlightMotiveAllocations</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -207,6 +212,7 @@
     </fields>
     <fields>
         <fullName>MT_MediaProduct_ref__c</fullName>
+        <description>Das Produkt, dass in dieser Zuordnung gebucht wird. Kann von dem Master des Motivs abweichen (z.B. bei allgemeinen Remindern, die im Paket mit einem spezifischen Produkt verwendet werden).</description>
         <externalId>false</externalId>
         <label>Advertised Media Product</label>
         <referenceTo>MT_AdvertisedMediaProduct__c</referenceTo>
@@ -223,6 +229,7 @@
     <fields>
         <fullName>MT_Position__c</fullName>
         <defaultValue>1</defaultValue>
+        <description>Die Position des Motivs innerhalb des Flights.</description>
         <externalId>false</externalId>
         <label>Position</label>
         <precision>3</precision>
@@ -237,6 +244,7 @@
     <fields>
         <fullName>MT_RollingDistribution__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Buchungsvorgabe, ob das Motiv mittels rollierender Verteilung gebucht werden soll, oder nicht.</description>
         <externalId>false</externalId>
         <label>Rolling Distribution</label>
         <trackFeedHistory>false</trackFeedHistory>
@@ -246,6 +254,7 @@
     </fields>
     <fields>
         <fullName>MT_To__c</fullName>
+        <description>Ende der Ausstrahlung des Motivs, muss innerhalb der Flightlaufzeit liegen.</description>
         <externalId>false</externalId>
         <label>To</label>
         <required>false</required>
@@ -256,6 +265,7 @@
     </fields>
     <fields>
         <fullName>MT_Type__c</fullName>
+        <description>Die Art der Zuordnung (Haupt, Reminder). Nicht als Record Type, da keine funktionalen oder logischen Abhängigkeiten gegeben sind.</description>
         <externalId>false</externalId>
         <label>Type</label>
         <required>false</required>

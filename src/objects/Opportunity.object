@@ -1265,6 +1265,7 @@
     <fields>
         <fullName>MT_InternalCampaign__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Hat diese Kampagne einen externen Partner oder ist sie nur intern (vom Asset alleine betrieben).</description>
         <externalId>false</externalId>
         <label>Interne Kampagne</label>
         <trackFeedHistory>false</trackFeedHistory>

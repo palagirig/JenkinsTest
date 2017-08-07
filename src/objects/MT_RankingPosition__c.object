@@ -43,6 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stellt die Position einer Kampagne in einem Ranking dar.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
@@ -54,6 +55,7 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>MT_BookingCluster__c</fullName>
+        <description>Die Einordnung der Kampagne zu einem Buchungsvorlauf.</description>
         <externalId>false</externalId>
         <label>Booking Cluster</label>
         <precision>2</precision>
@@ -65,6 +67,7 @@
     </fields>
     <fields>
         <fullName>MT_MediaCampaign_ref__c</fullName>
+        <description>Die Kampagne, die im Ranking positioniert wird.</description>
         <externalId>false</externalId>
         <label>Media Campaign</label>
         <referenceTo>MT_MediaCampaign__c</referenceTo>
@@ -78,6 +81,7 @@
     </fields>
     <fields>
         <fullName>MT_Position__c</fullName>
+        <description>Die Position innerhalb das Rankings (aufsteigende Nummer über alle Buchungsvorläufe hinweg).</description>
         <externalId>false</externalId>
         <label>Position</label>
         <precision>6</precision>
@@ -90,6 +94,7 @@
     <fields>
         <fullName>MT_RankingVersion_ref__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
+        <description>Das Ranking, in dem diese Position gilt.</description>
         <externalId>false</externalId>
         <label>Ranking Version</label>
         <referenceTo>MT_RankingVersion__c</referenceTo>

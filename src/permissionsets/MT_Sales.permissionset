@@ -4161,11 +4161,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>P7S1_OpportunityApproval__c.MT_Account_Owner_Approvals__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>P7S1_OpportunityApproval__c.MT_Asset_ref__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4193,16 +4188,6 @@
         <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_MonthlyShiftingRight_Asset__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>P7S1_OpportunityApproval__c.MT_OpportunityId__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>P7S1_OpportunityApproval__c.MT_OpportunityName__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -4248,11 +4233,6 @@
         <editable>false</editable>
         <field>P7S1_OpportunityApproval__c.MT_SLMDifference__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>P7S1_OpportunityApproval__c.MT_SoundBoard_Approvals__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
