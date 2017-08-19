@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In the KeyValue Manager and Media Configuration, only active marked records will be available.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Ad Server ID</label>
+        <referenceTo>ADvendio__AdServer_ID__c</referenceTo>
+        <relationshipLabel>Keys</relationshipLabel>
+        <relationshipName>Keys</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ExternalName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This name will be used for PDF document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This name will be used for PDF document.</inlineHelpText>
+        <label>External Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Predefined__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Uncheck if you want to allow freeform values for this key.</inlineHelpText>
+        <label>Predefined</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_TargetingAufschlag__c</fullName>
+        <description>Altes Feld wird im Zuge des Rückbaus entfernt werden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Altes Feld wird im Zuge des Rückbaus entfernt werden.</inlineHelpText>
+        <label>Targeting Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_TargetingProvider__c</fullName>
+        <description>Zusammenfassung von Keys zu einer Gruppe, welche über einen technischen Dienstleister/Site/Seitenbetreiber zur Verfügung gestellt werden können. Vereinfacht die Zuordnung von mehreren Keys zu Werbemittel/Produkten.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zusammenfassung von Keys zu einer Gruppe, welche über einen technischen Dienstleister/Site/Seitenbetreiber zur Verfügung gestellt werden können. Vereinfacht die Zuordnung von mehreren Keys zu Werbemittel/Produkten.</inlineHelpText>
+        <label>Targeting Provider</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ATV_PBT</fullName>
+                    <default>false</default>
+                    <label>ATV_PBT</label>
+                </value>
+                <value>
+                    <fullName>Autosites</fullName>
+                    <default>false</default>
+                    <label>Autosites</label>
+                </value>
+                <value>
+                    <fullName>Diverse Kriterien</fullName>
+                    <default>false</default>
+                    <label>Diverse Kriterien</label>
+                </value>
+                <value>
+                    <fullName>Gesundheit.de</fullName>
+                    <default>false</default>
+                    <label>Gesundheit.de</label>
+                </value>
+                <value>
+                    <fullName>nugg.ad</fullName>
+                    <default>false</default>
+                    <label>nugg.ad</label>
+                </value>
+                <value>
+                    <fullName>nugg.ad InApp</fullName>
+                    <default>false</default>
+                    <label>nugg.ad InApp</label>
+                </value>
+                <value>
+                    <fullName>Rotationsausschluss</fullName>
+                    <default>false</default>
+                    <label>Rotationsausschluss</label>
+                </value>
+                <value>
+                    <fullName>SmartGeo</fullName>
+                    <default>false</default>
+                    <label>SmartGeo</label>
+                </value>
+                <value>
+                    <fullName>Vereinssites</fullName>
+                    <default>false</default>
+                    <label>Vereinssites</label>
+                </value>
+                <value>
+                    <fullName>wetter.com</fullName>
+                    <default>false</default>
+                    <label>wetter.com</label>
+                </value>
+                <value>
+                    <fullName>wetter.com CTV</fullName>
+                    <default>false</default>
+                    <label>wetter.com CTV</label>
+                </value>
+                <value>
+                    <fullName>ZG S71 Paket</fullName>
+                    <default>false</default>
+                    <label>ZG S71 Paket</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomDig_TargetingType__c</fullName>
+        <description>Targeting Typ</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Targeting Typ</inlineHelpText>
+        <label>Targeting Typ</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Behavioral</fullName>
+                    <default>false</default>
+                    <label>Behavioral</label>
+                </value>
+                <value>
+                    <fullName>Demographic</fullName>
+                    <default>false</default>
+                    <label>Demographic</label>
+                </value>
+                <value>
+                    <fullName>Retargeting</fullName>
+                    <default>false</default>
+                    <label>Retargeting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Key</label>
+    <listViews>
+        <fullName>ADvendio__Alle</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AdServerId__c</columns>
+        <columns>ADvendio__Predefined__c</columns>
+        <columns>ADvendio__Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Keys</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_TargetingProvider__c</columns>
+        <columns>SomDig_TargetingType__c</columns>
+        <columns>SomDig_TargetingAufschlag__c</columns>
+        <columns>ADvendio__AdServerId__c</columns>
+        <columns>ADvendio__UniqueKey__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Keys</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Key Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Keys</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>OBJECT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__AdServerId__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OBJECT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__AdServerId__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>ADvendio__AdServerId__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

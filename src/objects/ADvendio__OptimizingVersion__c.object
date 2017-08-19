@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <content>Adv_OptimizingVersion_Forwarder</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>Adv_OptimizingVersion_Forwarder</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CancelationType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cancelation Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cancellation standard</fullName>
+                    <default>false</default>
+                    <label>Cancellation standard</label>
+                </value>
+                <value>
+                    <fullName>Cancellation and merge periods</fullName>
+                    <default>false</default>
+                    <label>Cancellation and merge periods</label>
+                </value>
+                <value>
+                    <fullName>Cancellation and merge all</fullName>
+                    <default>false</default>
+                    <label>Cancellation and merge all</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Comment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Some additional comments</description>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DateOfActivation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the date / time when the Optimizing Version was activated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the date / time when the Optimizing Version was activated.</inlineHelpText>
+        <label>Date Of Activation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeltaAmountB1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the difference between the original Media Campaign Delta Amount (B1) and optimized Delta Amount (B1).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the difference between the original Media Campaign Delta Amount (B1) and optimized Delta Amount (B1).</inlineHelpText>
+        <label>Delta Amount (B1)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeltaAmountB2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the difference between the original Media Campaign Delta Amount (B2) and optimized Delta Amount (B2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the difference between the original Media Campaign Delta Amount (B2) and optimized Delta Amount (B2).</inlineHelpText>
+        <label>Delta Amount (B2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeltaAmountB3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the difference between the original Media Campaign Delta Amount (B3) and optimized Delta Amount (B3).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the difference between the original Media Campaign Delta Amount (B3) and optimized Delta Amount (B3).</inlineHelpText>
+        <label>Delta Amount (B3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeltaAmountN1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the difference between the original Media Campaign Delta Amount (N1) and optimized Delta Amount (N1).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the difference between the original Media Campaign Delta Amount (N1) and optimized Delta Amount (N1).</inlineHelpText>
+        <label>Delta Amount (N1)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeltaAmountN2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the difference between the original Media Campaign Delta Amount (N2) and optimized Delta Amount (N2).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the difference between the original Media Campaign Delta Amount (N2) and optimized Delta Amount (N2).</inlineHelpText>
+        <label>Delta Amount (N2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeltaAmountN3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the difference between the original Media Campaign Delta Amount (N3) and optimized Delta Amount (N3).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the difference between the original Media Campaign Delta Amount (N3) and optimized Delta Amount (N3).</inlineHelpText>
+        <label>Delta Amount (N3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InternalComment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter your internal comment for this Optimizer Version. It will not be shown on any document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your internal comment for this Optimizer Version. It will not be shown on any document.</inlineHelpText>
+        <label>Internal Comment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaCampaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Media Campaign</label>
+        <referenceTo>ADvendio__MediaCampaign__c</referenceTo>
+        <relationshipName>OptimizingVersions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SHIFT: Fehlende WM</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Fehlende WM</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Fehlerhafte WM</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Fehlerhafte WM</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Budgetshift</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Budgetshift</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Laufzeitverschiebung</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Laufzeitverschiebung</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Tech. Probleme</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Tech. Probleme</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Produktwechsel</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Produktwechsel</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Falsche Prognose</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Falsche Prognose</label>
+                </value>
+                <value>
+                    <fullName>SHIFT: Fehlerhafte Kampagnenanlage</fullName>
+                    <default>false</default>
+                    <label>SHIFT: Fehlerhafte Kampagnenanlage</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Fehlende WM</fullName>
+                    <default>false</default>
+                    <label>STORNO: Fehlende WM</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Fehlerhafte WM</fullName>
+                    <default>false</default>
+                    <label>STORNO: Fehlerhafte WM</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Budgetcut</fullName>
+                    <default>false</default>
+                    <label>STORNO: Budgetcut</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Performance</fullName>
+                    <default>false</default>
+                    <label>STORNO: Performance</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Bad-News/einstweilliger Verfügung</fullName>
+                    <default>false</default>
+                    <label>STORNO: Bad-News/einstweilliger Verfügung</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Falsche Prognose</fullName>
+                    <default>false</default>
+                    <label>STORNO: Falsche Prognose</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Tech. Probleme</fullName>
+                    <default>false</default>
+                    <label>STORNO: Tech. Probleme</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Fehler Kampagnenanlage</fullName>
+                    <default>false</default>
+                    <label>STORNO: Fehler Kampagnenanlage</label>
+                </value>
+                <value>
+                    <fullName>STORNO: Rabatt-Anpassung</fullName>
+                    <default>false</default>
+                    <label>STORNO: Rabatt-Anpassung</label>
+                </value>
+                <value>
+                    <fullName>NEUTRAL: Anpassung Kriterien</fullName>
+                    <default>false</default>
+                    <label>NEUTRAL: Anpassung Kriterien</label>
+                </value>
+                <value>
+                    <fullName>NEUTRAL: Kompensation</fullName>
+                    <default>false</default>
+                    <label>NEUTRAL: Kompensation</label>
+                </value>
+                <value>
+                    <fullName>NEUTRAL: Nachlieferung</fullName>
+                    <default>false</default>
+                    <label>NEUTRAL: Nachlieferung</label>
+                </value>
+                <value>
+                    <fullName>NEUTRAL: Produktwechsel</fullName>
+                    <default>false</default>
+                    <label>NEUTRAL: Produktwechsel</label>
+                </value>
+                <value>
+                    <fullName>ZUBUCHUNG: Proaktiv</fullName>
+                    <default>false</default>
+                    <label>ZUBUCHUNG: Proaktiv</label>
+                </value>
+                <value>
+                    <fullName>ZUBUCHUNG: Kundenwunsch</fullName>
+                    <default>false</default>
+                    <label>ZUBUCHUNG: Kundenwunsch</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SelectedOriginalItems__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains a list of all Campaign Items which were selected when creating the Optimizer Version. This field is used and set by the Comercial Optimizer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contains a list of all Campaign Items which were selected when creating the Optimizer Version. This field is used and set by the Comercial Optimizer.</inlineHelpText>
+        <label>Selected Original Items</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Proactive</fullName>
+                    <default>true</default>
+                    <label>Proactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidUntil__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter a date until the optimizing version is valid.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter a date until the optimizing version is valid.</inlineHelpText>
+        <label>Valid Until</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Adv_AvailabilityApproved__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>KV 2460: Wird im Process der Optimierungsaktivierung benötigt.
+KV 3842: Default value auf TRUE gesetzt.</description>
+        <externalId>false</externalId>
+        <label>Genehmigt Verfügbarkeit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Adv_DeltaMN2Approved__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>KV 2460: Wird im Process der Optimierungsaktivierung benötigt. 
+KV 3634: Default Value auf true gesetzt.</description>
+        <externalId>false</externalId>
+        <label>Genehmigt Umsatzdifferenz MN2</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Adv_LastAvailabilityCheck__c</fullName>
+        <externalId>false</externalId>
+        <label>Letzte Verfügbarkeitsabfrage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Adv_LastUpdateReichweitenRelevanz__c</fullName>
+        <description>KV 02554. Hilfsfeld, in welches der Maximale Wert aus dem Feld &quot;Zuletzt geändert am&quot; am Unterobjekt Optimierungsänderung kommt. Wird für den Process benötigt, der die Checkbox &quot;Genehmigung Verfügbarkeit&quot; auf der Optimierung abwählt.</description>
+        <externalId>false</externalId>
+        <label>Adv_LastUpdateReichweitenRelevanz</label>
+        <summarizedField>ADvendio__OptimizingChange__c.LastModifiedDate</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__OptimizingChange__c.Adv_ReichweitenRelevant__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__OptimizingChange__c.ADvendio__OptimizingVersion__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_ActivationStarting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>KV: 1371. Hilfsfeld: Checkbox welche sofort bei Knopfdruck (Activate) gesetzt wird, damit die Optimierungsversion nicht durch einen Trigger gelöscht wird, der Optimierungsversionen löscht, die noch nicht aktiviert sind.</description>
+        <externalId>false</externalId>
+        <label>ActivationStarting</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Versionsnummer__c</fullName>
+        <description>KV: 02462. Versionsnummer für den Optimierungsvorschlag</description>
+        <externalId>false</externalId>
+        <formula>&quot;OV_&quot; &amp; ADvendio__MediaCampaign__r.ADvendio__Offer_Number__c &amp; &quot;_&quot; &amp; IF(DAY(DATEVALUE(LastModifiedDate+(1/12))) &lt; 10, &quot;0&quot; + TEXT(DAY(DATEVALUE(LastModifiedDate+(1/12)))), TEXT(DAY(DATEVALUE(LastModifiedDate+(1/12))))) &amp; &quot;.&quot; &amp; IF(MONTH(DATEVALUE(LastModifiedDate+(1/12))) &lt; 10, &quot;0&quot; + TEXT(MONTH(DATEVALUE(LastModifiedDate+(1/12)))), TEXT(MONTH(DATEVALUE(LastModifiedDate+(1/12))))) &amp; &quot;.&quot; &amp; TEXT(YEAR(DATEVALUE(LastModifiedDate+(1/12)))) &amp; &quot;_&quot; &amp; MID(TEXT(LastModifiedDate+(1/24)), 12, 5) &amp; &quot;_&quot; &amp; ADvendio__MediaCampaign__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Versionsnummer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Optimizing Version</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__DateOfActivation__c</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Optimization Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Optimizing Versions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ADvendio__Activate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Activate</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__OptimizerVersionActivation</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__ChangeOptimization</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Change Optimization</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__Optimizer</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__CheckAvailability</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Check Availability</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__CheckAvailability</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__OptimizationPDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Optimization PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>ADvendio__NavigateToOptimizationPDF</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__cco_forcast_test</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>cco forcast test</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>function post(path, params) { 
+method = &apos;post&apos;; 
+// The rest of this code assumes you are not using a library. 
+// It can be made less wordy if you use one. 
+var form = document.createElement(&quot;form&quot;); 
+form.setAttribute(&apos;method&apos;, method); 
+form.setAttribute(&apos;action&apos;, path); 
+form.setAttribute(&apos;target&apos;, &apos;_blank&apos;); 
+
+for(var key in params) { 
+if(params.hasOwnProperty(key)) { 
+var hiddenField = document.createElement(&apos;input&apos;); 
+hiddenField.setAttribute(&apos;type&apos;, &apos;hidden&apos;); 
+hiddenField.setAttribute(&apos;name&apos;, key); 
+hiddenField.setAttribute(&apos;value&apos;, params[key]); 
+
+form.appendChild(hiddenField); 
+} 
+} 
+
+document.body.appendChild(form); 
+form.submit(); 
+}; 
+
+window.location.reload(true); 
+post(&apos;{!$Label.ADvendio__ServiceURL}MediaCloudServlets_{!$Label.ADvendio__ServiceVersion}/MediaCloudService&apos;, 
+{ 
+operation: &apos;optimizerforecast&apos;, 
+endpoint: &apos;{!$Api.Enterprise_Server_URL_280}&apos;, 
+sessionid: &apos;{!$Api.Session_ID}&apos;, 
+orgid: &apos;{!$Organization.Id}&apos;, 
+smail: &apos;{!$User.Email}&apos;, 
+campaignid: &apos;{!ADvendio__OptimizingVersion__c.ADvendio__MediaCampaignId__c}&apos;, 
+optomizerversion:&apos;{!ADvendio__OptimizingVersion__c.Id}&apos;, 
+trace:&apos;true&apos;, 
+} 
+);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ActivateCustom</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ActivateCustom</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/apex.js&quot;)}
+
+var bActivate = true;
+
+var iTimeDiff = {!IF(ISNULL(ADvendio__OptimizingVersion__c.Adv_LastAvailabilityCheck__c), 0, NOW() - ADvendio__OptimizingVersion__c.Adv_LastAvailabilityCheck__c)
+};
+
+
+var mk = sforce.connection.query(&quot;SELECT SomDig_Verfuegbarkeitsrelevant__c FROM ADvendio__MediaCampaign__c WHERE ID = &apos;{!ADvendio__OptimizingVersion__c.ADvendio__MediaCampaignId__c}&apos;&quot;);
+
+
+if (&quot;{!ADvendio__OptimizingVersion__c.ADvendio__Approved__c}&quot; == false) {
+    bActivate = false;
+    alert(&quot;Der Optimierungsvorschlag ist nicht genehmigt.&quot;);
+} else if (iTimeDiff * 86400 &gt; 10800 &amp;&amp; mk.getArray(&quot;records&quot;)[0].SomDig_Verfuegbarkeitsrelevant__c == &apos;true&apos; &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;) {
+    bActivate = false;
+    alert(&quot;Die letzte Verfügbarkeitsabfrage ist länger als 3 Stunden her.&quot;);
+} else if (iTimeDiff == 0 &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;) {
+    bActivate = false;
+    alert(&quot;Es wurde noch keine Verfügbarkeitsabfrage durchgeführt.&quot;);
+}
+
+
+if (bActivate) {
+    var listOC = sforce.connection.query(&quot;SELECT ADvendio__FieldName__c, ADvendio__OptimizedValue__c, ADvendio__CampaignItem__c, ADvendio__CampaignItem__r.ADvendio__until_Date__c, ADvendio__CampaignItem__r.Name FROM ADvendio__OptimizingChange__c WHERE ADvendio__OptimizingVersion__c = &apos;{!ADvendio__OptimizingVersion__c.Id}&apos;&quot;);
+
+    records = listOC.getArray(&quot;records&quot;);
+    var currentDate = new Date();
+    var ciIDs = [];
+    currentDate.setHours(0, 0, 0, 0);
+    for (var i = 0; i &lt; records.length; i++) {
+        var dateArr = records[i].ADvendio__CampaignItem__r.ADvendio__until_Date__c.split(&apos;-&apos;);
+        var date = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
+
+var timeDiff = currentDate.getTime() - date.getTime();
+var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+
+        if (records[i].ADvendio__FieldName__c == &apos;advendio__rate_discount_4_name__c&apos; &amp;&amp; records[i].ADvendio__OptimizedValue__c == &apos;Storno mit Leistungsfluss&apos;) {
+            ciIDs.push(records[i].ADvendio__CampaignItem__c);
+        }
+    }
+
+    if (ciIDs.length &gt; 0) {
+        var invoiceItems = sforce.connection.query(&quot;SELECT ID FROM ADVendio__InvoiceItem__c WHERE ADvendio__CampaignItem__c IN (\&apos;&quot; + ciIDs.join(&apos;\&apos;,\&apos;&apos;) + &quot;\&apos;) AND (ADvendio__Invoice__r.ADvendio__Status__c = &apos;Invoiced&apos; OR ADvendio__Invoice__r.ADvendio__Status__c = &apos;Reviewed&apos;)&quot;);
+
+        if (invoiceItems.getArray(&quot;records&quot;).length &gt; 0) {
+            bActivate = false;
+            alert(&quot;{!$Label.Adv_OptimizingChange_Storno_ErrorMessage}&quot;);
+        }
+
+        if (bActivate) {
+
+            // Check if User is Billing or in the public Group &quot;SomDig_TeamLead&quot;
+            var profileName = &apos;{!$Profile.Name}&apos;;
+            var profileId = &apos;{!$Profile.Id}&apos;;
+
+            if (profileName != &apos;SomDig_BI&apos; &amp;&amp; profileName != &apos;SomDig_Billing&apos; &amp;&amp; profileId != &quot;{!$Label.ProfileIdAdmin}&quot; &amp;&amp; !{!$User.SomDig_IsTeamLead__c}) {
+                bActivate = false;
+                alert(&quot;{!$Label.Adv_OptimizingChange_Storno_ErrorMessage}&quot;);
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+// Only run ADVendio Button, if criteria above are met
+if (bActivate) {
+
+    // ADvendio funcionality
+    try {
+        // Set checkbox, which indicates, that the activation process started
+        var o = new sforce.SObject(&quot;ADvendio__OptimizingVersion__c&quot;);
+        o.id = &quot;{!ADvendio__OptimizingVersion__c.Id}&quot;;
+        o.SomDig_ActivationStarting__c = true;
+        sforce.connection.update([o]);
+
+        var errorMsg = sforce.apex.execute(&quot;ADvendio/OptimizerVersionActivation&quot;, &quot;activateOptimizerVersion&quot;, {
+            optimizingVersionId: &quot;{!ADvendio__OptimizingVersion__c.Id}&quot;
+        });
+        window.location = &quot;/{!ADvendio__OptimizingVersion__c.ADvendio__MediaCampaignId__c}&quot;;
+        if ((errorMsg + &quot;&quot;).length &gt; 0) {
+            alert(errorMsg);
+        }
+    } catch (e) {
+        console.log(e);
+        alert(e);
+    }
+    window.location.reload(true);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Attach_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Attach PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+
+var iTimeDiff = {!IF( ISNULL(ADvendio__OptimizingVersion__c.Adv_LastAvailabilityCheck__c), 0, NOW() - ADvendio__OptimizingVersion__c.Adv_LastAvailabilityCheck__c)}; 
+
+
+if(&quot;{!ADvendio__OptimizingVersion__c.ADvendio__Approved__c}&quot; == false &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;){ 
+alert(&quot;Der Optimierungsvorschlag ist nicht genehmigt.&quot;); 
+}else if((iTimeDiff * 86400) &gt; 10800 &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;){ 
+alert(&quot;Die letzte Verfügbarkeitsabfrage ist länger als 3 Stunden her.&quot;); 
+}else if(iTimeDiff == 0 &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;){ 
+alert(&quot;Es wurde noch keine Verfügbarkeitsabfrage durchgeführt.&quot;); 
+}else{ 
+
+try { 
+var sVersion = &apos;{!SUBSTITUTE(ADvendio__OptimizingVersion__c.SomDig_Versionsnummer__c, &quot;&apos;&quot;, &quot;&quot;)}&apos;;
+
+var res = sforce.apex.execute(&quot;Adv_OptimizingVersion_Attachment&quot;,&quot;attachPDFToOV&quot;,{ sOVID : &apos;{!ADvendio__OptimizingVersion__c.Id}&apos; , sMKID : &apos;{!ADvendio__OptimizingVersion__c.ADvendio__MediaCampaignId__c}&apos;, version : sVersion }); 
+if(res==&apos;SUCCESS&apos;) 
+window.location.reload(); 
+else 
+alert(&apos;Error in attaching file ----&apos;+ res); 
+}catch(er){ 
+alert(er); 
+}
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CheckAvailabilityCustom</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Check Availability (custom)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>// New Part of this Button
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+var newRecords = []; 
+var o = new sforce.SObject(&quot;ADvendio__OptimizingVersion__c&quot;); 
+o.id = &quot;{!ADvendio__OptimizingVersion__c.Id}&quot;;
+o.Adv_LastAvailabilityCheck__c = new Date();
+newRecords.push(o); 
+ 
+result = sforce.connection.update(newRecords); 
+// New Part end. The rest is the standard button: CheckAvailability from ADVendio
+
+
+
+function post(path, params) {
+method = &apos;post&apos;;
+// The rest of this code assumes you are not using a library.
+// It can be made less wordy if you use one.
+var form = document.createElement(&quot;form&quot;);
+form.setAttribute(&apos;method&apos;, method);
+form.setAttribute(&apos;action&apos;, path);
+form.setAttribute(&apos;target&apos;, &apos;_blank&apos;);
+
+for(var key in params) {
+if(params.hasOwnProperty(key)) {
+var hiddenField = document.createElement(&apos;input&apos;);
+hiddenField.setAttribute(&apos;type&apos;, &apos;hidden&apos;);
+hiddenField.setAttribute(&apos;name&apos;, key);
+hiddenField.setAttribute(&apos;value&apos;, params[key]);
+
+form.appendChild(hiddenField);
+}
+}
+
+document.body.appendChild(form);
+form.submit();
+};
+
+window.location.reload(true);
+post(&apos;{!$Label.ADvendio__ServiceURL}MediaCloudServlets_{!$Label.ADvendio__ServiceVersion}/MediaCloudService&apos;,
+{
+operation: &apos;optimizerforecast&apos;,
+endpoint: &apos;{!$Api.Enterprise_Server_URL_280}&apos;,
+sessionid: &apos;{!$Api.Session_ID}&apos;,
+orgid: &apos;{!$Organization.Id}&apos;,
+smail: &apos;{!$User.Email}&apos;,
+campaignid: &apos;{!ADvendio__OptimizingVersion__c.ADvendio__MediaCampaignId__c}&apos;,
+optomizerversion:&apos;{!ADvendio__OptimizingVersion__c.Id}&apos;,
+}
+);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>OptimizationPDFCustom</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Optimization PDF (custom)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var iTimeDiff = {!IF( ISNULL(ADvendio__OptimizingVersion__c.Adv_LastAvailabilityCheck__c), 0, NOW() - ADvendio__OptimizingVersion__c.Adv_LastAvailabilityCheck__c)}; 
+
+
+if(&quot;{!ADvendio__OptimizingVersion__c.ADvendio__Approved__c}&quot; == false &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;){ 
+alert(&quot;Der Optimierungsvorschlag ist nicht genehmigt.&quot;); 
+}else if((iTimeDiff * 86400) &gt; 10800 &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;){ 
+alert(&quot;Die letzte Verfügbarkeitsabfrage ist länger als 3 Stunden her.&quot;); 
+}else if(iTimeDiff == 0 &amp;&amp; &quot;{!$Profile.Name}&quot; != &quot;SomDig_Billing&quot;){ 
+alert(&quot;Es wurde noch keine Verfügbarkeitsabfrage durchgeführt.&quot;); 
+}else{ 
+window.open(&quot;/apex/ADvendio__PDF?mcid={!ADvendio__OptimizingVersion__c.ADvendio__MediaCampaignId__c}&amp;versionid={!ADvendio__OptimizingVersion__c.Id}&quot;, &quot;Optimierungsvorschlag&quot;, &quot;fullscreen=yes,status=yes,scrollbars=yes,resizable=yes&quot;); 
+}</url>
+    </webLinks>
+</CustomObject>

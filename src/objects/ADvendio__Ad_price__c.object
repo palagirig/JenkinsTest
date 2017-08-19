@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ADvendio__Compact_Ad_Price_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ADvendio__Compact_Ad_Price_Layout</fullName>
+        <fields>Name</fields>
+        <fields>ADvendio__Ad_Spec__c</fields>
+        <fields>ADvendio__Billing_Category__c</fields>
+        <fields>ADvendio__Active__c</fields>
+        <fields>CurrencyIsoCode</fields>
+        <fields>ADvendio__List_price__c</fields>
+        <fields>ADvendio__RateCriterion__c</fields>
+        <fields>ADvendio__Pricelist__c</fields>
+        <fields>ADvendio__PacketComponentOnly__c</fields>
+        <fields>ADvendio__Unit__c</fields>
+        <label>Compact Ad Price Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>ADvendio__AdSpecsAndRatesManager</fullName>
+        <availableFields>
+            <field>ADvendio__Ad_Spec__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__PacketComponentOnly__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Pricelist__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__UniqueKey__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Unit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Valid_from__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Valid_to__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Ad Specs and Rates Manager</description>
+        <displayedFields>
+            <field>ADvendio__RateCriterion__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Ad Specs and Rates Manager</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>ADvendio__RateSetterPriceCreation</fullName>
+        <availableFields>
+            <field>ADvendio__UniqueKey__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Unit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Determine what fields to show on the RateSetter page to generate new AdPrices.</description>
+        <displayedFields>
+            <field>ADvendio__List_price__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>RateSetterPriceCreation</label>
+    </fieldSets>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Tick the check box to activate this ad price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick the check box to activate this ad price.</inlineHelpText>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Ad_Spec__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This reference displays the ad spec to which this price is assigned.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This reference displays the ad spec to which this price is assigned.</inlineHelpText>
+        <label>Ad Spec</label>
+        <referenceTo>ADvendio__Ad_Specs__c</referenceTo>
+        <relationshipLabel>Ad Prices</relationshipLabel>
+        <relationshipName>Ad_prices</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgofExport__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this checkbox is true this AdPrice will be included in the AGOF Connect Export.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this checkbox is true this AdPrice will be included in the AGOF Connect Export.</inlineHelpText>
+        <label>AGOF Export</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Billing_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the billing category for this price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the billing category for this price.</inlineHelpText>
+        <label>Billing Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed Price</fullName>
+                    <default>false</default>
+                    <label>Fixed Price</label>
+                </value>
+                <value>
+                    <fullName>CPC</fullName>
+                    <default>false</default>
+                    <label>CPC</label>
+                </value>
+                <value>
+                    <fullName>CPD</fullName>
+                    <default>false</default>
+                    <label>CPD</label>
+                </value>
+                <value>
+                    <fullName>CPM</fullName>
+                    <default>false</default>
+                    <label>CPM</label>
+                </value>
+                <value>
+                    <fullName>CPO</fullName>
+                    <default>false</default>
+                    <label>CPO</label>
+                </value>
+                <value>
+                    <fullName>CPW</fullName>
+                    <default>false</default>
+                    <label>CPW</label>
+                </value>
+                <value>
+                    <fullName>CPMo</fullName>
+                    <default>false</default>
+                    <label>CPMo</label>
+                </value>
+                <value>
+                    <fullName>CPY</fullName>
+                    <default>false</default>
+                    <label>CPY</label>
+                </value>
+                <value>
+                    <fullName>CPL</fullName>
+                    <default>false</default>
+                    <label>CPL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ConstantQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field defines if the Booking Calendar should count the Quantity, Guaranteed AI, Runtime Campaign Item or the Frequency. If this field is not defined, the default value is &quot;Quantity&quot;. You will find more information in our Knowledge Base.</description>
+        <externalId>false</externalId>
+        <label>Constant Quantity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Frequency</fullName>
+                    <default>false</default>
+                    <label>Frequency</label>
+                </value>
+                <value>
+                    <fullName>Guaranteed AI</fullName>
+                    <default>false</default>
+                    <label>Guaranteed AI</label>
+                </value>
+                <value>
+                    <fullName>Quantity</fullName>
+                    <default>false</default>
+                    <label>Quantity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DisabledTargetings__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Disabled Targetings</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>notargeting</fullName>
+                    <default>false</default>
+                    <label>notargeting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__EffectiveMaximumApplicabilityUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows which Maximum Applicability Unit is used in the Booking Calendar. If the unit is not defined at the Ad Price, the value from the Ad Spec is taken.</description>
+        <externalId>false</externalId>
+        <formula>if (isBlank(text(ADvendio__MaximumApplicabilityUnit__c)), text(ADvendio__Ad_Spec__r.ADvendio__MaximumApplicabilityUnit__c), text(ADvendio__MaximumApplicabilityUnit__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows which Maximum Applicability Unit is used in the Booking Calendar. If the unit is not defined at the Ad Price, the value from the Ad Spec is taken.</inlineHelpText>
+        <label>Effective Maximum Applicability Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__EffectiveMaximumApplicability__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>if (ISBLANK(ADvendio__MaximumApplicability__c), ADvendio__Ad_Spec__r.ADvendio__MaximumApplicability__c, ADvendio__MaximumApplicability__c)</formula>
+        <inlineHelpText>This contains:
+* AdPrice.MaximumApplicability__c if its value is not null
+* AdPrice.AdSpec.MaximumApplicability__c otherwise</inlineHelpText>
+        <label>Effective Maximum Applicability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Exclusive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox marks an Ad Price as exclusive.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox marks an Ad Price as exclusive.</inlineHelpText>
+        <label>Exclusive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__List_price__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the list price assigned to the chosen billing category.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the list price assigned to the chosen billing category.</inlineHelpText>
+        <label>List price</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>6</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LongDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a long / full description for this Ad Price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a long / full description for this Ad Price.</inlineHelpText>
+        <label>Long Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaximumApplicabilityUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field defines for which Time Column the Ad Price is displayed in the Booking Calendar.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to define if the Maximum Applicability should be used for days, weeks or months.</inlineHelpText>
+        <label>Maximum Applicability Unit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Day</fullName>
+                    <default>true</default>
+                    <label>Day</label>
+                </value>
+                <value>
+                    <fullName>Week</fullName>
+                    <default>false</default>
+                    <label>Week</label>
+                </value>
+                <value>
+                    <fullName>Month</fullName>
+                    <default>false</default>
+                    <label>Month</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaximumApplicability__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Define how often this AdPrice can be used in a CampaignItem at the same time. (Used in the PositionChart)</description>
+        <externalId>false</externalId>
+        <label>Maximum Applicability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OVKBillingCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field used for AGOF Interface - Sets the OVK Billing category to fixed price or allin based on the Advendio billing category.</description>
+        <externalId>false</externalId>
+        <formula>CASE (TEXT(ADvendio__Billing_Category__c),
+  &quot;Fixed Price&quot;, &quot;allin&quot;,
+  &quot;vCPM&quot;, &quot;CPM&quot;,
+  TEXT(ADvendio__Billing_Category__c)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sets the OVK Billing category to fixed price or allin based on the Advendio billing category.</inlineHelpText>
+        <label>OVK Billing Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PacketComponentOnly__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Define if an Ad Price is just selectable within packets or also as a standalone Ad Spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Define if an Ad Price is just selectable within packets or also as a standalone Ad Spec.</inlineHelpText>
+        <label>Packet Component Only</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PriceUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the relevant unit. In case of Print Uses Cases and using Rebate in Kind Quantity must also filled the fille the Field ADendio__PageEquivalency__c 
+Values from Field ADendio__PageEquivalency__c at Commitment Conditions will matched with values from Field:ADvendio__PageEquivalency__c at Object AdType. E.g. 1.0 for 1/1 or 0,5 for 1/2 will be Rebate in Kind Quantity this values have to be used also in AdTypes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the relevant unit.</inlineHelpText>
+        <label>Unit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__Unit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Pricelist__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Rate Card which is assigned to this Ad Price. A position can only be added to a Media Campaign, if it has been assigned to the same Rate Card.</inlineHelpText>
+        <label>Rate Card</label>
+        <referenceTo>ADvendio__Pricelist__c</referenceTo>
+        <relationshipLabel>Ad Prices</relationshipLabel>
+        <relationshipName>Ad_Prices</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RateCriterion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Can be used to filter by adPrices by this field in the SelectSearch page</description>
+        <externalId>false</externalId>
+        <label>Rate Criterion</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>bis 5 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 5 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 6 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 6 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 7 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 7 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 10 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 10 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 15 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 15 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 20 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 20 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 25 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 25 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 30 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 30 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 35 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 35 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 40 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 40 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 45 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 45 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 50 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 50 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 55 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 55 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 60 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 60 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>bis 70 Sekunden</fullName>
+                    <default>false</default>
+                    <label>bis 70 Sekunden</label>
+                </value>
+                <value>
+                    <fullName>mit Seiteneinfärbung</fullName>
+                    <default>false</default>
+                    <label>mit Seiteneinfärbung</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShortDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a short description for this Ad Price. The text will be shown on the media search results page. If omitted, short description of Ad Spec will be shown on the media search results page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a short description for this Ad Price. The text will be shown on the media search results page. If omitted, short description of Ad Spec will be shown on the media search results page.</inlineHelpText>
+        <label>Short Description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Enter a UniqueKey (recommended: syntax) for this ad price.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a UniqueKey (recommended: syntax) for this ad price.</inlineHelpText>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Unit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Das Feld Unit/Einheit hat eher einen Print Hintergrund, um hier Informationen wie zum Beispiel &quot;Gramm&quot; zu hinterlegen. Da keine Funktion hier dran hängt, für 71M ausblenden.</inlineHelpText>
+        <label>Unit (deprecated)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Second</fullName>
+                    <default>false</default>
+                    <label>Second</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Valid_from__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Valid from</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Valid_to__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Valid to</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MIG_SPEC_PRODIAKEY_PRICE__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.MIG_PRODIAKEY_PRICE__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MIG_SPEC_PRODIAKEY_PRICE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ADvendio_List_price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Mig_Basispreis__c +  Mig_AufpreisVideolaenge__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ADvendio__List_price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mig_AufpreisVideolaenge__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.Mig_IsPostroll__c,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 7 Sekunden&apos;), null,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 15 Sekunden&apos;), 0,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 20 Sekunden&apos;), 5,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 25 Sekunden&apos;), 10,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 30 Sekunden&apos;), 15,
+null) ) ) ) )
+,
+IF(ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.Mig_IsSponsoring__c,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 7 Sekunden&apos;), 0,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 15 Sekunden&apos;), null,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 20 Sekunden&apos;), null,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 25 Sekunden&apos;), null,
+    IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 30 Sekunden&apos;), null,
+null) ) ) ) )
+,
+   IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 15 Sekunden&apos;), 0,
+   IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 20 Sekunden&apos;), 5,
+   IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 25 Sekunden&apos;), 10,
+   IF(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 30 Sekunden&apos;), 15,
+null))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_AufpreisVideolaenge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mig_Basispreis_Sekundenaufschlag__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.SomDig_MediagattungsDifferenzierung__r.Name=&apos;InStream/Video&apos;,
+IF(
+ OR(
+	AND(
+    CONTAINS(ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.ADvendio__Product_search_Name__c, &apos;Post&apos;),
+    NOT(ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 7 Sekunden&apos;))
+    ),
+	AND(
+    CONTAINS(ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.ADvendio__Product_search_Name__c, &apos;Sponsoring&apos;),
+    ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 7 Sekunden&apos;)
+    )
+  )
+    ,0,
+ IF( ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 20 Sekunden&apos;) , 5,
+ IF( ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 25 Sekunden&apos;) , 10,
+ IF( ISPICKVAL(ADvendio__RateCriterion__c, &apos;bis 30 Sekunden&apos;) , 15,
+    0)))) ,
+    0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Basispreis_Sekundenaufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mig_Basispreis__c</fullName>
+        <description>Übernahme des Basispreises aus ProDia</description>
+        <externalId>false</externalId>
+        <label>Mig_Basispreis</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Mig_BookingPosition__c</fullName>
+        <externalId>false</externalId>
+        <label>Mig_BookingPosition</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_CountCampItems__c</fullName>
+        <externalId>false</externalId>
+        <label>Mig_CountCampItems</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Info__c</fullName>
+        <description>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update</description>
+        <externalId>false</externalId>
+        <inlineHelpText>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update</inlineHelpText>
+        <label>Migration_Info</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_IstMoi__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(ADvendio__Ad_Spec__r.SomDig_AbrechnungLeistungsevaluiert__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_IstMoi</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_MgDifferenzierungsName__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.SomDig_MediagattungsDifferenzierung__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_MgDifferenzierungsName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey_Ad_Specs__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.Mig_ProdiaKey__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ProdiaKey_Ad_Specs</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey_ForPrice_Spec__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.MIG_PRODIAKEY_PRICE__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ProdiaKey_ForPrice_Spec</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey__c</fullName>
+        <description>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</inlineHelpText>
+        <label>Mig_ProdiaKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_VAbfrage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mig_VAbfrage</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbrechnungFestplatzierung__c</fullName>
+        <description>Gibt TRUE zurück, falls die Abrechnungsart CPD, CPW oder Fixed Price ist.
+Wird in den Tab Regeln der neuen Kriteriumseingabemaske verwendet.</description>
+        <externalId>false</externalId>
+        <formula>CASE(ADvendio__Billing_Category__c , &quot;CPD&quot;, 1, &quot;CPW&quot;, 1, &quot;Fixed Price&quot;, 1, 0) = 1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Abrechnung als Festplatzierung</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Auftragstyp__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Pricelist__r.SomDig_AuftragstypId__c</formula>
+        <label>Auftragstyp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BtFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.SomDig_BT__c</formula>
+        <label>BT fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_CpxFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.ADvendio__Placement__r.SomDig_CpxFaehig__c</formula>
+        <label>CPX fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_FcFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.SomDig_FC__c</formula>
+        <label>FC fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_GeoTargetingUnterbunden__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(ADvendio__Ad_Spec__r.SomDig_GtFaehig__c)
+||
+ISBLANK(ADvendio__Ad_Spec__r.SomDig_Targetingaufschlag__c)</formula>
+        <label>Geo Targeting unterbunden</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_GtFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.SomDig_GtFaehig__c</formula>
+        <label>GT fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_KEM_PriceEdit__c</fullName>
+        <description>Überprüft, ob Preise/TKP bearbeitbar sein sollen
+Wird in Kriterieneingabemaske verwendet.</description>
+        <externalId>false</externalId>
+        <formula>OR (
+ADvendio__Pricelist__r.SomDig_AuftragstypId__r.Name = &quot;AdAudience&quot;,
+ADvendio__Pricelist__r.SomDig_AuftragstypId__r.Name =  &quot;Performance&quot;,
+ADvendio__List_price__c = 0.0010,
+$Profile.Name = &apos;SomDig_Billing&apos;,
+$Permission.SomDig_VerkaufspreisManuellBeschreiben  
+)</formula>
+        <label>Verkaufspreis bearbeitbar</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_KeyValueTargetingUnterbunden__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISBLANK(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c)
+||
+(
+  INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;Rotationsausschluss&apos;)
+  &amp;&amp;
+  ISBLANK(ADvendio__Ad_Spec__r.SomDig_RotationExclusionSurcharge__c)
+)
+||
+(
+  (
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;Autosites&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;Bundesliga&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;Gesundheit.de&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;ICQ&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;lokalisten&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;nugg.ad&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;nugg.ad Studio71&apos;) ||
+    INCLUDES(ADvendio__Ad_Spec__r.SomDig_Targeting_Provider__c, &apos;wetter.com&apos;)
+  )
+  &amp;&amp;
+  ISBLANK(ADvendio__Ad_Spec__r.SomDig_Targetingaufschlag__c)
+)</formula>
+        <label>KeyValue Targeting unterbunden</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_KontrolleKeyAdpriceAssignment__c</fullName>
+        <description>Sum-RollUp auf AdPrice ob Datensatz vorhanden und dieses Feld in TabRegel anfragen. Wenn &gt;0, dann Buttons für BehTargeting in Tab der KEM anzeigen, sonst ausblenden. KV 2592</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum-RollUp auf AdPrice ob Datensatz vorhanden und dieses Feld in TabRegel anfragen. Wenn &gt;0, dann Buttons für BehTargeting in Tab der KEM anzeigen, sonst ausblenden.</inlineHelpText>
+        <label>Kontrolle KeyAdpriceAssignment</label>
+        <summaryForeignKey>ADvendio__KeyAdPriceAssignment__c.ADvendio__AdPrice__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsDifferenzierung__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.SomDig_MediagattungsDifferenzierung__c</formula>
+        <label>Mediagattungs-Differenzierung</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Metabuchungslogik__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Metabuchungslogik</label>
+        <referenceTo>SomDig_Metabuchungslogik__c</referenceTo>
+        <relationshipLabel>Ad Prices</relationshipLabel>
+        <relationshipName>Ad_Prices</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MinCPM_Price__c</fullName>
+        <description>Mindest-TKP Preis, der einzuhalten ist</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mindest-TKP Preis, der einzuhalten ist</inlineHelpText>
+        <label>Min. CPM Price</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Placement__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(ADvendio__Ad_Spec__r.ADvendio__Placement__c)</formula>
+        <label>Placement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_RetargetingFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(ISNULL(ADvendio__Ad_Spec__r.SomDig_RetargetingSurcharge__c))</formula>
+        <label>Retargeting fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Rotationstyp__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ADvendio__Ad_Spec__r.ADvendio__Placement__r.SomDig_Rotationstyp__c)</formula>
+        <label>Rotationstyp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_TkpFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.ADvendio__Placement__r.SomDig_TkpFaehig__c</formula>
+        <label>TKP fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_WbFaehig__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.SomDig_WbFaehig__c</formula>
+        <label>WB fähig</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbeformgruppe__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ADvendio__Ad_Spec__r.ADvendio__Ad_Type__r.SomDig_Werbeformgruppe__c)</formula>
+        <label>Werbeformgruppe</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Ad Price</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Ad_Spec__c</columns>
+        <columns>ADvendio__List_price__c</columns>
+        <columns>ADvendio__Active__c</columns>
+        <columns>P7S1_IdOld__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Serienjunkies</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Billing_Category__c</columns>
+        <columns>ADvendio__List_price__c</columns>
+        <columns>ADvendio__Active__c</columns>
+        <columns>ADvendio__Ad_Spec__c</columns>
+        <columns>ADvendio__Pricelist__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Ad_Spec__c</field>
+            <operation>contains</operation>
+            <value>Serienjunkies</value>
+        </filters>
+        <label>Serienjunkies</label>
+        <language>de</language>
+        <sharedTo>
+            <role>Dig_DisplayPublisher</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>AP-{0}</displayFormat>
+        <label>Ad Price No.</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ad Prices</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Billing_Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__List_price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__RateCriterion__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Ad_Spec__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Pricelist__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Billing_Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__List_price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__RateCriterion__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Ad_Spec__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Pricelist__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Billing_Category__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__List_price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Active__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__RateCriterion__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Ad_Spec__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Pricelist__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__Billing_Category__c</searchFilterFields>
+        <searchFilterFields>ADvendio__List_price__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Active__c</searchFilterFields>
+        <searchFilterFields>ADvendio__RateCriterion__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Ad_Spec__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Pricelist__c</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Billing_Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__List_price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__RateCriterion__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Ad_Spec__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Pricelist__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

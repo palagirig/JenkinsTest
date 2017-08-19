@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>standard-CreateNew</narrowComponents>
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <narrowComponents>SomDig Allgemein</narrowComponents>
+    <narrowComponents>SomDig PAM</narrowComponents>
+    <narrowComponents>SomDig RTA</narrowComponents>
+    <narrowComponents>ChangeProfile</narrowComponents>
+    <narrowComponents>standard-UsefulLinks</narrowComponents>
+    <wideComponents>Support per Helpline</wideComponents>
+    <wideComponents>Sales Excellence</wideComponents>
+    <wideComponents>Support &amp; Schulung</wideComponents>
+    <wideComponents>standard-Tasks</wideComponents>
+    <wideComponents>standard-ProcessWorkitems</wideComponents>
+    <wideComponents>standard-Dashboard</wideComponents>
+    <wideComponents>standard-Calendar</wideComponents>
+</HomePageLayout>

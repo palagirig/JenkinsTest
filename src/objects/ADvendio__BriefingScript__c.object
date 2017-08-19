@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Scripts will be the draft of the client requirement for the ads.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Background__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Background from the Advertisers Company/Business context.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Background from the Advertisers Company/Business context</inlineHelpText>
+        <label>Background</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to the related campaign item</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the related campaign item</inlineHelpText>
+        <label>Campaign Item</label>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipName>BriefingScripts</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Client contact details</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Client contact details</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>BriefingScripts</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Goal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Goal of the AD</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Goal of the AD</inlineHelpText>
+        <label>Goal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Get direct responce</fullName>
+                    <default>false</default>
+                    <label>Get direct responce</label>
+                </value>
+                <value>
+                    <fullName>Reinforce an existing brand/Product</fullName>
+                    <default>false</default>
+                    <label>Reinforce an existing brand/Product</label>
+                </value>
+                <value>
+                    <fullName>Introduce sonthing new</fullName>
+                    <default>false</default>
+                    <label>Introduce sonthing new</label>
+                </value>
+                <value>
+                    <fullName>Announce sales/special/event</fullName>
+                    <default>false</default>
+                    <label>Announce sales/special/event</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Headline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What will be the Headline key Massage for that AD?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What will be the Headline key Massage for that AD?</inlineHelpText>
+        <label>Headline</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LevelOfCreativity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What is the Level of Creativity for this AD?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Level of Creativity for this AD?</inlineHelpText>
+        <label>Level of Creativity</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Follow layout exactly</fullName>
+                    <default>false</default>
+                    <label>Follow layout exactly</label>
+                </value>
+                <value>
+                    <fullName>Some interpretation</fullName>
+                    <default>false</default>
+                    <label>Some interpretation</label>
+                </value>
+                <value>
+                    <fullName>Use artistic expression</fullName>
+                    <default>false</default>
+                    <label>Use artistic expression</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LookAndFeelDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describe the details about the Look and Feel of this AD</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Describe the details about the Look and Feel of this AD</inlineHelpText>
+        <label>Look and Feel description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LookAndFeel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What is the Look and Feel for this AD?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Look and Feel for this AD?</inlineHelpText>
+        <label>Look and Feel</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Simple and clean</fullName>
+                    <default>false</default>
+                    <label>Simple and clean</label>
+                </value>
+                <value>
+                    <fullName>Soft, pastel colors</fullName>
+                    <default>false</default>
+                    <label>Soft, pastel colors</label>
+                </value>
+                <value>
+                    <fullName>Bold, bright colors</fullName>
+                    <default>false</default>
+                    <label>Bold, bright colors</label>
+                </value>
+                <value>
+                    <fullName>Exclusive and expensive</fullName>
+                    <default>false</default>
+                    <label>Exclusive and expensive</label>
+                </value>
+                <value>
+                    <fullName>Warm, friendly infinity</fullName>
+                    <default>false</default>
+                    <label>Warm, friendly infinity</label>
+                </value>
+                <value>
+                    <fullName>Ruged, masculine look that appeals to men</fullName>
+                    <default>false</default>
+                    <label>Ruged, masculine look that appeals to men</label>
+                </value>
+                <value>
+                    <fullName>Feminine look that appeals to women</fullName>
+                    <default>false</default>
+                    <label>Feminine look that appeals to women</label>
+                </value>
+                <value>
+                    <fullName>Whimsical and fun design</fullName>
+                    <default>false</default>
+                    <label>Whimsical and fun design</label>
+                </value>
+                <value>
+                    <fullName>Classical, sophisticated, upscale look</fullName>
+                    <default>false</default>
+                    <label>Classical, sophisticated, upscale look</label>
+                </value>
+                <value>
+                    <fullName>Trendy, hip design that appeals to college age</fullName>
+                    <default>false</default>
+                    <label>Trendy, hip design that appeals to college age</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaDifferentiation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What is the Media Differentiation for this AD?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Media Differentiation for this AD?</inlineHelpText>
+        <label>Media Differentiation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaDifferentiation</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaSegment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What is the Media Segment for this AD?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Media Segment for this AD?</inlineHelpText>
+        <label>Media Segment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaSegment</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What is the Media Type for this AD?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Media Type for this AD?</inlineHelpText>
+        <label>Media Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The AD number</description>
+        <displayFormat>AD-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>The AD number</inlineHelpText>
+        <label>Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublicationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>deprecated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will be auto populated from the campaign items selected publication date</inlineHelpText>
+        <label>Publication Date (deprecated)</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublicationName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Publication Name will be auto populated with the site name related to the campaign item.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__CampaignItem__r.ADvendio__Ad_Price__r.ADvendio__Ad_Spec__r.ADvendio__Placement__r.ADvendio__Site__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will be auto populated with the site name of the related campaign item</inlineHelpText>
+        <label>Publication Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Why a Person from the Target Group should use the Offer/USP/SMP?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Why a Person from the Target Group should use the Offer/USP/SMP?</inlineHelpText>
+        <label>Reason</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SentToClientAd__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specifies if the AD is sent to client for approval or not. If True than AD sent to client for approval
+otherwise AD is not sent to client for approval.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies if the AD is sent to client for approval or not</inlineHelpText>
+        <label>Sent to Client (AD)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SentToClientScript__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specifies if the script is sent to client for approval or not. If True the script is sent to client for approval otherwise it is not.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies if the script is sent to client for approval or not</inlineHelpText>
+        <label>Sent to Client (Script)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status of the script</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status of the script</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Script</fullName>
+                    <default>true</default>
+                    <label>New Script</label>
+                </value>
+                <value>
+                    <fullName>Script Pending manager approval</fullName>
+                    <default>false</default>
+                    <label>Script Pending manager approval</label>
+                </value>
+                <value>
+                    <fullName>Script Rejected by Manager</fullName>
+                    <default>false</default>
+                    <label>Script Rejected by Manager</label>
+                </value>
+                <value>
+                    <fullName>Script Pending Client approval</fullName>
+                    <default>false</default>
+                    <label>Script Pending Client approval</label>
+                </value>
+                <value>
+                    <fullName>Script Rejected by Client</fullName>
+                    <default>false</default>
+                    <label>Script Rejected by Client</label>
+                </value>
+                <value>
+                    <fullName>Script Approved</fullName>
+                    <default>false</default>
+                    <label>Script Approved</label>
+                </value>
+                <value>
+                    <fullName>Advertise Pending manager approval</fullName>
+                    <default>false</default>
+                    <label>Advertise Pending manager approval</label>
+                </value>
+                <value>
+                    <fullName>Advertise Rejected by Manager</fullName>
+                    <default>false</default>
+                    <label>Advertise Rejected by Manager</label>
+                </value>
+                <value>
+                    <fullName>Advertise Pending Client approval</fullName>
+                    <default>false</default>
+                    <label>Advertise Pending Client approval</label>
+                </value>
+                <value>
+                    <fullName>Advertise Rejected by Client</fullName>
+                    <default>false</default>
+                    <label>Advertise Rejected by Client</label>
+                </value>
+                <value>
+                    <fullName>Advertise Approved</fullName>
+                    <default>false</default>
+                    <label>Advertise Approved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TargetProfile__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Target profile</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Target profile</inlineHelpText>
+        <label>Target Profile</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Text__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for the script.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for the script</inlineHelpText>
+        <label>Text</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <defaultValue>Text(today())</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Unique Key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Key</inlineHelpText>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL may include a link to the ad files.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL may include a link to the ad files</inlineHelpText>
+        <label>URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UspSmpOffer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>What is the USP/SMP/Offer for this AD? Significant market power, in economics, the ability of a firm to alter the market price of a good or service.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the USP/SMP/Offer for this AD?</inlineHelpText>
+        <label>USP/SMP/Offer</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <label>Briefing Script</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Briefing Script Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Briefing Scripts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ADvendio__CreatePDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>ADvendio__MMPDFGeneratorScript</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__SendAsPDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Send As PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>ADvendio__MMScriptAdApprovalEmailToContact</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__SendEmailToContact</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Email To Contact</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/27.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/27.0/apex.js&quot;)}
+var result = sforce.connection.query(&quot;Select Id,Name,ADvendio__Status__c, ADvendio__SentToClientScript__c,ADvendio__SentToClientAd__c From ADvendio__BriefingScript__c where Id=&quot;+&quot;&apos;{!ADvendio__BriefingScript__c.Id}&apos;&quot;);
+
+var records = result.getArray(&quot;records&quot;);
+
+if (records.length != 0){
+    var scriptStatus = records[0].ADvendio__Status__c;
+    var scriptEmailSent = records[0].ADvendio__SentToClientScript__c;
+    var adEmailSent = records[0].ADvendio__SentToClientAd__c;
+    if((scriptStatus == &apos;Script Pending Client approval&apos; &amp;&amp; scriptEmailSent ==  &apos;true&apos;) || (scriptStatus == &apos;Advertise Pending Client approval&apos; &amp;&amp; adEmailSent  == &apos;true&apos;)){
+        alert(&apos;The script is already Sent to client&apos;);
+    }
+    else if((scriptStatus == &apos;Script Pending Client approval&apos; &amp;&amp; scriptEmailSent == &apos;false&apos;) || (scriptStatus == &apos;Advertise Pending Client approval&apos; &amp;&amp; adEmailSent  ==&apos;false&apos;)){
+        var url = &apos;/apex/ADvendio__MMScriptAdApprovalEmailToContact?Id={!ADvendio__BriefingScript__c.Id}&apos;;
+        window.open(url);
+    }else{
+        alert(&apos;Script/AD Status should be Script/AD Pending Client approval to send PDF to contact&apos;);
+    }
+}</url>
+    </webLinks>
+</CustomObject>

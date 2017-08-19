@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MMScriptClientApprovalEmail</name>
+    <style>none</style>
+    <subject>Request for script approval</subject>
+    <textOnly>Hi {!ADvendio__BriefingScript__c.ADvendio__Contact__c},
+
+the script is ready for your review and attached with this email.
+Please give us your approval so we can proceed.
+To approve the script please click on approve link, otherwise click the reject link. Your response is valuable to us.
+
+Click here for your approval:
+{!$Setup.ADvendio__MMDomainPageURL__c.ADvendio__SiteUrl__c}?BriefingScriptId={!ADvendio__BriefingScript__c.Id}&amp;ApprovalResponseCode=Approved+AD&amp;GuidResponseCode={!ADvendio__BriefingScript__c.ADvendio__UniqueKey__c}
+
+Click here for your Rejection:
+{!$Setup.ADvendio__MMDomainPageURL__c.ADvendio__SiteUrl__c}?BriefingScriptId={!ADvendio__BriefingScript__c.Id}&amp;ApprovalResponseCode=Rejected+AD&amp;GuidResponseCode={!ADvendio__BriefingScript__c.ADvendio__UniqueKey__c}
+
+
+Sincerely,
+ADvendio Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdfillRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>How high is the percentage of already booked Ads for this issue date / Publication Date, in relation to book size?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How high is the percentage of already booked Ads for this issue date / Publication Date, in relation to book size?</inlineHelpText>
+        <label>Ad fill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BookSize__c</fullName>
+        <deprecated>false</deprecated>
+        <description>How many pages are planned for this issue date / Publication Date?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many pages are planned for this issue date / Publication Date?</inlineHelpText>
+        <label>Book Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Circulation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the circulation for that Publication Date here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the circulation for that Publication Date here.</inlineHelpText>
+        <label>Circulation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of invoice</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of invoice</inlineHelpText>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaterialDueDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please select the delivery deadline for printed material.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the delivery deadline for printed material.</inlineHelpText>
+        <label>Material Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PlannedAdFillRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Here you can enter, what percentage of this Issue / Publication Date is supposed to be sold as Ads, in relation to the actual book size.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Here you can enter, what percentage of this Issue / Publication Date is supposed to be sold as Ads, in relation to the actual book size.</inlineHelpText>
+        <label>Planned Ad fill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublicationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Publication Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ReservationBookingDeadline__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Closing date, bookings are only possible before this deadline.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Closing date, bookings are only possible before this deadline.</inlineHelpText>
+        <label>Reservation/Booking Deadline</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RevenueRecognitionDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Which accounting period should be recognized?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which accounting period should be recognized?</inlineHelpText>
+        <label>Revenue Recognition Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Site__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Define to what site this publication date belongs.</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Publication Dates</relationshipLabel>
+        <relationshipName>PublicationDates</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Publication Date</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Site__c</columns>
+        <columns>ADvendio__PublicationDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>ADvendio__All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Publication Number</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Publication Dates</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ADvendio__AdFillReport</fullName>
+        <availability>online</availability>
+        <description>Links directly to the Ad Fill report, to have an overview over the planning status of your Publication Dates.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Ad fill Report</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/35.0/connection.js&quot;)}
+
+try {
+var result = sforce.connection.query(
+&quot;SELECT Id&quot; +
+&quot; FROM Report&quot; +
+&quot; WHERE DeveloperName = &apos;Adfill_Report_per_Publication_date&apos;&quot; +
+&quot; AND NamespacePrefix = &apos;ADvendio&apos;&quot; +
+&quot; LIMIT 1&quot;
+);
+
+var reports = result.getArray(&quot;records&quot;);
+
+if (reports.length === 0) {
+alert(&quot;The Report isn&apos;t available in this Org!&quot;);
+} else {
+var url = &quot;/&quot; + reports[0].Id + &quot;?pv0={!ADvendio__PublicationDate__c.Id}&quot;;
+window.open(url, &quot;_blank&quot;);
+}
+} catch(e) {
+alert(
+&quot;An unexpected Error has Occurred.\r\n&quot; + 
+&quot;Error: &quot; + e.message
+);
+}</url>
+    </webLinks>
+</CustomObject>

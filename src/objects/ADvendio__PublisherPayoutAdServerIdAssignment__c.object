@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Junctions Object to link AdServerId and Publisher Payout Conditions. Optionally you can also exclude records.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdServerID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Relation to the AdServer ID.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select an AdServer ID for this Publisher Payout Condition. With the assignment you influence which Delivery Data from which Ad-Units will be counted towards the condition.</inlineHelpText>
+        <label>AdServer ID</label>
+        <referenceTo>ADvendio__AdServer_ID__c</referenceTo>
+        <relationshipLabel>Publisher Payout AdServer Id Assignments</relationshipLabel>
+        <relationshipName>PublisherPayoutAdServerIdAssignments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublisherPayoutCondition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to the Master Publisher Payout Condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the Master Publisher Payout Condition.</inlineHelpText>
+        <label>Publisher Payout Condition</label>
+        <referenceTo>ADvendio__PublisherPayoutCondition__c</referenceTo>
+        <relationshipLabel>Publisher Payout AdServer Id Assignments</relationshipLabel>
+        <relationshipName>PublisherPayoutAdServerIdAssignments</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Publisher Payout AdServer Id Assignment</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AdServerID__c</columns>
+        <columns>ADvendio__PublisherPayoutCondition__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PPA-{0000}</displayFormat>
+        <label>Publisher Payout AdServer Id No.</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Publisher Payout AdServer Id Assignments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

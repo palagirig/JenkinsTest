@@ -1,0 +1,26 @@
+<apex:page standardController="SomTv_ForecastTV__c">
+    <apex:variable var="gapVar" value="{! SomTv_ForecastTV__c.SomTV_Account__r.SomTv_SummeForecastNeueSenderMN3__c - SomTv_ForecastTV__c.SomTV_Account__r.SomTv_OpptiAJNeueSender__c}" />
+    <span style="padding-left: 21%;">
+
+	<span>
+        <apex:outputLabel style="text-align: right; font-size: 91%; font-weight: bold; color: #4a4a56;" value="{!$ObjectType.Account.Fields.SomTv_ForecastDifferenzNeueSender__c.Label}" />
+    </span>
+
+	<apex:OutputPanel layout="none" rendered="{! gapVar < 0}">
+    	<apex:image alt="RISIKO" id="theImageLt0" style="height: 14px;" value="/img/msg_icons/error16.png"/>
+    </apex:OutputPanel>
+        
+        <apex:OutputPanel layout="none" rendered="{! gapVar == 0}" style="width:16px;">
+            &nbsp;
+        </apex:OutputPanel>
+            
+    <apex:OutputPanel layout="none" rendered="{! gapVar > 0}">
+        <apex:image alt="ERFOLG" id="theImageGt0" style="height: 14px;" value="/img/icon/sack16.png"/>
+    </apex:OutputPanel>
+	
+    <span >
+      <apex:outputField style="" value="{!SomTv_ForecastTV__c.SomTV_Account__r.SomTv_ForecastDifferenzNeueSender__c}"/>
+    </span>
+    
+  </span>
+</apex:page>

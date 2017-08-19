@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MMScriptAssignmentEmail</name>
+    <style>none</style>
+    <subject>Script {!ADvendio__BriefingScript__c.Name} needs approval</subject>
+    <textOnly>Hi {!User.Manager},
+
+the script {!ADvendio__BriefingScript__c.Name} has been assigned to you for approval. 
+To approve or reject, reply to this email with one of these words in the first line of the email message: APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+
+You can also click this link: 
+https://ap2.salesforce.com/p/process/ProcessInstanceWorkitemWizardStageManager?id={!Workitem.ID}
+
+Please find the details below:
+
+Goal: {!ADvendio__BriefingScript__c.ADvendio__Goal__c}
+Headline: {!ADvendio__BriefingScript__c.ADvendio__Headline__c}
+Level of Creativity: {!ADvendio__BriefingScript__c.ADvendio__LevelOfCreativity__c}
+Look and Feel: {!ADvendio__BriefingScript__c.ADvendio__LookAndFeel__c}
+Look and Feel Description: {!ADvendio__BriefingScript__c.ADvendio__LookAndFeelDescription__c}
+Media Differentiation: {!ADvendio__BriefingScript__c.ADvendio__MediaDifferentiation__c}
+Media Segment: {!ADvendio__BriefingScript__c.ADvendio__MediaSegment__c}
+Media Type: {!ADvendio__BriefingScript__c.ADvendio__MediaType__c}
+Reason: {!ADvendio__BriefingScript__c.ADvendio__Reason__c}
+Script Text: {!ADvendio__BriefingScript__c.ADvendio__Text__c}
+Target Profile: {!ADvendio__BriefingScript__c.ADvendio__TargetProfile__c}
+USP/SMP/Offer: {!ADvendio__BriefingScript__c.ADvendio__UspSmpOffer__c}
+
+Sincerely,
+ADvendio Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

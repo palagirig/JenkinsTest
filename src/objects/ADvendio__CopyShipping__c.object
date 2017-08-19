@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Stores the recipients and all related information for Voucher Copies and free copy shippings.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Link to the relevant Campaign Item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the relevant Campaign Item.</inlineHelpText>
+        <label>Campaign Item</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>ADvendio__Campaign_Item__c.ADvendio__Media_Campaign__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.ADvendio__MediaCampaign__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipLabel>Copy Shippings</relationshipLabel>
+        <relationshipName>CopyShippings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DateSent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date on which the copies were sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date on which the copies were sent.</inlineHelpText>
+        <label>Date sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional information for this shipment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional information for this shipment.</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DispatchType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose the Dispatch type for that recipient.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose the Dispatch type for that recipient.</inlineHelpText>
+        <label>Dispatch Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Courier</fullName>
+                    <default>false</default>
+                    <label>Courier</label>
+                </value>
+                <value>
+                    <fullName>DHL</fullName>
+                    <default>false</default>
+                    <label>DHL</label>
+                </value>
+                <value>
+                    <fullName>UPS</fullName>
+                    <default>false</default>
+                    <label>UPS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaCampaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Link to the relevant Media Campaign</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the relevant Media Campaign</inlineHelpText>
+        <label>Media Campaign</label>
+        <referenceTo>ADvendio__MediaCampaign__c</referenceTo>
+        <relationshipLabel>Copy Shippings</relationshipLabel>
+        <relationshipName>CopyShippings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Medium__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Please enter here for which Magazine, Newspaper  the recipient get some free copies</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter here for which Magazine, Newspaper  the recipient get some free copies.</inlineHelpText>
+        <label>Medium</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Copy Shippings</relationshipLabel>
+        <relationshipName>CopyShippings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NumberOfCopies__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of copies to be send to this recipient.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of copies to be send to this recipient.</inlineHelpText>
+        <label>Number of Copies</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientText__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Alternative recipient field if no existing contact is maintained. Please enter the full name and address details for the recipient here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you do not use an existing contact please enter the full name and address details for the recipient here.</inlineHelpText>
+        <label>Recipient</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Recipient__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Who will receive the copies?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Who will receive the copies?</inlineHelpText>
+        <label>Recipient</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Copy Shippings</relationshipLabel>
+        <relationshipName>CopyShippings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>From which date the Free Copy / Free Subscription is valid?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From which date the Free Copy / Free Subscription is valid?</inlineHelpText>
+        <label>Valid From</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidUntil__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Until which date the Free Copy / Free Subscription Shipment is valid?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Until which date the Free Copy / Free Subscription Shipment is valid?</inlineHelpText>
+        <label>Valid Until</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Copy Shipping</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Copy Shipping</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Copy Shippings</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ADvendio__FreeCopy</fullName>
+        <active>true</active>
+        <description>Free Copy Shipping Recipient</description>
+        <label>Free Copy</label>
+        <picklistValues>
+            <picklist>ADvendio__DispatchType__c</picklist>
+            <values>
+                <fullName>Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DHL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__VoucherCopy</fullName>
+        <active>true</active>
+        <description>Voucher Copy Recipient</description>
+        <label>Voucher Copy</label>
+        <picklistValues>
+            <picklist>ADvendio__DispatchType__c</picklist>
+            <values>
+                <fullName>Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DHL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>ADvendio__DispatchType__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__NumberOfCopies__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Recipient__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__RecipientText__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__MediaCampaign__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__CampaignItem__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__DateSent__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__DispatchType__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__NumberOfCopies__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Recipient__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__RecipientText__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__MediaCampaign__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__CampaignItem__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Description__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__DateSent__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__DispatchType__c</searchFilterFields>
+        <searchFilterFields>ADvendio__NumberOfCopies__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Recipient__c</searchFilterFields>
+        <searchFilterFields>ADvendio__RecipientText__c</searchFilterFields>
+        <searchFilterFields>ADvendio__MediaCampaign__c</searchFilterFields>
+        <searchFilterFields>ADvendio__CampaignItem__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Description__c</searchFilterFields>
+        <searchFilterFields>ADvendio__DateSent__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

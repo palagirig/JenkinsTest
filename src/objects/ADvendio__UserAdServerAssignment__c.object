@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdServerLogin__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>AdServer</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>User AdServer Assignments</relationshipLabel>
+        <relationshipName>UserAdServerAssignments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerUserID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the user-ID of this user by the ad-server. If not defined, the &quot;AdServer User Name&quot; will be used to try to find the user by the ad-server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the user-ID of this user by the ad-server. If not defined, the &quot;AdServer User Name&quot; will be used to try to find the user by the ad-server.</inlineHelpText>
+        <label>AdServer User ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerUserName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the username of this user by the ad-server. It can be omitted if the &quot;AdServer User ID&quot; is defined.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the username of this user by the ad-server. It can be omitted if the &quot;AdServer User ID&quot; is defined.</inlineHelpText>
+        <label>AdServer User Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>UserAdServerAssignments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>User AdServer Assignment</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__User__c</columns>
+        <columns>ADvendio__AdServerLogin__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>UAA-{0000}</displayFormat>
+        <label>User AdServer Assignment No.</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>User AdServer Assignments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,3 @@
+Beim Upload der SAP-Datei {!SomDig_SapDatei__c.SomDig_Nummer__c} ist ein Fehler aufgetreten. Das Übermittlungsprotokoll ist der SAP-Datei in Salesforce angehängt.
+
+Link zur SAP-Datei: {!SomDig_SapDatei__c.Link}

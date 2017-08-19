@@ -167,7 +167,7 @@
         <language>de</language>
         <protected>false</protected>
         <shortDescription>Buchungskontrolle SF URL</shortDescription>
-        <value>https://emea.salesforce.com/services/Soap/u/28.0/00D9E0000000U1O</value>
+        <value>https://emea.salesforce.com/services/Soap/u/28.0/00D200000007Imv</value>
     </labels>
     <labels>
         <fullName>BuchungskontrolleSalesforceUsername</fullName>
@@ -486,718 +486,6 @@
         <protected>false</protected>
         <shortDescription>MN2 @risk_GM</shortDescription>
         <value>MN2 @risk</value>
-    </labels>
-    <labels>
-        <fullName>MT_Add</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Add</shortDescription>
-        <value>Create</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataControl_ERROR_ValidationExceptionBody</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Control</categories>
-        <language>de</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataControl_ERROR_ValidationExceptionBody</shortDescription>
-        <value>Die Überprüfung der Ausstrahlungsimportdaten schlug fehl mit einer Ausnahme: 
-
-{0} 
-{1}</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataControl_ERROR_ValidationFailedBody</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Control</categories>
-        <language>de</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataControl_ERROR_ValidationFailedBody</shortDescription>
-        <value>Die Überprüfung der Ausstrahlungsimportdaten schlug fehl. Bitte prüfen Sie die folgenden Ergebnisse:
-
-PRÜFUNG			ERWARTET / ERHALTEN
------------------------------------------------------------------------
-Anzahl Datensätze	{0} / {1}
-Summe MB1		{2} / {3}
-Summe MB3		{4} / {5}
-Summe MN3		{6} / {7}
------------------------------------------------------------------------</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataControl_ERROR_ValidationFailedSubject</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Control</categories>
-        <language>de</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataControl_ERROR_ValidationFailedSubject</shortDescription>
-        <value>Überprüfung der Ausstrahlungsimportdaten - FEHLER</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataTransformator_ERROR_MonthOutsideContractRuntime</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Transformator</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataTransformator_ERROR_MonthOutsideContractRuntime</shortDescription>
-        <value>Broadcast month is outside of the contract runtime (no monthly plan record exists).</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataTransformator_ERROR_NewerRecordFound</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Transformator</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataTransformator_ERROR_NewerRecordFound</shortDescription>
-        <value>A newer data record for this month, sender and timeslot combination was found. Ignoring the old data.</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataTransformator_ERROR_NoProSaOrderFound</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Transformator</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataTransformator_ERROR_NoProSaOrderFound</shortDescription>
-        <value>No ProSa Order with this ID found.</value>
-    </labels>
-    <labels>
-        <fullName>MT_BC_ImportDataTransformator_ERROR_ProSaOrderCampaignMismatch</fullName>
-        <categories>Media Transparency, MT Broadcast Import Data Transformator</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_BC_ImportDataTransformator_ERROR_ProSaOrderCampaignMismatch</shortDescription>
-        <value>The ProSa order references a campaign with a different KRS ID than the import record has.</value>
-    </labels>
-    <labels>
-        <fullName>MT_CampaignProbability</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CampaignProbability</shortDescription>
-        <value>Camp. Probability</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_BmvTvCustomer</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_BmvTvCustomer</shortDescription>
-        <value>Customer Ratio</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_BuildingBlocks</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_BuildingBlocks</shortDescription>
-        <value>Media Building Blocks</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_BuildingBlocks_Digital</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_BuildingBlocks_Digital</shortDescription>
-        <value>Digital</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_BuildingBlocks_DooH</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_BuildingBlocks_DooH</shortDescription>
-        <value>DooH</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_BuildingBlocks_TV</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_BuildingBlocks_TV</shortDescription>
-        <value>TV</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_CampaignType_NoMatches</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_CampaignType_NoMatches</shortDescription>
-        <value>No matching campaign types found.</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Cancel</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Cancel</shortDescription>
-        <value>Cancel</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_ContractualRuntime</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_ContractualRuntime</shortDescription>
-        <value>Contract Runtime</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_ContractualRuntime_None</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_ContractualRuntime_None</shortDescription>
-        <value>None</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Create</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Create</shortDescription>
-        <value>Create</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_ErrorTitle</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_ErrorTitle</shortDescription>
-        <value>An error occurred</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_InformationFromOpportunityApproval</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_InformationFromOpportunityApproval</shortDescription>
-        <value>Information from Opportunity Approval</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Ok</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Ok</shortDescription>
-        <value>OK</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Revenues</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Revenues</shortDescription>
-        <value>Revenues</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Seconds</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Seconds</shortDescription>
-        <value>Seconds</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_SpotLength</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_SpotLength</shortDescription>
-        <value>Spot Length</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_SpotLengthCustomer</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_SpotLengthCustomer</shortDescription>
-        <value>Seconds Customer Ratio</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Thereof</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Thereof</shortDescription>
-        <value>thereof</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_Title</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_Title</shortDescription>
-        <value>Create Media Campaign</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue1_Title</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue1_Title</shortDescription>
-        <value>Variable Revenue 1</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue2_Title</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue2_Title</shortDescription>
-        <value>Variable Revenue 2</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue3_Title</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue3_Title</shortDescription>
-        <value>Variable Revenue 3</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue4_Title</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue4_Title</shortDescription>
-        <value>Variable Revenue 4</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue5_Title</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue5_Title</shortDescription>
-        <value>Variable Revenue 5</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue_RevenuePerUnit</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue_RevenuePerUnit</shortDescription>
-        <value>Revenue Per Unit</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue_SoldAmount</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue_SoldAmount</shortDescription>
-        <value>Sold Amount</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue_SoldProduct</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue_SoldProduct</shortDescription>
-        <value>Sold Product</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue_SoldUnit</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue_SoldUnit</shortDescription>
-        <value>Sold Unit</value>
-    </labels>
-    <labels>
-        <fullName>MT_CreateMediaCampaign_VariableRevenue_TotalRevenue</fullName>
-        <categories>Media Transparency, MT Create Media Campaign</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_CreateMediaCampaign_VariableRevenue_TotalRevenue</shortDescription>
-        <value>Total Revenue</value>
-    </labels>
-    <labels>
-        <fullName>MT_Distribution</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Distribution</shortDescription>
-        <value>Distribution</value>
-    </labels>
-    <labels>
-        <fullName>MT_Flight</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Flight</shortDescription>
-        <value>Flight</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_AccountName</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_AccountName</shortDescription>
-        <value>Account Name</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_AssetName</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_AssetName</shortDescription>
-        <value>Internal Partner</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_CampaignStatus</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_CampaignStatus</shortDescription>
-        <value>Campaign Status</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_CampaignType</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_CampaignType</shortDescription>
-        <value>Campaign Type</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_RuntimeTVEnd</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_RuntimeTVEnd</shortDescription>
-        <value>Runtime TV End</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_RuntimeTVStart</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_RuntimeTVStart</shortDescription>
-        <value>Runtime TV Start</value>
-    </labels>
-    <labels>
-        <fullName>MT_GlobalOppApp_Title</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_GlobalOppApp_Title</shortDescription>
-        <value>Opportunity Approval Cockpit</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_AccountName</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_AccountName</shortDescription>
-        <value>Account Name</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_AssetName</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_AssetName</shortDescription>
-        <value>Internal Partner</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_BmvTVActuals</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_BmvTVActuals</shortDescription>
-        <value>BMV TV Actual</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_BmvTVContractual</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_BmvTVContractual</shortDescription>
-        <value>BMV TV Contractual</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_CampaignStatus</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_CampaignStatus</shortDescription>
-        <value>Campaign Status</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_CampaignType</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_CampaignType</shortDescription>
-        <value>Campaign Type</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_ContractualPerformance</fullName>
-        <categories>Media Transparency, MT Global Opp App Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_ContractualPerformance</shortDescription>
-        <value>Contractual Performance</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_RuntimeTVEnd</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_RuntimeTVEnd</shortDescription>
-        <value>Runtime TV End</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_RuntimeTVStart</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_RuntimeTVStart</shortDescription>
-        <value>Runtime TV Start</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_Global_Title</fullName>
-        <categories>Media Transparency, MT KPI Global Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_Global_Title</shortDescription>
-        <value>Media Campaign Cockpit</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_BmvTVAsset</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_BmvTVAsset</shortDescription>
-        <value>BMV TV Unit</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_BmvTVCustomer</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_BmvTVCustomer</shortDescription>
-        <value>BMV TV Customer</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_SpotLengthCustomer</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_SpotLengthCustomer</shortDescription>
-        <value>Customer Fraction</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_SpotLengthTotal</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_SpotLengthTotal</shortDescription>
-        <value>Spot Length Total</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_SpotRatioAsset</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_SpotRatioAsset</shortDescription>
-        <value>Spot Ratio Unit</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_SpotRatioCustomer</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_SpotRatioCustomer</shortDescription>
-        <value>Spot Ratio Customer</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_MediaCampaign_Title</fullName>
-        <categories>Media Transparency, MT KPI Media Campaign Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_MediaCampaign_Title</shortDescription>
-        <value>Media Campaign Cockpit</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_OppApp_BmvTVCustomer</fullName>
-        <categories>Media Transparency, MT KPI OppApp Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_OppApp_BmvTVCustomer</shortDescription>
-        <value>BMV TV Customer</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_OppApp_SpotLengthCustomer</fullName>
-        <categories>Media Transparency, MT KPI OppApp Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_OppApp_SpotLengthCustomer</shortDescription>
-        <value>Customer Fraction</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_OppApp_SpotLengthTotal</fullName>
-        <categories>Media Transparency, MT KPI OppApp Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_OppApp_SpotLengthTotal</shortDescription>
-        <value>Spot Length Total</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_OppApp_SpotRatioAsset</fullName>
-        <categories>Media Transparency, MT KPI OppApp Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_OppApp_SpotRatioAsset</shortDescription>
-        <value>Spot Ratio Unit</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_OppApp_SpotRatioCustomer</fullName>
-        <categories>Media Transparency, MT KPI OppApp Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_OppApp_SpotRatioCustomer</shortDescription>
-        <value>Spot Ratio Customer</value>
-    </labels>
-    <labels>
-        <fullName>MT_KPI_OppApp_Title</fullName>
-        <categories>Media Transparency, MT KPI OppApp Component</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_KPI_OppApp_Title</shortDescription>
-        <value>Opportunity Approval Cockpit</value>
-    </labels>
-    <labels>
-        <fullName>MT_Max</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Max</shortDescription>
-        <value>Max.</value>
-    </labels>
-    <labels>
-        <fullName>MT_MediaCampaign_RecordTypeName_Internal</fullName>
-        <categories>MT_MediaCampaign, RecordType</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_MediaCampaign_RecordTypeName_Internal</shortDescription>
-        <value>MT_InternalMediaCampaign</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_Fields</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_Fields</shortDescription>
-        <value>Fields</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_LastApprovedValue</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_LastApprovedValue</shortDescription>
-        <value>Last Approved Value</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_NoActiveApprovalProcess</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_NoActiveApprovalProcess</shortDescription>
-        <value>No active approval process in progress</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_NoApprovalYet</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_NoApprovalYet</shortDescription>
-        <value>No approval yet.</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_NoChanges</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_NoChanges</shortDescription>
-        <value>No Changes</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_NoValues</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_NoValues</shortDescription>
-        <value>No Values</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_SubmittedValue</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_SubmittedValue</shortDescription>
-        <value>Submitted Value</value>
-    </labels>
-    <labels>
-        <fullName>MT_OppApp_ApprovalHistory_Title</fullName>
-        <categories>Media Transparency, MT Opp App Approval History</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_OppApp_ApprovalHistory_Title</shortDescription>
-        <value>Opportunity Approval - Approval History</value>
-    </labels>
-    <labels>
-        <fullName>MT_Sponsoring</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Sponsoring</shortDescription>
-        <value>Sponsoring</value>
-    </labels>
-    <labels>
-        <fullName>MT_Spots</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Spots</shortDescription>
-        <value>Spots</value>
-    </labels>
-    <labels>
-        <fullName>MT_Total</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Total</shortDescription>
-        <value>Total</value>
-    </labels>
-    <labels>
-        <fullName>MT_Volume</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Volume</shortDescription>
-        <value>BMV</value>
-    </labels>
-    <labels>
-        <fullName>MT_Weighted</fullName>
-        <categories>Media Transparency</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_Weighted</shortDescription>
-        <value>weighted</value>
-    </labels>
-    <labels>
-        <fullName>MT_lbl_VariableRevenue1_RevenuePerUnit</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_lbl_VariableRevenue1_RevenuePerUnit</shortDescription>
-        <value>Variable Revenue - Rev. per Unit</value>
-    </labels>
-    <labels>
-        <fullName>MT_lbl_VariableRevenue1_SoldAmount</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_lbl_VariableRevenue1_SoldAmount</shortDescription>
-        <value>Variable Revenue - Sales figures</value>
-    </labels>
-    <labels>
-        <fullName>MT_lbl_VariableRevenue1_TotalRevenue</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>MT_lbl_VariableRevenue1_TotalRevenue</shortDescription>
-        <value>Variable Revenue - Total Revenue</value>
     </labels>
     <labels>
         <fullName>Menge_PR</fullName>
@@ -2243,20 +1531,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Anrede</value>
     </labels>
     <labels>
-        <fullName>P7S1_lbl_ExitParticipation</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>P7S1_lbl_ExitParticipation</shortDescription>
-        <value>EP Percentage</value>
-    </labels>
-    <labels>
-        <fullName>P7S1_lbl_FillUp</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>P7S1_lbl_FillUp</shortDescription>
-        <value>Fill-Up</value>
-    </labels>
-    <labels>
         <fullName>PDF_Page_Break</fullName>
         <categories>PAMcockpit</categories>
         <language>de</language>
@@ -2622,20 +1896,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Analyst</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_AnnualShiftingRightsCustomer</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_AnnualShiftingRightsCustomer</shortDescription>
-        <value>Yearly Customer Push Right</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_AnnualShiftingRightsP7S1</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_AnnualShiftingRightsP7S1</shortDescription>
-        <value>Yearly P7S1 Push Right</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_AprilShort</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -2655,20 +1915,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <protected>false</protected>
         <shortDescription>Ven_lbl_AutoFill</shortDescription>
         <value>will be completed automatically</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_BusinessModel</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_BusinessModel</shortDescription>
-        <value>Business Model</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_BusinessType</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_BusinessType</shortDescription>
-        <value>Business Type</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_Cancel</fullName>
@@ -2727,13 +1973,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Currency</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_CustomerAssesment</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_CustomerAssesment</shortDescription>
-        <value>Customer Assessment</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_DealIndustry</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -2776,32 +2015,11 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Do you really want to delete this Opportunity?</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_DescriptionWKZPotential</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_DescriptionWKZPotential</shortDescription>
-        <value>Description</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_Effective</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Ven_lbl_Effective</shortDescription>
         <value>Effective</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_EnvisagedTypeOfTransaction</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_EnvisagedTypeOfTransaction</shortDescription>
-        <value>Envisaged Type Of Transaction</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_Equity_Share</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_Equity_Share</shortDescription>
-        <value>P7S1 Shares</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_Export</fullName>
@@ -2816,13 +2034,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <protected>false</protected>
         <shortDescription>Ven_lbl_FebruaryShort</shortDescription>
         <value>Feb</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_FeedbackAdMarketDevInitiative</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_FeedbackAdMarketDevInitiative</shortDescription>
-        <value>Ad Market Development Initiative Assessment</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_Gmv</fullName>
@@ -2843,21 +2054,7 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Ven_lbl_Im</shortDescription>
-        <value>Deal Manager</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_IndustryChampion</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_IndustryChampion</shortDescription>
-        <value>Industry Champion</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_InterestOfData</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_InterestOfData</shortDescription>
-        <value>Data Assessment</value>
+        <value>IM</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_International</fullName>
@@ -2902,20 +2099,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Last Modified</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_ListOfWebsitesApps</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_ListOfWebsitesApps</shortDescription>
-        <value>List of Websites / Apps</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_MN3Customer</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_MN3Customer</shortDescription>
-        <value>MN3 Customer</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_MarchShort</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -2934,28 +2117,7 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <language>de</language>
         <protected>false</protected>
         <shortDescription>Ven_lbl_MediaPlanner</shortDescription>
-        <value>Internal Media Agency</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_MonthlyRegistration</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_MonthlyRegistration</shortDescription>
-        <value>Monthly Registrations</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_MonthlyShiftingRightsCustomer</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_MonthlyShiftingRightsCustomer</shortDescription>
-        <value>Monthy Customer Push Right</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_MonthlyShiftingRightsP7S1</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_MonthlyShiftingRightsP7S1</shortDescription>
-        <value>Monthly P7S1 Push Right</value>
+        <value>Media Planner</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_NetPotential</fullName>
@@ -3000,13 +2162,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Opportunity</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_PartnerDatadeals</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_PartnerDatadeals</shortDescription>
-        <value>Partner Data Deal(s)</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_PipeChecked</fullName>
         <language>de</language>
         <protected>false</protected>
@@ -3028,20 +2183,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>pRAP</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_PresDatadealsWithThird</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_PresDatadealsWithThird</shortDescription>
-        <value>Existing Third Party Data Deals</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_ProductionDescription</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_ProductionDescription</shortDescription>
-        <value>Product Description</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_ReasonLostCancelled</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -3054,27 +2195,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <protected>false</protected>
         <shortDescription>Ven_lbl_Refresh</shortDescription>
         <value>Refresh</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_RiskProfile</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_RiskProfile</shortDescription>
-        <value>Risk Profile</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_SLM</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_SLM</shortDescription>
-        <value>SLM</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_SLMDeviation</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_SLMDeviation</shortDescription>
-        <value>SLM Deviation</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_Save</fullName>
@@ -3098,13 +2218,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <value>Scout</value>
     </labels>
     <labels>
-        <fullName>Ven_lbl_SegmentDefinition</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_SegmentDefinition</shortDescription>
-        <value>Segment Definition</value>
-    </labels>
-    <labels>
         <fullName>Ven_lbl_SeptemberShort</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -3124,13 +2237,6 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <protected>false</protected>
         <shortDescription>Ven_lbl_SubCat</shortDescription>
         <value>Sub Industry</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_SummarySocialDataOnRegistration</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_SummarySocialDataOnRegistration</shortDescription>
-        <value>Compiled Sociodemographic Data at Registration</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_TargetPl</fullName>
@@ -3158,21 +2264,14 @@ Die mit einem Sternchen &lt;strong style=&quot;color:red;&quot;&gt;(*)&lt;/stron
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Ven_lbl_VariableComponent</shortDescription>
-        <value>Deal structure</value>
+        <value>Variable Component</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_Vertical</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Ven_lbl_Vertical</shortDescription>
-        <value>Industry</value>
-    </labels>
-    <labels>
-        <fullName>Ven_lbl_WKZPotential</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Ven_lbl_WKZPotential</shortDescription>
-        <value>Potential Approved</value>
+        <value>Vertical</value>
     </labels>
     <labels>
         <fullName>Ven_lbl_Yield</fullName>

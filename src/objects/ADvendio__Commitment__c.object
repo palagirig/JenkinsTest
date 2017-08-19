@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Hold all relevant Information for an Contract between Advertiser/Agencies and an Publisher according Discounts and Rebate in Kind. For further Information please have a look at our Wiki under https://advendio.atlassian.net/wiki/display/SO/Knowledge+Base .</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked this commitment is active and relevant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked this commitment is active and relevant.</inlineHelpText>
+        <label>Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserAgencyRelation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Please pick the Advertiser Agency relation if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please pick the Advertiser Agency relation if applicable.</inlineHelpText>
+        <label>Advertiser Agency Relation</label>
+        <referenceTo>ADvendio__Advertiser_Agency_relation__c</referenceTo>
+        <relationshipLabel>Commitments</relationshipLabel>
+        <relationshipName>Commitments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertiser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Please pick the advertiser if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please pick the advertiser if applicable.</inlineHelpText>
+        <label>Advertiser</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Commitments</relationshipLabel>
+        <relationshipName>Commitments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Please pick the agency if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please pick the agency if applicable.</inlineHelpText>
+        <label>Agency</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Commitments (Agency)</relationshipLabel>
+        <relationshipName>Commitments1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If set this record has been approved.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If set this record has been approved.</inlineHelpText>
+        <label>Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ClosingDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date when this commitment has been signed and closed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when this commitment has been signed and closed.</inlineHelpText>
+        <label>Closing Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status describes if the Commitment phase can be changed to any values.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please pick a status.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>under negotiation</fullName>
+                    <default>false</default>
+                    <label>under negotiation</label>
+                </value>
+                <value>
+                    <fullName>closed - won</fullName>
+                    <default>false</default>
+                    <label>closed - won</label>
+                </value>
+                <value>
+                    <fullName>closed - lost</fullName>
+                    <default>false</default>
+                    <label>closed - lost</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>First day that the commitment is valid if activated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>First day that the commitment is valid if activated.</inlineHelpText>
+        <label>ValidFrom</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidUntil__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last day that the commitment is valid if activated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Last day that the commitment is valid if activated.</inlineHelpText>
+        <label>ValidUntil</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Commitment</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Active__c</columns>
+        <columns>ADvendio__Advertiser__c</columns>
+        <columns>ADvendio__Agency__c</columns>
+        <columns>ADvendio__Approved__c</columns>
+        <columns>ADvendio__Status__c</columns>
+        <columns>ADvendio__ValidFrom__c</columns>
+        <columns>ADvendio__ValidUntil__c</columns>
+        <columns>ADvendio__ClosingDate__c</columns>
+        <columns>ADvendio__AdvertiserAgencyRelation__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Commitment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Commitments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Advertiser__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Agency__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__ValidFrom__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__ValidUntil__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Approved__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__ClosingDate__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Advertiser__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Agency__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__ValidFrom__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__ValidUntil__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Approved__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__ClosingDate__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Advertiser__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Agency__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__ValidFrom__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__ValidUntil__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Active__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Approved__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__ClosingDate__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__Advertiser__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Agency__c</searchFilterFields>
+        <searchFilterFields>ADvendio__ValidFrom__c</searchFilterFields>
+        <searchFilterFields>ADvendio__ValidUntil__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Active__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Approved__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Status__c</searchFilterFields>
+        <searchFilterFields>ADvendio__ClosingDate__c</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Advertiser__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Agency__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__ValidFrom__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__ValidUntil__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Approved__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__ClosingDate__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

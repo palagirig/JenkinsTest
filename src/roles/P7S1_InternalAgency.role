@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Read</contactAccessLevel>
+    <description>Internal Media Agency</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>P7S1 Interna Medial Agency</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Strategy</parentRole>
+</Role>

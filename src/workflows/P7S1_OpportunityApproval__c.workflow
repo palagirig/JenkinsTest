@@ -12,17 +12,6 @@
         <template>Sales_Excellence_Emails/P7S1_InfoDigitalSales</template>
     </alerts>
     <alerts>
-        <fullName>MT_SendMailToMediaBoard</fullName>
-        <description>Send Mail to Media Board Group</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>Media_Board</recipient>
-            <type>group</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/MT_MediaTransparencyCampaignApproval</template>
-    </alerts>
-    <alerts>
         <fullName>P7S1_OwnerNotificationRabattfreigabeErteilt</fullName>
         <description>Owner Notification Rabattfreigabe erteilt</description>
         <protected>false</protected>
@@ -66,15 +55,6 @@
         <field>P7S1_ApprovalState__c</field>
         <literalValue>In Diskussion</literalValue>
         <name>Genehmigungsstatus in D</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>MT_Set_Status_To_Submitted</fullName>
-        <field>P7S1_ApprovalState__c</field>
-        <literalValue>Eingereicht</literalValue>
-        <name>MT Set Status To Submitted</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>

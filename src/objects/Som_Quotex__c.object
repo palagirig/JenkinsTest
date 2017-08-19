@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Enthält die kumulierten Quotexdaten aus Pinnball zum Account nach NielsenID und Jahr</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>SomDig_71M_SoA__c</fullName>
+        <description>Anteil 71M-Umsatz am Digital-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF(SomDig_GesamtDigital__c=0, 0, SomDig_71M__c/SomDig_GesamtDigital__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil 71M-Umsatz am Digital-Umsatz</inlineHelpText>
+        <label>71M Digital SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_71M__c</fullName>
+        <description>Kumulierter Umsatz der digitalen Werbeträger der SEVENONE MEDIA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der digitalen Werbeträger der SEVENONE MEDIA</inlineHelpText>
+        <label>71M Digital</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Medienklasse__c</field>
+            <operation>equals</operation>
+            <value>ONLINE</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Vermarkter__c</field>
+            <operation>contains</operation>
+            <value>SEVENONE MEDIA</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_ASMI_SoA__c</fullName>
+        <description>Anteil ASMI-Umsatz am Digital-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF ( SomDig_GesamtDigital__c = 0 , 0 , SomDig_ASMI__c / SomDig_GesamtDigital__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil ASMI-Umsatz am Digital-Umsatz</inlineHelpText>
+        <label>ASMI SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_ASMI__c</fullName>
+        <description>Summe von Brutto des Vermarkters Axel Springer Media Impact aus der Medienklasse Online</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der digitalen Werbeträger der AXEL SPRINGER MEDIA IMPACT</inlineHelpText>
+        <label>ASMI</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Medienklasse__c</field>
+            <operation>equals</operation>
+            <value>ONLINE</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Vermarkter__c</field>
+            <operation>contains</operation>
+            <value>AXEL SPRINGER</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_GesamtDigital__c</fullName>
+        <description>Alle Umsätze Digital</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Alle Umsätze Digital</inlineHelpText>
+        <label>Gesamt Digital</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Medienklasse__c</field>
+            <operation>equals</operation>
+            <value>ONLINE</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_IP_SoA__c</fullName>
+        <description>Anteil IP-Umsatz am Digital-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF ( SomDig_GesamtDigital__c = 0 , 0 , SomDig_IP__c / SomDig_GesamtDigital__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil IP-Umsatz am Digital-Umsatz</inlineHelpText>
+        <label>IP Digital SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_IP__c</fullName>
+        <description>Summe von Brutto des Vermarkters IP Deutschland aus der Medienklasse Online</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der digitalen Werbeträger der IP DT</inlineHelpText>
+        <label>IP Digital</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Medienklasse__c</field>
+            <operation>equals</operation>
+            <value>ONLINE</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_Vermarkter__c</field>
+            <operation>startsWith</operation>
+            <value>IP DT</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Universe_SoA__c</fullName>
+        <description>Anteil 71M-Umsatz am Universe-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF ( SomDig_Universe__c  = 0 , 0 , SomDig_71M__c / SomDig_Universe__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil 71M-Umsatz am Universe-Umsatz</inlineHelpText>
+        <label>Universe Digital SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Universe__c</fullName>
+        <description>Summe aus 71M und IP</description>
+        <externalId>false</externalId>
+        <formula>SomDig_71M__c +  SomDig_IP__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Kumulierter Umsatz Digital der Vermarkter 71M und IP</inlineHelpText>
+        <label>Universe Digital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Som_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotexdaten</relationshipLabel>
+        <relationshipName>Quotexdaten</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Som_Datenstand__c</fullName>
+        <description>auf welchen Zeitraum beziehen sich die momentanen Daten. Inklusive Angabe des DAtenstands der Daten.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>auf welchen Zeitraum beziehen sich die momentanen Daten. Inklusive Angabe des DAtenstands der Daten.</inlineHelpText>
+        <label>Datenstand</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Som_GesamtMkl__c</fullName>
+        <description>Umsätze aller Medienklassen</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Umsätze aller Medienklassen</inlineHelpText>
+        <label>Gesamt Medienklasse</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_MedienklasseGruppe__c</field>
+            <operation>equals</operation>
+            <value>TV, Digital, Print, Rest</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_GesamtTv__c</fullName>
+        <description>Umsätze alle TV</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Umsätze alle TV</inlineHelpText>
+        <label>Gesamt TV</label>
+        <summarizedField>Som_QuotexTv__c.Som_Brutto__c</summarizedField>
+        <summaryForeignKey>Som_QuotexTv__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_Jahr__c</fullName>
+        <externalId>false</externalId>
+        <label>Jahr</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Som_MklGruppeDigital__c</fullName>
+        <description>Umsatz der Medienklasse ONLINE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Umsatz der Medienklasse ONLINE</inlineHelpText>
+        <label>Digital</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_MedienklasseGruppe__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_MklGruppePrint__c</fullName>
+        <description>Kumulierter Umsatz der Medienklassen Zeitungen, Publikumszeitschriften, Fachzeitschriften</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der Medienklassen Zeitungen, Publikumszeitschriften, Fachzeitschriften</inlineHelpText>
+        <label>Print</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_MedienklasseGruppe__c</field>
+            <operation>equals</operation>
+            <value>Print</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_MklGruppeRest__c</fullName>
+        <description>Kumulierter Umsatz der Medienklassen Radio, Kino, Out of Home</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der Medienklassen Radio, Kino, Out of Home</inlineHelpText>
+        <label>Rest</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_MedienklasseGruppe__c</field>
+            <operation>equals</operation>
+            <value>Rest</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_MklGruppeTV__c</fullName>
+        <description>Umsatz der Medienklasse TV</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Umsatz der Medienklasse TV</inlineHelpText>
+        <label>TV</label>
+        <summarizedField>Som_QuotexMedienklasse__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexMedienklasse__c.Som_MedienklasseGruppe__c</field>
+            <operation>equals</operation>
+            <value>TV</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexMedienklasse__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_NielsenIds__c</fullName>
+        <description>Liste aller dem Account zugehörigen Nielsen IDs</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Liste aller dem Account zugehörigen Nielsen IDs</inlineHelpText>
+        <label>Nielsen-IDs</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Som_ProRexId__c</fullName>
+        <description>Die ProRex-ID des zugehörigen Accounts.</description>
+        <externalId>false</externalId>
+        <formula>Som_Account__r.AccountNumber</formula>
+        <inlineHelpText>Die ProRex-ID des zugehörigen Accounts.</inlineHelpText>
+        <label>Accountnummer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Som_Soa71M__c</fullName>
+        <description>Anteil 71M-Umsatz am TV-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF(Som_GesamtTv__c=0, 0,  Som_Wt71m__c/Som_GesamtTv__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil 71M-Umsatz am TV-Umsatz</inlineHelpText>
+        <label>71M TV SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_SoaDigital__c</fullName>
+        <description>Anteil Digital-Umsatz am Gesamt-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF( Som_GesamtMkl__c = 0, 0,  Som_MklGruppeDigital__c/Som_GesamtMkl__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil Digital-Umsatz am Gesamt-Umsatz</inlineHelpText>
+        <label>Digital SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_SoaIp__c</fullName>
+        <description>Anteil IP-Umsatz am TV-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF( Som_GesamtTv__c=0 , 0,  Som_WtIp__c/Som_GesamtTv__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil IP-Umsatz am TV-Umsatz</inlineHelpText>
+        <label>IP TV SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_SoaPrint__c</fullName>
+        <description>Anteil Print-Umsatz am Gesamt-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF( Som_GesamtMkl__c = 0, 0,  Som_MklGruppePrint__c/Som_GesamtMkl__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil Print-Umsatz am Gesamt-Umsatz</inlineHelpText>
+        <label>Print SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_SoaRest__c</fullName>
+        <description>Anteil Rest-Umsatz am Gesamt-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF(Som_GesamtMkl__c = 0, 0, Som_MklGruppeRest__c/Som_GesamtMkl__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil Rest-Umsatz am Gesamt-Umsatz</inlineHelpText>
+        <label>Rest SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_SoaTV__c</fullName>
+        <description>Anteil TV-Umsatz am Gesamt-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF( Som_GesamtMkl__c = 0, 0,  Som_MklGruppeTV__c / Som_GesamtMkl__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil TV-Umsatz am Gesamt-Umsatz</inlineHelpText>
+        <label>TV SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_SoaUniverse__c</fullName>
+        <description>Anteil 71-Media-Umsatz am Universe-Umsatz</description>
+        <externalId>false</externalId>
+        <formula>IF( Som_WtUniverse__c =0, 0,  Som_Wt71m__c/Som_WtUniverse__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Anteil 71-Media-Umsatz am Universe-Umsatz</inlineHelpText>
+        <label>Universe TV SoA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Som_UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>stellt Eindeutigkeit sicher des zusammengesetzten Schlüssels:
+Jahr + Zeitraum + Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>stellt Eindeutigkeit sicher des zusammengesetzten Schlüssels:
+Jahr + Zeitraum + Account</inlineHelpText>
+        <label>Som_UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Som_Wt71m__c</fullName>
+        <description>Kumulierter Umsatz der Werbeträger der SEVENONE MEDIA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der Werbeträger der SEVENONE MEDIA</inlineHelpText>
+        <label>71M TV</label>
+        <summarizedField>Som_QuotexTv__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexTv__c.Som_Vermarkter__c</field>
+            <operation>startsWith</operation>
+            <value>SEVENONE MEDIA</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexTv__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_WtIp__c</fullName>
+        <description>Kumulierter Umsatz der Sender der IP DEUTSCHLAND</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kumulierter Umsatz der Sender der IP DEUTSCHLAND</inlineHelpText>
+        <label>IP TV</label>
+        <summarizedField>Som_QuotexTv__c.Som_Brutto__c</summarizedField>
+        <summaryFilterItems>
+            <field>Som_QuotexTv__c.Som_Vermarkter__c</field>
+            <operation>startsWith</operation>
+            <value>IP DT</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Som_QuotexTv__c.Som_Quotexdaten__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Som_WtUniverse__c</fullName>
+        <description>Kumulierter Umsatz der Vermarkter 71Media und IP</description>
+        <externalId>false</externalId>
+        <formula>Som_Wt71m__c +  Som_WtIp__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Kumulierter Umsatz der Vermarkter 71Media und IP</inlineHelpText>
+        <label>Universe TV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Som_ZeitraumTyp__c</fullName>
+        <description>GJ=Gesamtjahr, YTM=YearToMonth</description>
+        <externalId>false</externalId>
+        <inlineHelpText>GJ=Gesamtjahr, YTM=YearToMonth</inlineHelpText>
+        <label>Zeitraum</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Quotexdaten</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Som_Account__c</columns>
+        <columns>Som_Jahr__c</columns>
+        <columns>Som_GesamtTv__c</columns>
+        <columns>Som_Datenstand__c</columns>
+        <columns>Som_UniqueKey__c</columns>
+        <columns>Som_ZeitraumTyp__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Quotex-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Quotexdaten</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SomTv_QuotexdatenMedienklasse</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Quotexdaten Medienklasse</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00OD0000006QeC9?pv0={!Som_Quotex__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SomTv_QuotexdatenTv</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Quotexdaten TV</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00OD0000006QeCA?pv0={!Som_Quotex__c.Name}</url>
+    </webLinks>
+</CustomObject>

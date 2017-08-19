@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Hold all relevant Information for an Condition related to a Commitment.Here all details stored that are relevant for Discounts and Rebate in Kind in relation to many criterias.
+For further Information please have a look at our Wiki under https://advendio.atlassian.net/wiki/display/SO/Knowledge+Base .</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdvertisingMedium__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Please select the advertising medium if relevant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the advertising medium if relevant.</inlineHelpText>
+        <label>Advertising Medium</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Commitment Conditions</relationshipLabel>
+        <relationshipName>Commitment_Conditions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BaseQuantityRebateInKind__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Units which need to be bought to get the Rebate.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Units which need to be bought to get the Rebate.</inlineHelpText>
+        <label>Base Quantity Rebate in Kind</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CashDiscountAdvertiser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Customer discount to be applied (within specified revenue range or media classification).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer discount to be applied (within specified revenue range or media classification).</inlineHelpText>
+        <label>Cash Discount Advertiser</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CashDiscountAgency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Agency discount to be applied (within specified revenue range or media classification).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Agency discount to be applied (within specified revenue range or media classification).</inlineHelpText>
+        <label>Cash Discount Agency</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Commitment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please pick the relevant commitment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please pick the relevant commitment.</inlineHelpText>
+        <label>Commitment</label>
+        <referenceTo>ADvendio__Commitment__c</referenceTo>
+        <relationshipLabel>Commitment Conditions</relationshipLabel>
+        <relationshipName>Commitment_Conditions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaDifferentiation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose a media differentiation if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose a media differentiation if applicable.</inlineHelpText>
+        <label>Media Differentiation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaDifferentiation</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaSegment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose a media segment if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose a media segment if applicable.</inlineHelpText>
+        <label>Media Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaSegment</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose a media type if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose a media type if applicable.</inlineHelpText>
+        <label>Media Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PageEquivalency__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Page Equivalency</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Progressive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the rebate in kind is applied progressively. The default value is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked the rebate in kind is applied progressively. The default value is false.</inlineHelpText>
+        <label>Progressive</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RebateInKindPercent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount which applies if the number of base units was acquired.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount which applies if the number of base units was acquired.</inlineHelpText>
+        <label>Rebate In Kind Percent %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RebateInKindQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>&quot;Free&quot; quantity if the number of base units was acquired.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Free&quot; quantity if the number of base units was acquired.</inlineHelpText>
+        <label>Rebate in Kind Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RebateInKindUnitsAvailable__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the number of Rebate in Kind units, which are available to be used in media campaigns.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__TotalRebateInKindUnitsEarned__c  -  ADvendio__TotalUnitCountApplied__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the number of Rebate in Kind units, which are available to be used in media campaigns.</inlineHelpText>
+        <label>Rebate in Kind units available</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RebateInKindValidUntil__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expiration Date of all rebate in kind Commitment Conditions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Expiration Date of all rebate in kind Commitment Conditions.</inlineHelpText>
+        <label>Rebate In Kind valid until</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ScaledDiscountFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the lower revenue bound where this Commitment Condition applies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the lower revenue bound where this Commitment Condition applies.</inlineHelpText>
+        <label>Scaled Discount from</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ScaledDiscountTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the upper revenue bound where this Commitment Condition applies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the upper revenue bound where this Commitment Condition applies.</inlineHelpText>
+        <label>Scaled Discount to</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SpecialDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Special Discount (within specified revenue range or media classification).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Special Discount (within specified revenue range or media classification).</inlineHelpText>
+        <label>Special Discount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TotalRebateInKindUnitsEarned__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the total number of Rebate in Kind units earned with the condition.</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK (ADvendio__RebateInKindQuantity__c) == False ,
+			(IF(ADvendio__Progressive__c ,
+					FLOOR(( ADvendio__TotalUnitCount__c /  ADvendio__BaseQuantityRebateInKind__c )* ADvendio__RebateInKindQuantity__c )  ,
+					(( ADvendio__TotalUnitCount__c /  ADvendio__BaseQuantityRebateInKind__c )* ADvendio__RebateInKindQuantity__c ))),
+			(IF( ISBLANK (ADvendio__RebateInKindPercent__c) == False,
+				IF(ADvendio__Progressive__c ,
+					(FLOOR(( ADvendio__TotalUnitCount__c /  ADvendio__BaseQuantityRebateInKind__c )) * ( ADvendio__BaseQuantityRebateInKind__c * ADvendio__RebateInKindPercent__c )  ) ,
+					( ADvendio__TotalUnitCount__c  *   ADvendio__RebateInKindPercent__c ) ),
+					0
+					)
+			)
+		)</formula>
+        <inlineHelpText>Shows the total number of Rebate in Kind units earned with the condition.</inlineHelpText>
+        <label>Total Rebate in Kind units earned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TotalRevenueApplied__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Total amount of revenue for all campaign items where discounts of this condition were applied.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of revenue for all campaign items where discounts of this condition were applied.</inlineHelpText>
+        <label>Total Revenue applied</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TotalRevenue__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Total amount of revenue of all campaign items which meet the relevant criteria of this rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of revenue of all campaign items which meet the relevant criteria of this rule.</inlineHelpText>
+        <label>Total Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TotalUnitCountApplied__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Counts all units for all campaign items where discounts of this condition were applied.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts all units for all campaign items where discounts of this condition were applied.</inlineHelpText>
+        <label>Total Unit count applied</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TotalUnitCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total amount of units of all campaign items which meet the relevant criteria of this rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of units of all campaign items which meet the relevant criteria of this rule.</inlineHelpText>
+        <label>Total Unit count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Unit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the relevant unit, this Valuescan be edited. In case of PrintUses Cases and Using Rebate inKind Quantity must refer to thevalues Field:ADvendio__PageEquivalency__cat Object AdType. E.g. 1/1 or 1/2will be Rebate in Kind Quantity thisvalues have to be used also inAdTypes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the relevant unit</inlineHelpText>
+        <label>Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__Unit</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Commitment Condition</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Commitment Conditions Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Commitment Conditions</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ADvendio__RebateInKind</fullName>
+        <active>true</active>
+        <description>Please select if you like to specify a Rebate in Kind, i.e. Buy 2 get 1 free.</description>
+        <label>Rebate in Kind</label>
+        <picklistValues>
+            <picklist>ADvendio__MediaDifferentiation__c</picklist>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InPage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InStream</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaSegment__c</picklist>
+            <values>
+                <fullName>InApp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InBrowser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiscreen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NewsPaper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaType__c</picklist>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out-of-Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__Unit__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Impression</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Click</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Page Equivalency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Week</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__RebateInKindPercent</fullName>
+        <active>true</active>
+        <description>Please select if you like to specify a percental Rebate in Kind.</description>
+        <label>Rebate in Kind %</label>
+        <picklistValues>
+            <picklist>ADvendio__MediaDifferentiation__c</picklist>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InPage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InStream</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaSegment__c</picklist>
+            <values>
+                <fullName>InApp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InBrowser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiscreen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NewsPaper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaType__c</picklist>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out-of-Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__Unit__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Impression</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Click</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Page Equivalency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Week</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__ScaledDiscount</fullName>
+        <active>true</active>
+        <description>Please select if you like to specify a scaled quantity discount for either Advertiser and/or Agency.</description>
+        <label>Scaled Discount</label>
+        <picklistValues>
+            <picklist>ADvendio__MediaDifferentiation__c</picklist>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InPage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InStream</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaSegment__c</picklist>
+            <values>
+                <fullName>InApp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InBrowser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiscreen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NewsPaper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaType__c</picklist>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out-of-Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__Unit__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Impression</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Click</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Page Equivalency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Week</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__SpecialDiscount</fullName>
+        <active>true</active>
+        <description>Please select if you like to use special discount.</description>
+        <label>Special Discount</label>
+        <picklistValues>
+            <picklist>ADvendio__MediaDifferentiation__c</picklist>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InPage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InStream</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaSegment__c</picklist>
+            <values>
+                <fullName>InApp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InBrowser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiscreen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NewsPaper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__MediaType__c</picklist>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out-of-Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__Unit__c</picklist>
+            <values>
+                <fullName>Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Impression</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Click</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Page Equivalency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Week</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Commitment__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__AdvertisingMedium__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__MediaType__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__MediaSegment__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__MediaDifferentiation__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Commitment__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__AdvertisingMedium__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__MediaType__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__MediaSegment__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__MediaDifferentiation__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Commitment__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__AdvertisingMedium__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__MediaType__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__MediaSegment__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__MediaDifferentiation__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__Commitment__c</searchFilterFields>
+        <searchFilterFields>ADvendio__AdvertisingMedium__c</searchFilterFields>
+        <searchFilterFields>ADvendio__MediaType__c</searchFilterFields>
+        <searchFilterFields>ADvendio__MediaSegment__c</searchFilterFields>
+        <searchFilterFields>ADvendio__MediaDifferentiation__c</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Commitment__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__AdvertisingMedium__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__MediaType__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__MediaSegment__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__MediaDifferentiation__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

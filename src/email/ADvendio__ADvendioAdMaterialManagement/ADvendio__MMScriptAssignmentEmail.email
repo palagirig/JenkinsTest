@@ -1,0 +1,61 @@
+Hi {!User.Manager},<br/><br/>
+
+The script {!ADvendio__BriefingScript__c.Name} is been assigned to you for approval.<br/>
+
+To approve or reject this script click this <a  href = https://ap2.salesforce.com/p/process/ProcessInstanceWorkitemWizardStageManager?id={!Workitem.ID}>link</a>.
+<br/><br/>
+<b>Please find the script details below:</b><br/><br/>
+
+<table border="1" cellspacing="0">
+<tr bgcolor="#efefef">
+<td>Goal</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__Goal__c}</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Headline</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__Headline__c}</td>
+</tr>
+<tr bgcolor="#efefef">
+<td>Level of Creativity</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__LevelOfCreativity__c}</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Look and Feel</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__LookAndFeel__c}</td>
+</tr>
+<tr bgcolor="#efefef">
+<td>Look and Feel Description</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__LookAndFeelDescription__c}</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Media Differentiation</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__MediaDifferentiation__c}</td>
+</tr>
+<tr bgcolor="#efefef">
+<td>Media Segment</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__MediaSegment__c}</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Media Type</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__MediaType__c}</td>
+</tr>
+<tr bgcolor="#efefef">
+<td>Reason</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__Reason__c}</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Script Text</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__Text__c}</td>
+</tr>
+<tr bgcolor="#efefef">
+<td>Target Profile</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__TargetProfile__c}</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>USP/SMP/Offer</td>
+<td>{!ADvendio__BriefingScript__c.ADvendio__UspSmpOffer__c}</td>
+</tr>
+</table>
+<br/><br/>
+Sincerely,<br/>
+ADvendio Team

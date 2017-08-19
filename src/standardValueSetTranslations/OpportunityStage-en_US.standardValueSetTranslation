@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Allgemeines Angebot</masterLabel>
+        <translation>General offer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Angebot abgegeben</masterLabel>
+        <translation><!-- Angebot abgegeben --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Board Approval</masterLabel>
+        <translation><!-- Board Approval --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Board Rejection</masterLabel>
+        <translation><!-- Board Rejection --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation><!-- Closed Lost --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Won</masterLabel>
+        <translation><!-- Closed Won --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cold Call</masterLabel>
+        <translation><!-- Cold Call --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cold Storage</masterLabel>
+        <translation><!-- Cold Storage --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contact</masterLabel>
+        <translation><!-- Contact --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contacted</masterLabel>
+        <translation><!-- Contacted --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contract preparation</masterLabel>
+        <translation><!-- Contract preparation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contract revision</masterLabel>
+        <translation><!-- Contract revision --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contract sent</masterLabel>
+        <translation><!-- Contract sent --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contract signed</masterLabel>
+        <translation><!-- Contract signed --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decision positive: termsheet prep.</masterLabel>
+        <translation><!-- Decision positive: termsheet prep. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Erstgespräch Bedarf/Bestand</masterLabel>
+        <translation><!-- Erstgespräch Bedarf/Bestand --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Evaluation</masterLabel>
+        <translation><!-- Evaluation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Evaluation positive: start discussion</masterLabel>
+        <translation><!-- Evaluation positive: start discussion --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Finished</masterLabel>
+        <translation><!-- Finished --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Geschlossen und verloren</masterLabel>
+        <translation>Closed and lost</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Geschlossene und gewonnene</masterLabel>
+        <translation>Closed and won</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Identifiziert</masterLabel>
+        <translation><!-- Identifiziert --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In Briefing</masterLabel>
+        <translation><!-- In Briefing --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In DealSoundBoard</masterLabel>
+        <translation><!-- In DealSoundBoard --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Inbox</masterLabel>
+        <translation><!-- Inbox --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Initial conversation</masterLabel>
+        <translation><!-- Initial conversation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Konkretes Angebot</masterLabel>
+        <translation>Unlikely</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kunde ist interessiert</masterLabel>
+        <translation>Possible</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kunde ist sehr interessiert</masterLabel>
+        <translation>Likely</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>M2N (Mandate to Negotiate)</masterLabel>
+        <translation>M2N</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Needs Analysis</masterLabel>
+        <translation><!-- Needs Analysis --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negotiation</masterLabel>
+        <translation><!-- Negotiation --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negotiation US</masterLabel>
+        <translation><!-- Negotiation US --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Offer</masterLabel>
+        <translation><!-- Offer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Omitted</masterLabel>
+        <translation><!-- Omitted --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parked</masterLabel>
+        <translation><!-- Parked --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Potential</masterLabel>
+        <translation>Potential</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prospect</masterLabel>
+        <translation><!-- Prospect --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualification</masterLabel>
+        <translation><!-- Qualification --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rabatt freigegeben</masterLabel>
+        <translation><!-- Rabatt freigegeben --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Allgemeines Angebot</masterLabel>
+        <translation>Qualification</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Closed Lost</masterLabel>
+        <translation>Closed Lost</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Closed Won</masterLabel>
+        <translation>Closed Won</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Deal Approval</masterLabel>
+        <translation>Deal approval</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Erstgespräch Bedarf/Bestand</masterLabel>
+        <translation>Contacted</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_In Briefing/Erstgespräch</masterLabel>
+        <translation>In Briefing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_In Verhandlung</masterLabel>
+        <translation>Negotiation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Konkretes Angebot</masterLabel>
+        <translation>Offer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Parked</masterLabel>
+        <translation>Parked</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Potenzial</masterLabel>
+        <translation>Potential</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Rabatt freigegeben</masterLabel>
+        <translation>M2N</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Storniert</masterLabel>
+        <translation>Cancelled</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SE_Vertragsvorbereitung</masterLabel>
+        <translation>Contract Preparation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Signed</masterLabel>
+        <translation><!-- Signed --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Storniert</masterLabel>
+        <translation>Cancellation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Term sheet revision</masterLabel>
+        <translation><!-- Term sheet revision --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Term sheet sent</masterLabel>
+        <translation><!-- Term sheet sent --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,5 @@
+Dein AdFactory-Projekt "{!SomTv_AdfProjekt__c.Name}" wurde im ersten Schritt freigegeben und zur Rabattfreigabe an Ad Analytics & Development weitergeleitet.
+
+Hier der Link zu Deinem Projekt in Salesforce: 
+
+{!SomTv_AdfProjekt__c.Link}

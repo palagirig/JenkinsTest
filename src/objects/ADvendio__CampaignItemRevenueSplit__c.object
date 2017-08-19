@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object stores all information used to calculate a sales revenue split. Records get automatically created by an apex job if the forecast and team member splits are defined.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdvertiserAgencyRelation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Advertiser-Agency Relation selected in the related media campaign</description>
+        <externalId>false</externalId>
+        <label>Advertiser-Agency Relation</label>
+        <referenceTo>ADvendio__Advertiser_Agency_relation__c</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplits</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertiser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Advertiser selected in the related media campaign</description>
+        <externalId>false</externalId>
+        <label>Advertiser</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits (Advertiser)</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplitsAdvertiser</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Agency selected in the related media campaign</description>
+        <externalId>false</externalId>
+        <label>Agency</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits (Agency)</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplitsAgency</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AmountWeighted__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Amount weighted - multiplied by the media campaigns propability</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__CampaignItem__r.ADvendio__Media_Campaign__r.ADvendio__Propability__c * ADvendio__Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount (weighted)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Calculated based on the amount of the referenced campaign item</description>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Referencing the campaign Item to be split</description>
+        <externalId>false</externalId>
+        <label>Campaign Item</label>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplits</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Forecast__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>links to Forecast record with matching
+- Advertiser-Agency-Relation
+- Site
+- Sales-Rep</description>
+        <externalId>false</externalId>
+        <label>Forecast No.</label>
+        <referenceTo>ADvendio__Forecast__c</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplits</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Media__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Campaign Item&apos;s Site&apos;s Media</description>
+        <externalId>false</externalId>
+        <label>Media</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PageEquivalency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Print only: Page equivalency which is entered on the campaign item split by team members</description>
+        <externalId>false</externalId>
+        <label>Single Product Page Equivalency</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublicationDate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Publication Date of campaign item</description>
+        <externalId>false</externalId>
+        <label>Publication Date</label>
+        <referenceTo>ADvendio__PublicationDate__c</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplits</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SalesRepresentative__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Sales Representative listed in the media campaign team member list</description>
+        <externalId>false</externalId>
+        <label>Sales Representative</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>CampaignItemRevenueSplits</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Site referenced in the campaign item</description>
+        <externalId>false</externalId>
+        <label>Site</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Campaign Item Revenue Splits</relationshipLabel>
+        <relationshipName>CampaignItemRevenueSplits</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Unique Key used by system internally</description>
+        <externalId>true</externalId>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Campaign Item Revenue Split</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RS-{00000}</displayFormat>
+        <label>Revenue Split</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Campaign Item Revenue Splits</pluralLabel>
+    <recordTypes>
+        <fullName>ADvendio__PublisherGoal</fullName>
+        <active>true</active>
+        <label>Publisher Goal</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__SalesGoal</fullName>
+        <active>true</active>
+        <label>Sales Goal</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

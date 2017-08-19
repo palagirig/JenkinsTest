@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>CRM_Solutions</letterhead>
+    <name>Account zu Prüfen Faktura</name>
+    <style>freeForm</style>
+    <subject>Der Account {!Account.Name} wurde geändert - bitte prüfen</subject>
+    <textOnly>Hallo,
+
+auf dem Account {!Account.Name} wurden Faktura relevante Informationen geändert.
+{!Account.Link}
+
+Bitte prüfe im Bericht ProSedi relevante Account Änderungen die Änderungen.
+https://p7s1.my.salesforce.com/00OD0000006oLTo
+
+Mit den besten Grüßen
+{!User.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

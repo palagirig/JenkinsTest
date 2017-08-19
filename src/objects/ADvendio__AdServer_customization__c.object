@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object contains all necessary Information for the Adserver integration.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__ADTECH_Booking_type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the ADTECH booking type, depending on the pre-defined billing category and campaign type, which should be chosen in the ad server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the ADTECH booking type, depending on the pre-defined billing category and campaign type, which should be chosen in the ad server.</inlineHelpText>
+        <label>ADTECH Booking type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ADvendio__ADTECH_Campaign_type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Impression based</fullName>
+                    <default>false</default>
+                    <label>Impression based</label>
+                </value>
+                <value>
+                    <fullName>View based</fullName>
+                    <default>false</default>
+                    <label>View based</label>
+                </value>
+                <value>
+                    <fullName>Click based</fullName>
+                    <default>false</default>
+                    <label>Click based</label>
+                </value>
+                <value>
+                    <fullName>Flat fee</fullName>
+                    <default>false</default>
+                    <label>Flat fee</label>
+                </value>
+                <value>
+                    <fullName>Percentage</fullName>
+                    <default>false</default>
+                    <label>Percentage</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Open</controllingFieldValue>
+                <controllingFieldValue>Guaranteed</controllingFieldValue>
+                <controllingFieldValue>Roadblock</controllingFieldValue>
+                <valueName>Impression based</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Open</controllingFieldValue>
+                <controllingFieldValue>Guaranteed</controllingFieldValue>
+                <valueName>View based</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Open</controllingFieldValue>
+                <controllingFieldValue>Guaranteed</controllingFieldValue>
+                <controllingFieldValue>Roadblock</controllingFieldValue>
+                <valueName>Click based</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Open</controllingFieldValue>
+                <controllingFieldValue>Guaranteed</controllingFieldValue>
+                <controllingFieldValue>Roadblock</controllingFieldValue>
+                <valueName>Flat fee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Open</controllingFieldValue>
+                <controllingFieldValue>ShareOfVoice</controllingFieldValue>
+                <valueName>Percentage</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ADTECH_Campaign_type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the ADTECH campaign type to which these settings are to be applied.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the ADTECH campaign type to which these settings are to be applied.</inlineHelpText>
+        <label>ADTECH Campaign type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Guaranteed</fullName>
+                    <default>false</default>
+                    <label>Guaranteed</label>
+                </value>
+                <value>
+                    <fullName>House</fullName>
+                    <default>false</default>
+                    <label>House</label>
+                </value>
+                <value>
+                    <fullName>Roadblock</fullName>
+                    <default>false</default>
+                    <label>Roadblock</label>
+                </value>
+                <value>
+                    <fullName>ShareOfVoice</fullName>
+                    <default>false</default>
+                    <label>ShareOfVoice</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ADTECH_Daily_Distribution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the ADTECH daily distribution, depending on the pre-defined billing type and campaign type, which should be chosen in the ad server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the ADTECH daily distribution, depending on the pre-defined billing type and campaign type, which should be chosen in the ad server.</inlineHelpText>
+        <label>ADTECH Daily Distribution</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ADvendio__ADTECH_Booking_type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>as fast as possible</fullName>
+                    <default>false</default>
+                    <label>as fast as possible</label>
+                </value>
+                <value>
+                    <fullName>even (open)</fullName>
+                    <default>false</default>
+                    <label>even (open)</label>
+                </value>
+                <value>
+                    <fullName>even (clicks)</fullName>
+                    <default>false</default>
+                    <label>even (clicks)</label>
+                </value>
+                <value>
+                    <fullName>even (guaranteed)</fullName>
+                    <default>false</default>
+                    <label>even (guaranteed)</label>
+                </value>
+                <value>
+                    <fullName>flat fee</fullName>
+                    <default>false</default>
+                    <label>flat fee</label>
+                </value>
+                <value>
+                    <fullName>percentage delivery</fullName>
+                    <default>false</default>
+                    <label>percentage delivery</label>
+                </value>
+                <value>
+                    <fullName>bell curve</fullName>
+                    <default>false</default>
+                    <label>bell curve</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Impression based</controllingFieldValue>
+                <controllingFieldValue>View based</controllingFieldValue>
+                <controllingFieldValue>Click based</controllingFieldValue>
+                <valueName>as fast as possible</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Impression based</controllingFieldValue>
+                <controllingFieldValue>View based</controllingFieldValue>
+                <controllingFieldValue>Click based</controllingFieldValue>
+                <valueName>even (open)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Impression based</controllingFieldValue>
+                <controllingFieldValue>View based</controllingFieldValue>
+                <valueName>even (guaranteed)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Impression based</controllingFieldValue>
+                <controllingFieldValue>View based</controllingFieldValue>
+                <valueName>bell curve</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Click based</controllingFieldValue>
+                <valueName>even (clicks)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Flat fee</controllingFieldValue>
+                <valueName>flat fee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Percentage</controllingFieldValue>
+                <valueName>percentage delivery</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ADTECH_Timeframe_Distribution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the ADTECH timeframe distribution, depending on the pre-defined billing type and campaign type, which should be chosen in the ad server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the ADTECH timeframe distribution, depending on the pre-defined billing type and campaign type, which should be chosen in the ad server.</inlineHelpText>
+        <label>ADTECH Timeframe Distribution</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ADvendio__ADTECH_Daily_Distribution__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>as fast as possible</fullName>
+                    <default>false</default>
+                    <label>as fast as possible</label>
+                </value>
+                <value>
+                    <fullName>as fast as possible (views)</fullName>
+                    <default>false</default>
+                    <label>as fast as possible (views)</label>
+                </value>
+                <value>
+                    <fullName>as fast as possible (clicks)</fullName>
+                    <default>false</default>
+                    <label>as fast as possible (clicks)</label>
+                </value>
+                <value>
+                    <fullName>even</fullName>
+                    <default>false</default>
+                    <label>even</label>
+                </value>
+                <value>
+                    <fullName>even (front-loaded)</fullName>
+                    <default>false</default>
+                    <label>even (front-loaded)</label>
+                </value>
+                <value>
+                    <fullName>even (views/front-loaded)</fullName>
+                    <default>false</default>
+                    <label>even (views/front-loaded)</label>
+                </value>
+                <value>
+                    <fullName>even (views)</fullName>
+                    <default>false</default>
+                    <label>even (views)</label>
+                </value>
+                <value>
+                    <fullName>even (clicks/front-loaded)</fullName>
+                    <default>false</default>
+                    <label>even (clicks/front-loaded)</label>
+                </value>
+                <value>
+                    <fullName>even (clicks)</fullName>
+                    <default>false</default>
+                    <label>even (clicks)</label>
+                </value>
+                <value>
+                    <fullName>flat fee</fullName>
+                    <default>false</default>
+                    <label>flat fee</label>
+                </value>
+                <value>
+                    <fullName>percentage</fullName>
+                    <default>false</default>
+                    <label>percentage</label>
+                </value>
+                <value>
+                    <fullName>weekday optimized</fullName>
+                    <default>false</default>
+                    <label>weekday optimized</label>
+                </value>
+                <value>
+                    <fullName>weekday optimized (front-loaded)</fullName>
+                    <default>false</default>
+                    <label>weekday optimized (front-loaded)</label>
+                </value>
+                <value>
+                    <fullName>weekday optimized (views)</fullName>
+                    <default>false</default>
+                    <label>weekday optimized (views)</label>
+                </value>
+                <value>
+                    <fullName>weekday optimized (views/front-loaded)</fullName>
+                    <default>false</default>
+                    <label>weekday optimized (views/front-loaded)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>as fast as possible</controllingFieldValue>
+                <controllingFieldValue>even (open)</controllingFieldValue>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <valueName>as fast as possible</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>as fast as possible</controllingFieldValue>
+                <controllingFieldValue>even (open)</controllingFieldValue>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <valueName>as fast as possible (views)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>as fast as possible</controllingFieldValue>
+                <controllingFieldValue>even (clicks)</controllingFieldValue>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <valueName>as fast as possible (clicks)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>as fast as possible</controllingFieldValue>
+                <controllingFieldValue>even (open)</controllingFieldValue>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>even</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>as fast as possible</controllingFieldValue>
+                <controllingFieldValue>even (open)</controllingFieldValue>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>even (views)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>as fast as possible</controllingFieldValue>
+                <controllingFieldValue>even (clicks)</controllingFieldValue>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <valueName>even (clicks)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>even (front-loaded)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>even (views/front-loaded)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <valueName>even (clicks/front-loaded)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>weekday optimized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>weekday optimized (front-loaded)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>even (guaranteed)</controllingFieldValue>
+                <controllingFieldValue>bell curve</controllingFieldValue>
+                <valueName>weekday optimized (views)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>flat fee</controllingFieldValue>
+                <valueName>flat fee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>percentage delivery</controllingFieldValue>
+                <valueName>percentage</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServer_Login__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field displays the assigned ad server login.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the assigned ad server login.</inlineHelpText>
+        <label>AdServer Login</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>AdServer customizations</relationshipLabel>
+        <relationshipName>AdServer_customizations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Billing_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the billing category to which these settings shall be applied in the ad server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the billing category to which these settings shall be applied in the ad server.</inlineHelpText>
+        <label>Billing Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPM</fullName>
+                    <default>false</default>
+                    <label>CPM</label>
+                </value>
+                <value>
+                    <fullName>CPD</fullName>
+                    <default>false</default>
+                    <label>CPD</label>
+                </value>
+                <value>
+                    <fullName>CPW</fullName>
+                    <default>false</default>
+                    <label>CPW</label>
+                </value>
+                <value>
+                    <fullName>CPMo</fullName>
+                    <default>false</default>
+                    <label>CPMo</label>
+                </value>
+                <value>
+                    <fullName>CPY</fullName>
+                    <default>false</default>
+                    <label>CPY</label>
+                </value>
+                <value>
+                    <fullName>CPO</fullName>
+                    <default>false</default>
+                    <label>CPO</label>
+                </value>
+                <value>
+                    <fullName>CPL</fullName>
+                    <default>false</default>
+                    <label>CPL</label>
+                </value>
+                <value>
+                    <fullName>CPx</fullName>
+                    <default>false</default>
+                    <label>CPx</label>
+                </value>
+                <value>
+                    <fullName>CPMSec</fullName>
+                    <default>false</default>
+                    <label>CPMSec</label>
+                </value>
+                <value>
+                    <fullName>CPC</fullName>
+                    <default>false</default>
+                    <label>CPC</label>
+                </value>
+                <value>
+                    <fullName>allin</fullName>
+                    <default>false</default>
+                    <label>allin</label>
+                </value>
+                <value>
+                    <fullName>edition</fullName>
+                    <default>false</default>
+                    <label>edition</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>AdServer customization</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ASC-{00000}</displayFormat>
+        <label>AdServer customization Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>AdServer customizations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

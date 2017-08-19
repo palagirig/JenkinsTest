@@ -1,0 +1,7 @@
+Hi {!ADvendio__BriefingScript__c.OwnerFirstName},<br/><br/>
+
+The AD {ADvendio__BriefingScript__c.Name} is rejected by Client.<br/>
+You need to rework on the AD and resend the AD for approval.<br/><br/>
+
+Sincerely,<br/>
+ADvendio Team

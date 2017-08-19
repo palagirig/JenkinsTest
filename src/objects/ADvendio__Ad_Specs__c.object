@@ -1,0 +1,2462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>ADvendio__AdSpecsAndRatesManager</fullName>
+        <availableFields>
+            <field>ADvendio__ADTECH_Single_Placement_Flights__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Ad_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CurrencyIsoCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Distribution__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__FC_Ad_served_every__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__FC_Period__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__FC_Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Keywords_Key_Values__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__NoAgencyComission__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__NoThirdPartyCommission__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__No_Agency_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__No_Customer_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__No_Quantity_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__OverbookingFactor__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Placement_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Placement__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Pricegroup__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Product_key__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__Site__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__UniqueKey__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__VATType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ADvendio__VID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Ad Specs and Rates Manager</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ADvendio__External_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ADvendio__Product_search_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Ad Specs and Rates Manager</label>
+    </fieldSets>
+    <fields>
+        <fullName>ADvendio__ADTECHCampaignInternalTiling__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enables campaign-internal tiling. If selected, the banners from this campaign will not be displayed together.</inlineHelpText>
+        <label>ADTECH Campaign-internal tiling</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ADTECH_Single_Placement_Flights__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>With this checkbox you can define if a separate flight is to be created for every companion ID.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Create one Flight for every non-leading-placement?</inlineHelpText>
+        <label>ADTECH Single Placement Flights</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Ad_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field displays the ad type assigned to this ad spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the ad type assigned to this ad spec.</inlineHelpText>
+        <label>Ad Type</label>
+        <referenceTo>ADvendio__Ad_Type__c</referenceTo>
+        <relationshipLabel>Ad Specs</relationshipLabel>
+        <relationshipName>Ad_Specs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DescriptionOnPDF__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Der hier hinterlegte Text wird in den Dokumenten in den jeweiligen Positionsspalten mit angezeigt</inlineHelpText>
+        <label>Description on PDF</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Distribution__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Define how the amount of product package is to be distributed among its components.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Define how the amount of product package is to be distributed among its components.</inlineHelpText>
+        <label>Distribution</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Linear</fullName>
+                    <default>false</default>
+                    <label>Linear</label>
+                </value>
+                <value>
+                    <fullName>Prorated</fullName>
+                    <default>false</default>
+                    <label>Prorated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__External_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ad spec&apos;s name for external use. This value will be displayed on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ad spec&apos;s name for external use. This value will be displayed on the proposal.</inlineHelpText>
+        <label>External Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FC_Ad_served_every__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the amount of units for the FC. For example, for one day enter 1.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the amount of units for the FC. For example, for one day enter 1.</inlineHelpText>
+        <label>FC Ad served every</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FC_Period__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the unit for the FC.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the unit for the FC.</inlineHelpText>
+        <label>FC Period</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>minute</fullName>
+                    <default>false</default>
+                    <label>minute</label>
+                </value>
+                <value>
+                    <fullName>session</fullName>
+                    <default>false</default>
+                    <label>session</label>
+                </value>
+                <value>
+                    <fullName>hour</fullName>
+                    <default>false</default>
+                    <label>hour</label>
+                </value>
+                <value>
+                    <fullName>day</fullName>
+                    <default>false</default>
+                    <label>day</label>
+                </value>
+                <value>
+                    <fullName>week</fullName>
+                    <default>false</default>
+                    <label>week</label>
+                </value>
+                <value>
+                    <fullName>month</fullName>
+                    <default>false</default>
+                    <label>month</label>
+                </value>
+                <value>
+                    <fullName>year</fullName>
+                    <default>false</default>
+                    <label>year</label>
+                </value>
+                <value>
+                    <fullName>campaign</fullName>
+                    <default>false</default>
+                    <label>campaign</label>
+                </value>
+                <value>
+                    <fullName>browser</fullName>
+                    <default>false</default>
+                    <label>browser</label>
+                </value>
+                <value>
+                    <fullName>visit</fullName>
+                    <default>false</default>
+                    <label>visit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FC_Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the amount of impressions for this ad spec&apos;s FC.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the amount of impressions for this ad spec&apos;s FC.</inlineHelpText>
+        <label>FC Quantity</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FixedQuantityPackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field marks if all Components have fixed Quantity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field marks if all Components have fixed Quantity.</inlineHelpText>
+        <label>Fixed Quantity Package</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Height__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines how many mm/inches the ad will use in height.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter how high the ad will be (in mm/inches).</inlineHelpText>
+        <label>Height</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__KeyValues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Here you can enter keys and values which are not shown on the documents and appear not in the Media Configuration.
+This Informationen will be directly submitted to the AdServer at checking availability booking a MediaCampaign and there Campaign Items to the AdServer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Here you can enter keys and values which are not shown on the documents and appear not in the Media Configuration.
+This Informationen will be directly submitted to the AdServer at checking availability, booking a Campaign Items to the AdServer.</inlineHelpText>
+        <label>KeyValues</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Keywords_Key_Values__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Keywords/Key-Values</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LongDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a long / full description for this Ad Spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a long / full description for this Ad Spec.</inlineHelpText>
+        <label>Long Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaximumApplicabilityUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to define if the Maximum Applicability should be used for days, weeks or months.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to define if the Maximum Applicability should be used for days, weeks or months.</inlineHelpText>
+        <label>Maximum Applicability Unit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MaximumApplicabilityUnit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaximumApplicability__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Maximum Applicability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NoAgencyComission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set this checkbox to true, if you do not want to grant AC on this Ad Spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set this checkbox to true, if you do not want to grant AC on this Ad Spec.</inlineHelpText>
+        <label>No Agency Comission</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NoThirdPartyCommission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set this checkbox if you do not want to grant a third party commission for this Ad Spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set this checkbox if you do not want to grant a third party commission for this Ad Spec.</inlineHelpText>
+        <label>No Third Party Commission</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__No_Agency_Discount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>With this checkbox you can define if agency discount is enabled for this ad spec. You also need an additional workflow.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>With this checkbox you can define if agency discount is enabled for this ad spec. You also need an additional workflow.</inlineHelpText>
+        <label>No Agency Discount</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__No_Customer_Discount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>With this checkbox you can define if customer discount is enabled for this ad spec. You also need an additional workflow.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>With this checkbox you can define if customer discount is enabled for this ad spec. You also need an additional workflow.</inlineHelpText>
+        <label>No Customer Discount</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__No_Quantity_Discount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>With this checkbox you can define if quantity discount is enabled for this ad spec. You also need an additional workflow.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>With this checkbox you can define if quantity discount is enabled for this ad spec. You also need an additional workflow.</inlineHelpText>
+        <label>No Quantity Discount</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NumberOfColumns__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines how many columns the ad will use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines how many columns the ad will use.</inlineHelpText>
+        <label>Number Of Columns</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OneFlightPerSize__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In ADTECH we create one companion flight per AdSlotSize if checked.</description>
+        <externalId>false</externalId>
+        <label>One Flight Per Size</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OverbookingFactor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a percental overbooking factor if you wish transmit this ad spec&apos;s amount increased by a certain factor.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a percental overbooking factor if you wish transmit this ad spec&apos;s amount increased by a certain factor.</inlineHelpText>
+        <label>Overbooking Factor</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Placement_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ADvendio__Site__c  &amp; &quot;_&quot; &amp; ADvendio__Placement__r.Name &amp; &quot;_&quot; &amp;  ADvendio__Ad_Type__r.Name</formula>
+        <label>Placement Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Placement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field displays the placement assigned to the ad spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the placement assigned to the ad spec.</inlineHelpText>
+        <label>Placement</label>
+        <referenceTo>ADvendio__Placement__c</referenceTo>
+        <relationshipLabel>Ad Specs</relationshipLabel>
+        <relationshipName>Advertisement_products</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Pricegroup__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Achtung diese Information wird unter anderem auch für die Inventarklassen verwendet. Weiterhin zur Massenpreisänderung.</inlineHelpText>
+        <label>Pricegroup</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Price Pricegroup 1</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 1</label>
+                </value>
+                <value>
+                    <fullName>Price Pricegroup 2</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 2</label>
+                </value>
+                <value>
+                    <fullName>Price Pricegroup 3</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 3</label>
+                </value>
+                <value>
+                    <fullName>Price Pricegroup 4</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 4</label>
+                </value>
+                <value>
+                    <fullName>Price Pricegroup 5</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 5</label>
+                </value>
+                <value>
+                    <fullName>Price Pricegroup 6</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 6</label>
+                </value>
+                <value>
+                    <fullName>Price Pricegroup 7</fullName>
+                    <default>false</default>
+                    <label>Price Pricegroup 7</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Product_key__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.ADvendio__Site__r.ADvendio__Title_KeyID__c  &amp;&quot;-&quot;&amp;  ADvendio__Placement__r.ADvendio__Placement_KeyID__c  &amp; &quot;-&quot; &amp;  ADvendio__Ad_Type__r.ADvendio__Ad_Type_KeyID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Product_search_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter how this ad spec is to be displayed in the product search.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter how this ad spec is to be displayed in the product search.</inlineHelpText>
+        <label>Product search Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShortDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a short description for this Ad Spec. The text will be shown on the media search results page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a short description for this Ad Spec. The text will be shown on the media search results page.</inlineHelpText>
+        <label>Short Description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Site__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field displays the sites assigned to this ad spec.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;&amp; ADvendio__Placement__r.ADvendio__Site__r.Id , ADvendio__Placement__r.ADvendio__Site__r.Name)</formula>
+        <inlineHelpText>This field displays the sites assigned to this ad spec.</inlineHelpText>
+        <label>Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TargetPlatform__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target Platform</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>true</default>
+                    <label>Any</label>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <label>Web</label>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                    <label>Mobile</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Enter a UniqueKey (recommended: syntax) for this ad spec.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a UniqueKey (recommended: syntax) for this ad spec.</inlineHelpText>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UseExternalNameOnPDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use External Name on PDF</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Typ I - gibt den vollen Mehrwertsteuersatz an (Deutschland derzeit 19%, Austria derzeit 20
+Typ II - gibt den verminderten Mehrwertsteuersatz an (Deutschland aktuell 7% usw.)</inlineHelpText>
+        <label>VAT Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>true</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>VID is the unique identification of an ad spec.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>VID is the unique identification of an ad spec.</inlineHelpText>
+        <label>VID</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Width__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines how many mm/inches the ad will use in width.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the width of the ad (in mm/inches).</inlineHelpText>
+        <label>Width</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MIG_PRODIAKEY_PRICE__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.ADvendio__Site__r.Mig_ProdiaKey__c &amp;&quot;_&quot; &amp;
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Standard-Umfeld&quot;), &quot;1&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Site-Rotation&quot;), &quot;2&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Network-Rotation&quot;), &quot;3&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Premium-Umfeld&quot;), &quot;4&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Themenrotation&quot;), &quot;5&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Rotation TV-Brand&quot;), &quot;6&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Rotation Max. Reach&quot;), &quot;7&quot;,
+&quot;&quot;)))))))&amp;&quot;_&quot;&amp;RIGHT(Mig_ProdiaKey_Gebucht__c,  LEN(Mig_ProdiaKey_Gebucht__c) - FIND(&quot;_&quot;, Mig_ProdiaKey_Gebucht__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MIG_PRODIAKEY_PRICE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Angebot2016__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mig_Angebot2016</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_CountAdPrices__c</fullName>
+        <externalId>false</externalId>
+        <label>Mig_CountAdPrices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Festplatzierung__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND( ADvendio__Ad_Type__r.SomDig_WbFaehig__c  = true, FIND(&quot;(WB)&quot;, ADvendio__Ad_Type__r.Name) &gt; 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Festplatzierung</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_Info__c</fullName>
+        <description>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update</description>
+        <externalId>false</externalId>
+        <inlineHelpText>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update</inlineHelpText>
+        <label>Migration_Info</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_MOIPlacement__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(SomDig_AbrechnungLeistungsevaluiert__c = true, ADvendio__Placement__r.Mig_ProdiaKey__c, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_MOIPlacement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_MOISite__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(SomDig_AbrechnungLeistungsevaluiert__c = true,  ADvendio__Placement__r.ADvendio__Site__r.Mig_ProdiaKey__c , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_MOISite</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_MgS_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.SomDig_Mediagattungssegment__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_MgS_Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_PlacementCreatedBy__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.CreatedBy.Alias</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_PlacementCreatedBy</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Preisgruppe1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(SomDig_Rotationstyp__c=&apos;Umfeld&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 1&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 2&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsSpecialInterest__c ,AND(SomDig_Rotationstyp__c=&apos;Umfeld&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;))),&apos;Preisgruppe 1&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsSpecialInterest__c, AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;))),&apos;Preisgruppe 2&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsBrand__c ,AND(SomDig_Rotationstyp__c=&apos;Umfeld&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;))),&apos;Preisgruppe 3&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsBrand__c, AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;))),&apos;Preisgruppe 4&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Themen-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 5&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;TV-Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 5&apos;,
+&apos;&apos;
+))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Preisgruppe1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Preisgruppe2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(SomDig_Rotationstyp__c=&apos;TV-Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 2&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 5&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Themen-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 6&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Network-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 7&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Umfeld&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 1&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 2&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;TV-Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 5&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 5&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Themen-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;InApp/Mobile&apos;)),&apos;Preisgruppe 6&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;Connected TV/HbbTv&apos;)),&apos;Preisgruppe 2&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;TV-Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InStream/Video&apos;,Mig_MgS_Name__c=&apos;Connected TV/HbbTv&apos;)),&apos;Preisgruppe 5&apos;,
+&apos;&apos;
+)))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Preisgruppe2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Preisgruppe3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsSpecialInterest__c ,AND(SomDig_Rotationstyp__c=&apos;Umfeld&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;))),&apos;Preisgruppe 1&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsSpecialInterest__c, AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;))),&apos;Preisgruppe 2&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsBrand__c , AND(SomDig_Rotationstyp__c=&apos;Umfeld&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;))),&apos;Preisgruppe 3&apos;,
+IF(AND(ADvendio__Placement__r.ADvendio__Site__r.Mig_IsBrand__c , AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;))),&apos;Preisgruppe 4&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Themen-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 5&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;TV-Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 5&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Network-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;InBrowser/Online&apos;)),&apos;Preisgruppe 7&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;Site-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;Connected TV/HbbTv&apos;)),&apos;Preisgruppe 4&apos;,
+IF(AND(SomDig_Rotationstyp__c=&apos;TV-Brand-Rotation&apos;,AND(SomDig_MediagattungsDifferenzierung__c=&apos;InPage/Display&apos;,Mig_MgS_Name__c=&apos;Connected TV/HbbTv&apos;)),&apos;Preisgruppe 5&apos;,
+&apos;&apos;
+)))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Preisgruppe3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProDiaKey_Price_Aff__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.ADvendio__Site__r.SomDig_Werbetraergergruppierung__r.Mig_ProdiaKey__c  &amp;&quot;_&quot; &amp;
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Standard-Umfeld&quot;), &quot;1&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Site-Rotation&quot;), &quot;2&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Network-Rotation&quot;), &quot;3&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Premium-Umfeld&quot;), &quot;4&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Themenrotation&quot;), &quot;5&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Rotation TV-Brand&quot;), &quot;6&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Rotation Max. Reach&quot;), &quot;7&quot;,
+&quot;&quot;)))))))&amp;&quot;_&quot;&amp;RIGHT(Mig_ProdiaKey_Gebucht__c,  LEN(Mig_ProdiaKey_Gebucht__c) - FIND(&quot;_&quot;, Mig_ProdiaKey_Gebucht__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ProDiaKey_Price_Aff</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKeyKorrekt__c</fullName>
+        <externalId>false</externalId>
+        <formula>Mig_ProdiaKey__c  =  Mig_ProdiaKeySoll__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ProdiaKeyKorrekt</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKeySoll__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.Mig_ProdiaKey__c &amp; &quot;_&quot;&amp; ADvendio__Ad_Type__r.Mig_ProdiaKey__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ProdiaKeySoll</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey_ForPrice__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.ADvendio__Site__r.Mig_ProdiaKey__c &amp;&quot;_&quot; &amp;
+ADvendio__Placement__r.Mig_ProdiaKey__c &amp;&quot;_&quot; &amp;
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Standard-Umfeld&quot;), &quot;1&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Site-Rotation&quot;), &quot;2&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Network-Rotation&quot;), &quot;3&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Premium-Umfeld&quot;), &quot;4&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Themenrotation&quot;), &quot;5&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Rotation TV-Brand&quot;), &quot;6&quot;,
+IF(ISPICKVAL(SomDig_old_Rotationstyp__c, &quot;Rotation Max. Reach&quot;), &quot;7&quot;,
+&quot;&quot;)))))))&amp;&quot;_&quot;&amp;ADvendio__Ad_Type__r.Mig_ProdiaKey__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig ProdiaKey_ForPrice</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey_Gebucht__c</fullName>
+        <externalId>false</externalId>
+        <label>Mig_ProdiaKey_Gebucht</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</inlineHelpText>
+        <label>Mig_ProdiaKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Product_search_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.ADvendio__Site__r.ADvendio__Product_search_Name__c &amp;&quot;_&quot; &amp;
+ADvendio__Placement__r.ADvendio__Product_search_Name__c &amp;&quot;_&quot; &amp;
+ADvendio__Ad_Type__r.ADvendio__Product_search_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Product_search_Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_RateCategory__c</fullName>
+        <externalId>false</externalId>
+        <label>Mig_RateCategory</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Site_Mig_ProdiaKeykomma__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;,&apos;&amp;ADvendio__Placement__r.ADvendio__Site__r.Mig_ProdiaKey__c&amp;&apos;,&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_Site_Mig_ProdiaKeykomma</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_VAbfrage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mig_VAbfrage</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbrechnungLeistungsevaluiert__c</fullName>
+        <description>Hilfsfeld um die Werbemittel zu markieren, welche in der Rechnungsstellung anhand Leistungswerte abgerechnet werde (ist für das Billing-Tool notwendig). Identifikation erfolgt anhand Datensatztyp der verlinkten Werbeform, ob diese &apos;DFP&apos; ist.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__Ad_Type__r.RecordType.Name = &quot;DFP&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hilfsfeld um die Werbemittel zu markieren, welche in der Rechnungsstellung anhand Leistungswerte abgerechnet werde (ist für das Billing-Tool notwendig). Identifikation erfolgt anhand Datensatztyp der Werbeform, ob diese DFP ist. Wird autom. befüllt.</inlineHelpText>
+        <label>Abrechnung Leistungsevaluiert</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AddressableTVProduct__c</fullName>
+        <description>Ticket 04443: Formelfeld-Checkbox welche anzeigt ob es sich um ein &quot;Addressable TV&quot; Produkt handelt. Als Hilfsfeld für KEM/OKEM benötigt.</description>
+        <externalId>false</externalId>
+        <formula>(CONTAINS(ADvendio__Ad_Type__r.Name, &apos;SwitchIn&apos;) || 
+CONTAINS(ADvendio__Ad_Type__r.Name, &apos;Medium Rectangle&apos;))
+&amp;&amp;  
+(ADvendio__Placement__r.SomDig_Mediagattungssegment__r.Name = &apos;Connected TV/HbbTv&apos; || 
+ ADvendio__Placement__r.SomDig_Mediagattungssegment__r.Name = &apos;Addressable TV&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AddressableTV-Produkt</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AnzahlAktiveWM_Preise__c</fullName>
+        <description>Anzahl der aktiven WM-Preisen; Hilfsfeld - dient zur Reporting; muß nicht im PageLayout angezeigt werden</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Anzahl der zu dem Werbemittel zugeordenten aktiven WM-Preisen</inlineHelpText>
+        <label>Anzahl aktive WM-Preise</label>
+        <summaryFilterItems>
+            <field>ADvendio__Ad_price__c.ADvendio__Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__Ad_price__c.ADvendio__Ad_Spec__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Auftragstypen__c</fullName>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>Auftragstypen</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AdAudience</fullName>
+                    <default>false</default>
+                    <label>AdAudience</label>
+                </value>
+                <value>
+                    <fullName>Backfill</fullName>
+                    <default>false</default>
+                    <label>Backfill</label>
+                </value>
+                <value>
+                    <fullName>Barter</fullName>
+                    <default>false</default>
+                    <label>Barter</label>
+                </value>
+                <value>
+                    <fullName>Eigenvermarktung</fullName>
+                    <default>false</default>
+                    <label>Eigenvermarktung</label>
+                </value>
+                <value>
+                    <fullName>Eigenwerbung</fullName>
+                    <default>false</default>
+                    <label>Eigenwerbung</label>
+                </value>
+                <value>
+                    <fullName>Forschung</fullName>
+                    <default>false</default>
+                    <label>Forschung</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Standby</fullName>
+                    <default>false</default>
+                    <label>Standby</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SomDig_BT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Ist es erlaubt für diese Werbemittel/Produkt Soziademografisches und Behavior Targeting zu nutzen? wenn das Kontrollkästchen gefüllt ist werden die Aufschläge entsprechend aktiv.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist es erlaubt für diese Werbemittel/Produkt Soziademografisches und Behavior Targeting zu nutzen? wenn das Kontrollkästchen gefüllt ist werden die Aufschläge entsprechend aktiv.</inlineHelpText>
+        <label>BT fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Conception__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>KV 02920. Dieses Feld indiziert, ob es sich um ein Conception-Werbemittel handelt.</description>
+        <externalId>false</externalId>
+        <label>Conception</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_CpxFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>CPX fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_FC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>FC fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_FcAufschlag__c</fullName>
+        <description>Hinterlegung des FC-Preises in EUR für das Werbemittel. Der Preis gilt für jedes Frequency Capping, welches in einer Position ausgewählt wird.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hinterlegung des FC-Preises in EUR für das Werbemittel. Der Preis gilt für jedes Frequency Capping, welches in einer Position ausgewählt wird.</inlineHelpText>
+        <label>FC-Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_GtFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>GT fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Kein_Skonto__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Wenn aktiviert, Skontowert wird nicht in MN3 berücksichtigt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Über dieses Kontrollkästchen könnten Sie steuern, ob für dieses Werbemittel ein Skonto gewährt werden soll oder nicht (markieren, wenn kein Skonto erlaubt).</inlineHelpText>
+        <label>Kein Skonto</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mediagattung__c</fullName>
+        <description>Hilfsfeld um die Info auf KampagnePosition zu übertragen; wird per Trigger befüllt; ist kein Formelfeld weil wir an Formellimits stoßen würden (KV 2551)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird automatisch (per Code) der Name der M.-Gattung befüllt, welcher am Werbeträger gepflegt ist</inlineHelpText>
+        <label>Mediagattung Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsDifferenzierung__c</fullName>
+        <description>Hilfsfeld um die Info auf KampagnePosition zu übertragen; wird per Trigger befüllt; ist kein Formelfeld weil wir an Formellimits stoßen würden (KV 2551)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird automatisch (per Code) der Name der M.-Differenzierung befüllt, welcher an der Werbeform gepflegt ist</inlineHelpText>
+        <label>Mediagattungs-Differenzierung Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediagattungsSegment__c</fullName>
+        <description>Hilfsfeld um die Info auf KampagnePosition zu übertragen; wird per Trigger befüllt; ist kein Formelfeld weil wir an Formellimits stoßen würden (KV 2551)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird automatisch (per Code) der Name des M.-Segments befüllt, welche an der Belegungseinheit gepflegt ist</inlineHelpText>
+        <label>Mediagattungs-Segment Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Multiscreen__c</fullName>
+        <description>Kennzeichnet eine Multiscreen Belegungseinheit.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.SomDig_Multiscreen__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Kennzeichnet eine Multiscreen Belegungseinheit.</inlineHelpText>
+        <label>Multiscreen</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_NonMultiscreenSurcharge__c</fullName>
+        <externalId>false</externalId>
+        <label>Non-Multiscreen Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_OtpAufschlag__c</fullName>
+        <description>Wenn OTP für dieses Werbemittel möglich sein soll, dann hier bitte einen Preis eintragen (Hinweis: 0 EUR ist auch ein Preis). So wird das Werbemittel für OTP buchbar.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wenn OTP für dieses Werbemittel möglich sein soll, dann hier bitte einen Preis eintragen (Hinweis: 0 EUR ist auch ein Preis). So wird das Werbemittel für OTP buchbar.</inlineHelpText>
+        <label>OTP-Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Preismerkmal__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__Placement__r.ADvendio__RateCategory__r.Name</formula>
+        <label>Preismerkmal</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_RetargetingSurcharge__c</fullName>
+        <externalId>false</externalId>
+        <label>Retargeting Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_RotationExclusionSurcharge__c</fullName>
+        <externalId>false</externalId>
+        <label>Aufschlag für Rotationsauschluss</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Rotationstyp__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ADvendio__Placement__r.SomDig_Rotationstyp__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rotationstyp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_TT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Ist es erlaubt für diese Werbemittel/Produkt Geo/Zeit/Browser, Betriebssystem usw. - Targeting zu nutzen? wenn das Kontrollkästchen gefüllt ist werden die Aufschläge entsprechend aktiv.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist es erlaubt für diese Werbemittel/Produkt Geo/Zeit/Browser, Betriebssystem usw. - Targeting zu nutzen? wenn das Kontrollkästchen gefüllt ist werden die Aufschläge entsprechend aktiv.</inlineHelpText>
+        <label>TT fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_TargetingAufschlagAggregat__c</fullName>
+        <description>Wie soll der jeweils am Key hinterlegte Targeting-Preis mit anderen Key-Preisen berücksichtigt werden: SUM, MAX oder MIN?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wie soll der jeweils am Key hinterlegte Targeting-Preis mit anderen Key-Preisen berücksichtigt werden: SUM, MAX oder MIN?</inlineHelpText>
+        <label>Targeting Aufschlag Aggregatfunktion</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MIN</fullName>
+                    <default>false</default>
+                    <label>MIN</label>
+                </value>
+                <value>
+                    <fullName>MAX</fullName>
+                    <default>false</default>
+                    <label>MAX</label>
+                </value>
+                <value>
+                    <fullName>SUM</fullName>
+                    <default>false</default>
+                    <label>SUM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomDig_Targeting_Provider__c</fullName>
+        <description>Zusammenfassung von Keys zu einer Gruppe, welche über einen technischen Dienstleister/Site/Seitenbetreiber zur Verfügung gestellt werden können. Vereinfacht die Zuordnung von mehreren Keys zu Werbemittel/Produkten.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zusammenfassung von Keys zu einer Gruppe, welche über einen technischen Dienstleister/Site/Seitenbetreiber zur Verfügung gestellt werden können. Vereinfacht die Zuordnung von mehreren Keys zu Werbemittel/Produkten.</inlineHelpText>
+        <label>Targeting Provider</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ATV_PBT</fullName>
+                    <default>false</default>
+                    <label>ATV_PBT</label>
+                </value>
+                <value>
+                    <fullName>Autosites</fullName>
+                    <default>false</default>
+                    <label>Autosites</label>
+                </value>
+                <value>
+                    <fullName>Diverse Kriterien</fullName>
+                    <default>false</default>
+                    <label>Diverse Kriterien</label>
+                </value>
+                <value>
+                    <fullName>Gesundheit.de</fullName>
+                    <default>false</default>
+                    <label>Gesundheit.de</label>
+                </value>
+                <value>
+                    <fullName>nugg.ad</fullName>
+                    <default>false</default>
+                    <label>nugg.ad</label>
+                </value>
+                <value>
+                    <fullName>nugg.ad InApp</fullName>
+                    <default>false</default>
+                    <label>nugg.ad InApp</label>
+                </value>
+                <value>
+                    <fullName>Rotationsausschluss</fullName>
+                    <default>false</default>
+                    <label>Rotationsausschluss</label>
+                </value>
+                <value>
+                    <fullName>SmartGeo</fullName>
+                    <default>false</default>
+                    <label>SmartGeo</label>
+                </value>
+                <value>
+                    <fullName>Vereinssites</fullName>
+                    <default>false</default>
+                    <label>Vereinssites</label>
+                </value>
+                <value>
+                    <fullName>wetter.com</fullName>
+                    <default>false</default>
+                    <label>wetter.com</label>
+                </value>
+                <value>
+                    <fullName>wetter.com CTV</fullName>
+                    <default>false</default>
+                    <label>wetter.com CTV</label>
+                </value>
+                <value>
+                    <fullName>ZG S71 Paket</fullName>
+                    <default>false</default>
+                    <label>ZG S71 Paket</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SomDig_Targetingaufschlag__c</fullName>
+        <description>Wenn es einen Targetingaufschlag gibt ist dieser hier zu hinterlegen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wenn es einen Targetingaufschlag gibt ist dieser hier zu hinterlegen.</inlineHelpText>
+        <label>Targeting-Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_TkpFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporäres Feld für die Migration der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporäres Feld für die Migration der Produktmatrix</inlineHelpText>
+        <label>TKP fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Wasmuth_AdType__c</fullName>
+        <description>Werbeform-Name nur bis Tilde (so, wie von Wasmuth benötigt)</description>
+        <externalId>false</externalId>
+        <formula>LEFT(ADvendio__Ad_Type__r.Name,FIND(&quot;~&quot;, ADvendio__Ad_Type__r.Name) -1 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Werbeform-Name nur bis Tilde (so, wie von Wasmuth benötigt)</inlineHelpText>
+        <label>Werbeform (Wasmuth)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Wasmuth_Placement__c</fullName>
+        <description>Belegungseinheit-Name nur bis Tilde (so, wie von Wasmuth benötigt)</description>
+        <externalId>false</externalId>
+        <formula>LEFT(ADvendio__Placement__r.Name,FIND(&quot;~&quot;, ADvendio__Placement__r.Name) -1 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Belegungseinheit-Name nur bis Tilde (so, wie von Wasmuth benötigt)</inlineHelpText>
+        <label>Belegungseinheit (Wasmuth)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Wasmuth_Site__c</fullName>
+        <description>Werbeträger-Name nur bis Tilde (so, wie von Wasmuth benötigt)</description>
+        <externalId>false</externalId>
+        <formula>LEFT(ADvendio__Placement__r.ADvendio__Site__r.Name,FIND(&quot;~&quot;, ADvendio__Placement__r.ADvendio__Site__r.Name) -1 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Werbeträger-Name nur bis Tilde (so, wie von Wasmuth benötigt)</inlineHelpText>
+        <label>Werbeträger (Wasmuth)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbeformgruppe__c</fullName>
+        <description>übernimmt den Wert von der Werbeform</description>
+        <externalId>false</externalId>
+        <formula>TEXT(ADvendio__Ad_Type__r.SomDig_Werbeformgruppe__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>übernimmt den Wert von der Werbeform</inlineHelpText>
+        <label>Werbeformgruppe</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_iAdFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>iAd fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_old_Rotationstyp__c</fullName>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>old Rotationstyp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Network-Rotation</fullName>
+                    <default>false</default>
+                    <label>Network-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Premium-Umfeld</fullName>
+                    <default>false</default>
+                    <label>Premium-Umfeld</label>
+                </value>
+                <value>
+                    <fullName>Rotation TV-Brand</fullName>
+                    <default>false</default>
+                    <label>Rotation TV-Brand</label>
+                </value>
+                <value>
+                    <fullName>Site-Rotation</fullName>
+                    <default>false</default>
+                    <label>Site-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Standard-Umfeld</fullName>
+                    <default>false</default>
+                    <label>Standard-Umfeld</label>
+                </value>
+                <value>
+                    <fullName>Themenrotationen</fullName>
+                    <default>false</default>
+                    <label>Themenrotationen</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Ad Spec</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Site__c</columns>
+        <columns>ADvendio__Placement__c</columns>
+        <columns>ADvendio__Ad_Type__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>SomDig_AbrechnungLeistungsevaluiert__c</columns>
+        <columns>Mig_ProdiaKey__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>ADvendio__Packages</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Ad_Type__c</columns>
+        <columns>ADvendio__Distribution__c</columns>
+        <columns>ADvendio__External_Name__c</columns>
+        <columns>ADvendio__VATType__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>ADvendio__Ad_Specs__c.ADvendio__Packet</value>
+        </filters>
+        <label>Packages</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_DienstleistungsWM</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Placement__c</columns>
+        <columns>SomDig_Mediagattung__c</columns>
+        <columns>SomDig_MediagattungsDifferenzierung__c</columns>
+        <columns>ADvendio__Ad_Type__c</columns>
+        <columns>ADvendio__Site__c</columns>
+        <columns>ADvendio__No_Agency_Discount__c</columns>
+        <columns>ADvendio__NoAgencyComission__c</columns>
+        <columns>ADvendio__No_Customer_Discount__c</columns>
+        <columns>SomDig_Kein_Skonto__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Placement__c</field>
+            <operation>equals</operation>
+            <value>Dienstleistung</value>
+        </filters>
+        <label>Dienstleistungs WM</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_TeletextWerbemittel</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Placement_Name__c</columns>
+        <columns>ADvendio__Ad_Type__c</columns>
+        <columns>ADvendio__Site__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Product_search_Name__c</field>
+            <operation>contains</operation>
+            <value>diverse Werbeformen</value>
+        </filters>
+        <label>Teletext Werbemittel</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_WerbemittelNachKategorien</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Werbeformgruppe__c</columns>
+        <columns>ADvendio__Ad_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Werbemittel nach Kategorien</label>
+        <language>de</language>
+        <sharedTo>
+            <group>P7S1_SphereSomDe</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Ad Spec Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Ad Specs</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ADvendio__Packet</fullName>
+        <active>true</active>
+        <description>This record type should be used to store packet product.</description>
+        <label>Packet</label>
+        <picklistValues>
+            <picklist>ADvendio__Distribution__c</picklist>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prorated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__FC_Period__c</picklist>
+            <values>
+                <fullName>browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>minute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>session</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>year</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__Pricegroup__c</picklist>
+            <values>
+                <fullName>Price Pricegroup 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 7</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__VATType__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Auftragstypen__c</picklist>
+            <values>
+                <fullName>AdAudience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eigenwerbung</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forschung</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standby</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_TargetingAufschlagAggregat__c</picklist>
+            <values>
+                <fullName>MAX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Targeting_Provider__c</picklist>
+            <values>
+                <fullName>ATV_PBT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autosites</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diverse Kriterien</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gesundheit%2Ede</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotationsausschluss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SmartGeo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vereinssites</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ZG S71 Paket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nugg%2Ead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nugg%2Ead InApp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>wetter%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>wetter%2Ecom CTV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_old_Rotationstyp__c</picklist>
+            <values>
+                <fullName>Network-Rotation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium-Umfeld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotation TV-Brand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site-Rotation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard-Umfeld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Themenrotationen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Standard</fullName>
+        <active>true</active>
+        <description>This record type should be used to store standard product.</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>ADvendio__Distribution__c</picklist>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__FC_Period__c</picklist>
+            <values>
+                <fullName>browser</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>minute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>session</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>year</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__Pricegroup__c</picklist>
+            <values>
+                <fullName>Price Pricegroup 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Pricegroup 7</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ADvendio__VATType__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Auftragstypen__c</picklist>
+            <values>
+                <fullName>AdAudience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Backfill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eigenvermarktung</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eigenwerbung</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forschung</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standby</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_TargetingAufschlagAggregat__c</picklist>
+            <values>
+                <fullName>MAX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_Targeting_Provider__c</picklist>
+            <values>
+                <fullName>ATV_PBT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Autosites</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diverse Kriterien</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gesundheit%2Ede</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotationsausschluss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SmartGeo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vereinssites</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ZG S71 Paket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nugg%2Ead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nugg%2Ead InApp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>wetter%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>wetter%2Ecom CTV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SomDig_old_Rotationstyp__c</picklist>
+            <values>
+                <fullName>Network-Rotation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium-Umfeld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotation TV-Brand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site-Rotation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard-Umfeld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Themenrotationen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Ad_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Placement__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Site__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Ad_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Placement__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Site__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Ad_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Placement__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Site__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPDATEDBY_USER</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__Ad_Type__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Placement__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Site__c</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Ad_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Placement__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Site__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>SomDig_FrequencyCapping</fullName>
+        <active>true</active>
+        <description>Kontrolle, dass alle Felder bei Hinterlegung eines vordefinierten Frequency Cappings auch ausgewählt bzw befüllt werden. Zudem darf keine Null (0) hinterlegt werden. Der Wert für FC Anzahl Periode wird automatisch per Workflow auf 1 gesetzt</description>
+        <errorConditionFormula>OR (
+ AND (
+  ISBLANK ( TEXT ( ADvendio__FC_Quantity__c ) ) ,
+  NOT ( ISBLANK ( TEXT ( ADvendio__FC_Period__c ) ) )
+ ),
+ AND (
+  NOT ( ISBLANK ( TEXT ( ADvendio__FC_Quantity__c ) ) ) ,
+  ISBLANK ( TEXT ( ADvendio__FC_Period__c ) )
+ ),
+ OR (
+  ADvendio__FC_Quantity__c = 0 ,
+  ADvendio__FC_Ad_served_every__c = 0 
+ )
+)</errorConditionFormula>
+        <errorMessage>Zum Hinterlegen eines Frequency Cappings am Werbemittel müssen alle zwei Felder/Parameter ausgefüllt sein, dies bitte kontrollieren und vervollständigen (FC Menge und FC Ad ausgeliefert alle). Zudem darf keine Null (0) ausgewählt werden.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_KontrolleErsteller</fullName>
+        <active>true</active>
+        <description>Für den Belegungsplan/Festplazierungsliste benötigen Sales, PM &amp; PAM die Objekt-Berechtigung, Datensätze zu erstellen. Da dies Sales/PAM nicht machen soll, wurde diese Validierung noch erstellt (KV 01797).</description>
+        <errorConditionFormula>$Profile.Id != $Label.ProfileIdAdmin
+
+&amp;&amp;
+
+ISNEW()
+
+&amp;&amp; 
+(
+$Profile.Name = &quot;BI&quot;
+ || 
+$Profile.Name = &quot;SomDig_Sales&quot;
+ || 
+$Profile.Name = &quot;SomDig_PAM&quot;)</errorConditionFormula>
+        <errorMessage>Sales, PAM oder PM dürfen keine Datensätze des Objektes Werbemittel erstellen, aktuell nur AdTech.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_NameDoubleBlank</fullName>
+        <active>true</active>
+        <description>KV 03291. Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche.</description>
+        <errorConditionFormula>CONTAINS(Name, &apos;  &apos;) || CONTAINS(ADvendio__ShortDescription__c, &apos;  &apos;) || CONTAINS(ADvendio__External_Name__c, &apos;  &apos;) || CONTAINS(ADvendio__Product_search_Name__c, &apos;  &apos;)</errorConditionFormula>
+        <errorMessage>Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_Rotationsausschluss</fullName>
+        <active>true</active>
+        <description>Wenn der Targeting Provider &quot;Rotationsausschluss&quot; nicht ausgewählt wurde, soll der Aufschlag für Rotationsausschluss nicht pflegbar sein.</description>
+        <errorConditionFormula>NOT(INCLUDES(SomDig_Targeting_Provider__c, &apos;Rotationsausschluss&apos;)) &amp;&amp; NOT(ISBLANK(SomDig_RotationExclusionSurcharge__c))</errorConditionFormula>
+        <errorMessage>Der Aufschlag für Rotationsausschluss darf nicht gepflegt werden wenn der Targeting Provider Rotationsausschluss nicht ausgewählt ist.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

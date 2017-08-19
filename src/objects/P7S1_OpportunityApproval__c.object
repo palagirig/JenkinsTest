@@ -46,17 +46,12 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableChangeDataCapture>false</enableChangeDataCapture>
-    <enableFeeds>true</enableFeeds>
+    <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fieldSets>
-        <fullName>MT_UpdateRequestMapping</fullName>
-        <description>Field set to match the fields in the Update Request approval process</description>
-        <label>Media Transparency Update Request Mapping</label>
-    </fieldSets>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -66,647 +61,9 @@
         <relationshipLabel>Opportunity Freigaben</relationshipLabel>
         <relationshipName>Opportunity_Freigaben</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>MT_Asset_ref__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>Die Referenz zum internen Partner. Ersetzt mittelfristig die Pickliste P7S1_internerPartner__c. Soll genutzt werden, um Sharing zu steuern, außerdem als Verbindungspunkt für Kampagnentypen und weitere Einflussfaktoren auf die Kampagnen.</description>
-        <externalId>false</externalId>
-        <label>Interner Partner (Asset)</label>
-        <referenceTo>P7S1_Asset__c</referenceTo>
-        <relationshipLabel>Opportunity Freigaben</relationshipLabel>
-        <relationshipName>MT_OpportunityApprovals</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>MT_ContractEnddate__c</fullName>
-        <description>Das Ende der Gesamtvertragslaufzeit, alle Kampagnen- und Bausteinlaufzeiten müssen innerhalb dieser Laufzeit liegen.</description>
-        <externalId>false</externalId>
-        <label>Contract Enddate</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_ContractStartdate__c</fullName>
-        <description>Der Start der Gesamtvertragslaufzeit, alle Kampagnen- und Bausteinlaufzeiten müssen innerhalb dieser Laufzeit liegen.</description>
-        <externalId>false</externalId>
-        <label>Contract Startdate</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_FixRevenue_MonthlyPayment__c</fullName>
-        <description>Die Höhe der monatlichen Zahlungen, falls als fixe Umsatzart &quot;monatliche Zahlungen&quot; ausgewählt wurde. Wird genutzt, um den Fix Revenue Yield zu ermitteln, der in das Kampagnenranking einfließt.</description>
-        <externalId>false</externalId>
-        <label>Fixe monatliche Einnahmen</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_FixRevenue_Type__c</fullName>
-        <description>Fixe Umsatzart: Keine, monatliche Zahlung (&quot;Payment&quot;; s. MT_FixRevenue_MonthlyPayment__c) oder prozentuale Anteile (&quot;Yield&quot;; s. MT_MediaCampaign__c.MT_YieldGesamtFixTV__c).</description>
-        <externalId>false</externalId>
-        <label>Fixe Umsatzart</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_FixRevenueTypes</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_MonthlyShiftingRight_Asset__c</fullName>
-        <description>Das vertraglich zugesicherte monatliche Schieberecht des Assets für die BMV- Ausstrahlung. Relevant für die Kontrolle der Vertragserfüllung.</description>
-        <externalId>false</externalId>
-        <label>monatliches Schieberecht</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>MT_RunTimeDigitalEnd__c</fullName>
-        <description>Das Ende der Laufzeit für den Baustein Digital.</description>
-        <externalId>false</externalId>
-        <label>Ende Laufzeit (Digital)</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_RunTimeDigitalStart__c</fullName>
-        <description>Start der Laufzeit des Bausteins Digital.</description>
-        <externalId>false</externalId>
-        <label>Start Laufzeit (Digital)</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_RunTimeDooHEnd__c</fullName>
-        <description>Das Ende der Laufzeit für den Baustein DooH.</description>
-        <externalId>false</externalId>
-        <label>Ende Laufzeit (DooH)</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_RunTimeDooHStart__c</fullName>
-        <description>Start der Laufzeit des Bausteins DooH.</description>
-        <externalId>false</externalId>
-        <label>Start Laufzeit (DooH)</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_RunTimeTVEnd__c</fullName>
-        <description>Das Ende der Laufzeit für den Baustein TV.</description>
-        <externalId>false</externalId>
-        <label>Ende Laufzeit (TV)</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_RunTimeTVStart__c</fullName>
-        <description>Start der Laufzeit des Bausteins TV</description>
-        <externalId>false</externalId>
-        <label>Start Laufzeit (TV)</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>MT_SLMAccordingToContract__c</fullName>
-        <description>Die vertraglich vereinbarte Service Level Matrix.</description>
-        <externalId>false</externalId>
-        <label>SLM laut Vertrag</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Bronze</fullName>
-                    <default>false</default>
-                    <label>Bronze</label>
-                </value>
-                <value>
-                    <fullName>Silber</fullName>
-                    <default>false</default>
-                    <label>Silber</label>
-                </value>
-                <value>
-                    <fullName>Gold</fullName>
-                    <default>false</default>
-                    <label>Gold</label>
-                </value>
-                <value>
-                    <fullName>Platin</fullName>
-                    <default>false</default>
-                    <label>Platin</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_SLMAfterYield__c</fullName>
-        <description>Die Service Level Matrix, die sich aus dem vereinbarten Yield ergibt, wird manuell eingetragen.</description>
-        <externalId>false</externalId>
-        <label>SLM nach Yield</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Bronze</fullName>
-                    <default>false</default>
-                    <label>Bronze</label>
-                </value>
-                <value>
-                    <fullName>Silber</fullName>
-                    <default>false</default>
-                    <label>Silber</label>
-                </value>
-                <value>
-                    <fullName>Gold</fullName>
-                    <default>false</default>
-                    <label>Gold</label>
-                </value>
-                <value>
-                    <fullName>Platin</fullName>
-                    <default>false</default>
-                    <label>Platin</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_SLMDifference__c</fullName>
-        <description>Hier wird die Begründung für Unterschiede in den Feldern MT_SLMAccordingToContract__c und MT_SLMAfterYield__c eingetragen, wird via Validierungsregel zum Pflichtfeld.</description>
-        <externalId>false</externalId>
-        <label>SLM Abweichung</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_Sys_ApprovalSubmittedFromCampaign__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Wird zur Steuerung der Approvalprozesse MT_OppApp_ChangeExternalApproval und MT_OppApp_ChangeInternalApproval genutzt. Es wird per Code in der Klasse MT_ApprovalProcessModule aktiviert, um die Einstiegskriterien für die Prozesse zu erfüllen, die sonst nicht greifen sollen. Die Klasse wird per Custom Button aufgerufen, der Button ist jedoch zur Zeit inaktiv, da die Freigabeprozesse für MT überarbeitet werden sollen.</description>
-        <externalId>false</externalId>
-        <label>MT_Sys_ApprovalSubmittedFromCampaign</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue1_RevenuePerUnit__c</fullName>
-        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 1.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 1 - Umsatz pro Einheit</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue1_SoldAmount__c</fullName>
-        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 1.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 1 - Verkaufte Anzahl</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue1_SoldProduct__c</fullName>
-        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 1.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 1 - Verkauftes Produkt</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue1_SoldUnit__c</fullName>
-        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 1.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 1 - Verkaufseinheit</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue1_TotalRevenue__c</fullName>
-        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 1.</description>
-        <externalId>false</externalId>
-        <formula>MT_VariableRevenue1_RevenuePerUnit__c * MT_VariableRevenue1_SoldAmount__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Var. Umsatz 1 - Gesamtumsatz</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue2_RevenuePerUnit__c</fullName>
-        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 2.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 2 - Umsatz pro Einheit</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue2_SoldAmount__c</fullName>
-        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 2.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 2 - Verkaufte Anzahl</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue2_SoldProduct__c</fullName>
-        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 2.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 2 - Verkauftes Produkt</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue2_SoldUnit__c</fullName>
-        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 2.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 2 - Verkaufseinheit</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue2_TotalRevenue__c</fullName>
-        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 2.</description>
-        <externalId>false</externalId>
-        <formula>MT_VariableRevenue2_RevenuePerUnit__c * MT_VariableRevenue2_SoldAmount__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Var. Umsatz 2 - Gesamtumsatz</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue3_RevenuePerUnit__c</fullName>
-        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 3.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 3 - Umsatz pro Einheit</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue3_SoldAmount__c</fullName>
-        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 3.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 3 - Verkaufte Anzahl</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue3_SoldProduct__c</fullName>
-        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 3.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 3 - Verkauftes Produkt</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue3_SoldUnit__c</fullName>
-        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 3.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 3 - Verkaufseinheit</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue3_TotalRevenue__c</fullName>
-        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 3.</description>
-        <externalId>false</externalId>
-        <formula>MT_VariableRevenue3_RevenuePerUnit__c * MT_VariableRevenue3_SoldAmount__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Var. Umsatz 3 - Gesamtumsatz</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue4_RevenuePerUnit__c</fullName>
-        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 4.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 4 - Umsatz pro Einheit</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue4_SoldAmount__c</fullName>
-        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 4.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 4 - Verkaufte Anzahl</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue4_SoldProduct__c</fullName>
-        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 4.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 4 - Verkauftes Produkt</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue4_SoldUnit__c</fullName>
-        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 4.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 4 - Verkaufseinheit</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue4_TotalRevenue__c</fullName>
-        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 4.</description>
-        <externalId>false</externalId>
-        <formula>MT_VariableRevenue4_RevenuePerUnit__c * MT_VariableRevenue4_SoldAmount__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Var. Umsatz 4 - Gesamtumsatz</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue5_RevenuePerUnit__c</fullName>
-        <description>Der Umsatz je Einheit der variablen Umsatzbeteiligungskomponente 5.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 5 - Umsatz pro Einheit</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue5_SoldAmount__c</fullName>
-        <description>Der erwartete Anzahl an verkauften Einheiten der variablen Umsatzbeteiligungskomponente 5.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 5 - Verkaufte Anzahl</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue5_SoldProduct__c</fullName>
-        <description>Die Bezeichnung des verkauften Produkts der variablen Umsatzbeteiligungskomponente 5.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 5 - Verkauftes Produkt</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue5_SoldUnit__c</fullName>
-        <description>Der Verkaufseinheit der variablen Umsatzbeteiligungskomponente 5.</description>
-        <externalId>false</externalId>
-        <label>Var. Umsatz 5 - Verkaufseinheit</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>MT_ProductSalesUnit</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue5_TotalRevenue__c</fullName>
-        <description>Der errechnete Gesamtumsatz (Umsatz je Einheit * verkaufte Anzahl) der variablen Umsatzbeteiligungskomponente 5.</description>
-        <externalId>false</externalId>
-        <formula>MT_VariableRevenue5_RevenuePerUnit__c * MT_VariableRevenue5_SoldAmount__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Var. Umsatz 5 - Gesamtumsatz</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>MT_VariableRevenue_Total__c</fullName>
-        <description>Die Summe der Gesamtumsätze der variablen Umsatzbeteiligungskomponenten.</description>
-        <externalId>false</externalId>
-        <formula>MT_VariableRevenue1_TotalRevenue__c + MT_VariableRevenue2_TotalRevenue__c + MT_VariableRevenue3_TotalRevenue__c + MT_VariableRevenue4_TotalRevenue__c + MT_VariableRevenue5_TotalRevenue__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Variable Revenue Total</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>MT_Variable_Yield_Type__c</fullName>
-        <description>Variable Umsatzart: Umsatzbeteiligung. Weitere Anforderungen werden noch spezifiziert.</description>
-        <externalId>false</externalId>
-        <label>Variable Yield Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Revenue Share</fullName>
-                    <default>true</default>
-                    <label>Revenue Share</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>MT_YearlyShiftingRight_Asset__c</fullName>
-        <description>Das vertraglich zugesicherte jährliche Schieberecht des Assets für die BMV- Ausstrahlung. Relevant für die Kontrolle der Vertragserfüllung.</description>
-        <externalId>false</externalId>
-        <label>jährliches Schieberecht</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
     </fields>
     <fields>
         <fullName>P7S1_AccountOwnerUnitCopy__c</fullName>
@@ -716,7 +73,6 @@
         <label>AccountOwnerUnit (Copy)</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -742,7 +98,6 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Opportunity_Freigaben</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -768,7 +123,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -779,7 +133,6 @@
         <externalId>false</externalId>
         <label>Bemerkung Genehmiger</label>
         <length>500</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -790,7 +143,6 @@
         <externalId>false</externalId>
         <label>Genehmigungsstatus</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -825,7 +177,6 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Genehmigt 71M DSB</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -835,7 +186,6 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Genehmigt Account Inhaber</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -845,7 +195,6 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Genehmigt Barter Freigabe</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -855,7 +204,6 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Genehmigt Media Board</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -881,7 +229,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -892,7 +239,6 @@
         <externalId>false</externalId>
         <inlineHelpText>Unterjährige Erhöhung des freigegebenen TV BMVs. On-top Budget muss durch den Ressortvorstand, das Media Board und das Executive Board freigegeben werden.</inlineHelpText>
         <label>BMV on-Top zu Budget</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -903,7 +249,6 @@
         <description>Helper field for Criteria Based Sharing Rule</description>
         <externalId>false</externalId>
         <label>Barter (Copy)</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -916,7 +261,6 @@
 Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist anzuhängen.</inlineHelpText>
         <label>Beschreibung CCO Rahmenfreigabe</label>
         <length>1000</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -927,29 +271,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <externalId>false</externalId>
         <label>Beschreibung DooH</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_BeschreibungEquity__c</fullName>
-        <description>Kurze Erläuterung zum Equity- Anteil in diesem Vertrag.</description>
-        <externalId>false</externalId>
-        <label>Beschreibung Equity</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_BeschreibungFillUp__c</fullName>
-        <description>Kurze Erläuterung zum Fill Up- Anteil in diesem Vertrag.</description>
-        <externalId>false</externalId>
-        <label>Beschreibung Fill-Up</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -960,7 +281,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <inlineHelpText>Rahmenfreigabe: bitte aus dem zur Verfügung stehenden Excel Sheet die entsprechende quantitative Rahmenfreigabe kopieren.</inlineHelpText>
         <label>Beschreibung Rahmenfreigabe Media Board</label>
         <length>1000</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -1013,7 +333,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1070,7 +389,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1096,7 +414,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1123,7 +440,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1134,7 +450,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <inlineHelpText>Fallen die qualitativen Kriterien unter die bestehenden CCO Board Rahmenfreigaben?</inlineHelpText>
         <label>CCO Freigabe</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -1173,26 +488,12 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <type>Percent</type>
     </fields>
     <fields>
-        <fullName>P7S1_CashZahlung__c</fullName>
-        <description>Die Höhe der Cash-Zahlung als Ergänzung zur Equity.</description>
-        <externalId>false</externalId>
-        <label>Cash Zahlung</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>P7S1_DescriptionBarter__c</fullName>
         <description>Beschreibung Inhalte Medien-Baustein Barter</description>
         <externalId>false</externalId>
         <inlineHelpText>Beschreibung Inhalte Medien-Baustein Barter</inlineHelpText>
         <label>Beschreibung Barter-Bestandteil</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -1204,7 +505,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <inlineHelpText>Beschreibung Inhalte D&amp;A Digitale Umsatzanteile</inlineHelpText>
         <label>Beschreibung D&amp;A Digitale Umsatzanteile</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -1216,7 +516,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <inlineHelpText>Beschreibung Inhalte Medien-Baustein Digital</inlineHelpText>
         <label>Beschreibung Digital</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -1228,7 +527,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <inlineHelpText>Beschreibung Inhalte sonstige Umsatzanteile</inlineHelpText>
         <label>Beschreibung sonstiger Umsatzanteile</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -1240,7 +538,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <inlineHelpText>Beschreibung Inhalte Medien-Baustein TV</inlineHelpText>
         <label>Beschreibung TV</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -1251,18 +548,17 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <externalId>false</externalId>
         <inlineHelpText>Beschreibung Inhalte des variablen Umsatzanteils und Hintergründe zu deren Kalkulationsbasis</inlineHelpText>
         <label>Beschreibung Variable Umsatzanteile</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
+        <length>500</length>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
     </fields>
     <fields>
         <fullName>P7S1_Description__c</fullName>
         <externalId>false</externalId>
         <label>Bemerkung Antragsteller</label>
         <length>500</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -1273,7 +569,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Digital (Copy)</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -1284,87 +579,9 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <description>Helper Field for Opportunity Sharing with 7Screen, gets filled by Process</description>
         <externalId>false</externalId>
         <label>DooH (7Screen) (Copy)</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_EigenerBuchwertinEUR__c</fullName>
-        <description>Der Unternehmensanteil am externen Partner, der für diesen Vertrag gewährt wird.</description>
-        <externalId>false</externalId>
-        <label>Eigenkapital Buchwert</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_EigenerShare__c</fullName>
-        <externalId>false</externalId>
-        <label>Eigener Share</label>
-        <precision>3</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_EquityYield__c</fullName>
-        <description>Der errechnete Equity-Yield - (Anteil am externen Partner - Cashzahlung) / BMV TV.</description>
-        <externalId>false</externalId>
-        <formula>( P7S1_EigenerBuchwertinEUR__c -  P7S1_CashZahlung__c ) /  P7S1_BmvTv__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Equity Yield</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_ExitParticipationBeschreibung__c</fullName>
-        <description>Kurze Erläuterung zum Exit Participation- Anteil in diesem Vertrag.</description>
-        <externalId>false</externalId>
-        <label>Beschreibung Exit Participation</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_ExitParticipationBetrag__c</fullName>
-        <description>Der Umsatz, der bei dem Ausstieg aus dem Unternehmen erzielt wird.</description>
-        <externalId>false</externalId>
-        <formula>P7S1_BmvTv__c * P7S1_ExitParticipation__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Exit Participation Betrag</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_ExitParticipation__c</fullName>
-        <description>Der prozentuale Anteil vom BMV, der bei einem Ausstieg gezahlt wird.</description>
-        <externalId>false</externalId>
-        <label>Exit Participation</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
     </fields>
     <fields>
         <fullName>P7S1_FestplatzierungGewichtet__c</fullName>
@@ -1386,37 +603,9 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_FillUpBetrag__c</fullName>
-        <description>Der Umsatz, der durch das Fill Up erzielt wird.</description>
-        <externalId>false</externalId>
-        <formula>P7S1_BmvTv__c *  P7S1_FillUp__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Fill-Up Betrag</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_FillUp__c</fullName>
-        <description>Der Fill Up- Yield. Fließt in die Gesamtbewertung des Vertrags ein.</description>
-        <externalId>false</externalId>
-        <label>Fill-Up</label>
-        <precision>4</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
     </fields>
     <fields>
         <fullName>P7S1_GrossBarterVolumeGewichtet__c</fullName>
@@ -1440,7 +629,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1486,16 +674,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>P7S1_HasMediaPartBarter__c</fullName>
-        <externalId>false</externalId>
-        <formula>P7S1_Opportunity__r.P7S1_HasMediaPartBarter__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Teil-Barter</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>P7S1_HasMediaTV__c</fullName>
         <externalId>false</externalId>
         <formula>P7S1_Opportunity__r.P7S1_HasMediaTV__c</formula>
@@ -1525,7 +703,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1551,7 +728,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1564,7 +740,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1577,7 +752,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1603,7 +777,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1629,7 +802,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1681,7 +853,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1708,7 +879,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1735,7 +905,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1877,7 +1046,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <relationshipLabel>Opportunity Freigaben</relationshipLabel>
         <relationshipName>Opportunity_Freigaben</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -1903,7 +1071,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <label>Umsatzart</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -1918,7 +1085,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -1931,7 +1097,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <label>Owner Unit (Antragsteller) (Copy)</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -1956,7 +1121,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <externalId>false</externalId>
         <inlineHelpText>Fallen die quantitativen Kriterien unter die bestehenden Media Board Rahmenfreigaben?</inlineHelpText>
         <label>Rahmenfreigabe Media Board</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -1981,7 +1145,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <description>Helper field for Criteria based sharing rule</description>
         <externalId>false</externalId>
         <label>TV (Copy)</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -2024,7 +1187,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -2038,7 +1200,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -2073,16 +1234,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>P7S1_UmsatzVerrechenbar__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Umsatz verrechenbar</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>P7S1_VariableRevenueGewichtet__c</fullName>
         <externalId>false</externalId>
         <formula>P7S1_VariableRevenue__c * P7S1_OppProbability__c</formula>
@@ -2104,7 +1255,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -2131,7 +1281,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -2208,7 +1357,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </fields>
     <fields>
         <fullName>P7S1_YieldTotal__c</fullName>
-        <description>Gesamt Yield des Media Deal
+        <description>Gesamt Yield des Media Deal 
 (Umsatz gesamt netto (fix + variabel) / BMV gesamt)</description>
         <externalId>false</externalId>
         <formula>IF(
@@ -2217,7 +1366,7 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
  P7S1_TotalNetRevenueFixVar__c /  P7S1_BmvTotalFix__c
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Gesamt Yield des Media Deal
+        <inlineHelpText>Gesamt Yield des Media Deal 
 (Umsatz gesamt netto (fix + variabel) / BMV gesamt)</inlineHelpText>
         <label>Yield gesamt</label>
         <precision>18</precision>
@@ -2247,7 +1396,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <externalId>false</externalId>
         <inlineHelpText>Checkbox kann durch Genehmiger gesetzt werden, wenn der Genehmigungsprozess nicht direkt fortgesetzt wird.</inlineHelpText>
         <label>in Diskussion</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -2257,7 +1405,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <externalId>false</externalId>
         <label>interner Partner</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -2424,7 +1571,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <label>sonstiger interner Partner</label>
         <length>40</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -2439,7 +1585,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <relationshipLabel>Opportunity Freigaben (Digital Sales)</relationshipLabel>
         <relationshipName>Opportunity_Freigaben1</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -2452,7 +1597,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <referenceTo>User</referenceTo>
         <relationshipName>Opportunity_Freigaben5</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -2466,7 +1610,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <relationshipLabel>Opportunity Freigaben (Einkaufsagenturverkäufer)</relationshipLabel>
         <relationshipName>Opportunity_Freigaben2</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -2480,7 +1623,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <relationshipLabel>Opportunity_Freigaben3</relationshipLabel>
         <relationshipName>Opportunity_Freigaben3</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -2494,310 +1636,9 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <relationshipLabel>Opportunity Freigaben (TV Kundenverkäufer)</relationshipLabel>
         <relationshipName>Opportunity_Freigaben4</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Ven_AnnualShiftingRightsCustomer__c</fullName>
-        <externalId>false</externalId>
-        <label>Yearly Customer Push Right</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Ven_AnnualShiftingRightsP7S1__c</fullName>
-        <externalId>false</externalId>
-        <label>Yearly P7S1 Push Right</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Ven_DescriptionWKZPotential__c</fullName>
-        <externalId>false</externalId>
-        <label>Description</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_EnvisagedTypeOfTransaction__c</fullName>
-        <externalId>false</externalId>
-        <label>Envisaged Type Of Transaction</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Ven_FeedbackAdMarketDevInitiative__c</fullName>
-        <externalId>false</externalId>
-        <label>Ad Market Development Initiative Assessm</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>High</fullName>
-                    <default>false</default>
-                    <label>High</label>
-                </value>
-                <value>
-                    <fullName>Middle</fullName>
-                    <default>false</default>
-                    <label>Middle</label>
-                </value>
-                <value>
-                    <fullName>Low</fullName>
-                    <default>false</default>
-                    <label>Low</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Ven_InterestOfData__c</fullName>
-        <externalId>false</externalId>
-        <label>Data Assessment</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>via Data Next</fullName>
-                    <default>false</default>
-                    <label>via Data Next</label>
-                </value>
-                <value>
-                    <fullName>via basic Data-Coop</fullName>
-                    <default>false</default>
-                    <label>via basic Data-Coop</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Ven_ListOfWebsitesApps__c</fullName>
-        <externalId>false</externalId>
-        <label>List of Websites / Apps</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_MonthlyRegistration__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Registrations</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Ven_MonthlyShiftingRightsCustomer__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Customer Push Right</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Ven_MonthlyShiftingRightsP7S1__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly P7S1 Push Right</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Ven_PartnerDatadeals__c</fullName>
-        <externalId>false</externalId>
-        <label>Partner Data Deal(s)</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_PresDatadealsWithThird__c</fullName>
-        <externalId>false</externalId>
-        <label>Existing Third  Party Data Deals</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Ven_ProductionDescription__c</fullName>
-        <externalId>false</externalId>
-        <label>Product Description</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_SLMDeviation__c</fullName>
-        <externalId>false</externalId>
-        <label>SLM Deviation</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_SLM__c</fullName>
-        <externalId>false</externalId>
-        <label>SLM</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Bronze</fullName>
-                    <default>false</default>
-                    <label>Bronze</label>
-                </value>
-                <value>
-                    <fullName>Silver</fullName>
-                    <default>false</default>
-                    <label>Silver</label>
-                </value>
-                <value>
-                    <fullName>Gold</fullName>
-                    <default>false</default>
-                    <label>Gold</label>
-                </value>
-                <value>
-                    <fullName>Platinum</fullName>
-                    <default>false</default>
-                    <label>Platinum</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Ven_SegmentDefinition__c</fullName>
-        <externalId>false</externalId>
-        <label>Segment Definition</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_SummarySocialDataOnRegistration__c</fullName>
-        <externalId>false</externalId>
-        <label>Compiled Sociodemographic Data at Regist</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>Ven_WKZPotentialApproved__c</fullName>
-        <externalId>false</externalId>
-        <label>Potential Approved</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <gender>Feminine</gender>
     <label>Opportunity Freigabe</label>
@@ -3193,813 +2034,10 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
     </listViews>
     <nameField>
         <label>Opportunity Freigabe-Name</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Opportunity Freigaben</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <recordTypes>
-        <fullName>MT_ExternalCampaignOpportunityApproval</fullName>
-        <active>true</active>
-        <label>External Campaign Opportunity Approval</label>
-        <picklistValues>
-            <picklist>MT_FixRevenue_Type__c</picklist>
-            <values>
-                <fullName>None</fullName>
-                <default>true</default>
-            </values>
-            <values>
-                <fullName>Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yield</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_SLMAccordingToContract__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platin</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silber</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_SLMAfterYield__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platin</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silber</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue1_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue2_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue3_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue4_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue5_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_Variable_Yield_Type__c</picklist>
-            <values>
-                <fullName>Revenue Share</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>P7S1_ApprovalState__c</picklist>
-            <values>
-                <fullName>Abgelehnt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Eingereicht</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Genehmigt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Diskussion</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>P7S1_CCOFreigabe__c</picklist>
-            <values>
-                <fullName>Rahmenfreigabe</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>keine Rahmenfreigabe</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>P7S1_internerPartner__c</picklist>
-            <values>
-                <fullName>12Auto Group</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>7NXT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Advopedia</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amorelie</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Comvel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discavo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flaconi</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gymondo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magic Internet Holding</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marktguru</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>P7S1 Digital</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>P7S1 Licensing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>P7S1 PayTV</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SilverTours</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Starwatch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Studio 71</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stylight GmbH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TVRL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Valmano</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Verivox</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>etraveli</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>fem %28sixx%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>maxdome</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>moebel%2Ede</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>mydays</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>preis24%2Ede</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>sonstiger</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>tropo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>wetter%2Ecom</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_FeedbackAdMarketDevInitiative__c</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Middle</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_InterestOfData__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>via Data Next</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>via basic Data-Coop</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_PresDatadealsWithThird__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_SLM__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platinum</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silver</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_WKZPotentialApproved__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>MT_InternalCampaignOpportunityApproval</fullName>
-        <active>true</active>
-        <label>Internal Campaign Opportunity Approval</label>
-        <picklistValues>
-            <picklist>MT_FixRevenue_Type__c</picklist>
-            <values>
-                <fullName>None</fullName>
-                <default>true</default>
-            </values>
-            <values>
-                <fullName>Payment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yield</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_SLMAccordingToContract__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platin</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silber</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_SLMAfterYield__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platin</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silber</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue1_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue2_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue3_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue4_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_VariableRevenue5_SoldUnit__c</picklist>
-            <values>
-                <fullName>Abonnenten</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Compilation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Single</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tickets</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>MT_Variable_Yield_Type__c</picklist>
-            <values>
-                <fullName>Revenue Share</fullName>
-                <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>P7S1_ApprovalState__c</picklist>
-            <values>
-                <fullName>Abgelehnt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Eingereicht</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Genehmigt</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>In Diskussion</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>P7S1_CCOFreigabe__c</picklist>
-            <values>
-                <fullName>Rahmenfreigabe</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>keine Rahmenfreigabe</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>P7S1_internerPartner__c</picklist>
-            <values>
-                <fullName>12Auto Group</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>7NXT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Advopedia</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amorelie</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Comvel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discavo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flaconi</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gymondo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magic Internet Holding</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marktguru</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>P7S1 Digital</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>P7S1 Licensing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>P7S1 PayTV</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SilverTours</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Starwatch</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Studio 71</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stylight GmbH</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>TVRL</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Valmano</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Verivox</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>etraveli</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>fem %28sixx%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>maxdome</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>moebel%2Ede</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>mydays</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>preis24%2Ede</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>sonstiger</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>tropo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>wetter%2Ecom</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_FeedbackAdMarketDevInitiative__c</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Middle</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_InterestOfData__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>via Data Next</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>via basic Data-Coop</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_PresDatadealsWithThird__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_SLM__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platinum</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silver</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ven_WKZPotentialApproved__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>P7S1_ApprovalState__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>P7S1_Accountname__c</customTabListAdditionalFields>
@@ -4022,252 +2060,6 @@ Keine Rahmenfreigabe: die entsprechende schriftliche Freigabe des CCO Boards ist
         <label>Freigabe für aktuellen Genehmiger</label>
     </sharingReasons>
     <validationRules>
-        <fullName>MT_CampaignInContract</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND (
-NOT ( ISBLANK ( MT_ContractStartdate__c ) ),
-NOT ( ISBLANK ( MT_ContractEnddate__c ) ),
-OR(
-P7S1_OppKampagnenstart__c &lt; MT_ContractStartdate__c ,
-P7S1_OppKampagnenende__c &gt; MT_ContractEnddate__c
-)
-)</errorConditionFormula>
-        <errorMessage>Achtung Kampagnenlaufzeit muss innerhalb Vertragslaufzeit sein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_InternalPartnerMatchAsset</fullName>
-        <active>true</active>
-        <description>Check to see if Internal Partner and Internal Partner Asset match otherwise throw error</description>
-        <errorConditionFormula>AND(
-NOT( ISBLANK( MT_Asset_ref__r.Name ) ),
-UPPER( TRIM( IF( ISPICKVAL( P7S1_internerPartner__c, &quot;sonstiger&quot; ), P7S1_sonstigerInternerPartner__c, Text( P7S1_internerPartner__c ) ) ) ) &lt;&gt; UPPER( TRIM( MT_Asset_ref__r.Name ) )
-)</errorConditionFormula>
-        <errorMessage>Interner Partner und interner Partner (Asset) muss gleich sein</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_PreventFixedMonthlyPaymentIfDisabled</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND (
-    NOT ( ISBLANK ( MT_FixRevenue_MonthlyPayment__c ) ) ,
-    NOT ( ISPICKVAL( MT_FixRevenue_Type__c , &apos;Payment&apos; ) )
-  )</errorConditionFormula>
-        <errorDisplayField>MT_FixRevenue_MonthlyPayment__c</errorDisplayField>
-        <errorMessage>Eine Summe darf nur angegeben werden, wenn fixe Zahlung ausgewählt ist.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_RequiredValueForFixedMonthlyPayment</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND (
-    ISBLANK ( MT_FixRevenue_MonthlyPayment__c  ),
-    ISPICKVAL( MT_FixRevenue_Type__c , &apos;Payment&apos; )
-  )</errorConditionFormula>
-        <errorDisplayField>MT_FixRevenue_MonthlyPayment__c</errorDisplayField>
-        <errorMessage>Wenn fixe Zahlung ausgewählt ist muss eine Summe angegeben werden.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_SLMDifferenceFieldRequired</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(TEXT(MT_SLMAfterYield__c) &lt;&gt; TEXT(MT_SLMAccordingToContract__c), ISBLANK( MT_SLMDifference__c ))</errorConditionFormula>
-        <errorDisplayField>MT_SLMDifference__c</errorDisplayField>
-        <errorMessage>Dieses Feld ist ein Pflichtfeld, bitte tragen Sie etwas ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_Shifting_Valid</fullName>
-        <active>true</active>
-        <errorConditionFormula>(ISBLANK(MT_MonthlyShiftingRight_Asset__c) == false) &amp;&amp; (MT_MonthlyShiftingRight_Asset__c &gt; 1 || MT_MonthlyShiftingRight_Asset__c &lt; 0)</errorConditionFormula>
-        <errorMessage>Die Felder &quot;jährliches Schieberecht&quot; und &quot;monatliches Schieberecht&quot; müssen einen Wert zwischen 0 und 100 aufweisen.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue1_Complete</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-(
- IF( ISBLANK ( MT_VariableRevenue1_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue1_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue1_SoldAmount__c ) , 0 , 1)
-)
-!= 0 ,
-(
- IF( ISBLANK ( MT_VariableRevenue1_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue1_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue1_SoldAmount__c ) , 0 , 1)
-)
-!= 3
-)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue1_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte für den Variablen Umsatz immer alle drei Werte für Anzahl, Umsatzart und den Umsatzanteil ausfüllen</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue1_RevPerUnit_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue1_RevenuePerUnit__c)), MT_VariableRevenue1_RevenuePerUnit__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue1_RevenuePerUnit__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie einen Umsatz pro Einheit über 0 € ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue1_SoldAmount_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue1_SoldAmount__c)), MT_VariableRevenue1_SoldAmount__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue1_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie eine Anzahl &gt; 0 ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue2_Complete</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-(
- IF( ISBLANK ( MT_VariableRevenue2_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue2_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue2_SoldAmount__c ) , 0 , 1)
-)
-!= 0 ,
-(
- IF( ISBLANK ( MT_VariableRevenue2_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue2_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue2_SoldAmount__c ) , 0 , 1)
-)
-!= 3
-)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue2_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte für den Variablen Umsatz immer alle drei Werte für Anzahl, Umsatzart und den Umsatzanteil ausfüllen</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue2_RevPerUnit_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue2_RevenuePerUnit__c)), MT_VariableRevenue2_RevenuePerUnit__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue2_RevenuePerUnit__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie einen Umsatz pro Einheit über 0 € ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue2_SoldAmount_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue2_SoldAmount__c)), MT_VariableRevenue2_SoldAmount__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue2_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie eine Anzahl &gt; 0 ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue3_Complete</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-(
- IF( ISBLANK ( MT_VariableRevenue3_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue3_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue3_SoldAmount__c ) , 0 , 1)
-)
-!= 0 ,
-(
- IF( ISBLANK ( MT_VariableRevenue3_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue3_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue3_SoldAmount__c ) , 0 , 1)
-)
-!= 3
-)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue3_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte für den Variablen Umsatz immer alle drei Werte für Anzahl, Umsatzart und den Umsatzanteil ausfüllen</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue3_RevPerUnit_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue3_RevenuePerUnit__c)), MT_VariableRevenue3_RevenuePerUnit__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue3_RevenuePerUnit__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie einen Umsatz pro Einheit über 0 € ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue3_SoldAmount_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue3_SoldAmount__c)), MT_VariableRevenue3_SoldAmount__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue3_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie eine Anzahl &gt; 0 ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue4_Complete</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-(
- IF( ISBLANK ( MT_VariableRevenue4_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue4_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue4_SoldAmount__c ) , 0 , 1)
-)
-!= 0 ,
-(
- IF( ISBLANK ( MT_VariableRevenue4_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue4_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue4_SoldAmount__c ) , 0 , 1)
-)
-!= 3
-)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue4_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte für den Variablen Umsatz immer alle drei Werte für Anzahl, Umsatzart und den Umsatzanteil ausfüllen</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue4_RevPerUnit_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue4_RevenuePerUnit__c)), MT_VariableRevenue4_RevenuePerUnit__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue4_RevenuePerUnit__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie einen Umsatz pro Einheit über 0 € ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue4_SoldAmount_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue4_SoldAmount__c)), MT_VariableRevenue4_SoldAmount__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue4_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie eine Anzahl &gt; 0 ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue5_Complete</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-(
- IF( ISBLANK ( MT_VariableRevenue5_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue5_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue5_SoldAmount__c ) , 0 , 1)
-)
-!= 0 ,
-(
- IF( ISBLANK ( MT_VariableRevenue5_RevenuePerUnit__c ) , 0 , 1)
- +
- IF( ISPICKVAL ( MT_VariableRevenue5_SoldUnit__c , &apos;&apos;) , 0 , 1)
- +
- IF( ISBLANK ( MT_VariableRevenue5_SoldAmount__c ) , 0 , 1)
-)
-!= 3
-)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue5_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte für den Variablen Umsatz immer alle drei Werte für Anzahl, Umsatzart und den Umsatzanteil ausfüllen</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue5_RevPerUnit_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue5_RevenuePerUnit__c)), MT_VariableRevenue5_RevenuePerUnit__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue5_RevenuePerUnit__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie einen Umsatz pro Einheit über 0 € ein.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>MT_VariableRevenue5_SoldAmount_MinValue</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(MT_VariableRevenue5_SoldAmount__c)), MT_VariableRevenue5_SoldAmount__c &lt;= 0)</errorConditionFormula>
-        <errorDisplayField>MT_VariableRevenue5_SoldAmount__c</errorDisplayField>
-        <errorMessage>Bitte geben Sie eine Anzahl &gt; 0 ein.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>P7S1_BeschreibungPflichtRahmenfreigabe</fullName>
         <active>true</active>
         <errorConditionFormula>AND (ISPICKVAL(P7S1_CCOFreigabe__c , &quot;Rahmenfreigabe&quot;) ,    ISBLANK(P7S1_BeschreibungCCORahmenfreigabe__c))</errorConditionFormula>
@@ -4282,92 +2074,14 @@ UPPER( TRIM( IF( ISPICKVAL( P7S1_internerPartner__c, &quot;sonstiger&quot; ), P7
         <errorMessage>Rahmenfreigabe: bitte aus dem zur Verfügung stehenden Excel Sheet die entsprechende qualitative Rahmenfreigabe in die Beschreibung kopieren</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>P7S1_OppFreigKeinNetBarterVolOhneBarter</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(P7S1_NetBarterVolume__c)),  NOT(P7S1_HasMediaBarter__c),NOT(P7S1_HasMediaPartBarter__c))</errorConditionFormula>
-        <errorDisplayField>P7S1_NetBarterVolume__c</errorDisplayField>
-        <errorMessage>Es darf kein Barter-Volumen eingetragen werden, wenn kein Barter aktiviert ist.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabeKeinBarterVolOhneBarter</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(NOT(ISBLANK(P7S1_GrossBarterVolume__c)),  NOT(P7S1_HasMediaBarter__c),NOT(P7S1_HasMediaPartBarter__c))</errorConditionFormula>
-        <errorDisplayField>P7S1_GrossBarterVolume__c</errorDisplayField>
-        <errorMessage>Es darf kein Barter-Volumen eingetragen werden, wenn kein Barter aktiviert ist.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtLaufzeitDigEnd</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-  P7S1_HasMediaDigital__c = TRUE ,
- ISBLANK( MT_RunTimeDigitalEnd__c )
-)</errorConditionFormula>
-        <errorDisplayField>MT_RunTimeDigitalEnd__c</errorDisplayField>
-        <errorMessage>Laufzeit Ende (Digital) ist Pflichtangabe bei Medien-Baustein Digital</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtLaufzeitDigStart</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-  P7S1_HasMediaDigital__c = TRUE ,
- ISBLANK( MT_RunTimeDigitalStart__c )
-)</errorConditionFormula>
-        <errorDisplayField>MT_RunTimeDigitalStart__c</errorDisplayField>
-        <errorMessage>Laufzeit Start (Digital) ist Pflichtangabe bei Medien-Baustein Digital</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtLaufzeitDooHEnd</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- P7S1_HasDooH7Screen__c = TRUE ,
- ISBLANK( MT_RunTimeDooHEnd__c )
-)</errorConditionFormula>
-        <errorDisplayField>MT_RunTimeDooHEnd__c</errorDisplayField>
-        <errorMessage>Laufzeit End (DooH) ist Pflichtangabe bei Medien-Baustein DooH</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtLaufzeitDooHStart</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- P7S1_HasDooH7Screen__c = TRUE ,
- ISBLANK( MT_RunTimeDooHStart__c )
-)</errorConditionFormula>
-        <errorDisplayField>MT_RunTimeDooHStart__c</errorDisplayField>
-        <errorMessage>Laufzeit Start (DooH) ist Pflichtangabe bei Medien-Baustein DooH</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtLaufzeitTVEnd</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- P7S1_HasMediaTV__c = TRUE ,
- ISBLANK( MT_RunTimeTVEnd__c )
-)</errorConditionFormula>
-        <errorDisplayField>MT_RunTimeTVEnd__c</errorDisplayField>
-        <errorMessage>Laufzeit Ende (TV) ist Pflichtangabe bei Medien-Baustein TV</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtLaufzeitTVStart</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
- P7S1_HasMediaTV__c = TRUE ,
- ISBLANK( MT_RunTimeTVStart__c )
-)</errorConditionFormula>
-        <errorDisplayField>MT_RunTimeTVStart__c</errorDisplayField>
-        <errorMessage>Laufzeit Start (TV) ist Pflichtangabe bei Medien-Baustein TV</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>P7S1_OppFreigabePflichtfeldBarterVolume</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-OR(
  P7S1_Opportunity__r.P7S1_HasMediaBarter__c = TRUE,
- P7S1_Opportunity__r.P7S1_HasMediaPartBarter__c = TRUE
-),
  OR(
   P7S1_GrossBarterVolume__c &lt;= 0 ,
   ISBLANK (P7S1_GrossBarterVolume__c ))
-,
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;)</errorConditionFormula>
+)</errorConditionFormula>
         <errorDisplayField>P7S1_GrossBarterVolume__c</errorDisplayField>
         <errorMessage>Barter-Volumen ist Pflichtangabe bei Medien-Baustein Barter</errorMessage>
     </validationRules>
@@ -4388,8 +2102,10 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
         <active>true</active>
         <errorConditionFormula>AND(
  P7S1_HasMediaTV__c = TRUE ,
- OR( ISBLANK( P7S1_BmvTvCustomerIntegration__c ), P7S1_BmvTvCustomerIntegration__c &lt;= 0) ,
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;)</errorConditionFormula>
+ OR(
+  ISBLANK( P7S1_BmvTvCustomerIntegration__c ),
+  P7S1_BmvTvCustomerIntegration__c &lt;= 0)
+ )</errorConditionFormula>
         <errorDisplayField>P7S1_BmvTvCustomerIntegration__c</errorDisplayField>
         <errorMessage>BMV TV Kundenintegration ist Pflichtangabe bei Medien-Baustein TV</errorMessage>
     </validationRules>
@@ -4400,8 +2116,7 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
  P7S1_HasDooH7Screen__c = TRUE ,
  OR(
   ISBLANK( P7S1_MN3DooH__c ),
-  P7S1_MN3DooH__c &lt;= 0),
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;
+  P7S1_MN3DooH__c &lt;= 0)
  )</errorConditionFormula>
         <errorDisplayField>P7S1_MN3DooH__c</errorDisplayField>
         <errorMessage>MN3 DooH ist Pflichtangabe bei Medien-Baustein DooH (7Screen)</errorMessage>
@@ -4413,8 +2128,7 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
  P7S1_HasMediaDigital__c = TRUE ,
  OR(
   ISBLANK( P7S1_Mn3Digital__c ),
-  P7S1_Mn3Digital__c &lt;= 0),
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;
+  P7S1_Mn3Digital__c &lt;= 0)
  )</errorConditionFormula>
         <errorDisplayField>P7S1_Mn3Digital__c</errorDisplayField>
         <errorMessage>MN3 Digital ist Pflichtangabe bei Medien-Baustein Digital</errorMessage>
@@ -4426,26 +2140,10 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
  P7S1_HasMediaTV__c = TRUE ,
  OR(
   ISBLANK( P7S1_Mn3TvCustomerIntegration__c ),
-  P7S1_Mn3TvCustomerIntegration__c &lt;= 0),
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;)</errorConditionFormula>
+  P7S1_Mn3TvCustomerIntegration__c &lt;= 0)
+ )</errorConditionFormula>
         <errorDisplayField>P7S1_Mn3TvCustomerIntegration__c</errorDisplayField>
         <errorMessage>MN3 TV Kundenintegration ist Pflichtangabe bei Medien-Baustein TV</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>P7S1_OppFreigabePflichtfeldNetBarterVol</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-OR(
- P7S1_Opportunity__r.P7S1_HasMediaBarter__c = TRUE,
- P7S1_Opportunity__r.P7S1_HasMediaPartBarter__c = TRUE
-),
- OR(
-  P7S1_NetBarterVolume__c &lt;= 0 ,
-  ISBLANK (P7S1_NetBarterVolume__c ))
-,
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;)</errorConditionFormula>
-        <errorDisplayField>P7S1_NetBarterVolume__c</errorDisplayField>
-        <errorMessage>Barter-Volumen ist Pflichtangabe bei Medien-Baustein Barter</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>P7S1_OppFreigabePflichtfeldTvSpotLenCust</fullName>
@@ -4454,8 +2152,8 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
  P7S1_HasMediaTV__c = TRUE ,
  OR(
   ISBLANK( P7S1_TvSpotLengthCustomer__c ),
-  P7S1_TvSpotLengthCustomer__c &lt;= 0),
-RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&apos;)</errorConditionFormula>
+  P7S1_TvSpotLengthCustomer__c &lt;= 0)
+)</errorConditionFormula>
         <errorDisplayField>P7S1_TvSpotLengthCustomer__c</errorDisplayField>
         <errorMessage>Kundenanteil Spotlänge (in Sekunden) ist Pflichtangabe bei Medien-Baustein TV</errorMessage>
     </validationRules>
@@ -4481,31 +2179,6 @@ RecordType.DeveloperName &lt;&gt; &apos;MT_InternalCampaignOpportunityApproval&a
     </validationRules>
     <visibility>Public</visibility>
     <webLinks>
-        <fullName>MT_ViewMediaCampaign</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <linkType>javascript</linkType>
-        <masterLabel>View Media Campaign</masterLabel>
-        <openType>onClickJavaScript</openType>
-        <protected>false</protected>
-        <url>{!REQUIRESCRIPT(&quot;/support/console/39.0/integration.js&quot;)}
-{!requireScript(&quot;/soap/ajax/39.0/connection.js&quot;)}
-
-let targetTabUrl = &apos;/apex/MT_CreateMediaCampaign?id={!P7S1_OpportunityApproval__c.Id}&apos;;
-let targetTabLabel = &apos;Kampagne anlegen&apos;;
-let targetTabId = &apos;MT_CreateMediaCampaign-{!P7S1_OpportunityApproval__c.Id}&apos;;
-
-if (sforce.console.isInConsole()) {
-  const mcOpenSubtab = function (result) {
-    sforce.console.openSubtab(result.id, targetTabUrl, true, targetTabLabel, null, null, targetTabId);
-  };
-
-  sforce.console.getEnclosingPrimaryTabId(mcOpenSubtab);
-} else {
-  window.open(targetTabUrl, targetTabId);
-}</url>
-    </webLinks>
-    <webLinks>
         <fullName>P7S1_NewOppFreigabe</fullName>
         <availability>online</availability>
         <displayType>massActionButton</displayType>
@@ -4518,7 +2191,6 @@ if (sforce.console.isInConsole()) {
         <url>/a2W/e?ent=01I57000000mSJx
 &amp;Name=wird%20automatisch%20gesetzt
 &amp;CF00N57000006LnEy={! Opportunity.Name }
-&amp;RecordType={!IF(Opportunity.MT_InternalCampaign__c,  $Setup.P7S1_Settings__c.MT_InternalCampaignOppAppRecordTypeID__c , $Setup.P7S1_Settings__c.MT_ExternalCampaignOppAppRecordTypeID__c)}
 &amp;retURL=/{! Opportunity.Id }</url>
     </webLinks>
     <webLinks>
@@ -4531,8 +2203,8 @@ if (sforce.console.isInConsole()) {
         <openType>replace</openType>
         <protected>false</protected>
         <requireRowSelection>true</requireRowSelection>
-        <url>/a2W/e?ent=01I57000000mSJx
-&amp;Name=wird%20automatisch%20gesetzt
+        <url>/a2W/e?ent=01I57000000mSJx 
+&amp;Name=wird%20automatisch%20gesetzt 
 &amp;CF00N57000006LnEy={! Opportunity.Name }
 &amp;retURL=/{! Opportunity.Id }
 &amp;00N57000006I6nI=Starwatch

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Erstellung der Datensätze &quot;Buchungssätze Faktura&quot;, welche für Fakturaübergabe genutzt werden.</description>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Buchungssätze Faktura</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+//Calling Class and Method
+
+/*var faktura = &quot;SomDig_Buchungssatz_Faktura bsF = new SomDig_Buchungssatz_Faktura(); &quot; +
+&quot; Database.executeBatch(bsF); &quot;;
+var result = sforce.apex.executeAnonymous(faktura);
+alert(&quot;Die Generierung der Faktura Buchungssätze wurde gestartet&quot;);*/
+
+
+sforce.apex.execute(&quot;SomDig_Buchungssatz_Faktura&quot;,&quot;buchungssaetzeErstellen&quot;,{});
+alert(&quot;Die Generierung der Faktura Buchungssätze wurde gestartet&quot;);</url>
+</CustomPageWebLink>

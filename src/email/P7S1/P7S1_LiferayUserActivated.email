@@ -1,0 +1,1942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="robots" content="noindex">
+<style type="text/css">
+.ExternalClass * {
+	line-height: 100% !important;
+}
+
+img {
+	border: 0;
+}
+</style>
+<title>SevenOne Media Newsletter</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+<style type="text/css">
+@media screen and (max-width: 640px) {
+	html {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+	body {
+		margin: 0;
+	}
+	a:focus {
+		outline: thin dotted;
+	}
+	a:hover, a:active {
+		outline: 0;
+	}
+	b, strong {
+		font-weight: bold;
+	}
+	p {
+		margin: 1em 0;
+	}
+	small {
+		font-size: 75%;
+	}
+	sub, sup {
+		font-size: 75%;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+	sup {
+		top: -0.5em;
+	}
+	sub {
+		bottom: -0.25em;
+	}
+	ol, ul {
+		margin: 1em 0;
+	}
+	ol, ul {
+		padding: 0 0 0 40px;
+	}
+	img {
+		border: 0;
+		-ms-interpolation-mode: bicubic;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	.clear {
+		clear: both;
+	}
+	.mobileVersion {
+		min-width: 320px;
+	}
+	ul {
+		margin: 0;
+		padding: 0 0 0 15px;
+	}
+	ol {
+		margin: 0;
+		padding: 0 0 0 19px;
+	}
+	.headline {
+		color: #5a5a5a;
+		font-family: Arial, sans-serif;
+		font-size: 22px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.headline a {
+		color: inherit;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.text, .tableOfContents {
+		color: #5a5a5a;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+	}
+	.text a {
+		color: #FF0033;
+		font-size: 14px;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	.link {
+		color: #FF0033;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 14px;
+		text-decoration: none;
+	}
+	.link a {
+		color: inherit;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	ul.tableOfContents, ol.tableOfContents {
+		color: #FF0033;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 14px;
+	}
+	ul.tableOfContents li, ol.tableOfContents li {
+		padding-bottom: 10px;
+	}
+	ul.tableOfContents li span, ol.tableOfContents li span {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.tableOfContents a {
+		color: #FF0033;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 14px;
+		text-decoration: none;
+	}
+	.tableOfContents .entry {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.dummy {
+		display: none !important;
+	}
+	.desktopVersion, .desktopHelper {
+		display: none !important;
+	}
+	.mobileHelper {
+		display: table !important;
+		height: auto !important;
+	}
+	.mobileVersion {
+		display: block !important;
+		float: none !important;
+		width: 100% !important;
+		height: auto !important;
+		max-height: none !important;
+	}
+}
+
+@media screen and (min-width: 641px) {
+	.dummy {
+		display: none !important;
+	}
+	.desktopVersion, .desktopHelper {
+		display: block !important;
+	}
+	.mobileVersion, .mobileHelper {
+		display: none !important;
+	}
+}
+</style>
+<script type="text/javascript">
+	(function(a) {
+		function m() {
+			d.setAttribute("content", g), h = !0
+		}
+		function n() {
+			d.setAttribute("content", f), h = !1
+		}
+		function o(b) {
+					l = b.accelerationIncludingGravity,
+					i = Math.abs(l.x),
+					j = Math.abs(l.y),
+					k = Math.abs(l.z),
+					(!a.orientation || a.orientation === 180)
+							&& (i > 7 || (k > 6 && j < 8 || k<8&&j>6) && i > 5) ? h
+							&& n()
+							: h || m()
+		}
+		var b = navigator.userAgent;
+		if (!(/iPhone|iPad|iPod/.test(navigator.platform)
+				&& /OS [1-5]_[0-9_]* like Mac OS X/i.test(b) && b
+				.indexOf("AppleWebKit") > -1))
+			return;
+		var c = a.document;
+		if (!c.querySelector)
+			return;
+		var d = c.querySelector("meta[name=viewport]"), e = d
+				&& d.getAttribute("content"), f = e + ",maximum-scale=1", g = e
+				+ ",maximum-scale=10", h = !0, i, j, k, l;
+		if (!d)
+			return;
+		a.addEventListener("orientationchange", m, !1), a.addEventListener(
+				"devicemotion", o, !1)
+	})(this);
+</script>
+</head>
+<body style="margin: 0; padding: 0; -webkit-text-size-adjust: none;"
+	link="#FF0033" alink="#FF0033" vlink="#FF0033" text="#5a5a5a"
+	bgcolor="#ededed">
+	<a name="top" id="top">
+		<!-- -->
+	</a>
+	<div class="desktopVersion desktopHelper" style="display: block;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"
+			bgcolor="#ededed">
+			<tr>
+				<td align="center"></td>
+			</tr>
+		</table>
+	</div>
+	<![if !mso]>
+	<div
+		style="display: none; float: left; height: 0; max-height: 0; width: 0; overflow: hidden;"
+		class="mobileVersion">
+		<!-- -->
+	</div>
+	<![endif]>
+	<div class="desktopVersion desktopHelper" style="display: block;"></div>
+	<![if !mso]>
+	<div
+		style="display: none; float: left; height: 0; max-height: 0; width: 0; overflow: hidden;"
+		class="mobileVersion">
+		<div>
+			<div style="background-color: #ffffff;">
+				<!-- -->
+			</div>
+		</div>
+	</div>
+	<![endif]>
+	<div class="desktopVersion desktopHelper" style="display: block;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"
+			bgcolor="#ededed">
+			<tr>
+				<td align="center"><table id="dynamic1" width="640" border="0"
+						cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="dynamic">
+						<tr>
+							<td width="640" align="left"><table
+									style="margin: 0; padding: 0;" width="640" border="0"
+									cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="640" align="left"><table border="0"
+												cellpadding="0" cellspacing="0">
+												<tr>
+													<td valign="top"><table id="images1" width="640"
+															border="0" cellpadding="0" cellspacing="0" class="images">
+															<tr>
+																<td width="640" bgcolor="#FFFFFF" valign="top"
+																	align="left"><a name="pa10146421979"
+																	id="pa10146421979">
+																		<!-- -->
+																</a>
+																<table width="640" border="0" cellpadding="0"
+																		cellspacing="0" align="left">
+																		<tr>
+																			<td width="640" valign="top" align="left"><table
+																					width="640" border="0" cellpadding="0"
+																					cellspacing="0">
+																					<tr>
+																						<td width="640" align="center"><table
+																								border="0" cellpadding="0" cellspacing="0">
+																								<tr>
+																									<td valign="top" align="center"><a
+																										href="https://www.sevenonemedia.de/"
+																										target="_blank"><img
+																											src="https://www.sevenonemedia.de/documents/20182/939370/01_SOM_MYSevenOne_DESKTOP_640x360.jpg"
+																											width="640" height="360" alt="MySevenOne"
+																											title="MySevenOne" border="0"
+																											style="display: block;" /></a></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table></td>
+												</tr>
+											</table></td>
+									</tr>
+								</table></td>
+						</tr>
+					</table></td>
+			</tr>
+		</table>
+	</div>
+	<![if !mso]>
+	<div
+		style="display: none; float: left; height: 0; max-height: 0; width: 0; overflow: hidden;"
+		class="mobileVersion">
+		<div>
+			<div style="background-color: #ffffff;">
+				<!-- -->
+				<div>
+					<div style="background-color: #ffffff;">
+						<div style="float: left; width: 100%;" class="images">
+							<div>
+								<div style="background-color: #FFFFFF;">
+									<a name="ma10146421980" id="ma10146421980">
+										<!-- -->
+									</a>
+									<div>
+										<!-- -->
+										<div style="text-align: center;">
+											<div
+												style="display: inline-block; max-width: 100.0%; text-align: center;">
+												<div>
+													<!-- -->
+													<a
+														href="https://www.sevenonemedia.de"
+														target="_blank"><img
+														src="https://www.sevenonemedia.de/documents/20182/939370/01_SOM_MYSevenOne_MOBILE_458x410.jpg"
+														width="458" height="409" alt="MySevenOne"
+														title="MySevenOne" border="0"
+														style="max-width: 100%; height: auto; width: auto;" /></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<![endif]>
+	<div class="desktopVersion desktopHelper" style="display: block;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"
+			bgcolor="#ededed">
+			<tr>
+				<td align="center"><table id="dynamic2" width="640" border="0"
+						cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="dynamic">
+						<tr>
+							<td width="640" align="left"><table width="640" border="0"
+									cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="20" bgcolor="#FFFFFF"></td>
+										<td width="600"><table style="margin: 0; padding: 0;"
+												width="600" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="600" height="20"></td>
+												</tr>
+												<tr>
+													<td width="600" align="left"><table border="0"
+															cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="images2" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146431683" id="pa10146431683">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"><table
+																								width="45" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="45" height="20"></td>
+																								</tr>
+																								<tr>
+																									<td width="45" align="left"></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="45" height="14">&nbsp;</td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage1"
+																		width="500" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="490" valign="top" align="left"><a
+																				name="pa10146431684" id="pa10146431684">
+																					<!-- -->
+																			</a>
+																			<table width="490" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="490" valign="top" align="left"><table
+																								width="490" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="490" height="10">&nbsp;</td>
+																								</tr>
+																								<tr>
+																									<td width="490" align="left"><font
+																										face="Arial, sans-serif" size="5"
+																										color="#5a5a5a" style="font-size: 22px;"><b><font
+																												color="#ff0033">
+																													Aktualisierung Ihrer Profildaten abgeschlossen.
+																												</font></b></font></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="490" height="10">&nbsp;</td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images3" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146431685" id="pa10146431685">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"><table
+																								width="45" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="45" height="20"></td>
+																								</tr>
+																								<tr>
+																									<td width="45" align="left"></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="45" height="14">&nbsp;</td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table>
+														<table width="600" border="0" cellpadding="0"
+															cellspacing="0">
+															<tr>
+																<td
+																	style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																	width="600" height="10">&nbsp;</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="images4" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146431686" id="pa10146431686">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage2"
+																		width="300" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="290" valign="top" align="left"><a
+																				name="pa10146431687" id="pa10146431687">
+																					<!-- -->
+																			</a>
+																			<table width="290" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td
+																							style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																							width="290" height="3" bgcolor="#ff0033">&nbsp;</td>
+																					</tr>
+																					<tr>
+																						<td width="290" valign="top" align="left"><table
+																								width="290" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="290" align="left"></td>
+																								</tr>
+																								<tr>
+																									<td width="290" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images5" width="250"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="245" valign="top" align="left"><a
+																				name="pa10146431688" id="pa10146431688">
+																					<!-- -->
+																			</a>
+																			<table width="245" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="245" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table>
+														<table width="600" border="0" cellpadding="0"
+															cellspacing="0">
+															<tr>
+																<td
+																	style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																	width="600" height="10">&nbsp;</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="images6" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146431889" id="pa10146431889">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage3"
+																		width="500" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="490" valign="top" align="left"><a
+																				name="pa10146431890" id="pa10146431890">
+																					<!-- -->
+																			</a>
+																			<table width="490" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="490" valign="top" align="left"><font
+																							face="Arial, sans-serif" size="2" color="#5a5a5a"
+																							style="font-size: 14px;">
+																								Sehr {! IF( ISPICKVAL(P7S1_PortalLogin__c.P7S1_Anrede__c,"Herr"), "geehrter", "geehrte" )} {!P7S1_PortalLogin__c.P7S1_Anrede__c} {!P7S1_PortalLogin__c.P7S1_Nachname__c},
+																							<br />
+																							<br />
+																								Ihr Zugang ist nun wieder freigeschaltet.
+																							<br />
+																							<br />
+																								Sie k&ouml;nnen sich ab sofort wieder mit Ihren Zugangsdaten anmelden und das Informationsangebot auf sevenonemedia.de umfassend nutzen.
+																							<br />
+																							<br />
+																								Mit freundlichen Gr&uuml;&szlig;en
+																							<br />
+																								Ihr Team der SevenOne Media
+																						</font></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images7" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146431891" id="pa10146431891">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"><table
+																								width="45" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="45" align="left"></td>
+																								</tr>
+																								<tr>
+																									<td width="45" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table>
+														<table width="600" border="0" cellpadding="0"
+															cellspacing="0">
+															<tr>
+																<td
+																	style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																	width="600" height="10">&nbsp;</td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="images8" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146431892" id="pa10146431892">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"><table
+																								width="45" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="45" align="left"></td>
+																								</tr>
+																								<tr>
+																									<td width="45" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images9" width="500"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="490" valign="top" align="left"><a
+																				name="pa10146431893" id="pa10146431893">
+																					<!-- -->
+																			</a>
+																			<table width="490" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="490" valign="top" align="left">
+																						<table
+																								width="490" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="490" height="10">&nbsp;</td>
+																								</tr>
+																								<tr>
+																									<td width="490" align="left"><table
+																											width="483" border="0" cellpadding="0"
+																											cellspacing="0">
+																											<tr>
+																												<td
+																													style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																													width="483" height="10">&nbsp;</td>
+																											</tr>
+																										</table>
+																										<table border="0" cellpadding="0"
+																											cellspacing="0" bgcolor="#000000"
+																											class="buttonRoot">
+																											<tr>
+																												<td height="32"><table border="0"
+																														cellpadding="0" cellspacing="0"
+																														bgcolor="#ff0033">
+																														<tr>
+																															<td height="3" colspan="3"
+																																style="font-size: 1px; line-height: 3px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/login"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_283x3.gif/4ee092f7-0729-4602-a8aa-ace7f7cc7a54"
+																																			width="283" height="3" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																														</tr>
+																														<tr>
+																															<td width="11"
+																																style="font-size: 1px; line-height: 26px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/login"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_11x26.gif"
+																																			width="11" height="26" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																															<td style="line-height: 22px;"
+																																align="center" valign="middle"
+																																height="26"><table cellspacing="0"
+																																	cellpadding="0" border="0">
+																																	<tr>
+																																		<td width="20"></td>
+																																		<td width="9" valign="top"><font
+																																			face="Arial, sans-serif" size="2"
+																																			color="#5a5a5a"
+																																			style="font-size: 14px;"><a
+																																				style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																				href="https://www.sevenonemedia.de/login"
+																																				target="_blank"><font
+																																					face="Arial, sans-serif"
+																																					color="#ff0033"><img
+																																						src="http://img.srv2.de/bm/binary/6/1/7/2/61726bdd79213b226426c2ab04c0a749_1646.jpg"
+																																						width="9" height="22" alt=""
+																																						title="" border="0" /></font></a></font></td>
+																																		<td width="15"></td>
+																																		<td valign="middle" align="center"><a
+																																			style="color: #ffffff; font-weight: normal; font-style: normal; text-decoration: none;"
+																																			href="https://www.sevenonemedia.de/login"
+																																			target="_blank"><font
+																																				face="Arial, sans-serif" size="3"
+																																				color="#ffffff"
+																																				style="font-size: 17px;">
+																																					Jetzt einloggen
+																																				</font></a></td>
+																																	</tr>
+																																</table></td>
+																															<td width="100"
+																																style="font-size: 1px; line-height: 26px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/login"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_100x26.gif"
+																																			width="100" height="26" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																														</tr>
+																														<tr>
+																															<td height="3" colspan="3"
+																																style="font-size: 1px; line-height: 3px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/login"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_283x3.gif/4ee092f7-0729-4602-a8aa-ace7f7cc7a54"
+																																			width="283" height="3" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																														</tr>
+																													</table></td>
+																											</tr>
+																										</table>
+																										
+																									</td>
+																									
+																								</tr>
+																							</table>
+																							
+																						</td>
+																					</tr>
+																					<tr>
+																						<td width="490" valign="top" align="left">
+																						<table
+																								width="490" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="490" height="10">&nbsp;</td>
+																								</tr>
+																								<tr>
+																									<td width="490" align="left"><table
+																											width="483" border="0" cellpadding="0"
+																											cellspacing="0">
+																											<tr>
+																												<td
+																													style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																													width="483" height="10">&nbsp;</td>
+																											</tr>
+																										</table>
+																										<table border="0" cellpadding="0"
+																											cellspacing="0" bgcolor="#000000"
+																											class="buttonRoot">
+																											<tr>
+																												<td height="32"><table border="0"
+																														cellpadding="0" cellspacing="0"
+																														bgcolor="#ff0033">
+																														<tr>
+																															<td height="3" colspan="3"
+																																style="font-size: 1px; line-height: 3px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/login"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_283x3.gif/4ee092f7-0729-4602-a8aa-ace7f7cc7a54"
+																																			width="283" height="3" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																														</tr>
+																														<tr>
+																															<td width="11"
+																																style="font-size: 1px; line-height: 26px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/group/sevenone/newsletter_abo"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_11x26.gif"
+																																			width="11" height="26" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																															<td style="line-height: 22px;"
+																																align="center" valign="middle"
+																																height="26"><table cellspacing="0"
+																																	cellpadding="0" border="0">
+																																	<tr>
+																																		<td width="20"></td>
+																																		<td width="9" valign="top"><font
+																																			face="Arial, sans-serif" size="2"
+																																			color="#5a5a5a"
+																																			style="font-size: 14px;"><a
+																																				style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																				href="https://www.sevenonemedia.de/group/sevenone/newsletter_abo"
+																																				target="_blank"><font
+																																					face="Arial, sans-serif"
+																																					color="#ff0033"><img
+																																						src="http://img.srv2.de/bm/binary/6/1/7/2/61726bdd79213b226426c2ab04c0a749_1646.jpg"
+																																						width="9" height="22" alt=""
+																																						title="" border="0" /></font></a></font></td>
+																																		<td width="15"></td>
+																																		<td valign="middle" align="center"><a
+																																			style="color: #ffffff; font-weight: normal; font-style: normal; text-decoration: none;"
+																																			href="https://www.sevenonemedia.de/group/sevenone/newsletter_abo"
+																																			target="_blank"><font
+																																				face="Arial, sans-serif" size="3"
+																																				color="#ffffff"
+																																				style="font-size: 17px;">
+																																					Newsletter-Abo
+																																				</font></a></td>
+																																	</tr>
+																																</table></td>
+																															<td width="100"
+																																style="font-size: 1px; line-height: 26px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/group/sevenone/newsletter_abo"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_100x26.gif"
+																																			width="100" height="26" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																														</tr>
+																														<tr>
+																															<td height="3" colspan="3"
+																																style="font-size: 1px; line-height: 3px; mso-line-height-rule: exactly;"><font
+																																face="Arial, sans-serif" size="2"
+																																color="#5a5a5a" style="font-size: 14px;"><a
+																																	style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																																	href="https://www.sevenonemedia.de/group/sevenone/newsletter_abo"
+																																	target="_blank"><font
+																																		face="Arial, sans-serif"
+																																		color="#ff0033"><img
+																																			src="https://www.sevenonemedia.de/documents/20182/939370/Platzhalter_283x3.gif/4ee092f7-0729-4602-a8aa-ace7f7cc7a54"
+																																			width="283" height="3" alt=""
+																																			title="" border="0"
+																																			style="display: block;" /></font></a></font></td>
+																														</tr>
+																													</table></td>
+																											</tr>
+																										</table>
+																										
+																									</td>
+																									
+																								</tr>
+																							</table>
+																							
+																						</td>
+																					</tr>
+																				</table></td>
+																			<td width="5"></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images10" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="5"></td>
+																			<td width="45" valign="top" align="left"><a
+																				name="pa10146432094" id="pa10146432094">
+																					<!-- -->
+																			</a>
+																			<table width="45" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="45" valign="top" align="left"><table
+																								width="45" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="45" align="left"></td>
+																								</tr>
+																								<tr>
+																									<td width="45" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table></td>
+												</tr>
+												<tr>
+													<td width="600" height="30"></td>
+												</tr>
+											</table></td>
+										<td width="20" bgcolor="#FFFFFF"></td>
+									</tr>
+								</table></td>
+						</tr>
+					</table></td>
+			</tr>
+		</table>
+	</div>
+	<![if !mso]>
+	<div
+		style="display: none; float: left; height: 0; max-height: 0; width: 0; overflow: hidden;"
+		class="mobileVersion">
+		<div>
+			<div style="background-color: #ffffff;">
+				<!-- -->
+				<div style="background-color: #FFFFFF; padding: 0px 20px 0px 20px;">
+					<div style="padding: 20px 0px 30px 0px; background-color: #ffffff;">
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div>
+								<div>
+									<a name="ma10146431684" id="ma10146431684">
+										<!-- -->
+									</a>
+									<div style="padding: 10px 0px 10px 0px;">
+										<!-- -->
+										<div class="headline">
+											<font color="#ff0033">Aktualisierung Ihrer Profildaten abgeschlossen.</font>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 10px;">
+								<div>
+									<a name="ma10146431687" id="ma10146431687">
+										<!-- -->
+									</a>
+									<div
+										style="border-top: #ff0033 solid 3px; padding: 0px 0px 20px 0px;">
+										<!-- -->
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 10px;">
+								<div>
+									<a name="ma10146431890" id="ma10146431890">
+										<!-- -->
+									</a>
+									<div>
+										<!-- -->
+										<div class="text">
+												Sehr {! IF( ISPICKVAL(P7S1_PortalLogin__c.P7S1_Anrede__c,"Herr"), "geehrter", "geehrte" )} {!P7S1_PortalLogin__c.P7S1_Anrede__c} {!P7S1_PortalLogin__c.P7S1_Nachname__c},
+											<br />
+											<br />
+												Ihr Zugang ist nun wieder freigeschaltet.
+											<br />
+											<br />
+												Sie k&ouml;nnen sich ab sofort wieder mit Ihren Zugangsdaten anmelden und das Informationsangebot auf sevenonemedia.de umfassend nutzen.
+											<br />
+											<br />
+												Mit freundlichen Gr&uuml;&szlig;en
+											<br />
+												Ihr Team der SevenOne Media
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="images">
+							<div style="padding-top: 10px;">
+								<div>
+									<a name="ma10146431893" id="ma10146431893">
+										<!-- -->
+									</a>
+									<div style="padding: 10px 0px 0px 0px;">
+										<!-- -->
+										<div style="height: 10px;">
+											<!-- -->
+										</div>
+										<div class="button">
+											<a
+												href="https://www.sevenonemedia.de/login"
+												target="_blank"
+												style="display: inline-block; font-family: Arial, sans-serif; color: #FFFFFF; font-size: 17px; font-weight: normal; font-style: normal; text-decoration: none; background-color: #ff0033; padding: 3px 100px 3px 11px; border-width: 0px; border-color: #000000; border-style: solid; border-radius: 0px;"><div
+													style="padding: 2px; white-space: nowrap;">
+													<img
+														src="http://img.srv2.de/bm/binary/6/1/7/2/61726bdd79213b226426c2ab04c0a749_1646.jpg"
+														width="9" height="22" alt="" title="" border="0"
+														style="float: left; margin-left: 20px; margin-right: 15px;" /><span
+														style="line-height: 22px;">Jetzt einloggen</span>
+												</div></a>
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="images">
+							<div style="padding-top: 10px;">
+								<div>
+									<a name="ma10146431893" id="ma10146431893">
+										<!-- -->
+									</a>
+									<div style="padding: 10px 0px 0px 0px;">
+										<!-- -->
+										<div style="height: 10px;">
+											<!-- -->
+										</div>
+										<div class="button">
+											<a
+												href="https://www.sevenonemedia.de/group/sevenone/newsletter_abo"
+												target="_blank"
+												style="display: inline-block; font-family: Arial, sans-serif; color: #FFFFFF; font-size: 17px; font-weight: normal; font-style: normal; text-decoration: none; background-color: #ff0033; padding: 3px 100px 3px 11px; border-width: 0px; border-color: #000000; border-style: solid; border-radius: 0px;"><div
+													style="padding: 2px; white-space: nowrap;">
+													<img
+														src="http://img.srv2.de/bm/binary/6/1/7/2/61726bdd79213b226426c2ab04c0a749_1646.jpg"
+														width="9" height="22" alt="" title="" border="0"
+														style="float: left; margin-left: 20px; margin-right: 15px;" /><span
+														style="line-height: 22px;">Newsletter-Abo</span>
+												</div></a>
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<![endif]>
+	<div class="desktopVersion desktopHelper" style="display: block;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"
+			bgcolor="#ededed">
+			<tr>
+				<td align="center"><table id="dynamic3" width="640" border="0"
+						cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="dynamic">
+						<tr>
+							<td width="640" align="left"><table width="640" border="0"
+									cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="640"><table style="margin: 0; padding: 0;"
+												width="640" border="0" cellpadding="0" cellspacing="0"
+												bgcolor="#e9e9e9">
+												<tr>
+													<td
+														style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+														width="640" height="5">&nbsp;</td>
+												</tr>
+												<tr>
+													<td width="640" align="left"><table border="0"
+															cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="images11" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="50" valign="top" align="left"><a
+																				name="pa10146432097" id="pa10146432097">
+																					<!-- -->
+																			</a>
+																			<table width="50" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="50" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage4"
+																		width="130" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="130" height="20" valign="top" align="left"><a
+																				name="pa10146432098" id="pa10146432098">
+																					<!-- -->
+																			</a>
+																			<table width="130" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="130" height="20" valign="top"
+																							align="left"><table width="130" border="0"
+																								cellpadding="0" cellspacing="0" align="left">
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="25">&nbsp;</td>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="105" height="10">&nbsp;</td>
+																								</tr>
+																								<tr>
+																									<td width="25"></td>
+																									<td width="105" align="left"><font
+																										face="Arial, sans-serif" size="2"
+																										color="#5a5a5a" style="font-size: 14px;"><a
+																											style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																											href="https://www.sevenonemedia.de/group/sevenone/userprofile"
+																											target="_blank"><font
+																												face="Arial, sans-serif" color="#ff0033"><span
+																													style="color: #666666;"><span
+																														style="font-size: 9px;">Profil
+																															bearbeiten</span></span></font></a></font></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images12" width="260"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="260" valign="top" align="left"><a
+																				name="pa10146432099" id="pa10146432099">
+																					<!-- -->
+																			</a>
+																			<table width="260" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="260" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage5"
+																		width="150" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="150" height="20" valign="top" align="left"><a
+																				name="pa10146432100" id="pa10146432100">
+																					<!-- -->
+																			</a>
+																			<table width="150" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="150" height="20" valign="top"
+																							align="left"><table width="150" border="0"
+																								cellpadding="0" cellspacing="0" align="left">
+																								<tr>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="25">&nbsp;</td>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="100" height="10">&nbsp;</td>
+																									<td
+																										style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																										width="25">&nbsp;</td>
+																								</tr>
+																								<tr>
+																									<td width="25"></td>
+																									<td width="100" align="left"></td>
+																									<td width="25"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images13" width="50"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="50" valign="top" align="left"><a
+																				name="pa10146432301" id="pa10146432301">
+																					<!-- -->
+																			</a>
+																			<table width="50" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="50" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table></td>
+												</tr>
+												<tr>
+													<td
+														style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+														width="640" height="5">&nbsp;</td>
+												</tr>
+											</table></td>
+									</tr>
+								</table></td>
+						</tr>
+					</table></td>
+			</tr>
+		</table>
+	</div>
+	<![if !mso]>
+	<div
+		style="display: none; float: left; height: 0; max-height: 0; width: 0; overflow: hidden;"
+		class="mobileVersion">
+		<div>
+			<div style="background-color: #ffffff;">
+				<!-- -->
+				<div>
+					<div style="padding: 5px 0px 5px 0px; background-color: #e9e9e9;">
+						<div style="float: left; width: 100%;" class="images">
+							<div>
+								<div>
+									<a name="ma10146432099" id="ma10146432099">
+										<!-- -->
+									</a>
+									<div>
+										<!-- -->
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 0px;">
+								<div style="background-color: #e9e9e9;">
+									<a name="ma10146432302" id="ma10146432302">
+										<!-- -->
+									</a>
+									<div style="padding: 12px 20px 13px 20px;">
+										<!-- -->
+										<div class="text">
+											&nbsp;
+											<table class="mobileHelper" style="display: none;" border="0"
+												cellpadding="0" cellspacing="0" style="width: 385px;">
+												<tbody>
+													<tr>
+														<td style="width: 150px;"><a
+															href="https://www.sevenonemedia.de/group/sevenone/userprofile"
+															target="_blank"><span style="color: #666666;"><span><span
+																		style="font-size: 14px;">Profil bearbeiten</span></span></span></a></td>
+														<td style="text-align: right; width: 240px;"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<![endif]>
+	<div class="desktopVersion desktopHelper" style="display: block;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"
+			bgcolor="#ededed">
+			<tr>
+				<td align="center"><table id="footer" width="640" border="0"
+						cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="static">
+						<tr>
+							<td width="640" align="left"><table width="640" border="0"
+									cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="640"><table style="margin: 0; padding: 0;"
+												width="640" border="0" cellpadding="0" cellspacing="0"
+												bgcolor="#f2f2f2">
+												<tr>
+													<td width="640" height="20"></td>
+												</tr>
+												<tr>
+													<td width="640" align="left"><table border="0"
+															cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="textAndImage6"
+																		width="65" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="65" valign="top" align="left"><a
+																				name="pa10146432306" id="pa10146432306">
+																					<!-- -->
+																			</a>
+																			<table width="65" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="65" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage7"
+																		width="111" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="111" valign="top" align="left"><a
+																				name="pa10146432307" id="pa10146432307">
+																					<!-- -->
+																			</a>
+																			<table width="111" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="111" valign="top" align="left"><table
+																								width="111" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="10"></td>
+																									<td width="101" align="left"><font
+																										face="Arial, sans-serif" size="2"
+																										color="#5a5a5a" style="font-size: 14px;"><a
+																											style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																											href="https://www.sevenonemedia.de/"><font
+																												face="Arial, sans-serif" color="#ff0033"><span
+																													style="color: #7e7e7e;"><span
+																														style="font-size: 9px;">SevenOne
+																															Media GmbH<br />Medienallee 4<br />85774
+																															Unterf&ouml;hring
+																													</span></span></font></a></font></td>
+																								</tr>
+																								<tr>
+																									<td width="10"></td>
+																									<td width="101" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage8"
+																		width="138" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="138" valign="top" align="left"><a
+																				name="pa10146432509" id="pa10146432509">
+																					<!-- -->
+																			</a>
+																			<table width="138" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="138" valign="top" align="left"><table
+																								width="138" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="10"></td>
+																									<td width="128" align="left"><font
+																										face="Arial, sans-serif" size="2"
+																										color="#5a5a5a" style="font-size: 14px;"><span
+																											style="font-size: 9px;"><a
+																												style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																												href="https://www.sevenonemedia.de/"><font
+																													face="Arial, sans-serif" color="#ff0033"><span
+																														style="color: #7e7e7e;"><span
+																															style="font-size: 9px;">Tel. +49
+																																89 9507 &ndash; 40<br />Fax +49 89 9507
+																																&ndash; 43 99
+																														</span></span></font></a><br />
+																											<a
+																												style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																												href="https://www.sevenonemedia.de/"
+																												target="_blank"><font
+																													face="Arial, sans-serif" color="#ff0033"><span
+																														style="color: #7e7e7e;"><span
+																															style="font-size: 9px;">sevenonemedia.de</span></span></font></a><br />
+																											<a
+																												style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																												href="mailto:info@sevenonemedia.de"><font
+																													face="Arial, sans-serif" color="#ff0033"><span
+																														style="color: #7e7e7e;"><span
+																															style="font-size: 9px;">info@sevenonemedia.de</span></span></font></a></span></font></td>
+																								</tr>
+																								<tr>
+																									<td width="10"></td>
+																									<td width="128" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage9"
+																		width="140" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="140" valign="top" align="left"><a
+																				name="pa10146432511" id="pa10146432511">
+																					<!-- -->
+																			</a>
+																			<table width="140" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="140" valign="top" align="left"><table
+																								width="140" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="10"></td>
+																									<td width="130" align="left"><font
+																										face="Arial, sans-serif" size="2"
+																										color="#5a5a5a" style="font-size: 14px;"><span
+																											style="color: #7e7e7e;"><span
+																												style="font-size: 9px;">Gesch&auml;ftsf&uuml;hrer:<br />Thomas
+																													Wagner (Vorsitzender),<br />
+																													Dr. Jens Mittnacht, <br />Guido
+																													Modenbach,<br />Georg Nitzl, Thomas Port
+																											</span></span></font></td>
+																								</tr>
+																								<tr>
+																									<td width="10"></td>
+																									<td width="130" height="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage10"
+																		width="132" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="132" valign="top" align="left"><a
+																				name="pa10146432713" id="pa10146432713">
+																					<!-- -->
+																			</a>
+																			<table width="132" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="132" valign="top" align="left"><table
+																								width="132" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="10"></td>
+																									<td width="112" align="left"><font
+																										face="Arial, sans-serif" size="2"
+																										color="#5a5a5a" style="font-size: 14px;"><span
+																											style="font-size: 9px;"><span
+																												style="color: #7e7e7e;">Firmensitz:
+																													Unterf&ouml;hring<br />HRB 133924 AG
+																													M&uuml;nchen
+																											</span><br />
+																											<a
+																												style="color: #ff0033; font-weight: normal; text-decoration: none;"
+																												href="https://www.sevenonemedia.de/"><font
+																													face="Arial, sans-serif" color="#ff0033"><span
+																														style="color: #7e7e7e;"><span
+																															style="font-size: 9px;">USt-ID.-Nr.
+																																DE 812906844<br />St. Nr.
+																																9143/104/10137
+																														</span></span></font></a></span></font></td>
+																									<td width="10"></td>
+																								</tr>
+																								<tr>
+																									<td width="10"></td>
+																									<td width="112" height="40"></td>
+																									<td width="10"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage11"
+																		width="51" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="51" valign="top" align="left"><a
+																				name="pa10146432715" id="pa10146432715">
+																					<!-- -->
+																			</a>
+																			<table width="51" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="51" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="images14" width="640"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="640" valign="top" align="left"><a
+																				name="pa10146432716" id="pa10146432716">
+																					<!-- -->
+																			</a>
+																			<table width="640" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td
+																							style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;"
+																							width="640" height="1" bgcolor="#ebebeb">&nbsp;</td>
+																					</tr>
+																					<tr>
+																						<td width="640" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table>
+														<table border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td valign="top"><table id="textAndImage12"
+																		width="55" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="55" valign="top" align="left"><a
+																				name="pa10146432717" id="pa10146432717">
+																					<!-- -->
+																			</a>
+																			<table width="55" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="55" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="images15" width="530"
+																		border="0" cellpadding="0" cellspacing="0"
+																		class="images">
+																		<tr>
+																			<td width="530" valign="top" align="left"><a
+																				name="pa10146432718" id="pa10146432718">
+																					<!-- -->
+																			</a>
+																			<table width="530" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="530" valign="top" align="left"><table
+																								width="530" border="0" cellpadding="0"
+																								cellspacing="0" align="left">
+																								<tr>
+																									<td width="20"></td>
+																									<td width="490" height="20"></td>
+																									<td width="20"></td>
+																								</tr>
+																								<tr>
+																									<td width="20"></td>
+																									<td width="490" align="left"><table
+																											width="490" border="0" cellpadding="0"
+																											cellspacing="0">
+																											<tr>
+																												<td width="490" align="center"><table
+																														border="0" cellpadding="0" cellspacing="0">
+																														<tr>
+																															<td
+																																style="line-height: 0px; mso-line-height-rule: exactly;"
+																																valign="top" align="center"><img
+																																src="https://www.sevenonemedia.de/documents/20182/939370/Senderlogoleiste_unten.jpg"
+																																width="490" height="12"
+																																alt="Ein Unternehmen der ProSiebenSat.1 Media SE"
+																																title="Ein Unternehmen der ProSiebenSat.1 Media SE"
+																																border="0" style="display: block;" /></td>
+																														</tr>
+																													</table></td>
+																											</tr>
+																										</table></td>
+																									<td width="20"></td>
+																								</tr>
+																								<tr>
+																									<td width="20"></td>
+																									<td width="490" height="20"></td>
+																									<td width="20"></td>
+																								</tr>
+																							</table></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+																<td valign="top"><table id="textAndImage13"
+																		width="55" border="0" cellpadding="0" cellspacing="0"
+																		class="textAndImage">
+																		<tr>
+																			<td width="55" valign="top" align="left"><a
+																				name="pa10146432919" id="pa10146432919">
+																					<!-- -->
+																			</a>
+																			<table width="55" border="0" cellpadding="0"
+																					cellspacing="0" align="left">
+																					<tr>
+																						<td width="55" valign="top" align="left"></td>
+																					</tr>
+																				</table></td>
+																		</tr>
+																	</table></td>
+															</tr>
+														</table></td>
+												</tr>
+											</table></td>
+									</tr>
+								</table></td>
+						</tr>
+					</table></td>
+			</tr>
+		</table>
+	</div>
+	<![if !mso]>
+	<div
+		style="display: none; float: left; height: 0; max-height: 0; width: 0; overflow: hidden;"
+		class="mobileVersion">
+		<div>
+			<div style="background-color: #ffffff;">
+				<!-- -->
+				<div>
+					<div style="padding: 20px 0px 0px 0px; background-color: #f2f2f2;">
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div>
+								<div>
+									<a name="ma10146432308" id="ma10146432308">
+										<!-- -->
+									</a>
+									<div style="padding: 0px 0px 20px 20px;">
+										<!-- -->
+										<div class="text">
+											<a
+												href="https://www.sevenonemedia.de/"><span
+												style="color: #7e7e7e;"><span
+													style="font-size: 12px;">SevenOne Media GmbH<br />Medienallee
+														4<br />85774 Unterf&ouml;hring
+												</span></span></a>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 0px;">
+								<div>
+									<a name="ma10146432510" id="ma10146432510">
+										<!-- -->
+									</a>
+									<div style="padding: 0px 0px 20px 20px;">
+										<!-- -->
+										<div class="text">
+											<span style="font-size: 12px;"><a
+												href="https://www.sevenonemedia.de/"><span
+													style="color: #7e7e7e;"><span
+														style="font-size: 12px;">Tel. +49 89 9507 &ndash;
+															40<br />Fax +49 89 9507 &ndash; 43 99
+													</span></span></a><br />
+											<a
+												href="https://www.sevenonemedia.de/"
+												target="_blank"><span style="color: #7e7e7e;"><span
+														style="font-size: 12px;">sevenonemedia.de</span></span></a><br />
+											<a href="mailto:info@sevenonemedia.de"><span
+													style="color: #7e7e7e;"><span
+														style="font-size: 12px;">info@sevenonemedia.de</span></span></a></span>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 0px;">
+								<div>
+									<a name="ma10146432512" id="ma10146432512">
+										<!-- -->
+									</a>
+									<div style="padding: 0px 0px 20px 20px;">
+										<!-- -->
+										<div class="text">
+											<span style="color: #7e7e7e;"><span
+												style="font-size: 9px;">Gesch&auml;ftsf&uuml;hrung:
+													Thomas Wagner (Vorsitzender),<br />Dr.
+													Jens Mittnacht, Guido Modenbach, Georg Nitzl, Thomas Port
+											</span></span>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 0px;">
+								<div>
+									<a name="ma10146432714" id="ma10146432714">
+										<!-- -->
+									</a>
+									<div style="padding: 0px 10px 40px 20px;">
+										<!-- -->
+										<div class="text">
+											<span style="font-size: 9px;"><span
+												style="color: #7e7e7e;">Firmensitz: Unterf&ouml;hring<br />HRB
+													133924 AG M&uuml;nchen &middot;&nbsp;
+											</span><a
+												href="https://www.sevenonemedia.de/"><span
+													style="color: #7e7e7e;"><span
+														style="font-size: 9px;">USt-ID.-Nr. DE 812906844
+															&middot; St.&nbsp;Nr.&nbsp;9143/104/10137</span></span></a></span>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="images">
+							<div style="padding-top: 0px;">
+								<div>
+									<a name="ma10146432716" id="ma10146432716">
+										<!-- -->
+									</a>
+									<div style="border-top: #ebebeb solid 1px;">
+										<!-- -->
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="images">
+							<div style="padding-top: 0px;">
+								<div>
+									<a name="ma10146432920" id="ma10146432920">
+										<!-- -->
+									</a>
+									<div style="padding: 0px 18px 20px 15px;">
+										<!-- -->
+										<div style="text-align: center;">
+											<div
+												style="display: inline-block; max-width: 100.0%; text-align: center;">
+												<div>
+													<!-- -->
+													<img
+														src="http://img.srv2.de/bm/binary/5/5/9/6/55963bcd331b3e7c807bf90edb4933dd_86328.jpg"
+														width="3422" height="239" alt="" title="" border="0"
+														style="max-width: 100%; height: auto; width: auto;" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+						<div style="float: left; width: 100%;" class="textAndImage">
+							<div style="padding-top: 0px;">
+								<div>
+									<a name="ma10146432921" id="ma10146432921">
+										<!-- -->
+									</a>
+									<div style="padding: 0px 0px 40px 20px;">
+										<!-- -->
+										<div class="text">
+											<div style="text-align: left;">
+												<span style="color: #7e7e7e;"><span
+													style="font-size: 12px;">Ein Unternehmen der
+														ProSiebenSat.1 Media SE</span></span>
+											</div>
+										</div>
+										<div class="clear">
+											<!-- -->
+										</div>
+									</div>
+									<div class="clear">
+										<!-- -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+							<!-- -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<![endif]>
+</body>
+</html>

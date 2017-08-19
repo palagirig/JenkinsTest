@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>PA web service writes data to this object.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdServerLogin__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes to this field.</description>
+        <externalId>false</externalId>
+        <label>AdServer Login (deprecated)</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>PA Data (deprecated)</relationshipLabel>
+        <relationshipName>RTBData</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdSlotId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes Ad Slot ID to this field.</description>
+        <externalId>false</externalId>
+        <label>Ad Slot ID (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdSlot__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes ad slot ID to this field, if the ad slot request option is enabled.</description>
+        <externalId>false</externalId>
+        <label>Ad Slot (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdUnitId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the AdUnit Id only for DFP inventory.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the AdUnit Id only for DFP inventory.</inlineHelpText>
+        <label>Ad Unit ID (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes the Advertiser ID to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes the Advertiser ID to this field.</inlineHelpText>
+        <label>Advertiser ID (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>PA web service writes Advertiser to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes Advertiser to this field.</inlineHelpText>
+        <label>Advertiser (deprecated)</label>
+        <referenceTo>ADvendio__RTBAccount__c</referenceTo>
+        <relationshipLabel>PA Data (deprecated) (Advertiser)</relationshipLabel>
+        <relationshipName>RTBData</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertiser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes Advertiser to this field.</description>
+        <externalId>false</externalId>
+        <label>Advertiser (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AuctionsNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Auctions__c&apos; to a number.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__Auctions__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Auctions__c&apos; to a number.</inlineHelpText>
+        <label>Auctions (Number) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Auctions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <label>Auctions (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BillingCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes auctions to this field.</inlineHelpText>
+        <label>Billing Category (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CPCCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;CPC__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__CPC__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;CPC__c&apos; to currency.</inlineHelpText>
+        <label>CPC (Currency) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CPC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes auctions to this field.</inlineHelpText>
+        <label>CPC (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ClicksNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Clicks__c&apos; to number.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__Clicks__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Clicks__c&apos; to number.</inlineHelpText>
+        <label>Clicks (Number) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Clicks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes auctions to this field.</inlineHelpText>
+        <label>Clicks (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CountryCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes auctions to this field.</inlineHelpText>
+        <label>Country Code (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes auctions to this field.</inlineHelpText>
+        <label>Country (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes date to this field.</description>
+        <externalId>false</externalId>
+        <label>Date (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DealId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the Deal ID fro google&apos;s AdExchange.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the Deal ID fro google&apos;s AdExchange.</inlineHelpText>
+        <label>Deal ID (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DemandPartnerId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes demand partner ID to this field.</description>
+        <externalId>false</externalId>
+        <label>Demand Partner Id (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DemandPartnerLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>PA web service writes demand partner to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes demand partner to this field.</inlineHelpText>
+        <label>Demand Partner (deprecated)</label>
+        <referenceTo>ADvendio__RTBAccount__c</referenceTo>
+        <relationshipLabel>PA Data (deprecated) (Demand Partner)</relationshipLabel>
+        <relationshipName>RTBDataDP</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DemandPartner__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes demand partner to this field.</description>
+        <externalId>false</externalId>
+        <label>Demand Partner (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Enddate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date for the report (inclusive) in ISO 8601 format (YYYY-MM-DDThh:mmZ).</description>
+        <externalId>false</externalId>
+        <label>End Date (deprecated)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ExtId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes the external ID to this field.</description>
+        <externalId>false</externalId>
+        <label>External ID (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FallbacksNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Fallbacks__c&apos; to a number.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__Fallbacks__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Fallbacks__c&apos; to a number.</inlineHelpText>
+        <label>Fallbacks (Number) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Fallbacks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes Fallbacks to this field, if applicable.</description>
+        <externalId>false</externalId>
+        <label>Fallbacks (deprecated)</label>
+        <length>225</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ImpressionsNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Impressions__c&apos; to a number.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__Impressions__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Impressions__c&apos; to a number.</inlineHelpText>
+        <label>Impressions (Number) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Impressions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes the impressions to this field.</description>
+        <externalId>false</externalId>
+        <label>Impressions (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NetECPMCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;NetECPM__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__NetECPM__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;NetECPM__c&apos; to currency.</inlineHelpText>
+        <label>Net eCPM (Currency) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NetECPM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes Net eCPM (Share not included) to this field.</description>
+        <externalId>false</externalId>
+        <label>Net eCPM (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NetRevenueCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;NetRevenue__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__NetRevenue__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;NetRevenue__c&apos; to currency.</inlineHelpText>
+        <label>Net Revenue (Currency) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NetRevenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes the Net Revenue (Share not included) to this field.</description>
+        <externalId>false</externalId>
+        <label>Net Revenue (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnerClicks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes partner reported clicks to this field, if available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes partner reported clicks to this field, if available.</inlineHelpText>
+        <label>Partner Clicks (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnerConfirmation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox indicates, if the partner revenue was confirmed or unconfirmed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox indicates, if the partner revenue was confirmed or unconfirmed.</inlineHelpText>
+        <label>Partner Confirmation (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnerConversions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes the partner reported conversions to this field, if available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes the partner reported conversions to this field, if available.</inlineHelpText>
+        <label>Partner Conversions (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnerImpressions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes partner reported impressions to this field, if available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes partner reported impressions to this field, if available.</inlineHelpText>
+        <label>Partner Impressions (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnerRevenueCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;PartnerRevenue__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>IF (AND(RecordType.DeveloperName = &apos;YIELDLAB&apos;, RecordType.NamespacePrefix = &apos;ADvendio&apos;), VALUE(ADvendio__PartnerRevenue__c)/100.0, VALUE(ADvendio__PartnerRevenue__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;PartnerRevenue__c&apos; to currency.</inlineHelpText>
+        <label>Partner Revenue (Currency) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnerRevenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes partner reported revenue to this field, if available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes partner reported revenue to this field, if available.</inlineHelpText>
+        <label>Partner Revenue (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PartnershipId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes Partnership ID to this field.</description>
+        <externalId>false</externalId>
+        <label>Partnership ID (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RTBAdSpec__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to PA AdSpec to match PA Data with PA AdSpecs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to RTB AdSpec to match RTB Data with RTB AdSpecs.</inlineHelpText>
+        <label>PA Ad Spec (deprecated)</label>
+        <referenceTo>ADvendio__RTBAdSpec__c</referenceTo>
+        <relationshipLabel>PA Data (deprecated)</relationshipLabel>
+        <relationshipName>RTBData</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RevenueCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Revenue__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>IF (AND(RecordType.DeveloperName = &apos;YIELDLAB&apos;, RecordType.NamespacePrefix = &apos;ADvendio&apos;), VALUE(ADvendio__Revenue__c)/100.0, VALUE(ADvendio__Revenue__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Revenue__c&apos; to currency.</inlineHelpText>
+        <label>Revenue (Currency) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Revenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes total revenue (Share included) to this field.</description>
+        <externalId>false</externalId>
+        <label>Revenue (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Startdate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Start date for the report (inclusive) in ISO 8601 format (YYYY-MM-DDThh:mmZ).</description>
+        <externalId>false</externalId>
+        <label>Start Date (deprecated)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TransactionType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes auctions to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RTB web service writes auctions to this field.</inlineHelpText>
+        <label>Transaction Type (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>PA web service writes a generated unique identifier to this field.</description>
+        <externalId>true</externalId>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__eCPMCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;eCPM__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__eCPM__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;eCPM__c&apos; to currency.</inlineHelpText>
+        <label>eCPM (Currency) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__eCPM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>PA web service writes total eCPM (Share included) to this field.</description>
+        <externalId>false</externalId>
+        <label>eCPM (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_ChangedHour2__c</fullName>
+        <description>Datum und Stunde der letzten Änderung.
+Hilft bei Überprüfung, wann SST zuletzt aktiv geändert hat.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Datum und Stunde der letzten Änderung</inlineHelpText>
+        <label>Zuletzt geändert (Stunde)</label>
+        <length>13</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_ChangedHour__c</fullName>
+        <description>Datum und Stunde der letzten Änderung.
+Hilft bei Überprüfung, wann SST zuletzt aktiv geändert hat.</description>
+        <externalId>false</externalId>
+        <formula>LEFT(TEXT(LastModifiedDate),13)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Datum und Stunde der letzten Änderung</inlineHelpText>
+        <label>Zuletzt geändert (Stunde)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Netto__c</fullName>
+        <description>Nettoumsatz (12% Fee)</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__RevenueCurrency__c * (1 - 0.12)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Nettoumsatz (12% Fee)</inlineHelpText>
+        <label>Nettoumsatz</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_YearMonth__c</fullName>
+        <description>Jahr und Monat des Startdatums (indiziert)</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Jahr und Monat des Startdatums (indiziert)</inlineHelpText>
+        <label>Jahr/Monat</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PA Data (deprecated)</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>ADvendio__AdServerLogin__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>ADvendio__RtbDataAll</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AdServerLogin__c</columns>
+        <columns>ADvendio__AdSlotId__c</columns>
+        <columns>ADvendio__AdvertiserLookup__c</columns>
+        <columns>ADvendio__Advertiser__c</columns>
+        <columns>ADvendio__AdvertiserId__c</columns>
+        <columns>ADvendio__Auctions__c</columns>
+        <columns>ADvendio__AuctionsNumber__c</columns>
+        <columns>ADvendio__BillingCategory__c</columns>
+        <columns>ADvendio__Clicks__c</columns>
+        <columns>ADvendio__ClicksNumber__c</columns>
+        <columns>ADvendio__Country__c</columns>
+        <columns>ADvendio__CPC__c</columns>
+        <columns>ADvendio__Date__c</columns>
+        <columns>ADvendio__DealId__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__DemandPartner__c</columns>
+        <columns>ADvendio__DemandPartnerId__c</columns>
+        <columns>ADvendio__Advertiser__c</columns>
+        <columns>ADvendio__AdvertiserId__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RTBD-{00000000}</displayFormat>
+        <label>PA No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PA Data (deprecated)</pluralLabel>
+    <recordTypes>
+        <fullName>ADvendio__ADEX</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP DoubleClick Ad Exchange.</description>
+        <label>ADEX</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Adform</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP Adform.</description>
+        <label>Adform</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__AppNexus</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP AppNexus.</description>
+        <label>AppNexus</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Rubicon</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP Rubicon Project.</description>
+        <label>Rubicon</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Sticky</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP StickyAds.</description>
+        <label>Sticky</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__YIELDLAB</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP YIELDLAB.</description>
+        <label>YIELDLAB</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

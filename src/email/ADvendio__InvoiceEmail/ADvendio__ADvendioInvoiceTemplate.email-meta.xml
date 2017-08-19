@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Standard ADvendio Invoice Template for E-Mail Dispatch</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ADvendio Invoice Template</name>
+    <style>none</style>
+    <subject>Invoice {!ADvendio__Invoice__c.ADvendio__InvoiceFullNumber__c} - {!ADvendio__Invoice__c.ADvendio__InvoiceDate__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

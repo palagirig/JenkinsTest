@@ -1,0 +1,16 @@
+Hallo Investment Manager,
+
+folgender Lead {!Lead.Company} wurde durch den SOM-Call  abgelehnt. Ein Kommentar warum der Lead nicht genehmigt wurde (falls angegeben), kann im Lead im Abschnitt "Genehmigungsverlauf" eingesehen werden.
+
+Über folgenden Link erreichen Sie den Lead mit der Bitte diesen zu überarbeiten:
+
+{!Lead.Link}
+
+Über die Funktion “Für Genehmigung einreichen“ kann der Lead erneut zur Genehmigung eingereicht werden.
+
+Um den Genehmigungsvorgang zu Eskalieren bitte den Leadstatus "Eskalation" auswählen und erneut zur Genehmigung einreichen.
+
+Alternativ kann auch der Leadstatus "Rejected 7V" ausgewählt werden wenn kein Interesse mehr besteht den Lead weiter zu verfolgen.
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ADvendio__AdvertiserAgencyRelation</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ADvendio__AdvertiserAgencyRelation</fullName>
+        <fields>ADvendio__NewMediaCampaign__c</fields>
+        <fields>ADvendio__Advertiser__c</fields>
+        <fields>ADvendio__Contact_Advertiser__c</fields>
+        <fields>ADvendio__Agency__c</fields>
+        <fields>ADvendio__Contact_Agency__c</fields>
+        <fields>ADvendio__AgencyDiscount__c</fields>
+        <label>Advertiser Agency Relation</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__ActiveFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active from</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ActiveUntil__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active until</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertised_Brand__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter the name of the brand which is being advertised by the relation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the name of the brand which is being advertised by the relation.</inlineHelpText>
+        <label>Advertised Brand</label>
+        <referenceTo>ADvendio__Advertised_Brand__c</referenceTo>
+        <relationshipLabel>Advertiser Agency relations</relationshipLabel>
+        <relationshipName>Advertiser_Agency_relations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertiser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the corresponding advertiser&apos;s name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the corresponding advertiser&apos;s name.</inlineHelpText>
+        <label>Advertiser</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>Account - Agency</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Advertiser Agency relations</relationshipLabel>
+        <relationshipName>Advertiser_Agency_relations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Discount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter the agency&apos;s name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the agency&apos;s name.</inlineHelpText>
+        <label>Agency</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Account - Agency</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Advertiser Agency relations (Agency)</relationshipLabel>
+        <relationshipName>Advertiser_Agency_relations1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Contact_Advertiser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter one of the advertiser&apos;s contacts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter one of the advertiser&apos;s contacts.</inlineHelpText>
+        <label>Contact Advertiser</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.ADvendio__Advertiser__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Advertiser Agency relations</relationshipLabel>
+        <relationshipName>Advertiser_Agency_relations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Contact_Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter one of the agency&apos;s contacts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter one of the agency&apos;s contacts.</inlineHelpText>
+        <label>Contact Agency</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.ADvendio__Agency__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Advertiser Agency relations (Contact Agency)</relationshipLabel>
+        <relationshipName>Advertiser_Agency_relations1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NewMediaCampaign__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/ADvendio__NewMediaCampaign?id=&quot; &amp; Id, &quot;New Media Campaign&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Media Campaign</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Advertiser Agency relation</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Advertiser__c</columns>
+        <columns>ADvendio__Agency__c</columns>
+        <columns>ADvendio__ActiveFrom__c</columns>
+        <columns>ADvendio__ActiveUntil__c</columns>
+        <columns>ADvendio__AgencyDiscount__c</columns>
+        <columns>ADvendio__Advertised_Brand__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Advertiser Agency relation Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Advertiser Agency relations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ADvendio__NewMediacampaign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Media Campaign</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/ADvendio__NewMediaCampaign?id={!ADvendio__Advertiser_Agency_relation__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__RevenueForecast</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Revenue Forecast</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__NavigateToRevenueForecast</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

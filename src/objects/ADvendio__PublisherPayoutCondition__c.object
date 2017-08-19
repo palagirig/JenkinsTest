@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object stores the conditions relevant for the related publisher payout contract.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Relation to the AdPrice which belongs to this publisher payout condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relation to the AdPrice which belongs to this publisher payout condition.</inlineHelpText>
+        <label>Ad Price</label>
+        <referenceTo>ADvendio__Ad_price__c</referenceTo>
+        <relationshipLabel>Publisher Payout Conditions</relationshipLabel>
+        <relationshipName>PublisherPayoutConditions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdType__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Relation to the AdType which belongs to this publisher payout condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relation to the AdType which belongs to this publisher payout condition.</inlineHelpText>
+        <label>Ad Type</label>
+        <referenceTo>ADvendio__Ad_Type__c</referenceTo>
+        <relationshipLabel>Publisher Payout Conditions</relationshipLabel>
+        <relationshipName>PublisherPayoutConditions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaDifferentiation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose the appropriate Media Differentiation for this publisher payout condition. (Global Picklist)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose the appropriate Media Differentiation for this publisher payout condition.</inlineHelpText>
+        <label>Media Differentiation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaDifferentiation</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaSegment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose the appropriate Media Segment for this publisher payout condition. (Global Picklist)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose the appropriate Media Segment for this publisher payout condition.</inlineHelpText>
+        <label>Media Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaSegment</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please choose the appropriate Media Type for this publisher payout condition. (Global Picklist)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose the appropriate Media Type for this publisher payout condition.</inlineHelpText>
+        <label>Media Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Placement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Relation to the Placement which belongs to this publisher payout condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relation to the Placement which belongs to this publisher payout condition.</inlineHelpText>
+        <label>Placement</label>
+        <referenceTo>ADvendio__Placement__c</referenceTo>
+        <relationshipLabel>Publisher Payout Conditions</relationshipLabel>
+        <relationshipName>PublisherPayoutConditions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublisherPayoutContract__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Links the publisher payout conditions to the proper contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please link the publisher payout conditions to the proper contract.</inlineHelpText>
+        <label>Publisher Payout Contract</label>
+        <referenceTo>ADvendio__PublisherPayoutContract__c</referenceTo>
+        <relationshipLabel>Publisher Payout Conditions</relationshipLabel>
+        <relationshipName>PublisherPayoutConditions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Relation to the Site which belongs to this publisher payout condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relation to the Site which belongs to this publisher payout condition.</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Publisher Payout Conditions</relationshipLabel>
+        <relationshipName>PublisherPayoutConditions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Publisher Payout Condition</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__PublisherPayoutContract__c</columns>
+        <columns>ADvendio__MediaDifferentiation__c</columns>
+        <columns>ADvendio__MediaSegment__c</columns>
+        <columns>ADvendio__MediaType__c</columns>
+        <columns>ADvendio__Site__c</columns>
+        <columns>ADvendio__Placement__c</columns>
+        <columns>ADvendio__AdType__c</columns>
+        <columns>ADvendio__AdPrice__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Publisher Payout Condition Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Publisher Payout Conditions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

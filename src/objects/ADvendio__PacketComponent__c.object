@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Defines packet and its components products.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__ComponentAdPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Ad-Price of current component Ad-Spec being used within the packet. It will be considered only if the Distribution of packet Ad-Spec is &apos;Individual&apos;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Ad-Price of current component Ad-Spec being used within the packet. It will be considered only if the Distribution of packet Ad-Spec is &apos;Individual&apos;.</inlineHelpText>
+        <label>Component AdPrice</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>ADvendio__Ad_price__c.ADvendio__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>ADvendio__Ad_price__c.ADvendio__Ad_Spec__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.ADvendio__ComponentAdSpec__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ADvendio__Ad_price__c</referenceTo>
+        <relationshipLabel>Packet Components</relationshipLabel>
+        <relationshipName>PacketComponents</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ComponentAdSpec__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Ad-Spec as component being used within the packet.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Ad-Spec as component being used within the packet.</inlineHelpText>
+        <label>Component AdSpec</label>
+        <referenceTo>ADvendio__Ad_Specs__c</referenceTo>
+        <relationshipLabel>Packets</relationshipLabel>
+        <relationshipName>Packets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ComponentListPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The list price being used of current component Ad-Spec within the packet.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a list price being used instead of using it of current component Ad-Spec within the packet.</inlineHelpText>
+        <label>Component List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ComponentOptional__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To mark a component as deletable. Works only with distribution individual.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked the package component can be deleted in the Media Configuration.</inlineHelpText>
+        <label>Optional</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PacketAdSpec__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The packet AdSpec, to which a component AdSpec belongs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The packet AdSpec, to which a component AdSpec belongs.</inlineHelpText>
+        <label>Packet AdSpec</label>
+        <referenceTo>ADvendio__Ad_Specs__c</referenceTo>
+        <relationshipLabel>Packet Components</relationshipLabel>
+        <relationshipName>PacketComponents</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PacketItemAdPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Dies ist die Verlinkung zum AdPrice des Paket-Kopfes.</inlineHelpText>
+        <label>Packet Item Ad Price</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>ADvendio__Ad_price__c.ADvendio__Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>ADvendio__Ad_price__c.ADvendio__Ad_Spec__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.ADvendio__PacketAdSpec__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ADvendio__Ad_price__c</referenceTo>
+        <relationshipLabel>Packet Components (Packet Item Ad Price)</relationshipLabel>
+        <relationshipName>Packet_Components</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Prorated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Ratio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>5</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Packet Component</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PC-{0}</displayFormat>
+        <label>Packet Component Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Packet Components</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

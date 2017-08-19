@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AccountPayable__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Payable</label>
+        <referenceTo>ADvendio__AccountPayable__c</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In the AdSpecs &amp; Rates Manager, Inventory &amp; Rates Manager and Booking Calendar, only active marked records will be available.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Brand__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Group Sites for reporting and interfaces to Finance/ Accounting Systems</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Group Sites for reporting and interfaces to Finance/ Accounting Systems</inlineHelpText>
+        <label>Brand</label>
+        <referenceTo>ADvendio__Brand__c</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Circulation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the circulation for the advertising medium here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the circulation for the advertising medium here.</inlineHelpText>
+        <label>Circulation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Contact_Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter the contact who is responsible for this site.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the contact who is responsible for this site.</inlineHelpText>
+        <label>Contact Person</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__External_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a name for this site for external use. This value is shown on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a name for this site for external use. This value is shown on the proposal.</inlineHelpText>
+        <label>External Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Mandator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter an account to whom this site shall be assigned.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter an account to whom this site shall be assigned.</inlineHelpText>
+        <label>Mandator</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sites</relationshipLabel>
+        <relationshipName>Sites</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Selected Media type controls e.g. functions and assignment information in Media Search, AdMaterial Management and in Commitments.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please chose the relevant Media Type for this Advertising Medium.</inlineHelpText>
+        <label>Media Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Media__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is no longer used by ADvendio.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the media for this site.</inlineHelpText>
+        <label>Media (Deprecated)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Out of Home</fullName>
+                    <default>false</default>
+                    <label>Out of Home</label>
+                </value>
+                <value>
+                    <fullName>Print</fullName>
+                    <default>false</default>
+                    <label>Print</label>
+                </value>
+                <value>
+                    <fullName>TV</fullName>
+                    <default>false</default>
+                    <label>TV</label>
+                </value>
+                <value>
+                    <fullName>Radio</fullName>
+                    <default>false</default>
+                    <label>Radio</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PrincipalShare__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to define a share granted to site&apos;s principal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to define a share granted to site&apos;s principal.</inlineHelpText>
+        <label>Principal Share</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Product_search_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter how this site is to be displayed in the product search.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter how this site is to be displayed in the product search.</inlineHelpText>
+        <label>Product search Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Title_KeyID__c</fullName>
+        <deprecated>false</deprecated>
+        <displayFormat>{000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Title_KeyID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Title_Shortform__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a short form for this site. This field is for internal use only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a short form for this site. This field is for internal use only.</inlineHelpText>
+        <label>Title Shortform</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Enter a UniqueKey (recommended: syntax) for this site.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a UniqueKey (recommended: syntax) for this site.</inlineHelpText>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_Info__c</fullName>
+        <description>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden</description>
+        <externalId>false</externalId>
+        <inlineHelpText>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden</inlineHelpText>
+        <label>Migration Info</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_IsBrand__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mig_IsBrand</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_IsSpecialInterest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mig_IsSpecialInterest</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</inlineHelpText>
+        <label>Mig_ProdiaKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DEWerbetraegertyp__c</fullName>
+        <description>Kennzeichnung als Grundlage für einige Berichte - Zuordnung einer Seite zu einer Gruppe von Werbeträgern.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SomDig_Werbetraergergruppierung__r.SomDig_DEWerbetraegertyp__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Kennzeichnung als Grundlage für einige Berichte - Zuordnung einer Seite zu einer Gruppe von Werbeträgern.</inlineHelpText>
+        <label>Werbeträgertyp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_InternerMandant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Kennzeichnung ob es um einen internen oder externen Mandaten mit seinen Werbeträgern handelt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte kennzeichnen falls es um einen internen Mandaten mit seinen Werbeträgern handelt.</inlineHelpText>
+        <label>Interner Mandant</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mediagattung__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Die erste Klassifizierung/Zuordnung des Werbeträgers zu einer Mediagattung (TV/Digital/Text)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Klassifizierung/Zuordnung des Werbeträgers zu einer Mediagattung (TV/Digital/Text)</inlineHelpText>
+        <label>Mediagattung</label>
+        <referenceTo>SomDig_Mediagattung__c</referenceTo>
+        <relationshipLabel>Werbeträger</relationshipLabel>
+        <relationshipName>Werbetraeger</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbetraergergruppierung__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Werbeträgergruppierung sind vormals als Marke bekannt und fassen mehrere Werbeträger zusammen, Grundlage für die Zuordnung von IA Nummern und Werbeträgern.
+Möglichkeit Werbeträger zu gruppieren um Marken abzubilden. 
+Beispiel Werbeträger Sixx besteht aus vielen kleinen Seiten bzw. Werbeträgern, diese werden unter der Marke Sixx zusammengefasst.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Werbeträgergruppierung sind vormals als Marke bekannt und fassen mehrere Werbeträger zusammen,Grundlage für die Zuordnung von IA Nummern &amp; Werbeträgern.
+Möglichkeit Werbeträger zu gruppieren um Marken abzubilden.</inlineHelpText>
+        <label>Werbeträgergruppierung</label>
+        <referenceTo>SomDig_Werbetraegergruppierung__c</referenceTo>
+        <relationshipLabel>Werbeträger</relationshipLabel>
+        <relationshipName>Werbetraeger</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Site</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Werbetraergergruppierung__c</columns>
+        <columns>Mig_ProdiaKey__c</columns>
+        <columns>ADvendio__Title_KeyID__c</columns>
+        <columns>ADvendio__Contact_Person__c</columns>
+        <columns>ADvendio__Mandator__c</columns>
+        <columns>ADvendio__Title_Shortform__c</columns>
+        <columns>ADvendio__External_Name__c</columns>
+        <columns>ADvendio__Product_search_Name__c</columns>
+        <columns>SomDig_Mediagattung__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>SomDig_DEWerbetraegertyp__c</columns>
+        <columns>SomDig_InternerMandant__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Site Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sites</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Mandator__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Contact_Person__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Product_search_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__External_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Werbetraergergruppierung__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Mediagattung__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SomDig_NameDoubleBlank</fullName>
+        <active>true</active>
+        <description>KV 03291. Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche.</description>
+        <errorConditionFormula>CONTAINS(Name, &apos;  &apos;) || CONTAINS(ADvendio__Title_Shortform__c, &apos;  &apos;) || CONTAINS(ADvendio__External_Name__c, &apos;  &apos;) || CONTAINS(ADvendio__Product_search_Name__c, &apos;  &apos;)</errorConditionFormula>
+        <errorMessage>Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

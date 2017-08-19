@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Ven_Account__c</fullName>
+        <description>Das Feld gehört zum Seven Ventures Objekt &quot;Cap Table&quot;, was die Beteiligung von Seven Ventures oder auch anderen Shareholder anzeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier handelt es sich um die Firma (Account) an der die Investoren beteiligt sind.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Shares (Account)</relationshipLabel>
+        <relationshipName>Cap_Table_s</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ven_Aktiv__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ven_Round__r.Ven_Aktiv__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Aktiv</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Round_Number__c</fullName>
+        <description>Das Feld gehört zum Seven Ventures Objekt &quot;Cap Table&quot;, was die Beteiligung von Seven Ventures oder auch anderen Shareholder anzeigt. Die Formel kopiert den Wert aus dem gleichnamigen Feld aus dem Objekt Round.</description>
+        <externalId>false</externalId>
+        <formula>Ven_Round__r.Ven_Round_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hier wird die Beteiligungsrunde erfasst per Formel.</inlineHelpText>
+        <label>Round Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Round__c</fullName>
+        <description>Das Feld gehört zum Seven Ventures Objekt &quot;Cap Table&quot;, was die Beteiligung von Seven Ventures oder auch anderen Shareholder anzeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Die Round zu der dieser Share gehört.</inlineHelpText>
+        <label>Round</label>
+        <referenceTo>Ven_Round__c</referenceTo>
+        <relationshipLabel>Shares</relationshipLabel>
+        <relationshipName>Ven_Shares</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ven_Share__c</fullName>
+        <description>Das Feld gehört zum Seven Ventures Objekt &quot;Cap Table&quot;, was die Beteiligung von Seven Ventures oder auch anderen Shareholder anzeigt.</description>
+        <externalId>false</externalId>
+        <formula>Ven_Shares__c / Ven_Round__r.Ven_all_Shares__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hier werden automatisch die % der Beteiligungen errechnet.</inlineHelpText>
+        <label>Share %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Shareholder__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Das Feld gehört zum Seven Ventures Objekt &quot;Cap Table&quot;, was die Beteiligung von Seven Ventures oder auch anderen Shareholder anzeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte den Shareholder (Account) eingetragen für den verknüpften Account.</inlineHelpText>
+        <label>Shareholder</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Shareholder</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Shares__c</fullName>
+        <description>Das Feld gehört zum Seven Ventures Objekt &quot;Cap Table&quot;, was die Beteiligung von Seven Ventures oder auch anderen Shareholder anzeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte die Beteiligung des Investors an der Firma (Account) eintragen in einer bestimmten Beteiligungsrunde.</inlineHelpText>
+        <label>Shares</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ven_Wert__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ven_Shares__c * Ven_Round__r.Ven_Wert_pro_Anteil__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wert</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Share</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CT-{0000000}</displayFormat>
+        <label>Share-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Shares</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

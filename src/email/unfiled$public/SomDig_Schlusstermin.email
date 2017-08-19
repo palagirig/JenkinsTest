@@ -1,0 +1,7 @@
+Für die Kampagne {!ADvendio__MediaCampaign__c.Name} wird bald eine Entscheidung für Annahme/Ablehnung fallen (Schlusstermin: {!ADvendio__MediaCampaign__c.ADvendio__Close_Date__c}) – bitte aktuellen Status des Angebots beim Planer/Werbetreibenden einholen und den Status entsprechend anpassen.
+
+Hier der link zur Mediakampagne - {!ADvendio__MediaCampaign__c.Link}
+
+Vielen Dank und viel Erfolg
+
+Salesforce-Support Team

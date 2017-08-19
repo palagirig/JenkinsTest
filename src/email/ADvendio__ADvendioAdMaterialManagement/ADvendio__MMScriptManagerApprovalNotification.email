@@ -1,0 +1,7 @@
+Hi {!ADvendio__BriefingScript__c.OwnerFirstName},<br/><br/>
+
+The script {!ADvendio__BriefingScript__c.Name} is approved by manager {!User.Manager}.<br/>
+The Script is now ready for sending for client approval.<br/><br/>
+
+Sincerely,<br/>
+ADvendio Team

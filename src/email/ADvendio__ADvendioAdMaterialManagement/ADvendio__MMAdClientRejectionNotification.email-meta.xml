@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MMAdClientRejectionNotification</name>
+    <style>none</style>
+    <subject>Notification: AD {!ADvendio__BriefingScript__c.Name} is rejected by Client</subject>
+    <textOnly>Hi {!ADvendio__BriefingScript__c.OwnerFirstName},
+
+The AD {ADvendio__BriefingScript__c.Name} is rejected by Client.
+You need to rework on the AD and resend the AD for approval.
+
+Sincerely,
+ADvendio Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

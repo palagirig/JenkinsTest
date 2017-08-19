@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Interne Benachrichtigung an Leadinhaber bei Zuordnung eines neuen Leads.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Leads:  Neue Zuordnungsbenachrichtigung (BEISPIEL)</name>
+    <style>none</style>
+    <subject>Neuer, Ihnen zugeordneter Lead:  {!Lead.Name} von {!Lead.Company}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

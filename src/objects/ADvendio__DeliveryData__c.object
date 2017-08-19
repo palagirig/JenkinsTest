@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Detailed delivery data.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AccumulatedDeliveryTillNow__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Accumulated Delivery Till Now</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>AdServer-ID, to which the delivery data refer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>AdServer-ID, to which the delivery data refer.</inlineHelpText>
+        <label>Ad Server ID</label>
+        <referenceTo>ADvendio__AdServer_ID__c</referenceTo>
+        <relationshipLabel>Delivery Data</relationshipLabel>
+        <relationshipName>DeliveryData</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Campaign-Item, to which the delivery data refer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Campaign-Item, to which the delivery data refer.</inlineHelpText>
+        <label>Campaign Item</label>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipLabel>Delivery Data</relationshipLabel>
+        <relationshipName>DeliveryData</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Day__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Day, to which the delivery data relates. If the &quot;Type&quot; is Monthly, it should be the first day of the month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Day, to which the delivery data relates. If the &quot;Type&quot; is Monthly, it should be the first day of the month.</inlineHelpText>
+        <label>Day</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeliveredAIsManual__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Delivered AIs manually. For financing this value overrules the Delivered AIs delivered by the AdServer if there is no entry for invoice quantity. For more information about the hierarchy for financing please visit our Wiki.</description>
+        <externalId>false</externalId>
+        <label>Delivered AIs (manual)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeliveredClicksManual__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Delivered Clicks manually. For financing this value overrules the Delivered Clicks delivered by the AdServer if there is no entry for invoice quantity. For more information about the hierarchy for financing please visit our Wiki.</description>
+        <externalId>false</externalId>
+        <label>Delivered Clicks (manual)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeliveredClicks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a script. It displays the delivered clicks of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <label>Delivered Clicks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeliveredImpressions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a script. It displays the delivered impressions of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <label>Delivered Impressions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DeliveredQuantityRatio__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the delivery per site compared to the delivery in this month.</description>
+        <externalId>false</externalId>
+        <formula>Case( ADvendio__CampaignItem__r.ADvendio__Billing_category__c, 
+      &quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c,
+      &quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+0)</formula>
+        <label>Delivered Quantity Ratio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceAmountB1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the InvoiceAmount B1 for this site. The calculation will be automatically done by ADvendio.</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c ,
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountB1__c,NULL)</formula>
+        <label>Invoice Amount (B1) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceAmountB2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the InvoiceAmount B2 for this site. The calculation will be automatically done by ADvendio.</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c ,
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountB2__c, NULL)</formula>
+        <label>Invoice Amount (B2) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceAmountB3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the InvoiceAmount B3 for this site. The calculation will be automatically done by ADvendio.</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c ,
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountB3__c,
+NULL)</formula>
+        <label>Invoice Amount (B3) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceAmountN1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the InvoiceAmount N1 for this site. The calculation will be automatically done by ADvendio.</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c ,
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountN1__c,NULL)</formula>
+        <label>Invoice Amount (N1) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceAmountN2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the InvoiceAmount N2 for this site. The calculation will be automatically done by ADvendio.</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+  CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c /  ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c ,
+  &quot;CPC&quot;, ADvendio__DeliveredClicks__c /  ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+  0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountN2__c,NULL)</formula>
+        <label>Invoice Amount (N2) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceAmountN3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the InvoiceAmount N3 for this site. The calculation will be automatically done by ADvendio.</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c , 
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c , 
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountN3__c,NULL)</formula>
+        <label>Invoice Amount (N3) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceQuantityManual__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Invoice Quantity manually. For financing this value overrules the DeliveredClicks/AIs delivered by the AdServer and the Delivered Clicks/AIs manual. For more information about the hierarchy for financing please visit our Wiki.</description>
+        <externalId>false</externalId>
+        <label>Invoice Quantity (manual)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The quantity which is invoiced and might be used for publisher payout.</description>
+        <externalId>false</externalId>
+        <formula>CASE (
+ADvendio__CampaignItem__r.ADvendio__Billing_category__c,
+
+&quot;CPM&quot;,
+IF( NOT(ISBLANK(ADvendio__DeliveredAIsManual__c)), ADvendio__DeliveredAIsManual__c,
+IF( NOT(ISBLANK(ADvendio__DeliveredImpressions__c)), ADvendio__DeliveredImpressions__c, 0)),
+
+&quot;CPC&quot;,
+IF( NOT(ISBLANK(ADvendio__DeliveredClicksManual__c)), ADvendio__DeliveredClicksManual__c,
+IF( NOT(ISBLANK(ADvendio__DeliveredClicks__c)), ADvendio__DeliveredClicks__c, 0)),
+
+&quot;vCPM&quot;,
+IF( NOT(ISBLANK(ADvendio__ViewedAIsManual__c)), ADvendio__ViewedAIsManual__c,
+IF( NOT(ISBLANK(ADvendio__ViewedAIs__c)), ADvendio__ViewedAIs__c, 0)),0
+)</formula>
+        <inlineHelpText>Displays the quantity which will be used for invoicing, based upon the Billing Category of the Campaign Item.</inlineHelpText>
+        <label>Invoice Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Month__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Month, to which the delivery data refer.</description>
+        <externalId>false</externalId>
+        <formula>IF( ISNULL( ADvendio__Day__c ), null, DATE( YEAR( ADvendio__Day__c ),  MONTH( ADvendio__Day__c ) , 1) )</formula>
+        <inlineHelpText>Month, to which the delivery data refer.</inlineHelpText>
+        <label>Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PrincipalProvisionN2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoiceAmountN2__c * ADvendio__AdServerID__r.ADvendio__Site__r.ADvendio__PrincipalShare__c</formula>
+        <label>Principal Provision (N2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PrincipalProvisionN3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoiceAmountN3__c *ADvendio__AdServerID__r.ADvendio__Site__r.ADvendio__PrincipalShare__c</formula>
+        <label>Principal Provision (N3)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ProratedInvoiceQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the Invoice Quantity per site.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__DeliveredQuantityRatio__c * ADvendio__RevenueSchedule__r.ADvendio__InvoiceQuantity__c</formula>
+        <label>Prorated Invoice Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ProvisionSalesHouseN2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c ,
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c ,
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountN2__c,NULL) * (1-ADvendio__AdServerID__r.ADvendio__Site__r.ADvendio__PrincipalShare__c)</formula>
+        <label>Provision Sales House (N2) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ProvisionSalesHouseN3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(ADvendio__Type__c)=&quot;Monthly&quot;, 
+CASE(ADvendio__CampaignItem__r.ADvendio__Billing_category__c,&quot;CPM&quot;, ADvendio__DeliveredImpressions__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_AIs__c , 
+&quot;CPC&quot;, ADvendio__DeliveredClicks__c / ADvendio__RevenueSchedule__r.ADvendio__Delivered_Clicks__c , 
+0)* ADvendio__RevenueSchedule__r.ADvendio__InvoiceAmountN3__c,0) * (1-ADvendio__AdServerID__r.ADvendio__Site__r.ADvendio__PrincipalShare__c)</formula>
+        <label>Provision Sales House (N3) (Monthly)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RevenueScheduleDaily__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to Revenue Schedule Daily.</description>
+        <externalId>false</externalId>
+        <label>Revenue Schedule Daily</label>
+        <referenceTo>ADvendio__RevenueScheduleDaily__c</referenceTo>
+        <relationshipLabel>Delivery Data</relationshipLabel>
+        <relationshipName>DeliveryData</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RevenueSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to Revenue Schedule.</description>
+        <externalId>false</externalId>
+        <label>Revenue Schedule</label>
+        <referenceTo>ADvendio__Revenue_Schedule__c</referenceTo>
+        <relationshipLabel>Delivery Data</relationshipLabel>
+        <relationshipName>DeliveryData</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the delivery data refer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of the delivery data refer.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Daily</fullName>
+                    <default>false</default>
+                    <label>Daily</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The Unique Key is delivered by the AdServer-Gateway to assign and update the delivered data right. It is important for the calculation based on the delivery data. Please do not change it.</description>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UnitName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of AdServer-ID, to which the delivery data refer.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__AdServerID__r.ADvendio__AdServer_Name__c</formula>
+        <inlineHelpText>Name of AdServer-ID, to which the delivery data refer.</inlineHelpText>
+        <label>Unit Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ViewedAIsManual__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Viewed AIs manually. For financing this Value overrules Viewed AIs if there is no entry for invoice quantity. For more information about the hierarchy for financing please visit our Wiki.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Viewed AIs manually to override the delivered viewed ad impressions.</inlineHelpText>
+        <label>Viewed AIs (manual)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ViewedAIs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a script. It displays the delivered viewed ad impressions of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be automatically filled by a script. It displays the delivered viewed ad impressions of the assigned campaign item.</inlineHelpText>
+        <label>Viewed AIs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AiEffective__c</fullName>
+        <description>manuell erfasste AI wenn erfasst, sonst &apos;AI Kundensicht&apos; wenn vorhanden, sonst &apos;AI technisch&apos;</description>
+        <externalId>false</externalId>
+        <formula>IF (!ISBLANK(ADvendio__DeliveredAIsManual__c),
+  ADvendio__DeliveredAIsManual__c,
+  ADvendio__DeliveredImpressions__c   
+)</formula>
+        <inlineHelpText>manuell erfasste AI wenn erfasst, sonst &apos;AI Kundensicht&apos; wenn vorhanden, sonst &apos;AI technisch&apos;</inlineHelpText>
+        <label>AI effektiv</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BulkChunkOld__c</fullName>
+        <description>Hilfsfeld zur Aufteilung (Filterkriterium) des Datenbestands in mehrer Teile</description>
+        <externalId>false</externalId>
+        <formula>IF ( ADvendio__Day__c &lt;= DATE(2016,11,20), 
+1, 
+2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hilfsfeld zur Aufteilung (Filterkriterium) des Datenbestands in mehrer Teile</inlineHelpText>
+        <label>SomDig_BulkChunkOld</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BulkChunk__c</fullName>
+        <description>Hilfsfeld zur Aufteilung (Filterkriterium) des Datenbestands in mehrer Teile</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Hilfsfeld zur Aufteilung (Filterkriterium) des Datenbestands in mehrer Teile</inlineHelpText>
+        <label>SomDig_BulkChunk</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_ClicksEffective__c</fullName>
+        <description>manuell erfasste Klicks wenn erfasst, sonst &apos;gelieferte Klicks&apos;</description>
+        <externalId>false</externalId>
+        <formula>IF (!ISBLANK(ADvendio__DeliveredClicksManual__c), 
+ADvendio__DeliveredClicksManual__c, 
+ADvendio__DeliveredClicks__c 
+)</formula>
+        <inlineHelpText>manuell erfasste Klicks wenn erfasst, sonst &apos;gelieferte Klicks&apos;</inlineHelpText>
+        <label>Klicks effektiv</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DwhMb1__c</fullName>
+        <description>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</description>
+        <externalId>false</externalId>
+        <formula>SomDig_DwhWeightingFactor__c * ADvendio__CampaignItem__r.ADvendio__Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</inlineHelpText>
+        <label>SomDig_DwhMb1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DwhMb3__c</fullName>
+        <description>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</description>
+        <externalId>false</externalId>
+        <formula>SomDig_DwhWeightingFactor__c * ADvendio__CampaignItem__r.ADvendio__Amount_B3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</inlineHelpText>
+        <label>SomDig_DwhMb3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DwhMn1__c</fullName>
+        <description>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</description>
+        <externalId>false</externalId>
+        <formula>SomDig_DwhWeightingFactor__c *  ADvendio__CampaignItem__r.ADvendio__Amount_net__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</inlineHelpText>
+        <label>SomDig_DwhMn1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DwhMn2__c</fullName>
+        <description>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</description>
+        <externalId>false</externalId>
+        <formula>SomDig_DwhWeightingFactor__c *  ADvendio__CampaignItem__r.ADvendio__Amount_net_net__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</inlineHelpText>
+        <label>SomDig_DwhMn2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DwhMn3__c</fullName>
+        <description>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</description>
+        <externalId>false</externalId>
+        <formula>SomDig_DwhWeightingFactor__c
+* ADvendio__CampaignItem__r.SomDig_Mn2Help__c * (1 - ADvendio__CampaignItem__r.ADvendio__Media_Campaign__r.SomDig_Zahlungsbedingung__r.SomDig_Skontowert__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>für DWH: Tagesumsatz berechnet durch Gewichtung versus CampaignItem</inlineHelpText>
+        <label>SomDig_DwhMn3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_DwhWeightingFactor__c</fullName>
+        <description>ACHTUNG: Bewusst IF() statt CASE() verwendet, sonst DivisionByZero-Fehler!</description>
+        <externalId>false</externalId>
+        <formula>IF (TEXT(ADvendio__CampaignItem__r.ADvendio__Billing_category__c) = &quot;CPM&quot;,
+SomDig_AiEffective__c / ADvendio__CampaignItem__r.ADvendio__Quantity__c ,
+IF (TEXT(ADvendio__CampaignItem__r.ADvendio__Billing_category__c) = &quot;CPC&quot;,
+SomDig_ClicksEffective__c / ADvendio__CampaignItem__r.ADvendio__Quantity__c,
+0
+)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hilfsfeld für Dwh: Gewichtungsfaktor (Verhältnis Delivered Quantity versus CampaignItem)
+Abhängig von Abrechnungsart auf Basis Impresions oder Clicks</inlineHelpText>
+        <label>SomDig_DwhWeightingFactor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>18</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_YearMonth__c</fullName>
+        <description>Indiziertes Feld, zur Optimierung zeitbasierter Filter-Abfragen</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Indiziertes Feld, zur Optimierung zeitbasierter Filter-Abfragen</inlineHelpText>
+        <label>YearMonth</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Delivery Data</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Alle</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Type__c</columns>
+        <columns>ADvendio__CampaignItem__c</columns>
+        <columns>ADvendio__DeliveredImpressions__c</columns>
+        <columns>ADvendio__DeliveredClicks__c</columns>
+        <columns>ADvendio__AdServerID__c</columns>
+        <columns>ADvendio__AccumulatedDeliveryTillNow__c</columns>
+        <columns>ADvendio__Month__c</columns>
+        <columns>ADvendio__Day__c</columns>
+        <columns>ADvendio__RevenueSchedule__c</columns>
+        <columns>ADvendio__RevenueScheduleDaily__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>manuelle_angelegt_monatlich</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Type__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>ADvendio__CampaignItem__c</columns>
+        <columns>SomDig_DwhMb3__c</columns>
+        <columns>SomDig_DwhMn3__c</columns>
+        <columns>SomDig_DwhWeightingFactor__c</columns>
+        <columns>ADvendio__DeliveredImpressions__c</columns>
+        <columns>ADvendio__DeliveredClicks__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>ADvendio__AdServerID__c</columns>
+        <columns>ADvendio__Month__c</columns>
+        <columns>ADvendio__Day__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>notContain</operation>
+            <value>Interface</value>
+        </filters>
+        <label>manuelle angelegt</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>monatlich</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Type__c</columns>
+        <columns>ADvendio__CampaignItem__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>ADvendio__DeliveredImpressions__c</columns>
+        <columns>ADvendio__DeliveredClicks__c</columns>
+        <columns>ADvendio__AdServerID__c</columns>
+        <columns>ADvendio__AccumulatedDeliveryTillNow__c</columns>
+        <columns>ADvendio__Month__c</columns>
+        <columns>ADvendio__Day__c</columns>
+        <columns>ADvendio__RevenueSchedule__c</columns>
+        <columns>ADvendio__RevenueScheduleDaily__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Type__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <label>monatlich</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>taeglich</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Type__c</columns>
+        <columns>ADvendio__CampaignItem__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>ADvendio__DeliveredImpressions__c</columns>
+        <columns>ADvendio__DeliveredClicks__c</columns>
+        <columns>ADvendio__AdServerID__c</columns>
+        <columns>ADvendio__AccumulatedDeliveryTillNow__c</columns>
+        <columns>ADvendio__Month__c</columns>
+        <columns>ADvendio__Day__c</columns>
+        <columns>ADvendio__RevenueSchedule__c</columns>
+        <columns>ADvendio__RevenueScheduleDaily__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Type__c</field>
+            <operation>equals</operation>
+            <value>Daily</value>
+        </filters>
+        <label>täglich</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>thun_TI5776</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Type__c</columns>
+        <columns>ADvendio__CampaignItem__c</columns>
+        <columns>ADvendio__DeliveredImpressions__c</columns>
+        <columns>ADvendio__DeliveredAIsManual__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>ADvendio__Month__c</columns>
+        <columns>ADvendio__Day__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>UPDATEDBY_USER</field>
+            <operation>contains</operation>
+            <value>Thun</value>
+        </filters>
+        <label>thun TI5776</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>DD-{0}</displayFormat>
+        <label>Delivery Data Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Delivery Data</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

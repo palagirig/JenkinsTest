@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Stores Data from SSPs to support Reporting and Programmatic Advertising.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Shows the relation from Programmatic Data to the AdPrice.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the relation from Programmatic Data to the AdPrice.</inlineHelpText>
+        <label>Ad Price</label>
+        <referenceTo>ADvendio__Ad_price__c</referenceTo>
+        <relationshipLabel>Programmatic Data</relationshipLabel>
+        <relationshipName>ProgrammaticData</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerLogin__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to the SSP&apos;s AdServer Login record. Automatically filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the SSP&apos;s AdServer Login record. Automatically filled by scheduled import job.</inlineHelpText>
+        <label>AdServer Login</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>Programmatic Data</relationshipLabel>
+        <relationshipName>ProgrammaticData</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdSlotID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Ad Slot ID of this transaction. Automatically filled by scheduled import job (if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ad Slot ID of this transaction. Automatically filled by scheduled import job (if available by SSP).</inlineHelpText>
+        <label>Ad Slot ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdSlot__c</fullName>
+        <deprecated>false</deprecated>
+        <description>AdSlot used for this Transaction. Automatically filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>AdSlot used for this Transaction. Automatically filled by scheduled import job.</inlineHelpText>
+        <label>Ad Slot</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdUnitID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of network part (AdUnit/Site/Page etc.) for this transaction. Automatically filled by scheduled import (job if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of network part (AdUnit/Site/Page etc.) for this transaction. Automatically filled by scheduled import (job if available by SSP).</inlineHelpText>
+        <label>Ad Unit ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of network part (AdUnit/Site/Page etc.) for this transaction. Automatically filled by scheduled import (job if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of network part (AdUnit/Site/Page etc.) for this transaction. Automatically filled by scheduled import (job if available by SSP).</inlineHelpText>
+        <label>Ad Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Advertiser ID for this transaction. Automatically filled by scheduled import (job if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Advertiser ID for this transaction. Automatically filled by scheduled import (job if available by SSP).</inlineHelpText>
+        <label>Advertiser ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertiser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to the Advertiser Account for this transaction. Automatically filled by scheduled import job if available by SSP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the Advertiser Account for this transaction. Automatically filled by scheduled import job if available by SSP.</inlineHelpText>
+        <label>Advertiser</label>
+        <referenceTo>ADvendio__ProgrammaticAccount__c</referenceTo>
+        <relationshipLabel>Programmatic Data</relationshipLabel>
+        <relationshipName>ProgrammaticDataAdvertiser</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of the Agency / Buyer Account for this transaction. Automatically filled by scheduled import (job if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the Agency / Buyer Account for this transaction. Automatically filled by scheduled import (job if available by SSP).</inlineHelpText>
+        <label>Agency ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to the Agency / Buyer Account for this transaction. Automatically filled by scheduled import (job if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the Agency / Buyer Account for this transaction. Automatically filled by scheduled import (job if available by SSP).</inlineHelpText>
+        <label>Agency</label>
+        <referenceTo>ADvendio__ProgrammaticAccount__c</referenceTo>
+        <relationshipLabel>Programmatic Data (Agency)</relationshipLabel>
+        <relationshipName>ProgrammaticDataAgency</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ClicksNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Clicks__c&apos; to number.</description>
+        <externalId>false</externalId>
+        <formula>VALUE(ADvendio__Clicks__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Clicks__c&apos; to number.</inlineHelpText>
+        <label>Clicks (Number)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Clicks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of clicks for this transaction. Automatically filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of clicks for this transaction. Automatically filled by scheduled import job.</inlineHelpText>
+        <label>Clicks</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Country or Country Code for this transaction. Automatically filled by scheduled import job (if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country or Country Code for this transaction. Automatically filled by scheduled import job (if available by SSP).</inlineHelpText>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DSPText__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Demand Side Platform (e.g. BidManager, Live Agent etc.) for this Auction/Deal. Automatically filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Demand Side Platform (e.g. BidManager, Live Agent etc.) for this Auction/Deal. Automatically filled by scheduled import job.</inlineHelpText>
+        <label>DSP</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DSP__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Account relation for Demand Side Platform (e.g. BidManager, Live Agent etc.) for this Auction/Deal. Automatically filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account relation for Demand Side Platform (e.g. BidManager, Live Agent etc.) for this Auction/Deal. Automatically filled by scheduled import job.</inlineHelpText>
+        <label>DSP</label>
+        <referenceTo>ADvendio__ProgrammaticAccount__c</referenceTo>
+        <relationshipLabel>Programmatic Data (DSP)</relationshipLabel>
+        <relationshipName>ProgrammaticDataDSP</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Month of the Transaction. Automatically filled by scheduled import job (if available by SSP). ADvendio aggregates data by month to avoid mass data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Month of the Transaction. Automatically filled by scheduled import job (if available by SSP). ADvendio aggregates data by month to avoid mass data.</inlineHelpText>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DealID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deal ID for the transaction. Automatically filled by scheduled import job (if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deal ID for the transaction. Automatically filled by scheduled import job (if available by SSP).</inlineHelpText>
+        <label>Deal ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DealName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deal name for the transaction. Automatically filled by scheduled import job (if available by SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deal name for the transaction. Automatically filled by scheduled import job (if available by SSP).</inlineHelpText>
+        <label>Deal Name</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End Date of Transaction. Automatically filled by scheduled import job (if available).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>End Date of Transaction. Automatically filled by scheduled import job (if available).</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ExternalID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External ID for this Transaction. Automatically filled by scheduled import job (if available by the specific SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External ID for this Transaction. Automatically filled by scheduled import job (if available by the specific SSP).</inlineHelpText>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ImpressionsNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Impressions&apos; to number.</description>
+        <externalId>false</externalId>
+        <formula>Value(ADvendio__Impressions__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Impressions&apos; to number.</inlineHelpText>
+        <label>Impressions (Number)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Impressions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of impressions for this transaction. Automatically filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of impressions for this transaction. Automatically filled by scheduled import job.</inlineHelpText>
+        <label>Impressions</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox marks the Programmatic Data record after it was used for the creation of Media Campaigns from open auction records.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox marks the Programmatic Data record after it was used for the creation of Media Campaigns from open auction records.</inlineHelpText>
+        <label>Processed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ProgrammaticAdPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Adprice for this Transaction. Has to be linked by a user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the correct AdPrice for this transaction.</inlineHelpText>
+        <label>Programmatic AdPrice</label>
+        <referenceTo>ADvendio__ProgrammaticAdPrice__c</referenceTo>
+        <relationshipLabel>Programmatic Data</relationshipLabel>
+        <relationshipName>ProgrammaticData</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ProgrammaticSalesPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Calculates the Sales Price for this auction, based upon the connected Ad Price. For CPM prices the number of Impressions is used for calculation, for CPC prices the number of clicks is used.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+ NOT(
+     OR(
+      ISPICKVAL(ADvendio__AdPrice__r.ADvendio__Billing_Category__c, &quot;CPM&quot;),ISPICKVAL(ADvendio__AdPrice__r.ADvendio__Billing_Category__c, &quot;CPC&quot;)
+     )
+  ), 0,
+ IF(
+ ISPICKVAL(ADvendio__AdPrice__r.ADvendio__Billing_Category__c, &quot;CPM&quot;), ADvendio__RevenueCurrency__c / ADvendio__ImpressionsNumber__c * 1000, 
+ ADvendio__RevenueCurrency__c / ADvendio__ClicksNumber__c 
+ )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculates the Sales Price for this auction, based upon the connected Ad Price. For CPM prices the number of Impressions is used for calculation, for CPC prices the number of clicks is used.</inlineHelpText>
+        <label>Programmatic Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RevenueCurrency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Converts the text field &apos;Revenue__c&apos; to currency.</description>
+        <externalId>false</externalId>
+        <formula>Value (ADvendio__Revenue__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the text field &apos;Revenue__c&apos; to currency.</inlineHelpText>
+        <label>Revenue (Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Revenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Revenue realized with this transaction. Automatically filled by scheduled import job. Some SSPs deliver only the gross revenue.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Revenue realized with this transaction. Automatically filled by scheduled import job. Some SSPs deliver only the gross revenue.</inlineHelpText>
+        <label>Revenue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__StartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Start Date of Transaction. Automatically filled by scheduled import job (if available).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Start Date of Transaction. Automatically filled by scheduled import job (if available).</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TransactionType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>TransactionType. Automatically filled by scheduled import job (if available by the specific SSP).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TransactionType. Automatically filled by scheduled import job (if available by the specific SSP).</inlineHelpText>
+        <label>Transaction Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>A unique identifier generated by the PA web service.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>A unique identifier generated by the PA web service.</inlineHelpText>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__eCPC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective cost per click. Automatically filled by scheduled import job (if available).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Effective cost per click. Automatically filled by scheduled import job (if available).</inlineHelpText>
+        <label>eCPC</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__eCPM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective cost per thousand impressions. Automatically filled by scheduled import job (if available).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Effective cost per thousand impressions. Automatically filled by scheduled import job (if available).</inlineHelpText>
+        <label>eCPM</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Programmatic Data</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>ADvendio__AdServerLogin__c</columns>
+        <columns>ADvendio__ExternalID__c</columns>
+        <columns>ADvendio__RevenueCurrency__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PAD-{0000}</displayFormat>
+        <label>Programmatic Data-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Programmatic Data</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ADvendio__ADFORM</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP Adform.</description>
+        <label>Adform</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__ADX</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP DoubleClick Ad Exchange.</description>
+        <label>ADX</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__APPNEXUS</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP AppNexus.</description>
+        <label>AppNexus</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__RUBICON</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP Rubicon Project.</description>
+        <label>Rubicon</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__STICKYADS</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP StickyAds.</description>
+        <label>StickyAds</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__YIELDLAB</fullName>
+        <active>true</active>
+        <description>This record type should be used to store data for SSP Yieldlab.</description>
+        <label>Yieldlab</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

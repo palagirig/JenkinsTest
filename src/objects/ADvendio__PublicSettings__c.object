@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ADvendio__LoggingUntil__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Until this date and time ADvendio logs more detailed information to the debug logs (which will slow ADvendio down).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Until this date and time ADvendio logs more detailed information to the debug logs (which will slow ADvendio down).</inlineHelpText>
+        <label>Extra logging until</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCellColorEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>PositionChart: CellColor &quot;Event&quot;</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCellColorNotAvailable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>PositionChart: CellColor &quot;Not available&quot;</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColor0__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The background color to use in a cell if there is no offered and booked inventory. Default is green (#5CFC85).</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell color 0</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColor1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The background color to use in a cell if there is offered but no booked inventory. Default is light green (#CBFFC2).</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell color 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColor2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The background color to use in a cell if there is booked inventory but the number of booked (and offered) inventory doesn&apos;t exceed the maximal availability. Default is yellow  (#FFFB45).</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell color 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColor3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The background color to use in a cell if there is booked inventory and the sum of the offered and booked inventory exceeds the maximal availability. Default is orange (#FCBF41).</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell color 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColor4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The background color to use in a cell if there is booked inventory and the number of booked inventories equals the maximal availability. Default is red (#FF0018).</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell color 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColor5__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The background color to use in a cell if there is booked inventory and the number of booked inventories exceeds the maximal availability. Default is red (#FF0018).</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell color 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColorPercent1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reserved.</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell colorPercent1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColorPercent2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reserved.</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell colorPercent2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartCountCellColorPercent3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reserved.</description>
+        <externalId>false</externalId>
+        <label>Position Chart: Count cell colorPercent3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartDefaultSelTemplateName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The template with this name is pre-selected in the chart type select list of the Position Chart.</inlineHelpText>
+        <label>Position Chart: DefaultSelTemplateName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartDisplayContentColumn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Position Chart: Display Content Column</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PositionChartDisplayContentFilter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Position Chart: Display Content Filter</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>ADvendio Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

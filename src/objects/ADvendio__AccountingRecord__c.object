@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Allow to att. Files on that Object.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AccountNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the relevant account number. Alternatively this can be set by a custom process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the relevant account number.</inlineHelpText>
+        <label>Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AccountingDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoiceItem__r.ADvendio__Invoice__r.ADvendio__InvoiceDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date (Accounting)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertisingTax__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Advertising Tax if applicable will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Advertising Tax if applicable will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Advertising Tax</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>invoiced amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>invoiced amount</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignItemAccountPayableAssignment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>deprecated</description>
+        <externalId>false</externalId>
+        <label>CI AccountPayable Assignment(deprecated)</label>
+        <referenceTo>ADvendio__CampaignItemAccountPayableAssignment__c</referenceTo>
+        <relationshipLabel>Accounting Records</relationshipLabel>
+        <relationshipName>AccountingRecords</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Clickrate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>deprecated</description>
+        <externalId>false</externalId>
+        <label>Clickrate (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>17</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CompanyCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Company Code if applicable will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the Company Code.</inlineHelpText>
+        <label>Company Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CostCenter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the Cost Center. This can be set by a custom process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the Cost Center.</inlineHelpText>
+        <label>Cost Center</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DateOfReceipt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of Receipt will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of Receipt will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Date of Receipt</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DateOfRevenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of Revenue will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of Revenue will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Date of Revenue</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DebitCredit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Debit or credit account type will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Debit or credit account type will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Debit/Credit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Debit</fullName>
+                    <default>false</default>
+                    <label>Debit</label>
+                </value>
+                <value>
+                    <fullName>Credit</fullName>
+                    <default>false</default>
+                    <label>Credit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DebitorNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The debitor number will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The debitor number will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Debitor Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InternalOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the Internal Order. This can be set by a custom process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the Internal Order.</inlineHelpText>
+        <label>Internal Order</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceItem__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Item</label>
+        <referenceTo>ADvendio__InvoiceItem__c</referenceTo>
+        <relationshipLabel>Accounting Records</relationshipLabel>
+        <relationshipName>AccountingRecords</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to the related Invoice record will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the related Invoice record will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Invoice</label>
+        <referenceTo>ADvendio__Invoice__c</referenceTo>
+        <relationshipLabel>Accounting Records</relationshipLabel>
+        <relationshipName>AccountingRecords</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LegalEntity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The corresponding Legal Entity will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The corresponding Legal Entity will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Legal Entity</label>
+        <referenceTo>ADvendio__LegalEntity__c</referenceTo>
+        <relationshipLabel>Accounting Records</relationshipLabel>
+        <relationshipName>AccountingRecords</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>deprecated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify the record as already included in a Customer Accounting campaign.</inlineHelpText>
+        <label>Processed (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__QuantityCPM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>deprecated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CPM based quantity</inlineHelpText>
+        <label>Quantity (CPM) (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Ratio__c</fullName>
+        <deprecated>false</deprecated>
+        <description>deprecated</description>
+        <externalId>false</externalId>
+        <label>Ratio (deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>17</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ReceiptNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Receipt Number will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Receipt Number will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Receipt Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference i.e. to Media Campaign number or name will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference i.e. to Media Campaign number or name will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Reference</label>
+        <length>10000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the relevant Status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the relevant Status.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Created</fullName>
+                    <default>false</default>
+                    <label>Created</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Booked</fullName>
+                    <default>false</default>
+                    <label>Booked</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TermsOfPaymentKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Terms of Payment Key or abbreviation if applicable.  Alternatively this can be set by a custom process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Terms of Payment Key or abbreviation if applicable.</inlineHelpText>
+        <label>Terms of Payment Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TermsOfPayment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Terms of payment will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Terms of payment will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Terms of Payment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TypeOfReceipt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of Receipt will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Receipt will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>Type of Receipt</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Invoice</fullName>
+                    <default>false</default>
+                    <label>Invoice</label>
+                </value>
+                <value>
+                    <fullName>Cancellation</fullName>
+                    <default>false</default>
+                    <label>Cancellation</label>
+                </value>
+                <value>
+                    <fullName>CreditNote</fullName>
+                    <default>false</default>
+                    <label>Credit Note</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the VAT Code if applicable.  Alternatively this can be set by a custom process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the VAT Code if applicable.</inlineHelpText>
+        <label>VAT Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VAT__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Value Added Tax will be automatically filled by a scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Value Added Tax will be automatically filled by a scheduled import job.</inlineHelpText>
+        <label>VAT</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Accounting Record</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AR-{0000000}</displayFormat>
+        <label>AccRec #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Accounting Records</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

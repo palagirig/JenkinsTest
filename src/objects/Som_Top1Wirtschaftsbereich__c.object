@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration
+Hilfetext	Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration
+Hilfetext	Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Som_BranchenChampionMi__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Branchen-Experte aus dem Bereich Sales Steering &amp; Market Insights (MI) gem. CRMSALES 386</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Branchen-Experte aus dem Bereich Sales Steering &amp; Market Insights (MI)</inlineHelpText>
+        <label>Branchen Champion MI</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Top1_Wirtschaftsbereich</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Som_BranchenChampion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Branchen-Experte aus dem Bereich Sales gem. CRMSALES 386</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Branchen-Experte aus dem Bereich Sales</inlineHelpText>
+        <label>Branchen Champion Sales</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BranchenChampion</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Som_TrendsExAnte__c</fullName>
+        <description>Aktuelle sowie künftige Trends im Wirtschaftsbereich gem. CRMSALES 386</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Aktuelle sowie künftige Trends im Wirtschaftsbereich</inlineHelpText>
+        <label>Trends - ex ante</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Som_Werbemarkt__c</fullName>
+        <description>Entwicklung der Bruttowerbespendings (lt. Nielsen Media Research) im Wirtschaftsbereich [Verantwortlich: BC Market Insights] gem. CRMSALES-386</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Entwicklung der Bruttowerbespendings (lt. Nielsen Media Research) im Wirtschaftsbereich [Verantwortlich: BC Market Insights]</inlineHelpText>
+        <label>Werbemarkt</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Som_Zusatzinformationen__c</fullName>
+        <description>Ergänzungen und besondere Informationen gem. CRMSALES 386</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ergänzungen und besondere Informationen</inlineHelpText>
+        <label>Zusatzinformation Branche</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Top1 Wirtschaftsbereich</label>
+    <listViews>
+        <fullName>Alle</fullName>
+        <columns>NAME</columns>
+        <columns>Som_BranchenChampionMi__c</columns>
+        <columns>Som_BranchenChampion__c</columns>
+        <columns>Som_TrendsExAnte__c</columns>
+        <columns>Som_Werbemarkt__c</columns>
+        <columns>Som_Zusatzinformationen__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Top1 Wirtschaftsbereich</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Top1 Wirtschaftsbereich</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

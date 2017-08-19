@@ -1,0 +1,4 @@
+Folgender Lead zur Firma {!Lead.Company} wurde erneut zur Genehmigung eingereicht.
+Der Lead wurde schon mal abgelehnt.
+
+Hier der Link zum Lead: https://emea.salesforce.com/{!Lead.Id}

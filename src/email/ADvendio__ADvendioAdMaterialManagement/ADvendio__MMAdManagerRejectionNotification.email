@@ -1,0 +1,7 @@
+Hi {!ADvendio__BriefingScript__c.OwnerFirstName},<br/><br/>
+
+the script {!ADvendio__BriefingScript__c.Name} is rejected by manager {!User.Manager}.<br/>
+You need to rework on the AD and resend the AD for approval.<br/><br/>
+
+Sincerely,<br/>
+ADvendio Team

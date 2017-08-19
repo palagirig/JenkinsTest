@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AGOF_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The AGOF ID is a unique placement id assigned by the AGOF.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The AGOF ID is a unique placement id assigned by the AGOF.</inlineHelpText>
+        <label>AGOF ID</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AccountPayable__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Payable</label>
+        <referenceTo>ADvendio__AccountPayable__c</referenceTo>
+        <relationshipLabel>Placements</relationshipLabel>
+        <relationshipName>Placements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In the AdSpecs &amp; Rates Manager, Inventory &amp; Rates Manager, Content Wizard, Booking Calendar and AGOF Connect, only active marked records will be available.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServer_Keywords_Key_Values__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>AdServer Keywords/Key-Values</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__External_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the placement&apos;s name for external use. This value is shown on the quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the placement&apos;s name for external use. This value is shown on the quote.</inlineHelpText>
+        <label>External Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__KeyValues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Here you can enter keys and values which are not shown on the documents and appear not in the Media Configuration.
+This Informationen will be directly submitted to the AdServer at checking availability booking a MediaCampaign and there Campaign Items to the AdServer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Here you can enter keys and values which are not shown on the documents and appear not in the Media Configuration.
+This Informationen will be directly submitted to the AdServer at checking availability, booking a Campaign Items to the AdServer.</inlineHelpText>
+        <label>KeyValues</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaSegment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Selected Media Segment controls e.g. functions and assignment information in Media Search, AdMaterial Management and in Commitments.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please chose the relevant Media Segment for this Placement.</inlineHelpText>
+        <label>Media Segment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__MediaSegment</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Placement_KeyID__c</fullName>
+        <deprecated>false</deprecated>
+        <displayFormat>{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Placement_KeyID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Placement_Shortform__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a short form for the placement. This field is for internal use only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a short form for the placement. This field is for internal use only.</inlineHelpText>
+        <label>Placement_Shortform</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Product_search_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter how this placement is to be displayed in the product search.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter how this placement is to be displayed in the product search.</inlineHelpText>
+        <label>Product search Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RateCategory__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Rate Category for this placement. Rate categories can be used to group placements. You can define a rate category &quot;Run of Network&quot; where you group all run-of-network placements. With the help of this criteria rates can be easily mass updated.</inlineHelpText>
+        <label>Rate Category</label>
+        <referenceTo>ADvendio__RateCategory__c</referenceTo>
+        <relationshipLabel>Placements</relationshipLabel>
+        <relationshipName>Placements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Site__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the site assigned to this placement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the site assigned to this placement.</inlineHelpText>
+        <label>Site</label>
+        <referenceTo>ADvendio__Site__c</referenceTo>
+        <relationshipLabel>Placements</relationshipLabel>
+        <relationshipName>Placements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Enter a UniqueKey (recommended: syntax) for this placement.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a UniqueKey (recommended: syntax) for this placement.</inlineHelpText>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ADvendio_AdServer_ID_LookupKorrekt__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(SomDig_AdServerID__r.Mig_ADvendio_AdServer_ID__c==SomDig_AdunitPlacment__c , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mig_ADvendio__AdServer_ID_LookupKorrekt</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_Info__c</fullName>
+        <description>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update</description>
+        <externalId>false</externalId>
+        <inlineHelpText>INSERT: von ProDia importiert
+UPDATE: von ProDia Änderungen übernommen
+DELETE: nicht in ProDia vorhanden, kann evtl. gelöscht werden
+NOT_CHANGED: in ProDia und SF identisch, kein Update</inlineHelpText>
+        <label>Migration_Info</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_IstMoi__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mig_IstMoi</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</inlineHelpText>
+        <label>Mig_ProdiaKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AdServerID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AdServer ID</label>
+        <referenceTo>ADvendio__AdServer_ID__c</referenceTo>
+        <relationshipLabel>Placements</relationshipLabel>
+        <relationshipName>Placements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AdunitPlacment__c</fullName>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>Adunit-Placment</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AntizipationsVS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Antizipationsverteilungsschlüssel</label>
+        <referenceTo>SomDig_AntizipationsVS__c</referenceTo>
+        <relationshipLabel>Belegungseinheiten</relationshipLabel>
+        <relationshipName>SomDig_Belegungseinheiten</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Auftragstypen__c</fullName>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>Auftragstypen</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AdAudience</fullName>
+                    <default>false</default>
+                    <label>AdAudience</label>
+                </value>
+                <value>
+                    <fullName>Barter</fullName>
+                    <default>false</default>
+                    <label>Barter</label>
+                </value>
+                <value>
+                    <fullName>Eigenvermarktung</fullName>
+                    <default>false</default>
+                    <label>Eigenvermarktung</label>
+                </value>
+                <value>
+                    <fullName>Eigenwerbung</fullName>
+                    <default>false</default>
+                    <label>Eigenwerbung</label>
+                </value>
+                <value>
+                    <fullName>Forschung</fullName>
+                    <default>false</default>
+                    <label>Forschung</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Standby</fullName>
+                    <default>false</default>
+                    <label>Standby</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SomDig_BT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>BT fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_CpxFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>CPX fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_FC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>FC fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_GtFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>GT fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mediagattungssegment__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Mediagattungs-Segment</label>
+        <referenceTo>SomDig_MediagattungsSegment__c</referenceTo>
+        <relationshipLabel>Belegungseinheiten</relationshipLabel>
+        <relationshipName>Belegungseinheiten</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Multiscreen__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Kennzeichnet eine Multiscreen Belegungseinheit.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kennzeichnet eine Multiscreen Belegungseinheit.</inlineHelpText>
+        <label>Multiscreen</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_OtpFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>OTP fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Rotationstyp__c</fullName>
+        <description>Ordnet eine Belegungseinheit (früher Marktsegment) einem Typ zu. Dies ist u.a. wichtig für die korrekte Ermittlung der Inventarklassen bei Werbemittel/Produkten welche diese Belegungseinehiet nutzen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ordnet eine Belegungseinheit (früher Marktsegment) einem Typ zu. Dies ist u.a. wichtig für die korrekte Ermittlung der Inventarklassen bei Werbemittel/Produkten welche diese Belegungseinehiet nutzen.</inlineHelpText>
+        <label>Rotationstyp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Brand-Rotation</fullName>
+                    <default>false</default>
+                    <label>Brand-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Network-Rotation</fullName>
+                    <default>false</default>
+                    <label>Network-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Site-Rotation</fullName>
+                    <default>false</default>
+                    <label>Site-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Themen-Rotation</fullName>
+                    <default>false</default>
+                    <label>Themen-Rotation</label>
+                </value>
+                <value>
+                    <fullName>TV-Brand-Rotation</fullName>
+                    <default>false</default>
+                    <label>TV-Brand-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Umfeld</fullName>
+                    <default>false</default>
+                    <label>Umfeld</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomDig_TT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>TT fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_TkpFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>TKP fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Typ__c</fullName>
+        <description>Welchem Netzwerk gehört diese Belegungseinheit an?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Welchem Netzwerk gehört diese Belegungseinheit an? Achtung dies hat Einfluss auf Auslieferungstyp und Priomodell.</inlineHelpText>
+        <label>Netzwerk-Typ</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>71m intern</fullName>
+                    <default>true</default>
+                    <label>71m intern</label>
+                </value>
+                <value>
+                    <fullName>YouTube</fullName>
+                    <default>false</default>
+                    <label>YouTube</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SomDig_UGC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Ist diese Belegungseinheit UGC relevant?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist diese Belegungseinheit UGC relevant?</inlineHelpText>
+        <label>ist UGC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_iAdFaehig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>iAd fähig</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_oldRotationstyp__c</fullName>
+        <description>temporär zur Erstellung der Produktmatrix</description>
+        <externalId>false</externalId>
+        <inlineHelpText>temporär zur Erstellung der Produktmatrix</inlineHelpText>
+        <label>old Rotationstyp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Network-Rotation</fullName>
+                    <default>false</default>
+                    <label>Network-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Premium-Umfeld</fullName>
+                    <default>false</default>
+                    <label>Premium-Umfeld</label>
+                </value>
+                <value>
+                    <fullName>Rotation TV-Brand</fullName>
+                    <default>false</default>
+                    <label>Rotation TV-Brand</label>
+                </value>
+                <value>
+                    <fullName>Site-Rotation</fullName>
+                    <default>false</default>
+                    <label>Site-Rotation</label>
+                </value>
+                <value>
+                    <fullName>Standard-Umfeld</fullName>
+                    <default>false</default>
+                    <label>Standard-Umfeld</label>
+                </value>
+                <value>
+                    <fullName>Themenrotationen</fullName>
+                    <default>false</default>
+                    <label>Themenrotationen</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Targeting_Provider__c</fullName>
+        <description>Zusammenfassung von Keys zu einer Gruppe, welche über einen technischen Dienstleister/Site/Seitenbetreiber zur Verfügung gestellt werden können. Vereinfacht die Zuordnung von mehreren Keys zu Werbemittel/Produkten.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zusammenfassung von Keys zu einer Gruppe, welche über einen technischen Dienstleister/Site/Seitenbetreiber zur Verfügung gestellt werden können. Vereinfacht die Zuordnung von mehreren Keys zu Werbemittel/Produkten.</inlineHelpText>
+        <label>Targeting Provider</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ATV_PBT</fullName>
+                    <default>false</default>
+                    <label>ATV_PBT</label>
+                </value>
+                <value>
+                    <fullName>Autosites</fullName>
+                    <default>false</default>
+                    <label>Autosites</label>
+                </value>
+                <value>
+                    <fullName>Diverse Kriterien</fullName>
+                    <default>false</default>
+                    <label>Diverse Kriterien</label>
+                </value>
+                <value>
+                    <fullName>Gesundheit.de</fullName>
+                    <default>false</default>
+                    <label>Gesundheit.de</label>
+                </value>
+                <value>
+                    <fullName>nugg.ad</fullName>
+                    <default>false</default>
+                    <label>nugg.ad</label>
+                </value>
+                <value>
+                    <fullName>nugg.ad InApp</fullName>
+                    <default>false</default>
+                    <label>nugg.ad InApp</label>
+                </value>
+                <value>
+                    <fullName>Rotationsausschluss</fullName>
+                    <default>false</default>
+                    <label>Rotationsausschluss</label>
+                </value>
+                <value>
+                    <fullName>SmartGeo</fullName>
+                    <default>false</default>
+                    <label>SmartGeo</label>
+                </value>
+                <value>
+                    <fullName>Vereinssites</fullName>
+                    <default>false</default>
+                    <label>Vereinssites</label>
+                </value>
+                <value>
+                    <fullName>wetter.com</fullName>
+                    <default>false</default>
+                    <label>wetter.com</label>
+                </value>
+                <value>
+                    <fullName>wetter.com CTV</fullName>
+                    <default>false</default>
+                    <label>wetter.com CTV</label>
+                </value>
+                <value>
+                    <fullName>ZG S71 Paket</fullName>
+                    <default>false</default>
+                    <label>ZG S71 Paket</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Placement</label>
+    <listViews>
+        <fullName>Antizip</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_AntizipationsVS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_AntizipationsVS__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Antizip</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Multiscreen</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Site__c</columns>
+        <columns>ADvendio__RateCategory__c</columns>
+        <columns>SomDig_UGC__c</columns>
+        <columns>SomDig_Typ__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Mig_ProdiaKey__c</columns>
+        <columns>SomDig_Mediagattungssegment__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Multiscreen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Multiscreen</label>
+        <language>de</language>
+        <sharedTo>
+            <group>P7S1_SphereSomDe</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NonAdserver</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Mediagattungssegment__c</columns>
+        <columns>SomDig_Auftragstypen__c</columns>
+        <columns>ADvendio__Placement_Shortform__c</columns>
+        <columns>ADvendio__Product_search_Name__c</columns>
+        <columns>ADvendio__Site__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>nonadserver</value>
+        </filters>
+        <label>NonAdserver</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_AlleBelegungseinheiten</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Site__c</columns>
+        <columns>ADvendio__RateCategory__c</columns>
+        <columns>SomDig_UGC__c</columns>
+        <columns>SomDig_Typ__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Mig_ProdiaKey__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle Belegungseinheiten</label>
+        <language>de</language>
+        <sharedTo>
+            <group>P7S1_SphereSomDe</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Teletext_Belegungseinheiten</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Auftragstypen__c</columns>
+        <columns>ADvendio__Placement_Shortform__c</columns>
+        <columns>ADvendio__Product_search_Name__c</columns>
+        <columns>ADvendio__Site__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Mediagattungssegment__c</field>
+            <operation>equals</operation>
+            <value>Text</value>
+        </filters>
+        <label>Teletext Belegungseinheiten</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>ohne_Mediagattungs_Segment</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Auftragstypen__c</columns>
+        <columns>ADvendio__Placement_Shortform__c</columns>
+        <columns>ADvendio__Product_search_Name__c</columns>
+        <columns>ADvendio__Site__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_Mediagattungssegment__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>ohne Mediagattungs-Segment</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Placement Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Placements</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__AdServer_Keywords_Key_Values__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Placement_KeyID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Placement_Shortform__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Site__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Site__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Site__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__Site__c</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Site__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>SomDig_KontrolleErsteller</fullName>
+        <active>true</active>
+        <description>Für den Belegungsplan/Festplazierungsliste benötigen Sales &amp; PAM die Objekt-Berechtigung, Datensätze zu erstellen. Da dies Sales/PAM nicht machen soll, wurde diese Validierung noch erstellt (KV 01797).</description>
+        <errorConditionFormula>$Profile.Id != $Label.ProfileIdAdmin
+
+&amp;&amp;
+
+ISNEW()
+
+&amp;&amp; 
+(
+$Profile.Name = &quot;SomDig_Sales&quot;
+ || 
+$Profile.Name = &quot;SomDig_PAM&quot;
+ || 
+$Profile.Name = &quot;SomDig_BI&quot;)</errorConditionFormula>
+        <errorMessage>Sales/PAM darf keine Datensätze des Objektes Belegungseinheit erstellen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_NameDoubleBlank</fullName>
+        <active>true</active>
+        <description>KV 03291. Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche.</description>
+        <errorConditionFormula>CONTAINS(Name, &apos;  &apos;) || CONTAINS(ADvendio__Placement_Shortform__c, &apos;  &apos;) || CONTAINS(ADvendio__External_Name__c, &apos;  &apos;) || CONTAINS(ADvendio__Product_search_Name__c, &apos;  &apos;)</errorConditionFormula>
+        <errorMessage>Keine doppelten Leerzeichen in den Feldern Name, Kurzform, externe Bezeichnung und Produktsuche.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

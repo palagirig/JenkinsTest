@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Account-Freigabe Account-Übernahme Abgelehnt Nachricht an Account Owner</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>P7S1_SE_Letterhead</letterhead>
+    <name>AccountAccess Account-Übernahme Rejected an Account Owner</name>
+    <style>formalLetter</style>
+    <subject>Abgelehnt: {!P7S1_AccountAccess__c.Name}</subject>
+    <textOnly>Hallo {!P7S1_AccountAccess__c.P7S1_AccountOwner__c},
+Den Antrag auf Account-Übernahme von {!P7S1_AccountAccess__c.OwnerFullName}:
+
+
+
+{!P7S1_AccountAccess__c.Name}
+
+
+
+habe ich gerade mit folgendem Kommentar abgelehnt.
+
+
+
+{!ApprovalRequest.Comments}
+
+
+
+Link zum Antrag: {!P7S1_AccountAccess__c.Link}
+
+
+
+Viele Grüße,
+
+{!Approval_Requesting_User.Name}
+Wenn Du Fragen zu Sales Excellence hast, dann folge bitte diesem Link.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

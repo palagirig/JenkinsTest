@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Junctions Object to link Invoice Items, Campaign Items, and Publisher Payout Conditions.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the Amount counted for this Campaign/Invoice Item. This value is calculated automatically based upon the Delivered quantities applicable for the Condition and the Invoiced Amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the Amount counted for this Campaign/Invoice Item. This value is calculated automatically based upon the Delivered quantities applicable for the Condition and the Invoiced Amount.</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to the Campaign Item which belongs to the linked publisher payout condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the Campaign Item which belongs to the linked publisher payout condition.</inlineHelpText>
+        <label>Campaign Item</label>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipLabel>Publisher Payout InvoiceItem Assignments</relationshipLabel>
+        <relationshipName>PublisherPayoutInvoiceItemAssignments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceItem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Relation to the Invoice Item which belongs to the linked publisher payout condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relation to the Invoice Item which belongs to the linked publisher payout condition. Only Invoice Items which are completely within the time frame of the Publisher Payout contract are connected.</inlineHelpText>
+        <label>Invoice Item</label>
+        <referenceTo>ADvendio__InvoiceItem__c</referenceTo>
+        <relationshipLabel>Publisher Payout InvoiceItem Assignments</relationshipLabel>
+        <relationshipName>PublisherPayoutInvoiceItemAssignments</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PublisherPayoutCondition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Links the Publisher Payout Condition with Invoice and Campaign Item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the appropriate Publisher Payout Condition.</inlineHelpText>
+        <label>Publisher Payout Condition</label>
+        <referenceTo>ADvendio__PublisherPayoutCondition__c</referenceTo>
+        <relationshipLabel>Publisher Payout InvoiceItem Assignments</relationshipLabel>
+        <relationshipName>PublisherPayoutInvoiceItemAssignments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the quantity counted for the matching Campaign/Invoice Item. For Items with delivery data only data from the AdServer Ids configured in the Condition are taken into account. This Field is automatically filled by ADvendio.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows the quantity counted for the matching Campaign/Invoice Item. For Items with delivery data only data from the AdServer Ids configured in the Condition are taken into account. This Field is automatically filled by ADvendio.</inlineHelpText>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Publisher Payout InvoiceItem Assignment</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__PublisherPayoutCondition__c</columns>
+        <columns>ADvendio__CampaignItem__c</columns>
+        <columns>ADvendio__InvoiceItem__c</columns>
+        <columns>ADvendio__Quantity__c</columns>
+        <columns>ADvendio__Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PPI-{0000}</displayFormat>
+        <label>Publisher Payout InvoiceItem No.</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Publisher Payout InvoiceItem Assignments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

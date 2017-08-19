@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Junction-Objekt um Account-Beziehungen darstellen zu können, an denen Datensätze verknüpft werden wie Prognosen, Umsätze etc. (siehe auch Kundenvorgang 995 für eine detaillierte Beschreibung bzw. Anforderung).</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_GroupedId__c</fullName>
+        <externalId>true</externalId>
+        <label>Grouped ID</label>
+        <length>38</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungCommitmentPrognoseImAJ__c</fullName>
+        <description>Wie groß ist die Abweichung zur Prognose für AJ?</description>
+        <externalId>false</externalId>
+        <formula>SomDig_CommitmentGesamtAJ__c - SomDig_PrognoseGesamtAj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Wie groß ist die Abweichung zur Prognose für das AJ?</inlineHelpText>
+        <label>Abweichung Commitment vs. Prognose im AJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungCommitmentVsPrognoseAJp__c</fullName>
+        <description>Differenz zw. Commitment und Prognose für das akt. Jahr in %</description>
+        <externalId>false</externalId>
+        <formula>SomDig_AbweichungCommitmentPrognoseImAJ__c / SomDig_CommitmentGesamtAJ__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Differenz zw. Commitment und Prognose für das akt. Jahr in %</inlineHelpText>
+        <label>Abweichung Commitment vs Prognose AJ (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungPrognoseAJvsUmsatzVJ__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Prognose AJ zu Umsatz VJ an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_PrognoseGesamtAj__c - SomDig_UmsatzGesamtVj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Prognose AJ zu Umsatz VJ an.</inlineHelpText>
+        <label>Abweichung Prognose AJ vs. Umsatz VJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungUmsatzAJvsCommitment__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Umsatz AJ zu Commitment an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzGesamtAj__c - SomDig_CommitmentGesamtAJ__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Umsatz AJ zu Commitment an.</inlineHelpText>
+        <label>Abweichung Umsatz AJ vs. Commitment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungUmsatzAJvsPrognoseAJ__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Umsatz AJ zu Prognose AJ an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzGesamtAj__c - SomDig_PrognoseGesamtAj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Umsatz AJ zu Prognose AJ an.</inlineHelpText>
+        <label>Abweichung Umsatz AJ vs. Prognose AJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungUmsatzQ1AJ_v_PrognoseQ1__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Umsatz Q1 AJ zu Prognose Q1 AJ an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzQ1Aj__c -  SomDig_PrognoseQ1Aj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Umsatz Q1 AJ zu Prognose Q1 AJ an.</inlineHelpText>
+        <label>Abweichung Umsatz Q1 AJ vs. Prognose Q1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungUmsatzQ2AJ_v_PrognoseQ2__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Umsatz Q2 AJ zu Prognose Q2 AJ an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzQ2Aj__c -  SomDig_PrognoseQ2Aj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Umsatz Q2 AJ zu Prognose Q2 AJ an.</inlineHelpText>
+        <label>Abweichung Umsatz Q2 AJ vs. Prognose Q2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungUmsatzQ3AJ_v_PrognoseQ3__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Umsatz Q3 AJ zu Prognose Q3 AJ an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzQ3Aj__c -  SomDig_PrognoseQ3Aj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Umsatz Q3 AJ zu Prognose Q3 AJ an.</inlineHelpText>
+        <label>Abweichung Umsatz Q3 AJ vs. Prognose Q3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AbweichungUmsatzQ4AJ_v_PrognoseQ4__c</fullName>
+        <description>Zeigt die absolute Differenz zwischen Umsatz Q4 AJ zu Prognose Q4 AJ an.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzQ4Aj__c -  SomDig_PrognoseQ4Aj__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Zeigt die absolute Differenz zwischen Umsatz Q4 AJ zu Prognose Q4 AJ an.</inlineHelpText>
+        <label>Abweichung Umsatz Q4 AJ vs. Prognose Q4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_AgenturId__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomDig_Agentur__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Agentur Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AgenturKonzernmutter__c</fullName>
+        <description>Gibt automatisch die Konzernmutter der hinterlegten Agentur wieder. Ist ein Formelfeld und  muss daher nicht manuell befüllt werden.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_Agentur__r.Konzernmutter__c</formula>
+        <inlineHelpText>Gibt automatisch die Konzernmutter der hinterlegten Agentur wieder. Ist ein Formelfeld und  muss daher nicht manuell befüllt werden.</inlineHelpText>
+        <label>Agentur Konzernmutter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Agentur__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Hinterlegung des Agentur-Accounts in der Beziehung. 
+Hinweis: Bei Direktbucher wird dieses Feld leer gelassen!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hinterlegung des Agentur-Accounts in der Beziehung. 
+Hinweis: Bei Direktbucher wird dieses Feld leer gelassen!</inlineHelpText>
+        <label>Agentur</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.Id</field>
+                <operation>equals</operation>
+                <value>012D0000000QgmP</value>
+            </filterItems>
+            <infoMessage>Datensatztyp des ausgewählten Accounts muss &quot;Agentur&quot; sein, was aktuell nicht der Fall ist. Daher bitte am Account den Datensatztyp vorher noch ändern.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>WT AG Beziehungen (Agentur)</relationshipLabel>
+        <relationshipName>AG_Beziehungen</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_BeziehungAccountnameHelp__c</fullName>
+        <description>Werbetreibender- und Agenturname, durch ein Underscore getrennt. Wird per Formel automatisch befüllt und dient als Hilfefeld zur Befüllung des Textfeldes &quot;Beziehung Accountname&quot;. Hiernach kann nämlich in Nachschlagebeziehungen nicht gesucht werden.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_Werbetreibender__r.Name &amp; &quot;_&quot; &amp; SomDig_Agentur__r.Name</formula>
+        <inlineHelpText>Werbetreibender- und Agenturname, durch ein Underscore getrennt. Wird per Formel automatisch befüllt</inlineHelpText>
+        <label>Beziehung Accountname</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BeziehungAccountname__c</fullName>
+        <description>Werbetreibender- und Agenturname, durch ein Underscore getrennt. Wird per Workflow/Feldaktualisierung automatisch befüllt (aus Formelfeld &quot;Beziehung Accountname help&quot;) um hiernach in Nachschlagebeziehungen suchen zu können</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Werbetreibender- und Agenturname, durch ein Underscore getrennt. Wird per Workflow/Feldaktualisierung automatisch befüllt</inlineHelpText>
+        <label>Beziehung Accountname</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BeziehungAccountnumber__c</fullName>
+        <description>ProRex ID des Werbetreibenden und der Agentur, durch ein Underscore getrennt (reines Infofeld)</description>
+        <externalId>false</externalId>
+        <formula>SomDig_Werbetreibender__r.AccountNumber &amp; &quot;_&quot; &amp; SomDig_Agentur__r.AccountNumber</formula>
+        <inlineHelpText>ProRex ID des Werbetreibenden und der Agentur, durch ein Underscore getrennt (reines Infofeld, wird automatisch vom System befüllt)</inlineHelpText>
+        <label>Beziehung Accountnummer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BeziehungInhaberVertriebsteam__c</fullName>
+        <description>In welchem Vertriebsteam ist der Inhaber der WT AG Beziehung? Wird automatisch per Formel gesetzt</description>
+        <externalId>false</externalId>
+        <formula>TEXT( SomDig_BeziehungInhaber__r.SomDig_SalesTeam__c )</formula>
+        <inlineHelpText>In welchem Vertriebsteam ist der Inhaber der WT AG Beziehung? Wird automatisch per Formel gesetzt</inlineHelpText>
+        <label>Beziehung Inhaber Vertriebsteam</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BeziehungInhaber__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>In der Regel der Inhaber/Betreuer des Werbetreibenders, ist aber manuell Auswählbar und kann daher individuell eingestellt werden</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In der Regel der Inhaber/Betreuer des Werbetreibenders, ist aber manuell Auswählbar und kann daher individuell eingestellt werden</inlineHelpText>
+        <label>Beziehung Inhaber</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.Profile.Id</field>
+                <operation>equals</operation>
+                <value>00e20000001QBtU</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>WT_AG_Beziehungen</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_CommitmentGesamtAJ__c</fullName>
+        <description>errechnet den Wert anhand der aktuellen Commitments.
+Verwendet RollupHelper!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>errechnet den Wert anhand der aktuellen Commitments (nur Commitments im Status &apos;angenommen&apos; und &apos;Gentlemen&apos;s Agreement&apos; berücksichtigt)</inlineHelpText>
+        <label>Commitment gesamt AJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Direktbucher__c</fullName>
+        <description>Kontrolle, ob es sich in der Beziehung um einen Direktbucher handelt (entweder ist AG-Feld leer oder WT ist gleich im AG-Feld eingetragen).</description>
+        <externalId>false</externalId>
+        <formula>OR( SomDig_Agentur__c = &quot;&quot; , SomDig_Agentur__c =  SomDig_Werbetreibender__c )</formula>
+        <inlineHelpText>Kontrolle, ob es sich in der Beziehung um einen Direktbucher handelt (entweder ist AG-Feld leer oder WT ist gleich im AG-Feld eingetragen). Wird automatisch befüllt.</inlineHelpText>
+        <label>Direktbucher</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseGesamtAj__c</fullName>
+        <description>Gesamtsumme der Progonsen für die Beziehung im aktuellen Geschäftsjahr</description>
+        <externalId>false</externalId>
+        <formula>SomDig_PrognoseQ1Aj__c +  
+SomDig_PrognoseQ2Aj__c + 
+SomDig_PrognoseQ3Aj__c + 
+SomDig_PrognoseQ4Aj__c</formula>
+        <inlineHelpText>Gesamtsumme der Progonsen für die Beziehung im aktuellen Geschäftsjahr</inlineHelpText>
+        <label>Prognose gesamt AJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseMedDiffInPage__c</fullName>
+        <description>Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</inlineHelpText>
+        <label>Prognose InPage AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_MedDiffInPage__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseMedDiffInStream__c</fullName>
+        <description>Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</inlineHelpText>
+        <label>Prognose InStream AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_MedDiffInStream__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseMedDiffRest__c</fullName>
+        <description>Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</inlineHelpText>
+        <label>Prognose DigitalTV (inkl. Mediaauf.)  AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_MedDiffRest__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ1Aj__c</fullName>
+        <description>RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr</inlineHelpText>
+        <label>Prognose Q1 AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_PrognoseQ1__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ2Aj__c</fullName>
+        <description>RollUp aller betroffenen Q2-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q2-Werte der Beziehungen aus dem aktuellen Geschäftsjahr</inlineHelpText>
+        <label>Prognose Q2 AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_PrognoseQ2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ3Aj__c</fullName>
+        <description>RollUp aller betroffenen Q3-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q3-Werte der Beziehungen aus dem aktuellen Geschäftsjahr</inlineHelpText>
+        <label>Prognose Q3 AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_PrognoseQ3__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_PrognoseQ4Aj__c</fullName>
+        <description>RollUp aller betroffenen Q4-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr</inlineHelpText>
+        <label>Prognose Q4 AJ</label>
+        <summarizedField>SomDig_Prognose__c.SomDig_PrognoseQ4__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Prognose__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Prognose__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzGesamtAj__c</fullName>
+        <description>Gesamtsumme des Umsatzes für die Beziehung im aktuellen Geschäftsjahr, Mediagattung Digital</description>
+        <externalId>false</externalId>
+        <formula>SomDig_UmsatzQ1Aj__c +  SomDig_UmsatzQ2Aj__c +  SomDig_UmsatzQ3Aj__c +  SomDig_UmsatzQ4Aj__c</formula>
+        <inlineHelpText>Gesamtsumme des Umsatzes für die Beziehung im aktuellen Geschäftsjahr, Mediagattung Digital aber ohne Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. ohne Dienstleistung.</inlineHelpText>
+        <label>Umsatz gesamt AJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzGesamtVj__c</fullName>
+        <description>Gesamtsumme des Umsatzes für die Beziehung aus vorherigem Geschäftsjahr, Mediagattung Digital</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gesamtsumme des Umsatzes für die Beziehung aus vorherigem Geschäftsjahr, Mediagattung Digital aber ohne Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. ohne Dienstleistung.</inlineHelpText>
+        <label>Umsatz gesamt VJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>VJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzMedDiffInPageVJ__c</fullName>
+        <description>Summe aller InPage-Werte der Beziehungen aus dem vorherigen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller InPage-Werte der Beziehungen aus dem vorherigen Geschäftsjahr.</inlineHelpText>
+        <label>Umsatz InPage VJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>VJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsDifferenzierungsName__c</field>
+            <operation>equals</operation>
+            <value>InPage/Display</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzMedDiffInPage__c</fullName>
+        <description>Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller InPage-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</inlineHelpText>
+        <label>Umsatz InPage AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsDifferenzierungsName__c</field>
+            <operation>equals</operation>
+            <value>InPage/Display</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzMedDiffInStreamVJ__c</fullName>
+        <description>Summe aller InStream-Werte der Beziehungen aus des vorherigen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller InStream-Werte der Beziehungen aus des vorherigen Geschäftsjahr.</inlineHelpText>
+        <label>Umsatz InStream VJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>VJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsDifferenzierungsName__c</field>
+            <operation>equals</operation>
+            <value>InStream/Video</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzMedDiffInStream__c</fullName>
+        <description>Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller InStream-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</inlineHelpText>
+        <label>Umsatz InStream AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsDifferenzierungsName__c</field>
+            <operation>equals</operation>
+            <value>InStream/Video</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzMedDiffRestVJ__c</fullName>
+        <description>Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem vorherigen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem vorherigen Geschäftsjahr.</inlineHelpText>
+        <label>Umsatz DigitalTV (inkl. Mediaaufwand) VJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>VJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsDifferenzierungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital TV, Mediaaufwand</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzMedDiffRest__c</fullName>
+        <description>Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summe aller Digital TV (inkl. Mediaaufwand)-Werte der Beziehungen aus dem aktuellen Geschäftsjahr.</inlineHelpText>
+        <label>Umsatz DigitalTV (inkl. Mediaaufwand) AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsDifferenzierungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital TV, Mediaaufwand</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzQ1Aj__c</fullName>
+        <description>RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q1-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung.</inlineHelpText>
+        <label>Umsatz Q1 AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_Quartal__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzQ2Aj__c</fullName>
+        <description>RollUp aller betroffenen Q2-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q2-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung.</inlineHelpText>
+        <label>Umsatz Q2 AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_Quartal__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzQ3Aj__c</fullName>
+        <description>RollUp aller betroffenen Q3-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q3-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung.</inlineHelpText>
+        <label>Umsatz Q3 AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_Quartal__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UmsatzQ4Aj__c</fullName>
+        <description>RollUp aller betroffenen Q4-Werte der Beziehungen aus dem aktuellen Geschäftsjahr (braucht zum Jahreswechsel nicht angepasst werden, funzt dynamisch)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RollUp aller betroffenen Q4-Werte der Beziehungen aus dem aktuellen Geschäftsjahr und Mediagattung Digital OHNE Mediagattungs-Segment &quot;NonMedia&quot; und somit z.B. Dienstleistung.</inlineHelpText>
+        <label>Umsatz Q4 AJ</label>
+        <summarizedField>SomDig_Umsatz__c.SomDig_Mn2__c</summarizedField>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsName__c</field>
+            <operation>equals</operation>
+            <value>Digital</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_RelativesJahr__c</field>
+            <operation>equals</operation>
+            <value>AJ</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_Quartal__c</field>
+            <operation>equals</operation>
+            <value>4</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SomDig_Umsatz__c.SomDig_MediagattungsSegmentName__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_UniqueKey__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Wird per Workflow (Feldaktualisierung) bei Anlage eines Datensatztes WT AG - Beziehung automatisch befüllt, um Dubletten zu vermeiden (Key muss einzigartig sein anhand Salesforce ID - Kombination)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wird per Workflow (Feldaktualisierung) bei Anlage eines Datensatztes WT AG - Beziehung automatisch befüllt, um Dubletten zu vermeiden (Key muss einzigartig sein anhand Salesforce ID - Kombination)</inlineHelpText>
+        <label>UniqueKey</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_WerbetreibenderKonzernmutter__c</fullName>
+        <description>Gibt automatisch die Konzernmutter des hinterlegten Werbetreibenders wieder. Ist ein Formelfeld und muss daher nicht manuell befüllt werden.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_Werbetreibender__r.Konzernmutter__c</formula>
+        <inlineHelpText>Gibt automatisch die Konzernmutter des hinterlegten Werbetreibenders wieder. Ist ein Formelfeld und muss daher nicht manuell befüllt werden.</inlineHelpText>
+        <label>Werbetreibender Konzernmutter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Werbetreibender__c</fullName>
+        <description>Hinterlegung des Werbetreibeder-Accounts in der Beziehung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hinterlegung des Werbetreibeder-Accounts in der Beziehung</inlineHelpText>
+        <label>Werbetreibender</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.Id</field>
+                <operation>equals</operation>
+                <value>012200000004c9A</value>
+            </filterItems>
+            <infoMessage>Datensatztyp des ausgewählten Accounts muss &quot;Werbetreibender&quot; sein, was aktuell nicht der Fall ist. Daher bitte am Account den Datensatztyp vorher noch ändern.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>WT AG Beziehungen (Werbetreibender)</relationshipLabel>
+        <relationshipName>WT_Beziehungen</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SomDig_YieldlabNettoAJ__c</fullName>
+        <description>Yieldlab Nettoumsatz aktuelles Jahr</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Yieldlab Nettoumsatz aktuelles Jahr</inlineHelpText>
+        <label>Yieldlab Netto AJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomTv_LetzterUmsatz__c</fullName>
+        <description>Gibt die Jahreszahl aus, in dem das letzte Mal Umsatz für verbucht wurde.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt die Jahreszahl aus, in dem das letzte Mal Umsatz für verbucht wurde.</inlineHelpText>
+        <label>Letzter Umsatz</label>
+        <summarizedField>SomDig_Umsatz__c.SomTv_JahrDatum__c</summarizedField>
+        <summaryForeignKey>SomDig_Umsatz__c.SomDig_WtAgBeziehung__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <gender>Feminine</gender>
+    <label>WT AG Beziehung</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_Agentur__c</columns>
+        <columns>SomDig_Werbetreibender__c</columns>
+        <columns>SomDig_BeziehungInhaber__c</columns>
+        <columns>SomDig_BeziehungInhaberVertriebsteam__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>mit_Yieldlab_Umsatz_AJ</fullName>
+        <columns>SomDig_BeziehungAccountnameHelp__c</columns>
+        <columns>SomDig_Agentur__c</columns>
+        <columns>NAME</columns>
+        <columns>SomDig_YieldlabNettoAJ__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SomDig_YieldlabNettoAJ__c</field>
+            <operation>notEqual</operation>
+            <value>EUR 0</value>
+        </filters>
+        <label>mit Yieldlab Umsatz AJ</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000}</displayFormat>
+        <label>WT AG Beziehungsname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>WT AG Beziehungen</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SomDig_BeziehungAccountnameHelp__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Werbetreibender__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_Agentur__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_BeziehungAccountnumber__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_UniqueKey__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SomDig_BeziehungInhaber__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>SomDig_BeziehungAccountname__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_Werbetreibender__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_Agentur__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_WerbetreibenderKonzernmutter__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_AgenturKonzernmutter__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_BeziehungAccountnumber__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_BeziehungInhaber__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>SomDig_Werbetreibender__c</lookupFilterFields>
+        <lookupFilterFields>SomDig_Agentur__c</lookupFilterFields>
+        <lookupFilterFields>SomDig_WerbetreibenderKonzernmutter__c</lookupFilterFields>
+        <lookupFilterFields>SomDig_AgenturKonzernmutter__c</lookupFilterFields>
+        <lookupFilterFields>SomDig_BeziehungAccountnumber__c</lookupFilterFields>
+        <lookupFilterFields>SomDig_BeziehungInhaber__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_BeziehungAccountnameHelp__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_Werbetreibender__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_Agentur__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_BeziehungAccountnumber__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_BeziehungInhaber__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_BeziehungAccountnameHelp__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_Werbetreibender__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_Agentur__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_BeziehungAccountnumber__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_BeziehungInhaber__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SomDig_AenderungAgentur</fullName>
+        <active>true</active>
+        <description>Es soll vermieden werden, dass nach Erstellung einer WT AG Beziehung diese geändert wird: WT geht nicht wegen Master-Detail, Agentur-Feld muss zwecks Erstellung bearbeitbar sein und daher hier eine Validierung um dies zu verhindern</description>
+        <errorConditionFormula>And(
+Not( ISNEW() ),
+ ISCHANGED( SomDig_Agentur__c ) 
+)</errorConditionFormula>
+        <errorMessage>Bitte keine Agentur nachträglich ändern, sondern die Beziehung so lassen wie sie  angelegt wurde bezüglich Auswahl WT und AG. Wenn notwendig, bitte neue Beziehung mit unterschiedlicher AG anlegen</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_KontrolleDatensatztypAccounts</fullName>
+        <active>true</active>
+        <description>Es darfgenerell kein Datensatztyp &quot;ungültiger Account&quot; bei WT oder AG ausgewählt werden sowie kein Datensatztyp WT bei AG und vise versa.</description>
+        <errorConditionFormula>AND(
+$Profile.Id != $Label.ProfileIdAdmin, 
+ISNEW(),
+OR(
+  SomDig_Agentur__r.RecordType.Id = &apos;012D0000000QYxb&apos;,
+  SomDig_Agentur__r.RecordType.Id = &apos;012200000004c9A&apos;,
+  SomDig_Werbetreibender__r.RecordType.Id = &apos;012D0000000QYxb&apos;,
+  SomDig_Werbetreibender__r.RecordType.Id = &apos;012D0000000QgmP&apos;
+  )
+)</errorConditionFormula>
+        <errorMessage>Es darf generell kein Datensatztyp &quot;ungültiger Account&quot; bei WT oder AG ausgewählt werden sowie kein Datensatztyp WT bei AG und vise versa. Bitte Datensatztypen der verlinkten Accounts kontrollieren und ggf. anpassen!</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

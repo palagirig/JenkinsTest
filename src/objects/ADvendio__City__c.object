@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In the Geo Targeting Tree, only active marked records will be available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In the Geo Targeting Tree, only active marked records will be available.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdTech_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ID as assigned to this particular city by AdTech.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ID as assigned to this particular city by AdTech.</inlineHelpText>
+        <label>AdTech-ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Adition_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ID as assigned to this particular city by Adition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ID as assigned to this particular city by Adition.</inlineHelpText>
+        <label>Adition-ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Country__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter the country in which this city is located.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the country in which this city is located.</inlineHelpText>
+        <label>Country</label>
+        <referenceTo>ADvendio__Country__c</referenceTo>
+        <relationshipLabel>Cities</relationshipLabel>
+        <relationshipName>Cities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Dart_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ID as assigned to this particular city by Dart.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ID as assigned to this particular city by Dart.</inlineHelpText>
+        <label>Dart-ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Dfp_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ID as assigned to this particular city by DFP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ID as assigned to this particular city by DFP.</inlineHelpText>
+        <label>Dfp-ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LiveRailId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>LiveRail-ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NuggAd_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ID as assigned to this particular city by NuggAd.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ID as assigned to this particular city by NuggAd.</inlineHelpText>
+        <label>NuggAd-ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter the region in which this city is located.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the region in which this city is located.</inlineHelpText>
+        <label>Region</label>
+        <referenceTo>ADvendio__Region__c</referenceTo>
+        <relationshipLabel>Cities</relationshipLabel>
+        <relationshipName>Cities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Smart_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the ID as assigned to this particular city by Smart.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ID as assigned to this particular city by Smart.</inlineHelpText>
+        <label>Smart-ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Enter a Unique Key for this City.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a Unique Key for this City.</inlineHelpText>
+        <label>UniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__X247MediaId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>24/7 Media ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Surcharge__c</fullName>
+        <description>Aufschlag für Targeting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Aufschlag für Targeting</inlineHelpText>
+        <label>Aufschlag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Zuschlagspflichtig__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Wenn diese Checkbox aktiv ist werden vom Adpec die Targeting-Zuschläge aktiviert und an das LineItem übertragen und zu den Zuschlägen hinzugezogen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Wenn diese Checkbox aktiv ist werden vom Adpec/Werbemittel/Produkt die Targeting-Zuschläge aktiviert und an das LineItem übertragen und zu den Zuschlägen hinzugezogen.</inlineHelpText>
+        <label>Zuschlagspflichtig</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>City</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Country__c</columns>
+        <columns>ADvendio__Region__c</columns>
+        <columns>SomDig_Surcharge__c</columns>
+        <columns>ADvendio__Dfp_ID__c</columns>
+        <columns>ADvendio__Smart_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>City Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Cities</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Region__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Country__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Country__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Region__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Country__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__Region__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Country__c</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Region__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Country__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Team A</fullName>
+        <default>false</default>
+        <label>Team A</label>
+    </customValue>
+    <customValue>
+        <fullName>Team B</fullName>
+        <default>false</default>
+        <label>Team B</label>
+    </customValue>
+    <customValue>
+        <fullName>Team Reporting</fullName>
+        <default>false</default>
+        <label>Team Reporting</label>
+    </customValue>
+    <customValue>
+        <fullName>Team Andere Projekte</fullName>
+        <default>false</default>
+        <label>Team Andere Projekte</label>
+    </customValue>
+    <customValue>
+        <fullName>Team E</fullName>
+        <default>false</default>
+        <label>Team E</label>
+    </customValue>
+    <customValue>
+        <fullName>Team Betrieb und Architektur</fullName>
+        <default>false</default>
+        <label>Team Betrieb und Architektur</label>
+    </customValue>
+    <description>Scrum-Teams / Projektteams</description>
+    <masterLabel>Team</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

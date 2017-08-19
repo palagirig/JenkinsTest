@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign Item</label>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipName>OptimizingChanges</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FieldName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>something like &quot;Quantity&quot;</description>
+        <externalId>false</externalId>
+        <label>Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NewCiIdentifier__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Use an identifier to pool changes for completly new Campaign Items, which have no old values and no (correct) reference to one original Campaign Item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use an identifier to pool changes for completly new Campaign Items.</inlineHelpText>
+        <label>New Campaign Item Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NewValue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>New Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OldValue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Old Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OptimizedValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The new opzimized value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The new opzimized value.</inlineHelpText>
+        <label>Optimized Value</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OptimizingVersion__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Optimizing Version</label>
+        <referenceTo>ADvendio__OptimizingVersion__c</referenceTo>
+        <relationshipLabel>Optimizing Changes</relationshipLabel>
+        <relationshipName>OptimizingChanges</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OriginalValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The original value before optimization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The original value before optimization.</inlineHelpText>
+        <label>Original Value</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Adv_ReichweitenRelevant__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__AdDayOfWeek__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__AdHourOfDay__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__AdKeyValues__c&quot;), 
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__AdKeyWords__c&quot;), 
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__AdOperatingSystems__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__AdWebBrowsers__c&quot;), 
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__FC_Ad_served_every__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__FC_Period__c&quot;), 
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__FC_Quantity__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__from_Date__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__Guaranteed_AI__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__Priority__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__Quantity__c&quot;),
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__Targetingabbrevation__c&quot;), 
+UPPER(ADvendio__FieldName__c) = UPPER(&quot;ADvendio__until_Date__c&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adv_ReichweitenRelevant</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediaCampaignID__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__OptimizingVersion__r.ADvendio__MediaCampaign__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SomDig_MediaCampaignID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Optimizing Change</label>
+    <nameField>
+        <label>Optimizing Change Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Optimizing Changes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SomDig_KompensationProfiles</fullName>
+        <active>true</active>
+        <description>KV: 02517. Nur bestimmte Profile sollen &quot;Kompensation&quot; wählen dürfen.</description>
+        <errorConditionFormula>IF(NOT($Profile.Name = &quot;SomDig_Billing&quot; || $Profile.Name = &quot;SomDig_PAM&quot; || $Profile.Name = &quot;SomDig_BI&quot; || $Profile.Id = $Label.ProfileIdAdmin ) &amp;&amp; ADvendio__OptimizedValue__c = &quot;Kompensation&quot;, true, false)</errorConditionFormula>
+        <errorDisplayField>ADvendio__OptimizedValue__c</errorDisplayField>
+        <errorMessage>Sie sind nicht berechtigt &quot;Kompensation&quot; auszuwählen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_PositionsrabattNaturalProfiles</fullName>
+        <active>true</active>
+        <description>KV: 02516. SpecialDiscount darf nur von bestimmten Profilen auf &quot;Positionsrabatt Natural&quot; gesetzt werden.</description>
+        <errorConditionFormula>IF(NOT($Profile.Name = &quot;SomDig_Billing&quot; || $Profile.Name = &quot;SomDig_PAM&quot; || $Profile.Name = &quot;SomDig_BI&quot; || $Profile.Id = $Label.ProfileIdAdmin ) &amp;&amp; ADvendio__OptimizedValue__c = &quot;Positionsrabatt Natural&quot; , true, false)</errorConditionFormula>
+        <errorDisplayField>ADvendio__OptimizedValue__c</errorDisplayField>
+        <errorMessage>Sie sind nicht berechtigt &quot;Positionsrabatt Natural&quot; auszuwählen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_StornoOhneLeistungsflussProfiles</fullName>
+        <active>true</active>
+        <description>KV: 02453. Nur bestimmte Profile sollen &quot;Storno ohne Leistungsfluss&quot; wählen dürfen.</description>
+        <errorConditionFormula>IF(NOT($Profile.Name = &quot;SomDig_Billing&quot; || $Profile.Name = &quot;SomDig_PAM&quot; || $Profile.Name = &quot;SomDig_BI&quot; || $Profile.Id = $Label.ProfileIdAdmin ) &amp;&amp; ADvendio__OptimizedValue__c = &quot;Storno ohne Leistungsfluss&quot;, true, false)</errorConditionFormula>
+        <errorDisplayField>ADvendio__OptimizedValue__c</errorDisplayField>
+        <errorMessage>Sie sind nicht berechtigt &quot;Storno ohne Leistungsfluss&quot; auszuwählen.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

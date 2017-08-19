@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Wenn eine Mediakampagne auf Auftrag gesetzt werden soll obwohl Rechnungsempfänger-Account Inkassostatus &quot;not ok&quot; hat, erfolgt eine Anfrage an die Entscheider (Billing)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SomDig Genehmigungsprozess Vorkasse Anfrage</name>
+    <style>none</style>
+    <subject>Genehmigungsanfrage Salesforce: Vorkassenprozess</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

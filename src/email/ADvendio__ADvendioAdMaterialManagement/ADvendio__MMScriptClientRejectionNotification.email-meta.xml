@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MMScriptClientRejectionNotification</name>
+    <style>none</style>
+    <subject>Notification: Script {!ADvendio__BriefingScript__c.Name} is rejected by Client</subject>
+    <textOnly>Hi {!ADvendio__BriefingScript__c.OwnerFirstName},
+
+The script {!ADvendio__BriefingScript__c.Name} is rejected by Client.
+You need to rework on the script and resend the script for approval.
+
+Sincerely,
+ADvendio Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

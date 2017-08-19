@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Valid_from__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Valid from</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Valid_to__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Valid to</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Mig_CountPrices__c</fullName>
+        <externalId>false</externalId>
+        <label>Mig_CountPrices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mig_ProdiaKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Eindeutiger Schlüssel aus ProDia, der für Abgleich bei Migrataion benötigt wird</inlineHelpText>
+        <label>Mig_ProdiaKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_AuftragstypId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Steuert die Auslieferungsprioritäten in den AdServern, die Einschränkung auf mögliche Produkte/Werbemittel, ggf. auch Steuerung von fixem FC bei einigen Auftragstypen &amp; Voreinstellung der Rechnungsstellung etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bitte die Auftragstypen angeben. Diese steuert die Auslieferungsprioritäten in den AdServern, die Einschränkung auf mögliche Produkte/Werbemittel, ggf. auch Steuerung von fixem FC bei einigen Auftragstypen &amp; Voreinstellung der Rechnungsstellung etc.</inlineHelpText>
+        <label>Auftragstyp</label>
+        <referenceTo>SomDig_Auftragstyp__c</referenceTo>
+        <relationshipLabel>Preislisten</relationshipLabel>
+        <relationshipName>Preislisten</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Auftragstyp__c</fullName>
+        <description>Hilfsfeld für die DWH-Schnittstelle. Liefert Auftragstyp als Text.</description>
+        <externalId>false</externalId>
+        <formula>SomDig_AuftragstypId__r.Name</formula>
+        <inlineHelpText>Hilfsfeld für die DWH-Schnittstelle. Liefert Auftragstyp als Text.</inlineHelpText>
+        <label>Auftragstyp DWH</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Beschreibung__c</fullName>
+        <description>Beschreibung der Preisliste</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Beschreibung der Preisliste</inlineHelpText>
+        <label>Beschreibung</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_DWHGeschaeftsart__c</fullName>
+        <description>DWH Geschäftsart mit/ohne Commitment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DWH Geschäftsart mit/ohne Commitment (bei Eigenwerbung nur &apos;ohne Commitment&apos;)</inlineHelpText>
+        <label>DWH Geschäftsart</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <label>Rate Card</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_AuftragstypId__c</columns>
+        <columns>SomDig_DWHGeschaeftsart__c</columns>
+        <columns>SomDig_Beschreibung__c</columns>
+        <columns>ADvendio__Valid_from__c</columns>
+        <columns>ADvendio__Valid_to__c</columns>
+        <columns>Mig_CountPrices__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>P7S1_IdOld__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Preislisten_2016</fullName>
+        <columns>NAME</columns>
+        <columns>SomDig_AuftragstypId__c</columns>
+        <columns>SomDig_DWHGeschaeftsart__c</columns>
+        <columns>SomDig_Beschreibung__c</columns>
+        <columns>ADvendio__Valid_from__c</columns>
+        <columns>ADvendio__Valid_to__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Mig_CountPrices__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>P7S1_IdOld__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>2016</value>
+        </filters>
+        <label>Preislisten 2016</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Rate Card Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Rate Cards</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SomDig_Beschreibung__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Valid_to__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Valid_from__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>SomDig_Beschreibung__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Valid_to__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Valid_from__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SomDig_Beschreibung__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Valid_to__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Valid_from__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>SomDig_Beschreibung__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Valid_to__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Valid_from__c</searchFilterFields>
+        <searchResultsAdditionalFields>SomDig_Beschreibung__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Valid_to__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Valid_from__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ADvendio__OVKExport</fullName>
+        <availability>online</availability>
+        <description>Export the Rate Card as OVK price list</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>AGOF Export</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__AgofExportPricelist</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__OVKUpload</fullName>
+        <availability>online</availability>
+        <description>Export the Rate Card as OVK price list and upload it to OVK Connect Center</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>AGOF Upload</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__AgofUploadPricelist</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

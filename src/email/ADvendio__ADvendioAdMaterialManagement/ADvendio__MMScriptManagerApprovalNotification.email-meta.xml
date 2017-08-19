@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MMScriptManagerApprovalNotification</name>
+    <style>none</style>
+    <subject>Notification: Script {!ADvendio__BriefingScript__c.Name} is approved by Manager</subject>
+    <textOnly>Hi {!ADvendio__BriefingScript__c.OwnerFirstName},
+
+The script {!ADvendio__BriefingScript__c.Name} is approved by manager {!User.Manager}.
+The Script is now ready for sending for client approval.
+
+Sincerely,
+ADvendio Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

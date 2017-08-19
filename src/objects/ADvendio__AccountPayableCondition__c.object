@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Conditions for Account Payables to set up sharing fees</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AccountPayable__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Account Payable, this Condition is connected to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Account Payable, this Condition is connected to.</inlineHelpText>
+        <label>Account Payable</label>
+        <referenceTo>ADvendio__AccountPayable__c</referenceTo>
+        <relationshipLabel>Account Payable Conditions</relationshipLabel>
+        <relationshipName>Conditions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Share__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Account Payables share</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Payables share in %</inlineHelpText>
+        <label>Share (%)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type specifing the value range</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type specifing the value range</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>eCPM</fullName>
+                    <default>false</default>
+                    <label>eCPM</label>
+                </value>
+                <value>
+                    <fullName>fix</fullName>
+                    <default>false</default>
+                    <label>fix</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date this condition will be active from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date this condition will be active from.</inlineHelpText>
+        <label>valid (From)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValidTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date this condition will be active to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date this condition will be active to.</inlineHelpText>
+        <label>valid (To)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValueFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lower value of the range to identify a share.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lower value of the range to identify a share.</inlineHelpText>
+        <label>Value (From)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ValueTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Upper value of the range to identify a share.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Upper value of the range to identify a share.</inlineHelpText>
+        <label>Value (To)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Account Payable Condition</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AccountPayable__c</columns>
+        <columns>ADvendio__ValidFrom__c</columns>
+        <columns>ADvendio__ValidTo__c</columns>
+        <columns>ADvendio__Type__c</columns>
+        <columns>ADvendio__Share__c</columns>
+        <columns>ADvendio__ValueFrom__c</columns>
+        <columns>ADvendio__ValueTo__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>CAC-{0000}</displayFormat>
+        <label>Condition</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Payable Conditions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

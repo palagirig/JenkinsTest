@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Standardvorlage für Reminder E-Mail Angebot für Festplatzierung drei Wochen vor Start</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SomDig Erinnerungsmail Festplatzreservierung</name>
+    <style>none</style>
+    <subject>{!ADvendio__MediaCampaign__c.Name}: Festplazierung</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

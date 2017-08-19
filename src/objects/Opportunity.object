@@ -291,76 +291,6 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <fieldSets>
-        <fullName>MT_ContextFields</fullName>
-        <description>Fieldset for query</description>
-        <displayedFields>
-            <field>Kampagnenende__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Kampagnenstart__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>P7S1_HasMediaTV__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Som_DooH7Screen__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>P7S1_HasMediaBarter__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>P7S1_HasMediaDigital__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <label>Media Transparency Context Fields</label>
-    </fieldSets>
-    <fieldSets>
-        <fullName>MT_UpdateRequestMapping</fullName>
-        <description>Field set to match the fields in the Update Request approval process</description>
-        <displayedFields>
-            <field>Kampagnenstart__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Kampagnenende__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Som_DooH7Screen__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>P7S1_HasMediaTV__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>P7S1_HasMediaDigital__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>P7S1_HasMediaBarter__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <label>Media Transparency Update Request Mapping</label>
-    </fieldSets>
     <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1263,17 +1193,6 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>MT_InternalCampaign__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Hat diese Kampagne einen externen Partner oder ist sie nur intern (vom Asset alleine betrieben).</description>
-        <externalId>false</externalId>
-        <label>Interne Kampagne</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Maxdome_ApprovalNeeded__c</fullName>
         <externalId>false</externalId>
         <label>Approval needed</label>
@@ -1506,28 +1425,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_ContractEnd__c</fullName>
-        <description>Ende der Vertragslaufzeit.</description>
-        <externalId>false</externalId>
-        <label>Vertragsende</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>P7S1_ContractStart__c</fullName>
-        <description>The start of the actual legal contract the campaign is based on. May be before or on the campaign start, but never after it.</description>
-        <externalId>false</externalId>
-        <label>Vertragsbeginn</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>P7S1_CurrentOwnerEmail__c</fullName>
@@ -1787,16 +1684,6 @@ CASE( P7S1_DandASalesAsset__c  ,
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>P7S1_HasMediaPartBarter__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Teil-Barter</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>P7S1_HasMediaTV__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -1833,7 +1720,7 @@ CASE( P7S1_DandASalesAsset__c  ,
     <fields>
         <fullName>P7S1_LostReasonDetails__c</fullName>
         <description>bis 05.10.2015: GAM_GrundDetail
-Wird bei Datensatztyp Licensing-Opportunities Games die Opportunity auf verloren gesetzt und als Grund &quot;andere&quot; angegeben, muss diese hier genauer beschrieben werden</description>
+Wird bei Datensatztyp SomTv-xxxx die Opportunity auf verloren gesetzt und als Grund &quot;Andere&quot; angegeben, muss dieser hier genauer beschrieben werden</description>
         <externalId>false</externalId>
         <inlineHelpText>If the opportunity is lost and the reason is &quot;other&quot;, please describe it in this field</inlineHelpText>
         <label>Grund detailliert</label>
@@ -1858,118 +1745,13 @@ Wird bei Datensatztyp Licensing-Opportunities Games die Opportunity auf verloren
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <controllingField>StageName</controllingField>
+            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Initial conversation</fullName>
+                    <fullName>Ban on advertising</fullName>
                     <default>false</default>
-                    <label>Initial conversation</label>
-                </value>
-                <value>
-                    <fullName>Evaluation negative</fullName>
-                    <default>false</default>
-                    <label>Evaluation negative</label>
-                </value>
-                <value>
-                    <fullName>Decision negative</fullName>
-                    <default>false</default>
-                    <label>Decision negative</label>
-                </value>
-                <value>
-                    <fullName>Term sheet</fullName>
-                    <default>false</default>
-                    <label>Term sheet</label>
-                </value>
-                <value>
-                    <fullName>Contract</fullName>
-                    <default>false</default>
-                    <label>Contract</label>
-                </value>
-                <value>
-                    <fullName>Pricing and Performance</fullName>
-                    <default>false</default>
-                    <label>Pricing and Performance</label>
-                </value>
-                <value>
-                    <fullName>Exceeded Budget / Budget Shift</fullName>
-                    <default>false</default>
-                    <label>Exceeded Budget / Budget Shift</label>
-                </value>
-                <value>
-                    <fullName>Internal Reasons</fullName>
-                    <default>false</default>
-                    <label>Internal Reasons</label>
-                </value>
-                <value>
-                    <fullName>Business Model does not fit</fullName>
-                    <default>false</default>
-                    <label>Business Model does not fit</label>
-                </value>
-                <value>
-                    <fullName>Out of business, bankruptcy</fullName>
-                    <default>false</default>
-                    <label>Out of business, bankruptcy</label>
-                </value>
-                <value>
-                    <fullName>Planned End of Campaign</fullName>
-                    <default>false</default>
-                    <label>Planned End of Campaign</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Exclusiveness</fullName>
-                    <default>false</default>
-                    <label>Exclusiveness</label>
-                </value>
-                <value>
-                    <fullName>Performance issues</fullName>
-                    <default>false</default>
-                    <label>Performance issues</label>
-                </value>
-                <value>
-                    <fullName>Deal terms</fullName>
-                    <default>false</default>
-                    <label>Deal terms</label>
-                </value>
-                <value>
-                    <fullName>Budget shift</fullName>
-                    <default>false</default>
-                    <label>Budget shift</label>
-                </value>
-                <value>
-                    <fullName>Timing of campaign</fullName>
-                    <default>false</default>
-                    <label>Timing of campaign</label>
-                </value>
-                <value>
-                    <fullName>Committment under negotiation</fullName>
-                    <default>false</default>
-                    <label>Committment under negotiation</label>
-                </value>
-                <value>
-                    <fullName>Intern</fullName>
-                    <default>false</default>
-                    <label>Intern</label>
-                </value>
-                <value>
-                    <fullName>Performance</fullName>
-                    <default>false</default>
-                    <label>Performance</label>
-                </value>
-                <value>
-                    <fullName>Preis</fullName>
-                    <default>false</default>
-                    <label>Preis</label>
-                </value>
-                <value>
-                    <fullName>Story fit</fullName>
-                    <default>false</default>
-                    <label>Story fit</label>
+                    <label>Ban on advertising</label>
                 </value>
                 <value>
                     <fullName>Competitor chosen</fullName>
@@ -1977,9 +1759,14 @@ Wird bei Datensatztyp Licensing-Opportunities Games die Opportunity auf verloren
                     <label>Competitor chosen</label>
                 </value>
                 <value>
-                    <fullName>No availability</fullName>
+                    <fullName>Decision against idea/deal</fullName>
                     <default>false</default>
-                    <label>No availability</label>
+                    <label>Decision against idea/deal</label>
+                </value>
+                <value>
+                    <fullName>Decision negative</fullName>
+                    <default>false</default>
+                    <label>Decision negative</label>
                 </value>
                 <value>
                     <fullName>Different medium chosen</fullName>
@@ -1987,34 +1774,9 @@ Wird bei Datensatztyp Licensing-Opportunities Games die Opportunity auf verloren
                     <label>Different medium chosen</label>
                 </value>
                 <value>
-                    <fullName>D&amp;A offer accepted</fullName>
+                    <fullName>Distressed Company</fullName>
                     <default>false</default>
-                    <label>D&amp;A offer accepted</label>
-                </value>
-                <value>
-                    <fullName>Weak target group</fullName>
-                    <default>false</default>
-                    <label>Weak target group</label>
-                </value>
-                <value>
-                    <fullName>Ban on advertising</fullName>
-                    <default>false</default>
-                    <label>Ban on advertising</label>
-                </value>
-                <value>
-                    <fullName>Rejected by channel</fullName>
-                    <default>false</default>
-                    <label>Rejected by channel</label>
-                </value>
-                <value>
-                    <fullName>Rejected by AdF</fullName>
-                    <default>false</default>
-                    <label>Rejected by AdF</label>
-                </value>
-                <value>
-                    <fullName>Program change</fullName>
-                    <default>false</default>
-                    <label>Program change</label>
+                    <label>Distressed Company</label>
                 </value>
                 <value>
                     <fullName>Duplicate</fullName>
@@ -2022,278 +1784,97 @@ Wird bei Datensatztyp Licensing-Opportunities Games die Opportunity auf verloren
                     <label>Duplicate</label>
                 </value>
                 <value>
+                    <fullName>Exceeded Budget / Budget Shift</fullName>
+                    <default>false</default>
+                    <label>Exceeded Budget / Budget Shift</label>
+                </value>
+                <value>
+                    <fullName>Initial conversation</fullName>
+                    <default>false</default>
+                    <label>Initial conversation</label>
+                </value>
+                <value>
+                    <fullName>Intern</fullName>
+                    <default>false</default>
+                    <label>Intern</label>
+                </value>
+                <value>
+                    <fullName>Internal Reasons</fullName>
+                    <default>false</default>
+                    <label>Internal Reasons</label>
+                </value>
+                <value>
                     <fullName>No advertiser feedback</fullName>
                     <default>false</default>
                     <label>No advertiser feedback</label>
                 </value>
                 <value>
-                    <fullName>Cancellation</fullName>
+                    <fullName>No availability</fullName>
                     <default>false</default>
-                    <label>Cancellation</label>
+                    <label>No availability</label>
                 </value>
                 <value>
-                    <fullName>Decision against idea/deal</fullName>
+                    <fullName>Other</fullName>
                     <default>false</default>
-                    <label>Decision against idea/deal</label>
+                    <label>Other</label>
                 </value>
                 <value>
-                    <fullName>Distressed Company</fullName>
+                    <fullName>Performance</fullName>
                     <default>false</default>
-                    <label>Distressed Company</label>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Performance issues</fullName>
+                    <default>false</default>
+                    <label>Performance issues</label>
+                </value>
+                <value>
+                    <fullName>Preis</fullName>
+                    <default>false</default>
+                    <label>Preis</label>
+                </value>
+                <value>
+                    <fullName>Pricing and Performance</fullName>
+                    <default>false</default>
+                    <label>Pricing and Performance</label>
+                </value>
+                <value>
+                    <fullName>Program change</fullName>
+                    <default>false</default>
+                    <label>Program change</label>
+                </value>
+                <value>
+                    <fullName>Rejected by AdF</fullName>
+                    <default>false</default>
+                    <label>Rejected by AdF</label>
+                </value>
+                <value>
+                    <fullName>Rejected by channel</fullName>
+                    <default>false</default>
+                    <label>Rejected by channel</label>
+                </value>
+                <value>
+                    <fullName>Story fit</fullName>
+                    <default>false</default>
+                    <label>Story fit</label>
+                </value>
+                <value>
+                    <fullName>Timing of campaign</fullName>
+                    <default>false</default>
+                    <label>Timing of campaign</label>
+                </value>
+                <value>
+                    <fullName>Weak target group</fullName>
+                    <default>false</default>
+                    <label>Weak target group</label>
+                </value>
+                <value>
+                    <fullName>__</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>__</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Initial conversation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Evaluation negative</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Decision negative</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Term sheet</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Contract</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Pricing and Performance</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Exceeded Budget / Budget Shift</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Internal Reasons</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Business Model does not fit</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Out of business, bankruptcy</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Planned End of Campaign</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Other</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Exclusiveness</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Performance issues</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Deal terms</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Budget shift</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Timing of campaign</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Committment under negotiation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Intern</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Performance</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Preis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Story fit</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Competitor chosen</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>No availability</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Different medium chosen</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>D&amp;A offer accepted</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Weak target group</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Ban on advertising</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Rejected by channel</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Rejected by AdF</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Program change</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Duplicate</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>No advertiser feedback</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Cancellation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Decision against idea/deal</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Closed Lost</controllingFieldValue>
-                <controllingFieldValue>Geschlossen und verloren</controllingFieldValue>
-                <controllingFieldValue>Omitted</controllingFieldValue>
-                <controllingFieldValue>SE_Closed Lost</controllingFieldValue>
-                <valueName>Distressed Company</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -2314,7 +1895,7 @@ Wird bei Datensatztyp Licensing-Opportunities Games die Opportunity auf verloren
     <fields>
         <fullName>P7S1_Mn3__c</fullName>
         <externalId>false</externalId>
-        <formula>/* Achtung: Funktioniert nur mit ID15, nicht mit ID18! */
+        <formula>/* Achtung: Funktioniert nur mit ID15, nicht mit ID18! */ 
 
 CASE( RecordTypeId ,
 
@@ -2344,11 +1925,11 @@ CASE( RecordTypeId ,
 /*** Sales Excellence Opportunities ***/
 &apos;012570000007Qaq&apos; , SomTv_MN3__c , /* Achtung: Funktioniert nur mit ID15, nicht mit ID18! */
 
-/*** d&amp;a Sales Opportunities ***/
-&apos;012570000007QjJ&apos; , SomTv_MN3__c,
+/*** d&amp;a Sales Opportunities ***/ 
+&apos;012570000007QjJ&apos; , SomTv_MN3__c, 
 
-/*** Maxdome Opportunities ***/
-&apos;012570000007Qia&apos; , SomTv_MN3__c,
+/*** Maxdome Opportunities ***/ 
+&apos;012570000007Qia&apos; , SomTv_MN3__c, 
 
 /*** 7Ventures Opportunities ***/
 /*** Ven_Default ***/
@@ -2398,10 +1979,10 @@ Amount
         <fullName>P7S1_OpportunityDashboardDate__c</fullName>
         <description>Date is used for Dashboard grouping by year</description>
         <externalId>false</externalId>
-        <formula>IF (
-ISBLANK ( TEXT ( SomTv_Jahr__c ) ) ,
-CloseDate ,
-DATE ( VALUE ( TEXT ( SomTv_Jahr__c ) ) , MONTH( CloseDate ) , DAY( CloseDate ) )
+        <formula>IF ( 
+ISBLANK ( TEXT ( SomTv_Jahr__c ) ) , 
+CloseDate , 
+DATE ( VALUE ( TEXT ( SomTv_Jahr__c ) ) , MONTH( CloseDate ) , DAY( CloseDate ) ) 
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>Date is used for Dashboard grouping by year</inlineHelpText>
@@ -2410,6 +1991,19 @@ DATE ( VALUE ( TEXT ( SomTv_Jahr__c ) ) , MONTH( CloseDate ) , DAY( CloseDate ) 
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_OpportunityID__c</fullName>
+        <description>ID 18 der Opportunity für die Anzeige im Layout und in Berichten</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <inlineHelpText>Opportunity ID - kann für Verknüpfungen mit anderen Systemen u.a. in Excel verwendet werden</inlineHelpText>
+        <label>Opportunity ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>P7S1_OpportunityOwnerUnit__c</fullName>
@@ -3824,7 +3418,7 @@ Campaign.Parent.Name
         <fullName>SomTv_PlattformSort__c</fullName>
         <description>berechnet Sortierkriterium für Plattformen</description>
         <externalId>false</externalId>
-        <formula>CASE( SomTv_Plattform__c ,
+        <formula>CASE( SomTv_Plattform__c , 
 &apos;Kernsender&apos;, 100,
 &apos;Sixx&apos;, 200,
 &apos;P7MAXX&apos;, 300,
@@ -3986,7 +3580,7 @@ Nur für Admins/Workflow Zugriffsrecht.</inlineHelpText>
         <description>berechnet die Gesamtsortierung</description>
         <externalId>false</externalId>
         <formula>IF ( VALUE(TEXT(SomTv_Jahr__c))&gt;0,
--VALUE(TEXT(SomTv_Jahr__c))*10000
+-VALUE(TEXT(SomTv_Jahr__c))*10000 
 +  SomTv_PlattformSort__c
 +  SomTv_RecTypeSort__c,
 
@@ -4522,12 +4116,12 @@ Nur für Admins/Workflow Zugriffsrecht.</inlineHelpText>
         <externalId>false</externalId>
         <inlineHelpText>Beschreibung Inhalte des variablen Umsatzanteils und Hintergründe zu deren Kalkulationsbasis</inlineHelpText>
         <label>Beschreibung Variable Umsatzanteile</label>
-        <length>300</length>
+        <length>500</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
-        <visibleLines>8</visibleLines>
+        <visibleLines>10</visibleLines>
     </fields>
     <fields>
         <fullName>Star_BruttoBarterVolumen__c</fullName>
@@ -5266,118 +4860,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>Ven_Bridge__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Bridge</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Ven_BusinessModel__c</fullName>
-        <externalId>false</externalId>
-        <label>Business Model</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Classified listing</fullName>
-                    <default>false</default>
-                    <label>Classified listing</label>
-                </value>
-                <value>
-                    <fullName>E-Commerce</fullName>
-                    <default>false</default>
-                    <label>E-Commerce</label>
-                </value>
-                <value>
-                    <fullName>Manufacturing</fullName>
-                    <default>false</default>
-                    <label>Manufacturing</label>
-                </value>
-                <value>
-                    <fullName>Commission</fullName>
-                    <default>false</default>
-                    <label>Commission</label>
-                </value>
-                <value>
-                    <fullName>Freemium</fullName>
-                    <default>false</default>
-                    <label>Freemium</label>
-                </value>
-                <value>
-                    <fullName>Marketplace</fullName>
-                    <default>false</default>
-                    <label>Marketplace</label>
-                </value>
-                <value>
-                    <fullName>Subscription</fullName>
-                    <default>false</default>
-                    <label>Subscription</label>
-                </value>
-                <value>
-                    <fullName>Booking</fullName>
-                    <default>false</default>
-                    <label>Booking</label>
-                </value>
-                <value>
-                    <fullName>Content</fullName>
-                    <default>false</default>
-                    <label>Content</label>
-                </value>
-                <value>
-                    <fullName>Lead generation</fullName>
-                    <default>false</default>
-                    <label>Lead generation</label>
-                </value>
-                <value>
-                    <fullName>Virtual items</fullName>
-                    <default>false</default>
-                    <label>Virtual items</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Ven_BusinessType__c</fullName>
-        <externalId>false</externalId>
-        <label>Business Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Digital</fullName>
-                    <default>false</default>
-                    <label>Digital</label>
-                </value>
-                <value>
-                    <fullName>Physical</fullName>
-                    <default>false</default>
-                    <label>Physical</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Ven_Call_Option__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Für Equity zuständig</description>
@@ -5528,37 +5010,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Ven_CustomerAssesment__c</fullName>
-        <externalId>false</externalId>
-        <label>Customer Assessment</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>A</fullName>
-                    <default>false</default>
-                    <label>A</label>
-                </value>
-                <value>
-                    <fullName>B</fullName>
-                    <default>false</default>
-                    <label>B</label>
-                </value>
-                <value>
-                    <fullName>C</fullName>
-                    <default>false</default>
-                    <label>C</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Ven_D_A_Board__c</fullName>
@@ -5827,16 +5278,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <type>Percent</type>
     </fields>
     <fields>
-        <fullName>Ven_Equity__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Equity</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Ven_EstimateCashYieldCurrentYear__c</fullName>
         <externalId>false</externalId>
         <label>Estimate Cash Yield (Current Year)</label>
@@ -5934,16 +5375,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Ven_Fillup__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Fill-up</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Ven_FullNetPotentialCurrentYear__c</fullName>
         <externalId>false</externalId>
         <formula>Ven_TotalGmvCurrentYear__c *  Ven_EffectiveYield__c</formula>
@@ -6033,19 +5464,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Ven_IndustryChampion__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Industry Champion</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Benutzer</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Ven_International__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -6124,16 +5542,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Ven_MG__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>MG</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Ven_Market_Description__c</fullName>
@@ -6257,7 +5665,7 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
     <fields>
         <fullName>Ven_MediaPlanner__c</fullName>
         <externalId>false</externalId>
-        <label>Internal Media Agency</label>
+        <label>Media Planner</label>
         <length>50</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -6555,32 +5963,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>Ven_RiskProfile__c</fullName>
-        <externalId>false</externalId>
-        <label>Risk Profile</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Mature</fullName>
-                    <default>false</default>
-                    <label>Mature</label>
-                </value>
-                <value>
-                    <fullName>Risky</fullName>
-                    <default>false</default>
-                    <label>Risky</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Ven_SIC_II__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Gremium für den Genehmigungsprozess von Seven Ventures Opportunities.</description>
@@ -6752,7 +6134,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <controllingField>StageName</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -6796,38 +6177,6 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
                     <label>Rejected by Account</label>
                 </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Finished</controllingFieldValue>
-                <valueName>Expired</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Finished</controllingFieldValue>
-                <valueName>Terminated by 7V</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Finished</controllingFieldValue>
-                <valueName>Terminated by Account</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Finished</controllingFieldValue>
-                <valueName>Terminated by mutual agreement</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Finished</controllingFieldValue>
-                <valueName>Exit</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Finished</controllingFieldValue>
-                <valueName>Insolvency</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Rejected</controllingFieldValue>
-                <valueName>Rejected by 7V</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Rejected</controllingFieldValue>
-                <valueName>Rejected by Account</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -7106,9 +6455,9 @@ Diese Informationen werden nach der Konvertierung eines Lead automatisch in dies
     </fields>
     <fields>
         <fullName>Ven_TS05_Source_Person__c</fullName>
-        <description>Wird in TS05 der ProMetheus-Salesforce-Schnittstelle verwendet.
+        <description>Wird in TS05 der ProMetheus-Salesforce-Schnittstelle verwendet. 
 
-Bedeutung: Vollständiger Name der Source Person dieser Opportunity
+Bedeutung: Vollständiger Name der Source Person dieser Opportunity 
 
 ProMetheus-Name: ?</description>
         <externalId>false</externalId>
@@ -7611,7 +6960,7 @@ ProMetheus-Name: ?</description>
     <fields>
         <fullName>Ven_Vertical__c</fullName>
         <externalId>false</externalId>
-        <label>Industry</label>
+        <label>Vertical</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -7667,7 +7016,7 @@ ProMetheus-Name: ?</description>
         <fullName>Ven_Verticals__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
-        <label>Industry</label>
+        <label>Vertical</label>
         <referenceTo>Ven_Vertical__c</referenceTo>
         <relationshipLabel>Opportunities</relationshipLabel>
         <relationshipName>Opportunities</relationshipName>
@@ -8487,7 +7836,59 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
+                <fullName>Ban on advertising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8495,11 +7896,39 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Preis</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Pricing and Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9469,6 +8898,105 @@ ProMetheus-Name: ?</description>
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>P7S1_LostReason__c</picklist>
+            <values>
+                <fullName>Ban on advertising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Sgn_CPX__c</picklist>
             <values>
                 <fullName>CPA</fullName>
@@ -10131,6 +9659,105 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>irrelevant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>P7S1_LostReason__c</picklist>
+            <values>
+                <fullName>Ban on advertising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11135,23 +10762,43 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Budget shift</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Business Model does not fit</fullName>
+                <fullName>Competitor chosen</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Committment under negotiation</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Deal terms</fullName>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Exclusiveness</fullName>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11159,7 +10806,19 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of business%2C bankruptcy</fullName>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11167,7 +10826,35 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12329,23 +12016,15 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Budget shift</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Business Model does not fit</fullName>
+                <fullName>Competitor chosen</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Committment under negotiation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Deal terms</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12353,15 +12032,19 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Evaluation negative</fullName>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Exclusiveness</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12377,11 +12060,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of business%2C bankruptcy</fullName>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12393,10 +12080,6 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Planned End of Campaign</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Preis</fullName>
                 <default>false</default>
             </values>
@@ -12405,15 +12088,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Term sheet</fullName>
+                <fullName>Timing of campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Timing of campaign</fullName>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13757,11 +13452,15 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Business Model does not fit</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Contract</fullName>
+                <fullName>Competitor chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13769,7 +13468,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Evaluation negative</fullName>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13781,7 +13488,19 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No availability</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13789,11 +13508,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of business%2C bankruptcy</fullName>
+                <fullName>Performance</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Planned End of Campaign</fullName>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13801,7 +13524,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Term sheet</fullName>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14781,11 +14524,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Decision against idea%2Fdeal</fullName>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14797,11 +14540,51 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14814,6 +14597,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15719,7 +15506,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15731,7 +15522,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15740,6 +15551,22 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15752,6 +15579,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16665,7 +16496,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16677,7 +16512,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16686,6 +16541,22 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16698,6 +16569,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17611,11 +17486,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Decision against idea%2Fdeal</fullName>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17627,11 +17502,51 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17644,6 +17559,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18553,7 +18472,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18565,7 +18488,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18574,6 +18517,22 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18586,6 +18545,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19499,7 +19462,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19511,7 +19478,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19520,6 +19507,22 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19532,6 +19535,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20449,7 +20456,11 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>D%26A offer accepted</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20461,7 +20472,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20470,6 +20501,22 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20482,6 +20529,10 @@ ProMetheus-Name: ?</description>
             </values>
             <values>
                 <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21579,23 +21630,15 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Budget shift</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Business Model does not fit</fullName>
+                <fullName>Competitor chosen</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Committment under negotiation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Deal terms</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21603,15 +21646,19 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Evaluation negative</fullName>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Exclusiveness</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21627,11 +21674,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of business%2C bankruptcy</fullName>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21643,10 +21694,6 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Planned End of Campaign</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Preis</fullName>
                 <default>false</default>
             </values>
@@ -21655,15 +21702,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Term sheet</fullName>
+                <fullName>Timing of campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Timing of campaign</fullName>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -22911,11 +22970,27 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Cancellation</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Competitor chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision against idea%2Fdeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision negative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22927,6 +23002,18 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Initial conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
@@ -22935,7 +23022,47 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Preis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing and Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -23832,23 +23959,15 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Budget shift</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Business Model does not fit</fullName>
+                <fullName>Competitor chosen</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Committment under negotiation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contract</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Deal terms</fullName>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -23856,15 +23975,19 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Evaluation negative</fullName>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Exceeded Budget %2F Budget Shift</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Exclusiveness</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -23880,11 +24003,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>No advertiser feedback</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of business%2C bankruptcy</fullName>
+                <fullName>No availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -23896,10 +24023,6 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Planned End of Campaign</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Preis</fullName>
                 <default>false</default>
             </values>
@@ -23908,15 +24031,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Story fit</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Term sheet</fullName>
+                <fullName>Timing of campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Timing of campaign</fullName>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25110,11 +25245,15 @@ ProMetheus-Name: ?</description>
         <picklistValues>
             <picklist>P7S1_LostReason__c</picklist>
             <values>
-                <fullName>Business Model does not fit</fullName>
+                <fullName>Ban on advertising</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Contract</fullName>
+                <fullName>Competitor chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision against idea%2Fdeal</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25122,7 +25261,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Evaluation negative</fullName>
+                <fullName>Different medium chosen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distressed Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25134,7 +25281,19 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Internal Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No advertiser feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No availability</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25142,11 +25301,15 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of business%2C bankruptcy</fullName>
+                <fullName>Performance</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Planned End of Campaign</fullName>
+                <fullName>Performance issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preis</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25154,7 +25317,27 @@ ProMetheus-Name: ?</description>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Term sheet</fullName>
+                <fullName>Program change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by AdF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Story fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weak target group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25843,7 +26026,7 @@ ProMetheus-Name: ?</description>
         <description>Wenn das Feld Revenue first year befüllt ist, muss das Feld Betrag den selben Wert ausweisen.</description>
         <errorConditionFormula>AND(
 NOT(ISBLANK(Gam_Revenue_first_year__c)),
-Amount &lt;&gt;  Gam_Revenue_first_year__c,
+Amount &lt;&gt;  Gam_Revenue_first_year__c, 
 ISPICKVAL($User.P7S1_Sphere__c, &apos;Gam&apos;)
 )</errorConditionFormula>
         <errorMessage>Wenn das Feld &quot;Revenue First Year&quot; befüllt ist, muss der gleiche Wert im Feld MB3 stehen.</errorMessage>
@@ -25868,37 +26051,6 @@ AREA KV 02219</description>
         <errorMessage>Ab einer Wahrscheinlichkeit von 30% müssen alle 5  Kriterien angegeben werden.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Gam_LicensingGrundVerloren</fullName>
-        <active>false</active>
-        <description>Wenn es sich um eine TV, Sales Push, AdFactory oder Games Licensing-Opportunity handelt, muss bei einer verloren Opportunity der Grund angegeben werden..</description>
-        <errorConditionFormula>$Profile.Id != $Label.ProfileIdAdmin
-&amp;&amp;
-AND (
-(OR (
-  RecordType.Id = &quot;012D0000000Qjm9&quot;,
-  RecordType.Id = &quot;012D0000000QmVz&quot;,
-  RecordType.Id = &quot;012D0000000QmW0&quot;,
-  RecordType.Id = &quot;012D0000000QmVy&quot;,
-  RecordType.Id = &quot;012D0000000QmW2&quot;,
-  RecordType.Id = &quot;012D0000000QmW1&quot;,
-  RecordType.Id = &quot;012D0000000QmVx&quot;)),
- (OR (
-    AND (
-      IsClosed ,
-      NOT (IsWon),
-      ISBLANK ( TEXT ( P7S1_LostReason__c ) )
-    ) ,
-    AND (
-      ISPICKVAL( P7S1_LostReason__c , &apos;Other&apos; ),
-      ISBLANK ( P7S1_LostReasonDetails__c )
-  )
-    )
-  )
-)</errorConditionFormula>
-        <errorDisplayField>P7S1_LostReason__c</errorDisplayField>
-        <errorMessage>Bitte bei einer verloren Opportunity den Grund angeben. Bei Auswahl &quot;Andere&quot; bitte das Textfeld füllen.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Gam_LicensingPflichtfelder</fullName>
         <active>true</active>
         <description>Wenn es sich um eine Games Licensing-Opportunity handelt (=Datensatztyp Gam_Licensing), müssen die beiden Felder &quot;Entwicklungsstadium&quot; und &quot;Umsatzpotential&quot; gepflegt sein.</description>
@@ -25910,27 +26062,33 @@ ISBLANK( Text(Gam_Umsatzpotenzial__c))
         <errorMessage>Die Felder &quot;Entwicklungsstadium&quot; und &quot;Umsatzpotential&quot; müssen bei Licensing-Opportunities beide gepflegt sein.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>MT_CheckOnlyOneBarter</fullName>
-        <active>true</active>
-        <errorConditionFormula>IF ( P7S1_HasMediaBarter__c , 1 , 0 ) +
- IF ( P7S1_HasMediaPartBarter__c , 1 , 0 )
-&gt; 1</errorConditionFormula>
-        <errorDisplayField>P7S1_HasMediaBarter__c</errorDisplayField>
-        <errorMessage>Es darf nur Barter ODER Teil-Barter angeklickt sein</errorMessage>
+        <fullName>P7S1_ReasonLost</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+ OR(
+  RecordTypeId = &quot;012D0000000QmVz&quot;,
+  RecordTypeId = &quot;012D0000000QmW0&quot;,
+  RecordTypeId = &quot;012D0000000QmVy&quot;,
+  RecordTypeId = &quot;012D0000000QmW2&quot;,
+  RecordTypeId = &quot;012D0000000QmW1&quot;,
+  RecordTypeId = &quot;012D0000000QmVx&quot;
+ ),
+ IsClosed == true,
+ IsWon == false,
+ ISBLANK(TEXT(P7S1_LostReason__c))
+)</errorConditionFormula>
+        <errorDisplayField>P7S1_LostReason__c</errorDisplayField>
+        <errorMessage>Bei abgelhnten Angeboten muss ein Grund angegeben werden</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Prevent_unchecking_of_Barter_Checkbox</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(ISCHANGED(P7S1_HasMediaBarter__c), !P7S1_HasMediaBarter__c)</errorConditionFormula>
-        <errorDisplayField>P7S1_HasMediaBarter__c</errorDisplayField>
-        <errorMessage>Es ist nicht erlaubt das Feld zu leeren</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Prevent_unchecking_of_part_barter_box</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(ISCHANGED(P7S1_HasMediaPartBarter__c), !P7S1_HasMediaBarter__c)</errorConditionFormula>
-        <errorDisplayField>P7S1_HasMediaPartBarter__c</errorDisplayField>
-        <errorMessage>Es ist nicht erlaubt das Feld zu leeren</errorMessage>
+        <fullName>P7S1_ReasonLostDetails</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+ISPICKVAL(P7S1_LostReason__c, &apos;Other&apos;),
+ISBLANK(P7S1_LostReasonDetails__c)
+)</errorConditionFormula>
+        <errorDisplayField>P7S1_LostReasonDetails__c</errorDisplayField>
+        <errorMessage>Bei abgelehnten Angeboten mit dem Grund &quot;Andere&quot; müssen Details in diesem Feldangegeben werden</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>SomTv_AccZuUeberpruefen_OpportuniProtect</fullName>
@@ -25961,13 +26119,13 @@ ISBLANK(Amount)</errorConditionFormula>
         <fullName>SomTv_LaufendeNoProCommit</fullName>
         <active>true</active>
         <description>Bei SomTv-Datensatztypen ist die Laufende-Nr Pflicht!</description>
-        <errorConditionFormula>OR(
-RecordType.DeveloperName = &quot;SomTv_Commitment&quot;,
-RecordType.DeveloperName = &quot;SomTv_BuchungenOhneVertraege&quot;,
-RecordType.DeveloperName = &quot;SomTv_Paket&quot;,
+        <errorConditionFormula>OR( 
+RecordType.DeveloperName = &quot;SomTv_Commitment&quot;, 
+RecordType.DeveloperName = &quot;SomTv_BuchungenOhneVertraege&quot;,  
+RecordType.DeveloperName = &quot;SomTv_Paket&quot;, 
 RecordType.DeveloperName = &quot;SomTv_Zubuchung&quot;)
 
-&amp;&amp;
+&amp;&amp; 
 
 ISPICKVAL(SomTv_Laufende_Nummer_ProCommit__c,&quot;&quot;)
 
@@ -26028,9 +26186,9 @@ RecordTypeId = &quot;012D0000000QmW0&quot;,
 RecordTypeId = &quot;012D0000000QmW2&quot;,
 RecordTypeId = &quot;012D0000000QmW1&quot;)
 
- &amp;&amp;
+ &amp;&amp; 
 
-NOT(OR(
+NOT(OR( 
 Probability =0.00,
 Probability =0.25,
 Probability =0.50,

@@ -1,0 +1,7 @@
+Hallo {!Opportunity.OwnerFullName},
+
+folgende Opportunity {!Opportunity.Name} wurde von den zusätzlichen Gremien freigegeben.
+Die Opportunity ist endgültig genehmigt und mit Approved markiert worden.
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

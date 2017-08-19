@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MMAdClientApprovalEmail</name>
+    <style>none</style>
+    <subject>Request for AD approval</subject>
+    <textOnly>Hi {!ADvendio__BriefingScript__c.ADvendio__Contact__c},
+
+The advertisement is ready for your review.
+{!IF(BriefingScript__c.ADvendio_URL__c=&apos;&apos;,&apos;&apos;,&apos;Please find the URL:&apos; ) } {!IF(BriefingScript__c.ADvendio_Url__c=&apos;&apos;,&apos;&apos;,BriefingScript__c.ADvendio_Url__c)}
+Please give us your approval so we can proceed.
+To approve the script please click on approve link, otherwise click the reject link. Your response is valuable to us.
+
+Click here for your approval:
+{!$Setup.ADvendio__MMDomainPageURL__c.ADvendio__SiteUrl__c}?BriefingScriptId={!ADvendio__BriefingScript__c.Id}&amp;ApprovalResponseCode=Approved+AD&amp;GuidResponseCode={!ADvendio__BriefingScript__c.ADvendio__UniqueKey__c}
+
+Click here for your rejection:
+{!$Setup.ADvendio__MMDomainPageURL__c.ADvendio__SiteUrl__c}?BriefingScriptId={!ADvendio__BriefingScript__c.Id}&amp;ApprovalResponseCode=Rejected+AD&amp;GuidResponseCode={!ADvendio__BriefingScript__c.ADvendio__UniqueKey__c}
+
+Sincerely,
+ADvendio Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

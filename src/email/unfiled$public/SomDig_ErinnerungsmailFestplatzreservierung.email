@@ -1,0 +1,8 @@
+Hallo {!ADvendio__MediaCampaign__c.OwnerFirstName},
+
+deine reservierte Festplatzierung in der Mediakampagne {!ADvendio__MediaCampaign__c.ADvendio__Offer_Number__c} mit der Phase '{!ADvendio__MediaCampaign__c.ADvendio__Stage__c}' wird innerhalb der nächsten drei Wochen fällig ({!ADvendio__MediaCampaign__c.ADvendio__Campaign_Start_Date__c}). 
+Bitte Buchungsabsicht gegenchecken und bei Bedarf wieder freigeben. 
+
+Vielen Dank!
+
+Anbei der Link zur Mediakampagne: {!ADvendio__MediaCampaign__c.Link}

@@ -1,0 +1,24 @@
+<html>
+    <body>
+
+     <div id="content" style="border: solid 1px; width: 90%;">
+            <div style=" margin: 1%">
+            Hi {!ADvendio__BriefingScript__c.ADvendio__Contact__c},<br/><br/>
+            the advertisement is ready for your review.<br/>
+
+{!IF(BriefingScript__c.ADvendio_URL__c='','','Please find the URL:' ) }
+<a href={!BriefingScript__c.AdDvendio_Url__c }>{!IF(BriefingScript__c.ADvendio_Url__c='','',BriefingScript__c.ADvendio_Url__c)}</a> <br/>
+
+            Please give us your approval so we can proceed.
+To approve the script please click on approve link, otherwise click the reject link. Your response is valuable to us.<br/><br/>
+              Click here for your approval: <a href="{!$Setup.ADvendio__MMDomainPageURL__c.ADvendio__SiteUrl__c}?BriefingScriptId={!ADvendio__BriefingScript__c.Id}&ApprovalResponseCode=Approved+AD&GuidResponseCode={!ADvendio__BriefingScript__c.ADvendio__UniqueKey__c}">Approve</a><br/>
+Click here for your rejection:
+<a href="{!$Setup.ADvendio__MMDomainPageURL__c.ADvendio__SiteUrl__c}?BriefingScriptId={!ADvendio__BriefingScript__c.Id}&ApprovalResponseCode=Rejected+AD&GuidResponseCode={!ADvendio__BriefingScript__c.ADvendio__UniqueKey__c}" >Reject</a><br/>
+        </p>
+<br/>
+        Sincerely,<br/>
+        ADvendio Team
+</div>
+        </div>
+    </body>
+</html>

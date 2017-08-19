@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Informationen zur Verwaltung von Zugängen zu Portalen wie sevenonemedia.de und adfactory.de</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>P7S1_AGB__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Zustimmung des Benutzers zu den AGB</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zustimmung des Benutzers zu den AGB</inlineHelpText>
+        <label>Zustimmung zu AGB</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_AGB_akzeptiert_am__c</fullName>
+        <description>Datum, an dem der Benutzer den AGB zugestimmt hat</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Datum, an dem der Benutzer den AGB zugestimmt hat</inlineHelpText>
+        <label>AGB akzeptiert am</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_ActivationLink__c</fullName>
+        <description>Aktivierungslink für das Portal - wird in der E-Mail an den Kunden versendet</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Aktivierungslink für das Portal - wird in der E-Mail an den Kunden versendet</inlineHelpText>
+        <label>Activation Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Aktiviert_am__c</fullName>
+        <description>Datum der Aktivierung durch P7S1 Mitarbeiter</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Datum der Aktivierung durch P7S1 Mitarbeiter</inlineHelpText>
+        <label>Aktiviert am</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Anrede__c</fullName>
+        <description>Anrede des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Anrede des Benutzers</inlineHelpText>
+        <label>Anrede</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Herr</fullName>
+                    <default>false</default>
+                    <label>Herr</label>
+                </value>
+                <value>
+                    <fullName>Frau</fullName>
+                    <default>false</default>
+                    <label>Frau</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>P7S1_Bereich__c</fullName>
+        <description>Bereich des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bereich des Benutzers</inlineHelpText>
+        <label>Bereich</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Beschreibung__c</fullName>
+        <description>Weitere Informationen und Hinweise</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Weitere Informationen und Hinweise</inlineHelpText>
+        <label>Beschreibung</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Kontakt mit Zugang zum Portal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Kontakt mit Zugang zum Portal</inlineHelpText>
+        <label>Kontakt</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Portal Logins</relationshipLabel>
+        <relationshipName>Portal_Logins</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Deaktiviert_am__c</fullName>
+        <description>Datum der letzten Deaktivierung</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Datum der letzten Deaktivierung</inlineHelpText>
+        <label>Deaktiviert am</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_DeleteConfirmLink__c</fullName>
+        <externalId>false</externalId>
+        <label>Delete Confirm Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_EMail__c</fullName>
+        <description>Registrierte E-Mail Adresse</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Registrierte E-Mail Adresse</inlineHelpText>
+        <label>E-Mail Adresse</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Emp__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Zugehöriger Mitarbeiter, soweit der Kontakt ein Konzernmitglied ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zugehöriger Mitarbeiter, soweit der Kontakt ein Konzernmitglied ist.</inlineHelpText>
+        <label>Mitarbeiter</label>
+        <referenceTo>P7S1_Emp__c</referenceTo>
+        <relationshipLabel>Portal Logins</relationshipLabel>
+        <relationshipName>Portal_Logins</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Fax__c</fullName>
+        <description>Faxnummer des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Faxnummer des Benutzers</inlineHelpText>
+        <label>Fax</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Firma__c</fullName>
+        <description>Firma des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Firma des Benutzers</inlineHelpText>
+        <label>Firma</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Funktion__c</fullName>
+        <description>Funktion des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Funktion des Benutzers</inlineHelpText>
+        <label>Funktion</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Geburtstag__c</fullName>
+        <externalId>false</externalId>
+        <label>Geburtstag</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Geloescht_am__c</fullName>
+        <description>Datum der Löschung des Portalzugangs</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Datum der Löschung des Portalzugangs</inlineHelpText>
+        <label>Gelöscht am</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Hausnummer__c</fullName>
+        <description>Hausnummer des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hausnummer des Benutzers</inlineHelpText>
+        <label>Hausnummer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Land__c</fullName>
+        <description>Land des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Land des Benutzers</inlineHelpText>
+        <label>Land</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_LetzteAenderungKunde__c</fullName>
+        <description>Zeigt an, wann der Kunde seine Daten das letzte Mal selbst angepasst hat.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zeigt an, wann der Kunde seine Daten das letzte Mal selbst angepasst hat.</inlineHelpText>
+        <label>Letzte Änderung durch Kunde</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Mobil__c</fullName>
+        <description>Mobiltelefonnummer des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mobiltelefonnummer des Benutzers</inlineHelpText>
+        <label>Mobil</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Nachname__c</fullName>
+        <description>Nachname des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Nachname des Benutzers</inlineHelpText>
+        <label>Nachname</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_NewsletterSubscribeLink__c</fullName>
+        <externalId>false</externalId>
+        <label>Newsletter Subscribe Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Newsletter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Newsletter</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Ort__c</fullName>
+        <description>Ort des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ort des Benutzers</inlineHelpText>
+        <label>Ort</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_PortalId__c</fullName>
+        <description>Id aus dem Portal zur Identifizierung des Logins</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Id aus dem Portal zur Identifizierung des Logins</inlineHelpText>
+        <label>Portal Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Portal_Status__c</fullName>
+        <description>Status für das Portal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status für das Portal</inlineHelpText>
+        <label>Portal Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Neu</fullName>
+                    <default>true</default>
+                    <label>Neu</label>
+                </value>
+                <value>
+                    <fullName>Aktiv</fullName>
+                    <default>false</default>
+                    <label>Aktiv</label>
+                </value>
+                <value>
+                    <fullName>Gesperrt</fullName>
+                    <default>false</default>
+                    <label>Gesperrt</label>
+                </value>
+                <value>
+                    <fullName>Gelöscht</fullName>
+                    <default>false</default>
+                    <label>Gelöscht</label>
+                </value>
+                <value>
+                    <fullName>Liferay Aktiv</fullName>
+                    <default>false</default>
+                    <label>Liferay Aktiv</label>
+                </value>
+                <value>
+                    <fullName>Adfactory Aktiv</fullName>
+                    <default>false</default>
+                    <label>Adfactory Aktiv</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>P7S1_Portal__c</fullName>
+        <description>Auswahl des Portals für das der Zugang gilt</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auswahl des Portals für das der Zugang gilt</inlineHelpText>
+        <label>Portal</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>sevenonemedia.de</fullName>
+                    <default>false</default>
+                    <label>sevenonemedia.de</label>
+                </value>
+                <value>
+                    <fullName>sevenone-adfactory.de</fullName>
+                    <default>false</default>
+                    <label>sevenone-adfactory.de</label>
+                </value>
+                <value>
+                    <fullName>sevenonemedia.ch</fullName>
+                    <default>false</default>
+                    <label>sevenonemedia.ch</label>
+                </value>
+                <value>
+                    <fullName>sevenonemedia.com</fullName>
+                    <default>false</default>
+                    <label>sevenonemedia.com</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>P7S1_Postleitzahl__c</fullName>
+        <description>Postleitzahl des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Postleitzahl des Benutzers</inlineHelpText>
+        <label>Postleitzahl</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Strasse__c</fullName>
+        <description>Strasse des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Strasse des Benutzers</inlineHelpText>
+        <label>Strasse</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Telefon__c</fullName>
+        <description>Nachname des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Nachname des Benutzers</inlineHelpText>
+        <label>Telefon</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_Titel__c</fullName>
+        <description>Titel des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Titel des Benutzers</inlineHelpText>
+        <label>Titel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_Unternehmensart__c</fullName>
+        <description>Unternehmensart des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unternehmensart des Benutzers</inlineHelpText>
+        <label>Unternehmensart</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mediaagentur</fullName>
+                    <default>false</default>
+                    <label>Mediaagentur</label>
+                </value>
+                <value>
+                    <fullName>Werbeagentur</fullName>
+                    <default>false</default>
+                    <label>Werbeagentur</label>
+                </value>
+                <value>
+                    <fullName>Werbungtreibender</fullName>
+                    <default>false</default>
+                    <label>Werbungtreibender</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>P7S1_Vorname__c</fullName>
+        <description>Vorname des Benutzers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vorname des Benutzers</inlineHelpText>
+        <label>Vorname</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Portal Login</label>
+    <listViews>
+        <fullName>AdF_AktuelleAenderung</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>P7S1_Nachname__c</columns>
+        <columns>P7S1_EMail__c</columns>
+        <columns>P7S1_Firma__c</columns>
+        <columns>P7S1_Ort__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Portal__c</field>
+            <operation>equals</operation>
+            <value>sevenone-adfactory.de</value>
+        </filters>
+        <filters>
+            <field>P7S1_LetzteAenderungKunde__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>AdFactory Aktuelle Änderung</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AdF_User</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Vorname__c</columns>
+        <columns>P7S1_Nachname__c</columns>
+        <columns>P7S1_Firma__c</columns>
+        <columns>P7S1_Portal_Status__c</columns>
+        <columns>P7S1_EMail__c</columns>
+        <columns>P7S1_Mobil__c</columns>
+        <columns>P7S1_Postleitzahl__c</columns>
+        <columns>P7S1_Ort__c</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Portal__c</field>
+            <operation>equals</operation>
+            <value>sevenone-adfactory.de</value>
+        </filters>
+        <label>AdFactory User</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AdF_UserLocked</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Vorname__c</columns>
+        <columns>P7S1_Nachname__c</columns>
+        <columns>P7S1_Firma__c</columns>
+        <columns>P7S1_Portal_Status__c</columns>
+        <columns>P7S1_EMail__c</columns>
+        <columns>P7S1_Mobil__c</columns>
+        <columns>P7S1_Postleitzahl__c</columns>
+        <columns>P7S1_Ort__c</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Portal__c</field>
+            <operation>equals</operation>
+            <value>sevenone-adfactory.de</value>
+        </filters>
+        <filters>
+            <field>P7S1_Portal_Status__c</field>
+            <operation>equals</operation>
+            <value>Neu,Gesperrt</value>
+        </filters>
+        <label>AdFactory Gesperrte User</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Som_User</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_PortalId__c</columns>
+        <columns>P7S1_Vorname__c</columns>
+        <columns>P7S1_Nachname__c</columns>
+        <columns>P7S1_Firma__c</columns>
+        <columns>P7S1_Portal_Status__c</columns>
+        <columns>P7S1_EMail__c</columns>
+        <columns>P7S1_Mobil__c</columns>
+        <columns>P7S1_Postleitzahl__c</columns>
+        <columns>P7S1_Ort__c</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Portal__c</field>
+            <operation>equals</operation>
+            <value>sevenonemedia.de,sevenonemedia.ch,sevenonemedia.com</value>
+        </filters>
+        <label>Sevenone Media User</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Som_UserLocked</fullName>
+        <columns>NAME</columns>
+        <columns>P7S1_Vorname__c</columns>
+        <columns>P7S1_Nachname__c</columns>
+        <columns>P7S1_Firma__c</columns>
+        <columns>P7S1_Portal_Status__c</columns>
+        <columns>P7S1_EMail__c</columns>
+        <columns>P7S1_Mobil__c</columns>
+        <columns>P7S1_Postleitzahl__c</columns>
+        <columns>P7S1_Ort__c</columns>
+        <columns>P7S1_Contact__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>P7S1_Portal__c</field>
+            <operation>equals</operation>
+            <value>sevenonemedia.de,sevenonemedia.ch,sevenonemedia.com</value>
+        </filters>
+        <filters>
+            <field>P7S1_Portal_Status__c</field>
+            <operation>equals</operation>
+            <value>Neu,Gesperrt</value>
+        </filters>
+        <label>Sevenone Media Gesperrte User</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PL-{000000}</displayFormat>
+        <label>Portal Login</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Portal Logins</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>P7S1_Portal__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_EMail__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_Firma__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_Portal_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>P7S1_LetzteAenderungKunde__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>P7S1_Portal__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>P7S1_EMail__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>P7S1_Firma__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>P7S1_Portal_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>P7S1_LetzteAenderungKunde__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>P7S1_Portal__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>P7S1_EMail__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>P7S1_Firma__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>P7S1_Portal_Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>P7S1_Portal__c</searchFilterFields>
+        <searchFilterFields>P7S1_EMail__c</searchFilterFields>
+        <searchFilterFields>P7S1_Firma__c</searchFilterFields>
+        <searchFilterFields>P7S1_Portal_Status__c</searchFilterFields>
+        <searchFilterFields>P7S1_LetzteAenderungKunde__c</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+        <searchResultsAdditionalFields>P7S1_Portal__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_EMail__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_Firma__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_Portal_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>P7S1_LetzteAenderungKunde__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Activate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Activate</masterLabel>
+        <openType>replace</openType>
+        <page>P7S1_PortalLoginActivate</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Contact</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Contact</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+
+// query the record
+var qr = sforce.connection.query(&quot;SELECT Id, P7S1_Vorname__c, P7S1_Nachname__c, P7S1_EMail__c, P7S1_Contact__c FROM P7S1_PortalLogin__c where Id=&apos;&quot; + &quot;{!P7S1_PortalLogin__c.Id}&quot; + &quot;&apos;&quot;);
+var records = qr.getArray(&quot;records&quot;);
+var portalLogin = records[0];
+
+// abort if already linked with a contact
+if( portalLogin.P7S1_Contact__c != null ){
+  alert(&quot;Dieser Datensatz ist bereits mit einem Kontakt verknüpft&quot;);
+} else {
+
+  // check if a contact with given email already exists
+  qr = sforce.connection.query(&quot;SELECT Id, Name FROM Contact where Email =&apos;&quot; + &quot;{!P7S1_PortalLogin__c.P7S1_EMail__c}&quot; + &quot;&apos;&quot;);
+  records = qr.getArray(&quot;records&quot;);
+  if (records.length &gt; 0) {
+    var c = records[0];
+
+    // ask if connect to existing contact
+    var r = confirm(&quot;Ein Kontakt mit dieser Email existiert bereits: &quot; + c.Name + &quot; wollen Sie ihn mit diesem Datensatz verknüpfen?&quot;);
+    if (r == true) {
+      portalLogin.P7S1_Contact__c = c.Id;
+      sforce.connection.update([portalLogin]);
+      window.location.reload();
+    } else {
+      ;
+    }
+
+    // forward to data trim with pre-populated fields
+  } else {
+    window.location = &quot;/apex/TRIMEC__DataTrim_EntryCheck?email=&quot;+portalLogin.P7S1_EMail__c+&quot;&amp;firstName=&quot;+portalLogin.P7S1_Vorname__c+&quot;&amp;lastName=&quot;+portalLogin.P7S1_Nachname__c;
+  }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Delete_Portal_User</fullName>
+        <availability>online</availability>
+        <description>Deletes liferay user with api and sets status to deleted</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Delete Portal User</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+//TODO make nicer bootstrap popover or alert
+var result = sforce.apex.execute(&quot;P7S1_Liferay_PortalLoginController&quot;,&quot;deletePortalLogin&quot;,{id:&quot;{!P7S1_PortalLogin__c.Id}&quot;});
+
+if (result != &apos;success&apos;){
+alert(result);
+} else {
+window.location.reload();
+}</url>
+    </webLinks>
+</CustomObject>

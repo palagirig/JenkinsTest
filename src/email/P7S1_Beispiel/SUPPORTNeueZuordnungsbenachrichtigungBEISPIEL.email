@@ -1,0 +1,1 @@
+*** BENACHRICHTIGUNG: NEUER KUNDENVORGANG ZUGEORDNET ***  Der folgende Kundenvorgang wird Ihnen zugeordnet.   Firma:  {!Account.Name}  Kontakt:  {!Contact.Name}  Kundenvorgangsnummer:  {!Case.CaseNumber}  Thema:  {!Case.Subject}  Beschreibung: {!Case.Description}   Klicken Sie auf den Link, um auf den Kundenvorgang zuzugreifen:  {!Case.Link}

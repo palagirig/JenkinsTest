@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Link zum öffnen der Festplazierungsliste (Belegungsplan des Advendio-Tools), wo die Festplatzierungen angezeigt werden</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Festplatzierungsliste Advendio</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://advendio.{!$User.P7S1_Host__c}.visual.force.com/apex/ADvendio__PositionChart</url>
+</CustomPageWebLink>

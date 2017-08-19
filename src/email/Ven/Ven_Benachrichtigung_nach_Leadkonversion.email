@@ -1,0 +1,9 @@
+Hallo Investment Manager,
+
+folgender Lead {!Account.Name} wurde durch das Ops&Strat Team konvertiert.
+Über folgenden Link erreichen Sie den neuen Account:
+
+{!Account.Link}
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

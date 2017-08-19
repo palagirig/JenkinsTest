@@ -118,8 +118,8 @@
                 <field>DA_Sales_PartnerYieldIntern__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>P7S1_HasMediaPartBarter__c</field>
+                <behavior>Readonly</behavior>
+                <field>P7S1_OpportunityID__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -138,14 +138,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>StageName</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>P7S1_ContractStart__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>P7S1_ContractEnd__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -385,25 +377,10 @@
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
-    <relatedLists>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <relatedList>MT_MediaCampaign__c.MT_Opportunity_ref__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>MT_MediaUpdateHistory__c.MT_Opportunity_ref__c</relatedList>
-    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
-    <summaryLayout>
-        <masterLabel>00h20000001a8M0</masterLabel>
-        <sizeX>4</sizeX>
-        <sizeY>0</sizeY>
-        <summaryLayoutStyle>Default</summaryLayoutStyle>
-    </summaryLayout>
 </Layout>

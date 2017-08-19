@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>P7S1_SE_Letterhead</letterhead>
+    <name>Info Digital Sales</name>
+    <style>formalLetter</style>
+    <subject>Zur Info: Opportunity &quot;{!P7S1_OpportunityApproval__c.P7S1_Opportunity__c}&quot; mit Digital-Anteil</subject>
+    <textOnly>Hallo!
+zur Info: mein Deal &quot;{!P7S1_OpportunityApproval__c.P7S1_Opportunity__c}&quot; hat einen Digital-Anteil.
+
+Hier der Link auf die Opportunity-Freigabe: {!P7S1_OpportunityApproval__c.Link}
+
+Viele Grüße!
+
+{!P7S1_OpportunityApproval__c.OwnerFullName}, {!P7S1_OpportunityApproval__c.P7S1_OwnerUnit__c} ({!P7S1_OpportunityApproval__c.OwnerEmail})
+
+Wenn Du Fragen zu Sales Excellence hast, dann folge bitte diesem Link: https://p7s1.my.salesforce.com/ui/solution/SolutionBrowserPage?cid=02n570000005U1f</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

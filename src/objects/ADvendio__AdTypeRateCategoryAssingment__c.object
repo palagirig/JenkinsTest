@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object is used to define, which Ad Type is available in which Rate Category.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the related Ad Type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows the related Ad Type.</inlineHelpText>
+        <label>Ad Type</label>
+        <referenceTo>ADvendio__Ad_Type__c</referenceTo>
+        <relationshipLabel>Assigned Rate Categories</relationshipLabel>
+        <relationshipName>AdTypeRateCategoryAssingments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BillingCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPM</fullName>
+                    <default>false</default>
+                    <label>CPM</label>
+                </value>
+                <value>
+                    <fullName>CPC</fullName>
+                    <default>false</default>
+                    <label>CPC</label>
+                </value>
+                <value>
+                    <fullName>CPD</fullName>
+                    <default>false</default>
+                    <label>CPD</label>
+                </value>
+                <value>
+                    <fullName>CPO</fullName>
+                    <default>false</default>
+                    <label>CPO</label>
+                </value>
+                <value>
+                    <fullName>CPW</fullName>
+                    <default>false</default>
+                    <label>CPW</label>
+                </value>
+                <value>
+                    <fullName>CPMo</fullName>
+                    <default>false</default>
+                    <label>CPMo</label>
+                </value>
+                <value>
+                    <fullName>CPY</fullName>
+                    <default>false</default>
+                    <label>CPY</label>
+                </value>
+                <value>
+                    <fullName>CPL</fullName>
+                    <default>false</default>
+                    <label>CPL</label>
+                </value>
+                <value>
+                    <fullName>CPx</fullName>
+                    <default>false</default>
+                    <label>CPx</label>
+                </value>
+                <value>
+                    <fullName>CPMSec</fullName>
+                    <default>false</default>
+                    <label>CPMSec</label>
+                </value>
+                <value>
+                    <fullName>edition</fullName>
+                    <default>false</default>
+                    <label>edition</label>
+                </value>
+                <value>
+                    <fullName>allin</fullName>
+                    <default>false</default>
+                    <label>allin</label>
+                </value>
+                <value>
+                    <fullName>Fixed Price</fullName>
+                    <default>false</default>
+                    <label>Fixed Price</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RateCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the related Rate Category.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows the related Rate Category.</inlineHelpText>
+        <label>Rate Category</label>
+        <referenceTo>ADvendio__RateCategory__c</referenceTo>
+        <relationshipLabel>Assigned Ad Types</relationshipLabel>
+        <relationshipName>AdTypeRateCategoryAssingments</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used for an automated Ad Price creation within the Ad Spec Designer.</description>
+        <externalId>false</externalId>
+        <label>Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Ad Type Rate Category Assingment</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AR-{000000}</displayFormat>
+        <label>Ad Type Rate Category Assingment Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ad Type Rate Category Assingments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

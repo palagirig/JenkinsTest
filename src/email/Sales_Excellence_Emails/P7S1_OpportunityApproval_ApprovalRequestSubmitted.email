@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hallo!]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<p class="p1" style="font-size: 12pt;"><span class="s1">Ich bitte Dich um folgende Dealfreigabe:</span></p><p class="p1" style="font-size: 12pt;"><span class="s1"><br></span></p><p class="p1" style="font-size: 12pt;"><span class="s1"><font face="arial"><b>{!P7S1_OpportunityApproval__c.Name}</b></font></span></p><p class="p2" style="font-size: 12pt;"><span class="s1"></span><br></p><p class="p1"><span class="s1" style="font-size: 12pt;">Um den&nbsp;</span><span style="font-size: 12pt;">Genehmigungsschritt "{!ApprovalRequest.Process_Step_Name}"</span><span class="s1" style="font-size: 12pt;">&nbsp;durchzuführen, klicke bitte auf den folgenden Link:&nbsp;</span><font face="arial" style="font-size: 12pt;">{!ApprovalRequest.Internal_URL}</font></p><p class="p1" style="font-size: 12pt;"><br></p><p class="p1" style="font-size: 12pt;"><span style="font-size: 12pt;">Vielen Dank!</span></p><p class="p1" style="font-size: 12pt;">{!P7S1_OpportunityApproval__c.OwnerFullName} ({!P7S1_OpportunityApproval__c.OwnerEmail})</p>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<p class="p1" style="font-size: 12pt;">Wenn Du Fragen zu Sales Excellence hast, dann folge bitte diesem&nbsp;<a href="https://p7s1.my.salesforce.com/ui/solution/SolutionBrowserPage?cid=02n570000005U1f">Link</a>.</p>]]></td>
+</tr>
+</table>

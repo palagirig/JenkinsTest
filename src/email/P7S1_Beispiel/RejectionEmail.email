@@ -1,0 +1,15 @@
+Sehr geehrte(r) {!Connection.ExternalContactFirstName}:
+
+Vielen Dank für Ihre Einladung, eine Verbindung mit {!Organization.Name} aufzubauen, die wir am {!Connection.ReceivedDate} erhalten haben.
+
+Nach sorgfältiger Abwägung haben wir uns entschieden, Ihre Einladung zum jetzigen Zeitpunkt nicht anzunehmen. Seien Sie versichert, dass diese schwierige Entscheidung nicht leichtfertig getroffen wurde.
+
+Wir wünschen Ihnen weiterhin viel Erfolg. Wir hoffen, dass sich einmal die Möglichkeit zur Zusammenarbeit ergibt.
+
+
+Mit freundlichen Grüßen
+
+
+{!User.FirstName} {!User.LastName}
+
+{!Organization.Name}

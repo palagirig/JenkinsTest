@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object stores information about the media campaign team members, their respectable roles and if applicable their split amount or ratio for their sales commission.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__MediaCampaignAccessLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field stores the access rights for the team member: Edit or Read only.</description>
+        <externalId>false</externalId>
+        <label>Media Campaign Access Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Read</fullName>
+                    <default>true</default>
+                    <label>Read</label>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                    <label>Edit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaCampaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to the relavant media campaign</description>
+        <externalId>false</externalId>
+        <label>Media Campaign</label>
+        <referenceTo>ADvendio__MediaCampaign__c</referenceTo>
+        <relationshipLabel>Media Campaign Team Members</relationshipLabel>
+        <relationshipName>MediaCampaignTeamMembers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SplitAmountForecast__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Use this field if you are working with Forecasts and revenue splits and want to split by a fixed amount instead of a ratio.</description>
+        <externalId>false</externalId>
+        <label>Split Amount (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SplitRatioForecast__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Use this field if you are working with Forecasts and revenue splits and want to split by a ration instead of fixed amount.</description>
+        <externalId>false</externalId>
+        <label>Split Ratio (%) (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TeamMemberRole__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This picklists stores customizable roles for your team members.</description>
+        <externalId>false</externalId>
+        <label>Team Member Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Rep.</fullName>
+                    <default>false</default>
+                    <label>Sales Rep.</label>
+                </value>
+                <value>
+                    <fullName>Ad operations</fullName>
+                    <default>false</default>
+                    <label>Ad operations</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field references the Salesforce User responsible for the Media Campaign.</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Media Campaign Team Members</relationshipLabel>
+        <relationshipName>MediaCampaignTeamMembers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Media Campaign Team Member</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <columns>ADvendio__TeamMemberRole__c</columns>
+        <columns>ADvendio__User__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>MTM{0}</displayFormat>
+        <label>Media Campaign Team Member No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Media Campaign Team Members</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

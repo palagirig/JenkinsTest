@@ -1,0 +1,20 @@
+Hallo {!Contact.FirstName},
+
+das Ticket {!Case.CaseNumber} wurde soeben erstellt oder aktualisiert.    
+
+Link zum Ticket:
+{!Case.Link}
+
+Gruß
+
+SaS Solutions
+P7S1 Applications
+
+########################
+Interne Infos:
+Projekt: {!Case.Projekt__c}
+Sprint: {!Case.Lcm_Release__c}
+Kanban: {!Case.Lcm_KanbanKombi__c}
+Rank: {!Case.Rank__c}
+Ersteller: {!Case.CreatedBy}
+Inhaber: {!Case.OwnerFullName}

@@ -1,0 +1,17 @@
+Dear Sir or Madam,
+
+with this email you receive your current invoice {!ADvendio__Invoice__c.ADvendio__InvoiceFullNumber__c}.
+
+We bill you as followed:
+
+Media Campaign: {!ADvendio__Invoice__c.ADvendio__ExternalMediaCampaignName__c}
+Reference: {!ADvendio__Invoice__c.ADvendio__YourReferenceNumber__c}
+Customer: {!ADvendio__Invoice__c.ADvendio__AdvertiserName__c}
+
+Invoiced Amount Gross: {!ADvendio__Invoice__c.ADvendio__InvoicedAmountGrossVATRate1__c} {!ADvendio__Invoice__c.CurrencyIsoCode}
+
+If you have questions, please do not hesitate to contact us.
+Please provide us reference number ({!ADvendio__Invoice__c.ADvendio__YourReferenceNumber__c}) or invoice number ({!ADvendio__Invoice__c.ADvendio__InvoiceFullNumber__c}) to help you as best as possible.
+
+Best regards
+{!Organization.Name}

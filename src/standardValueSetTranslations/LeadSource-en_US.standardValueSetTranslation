@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>71MDigital - OnlineOnly</masterLabel>
+        <translation><!-- 71MDigital - OnlineOnly --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ad-hoc Market Research</masterLabel>
+        <translation><!-- Ad-hoc Market Research --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AdFactory</masterLabel>
+        <translation><!-- AdFactory --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Andere</masterLabel>
+        <translation>Other</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Competitor Analysis - Nielsen</masterLabel>
+        <translation><!-- Competitor Analysis - Nielsen --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Competitor Analysis - Other</masterLabel>
+        <translation><!-- Competitor Analysis - Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Competitor Analysis - Sky</masterLabel>
+        <translation><!-- Competitor Analysis - Sky --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Deal Scout</masterLabel>
+        <translation><!-- Deal Scout --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dormant Brand Analysis</masterLabel>
+        <translation><!-- Dormant Brand Analysis --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Externe Empfehlung</masterLabel>
+        <translation>External recommendation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Investor portfolio - Other</masterLabel>
+        <translation><!-- Investor portfolio - Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Investor portfolio - Preqin</masterLabel>
+        <translation><!-- Investor portfolio - Preqin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kaltakquise</masterLabel>
+        <translation>Cold call</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kontaktformular</masterLabel>
+        <translation>Contact form</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Liferay</masterLabel>
+        <translation><!-- Liferay --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Market Stimulation - Nielsen</masterLabel>
+        <translation><!-- Market Stimulation - Nielsen --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Messe</masterLabel>
+        <translation>Fair</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mitarbeiterempfehlung</masterLabel>
+        <translation>Employee recommendation</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mundpropaganda</masterLabel>
+        <translation>Word-of-mouth advertising</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New Product Analysis</masterLabel>
+        <translation><!-- New Product Analysis --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Newsletter</masterLabel>
+        <translation><!-- Newsletter --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Personal Network- Event</masterLabel>
+        <translation><!-- Personal Network- Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Personal Network- Other</masterLabel>
+        <translation><!-- Personal Network- Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Portal Performance</masterLabel>
+        <translation><!-- Portal Performance --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ProRex</masterLabel>
+        <translation><!-- ProRex --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Redaktion</masterLabel>
+        <translation>Editorial</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SevenVentures</masterLabel>
+        <translation><!-- SevenVentures --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Soziales Netzwerk</masterLabel>
+        <translation>Social Network</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>StarWatch</masterLabel>
+        <translation><!-- StarWatch --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telefon</masterLabel>
+        <translation>Phone</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transactions &amp; Funding Rounds - Other</masterLabel>
+        <translation><!-- Transactions &amp; Funding Rounds - Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transactions &amp; Funding Rounds  - Majunke</masterLabel>
+        <translation><!-- Transactions &amp; Funding Rounds  - Majunke --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transactions &amp; Funding Rounds  - Preqin</masterLabel>
+        <translation><!-- Transactions &amp; Funding Rounds  - Preqin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Treffen</masterLabel>
+        <translation>Meeting</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Web</masterLabel>
+        <translation><!-- Web --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

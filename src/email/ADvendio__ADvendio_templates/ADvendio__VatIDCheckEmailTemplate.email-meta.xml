@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Informs the User about the VAT ID Check</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>VatIDCheckEmailTemplate</name>
+    <style>none</style>
+    <subject>VAT-ID Check - Batch processing finished</subject>
+    <textOnly>ADVENDIO AUTO NOTIFICATION
+
+Hello {!userName},
+
+Your Batch Process has finished with the following results:
+Processed: {!processedBatchCount}
+Flagged: {!flaggedBatchCount}
+Valid VAT Numbers: {!validVATNumberCount}
+Invalid VAT Numbers: {!invalidVATNumberCount}
+
+To see the full results in detail please visit the report here.
+
+Sincerely yours
+ADvendio team
+
+© 2016 ADvendio.com GmbH
+#1 Media Ad Sales Solution powered by the Salesforce platform
+www.advendio.com | contact@advendio.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

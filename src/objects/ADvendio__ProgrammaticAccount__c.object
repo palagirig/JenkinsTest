@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Store a relation between Accounts and Programmatic Advertising Data,  to link relevant Accounts to there programmatic Transactions.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AccountName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Which Account name is delivered by the scheduled import job from the SSP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which Account name is delivered by the scheduled import job from the SSP.</inlineHelpText>
+        <label>Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AccountType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>In which role is this account relevant for this Transaction.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In which role is this account relevant for this Transaction.</inlineHelpText>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advertiser</fullName>
+                    <default>false</default>
+                    <label>Advertiser</label>
+                </value>
+                <value>
+                    <fullName>Agency / Buyer</fullName>
+                    <default>false</default>
+                    <label>Agency / Buyer</label>
+                </value>
+                <value>
+                    <fullName>Demand Partner</fullName>
+                    <default>false</default>
+                    <label>Demand Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to Account to match Programmatic Advertising Transactions with Accounts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to Account to match Programmatic Advertising Transactions with Accounts.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programmatic Accounts</relationshipLabel>
+        <relationshipName>ProgrammaticAccounts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerLogin__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Link to SSP Login, is filled by scheduled import job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to SSP Login, is filled by scheduled import job.</inlineHelpText>
+        <label>AdServer Login</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>Programmatic Accounts</relationshipLabel>
+        <relationshipName>ProgrammaticAccounts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for additional information.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for additional information.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ExternalID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External ID for this Account ad for this transaction. Automatically filled by scheduled import job if available by SSP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External ID for this Account ad for this transaction. Automatically filled by scheduled import job if available by SSP.</inlineHelpText>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Programmatic Data import job writes a generated unique identifier to this field.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Programmatic Data import job writes a generated unique identifier to this field.</inlineHelpText>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Programmatic Account</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Account__c</columns>
+        <columns>ADvendio__AdServerLogin__c</columns>
+        <columns>ADvendio__AccountName__c</columns>
+        <columns>ADvendio__AccountType__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PAA-{0000}</displayFormat>
+        <label>Programmatic Account-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Programmatic Accounts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

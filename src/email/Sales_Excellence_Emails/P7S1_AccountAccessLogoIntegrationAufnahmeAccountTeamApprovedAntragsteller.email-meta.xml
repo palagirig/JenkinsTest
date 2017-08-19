@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Account-Freigabe Logo Integration/Aufnahme ins Account Team Genehmigt Nachricht an Antragsteller</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>P7S1_SE_Letterhead</letterhead>
+    <name>AccountAccess Logo Integration Aufnahme Account Team Approved an Antragsteller</name>
+    <style>formalLetter</style>
+    <subject>Genehmigt: {!P7S1_AccountAccess__c.Name}</subject>
+    <textOnly>Hallo {!ApprovalRequest.Process_Assignee},
+Deinen Antrag auf Account-Freigabe:
+
+
+
+{!P7S1_AccountAccess__c.Name}
+
+
+
+habe ich gerade genehmigt.
+
+
+
+{!ApprovalRequest.Comments}
+
+
+
+Link zu Deinem Antrag: {!P7S1_AccountAccess__c.Link}
+
+
+
+Viele Grüße,
+
+{!Approval_Requesting_User.Name}
+Wenn Du Fragen zu Sales Excellence hast, dann folge bitte diesem Link.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

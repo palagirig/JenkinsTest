@@ -1,0 +1,14 @@
+<messaging:emailTemplate subject="{!relatedTo.ADvendio__Topic__c}" recipientType="Contact" relatedToType="ADvendio__EnhancedVisitReport__c">
+<messaging:plainTextEmailBody >
+{!$Label.ADvendio__customer} {!relatedTo.Customer__r.Name}
+{!$Label.ADvendio__agency} {!relatedTo.Agency__r.Name}
+{!$Label.ADvendio__mediaCam}: {!relatedTo.Reference_to__r.Name}
+{!$ObjectType.ADvendio__EnhancedVisitReport__c.Fields.ADvendio__Topic__c.label}: {!relatedTo.ADvendio__Topic__c}
+   
+</messaging:plainTextEmailBody>
+
+<messaging:attachment renderas="pdf" filename="{!relatedTo.ADvendio__Topic__c & '.pdf'}">
+    <c:EnhancedVisitReport reportId="{!relatedTo.Id}" contactId="{!recipient.Id}" useInEmail="true"/>
+</messaging:attachment>
+
+</messaging:emailTemplate>

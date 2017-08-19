@@ -1,0 +1,6 @@
+Hallo {!Opportunity.OwnerFullName},
+
+folgende Opportunity {!Opportunity.Name} wurde durch das Genehmigungsgremium VIC I genehmigt.
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

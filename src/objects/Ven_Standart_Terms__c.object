@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Ven_Abschnitt__c</fullName>
+        <description>Gibt an in welchen Abschnitt der Term auf dem Vertrag gruppiert werden soll.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an in welchen Abschnitt der Term auf dem Vertrag gruppiert werden soll.</inlineHelpText>
+        <label>Abschnitt</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Medialeistung</fullName>
+                    <default>false</default>
+                    <label>Medialeistung</label>
+                </value>
+                <value>
+                    <fullName>Abrechnung und Reporting</fullName>
+                    <default>false</default>
+                    <label>Abrechnung und Reporting</label>
+                </value>
+                <value>
+                    <fullName>Kündigungsmöglichkeiten von 7V</fullName>
+                    <default>false</default>
+                    <label>Kündigungsmöglichkeiten von 7V</label>
+                </value>
+                <value>
+                    <fullName>Rechtsfolgen einer Kündigung durch SevenVentures</fullName>
+                    <default>false</default>
+                    <label>Rechtsfolgen einer Kündigung durch SevenVentures</label>
+                </value>
+                <value>
+                    <fullName>Beteiligungsvereinbarung (sofern Verträge nicht zeitgleich abgeschlossen werden)</fullName>
+                    <default>false</default>
+                    <label>Beteiligungsvereinbarung (sofern Verträge nicht zeitgleich abgeschlossen werden)</label>
+                </value>
+                <value>
+                    <fullName>Regelungen für Nachlaufphase</fullName>
+                    <default>false</default>
+                    <label>Regelungen für Nachlaufphase</label>
+                </value>
+                <value>
+                    <fullName>Individuelle Terms</fullName>
+                    <default>false</default>
+                    <label>Individuelle Terms</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ven_Aktiv__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Gibt an ob der Term aktiv ist oder nicht!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an ob der Term aktiv ist oder nicht!</inlineHelpText>
+        <label>Aktiv</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Beteiligungsvertrag_Mehrheit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</inlineHelpText>
+        <label>Direct Equity (majority)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Beteiligungsvertrag_Minderheit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Datensatztyp für SevenVentures mit Beteiligungsverträgen (Minderheit)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Datensatztyp für SevenVentures mit Beteiligungsverträgen (Minderheit)</inlineHelpText>
+        <label>Direct Equity (minority)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Call_Option__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</inlineHelpText>
+        <label>Call Option</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Exit_Participation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</inlineHelpText>
+        <label>Exit-Participation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Kombination_mit_Beteiligung__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Gibt an ob dieser Term angezeigt werden soll, wenn im Vertrag eine Beteiligung von Seven Ventures angegeben ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an ob dieser Term angezeigt werden soll, wenn im Vertrag eine Beteiligung von Seven Ventures angegeben ist.</inlineHelpText>
+        <label>Kombination mit Beteiligung</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Medialeistungsvertrag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gibt an in ob in dieser Vertragsart der Term als Standart Term gültig ist.</inlineHelpText>
+        <label>Medialeistungsvertrag (inkl. EP Light)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ven_Priorit_t__c</fullName>
+        <description>Hier wird die Priorität des Term angegeben.
+1 = Hoch
+2 = Niedrig</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird die Priorität des Term angegeben.
+1 = Hoch
+2 = Niedrig</inlineHelpText>
+        <label>Priorität</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ven_Service_Level__c</fullName>
+        <description>Hier werden die Terms anhand des Service-Levels von Seven Ventures markiert.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier werden die Terms anhand des Service-Levels von Seven Ventures markiert.</inlineHelpText>
+        <label>Service-Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bronze (&lt;20% MG)</fullName>
+                    <default>false</default>
+                    <label>Bronze (&lt;20% MG)</label>
+                </value>
+                <value>
+                    <fullName>Silber (20-24% MG oder Media Investment)</fullName>
+                    <default>false</default>
+                    <label>Silber (20-24% MG oder Media Investment)</label>
+                </value>
+                <value>
+                    <fullName>Gold (25-30% MG oder strategischer Deal)</fullName>
+                    <default>false</default>
+                    <label>Gold (25-30% MG oder strategischer Deal)</label>
+                </value>
+                <value>
+                    <fullName>Platin (&gt;=30% MG oder strat. Prio-Deal)</fullName>
+                    <default>false</default>
+                    <label>Platin (&gt;=30% MG oder strat. Prio-Deal)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ven_Standard_Term_Lang__c</fullName>
+        <description>Hier wird der gesamte Text des Standart Term angezeigt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hier wird der gesamte Text des Standart Term angezeigt.</inlineHelpText>
+        <label>Standard Term (Lang)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Standard Term</label>
+    <listViews>
+        <fullName>Abrechnung_und_Reporting_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Abrechnung und Reporting</value>
+        </filters>
+        <label>Abrechnung und Reporting Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+    </listViews>
+    <listViews>
+        <fullName>Alle</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <columns>Ven_Abschnitt__c</columns>
+        <columns>Ven_Kombination_mit_Beteiligung__c</columns>
+        <columns>Ven_Service_Level__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Alle</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Beteiligungsvereinbarungs_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Kombination_mit_Beteiligung__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Beteiligungsvereinbarung (sofern Verträge nicht zeitgleich abgeschlossen werden)</value>
+        </filters>
+        <label>Beteiligungsvereinbarungs Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Individuelle_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Individuelle Terms</value>
+        </filters>
+        <label>Individuelle Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>K_ndigungsm_glichkeiten_von_7V_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Kündigungsmöglichkeiten von 7V</value>
+        </filters>
+        <label>Kündigungsmöglichkeiten von 7V Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Medialeistungsvertrags_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <columns>Ven_Service_Level__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Medialeistung</value>
+        </filters>
+        <label>Medialeistungsvertrags Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Rechtsfolgen_einer_K_ndigung_durch_Seven</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Kombination_mit_Beteiligung__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Rechtsfolgen einer Kündigung durch SevenVentures</value>
+        </filters>
+        <label>Rechtsfolgen einer Kündigung.... Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Regelungen_f_r_nach_Vertragsende_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Abschnitt__c</field>
+            <operation>equals</operation>
+            <value>Regelungen für nach Vertragsende</value>
+        </filters>
+        <label>Regelungen für nach Vertragsende Terms</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Service_Level_Terms</fullName>
+        <columns>NAME</columns>
+        <columns>Ven_Standard_Term_Lang__c</columns>
+        <columns>Ven_Service_Level__c</columns>
+        <columns>Ven_Abschnitt__c</columns>
+        <columns>Ven_Priorit_t__c</columns>
+        <columns>Ven_Call_Option__c</columns>
+        <columns>Ven_Beteiligungsvertrag_Mehrheit__c</columns>
+        <columns>Ven_Exit_Participation__c</columns>
+        <columns>Ven_Medialeistungsvertrag__c</columns>
+        <columns>Ven_Aktiv__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Ven_Service_Level__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Service-Level-Terms</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Standart Terms-Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Standard Terms</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Ven_Standard_Term_Lang__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Call_Option__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Beteiligungsvertrag_Mehrheit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Exit_Participation__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Medialeistungsvertrag__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Aktiv__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Kombination_mit_Beteiligung__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ven_Priorit_t__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Ven_Standard_Term_Lang__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ven_Abschnitt__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ven_Priorit_t__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Ven_Standard_Term_Lang__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ven_Abschnitt__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ven_Priorit_t__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

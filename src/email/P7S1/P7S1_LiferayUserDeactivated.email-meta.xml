@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will sent to the protal user after user was deactivated from workflow</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>P7S1 Liferay User Deactivated</name>
+    <style>none</style>
+    <subject>Aktualisierung Ihrer Profildaten</subject>
+    <textOnly>SevenOne Media Newsletter
+
+Aktualisierung Ihrer Profildaten
+
+Sehr {! IF( ISPICKVAL(P7S1_PortalLogin__c.P7S1_Anrede__c,&quot;Herr&quot;), &quot;geehrter&quot;, &quot;geehrte&quot; )} {!P7S1_PortalLogin__c.P7S1_Anrede__c} {!P7S1_PortalLogin__c.P7S1_Nachname__c},
+
+Ihr Zugang für MySevenOne ist temporär inaktiv. Gründe dafür können sein:
+
+1. Sie haben Ihre Profildaten geändert.
+Wir bitten Sie um Verständnis, dass Sie während der Prüfung nicht auf MySevenOne zugreifen können. Sie erhalten von uns in Kürze eine E-Mail, in der wir Ihnen die Aktualisierung Ihrer Profildaten bestätigen und Ihren Account wieder zur Nutzung freischalten.
+
+2. Sie haben die Firma gewechselt oder sind aus Ihrer bisherigen Firma ausgeschieden.
+In diesem Fall wird Ihre Zugangsberechtigung erneut geprüft. SevenOne Media behält sich unter bestimmten Voraussetzungen auch eine dauerhafte Sperrung vor.
+Auch in diesem Fall erhalten Sie selbstverständlich eine Benachrichtigung per E-Mail.
+
+Mit freundlichen Grüßen
+Ihr Team der SevenOne Media
+
+SevenOne Media GmbH
+Medienallee 4
+85774 Unterföhring
+
+Tel. +49 89 9507 – 40
+Fax +49 89 9507 – 43 99
+sevenonemedia.de
+info@sevenonemedia.de
+
+Geschäftsführer:
+Thomas Wagner (Vorsitzender),
+Dr. Jens Mittnacht, 
+Guido Modenbach,
+Georg Nitzl, Thomas Port
+
+Firmensitz: Unterföhring
+HRB 133924 AG München
+USt-ID.-Nr. DE 812906844
+St. Nr. 9143/104/10137
+
+Ein Unternehmen der ProSiebenSat.1 Media SE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

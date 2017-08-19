@@ -1,0 +1,1 @@
+*** WARNUNG: ESKALATION VON KUNDENVORGANG ***  Der folgende Kundenvorgang wurde eskaliert:   Firma:  {!Account.Name}  Kundenvorgang:  {!Case.CaseNumber}:  {!Case.Subject}  Inhaber:  {!CaseOwner.FullName}   Klicken Sie auf den Link, um auf den Kundenvorgang zuzugreifen:  {!Case.Link}

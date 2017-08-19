@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If set to &quot;true&quot;, this legal entity can be linked to from any media campaign and/or invoice.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked this legal entity can be linked to from any Media Campaign and/or Invoice.</inlineHelpText>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CompanyCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter here the Company Code from your Accounting System - this information will be used by ADvendio for interfaces to Accounting Solutions like SAP/FI, Navision, Sage etc..</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter here the Company Code from your Accounting System - this information will be used by ADvendio for interfaces to Accounting Solutions like SAP/FI, Navision, Sage etc..</inlineHelpText>
+        <label>Company Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CountryIsoCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Country ISO Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ADvendio__CountryIsoCode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Here you can enter a Description for that legal entity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter a description for that legal entity.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicePreference__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>References the settings for Invoice-PDF.
+
+If not defined the ADvendio standard PDF settings will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the invoice settings record for Invoice-PDF.
+
+If not defined the ADvendio standard PDF settings will be used.</inlineHelpText>
+        <label>Invoice Preference</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>ADvendio__InvoicePreference__c.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Standard_Invoice</value>
+            </filterItems>
+            <filterItems>
+                <field>ADvendio__InvoicePreference__c.RecordType.NamespacePrefix</field>
+                <operation>equals</operation>
+                <value>ADvendio</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ADvendio__InvoicePreference__c</referenceTo>
+        <relationshipLabel>Legal Entities</relationshipLabel>
+        <relationshipName>LegalEntities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LeftPadOfNumberOfInvoice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sets the number of Invoice padded with zeros on the left and of the specified length.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets the number of Invoice padded with zeros on the left and of the specified length.</inlineHelpText>
+        <label>Left Pad Of Number Of Invoice</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LeftPadOfNumberOfMediaCampaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sets the number of Media Campaign padded with zeros on the left and of the specified length.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets the number of Media Campaign padded with zeros on the left and of the specified length.</inlineHelpText>
+        <label>Left Pad Of Number Of Media Campaign</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxAllocatedNumberOfInvoice__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Allocated Number Of Invoice</label>
+        <summarizedField>ADvendio__LegalEntityNumberAllocation__c.ADvendio__AllocatedNumber__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__LegalEntityNumberAllocation__c.ADvendio__AllocationType__c</field>
+            <operation>equals</operation>
+            <value>Invoice, Recycle Bin (Invoice)</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__LegalEntityNumberAllocation__c.ADvendio__LegalEntity__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxAllocatedNumberOfMediaCampaign__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Allocated Number Of Media Campaign</label>
+        <summarizedField>ADvendio__LegalEntityNumberAllocation__c.ADvendio__AllocatedNumber__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__LegalEntityNumberAllocation__c.ADvendio__AllocationType__c</field>
+            <operation>equals</operation>
+            <value>Media Campaign, Recycle Bin (Media Campaign)</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__LegalEntityNumberAllocation__c.ADvendio__LegalEntity__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__QuotePreference__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>References the settings for Quote-PDF.
+
+If not defined the ADvendio standard PDF settings will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the quote settings record for the Quote-PDF.
+
+If not defined the ADvendio standard PDF settings will be used.</inlineHelpText>
+        <label>Quote Preference</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>ADvendio__Quote_Preference__c.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Standard_Quote</value>
+            </filterItems>
+            <filterItems>
+                <field>ADvendio__Quote_Preference__c.RecordType.NamespacePrefix</field>
+                <operation>equals</operation>
+                <value>ADvendio</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ADvendio__Quote_Preference__c</referenceTo>
+        <relationshipLabel>Legal Entities</relationshipLabel>
+        <relationshipName>LegalEntities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__StartingNumberOfInvoice__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Custom start number for invoices.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>With this number ADvendio starts to number the Invoices.</inlineHelpText>
+        <label>Starting Number Of Invoice</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__StartingNumberOfMediaCampaign__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Custom starting number for media campaigns.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>With this number ADvendio starts to number Media Campaigns.</inlineHelpText>
+        <label>Starting Number Of Media Campaign</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The unique key of the record. It will be set automatically by ADvendio.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The unique key of the record. It will be set automatically by ADvendio.</inlineHelpText>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Legal Entity</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Legal Entity Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Legal Entities</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

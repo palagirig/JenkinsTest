@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>P7S1 Konzern (READONLY)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>P7S1 Konzern (READONLY)</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Som_Steering</parentRole>
+</Role>

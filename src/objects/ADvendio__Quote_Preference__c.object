@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object stores generic templates with all settings to generate your Quote PDFs. Make sure that always one record is active to use the &quot;create Quote document&quot; feature. With this template, you may adjust the default elements and values and add new elements and values.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked these preference settings will be used to generate your quotes. Only one setting can be set to &quot;active&quot; at same time.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, these quote preferences will be applied by the proposal generator.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AddressBlock1stPage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Block (1st Page)</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ColorCodeTableHeader__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please insert the background color for your table headers in Hex Format if desired. Example: #C6CEE2.</description>
+        <externalId>false</externalId>
+        <label>Color Hex Code (Table Header)</label>
+        <length>7</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ColorCode__c</fullName>
+        <defaultValue>&quot;#C6CEE2&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Please insert a background color for your entire quote in Hex Format if desired. Example: #C6CEE2.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please insert a background color for your proposal. Format: #C6CEE2</inlineHelpText>
+        <label>Color Hex Code (Background)</label>
+        <length>7</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ContactInformation2ndPage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact Information (2nd Page)</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Creative__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Creative (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DisablePageBreakBeforeTextBlocks__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked all Page Breaks before Text Blocks getting ignored.</description>
+        <externalId>false</externalId>
+        <label>Disable Page Break before Text Blocks</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FirstPageAddressInformation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter the API-Name of a CustomLabel. The value will be displayed on the first page at the Quote-PDF. If not defined, the default Custom Label with name &quot;First_page_my_address&quot; will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the API-Name of a CustomLabel. The value will be displayed on the first page at the Quote-PDF. If not defined, the default Custom Label with name &quot;First_page_my_address&quot; will be used.</inlineHelpText>
+        <label>First Page Address Information</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FooterFullSizeData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the footer full width on the Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_additional_information&quot; will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the footer
+full width on the Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_additional_information&quot; will be used.</inlineHelpText>
+        <label>Footer Full Size Data</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FooterLeftSideData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the left side of footer of Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_left_side&quot; will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the left side of footer of Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_left_side&quot; will be used.</inlineHelpText>
+        <label>Footer Left Side Data</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FooterMiddleData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the middle of footer of Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_middle&quot; will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the middle of footer of Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_middle&quot; will be used.</inlineHelpText>
+        <label>Footer Middle Data</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__FooterRightSideData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the right side of footer of Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_right_side&quot; will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the API-Name of a CustomLabel. The value of CustomLabel will be displayed on the right side of footer of Quote-PDF.
+
+If not defined, the ADvendio standard CustomLabel with name &quot;Footer_right_side&quot; will be used.</inlineHelpText>
+        <label>Footer Right Side Data</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HiddenPackageComponentFields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter here a line-separated list of fields which you wish not to display for package components.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A newline-separated list of fields which are not displayed for package components.</inlineHelpText>
+        <label>Hide Package Component Fields</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HideAddFees__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the additional fees are not printed on the summary page.</description>
+        <externalId>false</externalId>
+        <label>Hide additional fees</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HideBoxNotesAlways__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the Notes are not printed on the summary page.</description>
+        <externalId>false</externalId>
+        <label>Hide Notes Box - always</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HideBoxNotesNull__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the Notes box is not printed on the summary page if empty.</description>
+        <externalId>false</externalId>
+        <label>Hide Notes Box - if empty</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HideBoxTechnicalSpecifications__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the Technical Specifications are not printed on the summary page.</description>
+        <externalId>false</externalId>
+        <label>Hide Box (Technical Specifications)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HideInfoTable1stPage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the info table on the cover letter is not shown.</description>
+        <externalId>false</externalId>
+        <label>Hide Info Table (Cover Letter)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__HidePackageComponentDetails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked detailed information about package components will not be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked detailed information about package components will not be displayed.</inlineHelpText>
+        <label>Hide Package Component Details</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InfoTableCoverLetter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field defines the information table that is displayed on the cover letter of the PDF and in which order the information is displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please customize the information table on the cover letter of the PDF and in which order the information is displayed or use the ADvendio default.</inlineHelpText>
+        <label>Info Table (Cover Letter)</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LeftHeaderImageOnlyOnFirstPage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the selected Left Header Image only on the cover letter of all Quote types.</description>
+        <externalId>false</externalId>
+        <label>Left Header Image only on First Page</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LeftHeaderImageSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please reference the Salesforce path of the the custom rich text field which stores the image to be displayed. Example: ADvendio__Agency__r.Logo__c.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the fieldpath with start at media campaign to the custom rich text field which contains the image. Sample: ADvendio__Agency__r.Barcode__c</inlineHelpText>
+        <label>Left Header Image Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Logo_Image__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The logo will be saved in this field.</description>
+        <externalId>false</externalId>
+        <formula>IF(ADvendio__logo__c &lt;&gt;&apos;&apos;, IMAGE(&apos;/servlet/servlet.FileDownload?file=&apos;+ADvendio__logo__c, &apos;Logo&apos; ,50,70) ,&apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The logo will be saved in this field.</inlineHelpText>
+        <label>Logo Image</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Logo_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the selected logo file name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the name of the logo.</inlineHelpText>
+        <label>Logo file name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxLineNumFirstPage__c</fullName>
+        <defaultValue>15</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Line No. (First Page) (deprecated)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxLineNumOtherPages__c</fullName>
+        <defaultValue>25</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Line No. (Other Pages) (deprecated)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxRowLengthAdType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Define the maximum number of characters for each row within the column &quot;Ad Type&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Define the maximum number of characters for each row within the column &quot;Ad Type&quot;.</inlineHelpText>
+        <label>Max Row Length (AdType) (deprecated)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxRowLengthPlacement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Define the maximum number of characters for each row within the column &quot;Placement&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Define the maximum number of characters for each row within the column &quot;Placement&quot;.</inlineHelpText>
+        <label>Max Row Length (Placement) (deprecated)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MaxRowLengthSite__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Define the maximum number of characters for each row within the column &quot;Site&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Define the maximum number of characters for each row within the column &quot;Site&quot;.</inlineHelpText>
+        <label>Max Row Length (Site) (deprecated)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RightHeaderImageSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please reference the Salesforce path of the the custom rich text field which stores the image to be displayed. Example: ADvendio__Agency__r.Logo__c.</description>
+        <externalId>false</externalId>
+        <label>Right Header Image Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowGross_Campaign_Cost__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the Gross Amount is shown on cover letter and summarization on page 3.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, gross campaign costs will be displayed on the proposal.</inlineHelpText>
+        <label>Show Gross Campaign Cost</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowLeftHeaderImageOnCancellation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the selected Left Header Image if Quote type is a Cancellation.</description>
+        <externalId>false</externalId>
+        <label>Show Left Header Image on Cancellation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowLeftHeaderImageOnOrderConfirm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the selected Left Header Image if Quote type is an Order Confirmation.</description>
+        <externalId>false</externalId>
+        <label>Show Left Header Image OrderConfirmation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowLeftHeaderImageOnOrder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the selected Left Header Image if Quote type is an Proposal.</description>
+        <externalId>false</externalId>
+        <label>Show Left Header Image on Proposal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowSignatureBlockAfterTextBlocks__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the signature block below text blocks.</description>
+        <externalId>false</externalId>
+        <label>Show Signature Block below Text Blocks</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowSignatureBlockOnCancellation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the signature block if Quote type is a Cancellation.</description>
+        <externalId>false</externalId>
+        <label>Show Signature Block on Cancellation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowSignatureBlockOnOrderConfirm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the signature block if Quote type is an Order Confirmation.</description>
+        <externalId>false</externalId>
+        <label>Show Signature Block OrderConfirmation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowSignatureBlockOnOrder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Displays the signature block if Quote type is an Proposal.</description>
+        <externalId>false</externalId>
+        <label>Show Signature Block on Proposal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowTitle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If you tick this check box, the title will be displayed on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, the title will be displayed on the proposal.</inlineHelpText>
+        <label>ShowTitle (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Show_Discounted_campaign_costs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If you check this check box, discounted campaign costs will be displayed on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, discounted campaign costs will be displayed on the proposal.</inlineHelpText>
+        <label>Show dis. Campaign Costs (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Show_Net_campaign_costs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked net campaign costs will be displayed on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, net campaign costs will be displayed on the proposal.</inlineHelpText>
+        <label>Show Net Campaign Costs (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Terms_and_Conditions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter your terms and conditions here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter your terms and conditions here.</inlineHelpText>
+        <label>Terms and Conditions (deprecated)</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a title.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a title.</inlineHelpText>
+        <label>Title (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Volume_Scale_of_Discounts_last_year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Volume Discount Scale last year</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Volume_Scale_of_Discounts_next_year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Volume Discount Scale next year</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Volume_scales_of_discount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Please enter line-separated list like the following: 
+
+(Amount, Percentage
+Amount 2, Percentage 2 ...). 
+
+This will be shown on the Quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the information of volume scales of discount in the following manner: (amount, percentage).</inlineHelpText>
+        <label>Volume discount scale</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__footer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a text for the footer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a text for the footer.</inlineHelpText>
+        <label>Footer (deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__logo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the Salesforce ID of your selected logo file.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Upload an image to be used as your company logo.</inlineHelpText>
+        <label>Logo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__showFooter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If you tick this check box, the footer will be displayed on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, the footer will be displayed on the proposal.</inlineHelpText>
+        <label>Show Footer (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__showLogo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected your logo is shown on the quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, the logo will be displayed on the proposal.</inlineHelpText>
+        <label>Show Logo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__showPaymentTerms__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If you tick this check box, payment terms will be displayed on the proposal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you tick this check box, payment terms will be displayed on the proposal.</inlineHelpText>
+        <label>Show Payment Terms (deprecated)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__show_1st_page__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, the first page which summarizes all information of the the quote is displayed and created - (Cover letter)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick this checkbox to display the „1st page“ on the proposal. The first page contains a short summary of all relevant data.</inlineHelpText>
+        <label>Show Cover Letter</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Preference</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Active__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Quote Preference Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Quote Preferences</pluralLabel>
+    <recordTypes>
+        <fullName>ADvendio__Quote_Layout_1</fullName>
+        <active>true</active>
+        <description>Quote layout in generic portrait format</description>
+        <label>Generic portrait format (deprecated)</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__Standard_Quote</fullName>
+        <active>true</active>
+        <description>Quote layout in German OVK standard</description>
+        <label>German standard layout (OVK) (deprecated)</label>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ADvendio__Active__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

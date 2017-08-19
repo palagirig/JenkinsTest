@@ -1,0 +1,3029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AccountingDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Accounting Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AccountingEndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Accounting End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserBillingCity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserBillingCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserBillingPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserBillingState__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserBillingStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserBillingStreets__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Billing Streets</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserContactEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserContactFax__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Contact Fax</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserContactPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Contact Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserContact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Contact Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserDebitorId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal Id for the referenced Advertiser</description>
+        <externalId>false</externalId>
+        <label>Advertiser Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdvertiserVATId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Advertiser VAT Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyBillingCity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyBillingCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyBillingPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyBillingState__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyBillingStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyBillingStreets__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Billing Streets</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyContactEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyContactFax__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Contact Fax</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyContactPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Contact Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyContact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Contact Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyDebitorId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal Id for the referenced Agency</description>
+        <externalId>false</externalId>
+        <label>Agency Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AgencyVATId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency VAT Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryBillingCity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryBillingCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryBillingPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryBillingState__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryBillingStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryBillingStreets__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Billing Streets</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryDebitorId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal Id for the referenced beneficiary</description>
+        <externalId>false</externalId>
+        <label>Beneficiary Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BeneficiaryVATId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Beneficiary VAT Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BillingPeriodEndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Monat der erstellten Rechnung (kann abweichen vom SAP Datum)</inlineHelpText>
+        <label>Billing Period End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BillingPeriodStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Period Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__BillingRun__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Run</label>
+        <referenceTo>ADvendio__BillingRun__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CreationType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Creation Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flex</fullName>
+                    <default>false</default>
+                    <label>Flex</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__DaysEarlyPaymentDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Days Early Payment Discount</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Dispatch__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Dispatch Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Print</fullName>
+                    <default>true</default>
+                    <label>Print</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__EarlyPaymentDiscountAbs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the absolute amount of the early payment discount.</description>
+        <externalId>false</externalId>
+        <formula>IF(ADvendio__NewVatCalculation__c,
+ROUND(ADvendio__InvoicedAmountTotal__c * ADvendio__Early_Payment_Discount__c,2),
+ROUND(IF(ADvendio__ShowThirdPartyCommission__c, ADvendio__InvoicedAmountGross__c * ADvendio__Early_Payment_Discount__c, ADvendio__InvoicedAmountGrossN2__c * ADvendio__Early_Payment_Discount__c),2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Early Payment Discount abs.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Early_Payment_Discount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a percentage to grant an early payment discount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a percentage to grant an early payment discount.</inlineHelpText>
+        <label>Early Payment Discount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ExternalMediaCampaignName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>External Media Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__GrossAmountB1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Gross Amount B1</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__GrossAmountB1__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__GrossAmountB2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Gross Amount B2</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__GrossAmountB2__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__GrossAmountB3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Gross Amount B3</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__GrossAmountB3__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryBillingCity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryBillingCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryBillingPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryBillingState__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryBillingStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryBillingStreets__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Billing Streets</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryDebitorId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal Id for the referenced Intermediary</description>
+        <externalId>false</externalId>
+        <label>Intermediary Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IntermediaryVATId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intermediary VAT Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceDateManual__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Date (Manual)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceFullNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoiceNumberPrefix__c &amp; IF(ISBLANK(ADvendio__InvoiceLegalEntityNumber__c), Name, ADvendio__InvoiceLegalEntityNumber__c) &amp; ADvendio__InvoiceNumberSuffix__c</formula>
+        <label>Invoice Full Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceLegalEntityNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Legal Entity Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceNumberPrefix__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Number Prefix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceNumberSuffix__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Number Suffix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceNumber__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Number</label>
+        <referenceTo>ADvendio__InvoiceNumber__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiceType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Depending on the type (invoice, credit note, credit note cancellation, cancellation) invoices are treated in a different way.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ist die Rechnung vom Rechnungs-Typ her eine Rechnung oder aber eine Aufhebung bzw. Stornierung zu einer vorher erstellten und existierenden Rechnung (Rechnungsanpassung).</inlineHelpText>
+        <label>Invoice Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Invoice</fullName>
+                    <default>false</default>
+                    <label>Invoice</label>
+                </value>
+                <value>
+                    <fullName>Cancellation</fullName>
+                    <default>false</default>
+                    <label>Cancellation</label>
+                </value>
+                <value>
+                    <fullName>Credit Note</fullName>
+                    <default>false</default>
+                    <label>Credit Note</label>
+                </value>
+                <value>
+                    <fullName>Credit Note Cancellation</fullName>
+                    <default>false</default>
+                    <label>Credit Note Cancellation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice</label>
+        <referenceTo>ADvendio__Invoice__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountGrossInclEpd__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows the invoiced amount less early payment discount.</description>
+        <externalId>false</externalId>
+        <formula>IF(ADvendio__NewVatCalculation__c,
+ADvendio__InvoicedAmountTotal__c - ADvendio__EarlyPaymentDiscountAbs__c,
+IF(ADvendio__ShowThirdPartyCommission__c, ADvendio__InvoicedAmountGross__c - ADvendio__EarlyPaymentDiscountAbs__c, ADvendio__InvoicedAmountGrossN2__c - ADvendio__EarlyPaymentDiscountAbs__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoiced Amount Gross (incl. EPD)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountGrossN2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Invoiced Amount (N2) including VAT</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoicedAmountNet2__c + ADvendio__VATAmount1__c + ADvendio__VATAmount2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Invoiced Amount (N2) including VAT</inlineHelpText>
+        <label>Invoiced Amount Gross (N2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountGrossVATRate1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoiced Amount gross (normal)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountGrossVATRate2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoiced Amount Gross (reduced)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountGross__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Gross Amount (N3) including VAT</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoicedAmountNet3__c +  ADvendio__VATAmount1__c +   ADvendio__VATAmount2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoiced Amount Gross</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountNet1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoiced Amount N1</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__InvoicedAmountNet1__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountNet2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoiced Amount N2</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__InvoicedAmountNet2__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountNet3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoiced Amount N3</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__InvoicedAmountNet3__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This formula calculates the sum of your taxable amount (depending on your type settings) and adds the taxes to it and if applicable, the nontaxable amount.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__TaxableAmountTotal__c + ADvendio__VatTotal__c + ADvendio__NonTaxableAmountTotal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This formula calculates the sum of your taxable amount (depending on your type settings) and adds the taxes to it and if applicable, the nontaxable amount.</inlineHelpText>
+        <label>Invoiced Amount Gross (Total)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountVatType1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This formula calculates the sum of all items of type 1 and adds the VAT.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__TaxableAmountVatType1__c + ADvendio__VATAmount1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This formula calculates the sum of all items of type 1 and adds the VAT.</inlineHelpText>
+        <label>Invoiced Amount Gross (VAT Type 1)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoicedAmountVatType2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This formula calculates the sum of all items of type 2 and adds the VAT.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__TaxableAmountVatType2__c + ADvendio__VATAmount2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This formula calculates the sum of all items of type 2 and adds the VAT.</inlineHelpText>
+        <label>Invoiced Amount Gross (VAT Type 2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__InvoiveRecipient__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the account who is Debtor (Invoice Recipient) for the invoice.</description>
+        <externalId>false</externalId>
+        <label>Debtor</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__IsMerged__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoiced?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ItemsOnPDF__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Items on PDF</label>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ShowOnPDF__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__KeyExtension__c</fullName>
+        <deprecated>false</deprecated>
+        <displayFormat>|KEY-{000000000}|</displayFormat>
+        <externalId>false</externalId>
+        <label>KeyExtension</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__LegalEntityCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Legal Entity Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__MediaCampaign__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Media Campaign</label>
+        <referenceTo>ADvendio__MediaCampaign__c</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__N3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>N3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NewVatCalculation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>New VAT Calculation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__NonTaxableAmountTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the total amount of all invoice items sold which are nontaxable or have a tax exempt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Displays the total amount of all invoice items sold which are nontaxable or have a tax exempt.</inlineHelpText>
+        <label>Nontaxable Amount (Total)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OrderExtNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>External Order No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__OrderNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Order No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PaymentDueDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Payment Due Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PaymentInterval__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Payment Interval</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PaymentStart__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Payment Start</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PaymentTerms__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Payment Terms to be displayed on Invoice PDFs</inlineHelpText>
+        <label>Payment Terms</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientBillingCity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientBillingCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientBillingPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientBillingState__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientBillingStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientBillingStreets__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal Recipient Billing Streets</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientDebitorId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Internal Id for the referenced PostalRecipient</description>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PostalRecipientVATId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Postal-Recipient VAT Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__PreInvoiceNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Preliminary Invoice Number that identifies the name of the record after creation. (copied by workflow) It will later be overwritten by the final invoice number.</description>
+        <displayFormat>PreInvoice-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Preliminary Invoice Number that identifies the name of the record after creation. It will later be overwritten by the final invoice number</inlineHelpText>
+        <label>Pre-Invoice Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__QuoteLanguage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Language to use for generated invoice.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Language to use for generated invoice.</inlineHelpText>
+        <label>QuoteLanguage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__QuoteLocale__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Locale to use for formatting the number, date etc. in generated invoice.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Locale to use for formatting the number, date etc. in generated invoice.</inlineHelpText>
+        <label>QuoteLocale</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>de_DE</fullName>
+                    <default>false</default>
+                    <label>de_DE</label>
+                </value>
+                <value>
+                    <fullName>en_GB</fullName>
+                    <default>false</default>
+                    <label>en_GB</label>
+                </value>
+                <value>
+                    <fullName>en_US</fullName>
+                    <default>false</default>
+                    <label>en_US</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RateDiscount1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Quantity Discount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RateDiscount2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Customer Discount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RateDiscount3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Discount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientBillingCity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientBillingCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientBillingPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientBillingState__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientBillingStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientBillingStreets__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Billing Streets</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientContactEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientContactFax__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Contact Fax</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientContactPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Contact Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientContact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Contact Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientDebitorId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__RecipientVATId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debtor VAT Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ReverseChargeMechanism__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this checkbox is true - the VAT Type on any campaign item will be ignored, set to zero, and on the invoice pdf the Custom Label Reverse-Charge Mechanism Note is displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please check this box to apply the Reverse-Charge Process on this Media Campaign.</inlineHelpText>
+        <label>Reverse-Charge Mechanism</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SalesRep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sales Representative</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SalesTaxIdNr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sales Tax Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ShowThirdPartyCommission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Show Third Party Commission</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Entwurf: RG-Vorschlag welche freigegeben werden muss
+Freigabe: RG-Vorschlag wurde freigegeben und kann im Renchnungslauf
+Fakturiert: Rechungslauf erfolgte, aus RG-Vorschlag wurde finale Rechnung
+Storno: Rechnung wurde durch neue RG-Storno aufgehoben</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Invoiced</fullName>
+                    <default>false</default>
+                    <label>Invoiced</label>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                    <label>Canceled</label>
+                </value>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Reviewed</fullName>
+                    <default>false</default>
+                    <label>Reviewed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__SumofAgencyCommission__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sum of Agency Commission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TaxableAmountTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This formula adds up the total amount of all items of type 1 and type 2 depending on the taxable type you have defined. The Standard is N2.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__TaxableAmountVatType1__c + ADvendio__TaxableAmountVatType2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This formula adds up the total amount of all items of type 1 and type 2 depending on the taxable type you have defined. The Standard is N2.</inlineHelpText>
+        <label>Taxable Amount (Total)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TaxableAmountVatType1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field gets calculated by an APEX script and displays the total amount of all items of type 1 depending on the taxable type you have defined in the media campaign. The Standard is N2.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field gets calculated by an APEX script and displays the total amount of all items of type 1 depending on the taxable type you have defined in the media campaign. The Standard is N2.</inlineHelpText>
+        <label>Taxable Amount (VAT Type 1)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TaxableAmountVatType2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field gets calculated by an APEX script and displays the total amount of all items of type 2 depending on the taxable type you have defined in the media campaign. The Standard is N2.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field gets calculated by an APEX script and displays the total amount of all items of type 2 depending on the taxable type you have defined in the media campaign. The Standard is N2.</inlineHelpText>
+        <label>Taxable Amount (VAT Type 2)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TermsOfPaymentDaysNet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Terms of Payment Days Net</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TermsOfPaymentText__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Terms of Payment Text</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ThirdPartyCommission__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Third Party Commission</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__TotalAmountDue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total amount of all line items that is still due and should be invoiced</description>
+        <externalId>false</externalId>
+        <label>Total Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__UniqueKey__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATAmount1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Roll-up Summary totaling the VAT for all items of type 1 except Packages.</description>
+        <externalId>false</externalId>
+        <label>VAT Amount (Type 1)</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__VATAmount__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__VATType__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATAmount2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Roll-up Summary totaling the VAT for all items of type 2 except Packages.</description>
+        <externalId>false</externalId>
+        <label>VAT Amount (Type 2)</label>
+        <summarizedField>ADvendio__InvoiceItem__c.ADvendio__VATAmount__c</summarizedField>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__VATType__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.ADvendio__ItemRecordType__c</field>
+            <operation>notEqual</operation>
+            <value>Packet</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATExempt__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this if you don&apos;t want to apply any value added tax. Value gets mapped from the corresponding media campaign.</description>
+        <externalId>false</externalId>
+        <label>VAT Exempt</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATRate1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This VAT rate has been defined in your custom settings and depends on which country is buying from whom. It is automatically set by an apex script.</description>
+        <externalId>false</externalId>
+        <label>VAT Rate % (Type 1)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VATRate2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This VAT rate has been defined in your custom settings and depends on which country is buying from whom. It is automatically set by an apex script.</description>
+        <externalId>false</externalId>
+        <label>VAT Rate % (Type 2)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VatTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Formula to add the VAT of type 1 and type 2.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__VATAmount1__c + ADvendio__VATAmount2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula to add the VAT of type 1 and type 2.</inlineHelpText>
+        <label>VAT Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__YourReferenceNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Reference Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__eCPM__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>eCPM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mediagattungs_Segement_Mix__c</fullName>
+        <description>Ist wahr, wenn ein Mix aus Nonmedia und Media Mediagattungs-Segmenten vorliegt.</description>
+        <externalId>false</externalId>
+        <formula>IF ( SomDig_Anzahl_Nonmedia_Positionen__c &gt; 0 &amp;&amp;  SomDig_Anzahl_Media_Positionen__c &gt; 0 , true, false)</formula>
+        <inlineHelpText>Ist wahr, wenn ein Mix aus Nonmedia und Media Mediagattungs-Segmenten vorliegt.</inlineHelpText>
+        <label>Mediagattungs-Segement Mix</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Abrechnungsmonat__c</fullName>
+        <description>generiert den Monat aus dem Abrechnungsdatum</description>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH( ADvendio__AccountingDate__c ),
+1, &quot;Januar&quot;,
+2, &quot;Februar&quot;,
+3, &quot;März&quot;, 
+4, &quot;April&quot;, 
+5, &quot;Mai&quot;, 
+6, &quot;Juni&quot;,
+7, &quot;Juli&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;Oktober&quot;,
+11, &quot;November&quot;,
+12, &quot;Dezember&quot;,
+&quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Abrechnungsmonat</inlineHelpText>
+        <label>Abrechnungsmonat</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Anzahl_Media_Positionen__c</fullName>
+        <description>Zeigt die Anzahl der Rechnungspositionen, die nicht das Mediagattungs-Segment NonMedia haben.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zeigt die Anzahl der Rechnungspositionen, die nicht das Mediagattungs-Segment NonMedia haben.</inlineHelpText>
+        <label>Anzahl Media Positionen</label>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.SomDig_Mediagattungs_Segement_Name__c</field>
+            <operation>notEqual</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Anzahl_Nonmedia_Positionen__c</fullName>
+        <description>Zeigt die Anzahl der Rechnungspositionen mit dem Mediagattungs-Segment NonMedia.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zeigt die Anzahl der Rechnungspositionen mit dem Mediagattungs-Segment NonMedia.</inlineHelpText>
+        <label>Anzahl Nonmedia Positionen</label>
+        <summaryFilterItems>
+            <field>ADvendio__InvoiceItem__c.SomDig_Mediagattungs_Segement_Name__c</field>
+            <operation>equals</operation>
+            <value>NonMedia</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ADvendio__InvoiceItem__c.ADvendio__Invoice__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Auftragstyp__c</fullName>
+        <externalId>false</externalId>
+        <label>Auftragstyp</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_BetreuerPAM__c</fullName>
+        <description>übernommen aus Mediakampagne</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__MediaCampaign__r.SomDig_BetreuerPam__r.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>übernommen aus Mediakampagne</inlineHelpText>
+        <label>Betreuer PAM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Dokumenttyp__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ADvendio__InvoicedAmountGross__c &gt;= 0, &quot;PI&quot;, &quot;PC&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dokumenttyp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_FakturaBuchungssaetzeEnthalten__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Faktura Buchungssaetze Enthalten</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Kampagnenenddatum__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__MediaCampaign__r.ADvendio__Campaign_End_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Kampagnenenddatum</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Kampagnenstartdatum__c</fullName>
+        <description>übernommen aus Mediakampagne</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__MediaCampaign__r.ADvendio__Campaign_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>übernommen aus Mediakampagne</inlineHelpText>
+        <label>Kampagnenstartdatum</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_MediacampaignLost__c</fullName>
+        <externalId>false</externalId>
+        <formula>ADvendio__MediaCampaign__r.RecordType.Name =&quot;Auftrag&quot;
+&amp;&amp;
+ ADvendio__MediaCampaign__r.ADvendio__Propability__c =0</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Kampagne storniert?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Mn3__c</fullName>
+        <description>Ticket 4177
+MN2-Wert minus Skonto (wenn ein Skonto für die MK ausgewählt wurde) ergibt MN3</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__InvoicedAmountNet2__c * (1 -  ADvendio__Early_Payment_Discount__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>MN2-Wert minus Skonto (wenn ein Skonto für die MK ausgewählt wurde) ergibt MN3</inlineHelpText>
+        <label>MN3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_MwstCheck__c</fullName>
+        <description>Prüfung &quot;Mwst. befreit&quot;-Eigenschaft zwischen Rechnung und Kampagne/Debitor abweichend ist.
+siehe TI 03888</description>
+        <externalId>false</externalId>
+        <formula>IF( ADvendio__VATExempt__c !=  ADvendio__MediaCampaign__r.SomDig_VATExempt__c , 
+  &apos;abweichend&apos;,
+  &apos;ok&apos;
+)</formula>
+        <inlineHelpText>Prüfung &quot;Mwst. befreit&quot;-Eigenschaft zwischen Rechnung und Kampagne/Debitor abweichend ist.</inlineHelpText>
+        <label>Mwst. Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_PDF_Preview__c</fullName>
+        <description>Link zum Öffnen des PDFs: wird in Ansichten benutzt</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/apex/ADvendio__PDF?invid=&apos; + Id, &apos;PDF&apos;, &apos;blank&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Link zum Öffnen des PDFs</inlineHelpText>
+        <label>PDF Preview</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_PartnerId__c</fullName>
+        <externalId>false</externalId>
+        <label>SomDig PartnerId</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Preisliste__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Preisliste</label>
+        <referenceTo>ADvendio__Pricelist__c</referenceTo>
+        <relationshipLabel>Rechnungen</relationshipLabel>
+        <relationshipName>Rechnungen</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_RG_Empfaenger_P7S1_Konzernmitgl__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>RG Empfänger P7S1 Konzernmitglied</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_Rechnungsfreigabe__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Mit der Checkbox wird der Status des Feldes ADvendio__Status__c auf Reviewed/Freigegeben gesetzt per Feldaktualisierung. Nur diese Rechnungen erscheinen im Rechnungslauf. Siehe KV 2271.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Nur freigegebene Rechnungen werden im Rechnungslauf aufgeführt. Wenn eine Rechung einer Mediakampagne freigegeben, aber noch nicht fakturiert ist, kann die komplette Kampagne nicht geändert/angepasst werden</inlineHelpText>
+        <label>Rechnungsfreigabe</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SomDig_SapBuchungsdatumAuto__c</fullName>
+        <externalId>false</externalId>
+        <label>Sap Datum Neu</label>
+        <length>7</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_SapBuchungsdatum__c</fullName>
+        <description>SAP Buchungsdatum, abhängig vom Rechnungsdatum bzw. Belegdatum und im Format MM.YYYY</description>
+        <externalId>false</externalId>
+        <formula>SomDig_SapBuchungsdatumAuto__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>SAP Buchungsdatum, abhängig vom Rechnungsdatum bzw. Belegdatum und im Format MM.YYYY</inlineHelpText>
+        <label>SAP Buchungsdatum</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Soll_Haben_Kennzeichen__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ADvendio__InvoicedAmountGross__c &gt;= 0, &quot;H&quot;, &quot;S&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Soll/Haben Kennzeichen</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_SteuerkennzeichenAktuell__c</fullName>
+        <description>Case 04358
+- Temporäres Feld welches durch das Mapping BA gefüllt wird
+- Quelle für das Feld SomDig_Steuerkennzeichen</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporäres Feld welches den Wert des Steuerkennzeichens vorhält.</inlineHelpText>
+        <label>Steuerkennzeichen Aktuell</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_Steuerkennzeichen__c</fullName>
+        <externalId>false</externalId>
+        <formula>SomDig_SteuerkennzeichenAktuell__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Steuerkennzeichen</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SomDig_ZahlungsbedingungenSAP__c</fullName>
+        <externalId>false</externalId>
+        <label>Zahlungsbedingungen SAP</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Invoice</label>
+    <listViews>
+        <fullName>ADvendio__all</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>all</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Alle_PreInvoices</fullName>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Rechnungsfreigabe__c</columns>
+        <columns>ADvendio__InvoicedAmountNet2__c</columns>
+        <columns>SomDig_BetreuerPAM__c</columns>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>Pre</value>
+        </filters>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__InvoicedAmountNet2__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>Alle PreInvoices</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Alle_PreInvoices_bis_Vormonat</fullName>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Rechnungsfreigabe__c</columns>
+        <columns>ADvendio__InvoicedAmountNet2__c</columns>
+        <columns>SomDig_BetreuerPAM__c</columns>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>Pre</value>
+        </filters>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__AccountingDate__c</field>
+            <operation>lessThan</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Alle PreInvoices bis Vormonat</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Alle_PreInvoices_bis_aktueller_Monat</fullName>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Rechnungsfreigabe__c</columns>
+        <columns>ADvendio__InvoicedAmountNet2__c</columns>
+        <columns>SomDig_BetreuerPAM__c</columns>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>Pre</value>
+        </filters>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__AccountingDate__c</field>
+            <operation>lessOrEqual</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Alle PreInvoices bis aktueller Monat</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Alle_PreInvoices_nach_Agentur</fullName>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Rechnungsfreigabe__c</columns>
+        <columns>ADvendio__InvoicedAmountNet2__c</columns>
+        <columns>SomDig_BetreuerPAM__c</columns>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>Pre</value>
+        </filters>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__AgencyName__c</field>
+            <operation>contains</operation>
+            <value>XY</value>
+        </filters>
+        <label>Alle PreInvoices nach Agentur</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Alle_PreInvoices_nach_WT</fullName>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__MediaCampaign__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Rechnungsfreigabe__c</columns>
+        <columns>ADvendio__InvoicedAmountNet2__c</columns>
+        <columns>SomDig_BetreuerPAM__c</columns>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>Pre</value>
+        </filters>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__AdvertiserName__c</field>
+            <operation>contains</operation>
+            <value>XY</value>
+        </filters>
+        <label>Alle PreInvoices nach WT</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Erstellte_Rechnungen_nach_Agentur</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__CampaignName__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>ADvendio__InvoiceType__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <columns>ADvendio__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__AgencyName__c</field>
+            <operation>equals</operation>
+            <value>XY</value>
+        </filters>
+        <label>Erstellte Rechnungen nach Agentur</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Erstellte_Rechnungen_nach_WT</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__CampaignName__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>ADvendio__InvoiceType__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <columns>ADvendio__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__AdvertiserName__c</field>
+            <operation>equals</operation>
+            <value>XY</value>
+        </filters>
+        <label>Erstellte Rechnungen nach WT</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>Rechnungen_ohne_Mwst_auf_Dokument</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__CampaignName__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>ADvendio__InvoiceType__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <columns>ADvendio__Status__c</columns>
+        <columns>ADvendio__VATRate1__c</columns>
+        <columns>ADvendio__VATAmount1__c</columns>
+        <columns>ADvendio__VATRate2__c</columns>
+        <columns>ADvendio__VATAmount2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <filters>
+            <field>ADvendio__VATRate1__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Rechnungen ohne Mwst auf Dokument</label>
+        <language>de</language>
+        <sharedTo>
+            <group>P7S1_ProfilesSomDig_Billing</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SomDig_ErstellteRechnungen</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__AgencyName__c</columns>
+        <columns>ADvendio__AdvertiserName__c</columns>
+        <columns>ADvendio__RecipientName__c</columns>
+        <columns>ADvendio__OrderNumber__c</columns>
+        <columns>ADvendio__CampaignName__c</columns>
+        <columns>SomDig_Kampagnenstartdatum__c</columns>
+        <columns>SomDig_Kampagnenenddatum__c</columns>
+        <columns>SomDig_Abrechnungsmonat__c</columns>
+        <columns>ADvendio__InvoiceDate__c</columns>
+        <columns>ADvendio__InvoiceType__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>SomDig_PDF_Preview__c</columns>
+        <columns>ADvendio__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced,Canceled</value>
+        </filters>
+        <label>Erstellte Rechnungen</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Invoices</pluralLabel>
+    <searchLayouts>
+        <listViewButtons>SomDig_RechnungsfreigabeStartenListe</listViewButtons>
+        <lookupDialogsAdditionalFields>ADvendio__IsMerged__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__AccountingDate__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ADvendio__OrderNumber__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>ADvendio__OrderNumber__c</lookupFilterFields>
+        <lookupFilterFields>ADvendio__RecipientName__c</lookupFilterFields>
+        <lookupFilterFields>ADvendio__AdvertiserName__c</lookupFilterFields>
+        <lookupFilterFields>ADvendio__AgencyName__c</lookupFilterFields>
+        <lookupFilterFields>ADvendio__Status__c</lookupFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ADvendio__OrderNumber__c</searchFilterFields>
+        <searchFilterFields>ADvendio__CampaignName__c</searchFilterFields>
+        <searchFilterFields>SomDig_Abrechnungsmonat__c</searchFilterFields>
+        <searchFilterFields>ADvendio__RecipientName__c</searchFilterFields>
+        <searchFilterFields>ADvendio__AdvertiserName__c</searchFilterFields>
+        <searchFilterFields>ADvendio__AgencyName__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Dispatch__c</searchFilterFields>
+        <searchFilterFields>ADvendio__Status__c</searchFilterFields>
+        <searchFilterFields>SomDig_BetreuerPAM__c</searchFilterFields>
+        <searchResultsAdditionalFields>ADvendio__InvoiceDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_Abrechnungsmonat__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__InvoicedAmountNet2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__AgencyName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__CampaignName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__AdvertiserName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__RecipientName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SomDig_BetreuerPAM__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ADvendio__Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Beschreibungsfeld</fullName>
+        <active>true</active>
+        <description>Beschreibung darf nicht geändert werden, wenn Rechnung im Fakturiert- oder Storniert-Status ist (siehe auch KV 2924)</description>
+        <errorConditionFormula>ISCHANGED( ADvendio__Description__c ) 
+ &amp;&amp; 
+OR(
+ISPICKVAL( ADvendio__Status__c , &quot;Invoiced&quot;),
+ISPICKVAL( ADvendio__Status__c , &quot;Canceled&quot;))</errorConditionFormula>
+        <errorMessage>Beschreibung darf nicht geändert werden, wenn Rechnung im Fakturiert- oder Storniert-Status ist</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_CanceledMustNeverChanged</fullName>
+        <active>true</active>
+        <errorConditionFormula>isCHanged(ADvendio__Status__c) &amp;&amp; 
+IsPickVal(PRIORVALUE(ADvendio__Status__c),&quot;Canceled&quot;)</errorConditionFormula>
+        <errorDisplayField>ADvendio__Status__c</errorDisplayField>
+        <errorMessage>Eine Rechnung im Status &quot;Storniert&quot; darf in keinen anderen Status geändert werden</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_FreigabeBlock</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(SomDig_Rechnungsfreigabe__c)
+&amp;&amp;
+OR(
+ISPICKVAL(ADvendio__Status__c,&quot;Invoiced&quot;),
+ISPICKVAL(ADvendio__Status__c,&quot;Canceled&quot;)
+)</errorConditionFormula>
+        <errorMessage>Entfernen der Freigabe in diesem Status nicht möglich.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_FreigabeCheck</fullName>
+        <active>true</active>
+        <description>Ticket 04245</description>
+        <errorConditionFormula>ISBLANK(ADvendio__Invoice__c) &amp;&amp;
+(NOT(ISPICKVAL(PRIORVALUE(ADvendio__Status__c), &quot;Reviewed&quot;)) &amp;&amp; ISPICKVAL(ADvendio__Status__c, &quot;Reviewed&quot;) ||
+PRIORVALUE(SomDig_Rechnungsfreigabe__c) = FALSE &amp;&amp; SomDig_Rechnungsfreigabe__c = TRUE) &amp;&amp;
+ISPICKVAL(ADvendio__MediaCampaign__r.ADvendio__invoice_recipient__r.P7S1_Steuerkennzeichen__c, &quot;AE&quot;) &amp;&amp;
+ISBLANK( ADvendio__MediaCampaign__r.ADvendio__invoice_recipient__r.P7S1_UstIdNr__c )</errorConditionFormula>
+        <errorMessage>Die Rechnung kann nicht freigegeben werden, da keine USt-ID am Account hinterlegt wurde. Bitte nachtragen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_InvoicedMustOnlyChangeToCanceled</fullName>
+        <active>true</active>
+        <errorConditionFormula>isCHanged(ADvendio__Status__c) &amp;&amp; isPickVal(PRIORVALUE(ADvendio__Status__c), &quot;Invoiced&quot;) &amp;&amp; 
+Not(isPickVal(ADvendio__Status__c, &quot;Canceled&quot;))</errorConditionFormula>
+        <errorDisplayField>ADvendio__Status__c</errorDisplayField>
+        <errorMessage>Eine Rechnung im Status &quot;Fakturiert&quot; darf nur in den Status &quot;Storniert&quot; geändert werden</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_NullEuroRechnung</fullName>
+        <active>true</active>
+        <description>Ticket 03828. Ein Rechnung mit einem MN2 von 0€ darf nicht freigegeben werden.</description>
+        <errorConditionFormula>SomDig_Rechnungsfreigabe__c = true &amp;&amp; PRIORVALUE(SomDig_Rechnungsfreigabe__c) = false &amp;&amp; ADvendio__InvoicedAmountNet2__c = 0</errorConditionFormula>
+        <errorMessage>Ein Rechnung mit einem MN2 von 0€ darf nicht freigegeben werden.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SomDig_RechnungsnummerFixieren</fullName>
+        <active>true</active>
+        <description>Die Rechnungsnummer einer fakturierten Rechnung darf nicht geändert werden.</description>
+        <errorConditionFormula>ISCHANGED(Name) &amp;&amp; LEFT( PRIORVALUE(Name), 3) == &quot;420&quot;</errorConditionFormula>
+        <errorMessage>Die Rechnungsnummer einer fakturierten Rechnung darf nicht geändert werden!</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ADvendio__CancelInvoice</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Cancel Invoice</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__InvoiceCancelation</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__GenerateLegalEntityNumber</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Generate Legal Entity Number</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__NavigateToGenerateLegalEntityNumber</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__SendViaEMail</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>800</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Send via E-Mail</masterLabel>
+        <openType>newWindow</openType>
+        <page>ADvendio__NavigateToSendAnEmail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <width>1245</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__UpdateDeliveredQuantity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Update Delivered Quantity</masterLabel>
+        <openType>sidebar</openType>
+        <page>ADvendio__NavigateToInvoiceAutomaticDelivery</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>ADvendio__create_PDF_DEV</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Create PDF (Preview)</masterLabel>
+        <openType>newWindow</openType>
+        <page>ADvendio__NavigateToInvoicePDF</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>SomDig_RechnungsfreigabeStarten</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Rechnungsfreigabe starten</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/apex.js&quot;)} 
+
+var records = [&apos;{!ADvendio__Invoice__c.Id}&apos;];
+try { 
+  sforce.apex.execute(&quot;SomDig_Rechnungsfreigabe&quot;,&quot;starteRechungsfreigabe&quot;,{invoiceIds : records}); 
+alert(&quot;Die Rechnungsfreigabe für die ausgewählten Rechnungen wurde gestartet! Sie werden per Email benachrichtigt wenn der Prozess beendet ist.&quot; ); 
+} 
+catch(e) { 
+  var error = /faultstring:&apos;.*?: (.*?)\n([\s\S]*)/.exec(e); 
+  if (error != null) { 
+    alert(error[1]); 
+  } 
+  else { 
+    alert(e); 
+  } 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SomDig_RechnungsfreigabeStartenListe</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Rechnungsfreigabe starten</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/apex.js&quot;)}
+
+var records = {!GETRECORDIDS($ObjectType.ADvendio__Invoice__c)};
+if ((&apos;&apos; + records) == &apos;&apos;) {
+  alert(&quot;Bitte wählen Sie eine Rechnung aus.&quot;);
+}
+else {
+  try {
+    sforce.apex.execute(&quot;SomDig_Rechnungsfreigabe&quot;,&quot;starteRechungsfreigabe&quot;,{invoiceIds : records});
+    alert(&quot;Die Rechnungsfreigabe für die ausgewählten Rechnungen wurde gestartet! Sie werden per Email benachrichtigt wenn der Prozess beendet ist.&quot; );
+  }
+  catch(e) {
+    var error = /faultstring:&apos;.*?: (.*?)\n([\s\S]*)/.exec(e);
+    if (error != null) {
+      alert(error[1]);
+    }
+    else {
+      alert(e);
+    }
+  }
+}</url>
+    </webLinks>
+</CustomObject>

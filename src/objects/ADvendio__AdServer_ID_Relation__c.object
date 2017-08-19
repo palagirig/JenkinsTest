@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__AdServer_Login__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is for background use by the ad server interface of DART.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is for background use by the ad server interface of DART.</inlineHelpText>
+        <label>AdServer Login</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>AdServer ID Relations</relationshipLabel>
+        <relationshipName>DART_ID_Relations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Destination_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is for background use by the ad server interface of DART.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is for background use by the ad server interface of DART.</inlineHelpText>
+        <label>Destination ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Relation_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is for background use by the ad server interface of DART.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field is for background use by the ad server interface of DART.</inlineHelpText>
+        <label>Relation Name</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Relation_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is for background use by the ad server interface of DART.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is for background use by the ad server interface of DART.</inlineHelpText>
+        <label>Relation Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Content Category -&gt; Site</fullName>
+                    <default>false</default>
+                    <label>Content Category -&gt; Site</label>
+                </value>
+                <value>
+                    <fullName>Zone -&gt; Site</fullName>
+                    <default>false</default>
+                    <label>Zone -&gt; Site</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Source_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is for background use by the ad server interface of DART.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is for background use by the ad server interface of DART.</inlineHelpText>
+        <label>Source ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>AdServer ID Relation</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>ADvendio__Relation_Name__c</columns>
+        <columns>ADvendio__Relation_Type__c</columns>
+        <columns>ADvendio__Source_ID__c</columns>
+        <columns>ADvendio__Destination_ID__c</columns>
+        <columns>ADvendio__AdServer_Login__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>AIR-{0}</displayFormat>
+        <label>AdServer ID Relation No.</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>AdServer ID Relations</pluralLabel>
+    <recordTypes>
+        <fullName>ADvendio__ADITION</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer ADITION</description>
+        <label>ADITION</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__ADTECH</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer ADTECH</description>
+        <label>ADTECH</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__DART</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer DART</description>
+        <label>DART</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__DFP</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer DFP</description>
+        <label>DFP</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__NUGGAD</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer NUGGAD</description>
+        <label>NUGGAD</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__SMART</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer SMART</description>
+        <label>SMART</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ADvendio__YIELDLAB</fullName>
+        <active>true</active>
+        <description>This record type should be used to store IDs of AdServer YIELDLAB</description>
+        <label>YIELDLAB</label>
+        <picklistValues>
+            <picklist>ADvendio__Relation_Type__c</picklist>
+            <values>
+                <fullName>Content Category -%3E Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zone -%3E Site</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

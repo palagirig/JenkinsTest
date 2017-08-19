@@ -1,0 +1,6 @@
+Hi {!ADvendio__BriefingScript__c.OwnerFirstName},<br/><br/>
+
+the script {!ADvendio__BriefingScript__c.Name} is approved by Client.<br/><br/>
+
+Sincerely,<br/>
+ADvendio Team

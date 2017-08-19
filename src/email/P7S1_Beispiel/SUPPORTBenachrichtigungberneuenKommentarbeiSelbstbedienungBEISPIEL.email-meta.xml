@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Beispiel-E-Mail-Vorlage, die an Selbstbedienungskunden gesendet werden kann, um sie auf öffentliche Kommentare aufmerksam zu machen, die zu ihrem Kundenvorgang hinzugefügt wurden.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPPORT: Benachrichtigung über neuen Kommentar bei Selbstbedienung (BEISPIEL)</name>
+    <style>none</style>
+    <subject>Ihre Kundenvorgangsnummer {!Case.CaseNumber} wurde aktualisiert.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

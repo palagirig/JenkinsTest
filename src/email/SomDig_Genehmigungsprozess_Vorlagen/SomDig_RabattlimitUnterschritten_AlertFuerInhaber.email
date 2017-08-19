@@ -1,0 +1,9 @@
+Lieber Datensatzinhaber,
+
+für die Position "{!ADvendio__Campaign_Item__c.Name}" auf der Mediakampagne '{!ADvendio__Campaign_Item__c.ADvendio__Media_Campaign__c}' wurde das Rabattlimit erreicht. Bitte Rabatte anpassen oder den Genehmigungsprozess starten.
+Das vollständige Angebot inkl. aller Details findest Du unter folgendem Link: {!ADvendio__Campaign_Item__c.Link}
+
+Gruß
+
+
+Salesforce-Support

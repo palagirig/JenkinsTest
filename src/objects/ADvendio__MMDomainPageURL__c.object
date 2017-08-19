@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Stores site Url domain page link</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ADvendio__SiteUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Site URL</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Site URL</inlineHelpText>
+        <label>SiteUrl</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>MM Domain Page URL</label>
+    <visibility>Public</visibility>
+</CustomObject>

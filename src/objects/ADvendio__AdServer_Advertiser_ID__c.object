@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__Accounttype__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose an account type for which this ad server ID is to be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose an account type for which this ad server ID is to be used.</inlineHelpText>
+        <label>Accounttype</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Publisher</fullName>
+                    <default>false</default>
+                    <label>Publisher</label>
+                </value>
+                <value>
+                    <fullName>Direct Customer</fullName>
+                    <default>false</default>
+                    <label>Direct Customer</label>
+                </value>
+                <value>
+                    <fullName>Agency</fullName>
+                    <default>false</default>
+                    <label>Agency</label>
+                </value>
+                <value>
+                    <fullName>Intern</fullName>
+                    <default>false</default>
+                    <label>Intern</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServer_Login__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Enter the ad server login that is the source of the ID.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the ad server login that is the source of the ID.</inlineHelpText>
+        <label>AdServer Login</label>
+        <referenceTo>ADvendio__AdServer_Logins__c</referenceTo>
+        <relationshipLabel>AdServer Advertiser IDs</relationshipLabel>
+        <relationshipName>AdServer_Advertiser_IDs</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServer_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Not in use</description>
+        <externalId>false</externalId>
+        <formula>&apos;&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Noch anzupassen!</inlineHelpText>
+        <label>AdServer Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Advertiser__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field displays the connection to the advertiser.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the connection to the advertiser.</inlineHelpText>
+        <label>Advertiser</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>AdServer Advertiser IDs</relationshipLabel>
+        <relationshipName>AdServer_Advertiser_IDs</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field displays the connection to the agency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the connection to the agency.</inlineHelpText>
+        <label>Agency</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>AdServer Advertiser IDs (Agency)</relationshipLabel>
+        <relationshipName>AdServer_Advertiser_IDs1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P7S1_IdOld__c</fullName>
+        <description>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID aus einer anderen/alten Org imRahmen einer Datenmigration</inlineHelpText>
+        <label>P7S1_IdOld</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>AdServer Advertiser ID</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Advertiser__c</columns>
+        <columns>ADvendio__Agency__c</columns>
+        <columns>ADvendio__AdServer_Login__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>de</language>
+    </listViews>
+    <listViews>
+        <fullName>thun</fullName>
+        <columns>NAME</columns>
+        <columns>ADvendio__Advertiser__c</columns>
+        <columns>ADvendio__Agency__c</columns>
+        <columns>ADvendio__AdServer_Login__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ADvendio__Advertiser__c</field>
+            <operation>startsWith</operation>
+            <value>ht</value>
+        </filters>
+        <label>thun</label>
+        <language>de</language>
+    </listViews>
+    <nameField>
+        <label>AdServer Advertiser ID Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>AdServer Advertiser IDs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ADvendio__Advertiser__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__Agency__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ADvendio__AdServer_Login__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

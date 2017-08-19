@@ -1,0 +1,11 @@
+Hallo {!Opportunity.OwnerFullName},
+
+folgende Opportunity {!Opportunity.Name} wurde durch das Genehmigungsgremium VIC II genehmigt.
+
+Die Opportunity wurde nun mit der Phase Board Approval markiert.
+Bitte in der Opportunity angeben ob zusätzliche Gremien (D&A Board, Executive Board und/oder Supervisory Board) durchlaufen sollen.
+
+Über folgenden Link erreichen Sie die Opportunity diese zu bearbeiten: {!Opportunity.Link} 
+
+Mit freundlichen Grüßen
+Ihr SalesForce Team

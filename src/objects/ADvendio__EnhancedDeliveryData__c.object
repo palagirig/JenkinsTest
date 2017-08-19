@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Stores extended Delivery Data records, by Device Category, Country, and network part comparable to DFP&apos;s AdUnits. Also supports Publisher Payout and different types of reporting. In the future new Billing Categories.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADvendio__ADvendio_AdServerIdType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the related AdServer-ID.</description>
+        <externalId>false</externalId>
+        <formula>Text(ADvendio__AdServerID__r.ADvendio__Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Type of the related AdServer-ID.</inlineHelpText>
+        <label>AdServerId Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerIDName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the related AdServer-ID.</description>
+        <externalId>false</externalId>
+        <formula>ADvendio__AdServerID__r.ADvendio__AdServer_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Name of the related AdServer-ID.</inlineHelpText>
+        <label>AdServer-ID Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>AdServer-ID to which the delivery data record refers.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>AdServer-ID to which the delivery data record refers.</inlineHelpText>
+        <label>AdServer ID</label>
+        <referenceTo>ADvendio__AdServer_ID__c</referenceTo>
+        <relationshipLabel>Enhanced Delivery Data</relationshipLabel>
+        <relationshipName>EnhancedDeliveryData</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__AdServerIdCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Category of the related AdServer-ID.</description>
+        <externalId>false</externalId>
+        <formula>Text(ADvendio__AdServerID__r.ADvendio__Category__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Category of the related AdServer-ID.</inlineHelpText>
+        <label>AdServer-ID Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__CampaignItem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Campaign-Item, to which the delivery data record refers.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Campaign-Item, to which the delivery data record refers.</inlineHelpText>
+        <label>Campaign Item</label>
+        <referenceTo>ADvendio__Campaign_Item__c</referenceTo>
+        <relationshipLabel>Enhanced Delivery Data</relationshipLabel>
+        <relationshipName>EnhancedDeliveryData</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ClicksTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a scheduled import job. It displays the delivered clicks of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be automatically filled by a scheduled import job. It displays the delivered clicks of the assigned campaign item.</inlineHelpText>
+        <label>Clicks total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date to which the delivery data record refers.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date to which the delivery data record refers.</inlineHelpText>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ImpressionsTotalDownloaded__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a scheduled import job. It displays the total number delivered (downloaded) impressions of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be automatically filled by a scheduled import job. It displays the total number delivered (downloaded) impressions of the assigned campaign item.</inlineHelpText>
+        <label>Impressions total downloaded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ImpressionsTotalViewed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a scheduled import job. It displays the total number delivered (viewed) impressions of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be automatically filled by a scheduled import job. It displays the total number delivered (viewed) impressions of the assigned campaign item.</inlineHelpText>
+        <label>Impressions total viewed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__ImpressionsTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will be automatically filled by a scheduled import job. It displays the total number delivered impressions of the assigned campaign item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be automatically filled by a scheduled import job. It displays the total number delivered impressions of the assigned campaign item.</inlineHelpText>
+        <label>Impressions total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__Month__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Month, to which the delivery data record refers.</description>
+        <externalId>false</externalId>
+        <formula>IF( ISNULL(  ADvendio__Date__c  ), null, DATE( YEAR( ADvendio__Date__c ), MONTH( ADvendio__Date__c ) , 1) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Month, to which the delivery data record refers.</inlineHelpText>
+        <label>Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VideoViewed100__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of times the video has been played 100%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of times the video has been played 100%.</inlineHelpText>
+        <label>Video viewed 100%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VideoViewed25__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of times the video has been played 25%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of times the video has been played 25%.</inlineHelpText>
+        <label>Video viewed 25%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VideoViewed50__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of times the video has been played 50%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of times the video has been played 50%.</inlineHelpText>
+        <label>Video viewed 50%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADvendio__VideoViewed75__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of times the video has been played 75%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of times the video has been played 75%.</inlineHelpText>
+        <label>Video viewed 75%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Enhanced Delivery Data</label>
+    <listViews>
+        <fullName>ADvendio__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>EDD-{000}</displayFormat>
+        <label>Enhanced Delivery Data Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Enhanced Delivery Data</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

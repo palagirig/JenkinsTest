@@ -1,0 +1,22 @@
+Hallo, 
+
+für das Commitment "{!SomDig_Commitment__c.Name}" des Kunden {!SomDig_Commitment__c.SomDig_Werbetreibende__c}, Umsatzhöhe {!SomDig_Commitment__c.SomDig_UmsatzGesamtMN2__c}, benötigt {!SomDig_Commitment__c.SomDig_CommitmentInhaber__c} Deine Genehmigung für folgende Rabattdetails: 
+
+InStream Kundenrabatt: {!SomDig_Commitment__c.SomDig_Kundenrabatt_InStream__c} %
+InStream Sonderrabattt: {!SomDig_Commitment__c.SomDig_Sonderrabatt_InStream__c} %
+
+InPage Kundenrabatt: {!SomDig_Commitment__c.SomDig_Kundenrabatt_InPage__c} %
+InPage Sonderrabatt: {!SomDig_Commitment__c.SomDig_Sonderrabatt_InPage__c} %
+
+Naturalrabatt: {!SomDig_Commitment__c.SomDig_Naturalrabatt_Inpage__c} %
+Agenturrabatt: {!SomDig_Commitment__c.ADvendio__Rate_Discount_3__c} %
+
+Das vollständige Commitment inkl. aller Details findest Du unter folgendem Link: 
+
+{!SomDig_Commitment__c.Link}
+
+Bitte klicke auf diesen Link, um den betreffenden Datensatz in Salesforce zu genehmigen. 
+
+Gruß
+
+Salesforce-Support

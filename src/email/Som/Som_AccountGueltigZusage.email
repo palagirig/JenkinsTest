@@ -1,0 +1,10 @@
+Lieber {!Account.OwnerFirstName} {!Account.OwnerLastName}, 
+
+Deine Anfrage den Account "{!Account.Name}" gültig zu setzen wurde soeben final genehmigt. Der Account wurde als gültig markiert.
+
+Bitte prüfe nun alle dazugehörigen Kontakte!
+
+Hier der Link zum Account: {!Account.Link}
+
+Gruß
+Salesforce-Support

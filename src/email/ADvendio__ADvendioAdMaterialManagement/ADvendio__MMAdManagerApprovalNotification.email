@@ -1,0 +1,8 @@
+Hi {!ADvendio__BriefingScript__c.OwnerFirstName},<br/><br/>
+
+the AD {!ADvendio__BriefingScript__c.Name} is approved by manager {!User.Manager}.<br/>
+
+The AD is now ready for publication.<br/><br/>
+
+Sincerely,<br/>
+ADvendio Team

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will sent to admin after user had follow the activation link</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>P7S1 Liferay Admin Aktivierungsanfrage</name>
+    <style>none</style>
+    <subject>Benutzeraktiverung</subject>
+    <textOnly>SevenOne Media Newsletter
+
+Benutzeraktivierung
+
+Hallo Admin,
+
+Ein  Benutzer  möchte aktiviert werden.
+
+
+Mit freundlichen Grüßen
+Ihr Team der SevenOne Media
+
+Benutzer aktivieren
+{!$Label.P7S1_BASE_URL}/{!P7S1_PortalLogin__c.Id}
+
+Profil bearbeiten
+https://www.sevenonemedia.de/group/sevenone/userprofile
+
+SevenOne Media GmbH
+Medienallee 4
+85774 Unterföhring
+
+Tel. +49 89 9507 – 40
+Fax +49 89 9507 – 43 99
+sevenonemedia.de
+info@sevenonemedia.de
+
+Geschäftsführer:
+Thomas Wagner (Vorsitzender),
+Dr. Jens Mittnacht, 
+Guido Modenbach,
+Georg Nitzl, Thomas Port
+
+Firmensitz: Unterföhring
+HRB 133924 AG München
+USt-ID.-Nr. DE 812906844
+St. Nr. 9143/104/10137
+
+Ein Unternehmen der ProSiebenSat.1 Media SE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
